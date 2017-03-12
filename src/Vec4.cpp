@@ -21,6 +21,8 @@
 #include "NGLassert.h"
 #include "Mat4.h"
 #include <cmath>
+#include <pybind11/pybind11.h>
+#include <pybind11/operators.h>
 
 //----------------------------------------------------------------------------------------------------------------------
 /// @file Vec3.cpp
@@ -322,6 +324,55 @@ Vec4 Vec4::operator*(const Mat4 &_m ) const noexcept
  }
 
 
+namespace py = pybind11;
+
+void pyInitVec4(py::module & m)
+{
+
+    py::class_<Vec4>(m, "Vec4")
+        .def(py::init<>())
+        .def(py::init<Real,Real,Real,Real>())
+        .def(py::init<Vec4 &>())
+        .def("set", (void (Vec4::*)(Real,Real,Real,Real)) &Vec4::set)
+        .def("set", (void (Vec4::*)(const Vec3 &)) &Vec4::set)
+        .def("set", (void (Vec4::*)(const Vec4 &)) &Vec4::set)
+        .def("dot", &Vec4::dot)
+        .def("null", &Vec4::null)
+        .def("__getitem__",(Real& (Vec4::*)(const size_t &)) &Vec4::operator[])
+        .def("normalize", &Vec4::normalize)
+        .def("inner", &Vec4::inner)
+        .def("outer", &Vec4::outer)
+        .def("length", &Vec4::length)
+        .def("lengthSquared", &Vec4::lengthSquared)
+        .def("cross",(void (Vec4::*)(const Vec4&, const Vec4&)) &Vec4::cross)
+        .def("cross",( Vec4 (Vec4::*)(const Vec4&) const) &Vec4::cross)
+        .def_static("up", &Vec4::up)
+        .def_static("down", &Vec4::down)
+        .def_static("left", &Vec4::left)
+        .def_static("right", &Vec4::right)
+        .def_static("inV", &Vec4::in) // note in is a reserved word so use inV
+        .def_static("out", &Vec4::out)
+        .def_static("zero", &Vec4::zero)
+
+        .def(py::self == py::self)
+        .def(py::self != py::self)
+        .def(py::self += py::self)
+        .def(py::self -= py::self)
+        .def(py::self * ngl::Real())
+        .def(ngl::Real() * py::self)
+        .def(py::self + py::self)
+        .def(py::self - py::self)
+        .def(py::self * py::self)
+        .def(py::self / ngl::Real())
+        .def(py::self / py::self)
+        .def(py::self /= ngl::Real())
+        .def(py::self *= ngl::Real())
+        .def(py::self * ngl::Mat4())
+        .def("__neg__",(Vec4 & (Vec4::*)()) &Vec4::operator-)
+
+        ;
+
+}
 
 
 } // end namspace ngl

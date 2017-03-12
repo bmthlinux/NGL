@@ -138,7 +138,8 @@ win32{
 }
 
 
-SOURCES += $$SRC_DIR/Vec4.cpp \
+SOURCES += $$SRC_DIR/PythonBindings.cpp \
+    $$SRC_DIR/Vec4.cpp \
 		$$SRC_DIR/VAOPrimitives.cpp \
 		$$SRC_DIR/Util.cpp \
 		$$SRC_DIR/Texture.cpp \

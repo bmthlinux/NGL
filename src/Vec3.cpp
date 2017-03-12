@@ -295,12 +295,11 @@ void Vec3::clamp(float _max ) noexcept
 }
 
 
-
 namespace py = pybind11;
 
-PYBIND11_PLUGIN(pyngl)
+
+void pyInitVec3(py::module & m)
 {
-    py::module m("pyngl", "pyngl module ");
 
     py::class_<Vec3>(m, "Vec3")
         .def(py::init<>())
@@ -348,7 +347,6 @@ PYBIND11_PLUGIN(pyngl)
 
         ;
 
-    return m.ptr();
 }
 
 
