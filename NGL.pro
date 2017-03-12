@@ -13,8 +13,8 @@ QMAKE_LFLAGS += -shared
 CONFIG += console
 CONFIG-=app_bundle
 CONFIG += c++11
-QMAKE_CXXFLAGS+=$$system(/Library/Frameworks/Python.framework/Versions/2.7/bin/python-config --cflags)
-QMAKE_LFLAGS+=$$system(/Library/Frameworks/Python.framework/Versions/2.7/bin/python-config --ldflags)
+QMAKE_CXXFLAGS+=$$system(/usr/bin/python-config --cflags)
+QMAKE_LFLAGS+=$$system(/usr/bin/python-config --ldflags)
 INCLUDEPATH+=$$PWD
 
 # use this to remove any marked as deprecated classes from NGL
