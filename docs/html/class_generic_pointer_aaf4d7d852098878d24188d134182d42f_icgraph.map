@@ -1,0 +1,6 @@
+<map id="GenericPointer::RAPIDJSON_DISABLEIF_RETURN" name="GenericPointer::RAPIDJSON_DISABLEIF_RETURN">
+<area shape="rect" id="node2" href="$class_generic_pointer.html#a0f2c0586fd945bf25a5da228d085f74b" title="Append a name token with length, and return a new Pointer. " alt="" coords="269,5,433,32"/>
+<area shape="rect" id="node3" href="$class_generic_pointer.html#ae62ceea598633d21ad648b431b23c26a" title="Set a null&#45;terminated string in a subtree. " alt="" coords="281,56,420,83"/>
+<area shape="rect" id="node4" href="$pointer_8h.html#a99418d6515d00c0203400d1412edb837" title="GetValueByPointerWithDefault" alt="" coords="249,107,453,133"/>
+<area shape="rect" id="node5" href="$pointer_8h.html#ae96ce29de67839434baa923594ec6aaa" title="SetValueByPointer" alt="" coords="284,157,417,184"/>
+</map>

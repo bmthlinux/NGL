@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_n_g_l_init_8h" kind="file" language="C++">
+    <compoundname>NGLInit.h</compoundname>
+    <includes refid="_singleton_8h" local="yes">Singleton.h</includes>
+    <includes refid="_types_8h" local="yes">Types.h</includes>
+    <includes refid="_v_a_o_primitives_8h" local="yes">VAOPrimitives.h</includes>
+    <includedby refid="_n_g_l_init_8cpp" local="yes">NGLInit.cpp</includedby>
+    <incdepgraph>
+      <node id="5165">
+        <label>Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="5166" relation="include">
+        </childnode>
+        <childnode refid="5172" relation="include">
+        </childnode>
+        <childnode refid="5173" relation="include">
+        </childnode>
+        <childnode refid="5174" relation="include">
+        </childnode>
+      </node>
+      <node id="5174">
+        <label>QGLContext</label>
+      </node>
+      <node id="5177">
+        <label>Vec3.h</label>
+        <link refid="_vec3_8h"/>
+        <childnode refid="5165" relation="include">
+        </childnode>
+        <childnode refid="5178" relation="include">
+        </childnode>
+      </node>
+      <node id="5176">
+        <label>VAOPrimitives.h</label>
+        <link refid="_v_a_o_primitives_8h"/>
+        <childnode refid="5164" relation="include">
+        </childnode>
+        <childnode refid="5165" relation="include">
+        </childnode>
+        <childnode refid="5177" relation="include">
+        </childnode>
+        <childnode refid="5179" relation="include">
+        </childnode>
+        <childnode refid="5180" relation="include">
+        </childnode>
+        <childnode refid="5181" relation="include">
+        </childnode>
+        <childnode refid="5182" relation="include">
+        </childnode>
+        <childnode refid="5183" relation="include">
+        </childnode>
+      </node>
+      <node id="5168">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="5169" relation="include">
+        </childnode>
+        <childnode refid="5170" relation="include">
+        </childnode>
+      </node>
+      <node id="5181">
+        <label>string</label>
+      </node>
+      <node id="5163">
+        <label>NGLInit.h</label>
+        <link refid="NGLInit.h"/>
+        <childnode refid="5164" relation="include">
+        </childnode>
+        <childnode refid="5165" relation="include">
+        </childnode>
+        <childnode refid="5176" relation="include">
+        </childnode>
+      </node>
+      <node id="5167">
+        <label>stddef.h</label>
+      </node>
+      <node id="5166">
+        <label>glew.h</label>
+        <link refid="glew_8h"/>
+        <childnode refid="5167" relation="include">
+        </childnode>
+        <childnode refid="5168" relation="include">
+        </childnode>
+        <childnode refid="5171" relation="include">
+        </childnode>
+      </node>
+      <node id="5171">
+        <label>GL/glu.h</label>
+      </node>
+      <node id="5169">
+        <label>limits.h</label>
+      </node>
+      <node id="5179">
+        <label>AbstractVAO.h</label>
+        <link refid="_abstract_v_a_o_8h"/>
+        <childnode refid="5165" relation="include">
+        </childnode>
+      </node>
+      <node id="5170">
+        <label>wchar.h</label>
+      </node>
+      <node id="5180">
+        <label>vector</label>
+      </node>
+      <node id="5178">
+        <label>array</label>
+      </node>
+      <node id="5173">
+        <label>QtOpenGL/QGLContext</label>
+      </node>
+      <node id="5175">
+        <label>cstdlib</label>
+      </node>
+      <node id="5164">
+        <label>Singleton.h</label>
+        <link refid="_singleton_8h"/>
+        <childnode refid="5165" relation="include">
+        </childnode>
+        <childnode refid="5175" relation="include">
+        </childnode>
+      </node>
+      <node id="5182">
+        <label>unordered_map</label>
+      </node>
+      <node id="5172">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="5183">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5184">
+        <label>NGLInit.h</label>
+        <link refid="NGLInit.h"/>
+        <childnode refid="5185" relation="include">
+        </childnode>
+      </node>
+      <node id="5185">
+        <label>NGLInit.cpp</label>
+        <link refid="_n_g_l_init_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classngl_1_1_n_g_l_init" prot="public">ngl::NGLInit</innerclass>
+    <innernamespace refid="namespacengl">ngl</innernamespace>
+    <briefdescription>
+<para>basic class to initialise the NGL library </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Copyright<sp/>(C)<sp/>2009<sp/>Jon<sp/>Macey</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>NGLINIT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NGLINIT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>must<sp/>include<sp/>types.h<sp/>first<sp/>for<sp/>Real<sp/>and<sp/>GLEW<sp/>if<sp/>required</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_singleton_8h" kindref="compound">Singleton.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_types_8h" kindref="compound">Types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_v_a_o_primitives_8h" kindref="compound">VAOPrimitives.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacengl" kindref="compound">ngl</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classngl_1_1_n_g_l_init" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/><sp/><sp/></highlight><highlight class="normal"><ref refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" kindref="member">NGL_DLLEXPORT</ref><sp/><ref refid="classngl_1_1_n_g_l_init" kindref="compound">NGLInit</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_singleton" kindref="compound">Singleton</ref>&lt;NGLInit&gt;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44" refid="classngl_1_1_n_g_l_init_1a003343ee951e927219e61bab94b60da2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classngl_1_1_singleton" kindref="compound">Singleton</ref>&lt;<ref refid="classngl_1_1_n_g_l_init" kindref="compound">NGLInit</ref>&gt;;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_n_g_l_init" kindref="compound">NGLInit</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classngl_1_1_n_g_l_init" kindref="compound">NGLInit</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>GL<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/include/ngl/NGLInit.h"/>
+  </compounddef>
+</doxygen>

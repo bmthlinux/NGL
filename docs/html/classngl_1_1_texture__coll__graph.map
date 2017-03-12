@@ -1,0 +1,3 @@
+<map id="ngl::Texture" name="ngl::Texture">
+<area shape="rect" id="node2" href="$classngl_1_1_image.html" title="{ngl::Image\n|&#45; m_data\l&#45; m_width\l&#45; m_height\l&#45; m_channels\l&#45; m_format\l&#45; m_loaded\l&#45; m_hasAlpha\l|+ Image()\l+ Image()\l+ Image()\l+ ~Image()\l+ load()\l+ getPixels()\l+ width()\l+ height()\l+ format()\l+ channels()\l+ getColour()\l+ getColour()\l+ saveFrameBufferToFile()\l}" alt="" coords="5,5,187,347"/>
+</map>

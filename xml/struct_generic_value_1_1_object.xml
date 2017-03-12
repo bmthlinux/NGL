@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_generic_value_1_1_object" kind="struct" language="C++" prot="public">
+    <compoundname>GenericValue::Object</compoundname>
+    <includes refid="document_8h" local="no">document.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_generic_value_1_1_object_1ab51b8366577cb12f0280e4a6d7dab926" prot="public" static="no" mutable="no">
+        <type><ref refid="class_generic_value_1a7ccf27c44058b4c11c3efc6473afb886" kindref="member">Member</ref> *</type>
+        <definition>Member* GenericValue&lt; Encoding, Allocator &gt;::Object::members</definition>
+        <argsstring></argsstring>
+        <name>members</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1663" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1663" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_generic_value_1_1_object_1a10da3d9035961100ed11f955a4afd2b6" prot="public" static="no" mutable="no">
+        <type><ref refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" kindref="member">SizeType</ref></type>
+        <definition>SizeType GenericValue&lt; Encoding, Allocator &gt;::Object::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1664" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1664" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_generic_value_1_1_object_1ab22a81c7ac57baf0d4ea343dfd6d8b33" prot="public" static="no" mutable="no">
+        <type><ref refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" kindref="member">SizeType</ref></type>
+        <definition>SizeType GenericValue&lt; Encoding, Allocator &gt;::Object::capacity</definition>
+        <argsstring></argsstring>
+        <name>capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1665" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1665" bodyend="-1"/>
+        <referencedby refid="class_generic_value_1a386708557555e6389184de608af5e6a6" compoundref="document_8h" startline="625" endline="628">GenericValue&lt; Encoding, Allocator &gt;::operator=</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1775">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Object</label>
+        <link refid="struct_generic_value_1_1_object"/>
+        <childnode refid="1776" relation="usage">
+          <edgelabel>+members</edgelabel>
+        </childnode>
+      </node>
+      <node id="1776">
+        <label>GenericMember&lt; Encoding, Allocator &gt;</label>
+        <link refid="struct_generic_member"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1662" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1662" bodyend="1666"/>
+    <listofallmembers>
+      <member refid="struct_generic_value_1_1_object_1ab22a81c7ac57baf0d4ea343dfd6d8b33" prot="public" virt="non-virtual"><scope>GenericValue::Object</scope><name>capacity</name></member>
+      <member refid="struct_generic_value_1_1_object_1ab51b8366577cb12f0280e4a6d7dab926" prot="public" virt="non-virtual"><scope>GenericValue::Object</scope><name>members</name></member>
+      <member refid="struct_generic_value_1_1_object_1a10da3d9035961100ed11f955a4afd2b6" prot="public" virt="non-virtual"><scope>GenericValue::Object</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

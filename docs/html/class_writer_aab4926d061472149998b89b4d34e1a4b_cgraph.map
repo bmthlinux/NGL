@@ -1,0 +1,5 @@
+<map id="Writer::WriteString" name="Writer::WriteString">
+<area shape="rect" id="node2" href="$struct_generic_string_stream.html#a87d794a70cf132f32521fb2b145ba58d" title="GenericStringStream\l::Peek" alt="" coords="184,5,331,46"/>
+<area shape="rect" id="node3" href="$struct_generic_string_stream.html#a0d26e3e77e4fca64a87c2d71f48ac5e5" title="GenericStringStream\l::Take" alt="" coords="184,70,331,111"/>
+<area shape="rect" id="node4" href="$struct_generic_string_stream.html#a71dde3ded678912be1ef56376a72a653" title="GenericStringStream\l::Tell" alt="" coords="184,135,331,177"/>
+</map>

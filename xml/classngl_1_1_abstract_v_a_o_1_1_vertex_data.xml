@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classngl_1_1_abstract_v_a_o_1_1_vertex_data" kind="class" language="C++" prot="public">
+    <compoundname>ngl::AbstractVAO::VertexData</compoundname>
+    <derivedcompoundref refid="classngl_1_1_simple_index_v_a_o_1_1_vertex_data" prot="public" virt="non-virtual">ngl::SimpleIndexVAO::VertexData</derivedcompoundref>
+    <includes refid="_abstract_v_a_o_8h" local="no">AbstractVAO.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classngl_1_1_abstract_v_a_o_1_1_vertex_data_1ac70e6ea1e79a22adac0ebfff20aab5ff" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t ngl::AbstractVAO::VertexData::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractVAO.h" line="43" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractVAO.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_multi_buffer_v_a_o_1ae4cefb054144526101b2c2d20a2db3cd" compoundref="_multi_buffer_v_a_o_8cpp" startline="40" endline="55">ngl::MultiBufferVAO::setData</referencedby>
+        <referencedby refid="classngl_1_1_simple_index_v_a_o_1ad5a321670bf62b35793a8576d43c8c8c" compoundref="_simple_index_v_a_o_8cpp" startline="39" endline="71">ngl::SimpleIndexVAO::setData</referencedby>
+        <referencedby refid="classngl_1_1_simple_v_a_o_1a368172998936ad5dfd7201d75bd3e421" compoundref="_simple_v_a_o_8cpp" startline="37" endline="54">ngl::SimpleVAO::setData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_v_a_o_1_1_vertex_data_1aced95e3e8893a259344de637d0dd7d72" prot="public" static="no" mutable="no">
+        <type>const <ref refid="glew_8h_1a31aeedaeef29442c9c015ab355c8f5ab" kindref="member">GLfloat</ref> &amp;</type>
+        <definition>const GLfloat&amp; ngl::AbstractVAO::VertexData::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractVAO.h" line="44" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractVAO.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_multi_buffer_v_a_o_1ae4cefb054144526101b2c2d20a2db3cd" compoundref="_multi_buffer_v_a_o_8cpp" startline="40" endline="55">ngl::MultiBufferVAO::setData</referencedby>
+        <referencedby refid="classngl_1_1_simple_index_v_a_o_1ad5a321670bf62b35793a8576d43c8c8c" compoundref="_simple_index_v_a_o_8cpp" startline="39" endline="71">ngl::SimpleIndexVAO::setData</referencedby>
+        <referencedby refid="classngl_1_1_simple_v_a_o_1a368172998936ad5dfd7201d75bd3e421" compoundref="_simple_v_a_o_8cpp" startline="37" endline="54">ngl::SimpleVAO::setData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_v_a_o_1_1_vertex_data_1a3aea6d6bc943b07efe4c44bf5dd4d2a9" prot="public" static="no" mutable="no">
+        <type><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref></type>
+        <definition>GLenum ngl::AbstractVAO::VertexData::m_mode</definition>
+        <argsstring></argsstring>
+        <name>m_mode</name>
+        <initializer>=<ref refid="glew_8h_1ab7dffdc215fbbe75b6ccacfecfc14648" kindref="member">GL_STATIC_DRAW</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractVAO.h" line="45" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractVAO.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_multi_buffer_v_a_o_1ae4cefb054144526101b2c2d20a2db3cd" compoundref="_multi_buffer_v_a_o_8cpp" startline="40" endline="55">ngl::MultiBufferVAO::setData</referencedby>
+        <referencedby refid="classngl_1_1_simple_index_v_a_o_1ad5a321670bf62b35793a8576d43c8c8c" compoundref="_simple_index_v_a_o_8cpp" startline="39" endline="71">ngl::SimpleIndexVAO::setData</referencedby>
+        <referencedby refid="classngl_1_1_simple_v_a_o_1a368172998936ad5dfd7201d75bd3e421" compoundref="_simple_v_a_o_8cpp" startline="37" endline="54">ngl::SimpleVAO::setData</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngl_1_1_abstract_v_a_o_1_1_vertex_data_1aee865927f13163787449f4afc2ceaf1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ngl::AbstractVAO::VertexData::VertexData</definition>
+        <argsstring>(size_t _size, const GLfloat &amp;_data, GLenum _mode=GL_STATIC_DRAW)</argsstring>
+        <name>VertexData</name>
+        <param>
+          <type>size_t</type>
+          <declname>_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glew_8h_1a31aeedaeef29442c9c015ab355c8f5ab" kindref="member">GLfloat</ref> &amp;</type>
+          <declname>_data</declname>
+        </param>
+        <param>
+          <type><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref></type>
+          <declname>_mode</declname>
+          <defval><ref refid="glew_8h_1ab7dffdc215fbbe75b6ccacfecfc14648" kindref="member">GL_STATIC_DRAW</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractVAO.h" line="40" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractVAO.h" bodystart="40" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2066">
+        <label>ngl::AbstractVAO::VertexData</label>
+        <link refid="classngl_1_1_abstract_v_a_o_1_1_vertex_data"/>
+      </node>
+      <node id="2067">
+        <label>ngl::SimpleIndexVAO::VertexData</label>
+        <link refid="classngl_1_1_simple_index_v_a_o_1_1_vertex_data"/>
+        <childnode refid="2066" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2069">
+        <label>size_t</label>
+      </node>
+      <node id="2068">
+        <label>ngl::AbstractVAO::VertexData</label>
+        <link refid="classngl_1_1_abstract_v_a_o_1_1_vertex_data"/>
+        <childnode refid="2069" relation="usage">
+          <edgelabel>+m_size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/AbstractVAO.h" line="38" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractVAO.h" bodystart="37" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classngl_1_1_abstract_v_a_o_1_1_vertex_data_1aced95e3e8893a259344de637d0dd7d72" prot="public" virt="non-virtual"><scope>ngl::AbstractVAO::VertexData</scope><name>m_data</name></member>
+      <member refid="classngl_1_1_abstract_v_a_o_1_1_vertex_data_1a3aea6d6bc943b07efe4c44bf5dd4d2a9" prot="public" virt="non-virtual"><scope>ngl::AbstractVAO::VertexData</scope><name>m_mode</name></member>
+      <member refid="classngl_1_1_abstract_v_a_o_1_1_vertex_data_1ac70e6ea1e79a22adac0ebfff20aab5ff" prot="public" virt="non-virtual"><scope>ngl::AbstractVAO::VertexData</scope><name>m_size</name></member>
+      <member refid="classngl_1_1_abstract_v_a_o_1_1_vertex_data_1aee865927f13163787449f4afc2ceaf1b" prot="public" virt="non-virtual"><scope>ngl::AbstractVAO::VertexData</scope><name>VertexData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

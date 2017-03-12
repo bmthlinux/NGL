@@ -1,0 +1,9 @@
+<map id="ngl::Mat4::translate" name="ngl::Mat4::translate">
+<area shape="rect" id="node2" href="$classngl_1_1_transformation.html#a8ec1f9a99975802624aee9f0125241e2" title="method to compute the matrix, transpose and inverse matrix. set the m_bIsMatrixComputed variable to t..." alt="" coords="190,169,327,210"/>
+<area shape="rect" id="node3" href="$classngl_1_1_transformation.html#a6881e69cde5c7ba1e1da39e922b7fff6" title="Constructor. " alt="" coords="406,5,543,46"/>
+<area shape="rect" id="node4" href="$classngl_1_1_transformation.html#a429f78da7e2d45e245166e11746b64ca" title="a method to set all the transforms to the identity " alt="" coords="406,70,543,111"/>
+<area shape="rect" id="node5" href="$classngl_1_1_transformation.html#afc5b7e11d9ffbf1b442d8fcb0c392825" title="*= operator " alt="" coords="406,135,543,177"/>
+<area shape="rect" id="node6" href="$classngl_1_1_transformation.html#ac555db268e028953a2e0d162704111ca" title="operator for Transform multiplication will do a matrix multiplication on each of the matrices ..." alt="" coords="406,201,543,242"/>
+<area shape="rect" id="node7" href="$classngl_1_1_transformation.html#a360dc0c8ed23a4c50303145c5e50bd6e" title="load the current transform matrix to the shader " alt="" coords="400,266,549,307"/>
+<area shape="rect" id="node8" href="$classngl_1_1_transformation.html#af3e633320652186de7028fee596e102a" title="load the current * global transform matrix to the shader " alt="" coords="376,332,573,388"/>
+</map>

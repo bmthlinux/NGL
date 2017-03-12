@@ -1,0 +1,5 @@
+<map id="SetValueByPointer" name="SetValueByPointer">
+<area shape="rect" id="node2" href="$class_generic_pointer.html#aaf4d7d852098878d24188d134182d42f" title="Append a name token without length, and return a new Pointer. " alt="" coords="187,5,381,46"/>
+<area shape="rect" id="node3" href="$class_generic_pointer.html#adf0aa776e072b41d301e2a834ac2c2b5" title="Set a value in a subtree, with move semantics. " alt="" coords="429,96,568,123"/>
+<area shape="rect" id="node4" href="$pointer_8h.html#aa1a07d61994bc13f68535428be4bbe66" title="SetValueByPointer" alt="" coords="217,121,351,148"/>
+</map>

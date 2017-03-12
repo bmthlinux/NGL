@@ -1,0 +1,1234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_generic_value" kind="class" language="C++" prot="public">
+    <compoundname>GenericValue</compoundname>
+    <derivedcompoundref refid="class_generic_document" prot="public" virt="non-virtual">GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;</derivedcompoundref>
+    <includes refid="document_8h" local="no">document.h</includes>
+    <innerclass refid="struct_generic_value_1_1_array" prot="public">GenericValue::Array</innerclass>
+    <innerclass refid="union_generic_value_1_1_data" prot="public">GenericValue::Data</innerclass>
+    <innerclass refid="union_generic_value_1_1_number" prot="public">GenericValue::Number</innerclass>
+    <innerclass refid="struct_generic_value_1_1_object" prot="public">GenericValue::Object</innerclass>
+    <innerclass refid="struct_generic_value_1_1_short_string" prot="public">GenericValue::ShortString</innerclass>
+    <innerclass refid="struct_generic_value_1_1_string" prot="public">GenericValue::String</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Encoding</declname>
+        <defname>Encoding</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>Allocator</declname>
+        <defname>Allocator</defname>
+        <defval><ref refid="class_memory_pool_allocator" kindref="compound">MemoryPoolAllocator</ref>&lt;&gt;</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="user-defined">
+      <header>Constructors and destructor.</header>
+      <memberdef kind="function" id="class_generic_value_1ab0205d57176d83814ea4e4598c596fe8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericValue&lt; Encoding, Allocator &gt;::GenericValue</definition>
+        <argsstring>() RAPIDJSON_NOEXCEPT</argsstring>
+        <name>GenericValue</name>
+        <briefdescription>
+<para>Default constructor creates a null value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="439" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="439" bodyend="439"/>
+        <references refid="class_generic_value_1ad0f9ce0bc0d1714678a77a2295da420c" compoundref="document_8h" startline="1754">GenericValue&lt; Encoding, Allocator &gt;::flags_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1a83c8f84b8e61f2f40414b703b75aea61" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericValue&lt; Encoding, Allocator &gt;::GenericValue</definition>
+        <argsstring>(Type type) RAPIDJSON_NOEXCEPT</argsstring>
+        <name>GenericValue</name>
+        <param>
+          <type><ref refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7" kindref="member">Type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with JSON value type. </para>        </briefdescription>
+        <detaileddescription>
+<para>This creates a Value of specified type with default content. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Default content for number is zero. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="469" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="469" bodyend="480"/>
+        <references refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7afc9f813b7aaf71911bdae20a86b2702d" compoundref="rapidjson_8h" startline="649">kNumberType</references>
+        <references refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7a2d823b89b055bc743d05c03183d3f338" compoundref="rapidjson_8h" startline="648">kStringType</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1a5161c0c98ba9144c50a38acde28a5ede" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SourceAllocator</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>GenericValue&lt; Encoding, Allocator &gt;::GenericValue</definition>
+        <argsstring>(const GenericValue&lt; Encoding, SourceAllocator &gt; &amp;rhs, Allocator &amp;allocator)</argsstring>
+        <name>GenericValue</name>
+        <param>
+          <type>const <ref refid="class_generic_value" kindref="compound">GenericValue</ref>&lt; Encoding, SourceAllocator &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>Allocator &amp;</type>
+          <declname>allocator</declname>
+        </param>
+        <briefdescription>
+<para>Explicit copy constructor (with allocator) </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates a copy of a Value by using the given Allocator <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>SourceAllocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>allocator of <computeroutput>rhs</computeroutput> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to copy from (read-only) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>allocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Allocator for allocating copied elements and buffers. Commonly use <ref refid="class_generic_document_1aa4609d6b19f86aec1a6b96edf2c27686" kindref="member">GenericDocument::GetAllocator()</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>CopyFrom() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="490" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2083" bodyend="2105"/>
+        <references refid="class_generic_value_1aaf80f2c91d26fdde60b9edeeecd3509f" compoundref="document_8h" startline="1753">GenericValue&lt; Encoding, Allocator &gt;::data_</references>
+        <references refid="class_generic_value_1ad0f9ce0bc0d1714678a77a2295da420c" compoundref="document_8h" startline="1754">GenericValue&lt; Encoding, Allocator &gt;::flags_</references>
+        <references refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7af41527d6925efa3c5c3dadb23dfef7c8" compoundref="rapidjson_8h" startline="647">kArrayType</references>
+        <references refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a5d26a84f26833eafd0028c0102a388a9" compoundref="document_8h" startline="1601">GenericValue&lt; Encoding, Allocator &gt;::kConstStringFlag</references>
+        <references refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7a146f46700e905e8df96a6a90b5c7640f" compoundref="rapidjson_8h" startline="646">kObjectType</references>
+        <references refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7a2d823b89b055bc743d05c03183d3f338" compoundref="rapidjson_8h" startline="648">kStringType</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf18f052a98b9f5df5448d39484b743c1" compoundref="rapidjson_8h" startline="119">RAPIDJSON_NAMESPACE_END</references>
+        <references refid="class_generic_value_1abb8ea2dfbe74ff4ee7dac6be31317f81" compoundref="document_8h" startline="1731" endline="1735">GenericValue&lt; Encoding, Allocator &gt;::RawAssign</references>
+        <references refid="class_generic_value_1a1451603922dcdf34976f125dc60f70ee" compoundref="document_8h" startline="1707" endline="1711">GenericValue&lt; Encoding, Allocator &gt;::SetStringRaw</references>
+        <references refid="class_generic_document_1ad2169359326bdf8a7180338fec77e77f" compoundref="document_8h" startline="2072">GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::stack_</references>
+        <references refid="document_8h_1aa6b9fd9f6aa49405a574c362ba9af6b5" compoundref="document_8h" startline="348" endline="350">StringRef</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1a88f02daf621c42b96d49d608fa9214de" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>GenericValue&lt; Encoding, Allocator &gt;::GenericValue</definition>
+        <argsstring>(T b, RAPIDJSON_ENABLEIF((internal::IsSame&lt; T, bool &gt;))) RAPIDJSON_NOEXCEPT</argsstring>
+        <name>GenericValue</name>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>RAPIDJSON_ENABLEIF((internal::IsSame&lt; T, bool &gt;))</type>
+        </param>
+        <briefdescription>
+<para>Constructor for boolean value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This constructor is limited to <emphasis>real</emphasis> boolean values and rejects implicitly converted types like arbitrary pointers. Use an explicit cast to <computeroutput>bool</computeroutput>, if you want to construct a boolean JSON value in such cases. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="500" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="500" bodyend="507"/>
+        <references refid="rapidjson_8h_1af95188da1d8eb6d4b148fe9ce71cd7c4" compoundref="rapidjson_8h" startline="375">RAPIDJSON_STATIC_ASSERT</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1aafc754ade38421c179f5c8933ecbaf45" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericValue&lt; Encoding, Allocator &gt;::GenericValue</definition>
+        <argsstring>(int i) RAPIDJSON_NOEXCEPT</argsstring>
+        <name>GenericValue</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for int value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="510" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="510" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1a972bff6c56ac3d04622ff7fad8d98331" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericValue&lt; Encoding, Allocator &gt;::GenericValue</definition>
+        <argsstring>(unsigned u) RAPIDJSON_NOEXCEPT</argsstring>
+        <name>GenericValue</name>
+        <param>
+          <type>unsigned</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for unsigned value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="517" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="517" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1a964b69f1d2596f75ded5421b6db01a14" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericValue&lt; Encoding, Allocator &gt;::GenericValue</definition>
+        <argsstring>(int64_t i64) RAPIDJSON_NOEXCEPT</argsstring>
+        <name>GenericValue</name>
+        <param>
+          <type><ref refid="stdint_8h_1a414156feea104f8f75b4ed9e3121b2f6" kindref="member">int64_t</ref></type>
+          <declname>i64</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for int64_t value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="524" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="524" bodyend="535"/>
+        <references refid="rapidjson_8h_1aaee1245f375a71be1ac9b8a07ba5fb8f" compoundref="rapidjson_8h" startline="261">RAPIDJSON_UINT64_C2</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1ad04805a57f5050c8e04be469ba64d6f3" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericValue&lt; Encoding, Allocator &gt;::GenericValue</definition>
+        <argsstring>(uint64_t u64) RAPIDJSON_NOEXCEPT</argsstring>
+        <name>GenericValue</name>
+        <param>
+          <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+          <declname>u64</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for uint64_t value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="538" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="538" bodyend="546"/>
+        <references refid="rapidjson_8h_1aaee1245f375a71be1ac9b8a07ba5fb8f" compoundref="rapidjson_8h" startline="261">RAPIDJSON_UINT64_C2</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1a267d05b7e98c3507908eaf085fe41155" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericValue&lt; Encoding, Allocator &gt;::GenericValue</definition>
+        <argsstring>(double d) RAPIDJSON_NOEXCEPT</argsstring>
+        <name>GenericValue</name>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for double value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="549" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="549" bodyend="549"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1a4d9af98141360cd801daab4ed1ca2c91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericValue&lt; Encoding, Allocator &gt;::GenericValue</definition>
+        <argsstring>(const Ch *s, SizeType length) RAPIDJSON_NOEXCEPT</argsstring>
+        <name>GenericValue</name>
+        <param>
+          <type>const <ref refid="class_generic_value_1ade0e0ce64ccd5d852da57a35e720bafb" kindref="member">Ch</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" kindref="member">SizeType</ref></type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for constant string (i.e. do not make a copy of string) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="552" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="552" bodyend="552"/>
+        <references refid="document_8h_1aa6b9fd9f6aa49405a574c362ba9af6b5" compoundref="document_8h" startline="348" endline="350">StringRef</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1abb2887958974fef1b2b5c8e32cc72ddb" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericValue&lt; Encoding, Allocator &gt;::GenericValue</definition>
+        <argsstring>(StringRefType s) RAPIDJSON_NOEXCEPT</argsstring>
+        <name>GenericValue</name>
+        <param>
+          <type><ref refid="class_generic_value_1a32e0f30ee278072374c8168b14d3317f" kindref="member">StringRefType</ref></type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for constant string (i.e. do not make a copy of string) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="555" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="555" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1a9ec2c7cda8c8845acfa3565c6b1b4e10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericValue&lt; Encoding, Allocator &gt;::GenericValue</definition>
+        <argsstring>(const Ch *s, SizeType length, Allocator &amp;allocator)</argsstring>
+        <name>GenericValue</name>
+        <param>
+          <type>const <ref refid="class_generic_value_1ade0e0ce64ccd5d852da57a35e720bafb" kindref="member">Ch</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" kindref="member">SizeType</ref></type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>Allocator &amp;</type>
+          <declname>allocator</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for copy-string (i.e. do make a copy of string) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="558" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="558" bodyend="558"/>
+        <references refid="document_8h_1aa6b9fd9f6aa49405a574c362ba9af6b5" compoundref="document_8h" startline="348" endline="350">StringRef</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1a9b72b2e3347d4cd77b16c3b45e8decf1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericValue&lt; Encoding, Allocator &gt;::GenericValue</definition>
+        <argsstring>(const Ch *s, Allocator &amp;allocator)</argsstring>
+        <name>GenericValue</name>
+        <param>
+          <type>const <ref refid="class_generic_value_1ade0e0ce64ccd5d852da57a35e720bafb" kindref="member">Ch</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>Allocator &amp;</type>
+          <declname>allocator</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for copy-string (i.e. do make a copy of string) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="561" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="561" bodyend="561"/>
+        <references refid="document_8h_1aa6b9fd9f6aa49405a574c362ba9af6b5" compoundref="document_8h" startline="348" endline="350">StringRef</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1a213ba89ef5ef961a5e655bd8c78ac9f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericValue&lt; Encoding, Allocator &gt;::~GenericValue</definition>
+        <argsstring>()</argsstring>
+        <name>~GenericValue</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Need to destruct elements of array, members of object, or copy-string. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="573" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="573" bodyend="596"/>
+        <referencedby refid="class_generic_value_1a386708557555e6389184de608af5e6a6" compoundref="document_8h" startline="625" endline="628">GenericValue&lt; Encoding, Allocator &gt;::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1ac5bfd54b6bdea215716df69c501d5cf3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GenericValue&lt; Encoding, Allocator &gt;::GenericValue</definition>
+        <argsstring>(const GenericValue &amp;rhs)</argsstring>
+        <name>GenericValue</name>
+        <param>
+          <type>const <ref refid="class_generic_value" kindref="compound">GenericValue</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor is not permitted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="450" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Assignment operators</header>
+      <memberdef kind="function" id="class_generic_value_1a9018a40d7c52efc00daf803c51d3236c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_value" kindref="compound">GenericValue</ref> &amp;</type>
+        <definition>GenericValue&amp; GenericValue&lt; Encoding, Allocator &gt;::operator=</definition>
+        <argsstring>(GenericValue &amp;rhs) RAPIDJSON_NOEXCEPT</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="class_generic_value" kindref="compound">GenericValue</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Assignment with move semantics. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source of the assignment. It will become a null value after assignment. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="606" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="606" bodyend="611"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+        <referencedby refid="class_generic_document_1a14097c833bed1a9c7be064ea619c887f" compoundref="document_8h" startline="2044" endline="2048">GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::EndArray</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1a386708557555e6389184de608af5e6a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_value" kindref="compound">GenericValue</ref> &amp;</type>
+        <definition>GenericValue&amp; GenericValue&lt; Encoding, Allocator &gt;::operator=</definition>
+        <argsstring>(StringRefType str) RAPIDJSON_NOEXCEPT</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="class_generic_value_1a32e0f30ee278072374c8168b14d3317f" kindref="member">StringRefType</ref></type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Assignment of constant string reference (no copy) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Constant string reference to be assigned </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This overload is needed to avoid clashes with the generic primitive type assignment overload below. </para></simplesect>
+<simplesect kind="see"><para><ref refid="struct_generic_string_ref" kindref="compound">GenericStringRef</ref>, operator=(T) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="625" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="625" bodyend="628"/>
+        <references refid="struct_generic_value_1_1_object_1ab22a81c7ac57baf0d4ea343dfd6d8b33" compoundref="document_8h" startline="1665">GenericValue&lt; Encoding, Allocator &gt;::Object::capacity</references>
+        <references refid="class_generic_value_1aaf80f2c91d26fdde60b9edeeecd3509f" compoundref="document_8h" startline="1753">GenericValue&lt; Encoding, Allocator &gt;::data_</references>
+        <references refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7af41527d6925efa3c5c3dadb23dfef7c8" compoundref="rapidjson_8h" startline="647">kArrayType</references>
+        <references refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7a062b8296274a258acf0e142868684c54" compoundref="rapidjson_8h" startline="644">kFalseType</references>
+        <references refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7aa09befbfb4f2e1409f237817979d8087" compoundref="rapidjson_8h" startline="643">kNullType</references>
+        <references refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7afc9f813b7aaf71911bdae20a86b2702d" compoundref="rapidjson_8h" startline="649">kNumberType</references>
+        <references refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7a146f46700e905e8df96a6a90b5c7640f" compoundref="rapidjson_8h" startline="646">kObjectType</references>
+        <references refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7a2d823b89b055bc743d05c03183d3f338" compoundref="rapidjson_8h" startline="648">kStringType</references>
+        <references refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7a209434e5edd66630011ca19d710d7cd6" compoundref="rapidjson_8h" startline="645">kTrueType</references>
+        <references refid="struct_generic_member_1a7124f7ccd67421533d33139938604fac" compoundref="document_8h" startline="83">GenericMember&lt; Encoding, Allocator &gt;::name</references>
+        <references refid="namespacengl_1a2828b006f18ee4614b5bcd5957b33c7e" compoundref="_mat3_8h" startline="297" endline="307">ngl::operator==</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+        <references refid="pointer_8h_1a7eb8633670d0e7df80a9fa3a508dd1d2">RAPIDJSON_DISABLEIF_RETURN</references>
+        <references refid="class_generic_value_1abb8ea2dfbe74ff4ee7dac6be31317f81" compoundref="document_8h" startline="1731" endline="1735">GenericValue&lt; Encoding, Allocator &gt;::RawAssign</references>
+        <references refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" compoundref="rapidjson_8h" startline="322">SizeType</references>
+        <references refid="class_generic_value_1a5ff908402687e14f5f14552ec58113a4" compoundref="document_8h" startline="1738" endline="1751">GenericValue&lt; Encoding, Allocator &gt;::StringEqual</references>
+        <references refid="document_8h_1aa6b9fd9f6aa49405a574c362ba9af6b5" compoundref="document_8h" startline="348" endline="350">StringRef</references>
+        <references refid="namespaceinternal_1a86326fb0c9d7c7ea8edd7deedbb2b26e" compoundref="strfunc_8h" startline="30" endline="34">internal::StrLen</references>
+        <references refid="namespaceinternal_1a72b2c71d36273b9691487f58c671ce04" compoundref="swap_8h" startline="28" endline="32">internal::Swap</references>
+        <references refid="class_generic_value_1a213ba89ef5ef961a5e655bd8c78ac9f4" compoundref="document_8h" startline="573" endline="596">GenericValue&lt; Encoding, Allocator &gt;::~GenericValue</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484" prot="public" static="no">
+        <name>@26</name>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ac48966386b231124da7c3fb870e237ee" prot="public">
+          <name>kBoolFlag</name>
+          <initializer>= 0x100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484aa4776df2584fe4f341b183cdf3e00a79" prot="public">
+          <name>kNumberFlag</name>
+          <initializer>= 0x200</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ae3fb211193e0067efaddeb5a067120fb" prot="public">
+          <name>kIntFlag</name>
+          <initializer>= 0x400</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a7eba561e6cc6dcd704f907c5a005f3ce" prot="public">
+          <name>kUintFlag</name>
+          <initializer>= 0x800</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a87c567a71dfa5a63363d82d32346884a" prot="public">
+          <name>kInt64Flag</name>
+          <initializer>= 0x1000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ac9200c78f749b6efaae640167a370c94" prot="public">
+          <name>kUint64Flag</name>
+          <initializer>= 0x2000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a70c741e7c488835892aa857f50090d7c" prot="public">
+          <name>kDoubleFlag</name>
+          <initializer>= 0x4000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484af3bf3661275a38c86addba900c52dccb" prot="public">
+          <name>kStringFlag</name>
+          <initializer>= 0x100000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a10ef921aef1773bc1f88796bf1828f92" prot="public">
+          <name>kCopyFlag</name>
+          <initializer>= 0x200000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ae58a76d504c6a67566aebfa4a6bd2e55" prot="public">
+          <name>kInlineStrFlag</name>
+          <initializer>= 0x400000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a8c5507cf143edac6e50abec2d89cc40d" prot="public">
+          <name>kNullFlag</name>
+          <initializer>= kNullType</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a75dbcdbacc82f9379c602f0b6c41cf07" prot="public">
+          <name>kTrueFlag</name>
+          <initializer>= kTrueType | kBoolFlag</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a66d3877b074bb1a0455a6f6d3f7f91a3" prot="public">
+          <name>kFalseFlag</name>
+          <initializer>= kFalseType | kBoolFlag</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484acfe8b720220d0a2e378683367386cbaf" prot="public">
+          <name>kNumberIntFlag</name>
+          <initializer>= kNumberType | kNumberFlag | kIntFlag | kInt64Flag</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ae8c6c6286edf9c309e77af0ea0cf039c" prot="public">
+          <name>kNumberUintFlag</name>
+          <initializer>= kNumberType | kNumberFlag | kUintFlag | kUint64Flag | kInt64Flag</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ad117eb41bb8015a76aadf6149bbd8ce5" prot="public">
+          <name>kNumberInt64Flag</name>
+          <initializer>= kNumberType | kNumberFlag | kInt64Flag</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484aaa1ee6a546d4db67f4bdef41d1f54f02" prot="public">
+          <name>kNumberUint64Flag</name>
+          <initializer>= kNumberType | kNumberFlag | kUint64Flag</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a29bc91c155577923abd8f19aa050058b" prot="public">
+          <name>kNumberDoubleFlag</name>
+          <initializer>= kNumberType | kNumberFlag | kDoubleFlag</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ab7805b1908fd181afc8d70fe07b17e18" prot="public">
+          <name>kNumberAnyFlag</name>
+          <initializer>= kNumberType | kNumberFlag | kIntFlag | kInt64Flag | kUintFlag | kUint64Flag | kDoubleFlag</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a5d26a84f26833eafd0028c0102a388a9" prot="public">
+          <name>kConstStringFlag</name>
+          <initializer>= kStringType | kStringFlag</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a10c83f7f191dce81bb0273adc0d838de" prot="public">
+          <name>kCopyStringFlag</name>
+          <initializer>= kStringType | kStringFlag | kCopyFlag</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484aca24fa09485fa10b17071509a985ff01" prot="public">
+          <name>kShortStringFlag</name>
+          <initializer>= kStringType | kStringFlag | kCopyFlag | kInlineStrFlag</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484aba5811d4baeb56dc793a6510fe28748c" prot="public">
+          <name>kObjectFlag</name>
+          <initializer>= kObjectType</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484af7d99965ba807c718b482a9a7fb28b47" prot="public">
+          <name>kArrayFlag</name>
+          <initializer>= kArrayType</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a793e0bc40e0abe1ed8bcb3e6fbba65c2" prot="public">
+          <name>kTypeMask</name>
+          <initializer>= 0xFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1579" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1579" bodyend="1608"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_value_1a7ccf27c44058b4c11c3efc6473afb886" prot="public" static="no">
+        <type><ref refid="struct_generic_member" kindref="compound">GenericMember</ref>&lt; Encoding, Allocator &gt;</type>
+        <definition>typedef GenericMember&lt;Encoding, Allocator&gt; GenericValue&lt; Encoding, Allocator &gt;::Member</definition>
+        <argsstring></argsstring>
+        <name>Member</name>
+        <briefdescription>
+<para>Name-value pair in an object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="424" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_value_1a28c2cb8d04d12566c1af37597a46d209" prot="public" static="no">
+        <type>Encoding</type>
+        <definition>typedef Encoding GenericValue&lt; Encoding, Allocator &gt;::EncodingType</definition>
+        <argsstring></argsstring>
+        <name>EncodingType</name>
+        <briefdescription>
+<para>Encoding type from template parameter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="425" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_value_1a7beb83860c1b8d2a0e2a7da9796b2fa1" prot="public" static="no">
+        <type>Allocator</type>
+        <definition>typedef Allocator GenericValue&lt; Encoding, Allocator &gt;::AllocatorType</definition>
+        <argsstring></argsstring>
+        <name>AllocatorType</name>
+        <briefdescription>
+<para>Allocator type from template parameter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="426" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_value_1ade0e0ce64ccd5d852da57a35e720bafb" prot="public" static="no">
+        <type>Encoding::Ch</type>
+        <definition>typedef Encoding::Ch GenericValue&lt; Encoding, Allocator &gt;::Ch</definition>
+        <argsstring></argsstring>
+        <name>Ch</name>
+        <briefdescription>
+<para>Character type derived from Encoding. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="427" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_value_1a32e0f30ee278072374c8168b14d3317f" prot="public" static="no">
+        <type><ref refid="struct_generic_string_ref" kindref="compound">GenericStringRef</ref>&lt; <ref refid="class_generic_value_1ade0e0ce64ccd5d852da57a35e720bafb" kindref="member">Ch</ref> &gt;</type>
+        <definition>typedef GenericStringRef&lt;Ch&gt; GenericValue&lt; Encoding, Allocator &gt;::StringRefType</definition>
+        <argsstring></argsstring>
+        <name>StringRefType</name>
+        <briefdescription>
+<para>Reference to a constant string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="428" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_value_1a349b8faae61edc42b4289726820be439" prot="public" static="no">
+        <type><ref refid="class_generic_member_iterator" kindref="compound">GenericMemberIterator</ref>&lt; false, Encoding, Allocator &gt;::Iterator</type>
+        <definition>typedef GenericMemberIterator&lt;false,Encoding,Allocator&gt;::Iterator GenericValue&lt; Encoding, Allocator &gt;::MemberIterator</definition>
+        <argsstring></argsstring>
+        <name>MemberIterator</name>
+        <briefdescription>
+<para>Member iterator for iterating in object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="429" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_value_1aac08c3e660a9036d3dcb8b10ff6c61f4" prot="public" static="no">
+        <type><ref refid="class_generic_member_iterator" kindref="compound">GenericMemberIterator</ref>&lt; true, Encoding, Allocator &gt;::Iterator</type>
+        <definition>typedef GenericMemberIterator&lt;true,Encoding,Allocator&gt;::Iterator GenericValue&lt; Encoding, Allocator &gt;::ConstMemberIterator</definition>
+        <argsstring></argsstring>
+        <name>ConstMemberIterator</name>
+        <briefdescription>
+<para>Constant member iterator for iterating in object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="430" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_value_1aee30721a49688ba0f865f5d581eb6be9" prot="public" static="no">
+        <type><ref refid="class_generic_value" kindref="compound">GenericValue</ref> *</type>
+        <definition>typedef GenericValue* GenericValue&lt; Encoding, Allocator &gt;::ValueIterator</definition>
+        <argsstring></argsstring>
+        <name>ValueIterator</name>
+        <briefdescription>
+<para>Value iterator for iterating in array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="431" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_value_1a49010c6d6886f96ff0b0c51bccc7f6ea" prot="public" static="no">
+        <type>const <ref refid="class_generic_value" kindref="compound">GenericValue</ref> *</type>
+        <definition>typedef const GenericValue* GenericValue&lt; Encoding, Allocator &gt;::ConstValueIterator</definition>
+        <argsstring></argsstring>
+        <name>ConstValueIterator</name>
+        <briefdescription>
+<para>Constant value iterator for iterating in array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="432" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_value_1a43a39bb4fca9b9d3de3da6ac353d25ce" prot="public" static="no">
+        <type><ref refid="class_generic_value" kindref="compound">GenericValue</ref>&lt; Encoding, Allocator &gt;</type>
+        <definition>typedef GenericValue&lt;Encoding, Allocator&gt; GenericValue&lt; Encoding, Allocator &gt;::ValueType</definition>
+        <argsstring></argsstring>
+        <name>ValueType</name>
+        <briefdescription>
+<para>Value type of itself. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="433" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_generic_value_1ab05bc9e52e201a2867ea5bac141ee1ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+          </param>
+          <param>
+            <type>typename</type>
+          </param>
+          <param>
+            <type>typename</type>
+          </param>
+        </templateparamlist>
+        <type>friend class</type>
+        <definition>friend class GenericDocument</definition>
+        <argsstring></argsstring>
+        <name>GenericDocument</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1577" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1577" bodyend="-1"/>
+        <referencedby refid="class_generic_document_1a14097c833bed1a9c7be064ea619c887f" compoundref="document_8h" startline="2044" endline="2048">GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::EndArray</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_generic_value_1a188f57bdb1923c1fefe74baa995871a3" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" kindref="member">SizeType</ref></type>
+        <definition>const SizeType GenericValue&lt; Encoding, Allocator &gt;::kDefaultArrayCapacity</definition>
+        <argsstring></argsstring>
+        <name>kDefaultArrayCapacity</name>
+        <initializer>= 16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1610" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1610" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_generic_value_1a284d018914629aed9a4bd97fe2dc5899" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" kindref="member">SizeType</ref></type>
+        <definition>const SizeType GenericValue&lt; Encoding, Allocator &gt;::kDefaultObjectCapacity</definition>
+        <argsstring></argsstring>
+        <name>kDefaultObjectCapacity</name>
+        <initializer>= 16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1611" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1611" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_generic_value_1aaf80f2c91d26fdde60b9edeeecd3509f" prot="public" static="no" mutable="no">
+        <type><ref refid="union_generic_value_1_1_data" kindref="compound">Data</ref></type>
+        <definition>Data GenericValue&lt; Encoding, Allocator &gt;::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1753" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1753" bodyend="-1"/>
+        <referencedby refid="class_generic_value_1a386708557555e6389184de608af5e6a6" compoundref="document_8h" startline="625" endline="628">GenericValue&lt; Encoding, Allocator &gt;::operator=</referencedby>
+        <referencedby refid="class_generic_value_1abb8ea2dfbe74ff4ee7dac6be31317f81" compoundref="document_8h" startline="1731" endline="1735">GenericValue&lt; Encoding, Allocator &gt;::RawAssign</referencedby>
+        <referencedby refid="class_generic_value_1a5161c0c98ba9144c50a38acde28a5ede" compoundref="document_8h" startline="2083" endline="2105">GenericValue&lt; Encoding, Allocator &gt;::GenericValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_generic_value_1ad0f9ce0bc0d1714678a77a2295da420c" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned GenericValue&lt; Encoding, Allocator &gt;::flags_</definition>
+        <argsstring></argsstring>
+        <name>flags_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1754" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1754" bodyend="-1"/>
+        <referencedby refid="class_generic_value_1ab0205d57176d83814ea4e4598c596fe8" compoundref="document_8h" startline="439" endline="439">GenericValue&lt; Encoding, Allocator &gt;::GenericValue</referencedby>
+        <referencedby refid="class_generic_value_1abb8ea2dfbe74ff4ee7dac6be31317f81" compoundref="document_8h" startline="1731" endline="1735">GenericValue&lt; Encoding, Allocator &gt;::RawAssign</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_generic_value_1a4a4418a93777942e1fb7ea71f8aaf680" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>GenericValue&lt; Encoding, Allocator &gt;::RAPIDJSON_DISABLEIF_RETURN</definition>
+        <argsstring>((internal::IsPointer&lt; T &gt;),(GenericValue &amp;)) operator</argsstring>
+        <name>RAPIDJSON_DISABLEIF_RETURN</name>
+        <param>
+          <type>(internal::IsPointer&lt; T &gt;)</type>
+        </param>
+        <param>
+          <type>(<ref refid="class_generic_value" kindref="compound">GenericValue</ref> &amp;)</type>
+        </param>
+        <briefdescription>
+<para>Assignment with primitive types. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Either <ref refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7" kindref="member">Type</ref>, <computeroutput>int</computeroutput>, <computeroutput>unsigned</computeroutput>, <computeroutput>int64_t</computeroutput>, <computeroutput>uint64_t</computeroutput> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to be assigned.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The source type <computeroutput>T</computeroutput> explicitly disallows all pointer types, especially (<computeroutput>const</computeroutput>) <ref refid="class_generic_value_1ade0e0ce64ccd5d852da57a35e720bafb" kindref="member">Ch</ref>*. This helps avoiding implicitly referencing character strings with insufficient lifetime, use SetString(const Ch*, Allocator&amp;) (for copying) or <ref refid="namespacefmt_1ae5ed3b29f911650a12b4de3d14126c31" kindref="member">StringRef()</ref> (to explicitly mark the pointer as constant) instead. All other pointer types would implicitly convert to <computeroutput>bool</computeroutput>, use SetBool() instead.Set boolean value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="643" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1a8f5f309065479de40a16cf28a340da65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericValue&lt; Encoding, Allocator &gt;::SetArrayRaw</definition>
+        <argsstring>(GenericValue *values, SizeType count, Allocator &amp;allocator)</argsstring>
+        <name>SetArrayRaw</name>
+        <param>
+          <type><ref refid="class_generic_value" kindref="compound">GenericValue</ref> *</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type><ref refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" kindref="member">SizeType</ref></type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>Allocator &amp;</type>
+          <declname>allocator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1683" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1683" bodyend="1692"/>
+        <referencedby refid="class_generic_document_1a14097c833bed1a9c7be064ea619c887f" compoundref="document_8h" startline="2044" endline="2048">GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::EndArray</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1a26c8ec7d68858df1038506df7fcff22d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericValue&lt; Encoding, Allocator &gt;::SetObjectRaw</definition>
+        <argsstring>(Member *members, SizeType count, Allocator &amp;allocator)</argsstring>
+        <name>SetObjectRaw</name>
+        <param>
+          <type><ref refid="class_generic_value_1a7ccf27c44058b4c11c3efc6473afb886" kindref="member">Member</ref> *</type>
+          <declname>members</declname>
+        </param>
+        <param>
+          <type><ref refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" kindref="member">SizeType</ref></type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>Allocator &amp;</type>
+          <declname>allocator</declname>
+        </param>
+        <briefdescription>
+<para>Initialize this value as object with initial data, without calling destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1695" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1695" bodyend="1704"/>
+        <referencedby refid="class_generic_document_1a42f2df68f9c9d8b88a15b609716867d9" compoundref="document_8h" startline="2036" endline="2040">GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::EndObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1a1451603922dcdf34976f125dc60f70ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericValue&lt; Encoding, Allocator &gt;::SetStringRaw</definition>
+        <argsstring>(StringRefType s) RAPIDJSON_NOEXCEPT</argsstring>
+        <name>SetStringRaw</name>
+        <param>
+          <type><ref refid="class_generic_value_1a32e0f30ee278072374c8168b14d3317f" kindref="member">StringRefType</ref></type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Initialize this value as constant string, without calling destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1707" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1707" bodyend="1711"/>
+        <referencedby refid="class_generic_value_1a5161c0c98ba9144c50a38acde28a5ede" compoundref="document_8h" startline="2083" endline="2105">GenericValue&lt; Encoding, Allocator &gt;::GenericValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1ad3d91db36dfdbfc1af40a79aae07723c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericValue&lt; Encoding, Allocator &gt;::SetStringRaw</definition>
+        <argsstring>(StringRefType s, Allocator &amp;allocator)</argsstring>
+        <name>SetStringRaw</name>
+        <param>
+          <type><ref refid="class_generic_value_1a32e0f30ee278072374c8168b14d3317f" kindref="member">StringRefType</ref></type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>Allocator &amp;</type>
+          <declname>allocator</declname>
+        </param>
+        <briefdescription>
+<para>Initialize this value as copy string with initial data, without calling destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1714" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1714" bodyend="1728"/>
+        <references refid="struct_generic_string_ref_1a4a96d618744ad73f766a1551b1d517fe" compoundref="document_8h" startline="325">GenericStringRef&lt; CharType &gt;::length</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1abb8ea2dfbe74ff4ee7dac6be31317f81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericValue&lt; Encoding, Allocator &gt;::RawAssign</definition>
+        <argsstring>(GenericValue &amp;rhs) RAPIDJSON_NOEXCEPT</argsstring>
+        <name>RawAssign</name>
+        <param>
+          <type><ref refid="class_generic_value" kindref="compound">GenericValue</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Assignment without calling destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1731" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1731" bodyend="1735"/>
+        <references refid="class_generic_value_1aaf80f2c91d26fdde60b9edeeecd3509f" compoundref="document_8h" startline="1753">GenericValue&lt; Encoding, Allocator &gt;::data_</references>
+        <references refid="class_generic_value_1ad0f9ce0bc0d1714678a77a2295da420c" compoundref="document_8h" startline="1754">GenericValue&lt; Encoding, Allocator &gt;::flags_</references>
+        <referencedby refid="class_generic_value_1a386708557555e6389184de608af5e6a6" compoundref="document_8h" startline="625" endline="628">GenericValue&lt; Encoding, Allocator &gt;::operator=</referencedby>
+        <referencedby refid="class_generic_value_1a5161c0c98ba9144c50a38acde28a5ede" compoundref="document_8h" startline="2083" endline="2105">GenericValue&lt; Encoding, Allocator &gt;::GenericValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_value_1a5ff908402687e14f5f14552ec58113a4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SourceAllocator</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool GenericValue&lt; Encoding, Allocator &gt;::StringEqual</definition>
+        <argsstring>(const GenericValue&lt; Encoding, SourceAllocator &gt; &amp;rhs) const </argsstring>
+        <name>StringEqual</name>
+        <param>
+          <type>const <ref refid="class_generic_value" kindref="compound">GenericValue</ref>&lt; Encoding, SourceAllocator &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1738" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1738" bodyend="1751"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+        <references refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" compoundref="rapidjson_8h" startline="322">SizeType</references>
+        <referencedby refid="class_generic_value_1a386708557555e6389184de608af5e6a6" compoundref="document_8h" startline="625" endline="628">GenericValue&lt; Encoding, Allocator &gt;::operator=</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a JSON value. Use Value for <ref refid="struct_u_t_f8" kindref="compound">UTF8</ref> encoding and default allocator. </para>    </briefdescription>
+    <detaileddescription>
+<para>A JSON value can be one of 7 types. This class is a variant type supporting these types.</para><para>Use the Value if <ref refid="struct_u_t_f8" kindref="compound">UTF8</ref> and default allocator</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Encoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Encoding of the value. (Even non-string values need to have the same encoding in a document) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Allocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Allocator type for allocating memory of object, array and string. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1569">
+        <label>GenericDocument&lt; Encoding, Allocator &gt;</label>
+        <link refid="class_generic_document"/>
+        <childnode refid="1568" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1568">
+        <label>GenericValue&lt; Encoding, Allocator &gt;</label>
+        <link refid="class_generic_value"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1577">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Object</label>
+        <link refid="struct_generic_value_1_1_object"/>
+        <childnode refid="1578" relation="usage">
+          <edgelabel>+members</edgelabel>
+        </childnode>
+      </node>
+      <node id="1572">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::String</label>
+        <link refid="struct_generic_value_1_1_string"/>
+      </node>
+      <node id="1571">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Data</label>
+        <link refid="union_generic_value_1_1_data"/>
+        <childnode refid="1572" relation="usage">
+          <edgelabel>+s</edgelabel>
+        </childnode>
+        <childnode refid="1573" relation="usage">
+          <edgelabel>+a</edgelabel>
+        </childnode>
+        <childnode refid="1574" relation="usage">
+          <edgelabel>+n</edgelabel>
+        </childnode>
+        <childnode refid="1577" relation="usage">
+          <edgelabel>+o</edgelabel>
+        </childnode>
+        <childnode refid="1579" relation="usage">
+          <edgelabel>+ss</edgelabel>
+        </childnode>
+      </node>
+      <node id="1575">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Number::U</label>
+        <link refid="struct_generic_value_1_1_number_1_1_u"/>
+      </node>
+      <node id="1576">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Number::I</label>
+        <link refid="struct_generic_value_1_1_number_1_1_i"/>
+      </node>
+      <node id="1579">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::ShortString</label>
+        <link refid="struct_generic_value_1_1_short_string"/>
+      </node>
+      <node id="1578">
+        <label>GenericMember&lt; Encoding, Allocator &gt;</label>
+        <link refid="struct_generic_member"/>
+      </node>
+      <node id="1573">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Array</label>
+        <link refid="struct_generic_value_1_1_array"/>
+        <childnode refid="1570" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1570">
+        <label>GenericValue&lt; Encoding, Allocator &gt;</label>
+        <link refid="class_generic_value"/>
+        <childnode refid="1571" relation="usage">
+          <edgelabel>+data_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1574">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Number</label>
+        <link refid="union_generic_value_1_1_number"/>
+        <childnode refid="1575" relation="usage">
+          <edgelabel>+u</edgelabel>
+        </childnode>
+        <childnode refid="1576" relation="usage">
+          <edgelabel>+i</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="70" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="70" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="class_generic_value_1a7beb83860c1b8d2a0e2a7da9796b2fa1" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>AllocatorType</name></member>
+      <member refid="class_generic_value_1ade0e0ce64ccd5d852da57a35e720bafb" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>Ch</name></member>
+      <member refid="class_generic_value_1aac08c3e660a9036d3dcb8b10ff6c61f4" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>ConstMemberIterator</name></member>
+      <member refid="class_generic_value_1a49010c6d6886f96ff0b0c51bccc7f6ea" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>ConstValueIterator</name></member>
+      <member refid="class_generic_value_1aaf80f2c91d26fdde60b9edeeecd3509f" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>data_</name></member>
+      <member refid="class_generic_value_1a28c2cb8d04d12566c1af37597a46d209" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>EncodingType</name></member>
+      <member refid="class_generic_value_1ad0f9ce0bc0d1714678a77a2295da420c" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>flags_</name></member>
+      <member refid="class_generic_value_1ab05bc9e52e201a2867ea5bac141ee1ae" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>GenericDocument</name></member>
+      <member refid="class_generic_value_1ab0205d57176d83814ea4e4598c596fe8" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1ac5bfd54b6bdea215716df69c501d5cf3" prot="private" virt="non-virtual"><scope>GenericValue</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a83c8f84b8e61f2f40414b703b75aea61" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a5161c0c98ba9144c50a38acde28a5ede" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a88f02daf621c42b96d49d608fa9214de" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1aafc754ade38421c179f5c8933ecbaf45" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a972bff6c56ac3d04622ff7fad8d98331" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a964b69f1d2596f75ded5421b6db01a14" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1ad04805a57f5050c8e04be469ba64d6f3" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a267d05b7e98c3507908eaf085fe41155" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a4d9af98141360cd801daab4ed1ca2c91" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1abb2887958974fef1b2b5c8e32cc72ddb" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a9ec2c7cda8c8845acfa3565c6b1b4e10" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a9b72b2e3347d4cd77b16c3b45e8decf1" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484af7d99965ba807c718b482a9a7fb28b47" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kArrayFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ac48966386b231124da7c3fb870e237ee" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kBoolFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a5d26a84f26833eafd0028c0102a388a9" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kConstStringFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a10ef921aef1773bc1f88796bf1828f92" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kCopyFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a10c83f7f191dce81bb0273adc0d838de" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kCopyStringFlag</name></member>
+      <member refid="class_generic_value_1a188f57bdb1923c1fefe74baa995871a3" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kDefaultArrayCapacity</name></member>
+      <member refid="class_generic_value_1a284d018914629aed9a4bd97fe2dc5899" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kDefaultObjectCapacity</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a70c741e7c488835892aa857f50090d7c" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kDoubleFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a66d3877b074bb1a0455a6f6d3f7f91a3" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kFalseFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ae58a76d504c6a67566aebfa4a6bd2e55" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kInlineStrFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a87c567a71dfa5a63363d82d32346884a" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kInt64Flag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ae3fb211193e0067efaddeb5a067120fb" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kIntFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a8c5507cf143edac6e50abec2d89cc40d" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kNullFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ab7805b1908fd181afc8d70fe07b17e18" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kNumberAnyFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a29bc91c155577923abd8f19aa050058b" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kNumberDoubleFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484aa4776df2584fe4f341b183cdf3e00a79" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kNumberFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ad117eb41bb8015a76aadf6149bbd8ce5" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kNumberInt64Flag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484acfe8b720220d0a2e378683367386cbaf" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kNumberIntFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484aaa1ee6a546d4db67f4bdef41d1f54f02" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kNumberUint64Flag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ae8c6c6286edf9c309e77af0ea0cf039c" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kNumberUintFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484aba5811d4baeb56dc793a6510fe28748c" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kObjectFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484aca24fa09485fa10b17071509a985ff01" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kShortStringFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484af3bf3661275a38c86addba900c52dccb" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kStringFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a75dbcdbacc82f9379c602f0b6c41cf07" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kTrueFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a793e0bc40e0abe1ed8bcb3e6fbba65c2" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kTypeMask</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ac9200c78f749b6efaae640167a370c94" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kUint64Flag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a7eba561e6cc6dcd704f907c5a005f3ce" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>kUintFlag</name></member>
+      <member refid="class_generic_value_1a7ccf27c44058b4c11c3efc6473afb886" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>Member</name></member>
+      <member refid="class_generic_value_1a349b8faae61edc42b4289726820be439" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>MemberIterator</name></member>
+      <member refid="class_generic_value_1a9018a40d7c52efc00daf803c51d3236c" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>operator=</name></member>
+      <member refid="class_generic_value_1a386708557555e6389184de608af5e6a6" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>operator=</name></member>
+      <member refid="class_generic_value_1a4a4418a93777942e1fb7ea71f8aaf680" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>RAPIDJSON_DISABLEIF_RETURN</name></member>
+      <member refid="class_generic_value_1abb8ea2dfbe74ff4ee7dac6be31317f81" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>RawAssign</name></member>
+      <member refid="class_generic_value_1a8f5f309065479de40a16cf28a340da65" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>SetArrayRaw</name></member>
+      <member refid="class_generic_value_1a26c8ec7d68858df1038506df7fcff22d" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>SetObjectRaw</name></member>
+      <member refid="class_generic_value_1a1451603922dcdf34976f125dc60f70ee" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>SetStringRaw</name></member>
+      <member refid="class_generic_value_1ad3d91db36dfdbfc1af40a79aae07723c" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>SetStringRaw</name></member>
+      <member refid="class_generic_value_1a5ff908402687e14f5f14552ec58113a4" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>StringEqual</name></member>
+      <member refid="class_generic_value_1a32e0f30ee278072374c8168b14d3317f" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>StringRefType</name></member>
+      <member refid="class_generic_value_1aee30721a49688ba0f865f5d581eb6be9" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>ValueIterator</name></member>
+      <member refid="class_generic_value_1a43a39bb4fca9b9d3de3da6ac353d25ce" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>ValueType</name></member>
+      <member refid="class_generic_value_1a213ba89ef5ef961a5e655bd8c78ac9f4" prot="public" virt="non-virtual"><scope>GenericValue</scope><name>~GenericValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

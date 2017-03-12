@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classrapidjson_1_1_handler" kind="class" language="C++" prot="public">
+    <compoundname>rapidjson::Handler</compoundname>
+    <includes refid="reader_8h" local="no">reader.h</includes>
+    <briefdescription>
+<para>Concept for receiving events from <ref refid="class_generic_reader" kindref="compound">GenericReader</ref> upon parsing. The functions return true if no error occurs. If they return false, the event publisher should terminate the process. </para>    </briefdescription>
+    <detaileddescription>
+<para><programlisting><codeline><highlight class="normal">concept<sp/>Handler<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>typename<sp/>Ch;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/>Null();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/>Bool(bool<sp/>b);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/>Int(int<sp/>i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/>Uint(unsigned<sp/>i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/>Int64(int64_t<sp/>i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/>Uint64(uint64_t<sp/>i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/>Double(double<sp/>d);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/>String(const<sp/>Ch*<sp/>str,<sp/>SizeType<sp/>length,<sp/>bool<sp/>copy);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/>StartObject();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/>Key(const<sp/>Ch*<sp/>str,<sp/>SizeType<sp/>length,<sp/>bool<sp/>copy);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/>EndObject(SizeType<sp/>memberCount);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/>StartArray();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/>EndArray(SizeType<sp/>elementCount);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1593">
+        <label>rapidjson::Handler</label>
+        <link refid="classrapidjson_1_1_handler"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="149" column="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

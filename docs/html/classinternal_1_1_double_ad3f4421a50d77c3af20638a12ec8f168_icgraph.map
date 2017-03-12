@@ -1,0 +1,10 @@
+<map id="internal::Double::Sign" name="internal::Double::Sign">
+<area shape="rect" id="node2" href="$namespaceinternal.html#a43bb02fa46863dcc2dc8a2484f7ad5b1" title="internal::dtoa" alt="" coords="252,52,351,79"/>
+<area shape="rect" id="node6" href="$classinternal_1_1_double.html#a3da449454b6b7e7108ed1b9a00625b68" title="internal::Double::NextPositive\lDouble" alt="" coords="203,103,400,145"/>
+<area shape="rect" id="node3" href="$class_writer.html#aced9cb2b88abc16c4a0bdb75920cd424" title="Writer::WriteDouble" alt="" coords="464,52,603,79"/>
+<area shape="rect" id="node4" href="$class_pretty_writer.html#a20ffcf3ada1be664719f44cec76711ed" title="PrettyWriter::Double" alt="" coords="689,5,831,32"/>
+<area shape="rect" id="node5" href="$class_writer.html#ae80dc830a4f1d84e6eaf6b182c0ceccb" title="Writes the given double value to the stream. " alt="" coords="707,56,813,83"/>
+<area shape="rect" id="node7" href="$namespaceinternal.html#a21546973704caf6e4c8b0d4869a614a6" title="internal::StrtodBigInteger" alt="" coords="449,111,618,137"/>
+<area shape="rect" id="node8" href="$namespaceinternal.html#a899ff5a0c5f9b203d720bb6f5631ed10" title="internal::StrtodFullPrecision" alt="" coords="667,111,853,137"/>
+<area shape="rect" id="node9" href="$class_generic_reader.html#a2447207fde31185e2bb8fbf1250b72e0" title="GenericReader::ParseNumber" alt="" coords="901,111,1104,137"/>
+</map>

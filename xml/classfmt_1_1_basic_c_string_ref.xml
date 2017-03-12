@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classfmt_1_1_basic_c_string_ref" kind="class" language="C++" prot="public">
+    <compoundname>fmt::BasicCStringRef</compoundname>
+    <includes refid="format_8h" local="no">format.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Char</declname>
+        <defname>Char</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfmt_1_1_basic_c_string_ref_1a7926c8fdd384de20ae68ef1ce8d53e8f" prot="private" static="no" mutable="no">
+        <type>const Char *</type>
+        <definition>const Char* fmt::BasicCStringRef&lt; Char &gt;::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="517" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="517" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfmt_1_1_basic_c_string_ref_1ad79244507bdc1213e0dc6c505cf265f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fmt::BasicCStringRef&lt; Char &gt;::BasicCStringRef</definition>
+        <argsstring>(const Char *s)</argsstring>
+        <name>BasicCStringRef</name>
+        <param>
+          <type>const Char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs a string reference object from a C string. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="521" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="521" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1_basic_c_string_ref_1ab460855d19c769773de532296f9f13f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fmt::BasicCStringRef&lt; Char &gt;::BasicCStringRef</definition>
+        <argsstring>(const std::basic_string&lt; Char &gt; &amp;s)</argsstring>
+        <name>BasicCStringRef</name>
+        <param>
+          <type>const std::basic_string&lt; Char &gt; &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs a string reference from an <computeroutput>std::string</computeroutput> object.  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="528" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="528" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1_basic_c_string_ref_1ae3bafa845b53339b20c4f5edb4f635f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const Char *</type>
+        <definition>const Char* fmt::BasicCStringRef&lt; Char &gt;::c_str</definition>
+        <argsstring>() const </argsstring>
+        <name>c_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the pointer to a C string. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="531" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="531" bodyend="531"/>
+        <referencedby refid="classfmt_1_1_basic_formatter_1a63acecbbf9681005f3c7eb4d42a54bf7" compoundref="format_8h" startline="3734" endline="3753">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+        <referencedby refid="classfmt_1_1_buffered_file_1a5a2e3a0aabc752eb52993ea2488c95a8" compoundref="posix_8cc" startline="71" endline="76">fmt::BufferedFile::BufferedFile</referencedby>
+        <referencedby refid="classfmt_1_1_file_1afe222b8f1728f1d803302aacba34ab0a" compoundref="posix_8cc" startline="97" endline="107">fmt::File::File</referencedby>
+        <referencedby refid="classfmt_1_1_printf_formatter_1a295c50e11b9a77720c8078f287040e5c" compoundref="printf_8h" startline="387" endline="484">fmt::PrintfFormatter&lt; Char, ArgFormatter &gt;::format</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A reference to a null terminated string. It can be constructed from a C string or <computeroutput>std::string</computeroutput>.</para><para>You can use one of the following typedefs for common character types:</para><para>+----------<mdash/>+-----------------------<mdash/>+ | Type | Definition | +=============+==========================+ | CStringRef | BasicCStringRef&lt;char&gt; | +----------<mdash/>+-----------------------<mdash/>+ | WCStringRef | BasicCStringRef&lt;wchar_t&gt; | +----------<mdash/>+-----------------------<mdash/>+</para><para>This class is most useful as a parameter type to allow passing different types of strings to a function, for example::</para><para>template &lt;typename... Args&gt; std::string format(CStringRef format_str, const Args &amp; ... args);</para><para>format(&quot;{}&quot;, 42); format(std::string(&quot;{}&quot;), 42);  </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1269">
+        <label>fmt::BasicCStringRef&lt; Char &gt;</label>
+        <link refid="classfmt_1_1_basic_c_string_ref"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="515" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="515" bodyend="532"/>
+    <listofallmembers>
+      <member refid="classfmt_1_1_basic_c_string_ref_1ad79244507bdc1213e0dc6c505cf265f2" prot="public" virt="non-virtual"><scope>fmt::BasicCStringRef</scope><name>BasicCStringRef</name></member>
+      <member refid="classfmt_1_1_basic_c_string_ref_1ab460855d19c769773de532296f9f13f9" prot="public" virt="non-virtual"><scope>fmt::BasicCStringRef</scope><name>BasicCStringRef</name></member>
+      <member refid="classfmt_1_1_basic_c_string_ref_1ae3bafa845b53339b20c4f5edb4f635f9" prot="public" virt="non-virtual"><scope>fmt::BasicCStringRef</scope><name>c_str</name></member>
+      <member refid="classfmt_1_1_basic_c_string_ref_1a7926c8fdd384de20ae68ef1ce8d53e8f" prot="private" virt="non-virtual"><scope>fmt::BasicCStringRef</scope><name>data_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

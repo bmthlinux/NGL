@@ -1,0 +1,6 @@
+<map id="ngl::Camera::setProjectionMatrix" name="ngl::Camera::setProjectionMatrix">
+<area shape="rect" id="node2" href="$classngl_1_1_mat4.html#a927a694427799e2c76fe55fb4938b394" title="clear the matrix to all 0 " alt="" coords="286,5,391,32"/>
+<area shape="rect" id="node3" href="$classngl_1_1_camera.html#ae9ed0a38e96a2cedf785944cf79002de" title="function used to set the perspective projection matrix values " alt="" coords="232,56,445,83"/>
+<area shape="rect" id="node4" href="$classngl_1_1_mat4.html#a073bb4083b7f4a6b60886c6467e0afd2" title="make the matrix m the identity matrix &#160;1 0 0 0 &#160;&#160;0 1 0 0 &#160;&#160;0 0 1 0 &#160;&#160;0 0 0 1 &#160;&#160;" alt="" coords="494,31,621,57"/>
+<area shape="rect" id="node5" href="$namespacengl.html#a0bade03a2edcb08a49da7731394284fe" title="converts Degrees to Radians " alt="" coords="512,81,603,108"/>
+</map>

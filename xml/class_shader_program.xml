@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_shader_program" kind="class" language="C++" prot="public">
+    <compoundname>ShaderProgram</compoundname>
+    <includes refid="_shader_program_8h" local="yes">ShaderProgram.h</includes>
+    <briefdescription>
+<para>This class contains a single <ref refid="class_shader_program" kindref="compound">ShaderProgram</ref> which may have many different shaders attached to it as well as wrappers to call the various OpenGL functions to set paramaters for this Program. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Jonathan Macey </para></simplesect>
+<simplesect kind="version"><para>1.0 </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1875">
+        <label>ShaderProgram</label>
+        <link refid="class_shader_program"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/ShaderProgram.h" line="27" column="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

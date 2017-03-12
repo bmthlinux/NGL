@@ -1,0 +1,5 @@
+<map id="fmt::BasicWriter&lt; Char &gt;" name="fmt::BasicWriter&lt; Char &gt;">
+<area shape="rect" id="node2" href="$classfmt_1_1_basic_array_writer.html" title="{fmt::BasicArrayWriter\l\&lt; Char \&gt;\n|&#45; buffer_\l|+ BasicArrayWriter()\l+ BasicArrayWriter()\l}" alt="" coords="5,541,152,648"/>
+<area shape="rect" id="node3" href="$classfmt_1_1_basic_memory_writer.html" title="{fmt::BasicMemoryWriter\l\&lt; Char \&gt;\n|&#45; buffer_\l|+ BasicMemoryWriter()\l}" alt="" coords="177,549,340,641"/>
+<area shape="rect" id="node4" href="$classfmt_1_1_basic_string_writer.html" title="{fmt::BasicStringWriter\l\&lt; Char \&gt;\n|&#45; buffer_\l|+ BasicStringWriter()\l+ move_to()\l}" alt="" coords="365,541,515,648"/>
+</map>

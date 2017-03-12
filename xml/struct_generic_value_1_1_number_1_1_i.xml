@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_generic_value_1_1_number_1_1_i" kind="struct" language="C++" prot="public">
+    <compoundname>GenericValue::Number::I</compoundname>
+    <includes refid="document_8h" local="no">document.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_generic_value_1_1_number_1_1_i_1ae0b250dc448d284cf9019f3932bfc380" prot="public" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GenericValue&lt; Encoding, Allocator &gt;::Number::I::i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1640" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1640" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_generic_value_1_1_number_1_1_i_1aefc064997f30c9c0b2bdce187d1d4cce" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char GenericValue&lt; Encoding, Allocator &gt;::Number::I::padding[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>padding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1641" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1641" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1605">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Number::I</label>
+        <link refid="struct_generic_value_1_1_number_1_1_i"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1639" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1639" bodyend="1642"/>
+    <listofallmembers>
+      <member refid="struct_generic_value_1_1_number_1_1_i_1ae0b250dc448d284cf9019f3932bfc380" prot="public" virt="non-virtual"><scope>GenericValue::Number::I</scope><name>i</name></member>
+      <member refid="struct_generic_value_1_1_number_1_1_i_1aefc064997f30c9c0b2bdce187d1d4cce" prot="public" virt="non-virtual"><scope>GenericValue::Number::I</scope><name>padding</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

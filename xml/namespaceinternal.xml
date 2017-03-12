@@ -1,0 +1,797 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespaceinternal" kind="namespace" language="C++">
+    <compoundname>internal</compoundname>
+    <innerclass refid="classinternal_1_1_big_integer" prot="public">internal::BigInteger</innerclass>
+    <innerclass refid="structinternal_1_1_diy_fp" prot="public">internal::DiyFp</innerclass>
+    <innerclass refid="classinternal_1_1_double" prot="public">internal::Double</innerclass>
+    <innerclass refid="structinternal_1_1_is_generic_value" prot="public">internal::IsGenericValue</innerclass>
+    <innerclass refid="structinternal_1_1_is_generic_value_impl" prot="public">internal::IsGenericValueImpl</innerclass>
+    <innerclass refid="structinternal_1_1_is_generic_value_impl_3_01_t_00_01typename_01_void_3_01typename_01_t_1_1_enco3a51e9d8b4986f001b39e1e8edecb66a" prot="public">internal::IsGenericValueImpl&lt; T, typename Void&lt; typename T::EncodingType &gt;::Type, typename Void&lt; typename T::AllocatorType &gt;::Type &gt;</innerclass>
+    <innerclass refid="classinternal_1_1_stack" prot="public">internal::Stack</innerclass>
+    <innerclass refid="classinternal_1_1_stream_local_copy" prot="public">internal::StreamLocalCopy</innerclass>
+    <innerclass refid="classinternal_1_1_stream_local_copy_3_01_stream_00_010_01_4" prot="public">internal::StreamLocalCopy&lt; Stream, 0 &gt;</innerclass>
+    <innerclass refid="classinternal_1_1_stream_local_copy_3_01_stream_00_011_01_4" prot="public">internal::StreamLocalCopy&lt; Stream, 1 &gt;</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceinternal_1a3e95f043ed6c40cda1c1bc33c2f0ece2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structinternal_1_1_diy_fp" kindref="compound">DiyFp</ref></type>
+        <definition>DiyFp internal::GetCachedPowerByIndex</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>GetCachedPowerByIndex</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="159" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="159" bodyend="219"/>
+        <references refid="structinternal_1_1_diy_fp_1aea27f027c58a55245d700df08be4ff7e" compoundref="diyfp_8h" startline="39" endline="39">internal::DiyFp::DiyFp</references>
+        <references refid="rapidjson_8h_1aaee1245f375a71be1ac9b8a07ba5fb8f" compoundref="rapidjson_8h" startline="261">RAPIDJSON_UINT64_C2</references>
+        <referencedby refid="namespaceinternal_1abac3dbfa1070756c37725829148f6038" compoundref="diyfp_8h" startline="221" endline="233">GetCachedPower</referencedby>
+        <referencedby refid="namespaceinternal_1a74b8503d044bf6c0a5e90c5bea3aba42" compoundref="diyfp_8h" startline="235" endline="239">GetCachedPower10</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1abac3dbfa1070756c37725829148f6038" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structinternal_1_1_diy_fp" kindref="compound">DiyFp</ref></type>
+        <definition>DiyFp internal::GetCachedPower</definition>
+        <argsstring>(int e, int *K)</argsstring>
+        <name>GetCachedPower</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>K</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="221" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="221" bodyend="233"/>
+        <references refid="structinternal_1_1_diy_fp_1afa9db335eeb61c7f966d888d89b1e6f2" compoundref="diyfp_8h" startline="156">internal::DiyFp::e</references>
+        <references refid="namespaceinternal_1a3e95f043ed6c40cda1c1bc33c2f0ece2" compoundref="diyfp_8h" startline="159" endline="219">GetCachedPowerByIndex</references>
+        <referencedby refid="namespaceinternal_1aeb7b6c0784b644968003cbd1b9da57e3" compoundref="dtoa_8h" startline="110" endline="122">Grisu2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1a74b8503d044bf6c0a5e90c5bea3aba42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structinternal_1_1_diy_fp" kindref="compound">DiyFp</ref></type>
+        <definition>DiyFp internal::GetCachedPower10</definition>
+        <argsstring>(int exp, int *outExp)</argsstring>
+        <name>GetCachedPower10</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>exp</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>outExp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="235" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="235" bodyend="239"/>
+        <references refid="namespaceinternal_1a3e95f043ed6c40cda1c1bc33c2f0ece2" compoundref="diyfp_8h" startline="159" endline="219">GetCachedPowerByIndex</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf18f052a98b9f5df5448d39484b743c1" compoundref="rapidjson_8h" startline="119">RAPIDJSON_NAMESPACE_END</references>
+        <referencedby refid="namespaceinternal_1a8861eacf25d2024c832dfa611407d25a" compoundref="strtod_8h" startline="130" endline="205">StrtodDiyFp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1a234e10bef097ccb2f202b7a133086e71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void internal::GrisuRound</definition>
+        <argsstring>(char *buffer, int len, uint64_t delta, uint64_t rest, uint64_t ten_kappa, uint64_t wp_w)</argsstring>
+        <name>GrisuRound</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+          <declname>delta</declname>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+          <declname>rest</declname>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+          <declname>ten_kappa</declname>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+          <declname>wp_w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>closer </para>        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/dtoa.h" line="34" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/dtoa.h" bodystart="34" bodyend="41"/>
+        <referencedby refid="namespaceinternal_1a47be9aea8d0f9cae49dc03dc046d2450" compoundref="dtoa_8h" startline="59" endline="108">DigitGen</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1ab2e324c403dc7671f732e8959886a8d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned internal::CountDecimalDigit32</definition>
+        <argsstring>(uint32_t n)</argsstring>
+        <name>CountDecimalDigit32</name>
+        <param>
+          <type><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/dtoa.h" line="43" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/dtoa.h" bodystart="43" bodyend="57"/>
+        <referencedby refid="namespaceinternal_1a47be9aea8d0f9cae49dc03dc046d2450" compoundref="dtoa_8h" startline="59" endline="108">DigitGen</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1a47be9aea8d0f9cae49dc03dc046d2450" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void internal::DigitGen</definition>
+        <argsstring>(const DiyFp &amp;W, const DiyFp &amp;Mp, uint64_t delta, char *buffer, int *len, int *K)</argsstring>
+        <name>DigitGen</name>
+        <param>
+          <type>const <ref refid="structinternal_1_1_diy_fp" kindref="compound">DiyFp</ref> &amp;</type>
+          <declname>W</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structinternal_1_1_diy_fp" kindref="compound">DiyFp</ref> &amp;</type>
+          <declname>Mp</declname>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+          <declname>delta</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>K</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/dtoa.h" line="59" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/dtoa.h" bodystart="59" bodyend="108"/>
+        <references refid="namespaceinternal_1ab2e324c403dc7671f732e8959886a8d1" compoundref="dtoa_8h" startline="43" endline="57">CountDecimalDigit32</references>
+        <references refid="structinternal_1_1_diy_fp_1afa9db335eeb61c7f966d888d89b1e6f2" compoundref="diyfp_8h" startline="156">internal::DiyFp::e</references>
+        <references refid="structinternal_1_1_diy_fp_1a09b9217a86e8a2e6aa8d2d48fc351008" compoundref="diyfp_8h" startline="155">internal::DiyFp::f</references>
+        <references refid="namespaceinternal_1a234e10bef097ccb2f202b7a133086e71" compoundref="dtoa_8h" startline="34" endline="41">GrisuRound</references>
+        <referencedby refid="namespaceinternal_1aeb7b6c0784b644968003cbd1b9da57e3" compoundref="dtoa_8h" startline="110" endline="122">Grisu2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1aeb7b6c0784b644968003cbd1b9da57e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void internal::Grisu2</definition>
+        <argsstring>(double value, char *buffer, int *length, int *K)</argsstring>
+        <name>Grisu2</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>K</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/dtoa.h" line="110" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/dtoa.h" bodystart="110" bodyend="122"/>
+        <references refid="namespaceinternal_1a47be9aea8d0f9cae49dc03dc046d2450" compoundref="dtoa_8h" startline="59" endline="108">DigitGen</references>
+        <references refid="structinternal_1_1_diy_fp_1afa9db335eeb61c7f966d888d89b1e6f2" compoundref="diyfp_8h" startline="156">internal::DiyFp::e</references>
+        <references refid="structinternal_1_1_diy_fp_1a09b9217a86e8a2e6aa8d2d48fc351008" compoundref="diyfp_8h" startline="155">internal::DiyFp::f</references>
+        <references refid="namespaceinternal_1abac3dbfa1070756c37725829148f6038" compoundref="diyfp_8h" startline="221" endline="233">GetCachedPower</references>
+        <references refid="structinternal_1_1_diy_fp_1adae1948b1bb65d950cd3801a4a2bb7fd" compoundref="diyfp_8h" startline="96" endline="112">internal::DiyFp::Normalize</references>
+        <references refid="structinternal_1_1_diy_fp_1a64e623c1742d1d5ad551ab456f0deb62" compoundref="diyfp_8h" startline="125" endline="132">internal::DiyFp::NormalizedBoundaries</references>
+        <referencedby refid="namespaceinternal_1a43bb02fa46863dcc2dc8a2484f7ad5b1" compoundref="dtoa_8h" startline="189" endline="208">dtoa</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1acc9a114f2a03bb4c68e9ee99b9ca99c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* internal::WriteExponent</definition>
+        <argsstring>(int K, char *buffer)</argsstring>
+        <name>WriteExponent</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>K</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/dtoa.h" line="124" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/dtoa.h" bodystart="124" bodyend="146"/>
+        <references refid="namespaceinternal_1a95459e80b3f0e89ad03ebd0c8e55844c" compoundref="itoa_8h" startline="23" endline="37">GetDigitsLut</references>
+        <referencedby refid="namespaceinternal_1a18aa7a3da7eb23f64a2eb7f3ed01a44a" compoundref="dtoa_8h" startline="148" endline="187">Prettify</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1a18aa7a3da7eb23f64a2eb7f3ed01a44a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* internal::Prettify</definition>
+        <argsstring>(char *buffer, int length, int k)</argsstring>
+        <name>Prettify</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/dtoa.h" line="148" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/dtoa.h" bodystart="148" bodyend="187"/>
+        <references refid="namespaceinternal_1acc9a114f2a03bb4c68e9ee99b9ca99c5" compoundref="dtoa_8h" startline="124" endline="146">WriteExponent</references>
+        <referencedby refid="namespaceinternal_1a43bb02fa46863dcc2dc8a2484f7ad5b1" compoundref="dtoa_8h" startline="189" endline="208">dtoa</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1a43bb02fa46863dcc2dc8a2484f7ad5b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* internal::dtoa</definition>
+        <argsstring>(double value, char *buffer)</argsstring>
+        <name>dtoa</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/dtoa.h" line="189" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/dtoa.h" bodystart="189" bodyend="208"/>
+        <references refid="namespaceinternal_1aeb7b6c0784b644968003cbd1b9da57e3" compoundref="dtoa_8h" startline="110" endline="122">Grisu2</references>
+        <references refid="classinternal_1_1_double_1a6eb58f2690af582efeb9b76ef35c4c60" compoundref="ieee754_8h" startline="44" endline="44">internal::Double::IsZero</references>
+        <references refid="namespaceinternal_1a18aa7a3da7eb23f64a2eb7f3ed01a44a" compoundref="dtoa_8h" startline="148" endline="187">Prettify</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf18f052a98b9f5df5448d39484b743c1" compoundref="rapidjson_8h" startline="119">RAPIDJSON_NAMESPACE_END</references>
+        <references refid="classinternal_1_1_double_1ad3f4421a50d77c3af20638a12ec8f168" compoundref="ieee754_8h" startline="37" endline="37">internal::Double::Sign</references>
+        <referencedby refid="class_writer_1aced9cb2b88abc16c4a0bdb75920cd424" compoundref="writer_8h" startline="236" endline="242">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::WriteDouble</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1a95459e80b3f0e89ad03ebd0c8e55844c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* internal::GetDigitsLut</definition>
+        <argsstring>()</argsstring>
+        <name>GetDigitsLut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/itoa.h" line="23" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/itoa.h" bodystart="23" bodyend="37"/>
+        <referencedby refid="namespaceinternal_1acc9a114f2a03bb4c68e9ee99b9ca99c5" compoundref="dtoa_8h" startline="124" endline="146">WriteExponent</referencedby>
+        <referencedby refid="namespaceinternal_1a8628d3698be60950743bc49d41a1cca7" compoundref="itoa_8h" startline="39" endline="111">u32toa</referencedby>
+        <referencedby refid="namespaceinternal_1aff16deebb94b3ea88a1dfff7bbc377b0" compoundref="itoa_8h" startline="123" endline="289">u64toa</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1a8628d3698be60950743bc49d41a1cca7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* internal::u32toa</definition>
+        <argsstring>(uint32_t value, char *buffer)</argsstring>
+        <name>u32toa</name>
+        <param>
+          <type><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref></type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/itoa.h" line="39" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/itoa.h" bodystart="39" bodyend="111"/>
+        <references refid="namespaceinternal_1a95459e80b3f0e89ad03ebd0c8e55844c" compoundref="itoa_8h" startline="23" endline="37">GetDigitsLut</references>
+        <referencedby refid="namespaceinternal_1a79bdea0c3f5e0c34c5c0aa686fc823c1" compoundref="itoa_8h" startline="113" endline="121">i32toa</referencedby>
+        <referencedby refid="class_writer_1aa7e4196f87bfa66c9619e0efd15d16ea" compoundref="writer_8h" startline="212" endline="218">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::WriteUint</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1a79bdea0c3f5e0c34c5c0aa686fc823c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* internal::i32toa</definition>
+        <argsstring>(int32_t value, char *buffer)</argsstring>
+        <name>i32toa</name>
+        <param>
+          <type><ref refid="stdint_8h_1ab1967d8591af1a4e48c37fd2b0f184d0" kindref="member">int32_t</ref></type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/itoa.h" line="113" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/itoa.h" bodystart="113" bodyend="121"/>
+        <references refid="namespaceinternal_1a8628d3698be60950743bc49d41a1cca7" compoundref="itoa_8h" startline="39" endline="111">u32toa</references>
+        <referencedby refid="class_writer_1acc42b38b43ae1488fc2e779c8a333d34" compoundref="writer_8h" startline="204" endline="210">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::WriteInt</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1aff16deebb94b3ea88a1dfff7bbc377b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* internal::u64toa</definition>
+        <argsstring>(uint64_t value, char *buffer)</argsstring>
+        <name>u64toa</name>
+        <param>
+          <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/itoa.h" line="123" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/itoa.h" bodystart="123" bodyend="289"/>
+        <references refid="namespaceinternal_1a95459e80b3f0e89ad03ebd0c8e55844c" compoundref="itoa_8h" startline="23" endline="37">GetDigitsLut</references>
+        <referencedby refid="namespaceinternal_1a51566359e64c9746656c396c63a23d61" compoundref="itoa_8h" startline="291" endline="299">i64toa</referencedby>
+        <referencedby refid="class_writer_1ac3d17e9409c202e39b0cd887545783d6" compoundref="writer_8h" startline="228" endline="234">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::WriteUint64</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1a51566359e64c9746656c396c63a23d61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* internal::i64toa</definition>
+        <argsstring>(int64_t value, char *buffer)</argsstring>
+        <name>i64toa</name>
+        <param>
+          <type><ref refid="stdint_8h_1a414156feea104f8f75b4ed9e3121b2f6" kindref="member">int64_t</ref></type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/itoa.h" line="291" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/itoa.h" bodystart="291" bodyend="299"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf18f052a98b9f5df5448d39484b743c1" compoundref="rapidjson_8h" startline="119">RAPIDJSON_NAMESPACE_END</references>
+        <references refid="namespaceinternal_1aff16deebb94b3ea88a1dfff7bbc377b0" compoundref="itoa_8h" startline="123" endline="289">u64toa</references>
+        <referencedby refid="class_writer_1ad68f4e0a85cc944a0740200544c97ed9" compoundref="writer_8h" startline="220" endline="226">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::WriteInt64</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1af01c41d045d596e2f8d1888cf6fbecb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double internal::Pow10</definition>
+        <argsstring>(int n)</argsstring>
+        <name>Pow10</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Computes integer powers of 10 in double (10.0^n). </para>        </briefdescription>
+        <detaileddescription>
+<para>This function uses lookup table for fast and accurate results. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>non-negative exponent. Must &lt;= 308. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>10.0^n </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/pow10.h" line="28" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/pow10.h" bodystart="28" bodyend="50"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf18f052a98b9f5df5448d39484b743c1" compoundref="rapidjson_8h" startline="119">RAPIDJSON_NAMESPACE_END</references>
+        <referencedby refid="namespaceinternal_1aa1bb51d788788eb5390a16462b40d98d" compoundref="strtod_8h" startline="27" endline="34">FastPath</referencedby>
+        <referencedby refid="namespaceinternal_1a598b2d2f85130bff3c3942e4750b9185" compoundref="strtod_8h" startline="112" endline="127">StrtodFast</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1a86326fb0c9d7c7ea8edd7deedbb2b26e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Ch</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" kindref="member">SizeType</ref></type>
+        <definition>SizeType internal::StrLen</definition>
+        <argsstring>(const Ch *s)</argsstring>
+        <name>StrLen</name>
+        <param>
+          <type>const Ch *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Custom strlen() which works on different character types. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Character type (e.g. char, wchar_t, short) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Null-terminated input string. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters in the string. </para></simplesect>
+<simplesect kind="note"><para>This has the same semantics as strlen(), the return value is not number of Unicode codepoints. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strfunc.h" line="30" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strfunc.h" bodystart="30" bodyend="34"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf18f052a98b9f5df5448d39484b743c1" compoundref="rapidjson_8h" startline="119">RAPIDJSON_NAMESPACE_END</references>
+        <references refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" compoundref="rapidjson_8h" startline="322">SizeType</references>
+        <referencedby refid="document_8h_1aa6b9fd9f6aa49405a574c362ba9af6b5" compoundref="document_8h" startline="348" endline="350">StringRef</referencedby>
+        <referencedby refid="class_generic_value_1a386708557555e6389184de608af5e6a6" compoundref="document_8h" startline="625" endline="628">GenericValue&lt; Encoding, Allocator &gt;::operator=</referencedby>
+        <referencedby refid="class_generic_pointer_1a4ad549b8a826c3c2dedf03fcc07be9b0" compoundref="pointer_8h" startline="106" endline="108">GenericPointer&lt; ValueType, Allocator &gt;::GenericPointer</referencedby>
+        <referencedby refid="class_pretty_writer_1ac6ef0185174838b7034b4183013ee073" compoundref="prettywriter_8h" startline="141" endline="141">PrettyWriter&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::String</referencedby>
+        <referencedby refid="class_pretty_writer_1a0a4859ad940668cf33d18b144e5e1cdd" compoundref="prettywriter_8h" startline="142" endline="142">PrettyWriter&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::Key</referencedby>
+        <referencedby refid="class_writer_1ad1525690e1d598d7e32892b8b83fbcd4" compoundref="writer_8h" startline="175" endline="175">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::String</referencedby>
+        <referencedby refid="class_writer_1a77dbb4676e57aab1c0e976ec22145fb9" compoundref="writer_8h" startline="176" endline="176">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::Key</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1aa1bb51d788788eb5390a16462b40d98d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double internal::FastPath</definition>
+        <argsstring>(double significand, int exp)</argsstring>
+        <name>FastPath</name>
+        <param>
+          <type>double</type>
+          <declname>significand</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>exp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strtod.h" line="27" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strtod.h" bodystart="27" bodyend="34"/>
+        <references refid="namespaceinternal_1af01c41d045d596e2f8d1888cf6fbecb6" compoundref="pow10_8h" startline="28" endline="50">Pow10</references>
+        <referencedby refid="namespaceinternal_1a9e5fac4695310f09892fe52b1d24ab19" compoundref="strtod_8h" startline="36" endline="45">StrtodNormalPrecision</referencedby>
+        <referencedby refid="namespaceinternal_1a598b2d2f85130bff3c3942e4750b9185" compoundref="strtod_8h" startline="112" endline="127">StrtodFast</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1a9e5fac4695310f09892fe52b1d24ab19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double internal::StrtodNormalPrecision</definition>
+        <argsstring>(double d, int p)</argsstring>
+        <name>StrtodNormalPrecision</name>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strtod.h" line="36" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strtod.h" bodystart="36" bodyend="45"/>
+        <references refid="namespaceinternal_1aa1bb51d788788eb5390a16462b40d98d" compoundref="strtod_8h" startline="27" endline="34">FastPath</references>
+        <referencedby refid="class_generic_reader_1a2447207fde31185e2bb8fbf1250b72e0" compoundref="reader_8h" startline="772" endline="983">GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::ParseNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1ace304441347098a4953ea99f50805da9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T internal::Min3</definition>
+        <argsstring>(T a, T b, T c)</argsstring>
+        <name>Min3</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strtod.h" line="48" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strtod.h" bodystart="48" bodyend="53"/>
+        <referencedby refid="namespaceinternal_1a190f9c286df64526a7e3550528ed6b02" compoundref="strtod_8h" startline="55" endline="110">CheckWithinHalfULP</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1a190f9c286df64526a7e3550528ed6b02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int internal::CheckWithinHalfULP</definition>
+        <argsstring>(double b, const BigInteger &amp;d, int dExp)</argsstring>
+        <name>CheckWithinHalfULP</name>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classinternal_1_1_big_integer" kindref="compound">BigInteger</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>dExp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strtod.h" line="55" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strtod.h" bodystart="55" bodyend="110"/>
+        <references refid="classinternal_1_1_big_integer_1afd8b15480df5003ee6b6e1b8ecbf5f45" compoundref="biginteger_8h" startline="208" endline="217">internal::BigInteger::Compare</references>
+        <references refid="classinternal_1_1_big_integer_1a5741304ce36392adeef716e78b384b61" compoundref="biginteger_8h" startline="186" endline="206">internal::BigInteger::Difference</references>
+        <references refid="classinternal_1_1_double_1a8e16ee31d521fb56f0b98be427a9d47e" compoundref="ieee754_8h" startline="47" endline="47">internal::Double::IntegerExponent</references>
+        <references refid="classinternal_1_1_double_1a96c5e0f06551e83565b5097950d30e32" compoundref="ieee754_8h" startline="46" endline="46">internal::Double::IntegerSignificand</references>
+        <references refid="namespaceinternal_1ace304441347098a4953ea99f50805da9" compoundref="strtod_8h" startline="48" endline="53">Min3</references>
+        <references refid="classinternal_1_1_big_integer_1a98a13f169c27d1acfa57054f37c61763" compoundref="biginteger_8h" startline="162" endline="182">internal::BigInteger::MultiplyPow5</references>
+        <referencedby refid="namespaceinternal_1a21546973704caf6e4c8b0d4869a614a6" compoundref="strtod_8h" startline="207" endline="223">StrtodBigInteger</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1a598b2d2f85130bff3c3942e4750b9185" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool internal::StrtodFast</definition>
+        <argsstring>(double d, int p, double *result)</argsstring>
+        <name>StrtodFast</name>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strtod.h" line="112" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strtod.h" bodystart="112" bodyend="127"/>
+        <references refid="namespaceinternal_1aa1bb51d788788eb5390a16462b40d98d" compoundref="strtod_8h" startline="27" endline="34">FastPath</references>
+        <references refid="namespaceinternal_1af01c41d045d596e2f8d1888cf6fbecb6" compoundref="pow10_8h" startline="28" endline="50">Pow10</references>
+        <referencedby refid="namespaceinternal_1a899ff5a0c5f9b203d720bb6f5631ed10" compoundref="strtod_8h" startline="225" endline="265">StrtodFullPrecision</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1a8861eacf25d2024c832dfa611407d25a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool internal::StrtodDiyFp</definition>
+        <argsstring>(const char *decimals, size_t length, size_t decimalPosition, int exp, double *result)</argsstring>
+        <name>StrtodDiyFp</name>
+        <param>
+          <type>const char *</type>
+          <declname>decimals</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>decimalPosition</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>exp</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strtod.h" line="130" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strtod.h" bodystart="130" bodyend="205"/>
+        <references refid="structinternal_1_1_diy_fp_1afa9db335eeb61c7f966d888d89b1e6f2" compoundref="diyfp_8h" startline="156">internal::DiyFp::e</references>
+        <references refid="classinternal_1_1_double_1a980c26d006068b23406805e9b0e02588" compoundref="ieee754_8h" startline="50" endline="57">internal::Double::EffectiveSignificandSize</references>
+        <references refid="structinternal_1_1_diy_fp_1a09b9217a86e8a2e6aa8d2d48fc351008" compoundref="diyfp_8h" startline="155">internal::DiyFp::f</references>
+        <references refid="namespaceinternal_1a74b8503d044bf6c0a5e90c5bea3aba42" compoundref="diyfp_8h" startline="235" endline="239">GetCachedPower10</references>
+        <references refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21">int</references>
+        <references refid="structinternal_1_1_diy_fp_1a43ea451ce20095b1ff53cccf132ca15f" compoundref="diyfp_8h" startline="153">internal::DiyFp::kDpHiddenBit</references>
+        <references refid="structinternal_1_1_diy_fp_1adae1948b1bb65d950cd3801a4a2bb7fd" compoundref="diyfp_8h" startline="96" endline="112">internal::DiyFp::Normalize</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+        <references refid="rapidjson_8h_1aaee1245f375a71be1ac9b8a07ba5fb8f" compoundref="rapidjson_8h" startline="261">RAPIDJSON_UINT64_C2</references>
+        <references refid="structinternal_1_1_diy_fp_1a9bbdcfcf5d1b3a7b16a8f5f860d74038" compoundref="diyfp_8h" startline="134" endline="143">internal::DiyFp::ToDouble</references>
+        <referencedby refid="namespaceinternal_1a899ff5a0c5f9b203d720bb6f5631ed10" compoundref="strtod_8h" startline="225" endline="265">StrtodFullPrecision</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1a21546973704caf6e4c8b0d4869a614a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double internal::StrtodBigInteger</definition>
+        <argsstring>(double approx, const char *decimals, size_t length, size_t decimalPosition, int exp)</argsstring>
+        <name>StrtodBigInteger</name>
+        <param>
+          <type>double</type>
+          <declname>approx</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>decimals</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>decimalPosition</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>exp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strtod.h" line="207" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strtod.h" bodystart="207" bodyend="223"/>
+        <references refid="namespaceinternal_1a190f9c286df64526a7e3550528ed6b02" compoundref="strtod_8h" startline="55" endline="110">CheckWithinHalfULP</references>
+        <references refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21">int</references>
+        <references refid="classinternal_1_1_double_1a3da449454b6b7e7108ed1b9a00625b68" compoundref="ieee754_8h" startline="32" endline="35">internal::Double::NextPositiveDouble</references>
+        <references refid="classinternal_1_1_double_1a8c3f5cf8152af8588d32530238c35aad" compoundref="ieee754_8h" startline="38" endline="38">internal::Double::Significand</references>
+        <references refid="classinternal_1_1_double_1af35ab8a9e1ee41b1fd8a97d5899cfa1d" compoundref="ieee754_8h" startline="29" endline="29">internal::Double::Value</references>
+        <referencedby refid="namespaceinternal_1a899ff5a0c5f9b203d720bb6f5631ed10" compoundref="strtod_8h" startline="225" endline="265">StrtodFullPrecision</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1a899ff5a0c5f9b203d720bb6f5631ed10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double internal::StrtodFullPrecision</definition>
+        <argsstring>(double d, int p, const char *decimals, size_t length, size_t decimalPosition, int exp)</argsstring>
+        <name>StrtodFullPrecision</name>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>decimals</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>decimalPosition</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>exp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strtod.h" line="225" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strtod.h" bodystart="225" bodyend="265"/>
+        <references refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21">int</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf18f052a98b9f5df5448d39484b743c1" compoundref="rapidjson_8h" startline="119">RAPIDJSON_NAMESPACE_END</references>
+        <references refid="namespaceinternal_1a21546973704caf6e4c8b0d4869a614a6" compoundref="strtod_8h" startline="207" endline="223">StrtodBigInteger</references>
+        <references refid="namespaceinternal_1a8861eacf25d2024c832dfa611407d25a" compoundref="strtod_8h" startline="130" endline="205">StrtodDiyFp</references>
+        <references refid="namespaceinternal_1a598b2d2f85130bff3c3942e4750b9185" compoundref="strtod_8h" startline="112" endline="127">StrtodFast</references>
+        <referencedby refid="class_generic_reader_1a2447207fde31185e2bb8fbf1250b72e0" compoundref="reader_8h" startline="772" endline="983">GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::ParseNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceinternal_1a72b2c71d36273b9691487f58c671ce04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void internal::Swap</definition>
+        <argsstring>(T &amp;a, T &amp;b) RAPIDJSON_NOEXCEPT</argsstring>
+        <name>Swap</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Custom swap() to avoid dependency on C++ &lt;algorith&gt; header. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the arguments to swap, should be instantiated with primitive C++ types only. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This has the same semantics as std::swap(). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/swap.h" line="28" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/swap.h" bodystart="28" bodyend="32"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf18f052a98b9f5df5448d39484b743c1" compoundref="rapidjson_8h" startline="119">RAPIDJSON_NAMESPACE_END</references>
+        <referencedby refid="class_generic_value_1a386708557555e6389184de608af5e6a6" compoundref="document_8h" startline="625" endline="628">GenericValue&lt; Encoding, Allocator &gt;::operator=</referencedby>
+        <referencedby refid="class_generic_document_1a6290e1290fad74177625af5938c0c58f" compoundref="document_8h" startline="1854" endline="1861">GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::Swap</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a5e601199a21d84b1ac612f558be0f2c3" compoundref="stack_8h" startline="85" endline="92">internal::Stack&lt; StackAllocator &gt;::Swap</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="393" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_toon_shaders_8h" kind="file" language="C++">
+    <compoundname>ToonShaders.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="_shader_lib_8cpp" local="yes">ShaderLib.cpp</includedby>
+    <incdepgraph>
+      <node id="6529">
+        <label>string</label>
+      </node>
+      <node id="6528">
+        <label>ToonShaders.h</label>
+        <link refid="ToonShaders.h"/>
+        <childnode refid="6529" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6530">
+        <label>ToonShaders.h</label>
+        <link refid="ToonShaders.h"/>
+        <childnode refid="6531" relation="include">
+        </childnode>
+      </node>
+      <node id="6531">
+        <label>ShaderLib.cpp</label>
+        <link refid="_shader_lib_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_toon_shaders_8h_1a3ccc0ef71a5a89763c120cc82fb3f756" prot="public" static="no" mutable="no">
+        <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>const std::string toonVertexShader</definition>
+        <argsstring></argsstring>
+        <name>toonVertexShader</name>
+        <initializer>=
+R&quot;DELIM(
+  #version 150
+  <ref refid="glew_8h_1a83ad0ee7f1e06b59c90271716e689080" kindref="member">in</ref> vec3 inVert;
+  <ref refid="glew_8h_1a83ad0ee7f1e06b59c90271716e689080" kindref="member">in</ref> vec3 inNormal;
+  <ref refid="glew_8h_1a83ad0ee7f1e06b59c90271716e689080" kindref="member">in</ref> vec2 inUV;
+  uniform mat4 MVP;
+  uniform mat3 normalMatrix;
+  out vec3 normalEyeSpace;
+  <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> main()
+  {
+      normalEyeSpace = normalMatrix * inNormal;
+      gl_Position = MVP*vec4(inVert,1.0);
+  }
+)DELIM&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/src/shaders/ToonShaders.h" line="5" column="1" bodyfile="/Users/jmacey/NGL/src/shaders/ToonShaders.h" bodystart="5" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_shader_lib_1aae06fcd5d36ccf79399384d04c5c59d3" compoundref="_shader_lib_8cpp" startline="743" endline="768">ngl::ShaderLib::loadToonShaders</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_toon_shaders_8h_1a268a70d58f8d1ba173751d96922d6c41" prot="public" static="no" mutable="no">
+        <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>const std::string toonFragmentShader</definition>
+        <argsstring></argsstring>
+        <name>toonFragmentShader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/src/shaders/ToonShaders.h" line="22" column="1" bodyfile="/Users/jmacey/NGL/src/shaders/ToonShaders.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_shader_lib_1aae06fcd5d36ccf79399384d04c5c59d3" compoundref="_shader_lib_8cpp" startline="743" endline="768">ngl::ShaderLib::loadToonShaders</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TOONSHADERS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOONSHADERS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_toon_shaders_8h_1a3ccc0ef71a5a89763c120cc82fb3f756" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="_toon_shaders_8h_1a3ccc0ef71a5a89763c120cc82fb3f756" kindref="member">toonVertexShader</ref><sp/>=</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">R</highlight><highlight class="stringliteral">&quot;DELIM(</highlight></codeline>
+<codeline lineno="7"><highlight class="stringliteral"><sp/><sp/>#version<sp/>150</highlight></codeline>
+<codeline lineno="8"><highlight class="stringliteral"><sp/><sp/>in<sp/>vec3<sp/>inVert;</highlight></codeline>
+<codeline lineno="9"><highlight class="stringliteral"><sp/><sp/>in<sp/>vec3<sp/>inNormal;</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"><sp/><sp/>in<sp/>vec2<sp/>inUV;</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/>uniform<sp/>mat4<sp/>MVP;</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/>uniform<sp/>mat3<sp/>normalMatrix;</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/>out<sp/>vec3<sp/>normalEyeSpace;</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/>void<sp/>main()</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>normalEyeSpace<sp/>=<sp/>normalMatrix<sp/>*<sp/>inNormal;</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>gl_Position<sp/>=<sp/>MVP*vec4(inVert,1.0);</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral">)DELIM&quot;;</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"></highlight><highlight class="comment">//<sp/>shader<sp/>modified<sp/>from<sp/>http://prideout.net/blog/?p=22</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="_toon_shaders_8h_1a268a70d58f8d1ba173751d96922d6c41" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="_toon_shaders_8h_1a268a70d58f8d1ba173751d96922d6c41" kindref="member">toonFragmentShader</ref><sp/>=</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>R</highlight><highlight class="stringliteral">&quot;DELIM(</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/>#version<sp/>150</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/>in<sp/>vec3<sp/>normalEyeSpace;</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/>out<sp/>vec4<sp/>FragColor;</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/>uniform<sp/>vec4<sp/>ambient;//=vec4(0.1,0.1,0.1,1.0);</highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/>uniform<sp/>vec4<sp/>Colour;//=vec4(1.0,1.0,1.0,1.0);</highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral"><sp/><sp/>uniform<sp/>vec4<sp/>specular;//=vec4(1.0,1.0,1.0,1.0);</highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral"><sp/><sp/>uniform<sp/>float<sp/>shininess;//=20;</highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral"><sp/><sp/>uniform<sp/>vec3<sp/>lightPos;//=vec3(1,1,1);</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral"><sp/><sp/>float<sp/>stepmix(float<sp/>edge0,<sp/>float<sp/>edge1,<sp/>float<sp/>E,<sp/>float<sp/>x)</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>float<sp/>T<sp/>=<sp/>clamp(0.5<sp/>*<sp/>(x<sp/>-<sp/>edge0<sp/>+<sp/>E)<sp/>/<sp/>E,<sp/>0.0,<sp/>1.0);</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>mix(edge0,<sp/>edge1,<sp/>T);</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/>void<sp/>main()</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>vec3<sp/>N<sp/>=<sp/>normalize(normalEyeSpace);</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>vec3<sp/>L<sp/>=<sp/>normalize(lightPos);</highlight></codeline>
+<codeline lineno="44"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>vec3<sp/>Eye<sp/>=<sp/>vec3(0,<sp/>0,<sp/>1);</highlight></codeline>
+<codeline lineno="45"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>vec3<sp/>H<sp/>=<sp/>normalize(L<sp/>+<sp/>Eye);</highlight></codeline>
+<codeline lineno="46"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>float<sp/>df<sp/>=<sp/>max(0.0,<sp/>dot(N,<sp/>L));</highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>float<sp/>sf<sp/>=<sp/>max(0.0,<sp/>dot(N,<sp/>H));</highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>sf<sp/>=<sp/>pow(sf,<sp/>shininess);</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>float<sp/>A<sp/>=<sp/>0.1;</highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>float<sp/>B<sp/>=<sp/>0.3;</highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>float<sp/>C<sp/>=<sp/>0.6;</highlight></codeline>
+<codeline lineno="52"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>float<sp/>D<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="53"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>float<sp/>E<sp/>=<sp/>fwidth(df);</highlight></codeline>
+<codeline lineno="54"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/><sp/><sp/><sp/><sp/><sp/>(df<sp/>&gt;<sp/>A<sp/>-<sp/>E<sp/>&amp;&amp;<sp/>df<sp/>&lt;<sp/>A<sp/>+<sp/>E)<sp/>df<sp/>=<sp/>stepmix(A,<sp/>B,<sp/>E,<sp/>df);</highlight></codeline>
+<codeline lineno="55"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if<sp/>(df<sp/>&gt;<sp/>B<sp/>-<sp/>E<sp/>&amp;&amp;<sp/>df<sp/>&lt;<sp/>B<sp/>+<sp/>E)<sp/>df<sp/>=<sp/>stepmix(B,<sp/>C,<sp/>E,<sp/>df);</highlight></codeline>
+<codeline lineno="56"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if<sp/>(df<sp/>&gt;<sp/>C<sp/>-<sp/>E<sp/>&amp;&amp;<sp/>df<sp/>&lt;<sp/>C<sp/>+<sp/>E)<sp/>df<sp/>=<sp/>stepmix(C,<sp/>D,<sp/>E,<sp/>df);</highlight></codeline>
+<codeline lineno="57"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if<sp/>(df<sp/>&lt;<sp/>A)<sp/>df<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="58"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if<sp/>(df<sp/>&lt;<sp/>B)<sp/>df<sp/>=<sp/>B;</highlight></codeline>
+<codeline lineno="59"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if<sp/>(df<sp/>&lt;<sp/>C)<sp/>df<sp/>=<sp/>C;</highlight></codeline>
+<codeline lineno="60"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>df<sp/>=<sp/>D;</highlight></codeline>
+<codeline lineno="61"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>E<sp/>=<sp/>fwidth(sf);</highlight></codeline>
+<codeline lineno="62"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(sf<sp/>&gt;<sp/>0.5<sp/>-<sp/>E<sp/>&amp;&amp;<sp/>sf<sp/>&lt;<sp/>0.5<sp/>+<sp/>E)</highlight></codeline>
+<codeline lineno="63"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf<sp/>=<sp/>smoothstep(0.5<sp/>-<sp/>E,<sp/>0.5<sp/>+<sp/>E,<sp/>sf);</highlight></codeline>
+<codeline lineno="65"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>else</highlight></codeline>
+<codeline lineno="67"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf<sp/>=<sp/>step(0.5,<sp/>sf);</highlight></codeline>
+<codeline lineno="69"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>FragColor<sp/>=<sp/>ambient<sp/>+<sp/>df<sp/>*<sp/>Colour<sp/>+<sp/>sf<sp/>*<sp/>specular;</highlight></codeline>
+<codeline lineno="71"><highlight class="stringliteral"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="stringliteral">)DELIM&quot;;</highlight></codeline>
+<codeline lineno="73"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="74"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="75"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="76"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="77"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="78"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="79"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="80"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="81"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="82"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="83"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="84"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="85"><highlight class="stringliteral"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/src/shaders/ToonShaders.h"/>
+  </compounddef>
+</doxygen>

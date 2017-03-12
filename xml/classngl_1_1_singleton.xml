@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classngl_1_1_singleton" kind="class" language="C++" prot="public">
+    <compoundname>ngl::Singleton</compoundname>
+    <includes refid="_singleton_8h" local="no">Singleton.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classngl_1_1_singleton_1a7fd779d31c1d8d44153ccbec0a181ac3" prot="protected" static="yes" mutable="no">
+        <type>T *</type>
+        <definition>T * ngl::Singleton&lt; T &gt;::s_instance</definition>
+        <argsstring></argsstring>
+        <name>s_instance</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>unique instance of the singleton </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Singleton.h" line="66" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Singleton.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classngl_1_1_singleton_1ab5d43c93fdc09ecadc5f6ebfd9460396" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ngl::Singleton&lt; T &gt;::instance</definition>
+        <argsstring>()</argsstring>
+        <name>instance</name>
+        <briefdescription>
+<para>Get the instance. </para>        </briefdescription>
+        <detaileddescription>
+<para>Get instance -----------------------------------------------------------------------------------------------------------<mdash/>.</para><para><simplesect kind="return"><para>the unique instance </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Singleton.h" line="49" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Singleton.h" bodystart="88" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngl_1_1_singleton_1ad6341f60af3e395419484ba3108f73d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::Singleton&lt; T &gt;::Singleton</definition>
+        <argsstring>(const Singleton &amp;)=delete</argsstring>
+        <name>Singleton</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_singleton" kindref="compound">Singleton</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Singleton.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_singleton_1a9cc1ea7cc82996782d48c50877157543" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_singleton" kindref="compound">Singleton</ref> &amp;</type>
+        <definition>Singleton&amp; ngl::Singleton&lt; T &gt;::operator=</definition>
+        <argsstring>(const Singleton &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_singleton" kindref="compound">Singleton</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Singleton.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classngl_1_1_singleton_1ae55278fc5cc669ddb9da4f7e3d8ae7a8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::Singleton&lt; T &gt;::Singleton</definition>
+        <argsstring>()</argsstring>
+        <name>Singleton</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructor ----------------------------------------------------------------------------------------------------------<mdash/>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Singleton.h" line="57" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Singleton.h" bodystart="75" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_singleton_1a4b66d1c7d1f91f12a5ac2a428a3ff1c0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ngl::Singleton&lt; T &gt;::~Singleton</definition>
+        <argsstring>()</argsstring>
+        <name>~Singleton</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Destructor ------------------------------------------------------------------------------------------------------------<mdash/>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Singleton.h" line="62" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Singleton.h" bodystart="82" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classngl_1_1_singleton_1a68355e8cd8b6a575b29e11e05584b75d" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>static void ngl::Singleton&lt; T &gt;::killSingleton</definition>
+        <argsstring>()</argsstring>
+        <name>killSingleton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Singleton.h" line="67" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Singleton.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classngl_1_1_singleton" kindref="compound">Singleton</ref> template added to NGL framework 20/04/10 by jmacey. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Vincent Bonnet </para></simplesect>
+<simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="date"><para>14/03/10 Last Revision 14/03/10 </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1896">
+        <label>ngl::Logger</label>
+        <link refid="classngl_1_1_logger"/>
+        <childnode refid="1895" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1895">
+        <label>ngl::Singleton&lt; Logger &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+        <childnode refid="1894" relation="template-instance">
+          <edgelabel>&lt; Logger &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1902">
+        <label>ngl::ShaderLib</label>
+        <link refid="classngl_1_1_shader_lib"/>
+        <childnode refid="1901" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1903">
+        <label>ngl::Singleton&lt; Random &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+        <childnode refid="1894" relation="template-instance">
+          <edgelabel>&lt; Random &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1900">
+        <label>ngl::NGLInit</label>
+        <link refid="classngl_1_1_n_g_l_init"/>
+        <childnode refid="1899" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1901">
+        <label>ngl::Singleton&lt; ShaderLib &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+        <childnode refid="1894" relation="template-instance">
+          <edgelabel>&lt; ShaderLib &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1899">
+        <label>ngl::Singleton&lt; NGLInit &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+        <childnode refid="1894" relation="template-instance">
+          <edgelabel>&lt; NGLInit &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1898">
+        <label>ngl::VAOPrimitives</label>
+        <link refid="classngl_1_1_v_a_o_primitives"/>
+        <childnode refid="1897" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1894">
+        <label>ngl::Singleton&lt; T &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+      </node>
+      <node id="1904">
+        <label>ngl::Random</label>
+        <link refid="classngl_1_1_random"/>
+        <childnode refid="1903" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1897">
+        <label>ngl::Singleton&lt; VAOPrimitives &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+        <childnode refid="1894" relation="template-instance">
+          <edgelabel>&lt; VAOPrimitives &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1906">
+        <label>T</label>
+      </node>
+      <node id="1905">
+        <label>ngl::Singleton&lt; T &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+        <childnode refid="1906" relation="usage">
+          <edgelabel>#s_instance</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/Singleton.h" line="41" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Singleton.h" bodystart="40" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classngl_1_1_singleton_1ab5d43c93fdc09ecadc5f6ebfd9460396" prot="public" virt="non-virtual"><scope>ngl::Singleton</scope><name>instance</name></member>
+      <member refid="classngl_1_1_singleton_1a68355e8cd8b6a575b29e11e05584b75d" prot="protected" virt="non-virtual"><scope>ngl::Singleton</scope><name>killSingleton</name></member>
+      <member refid="classngl_1_1_singleton_1a9cc1ea7cc82996782d48c50877157543" prot="public" virt="non-virtual"><scope>ngl::Singleton</scope><name>operator=</name></member>
+      <member refid="classngl_1_1_singleton_1a7fd779d31c1d8d44153ccbec0a181ac3" prot="protected" virt="non-virtual"><scope>ngl::Singleton</scope><name>s_instance</name></member>
+      <member refid="classngl_1_1_singleton_1ad6341f60af3e395419484ba3108f73d8" prot="public" virt="non-virtual"><scope>ngl::Singleton</scope><name>Singleton</name></member>
+      <member refid="classngl_1_1_singleton_1ae55278fc5cc669ddb9da4f7e3d8ae7a8" prot="protected" virt="non-virtual"><scope>ngl::Singleton</scope><name>Singleton</name></member>
+      <member refid="classngl_1_1_singleton_1a4b66d1c7d1f91f12a5ac2a428a3ff1c0" prot="protected" virt="virtual"><scope>ngl::Singleton</scope><name>~Singleton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

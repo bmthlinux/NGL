@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structfmt_1_1internal_1_1_sign_checker_3_01false_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>fmt::internal::SignChecker&lt; false &gt;</compoundname>
+    <includes refid="format_8h" local="no">format.h</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structfmt_1_1internal_1_1_sign_checker_3_01false_01_4_1a3d5a1c205e3f44b829046f65b131a3d8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool fmt::internal::SignChecker&lt; false &gt;::is_negative</definition>
+        <argsstring>(T)</argsstring>
+        <name>is_negative</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="805" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="805" bodyend="805"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1883">
+        <label>fmt::internal::SignChecker&lt; false &gt;</label>
+        <link refid="structfmt_1_1internal_1_1_sign_checker_3_01false_01_4"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="803" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="803" bodyend="806"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1internal_1_1_sign_checker_3_01false_01_4_1a3d5a1c205e3f44b829046f65b131a3d8" prot="public" virt="non-virtual"><scope>fmt::internal::SignChecker&lt; false &gt;</scope><name>is_negative</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

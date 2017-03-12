@@ -1,0 +1,7 @@
+<map id="fmt::internal::WidthHandler" name="fmt::internal::WidthHandler">
+<area shape="rect" id="node2" href="$classfmt_1_1_arg_visitor.html" title="{fmt::ArgVisitor\&lt; WidthHandler,\l unsigned \&gt;\n||+ report_unhandled_arg()\l+ visit_unhandled_arg()\l+ visit_int()\l+ visit_long_long()\l+ visit_uint()\l+ visit_ulong_long()\l+ visit_bool()\l+ visit_char()\l+ visit_any_int()\l+ visit_double()\land 8 more...\l}" alt="" coords="5,483,205,722"/>
+<area shape="rect" id="node3" href="$classfmt_1_1_arg_visitor.html" title="{fmt::ArgVisitor\&lt; Impl,\l Result \&gt;\n||+ report_unhandled_arg()\l+ visit_unhandled_arg()\l+ visit_int()\l+ visit_long_long()\l+ visit_uint()\l+ visit_ulong_long()\l+ visit_bool()\l+ visit_char()\l+ visit_any_int()\l+ visit_double()\land 8 more...\l}" alt="" coords="17,179,191,418"/>
+<area shape="rect" id="node4" href="$structfmt_1_1_format_spec.html" title="{fmt::FormatSpec\n|+ flags_\l+ precision_\l+ type_\l|+ FormatSpec()\l+ flag()\l+ precision()\l+ type()\l}" alt="" coords="232,527,352,678"/>
+<area shape="rect" id="node5" href="$structfmt_1_1_align_spec.html" title="{fmt::AlignSpec\n|+ align_\l|+ AlignSpec()\l+ align()\l+ precision()\l}" alt="" coords="239,245,347,352"/>
+<area shape="rect" id="node6" href="$structfmt_1_1_width_spec.html" title="{fmt::WidthSpec\n|+ width_\l+ fill_\l|+ WidthSpec()\l+ width()\l+ fill()\l}" alt="" coords="237,6,349,127"/>
+</map>

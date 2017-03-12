@@ -1,0 +1,5 @@
+<map id="ngl::printInfoLog" name="ngl::printInfoLog">
+<area shape="rect" id="node2" href="$classngl_1_1_shader.html#a5cb76454ab9e2861dac436ea9c57da60" title="compile the current shader will check to see if source is attached and issue warning if not ..." alt="" coords="193,5,337,32"/>
+<area shape="rect" id="node3" href="$classngl_1_1_shader.html#a89759dae6f482f497c81349c7e012ce2" title="load in shader source and attach it to the shader object if source is already loaded it will re&#45;load ..." alt="" coords="204,56,327,83"/>
+<area shape="rect" id="node4" href="$classngl_1_1_shader.html#a4fd27a6d72ac27effeb115e15bed3cb9" title="ngl::Shader::loadFromString" alt="" coords="171,107,360,133"/>
+</map>

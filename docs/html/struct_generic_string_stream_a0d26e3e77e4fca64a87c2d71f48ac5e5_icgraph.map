@@ -1,0 +1,9 @@
+<map id="GenericStringStream::Take" name="GenericStringStream::Take">
+<area shape="rect" id="node2" href="$class_generic_reader_1_1_number_stream_3_01_input_stream_00_01false_01_4.html#a1775a6f407e8f3e59b7c574cd59507e4" title="GenericReader::NumberStream\l\&lt; InputStream, false \&gt;::\lTakePush" alt="" coords="200,5,411,61"/>
+<area shape="rect" id="node3" href="$class_generic_reader_1_1_number_stream_3_01_input_stream_00_01false_01_4.html#a9f0c389fe27cd26e6371cd7f96f3e7c7" title="GenericReader::NumberStream\l\&lt; InputStream, false \&gt;::Take" alt="" coords="200,86,411,127"/>
+<area shape="rect" id="node4" href="$class_writer.html#aab4926d061472149998b89b4d34e1a4b" title="Writer::WriteString" alt="" coords="240,152,371,179"/>
+<area shape="rect" id="node5" href="$class_pretty_writer.html#ae6cec4b69e86cff3121451f29e4862ef" title="PrettyWriter::String" alt="" coords="459,127,594,153"/>
+<area shape="rect" id="node7" href="$class_writer.html#ac317eb622ea116293d99e3edffe6f1c3" title="Writer::String" alt="" coords="477,177,577,204"/>
+<area shape="rect" id="node6" href="$class_pretty_writer.html#a26932858cdca972598f7caa6f415f310" title="PrettyWriter::Key" alt="" coords="643,127,765,153"/>
+<area shape="rect" id="node8" href="$class_writer.html#a88f8aa2df45426ba81d293ddc71698af" title="Writer::Key" alt="" coords="660,177,748,204"/>
+</map>

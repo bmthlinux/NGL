@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_4079c414cd38733cd3884d3994252ecd" kind="dir">
+    <compoundname>ngl</compoundname>
+    <innerdir refid="dir_649a44ddce0dd953eaf612435b63d1f2">fmt</innerdir>
+    <innerdir refid="dir_62c37c319f1820f3426eb9808e175ba4">rapidjson</innerdir>
+    <innerdir refid="dir_432efeebeeb5180260613c845d58aac7">rapidxml</innerdir>
+    <innerfile refid="_a_a_b_b_8h">AABB.h</innerfile>
+    <innerfile refid="_abstract_mesh_8h">AbstractMesh.h</innerfile>
+    <innerfile refid="_abstract_serializer_8h">AbstractSerializer.h</innerfile>
+    <innerfile refid="_abstract_v_a_o_8h">AbstractVAO.h</innerfile>
+    <innerfile refid="_b_box_8h">BBox.h</innerfile>
+    <innerfile refid="_bezier_curve_8h">BezierCurve.h</innerfile>
+    <innerfile refid="_camera_8h">Camera.h</innerfile>
+    <innerfile refid="_colour_8h">Colour.h</innerfile>
+    <innerfile refid="eglew_8h">eglew.h</innerfile>
+    <innerfile refid="glew_8h">glew.h</innerfile>
+    <innerfile refid="glxew_8h">glxew.h</innerfile>
+    <innerfile refid="_houdini_geo_8h">HoudiniGeo.h</innerfile>
+    <innerfile refid="_image_8h">Image.h</innerfile>
+    <innerfile refid="_light_8h">Light.h</innerfile>
+    <innerfile refid="_logger_8h">Logger.h</innerfile>
+    <innerfile refid="_mat3_8h">Mat3.h</innerfile>
+    <innerfile refid="_mat4_8h">Mat4.h</innerfile>
+    <innerfile refid="_material_8h">Material.h</innerfile>
+    <innerfile refid="_multi_buffer_v_a_o_8h">MultiBufferVAO.h</innerfile>
+    <innerfile refid="_n_c_c_a_bin_mesh_8h">NCCABinMesh.h</innerfile>
+    <innerfile refid="_n_c_c_a_point_bake_8h">NCCAPointBake.h</innerfile>
+    <innerfile refid="_n_g_lassert_8h">NGLassert.h</innerfile>
+    <innerfile refid="_n_g_l_init_8h">NGLInit.h</innerfile>
+    <innerfile refid="_n_g_l_stream_8h">NGLStream.h</innerfile>
+    <innerfile refid="_obj_8h">Obj.h</innerfile>
+    <innerfile refid="_path_camera_8h">PathCamera.h</innerfile>
+    <innerfile refid="_plane_8h">Plane.h</innerfile>
+    <innerfile refid="_quaternion_8h">Quaternion.h</innerfile>
+    <innerfile refid="_random_8h">Random.h</innerfile>
+    <innerfile refid="_rib_export_8h">RibExport.h</innerfile>
+    <innerfile refid="_shader_8h">Shader.h</innerfile>
+    <innerfile refid="_shader_lib_8h">ShaderLib.h</innerfile>
+    <innerfile refid="_shader_program_8h">ShaderProgram.h</innerfile>
+    <innerfile refid="_simple_index_v_a_o_8h">SimpleIndexVAO.h</innerfile>
+    <innerfile refid="_simple_v_a_o_8h">SimpleVAO.h</innerfile>
+    <innerfile refid="_singleton_8h">Singleton.h</innerfile>
+    <innerfile refid="_spot_light_8h">SpotLight.h</innerfile>
+    <innerfile refid="_text_8h">Text.h</innerfile>
+    <innerfile refid="_texture_8h">Texture.h</innerfile>
+    <innerfile refid="_transformation_8h">Transformation.h</innerfile>
+    <innerfile refid="_types_8h">Types.h</innerfile>
+    <innerfile refid="_util_8h">Util.h</innerfile>
+    <innerfile refid="_v_a_o_factory_8h">VAOFactory.h</innerfile>
+    <innerfile refid="_v_a_o_primitives_8h">VAOPrimitives.h</innerfile>
+    <innerfile refid="_vec2_8h">Vec2.h</innerfile>
+    <innerfile refid="_vec3_8h">Vec3.h</innerfile>
+    <innerfile refid="_vec4_8h">Vec4.h</innerfile>
+    <innerfile refid="_vertex_array_object_8h">VertexArrayObject.h</innerfile>
+    <innerfile refid="wglew_8h">wglew.h</innerfile>
+    <innerfile refid="_x_m_l_serializer_8h">XMLSerializer.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/jmacey/NGL/include/ngl/"/>
+  </compounddef>
+</doxygen>

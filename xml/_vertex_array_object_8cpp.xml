@@ -1,0 +1,474 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_vertex_array_object_8cpp" kind="file" language="C++">
+    <compoundname>VertexArrayObject.cpp</compoundname>
+    <includes refid="_vertex_array_object_8h" local="yes">VertexArrayObject.h</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="7104">
+        <label>Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="7105" relation="include">
+        </childnode>
+        <childnode refid="7111" relation="include">
+        </childnode>
+        <childnode refid="7112" relation="include">
+        </childnode>
+        <childnode refid="7113" relation="include">
+        </childnode>
+      </node>
+      <node id="7113">
+        <label>QGLContext</label>
+      </node>
+      <node id="7107">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="7108" relation="include">
+        </childnode>
+        <childnode refid="7109" relation="include">
+        </childnode>
+      </node>
+      <node id="7102">
+        <label>VertexArrayObject.h</label>
+        <link refid="_vertex_array_object_8h"/>
+        <childnode refid="7103" relation="include">
+        </childnode>
+        <childnode refid="7104" relation="include">
+        </childnode>
+      </node>
+      <node id="7101">
+        <label>VertexArrayObject.cpp</label>
+        <link refid="VertexArrayObject.cpp"/>
+        <childnode refid="7102" relation="include">
+        </childnode>
+        <childnode refid="7114" relation="include">
+        </childnode>
+      </node>
+      <node id="7106">
+        <label>stddef.h</label>
+      </node>
+      <node id="7105">
+        <label>glew.h</label>
+        <link refid="glew_8h"/>
+        <childnode refid="7106" relation="include">
+        </childnode>
+        <childnode refid="7107" relation="include">
+        </childnode>
+        <childnode refid="7110" relation="include">
+        </childnode>
+      </node>
+      <node id="7110">
+        <label>GL/glu.h</label>
+      </node>
+      <node id="7108">
+        <label>limits.h</label>
+      </node>
+      <node id="7109">
+        <label>wchar.h</label>
+      </node>
+      <node id="7103">
+        <label>vector</label>
+      </node>
+      <node id="7112">
+        <label>QtOpenGL/QGLContext</label>
+      </node>
+      <node id="7114">
+        <label>iostream</label>
+      </node>
+      <node id="7111">
+        <label>GL/gl.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacengl">ngl</innernamespace>
+    <briefdescription>
+<para>implementation files for VertexArrayObject class </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Copyright<sp/>(C)<sp/>2009<sp/>Jon<sp/>Macey</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vertex_array_object_8h" kindref="compound">VertexArrayObject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacengl" kindref="compound">ngl</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classngl_1_1_vertex_array_object_1af6ab6b3d1b116f51265a866711e083c1" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_vertex_array_object_1a697833dd5c8b201512ef97d53b761bf1" kindref="member">VertexArrayObject::VertexArrayObject</ref>(<ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>_mode)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1ab8d799398732410bec097d1b585e757a" kindref="member">m_allocated</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>first<sp/>we<sp/>create<sp/>a<sp/>vertex<sp/>array<sp/>Object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a71a2d01a12606fc26c1a28dba23dfce2" kindref="member">glGenVertexArrays</ref>(1,<sp/>&amp;<ref refid="classngl_1_1_vertex_array_object_1a54784eb115e5b3d479133c7291725676" kindref="member">m_id</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1a9da4de123c1707a68f6e8b5d16e80445" kindref="member">m_drawMode</ref>=_mode;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1a5476e4d87c8b8df4c79a8a31300417ee" kindref="member">m_indicesCount</ref>=0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1abdb457eb178f4c24ab07f07da3b70415" kindref="member">m_indexed</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1a5c5f9a7e89d545f8c22bc0bd9743fb95" kindref="member">m_indexType</ref><sp/>=<sp/><ref refid="glew_8h_1a80a33c79f69417372d65d2a65ca36d49" kindref="member">GL_UNSIGNED_BYTE</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1abc2f84ab8234d603c60de78cdf7b3a7b" kindref="member">m_iboID</ref>=0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classngl_1_1_vertex_array_object_1a7e02916979ef53c3704f8382e248004a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1a7e02916979ef53c3704f8382e248004a" kindref="member">VertexArrayObject::bind</ref>()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a4c13098a615d32e7f04aa4105149564f" kindref="member">glBindVertexArray</ref>(<ref refid="classngl_1_1_vertex_array_object_1a54784eb115e5b3d479133c7291725676" kindref="member">m_id</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classngl_1_1_vertex_array_object_1adef9cd82bd893c40735668511389e0dc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1adef9cd82bd893c40735668511389e0dc" kindref="member">VertexArrayObject::unbind</ref>()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a4c13098a615d32e7f04aa4105149564f" kindref="member">glBindVertexArray</ref>(0);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classngl_1_1_vertex_array_object_1acf13839735b4e07341b9a48d47d248a1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1acf13839735b4e07341b9a48d47d248a1" kindref="member">VertexArrayObject::removeVOA</ref>()</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref><sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1adef9cd82bd893c40735668511389e0dc" kindref="member">unbind</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/><ref refid="classngl_1_1_vertex_array_object_1ab8d799398732410bec097d1b585e757a" kindref="member">m_allocated</ref><sp/>==</highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a7b01aaccb6b1691185992154f99088cb" kindref="member">b</ref><sp/>:<sp/><ref refid="classngl_1_1_vertex_array_object_1a7f8e3a43ba94864b1a0a0dd7749ba79a" kindref="member">m_vboIDs</ref>)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a55652a3f087bb13267a5481b6ff1fe19" kindref="member">glDeleteBuffers</ref>(1,&amp;<ref refid="glew_8h_1a7b01aaccb6b1691185992154f99088cb" kindref="member">b</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a214386aefdc30034088a21a6bccfbcbd" kindref="member">glDeleteVertexArrays</ref>(1,&amp;<ref refid="classngl_1_1_vertex_array_object_1a54784eb115e5b3d479133c7291725676" kindref="member">m_id</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1ab8d799398732410bec097d1b585e757a" kindref="member">m_allocated</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classngl_1_1_vertex_array_object_1a89ef8562c3f3631a4dacf6da302d88d3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1a89ef8562c3f3631a4dacf6da302d88d3" kindref="member">VertexArrayObject::setData</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>_size,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a31aeedaeef29442c9c015ab355c8f5ab" kindref="member">GLfloat</ref><sp/>&amp;_data,<ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>_mode)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;trying<sp/>to<sp/>set<sp/>VOA<sp/>data<sp/>when<sp/>unbound\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/>vboID;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a1b33d322b89d94ad4938461db0a0424a" kindref="member">glGenBuffers</ref>(1,<sp/>&amp;vboID);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1a7f8e3a43ba94864b1a0a0dd7749ba79a" kindref="member">m_vboIDs</ref>.push_back(vboID);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>we<sp/>will<sp/>bind<sp/>an<sp/>array<sp/>buffer<sp/>to<sp/>the<sp/>first<sp/>one<sp/>and<sp/>load<sp/>the<sp/>data<sp/>for<sp/>the<sp/>verts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a3b3a3f8200f094b781e9f61e2f19fc50" kindref="member">glBindBuffer</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,<sp/>vboID);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a9419a03f5c46e2758f884e9c56d92b6a" kindref="member">glBufferData</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,static_cast&lt;GLsizeiptr&gt;(<sp/>_size),<sp/>&amp;_data,<sp/>_mode);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1ab8d799398732410bec097d1b585e757a" kindref="member">m_allocated</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classngl_1_1_vertex_array_object_1aa02415403930cfd0e5682c18f69fc2a6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1aa02415403930cfd0e5682c18f69fc2a6" kindref="member">VertexArrayObject::setIndexedData</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>_size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a31aeedaeef29442c9c015ab355c8f5ab" kindref="member">GLfloat</ref><sp/>&amp;_data,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_indexSize,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a1e5eb1ac5e47603cc80ab58338b92393" kindref="member">GLvoid</ref><sp/>*_indexData,<sp/><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>_indexType,<sp/><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>_mode<sp/><sp/>)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;trying<sp/>to<sp/>set<sp/>VOA<sp/>data<sp/>when<sp/>unbound\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/>vboID;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a1b33d322b89d94ad4938461db0a0424a" kindref="member">glGenBuffers</ref>(1,<sp/>&amp;vboID);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1a7f8e3a43ba94864b1a0a0dd7749ba79a" kindref="member">m_vboIDs</ref>.push_back(vboID);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/>iboID;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a1b33d322b89d94ad4938461db0a0424a" kindref="member">glGenBuffers</ref>(1,<sp/>&amp;iboID);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1abc2f84ab8234d603c60de78cdf7b3a7b" kindref="member">m_iboID</ref><sp/>=<sp/>iboID;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//glEnableVertexAttribArray(0);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>we<sp/>will<sp/>bind<sp/>an<sp/>array<sp/>buffer<sp/>to<sp/>the<sp/>first<sp/>one<sp/>and<sp/>load<sp/>the<sp/>data<sp/>for<sp/>the<sp/>verts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a3b3a3f8200f094b781e9f61e2f19fc50" kindref="member">glBindBuffer</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,<sp/>vboID);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a9419a03f5c46e2758f884e9c56d92b6a" kindref="member">glBufferData</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,<sp/>static_cast&lt;GLsizeiptr&gt;(_size),<sp/>&amp;_data,<sp/>_mode);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>need<sp/>to<sp/>determine<sp/>the<sp/>size<sp/>of<sp/>the<sp/>data<sp/>type<sp/>before<sp/>we<sp/>set<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>default<sp/>to<sp/>a<sp/>ushort</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a3d1e3edfcf61ca2d831883e1afbad89e" kindref="member">size</ref>=</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="glew_8h_1ac995a558f6571eb5f98b7a6d2b2a4468" kindref="member">GLushort</ref>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(_indexType)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a69b1c02ba0bd93c643c6d82e0c16eb99" kindref="member">GL_UNSIGNED_INT</ref><sp/><sp/><sp/>:<sp/>size=</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref>);<sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a36c3f955599ab92217a70cce8a22e11f" kindref="member">GL_UNSIGNED_SHORT</ref><sp/>:<sp/>size=</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="glew_8h_1ac995a558f6571eb5f98b7a6d2b2a4468" kindref="member">GLushort</ref>);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a80a33c79f69417372d65d2a65ca36d49" kindref="member">GL_UNSIGNED_BYTE</ref><sp/><sp/>:<sp/>size=</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="glew_8h_1a0595908be03a8cff881a23cdc9170e7c" kindref="member">GLubyte</ref>);<sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal"><sp/>:<sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;wrong<sp/>data<sp/>type<sp/>send<sp/>for<sp/>index<sp/>value\n&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>for<sp/>the<sp/>indices</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a3b3a3f8200f094b781e9f61e2f19fc50" kindref="member">glBindBuffer</ref>(<ref refid="glew_8h_1ad26c63125c72cbf0347b589d51676e6a" kindref="member">GL_ELEMENT_ARRAY_BUFFER</ref>,<sp/>iboID);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a9419a03f5c46e2758f884e9c56d92b6a" kindref="member">glBufferData</ref>(<ref refid="glew_8h_1ad26c63125c72cbf0347b589d51676e6a" kindref="member">GL_ELEMENT_ARRAY_BUFFER</ref>,<sp/>_indexSize<sp/>*<sp/>static_cast&lt;GLsizeiptr&gt;(size),<sp/>const_cast&lt;GLvoid<sp/>*&gt;(_indexData),<sp/>_mode);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1ab8d799398732410bec097d1b585e757a" kindref="member">m_allocated</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1abdb457eb178f4c24ab07f07da3b70415" kindref="member">m_indexed</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1a5c5f9a7e89d545f8c22bc0bd9743fb95" kindref="member">m_indexType</ref>=_indexType;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="classngl_1_1_vertex_array_object_1a1ecf7e7a8e14ff82909461ae81b4f16c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1a1ecf7e7a8e14ff82909461ae81b4f16c" kindref="member">VertexArrayObject::setRawIndexedData</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>_size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a1e5eb1ac5e47603cc80ab58338b92393" kindref="member">GLvoid</ref><sp/>*_data,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_indexSize,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a1e5eb1ac5e47603cc80ab58338b92393" kindref="member">GLvoid</ref><sp/>*_indexData,<sp/><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>_indexType,<ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>_mode)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;trying<sp/>to<sp/>set<sp/>VOA<sp/>data<sp/>when<sp/>unbound\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/>vboID;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a1b33d322b89d94ad4938461db0a0424a" kindref="member">glGenBuffers</ref>(1,<sp/>&amp;vboID);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1a7f8e3a43ba94864b1a0a0dd7749ba79a" kindref="member">m_vboIDs</ref>.push_back(vboID);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/>iboID;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a1b33d322b89d94ad4938461db0a0424a" kindref="member">glGenBuffers</ref>(1,<sp/>&amp;iboID);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1abc2f84ab8234d603c60de78cdf7b3a7b" kindref="member">m_iboID</ref><sp/>=<sp/>iboID;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//glEnableVertexAttribArray(0);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>we<sp/>will<sp/>bind<sp/>an<sp/>array<sp/>buffer<sp/>to<sp/>the<sp/>first<sp/>one<sp/>and<sp/>load<sp/>the<sp/>data<sp/>for<sp/>the<sp/>verts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a3b3a3f8200f094b781e9f61e2f19fc50" kindref="member">glBindBuffer</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,<sp/>vboID);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a9419a03f5c46e2758f884e9c56d92b6a" kindref="member">glBufferData</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,<sp/>static_cast&lt;GLsizeiptr&gt;(_size),<sp/>_data,<sp/>_mode);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>need<sp/>to<sp/>determine<sp/>the<sp/>size<sp/>of<sp/>the<sp/>data<sp/>type<sp/>before<sp/>we<sp/>set<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>default<sp/>to<sp/>a<sp/>ushort</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a3d1e3edfcf61ca2d831883e1afbad89e" kindref="member">size</ref>=</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="glew_8h_1ac995a558f6571eb5f98b7a6d2b2a4468" kindref="member">GLushort</ref>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(_indexType)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a69b1c02ba0bd93c643c6d82e0c16eb99" kindref="member">GL_UNSIGNED_INT</ref><sp/><sp/><sp/>:<sp/>size=</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref>);<sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a36c3f955599ab92217a70cce8a22e11f" kindref="member">GL_UNSIGNED_SHORT</ref><sp/>:<sp/>size=</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="glew_8h_1ac995a558f6571eb5f98b7a6d2b2a4468" kindref="member">GLushort</ref>);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a80a33c79f69417372d65d2a65ca36d49" kindref="member">GL_UNSIGNED_BYTE</ref><sp/><sp/>:<sp/>size=</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="glew_8h_1a0595908be03a8cff881a23cdc9170e7c" kindref="member">GLubyte</ref>);<sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal"><sp/>:<sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;wrong<sp/>data<sp/>type<sp/>sent<sp/>for<sp/>index<sp/>value\n&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>for<sp/>the<sp/>indices</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a3b3a3f8200f094b781e9f61e2f19fc50" kindref="member">glBindBuffer</ref>(<ref refid="glew_8h_1ad26c63125c72cbf0347b589d51676e6a" kindref="member">GL_ELEMENT_ARRAY_BUFFER</ref>,<sp/>iboID);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a9419a03f5c46e2758f884e9c56d92b6a" kindref="member">glBufferData</ref>(<ref refid="glew_8h_1ad26c63125c72cbf0347b589d51676e6a" kindref="member">GL_ELEMENT_ARRAY_BUFFER</ref>,<sp/>static_cast&lt;GLsizeiptr&gt;(_indexSize)*size<sp/>,<sp/>_indexData,<sp/>_mode);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1ab8d799398732410bec097d1b585e757a" kindref="member">m_allocated</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1abdb457eb178f4c24ab07f07da3b70415" kindref="member">m_indexed</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1a5c5f9a7e89d545f8c22bc0bd9743fb95" kindref="member">m_indexType</ref>=_indexType;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="classngl_1_1_vertex_array_object_1a81097b71002b5e122c7ff0b5dbcd22d2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1a81097b71002b5e122c7ff0b5dbcd22d2" kindref="member">VertexArrayObject::updateIndexedData</ref>(<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>_size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a31aeedaeef29442c9c015ab355c8f5ab" kindref="member">GLfloat</ref><sp/>&amp;_data,<ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>_mode<sp/>)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;trying<sp/>to<sp/>set<sp/>VOA<sp/>data<sp/>when<sp/>unbound\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab8d799398732410bec097d1b585e757a" kindref="member">m_allocated</ref><sp/>&amp;&amp;<sp/><ref refid="classngl_1_1_vertex_array_object_1abdb457eb178f4c24ab07f07da3b70415" kindref="member">m_indexed</ref>)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a3b3a3f8200f094b781e9f61e2f19fc50" kindref="member">glBindBuffer</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,<sp/><ref refid="classngl_1_1_vertex_array_object_1ad7927f511591c372a212fefa344ee6f3" kindref="member">getVBOid</ref>(0));</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a9419a03f5c46e2758f884e9c56d92b6a" kindref="member">glBufferData</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,<sp/>static_cast&lt;GLsizeiptr&gt;(_size),<sp/>&amp;_data,<sp/>_mode);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="classngl_1_1_vertex_array_object_1a5f87f60ea9833028bb41a7df2d398d6f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1a81097b71002b5e122c7ff0b5dbcd22d2" kindref="member">VertexArrayObject::updateIndexedData</ref>(<ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/>vboidx,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>_size,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a31aeedaeef29442c9c015ab355c8f5ab" kindref="member">GLfloat</ref><sp/>&amp;_data,<ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>_mode)</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;trying<sp/>to<sp/>set<sp/>VOA<sp/>data<sp/>when<sp/>unbound\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab8d799398732410bec097d1b585e757a" kindref="member">m_allocated</ref><sp/>&amp;&amp;<sp/><ref refid="classngl_1_1_vertex_array_object_1abdb457eb178f4c24ab07f07da3b70415" kindref="member">m_indexed</ref>)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a3b3a3f8200f094b781e9f61e2f19fc50" kindref="member">glBindBuffer</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,<sp/><ref refid="classngl_1_1_vertex_array_object_1ad7927f511591c372a212fefa344ee6f3" kindref="member">getVBOid</ref>(vboidx));</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a9419a03f5c46e2758f884e9c56d92b6a" kindref="member">glBufferData</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,<sp/>static_cast&lt;GLsizeiptr&gt;(_size),<sp/>&amp;_data,<sp/>_mode);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="classngl_1_1_vertex_array_object_1abd24371ac017f02b37cb469275387cd0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1abd24371ac017f02b37cb469275387cd0" kindref="member">VertexArrayObject::updateData</ref>(<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a31aeedaeef29442c9c015ab355c8f5ab" kindref="member">GLfloat</ref><sp/>&amp;_data,<ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>_mode<sp/>)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;trying<sp/>to<sp/>set<sp/>VOA<sp/>data<sp/>when<sp/>unbound\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab8d799398732410bec097d1b585e757a" kindref="member">m_allocated</ref><sp/>)</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a3b3a3f8200f094b781e9f61e2f19fc50" kindref="member">glBindBuffer</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,<sp/><ref refid="classngl_1_1_vertex_array_object_1ad7927f511591c372a212fefa344ee6f3" kindref="member">getVBOid</ref>(0));</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a9419a03f5c46e2758f884e9c56d92b6a" kindref="member">glBufferData</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,<sp/>_size,<sp/>&amp;_data,<sp/>_mode);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="classngl_1_1_vertex_array_object_1aff3d5f43e8a068728a0d9c0f959a9167" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1abd24371ac017f02b37cb469275387cd0" kindref="member">VertexArrayObject::updateData</ref>(<ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/>vboidx,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_size,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a31aeedaeef29442c9c015ab355c8f5ab" kindref="member">GLfloat</ref><sp/>&amp;_data,<ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>_mode)</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;trying<sp/>to<sp/>set<sp/>VOA<sp/>data<sp/>when<sp/>unbound\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab8d799398732410bec097d1b585e757a" kindref="member">m_allocated</ref><sp/>)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a3b3a3f8200f094b781e9f61e2f19fc50" kindref="member">glBindBuffer</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,<sp/><ref refid="classngl_1_1_vertex_array_object_1ad7927f511591c372a212fefa344ee6f3" kindref="member">getVBOid</ref>(vboidx));</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a9419a03f5c46e2758f884e9c56d92b6a" kindref="member">glBufferData</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,<sp/>_size,<sp/>&amp;_data,<sp/>_mode);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="classngl_1_1_vertex_array_object_1ad7927f511591c372a212fefa344ee6f3" refkind="member"><highlight class="normal"><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/><ref refid="classngl_1_1_vertex_array_object_1ad7927f511591c372a212fefa344ee6f3" kindref="member">VertexArrayObject::getVBOid</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_index)</highlight></codeline>
+<codeline lineno="232"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">=0;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(_index&lt;<ref refid="classngl_1_1_vertex_array_object_1a7f8e3a43ba94864b1a0a0dd7749ba79a" kindref="member">m_vboIDs</ref>.size())</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">=<ref refid="classngl_1_1_vertex_array_object_1a7f8e3a43ba94864b1a0a0dd7749ba79a" kindref="member">m_vboIDs</ref>[_index];</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a58c2a664503e14ffb8f21012aabff3e9" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="classngl_1_1_vertex_array_object_1aafedc782cecaf14efc1011732736ccdb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1aafedc782cecaf14efc1011732736ccdb" kindref="member">VertexArrayObject::setVertexAttributePointer</ref>(<ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/>_id,<sp/><ref refid="glew_8h_1acebcc1c5663f14ebde1d16831e5fed94" kindref="member">GLint</ref><sp/>_size,<sp/><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>_type,<sp/><ref refid="glew_8h_1a9289d5b99dc1f27f01480360f2e18ae0" kindref="member">GLsizei</ref><sp/>_stride,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_dataOffset,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_normalise<sp/>)</highlight></codeline>
+<codeline lineno="244"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref><sp/>!=</highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;Warning<sp/>trying<sp/>to<sp/>set<sp/>attribute<sp/>on<sp/>Unbound<sp/>VOA\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a8afadc1fe36886688a02097cc63a17cb" kindref="member">glVertexAttribPointer</ref>(_id,_size,_type,_normalise,_stride,static_cast&lt;Real<sp/>*&gt;(NULL)<sp/><sp/>+<sp/>_dataOffset);</highlight><highlight class="comment">//<sp/><sp/><sp/>((Real<sp/>*)NULL<sp/>+<sp/>(_dataOffset)));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a6e8ee482001ee8fb9b3d4851116779b4" kindref="member">glEnableVertexAttribArray</ref>(_id);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255" refid="classngl_1_1_vertex_array_object_1a003b5e164f1792e733d5a03de97d7b75" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1a003b5e164f1792e733d5a03de97d7b75" kindref="member">VertexArrayObject::setVertexAttributeIPointer</ref>(<sp/><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/>_id,<sp/><sp/><ref refid="glew_8h_1acebcc1c5663f14ebde1d16831e5fed94" kindref="member">GLint</ref><sp/>_size,<sp/><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>_type,<sp/><ref refid="glew_8h_1a9289d5b99dc1f27f01480360f2e18ae0" kindref="member">GLsizei</ref><sp/>_stride,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_dataOffset<sp/>)</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref><sp/>!=</highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;Warning<sp/>trying<sp/>to<sp/>set<sp/>attribute<sp/>on<sp/>Unbound<sp/>VOA\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a4c19069a22ebd709443b65a9c170be49" kindref="member">glVertexAttribIPointer</ref>(_id,_size,_type,_stride,static_cast&lt;Real<sp/>*&gt;(NULL)<sp/>+_dataOffset)<sp/>;</highlight><highlight class="comment">//((Real<sp/>*)NULL<sp/>+<sp/>(_dataOffset)));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a6e8ee482001ee8fb9b3d4851116779b4" kindref="member">glEnableVertexAttribArray</ref>(_id);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="classngl_1_1_vertex_array_object_1ab2f1817b2db95ef20175c0f38c63756c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1ab2f1817b2db95ef20175c0f38c63756c" kindref="member">VertexArrayObject::draw</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="270"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab8d799398732410bec097d1b585e757a" kindref="member">m_allocated</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;Warning<sp/>trying<sp/>to<sp/>draw<sp/>an<sp/>unallocated<sp/>VOA\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;Warning<sp/>trying<sp/>to<sp/>draw<sp/>an<sp/>unbound<sp/>VOA\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1abdb457eb178f4c24ab07f07da3b70415" kindref="member">m_indexed</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a1101b854177debf0c1d2611fbec24ffa" kindref="member">glDrawArrays</ref>(<ref refid="classngl_1_1_vertex_array_object_1a9da4de123c1707a68f6e8b5d16e80445" kindref="member">m_drawMode</ref>,<sp/>0,<sp/>static_cast&lt;GLsizei&gt;(<ref refid="classngl_1_1_vertex_array_object_1a5476e4d87c8b8df4c79a8a31300417ee" kindref="member">m_indicesCount</ref>));<sp/><sp/></highlight><highlight class="comment">//<sp/>draw<sp/>first<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a1ee6ceddd5b7f658b7ccb903e5162536" kindref="member">glDrawElements</ref>(<ref refid="classngl_1_1_vertex_array_object_1a9da4de123c1707a68f6e8b5d16e80445" kindref="member">m_drawMode</ref>,static_cast&lt;GLsizei&gt;(<ref refid="classngl_1_1_vertex_array_object_1a5476e4d87c8b8df4c79a8a31300417ee" kindref="member">m_indicesCount</ref>),<ref refid="classngl_1_1_vertex_array_object_1a5c5f9a7e89d545f8c22bc0bd9743fb95" kindref="member">m_indexType</ref>,static_cast&lt;GLvoid<sp/>*&gt;(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291" refid="classngl_1_1_vertex_array_object_1a83eb2ddebd373624ded581ae6d750f3d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1ab2f1817b2db95ef20175c0f38c63756c" kindref="member">VertexArrayObject::draw</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_startIndex,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_numVerts,<sp/><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>_mode<sp/><sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="292"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab8d799398732410bec097d1b585e757a" kindref="member">m_allocated</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;Warning<sp/>trying<sp/>to<sp/>draw<sp/>an<sp/>unallocated<sp/>VOA\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;Warning<sp/>trying<sp/>to<sp/>draw<sp/>an<sp/>unbound<sp/>VOA\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a1101b854177debf0c1d2611fbec24ffa" kindref="member">glDrawArrays</ref>(_mode,<sp/>static_cast&lt;GLsizei&gt;(_startIndex),<sp/>static_cast&lt;GLsizei&gt;(_numVerts));<sp/><sp/></highlight><highlight class="comment">//<sp/>draw<sp/>first<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304" refid="classngl_1_1_vertex_array_object_1a3a465ef83de53f1463ab224577180f3f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1ab2f1817b2db95ef20175c0f38c63756c" kindref="member">VertexArrayObject::draw</ref>(<ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>_mode)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="305"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab8d799398732410bec097d1b585e757a" kindref="member">m_allocated</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;Warning<sp/>trying<sp/>to<sp/>draw<sp/>an<sp/>unallocated<sp/>VOA\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;Warning<sp/>trying<sp/>to<sp/>draw<sp/>an<sp/>unbound<sp/>VOA\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1abdb457eb178f4c24ab07f07da3b70415" kindref="member">m_indexed</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a1101b854177debf0c1d2611fbec24ffa" kindref="member">glDrawArrays</ref>(_mode,<sp/>0,<sp/>static_cast&lt;GLsizei&gt;(<ref refid="classngl_1_1_vertex_array_object_1a5476e4d87c8b8df4c79a8a31300417ee" kindref="member">m_indicesCount</ref>));<sp/></highlight><highlight class="comment">//<sp/>draw<sp/>first<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a1ee6ceddd5b7f658b7ccb903e5162536" kindref="member">glDrawElements</ref>(_mode,static_cast&lt;GLsizei&gt;(<ref refid="classngl_1_1_vertex_array_object_1a5476e4d87c8b8df4c79a8a31300417ee" kindref="member">m_indicesCount</ref>),<ref refid="classngl_1_1_vertex_array_object_1a5c5f9a7e89d545f8c22bc0bd9743fb95" kindref="member">m_indexType</ref>,static_cast&lt;GLvoid<sp/>*&gt;(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));</highlight><highlight class="comment">//(GLvoid*)((char*)NULL));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="323"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325" refid="classngl_1_1_vertex_array_object_1ae7851f41abe7a38b7cae84c977c8050e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1ae7851f41abe7a38b7cae84c977c8050e" kindref="member">VertexArrayObject::drawInstanced</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_n)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="326"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab8d799398732410bec097d1b585e757a" kindref="member">m_allocated</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;Warning<sp/>trying<sp/>to<sp/>draw<sp/>an<sp/>unallocated<sp/>VOA\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;Warning<sp/>trying<sp/>to<sp/>draw<sp/>an<sp/>unbound<sp/>VOA\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1abdb457eb178f4c24ab07f07da3b70415" kindref="member">m_indexed</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a30e6afc4637e2ed6beaae367851c03d1" kindref="member">glDrawArraysInstanced</ref>(<ref refid="classngl_1_1_vertex_array_object_1a9da4de123c1707a68f6e8b5d16e80445" kindref="member">m_drawMode</ref>,<sp/>0,<sp/>static_cast&lt;GLsizei&gt;(<ref refid="classngl_1_1_vertex_array_object_1a5476e4d87c8b8df4c79a8a31300417ee" kindref="member">m_indicesCount</ref>),static_cast&lt;GLsizei&gt;(_n));<sp/><sp/></highlight><highlight class="comment">//<sp/>draw<sp/>first<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1aa0c1477a0e3a1833f625029c628ad0e0" kindref="member">glDrawElementsInstanced</ref>(<ref refid="classngl_1_1_vertex_array_object_1a9da4de123c1707a68f6e8b5d16e80445" kindref="member">m_drawMode</ref>,static_cast&lt;GLsizei&gt;(<ref refid="classngl_1_1_vertex_array_object_1a5476e4d87c8b8df4c79a8a31300417ee" kindref="member">m_indicesCount</ref>),<ref refid="classngl_1_1_vertex_array_object_1a5c5f9a7e89d545f8c22bc0bd9743fb95" kindref="member">m_indexType</ref>,</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,static_cast&lt;GLsizei&gt;(_n));</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="345"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="348" refid="classngl_1_1_vertex_array_object_1a10803c23d51a364ff646859dbd973a4d" refkind="member"><highlight class="normal"><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>*<ref refid="classngl_1_1_vertex_array_object_1a10803c23d51a364ff646859dbd973a4d" kindref="member">VertexArrayObject::getDataPointer</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_vbo,<sp/><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>_accessMode)</highlight></codeline>
+<codeline lineno="349"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>*ptr=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>code<sp/>was<sp/>this<sp/>but<sp/>g++<sp/>4.2<sp/>gives<sp/>warning<sp/>about<sp/>it<sp/>always<sp/>being<sp/>true</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight><highlight class="comment">//<sp/>removed<sp/>the<sp/>first<sp/>test<sp/>as<sp/>change<sp/>to<sp/>uint<sp/>so<sp/>should<sp/>be<sp/>ok</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>if(_vbo<sp/>&gt;=0<sp/>&amp;&amp;<sp/>_vbo&lt;m_vboIDs.size())</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(_vbo&lt;<ref refid="classngl_1_1_vertex_array_object_1a7f8e3a43ba94864b1a0a0dd7749ba79a" kindref="member">m_vboIDs</ref>.size())</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_vertex_array_object_1a7e02916979ef53c3704f8382e248004a" kindref="member">bind</ref>();</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a3b3a3f8200f094b781e9f61e2f19fc50" kindref="member">glBindBuffer</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,<sp/><ref refid="classngl_1_1_vertex_array_object_1a7f8e3a43ba94864b1a0a0dd7749ba79a" kindref="member">m_vboIDs</ref>[_vbo]);</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifndef<sp/>USINGIOS_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ptr<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="glew_8h_1a88f951d9fb1bd55e28bc3c8581adf2eb" kindref="member">glMapBuffer</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,<sp/>_accessMode));</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ptr;</highlight></codeline>
+<codeline lineno="364"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366" refid="classngl_1_1_vertex_array_object_1a33c9c3edda9c1705a8a117b91eec99dd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1a33c9c3edda9c1705a8a117b91eec99dd" kindref="member">VertexArrayObject::freeDataPointer</ref>()</highlight></codeline>
+<codeline lineno="367"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1ae6a0a2dca1b86176367fab8941e9ab8f" kindref="member">glUnmapBuffer</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>);<sp/></highlight><highlight class="comment">//<sp/>unmap<sp/>it<sp/>after<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371" refid="classngl_1_1_vertex_array_object_1ac1f2ec672b1fcf2b8faae9d72373c03c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vertex_array_object_1ac1f2ec672b1fcf2b8faae9d72373c03c" kindref="member">VertexArrayObject::getSize</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="372"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_vertex_array_object_1ab98ca43775f3585f85596d645e7a9284" kindref="member">m_bound</ref><sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;Warning<sp/>trying<sp/>to<sp/>access<sp/>an<sp/>unbound<sp/>VOA\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a3d1e3edfcf61ca2d831883e1afbad89e" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a86521a2cbeefff0f6dddd8ba6302e34f" kindref="member">glGetBufferParameteriv</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,<sp/><ref refid="glew_8h_1a97c3f50440fbe7eb098cfeede90d1686" kindref="member">GL_BUFFER_SIZE</ref>,<sp/>&amp;size);</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a3d1e3edfcf61ca2d831883e1afbad89e" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="381"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namspace<sp/>ngl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/src/VertexArrayObject.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,9 @@
+<map id="ngl::XMLSerializer::writeToXML" name="ngl::XMLSerializer::writeToXML">
+<area shape="rect" id="node2" href="$classrapidxml_1_1memory__pool.html#a4118581c29ee9a2f6b55ebf7dac185f8" title="rapidxml::memory_pool\l::allocate_node" alt="" coords="184,54,344,95"/>
+<area shape="rect" id="node5" href="$classrapidxml_1_1memory__pool.html#a171941b39d55b868358da97462185f58" title="rapidxml::memory_pool\l::allocate_string" alt="" coords="184,119,344,161"/>
+<area shape="rect" id="node6" href="$classrapidxml_1_1xml__node.html#a8696d098ecc9c4d2a646b43e91d58e31" title="rapidxml::xml_node\l::append_node" alt="" coords="195,185,333,226"/>
+<area shape="rect" id="node3" href="$classrapidxml_1_1xml__base.html#a9a09739310469995db078ebd0da3ed45" title="rapidxml::xml_base\l::name" alt="" coords="393,5,530,46"/>
+<area shape="rect" id="node4" href="$classrapidxml_1_1xml__base.html#adcdaccff61c665f039d9344e447b7445" title="rapidxml::xml_base\l::value" alt="" coords="393,70,530,111"/>
+<area shape="rect" id="node7" href="$classrapidxml_1_1xml__base.html#a7f31ae930f93852830234db1ae59c4c4" title="rapidxml::xml_base\l::parent" alt="" coords="393,151,530,193"/>
+<area shape="rect" id="node8" href="$classrapidxml_1_1xml__node.html#a2c6a4315b98bcfa2e04fed3fa1b22c36" title="rapidxml::xml_node\l::type" alt="" coords="393,217,530,258"/>
+</map>

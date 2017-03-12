@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_parse_result" kind="struct" language="C++" prot="public">
+    <compoundname>ParseResult</compoundname>
+    <includes refid="error_8h" local="no">error.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" prot="private" static="no" mutable="no">
+        <type><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref></type>
+        <definition>ParseErrorCode ParseResult::code_</definition>
+        <argsstring></argsstring>
+        <name>code_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="128" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="128" bodyend="-1"/>
+        <referencedby refid="struct_parse_result_1a1062b22f0d006e2f8a5b8c74385ff52d" compoundref="error_8h" startline="109" endline="109">Code</referencedby>
+        <referencedby refid="struct_parse_result_1a07c35a6769f5cb8a73cbc56c41e60a2a" compoundref="error_8h" startline="116" endline="116">IsError</referencedby>
+        <referencedby refid="struct_parse_result_1a90794619408c295ffa923f3307526bed" compoundref="error_8h" startline="118" endline="118">operator==</referencedby>
+        <referencedby refid="struct_parse_result_1aa81b4a7b776b77216cb752385203a8c1" compoundref="error_8h" startline="125" endline="125">Set</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_parse_result_1a4854b4b3210fd1bbc0f1457aa0d2b65a" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t ParseResult::offset_</definition>
+        <argsstring></argsstring>
+        <name>offset_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="129" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="129" bodyend="-1"/>
+        <referencedby refid="struct_parse_result_1aa65430daa3920be0d42dc4baed86df69" compoundref="error_8h" startline="111" endline="111">Offset</referencedby>
+        <referencedby refid="struct_parse_result_1aa81b4a7b776b77216cb752385203a8c1" compoundref="error_8h" startline="125" endline="125">Set</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_parse_result_1acd4a266f815bec59fa27f64f1923fe9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ParseResult::ParseResult</definition>
+        <argsstring>()</argsstring>
+        <name>ParseResult</name>
+        <briefdescription>
+<para>Default constructor, no error. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="104" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_parse_result_1a38ca49a53e80633d0864ad5026adaf84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ParseResult::ParseResult</definition>
+        <argsstring>(ParseErrorCode code, size_t offset)</argsstring>
+        <name>ParseResult</name>
+        <param>
+          <type><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref></type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Constructor to set an error. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="106" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_parse_result_1a1062b22f0d006e2f8a5b8c74385ff52d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref></type>
+        <definition>ParseErrorCode ParseResult::Code</definition>
+        <argsstring>() const </argsstring>
+        <name>Code</name>
+        <briefdescription>
+<para>Get the error code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="109" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="109" bodyend="109"/>
+        <references refid="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" compoundref="error_8h" startline="128">code_</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_parse_result_1aa65430daa3920be0d42dc4baed86df69" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t ParseResult::Offset</definition>
+        <argsstring>() const </argsstring>
+        <name>Offset</name>
+        <briefdescription>
+<para>Get the error offset, if <ref refid="struct_parse_result_1a07c35a6769f5cb8a73cbc56c41e60a2a" kindref="member">IsError()</ref>, 0 otherwise. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="111" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="111" bodyend="111"/>
+        <references refid="struct_parse_result_1a4854b4b3210fd1bbc0f1457aa0d2b65a" compoundref="error_8h" startline="129">offset_</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_parse_result_1a74ab79dfa41d390002d1ea188a749bce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ParseResult::operator bool</definition>
+        <argsstring>() const </argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+<para>Conversion to <computeroutput>bool</computeroutput>, returns <computeroutput>true</computeroutput>, iff !<ref refid="struct_parse_result_1a07c35a6769f5cb8a73cbc56c41e60a2a" kindref="member">IsError()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="114" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="114" bodyend="114"/>
+        <references refid="struct_parse_result_1a07c35a6769f5cb8a73cbc56c41e60a2a" compoundref="error_8h" startline="116" endline="116">IsError</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_parse_result_1a07c35a6769f5cb8a73cbc56c41e60a2a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ParseResult::IsError</definition>
+        <argsstring>() const </argsstring>
+        <name>IsError</name>
+        <briefdescription>
+<para>Whether the result is an error. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="116" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="116" bodyend="116"/>
+        <references refid="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" compoundref="error_8h" startline="128">code_</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ac0856bac4945cbd1d09e9502fd8f852f" compoundref="error_8h" startline="60">kParseErrorNone</references>
+        <referencedby refid="struct_parse_result_1a74ab79dfa41d390002d1ea188a749bce" compoundref="error_8h" startline="114" endline="114">operator bool</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_parse_result_1a90794619408c295ffa923f3307526bed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ParseResult::operator==</definition>
+        <argsstring>(const ParseResult &amp;that) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="struct_parse_result" kindref="compound">ParseResult</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="118" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="118" bodyend="118"/>
+        <references refid="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" compoundref="error_8h" startline="128">code_</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_parse_result_1a5a0bd70f5bbb383ac63a6450ac4ae4d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ParseResult::operator==</definition>
+        <argsstring>(ParseErrorCode code) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref></type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="119" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="119" bodyend="119"/>
+        <references refid="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" compoundref="error_8h" startline="128">code_</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_parse_result_1a88b6d44f052a19e6436ae6aadc2c40b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ParseResult::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+<para>Reset error code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="123" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="123" bodyend="123"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ac0856bac4945cbd1d09e9502fd8f852f" compoundref="error_8h" startline="60">kParseErrorNone</references>
+        <references refid="struct_parse_result_1aa81b4a7b776b77216cb752385203a8c1" compoundref="error_8h" startline="125" endline="125">Set</references>
+        <referencedby refid="class_generic_reader_1a0c450620d14ff1824e58bb7bd9b42099" compoundref="reader_8h" startline="393" endline="422">GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::Parse</referencedby>
+        <referencedby refid="class_generic_reader_1a55a2d3fd3d5261f26513ed303724bc3a" compoundref="reader_8h" startline="1402" endline="1432">GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::IterativeParse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_parse_result_1aa81b4a7b776b77216cb752385203a8c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ParseResult::Set</definition>
+        <argsstring>(ParseErrorCode code, size_t offset=0)</argsstring>
+        <name>Set</name>
+        <param>
+          <type><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref></type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Update error code and offset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="125" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="125" bodyend="125"/>
+        <references refid="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" compoundref="error_8h" startline="128">code_</references>
+        <references refid="struct_parse_result_1a4854b4b3210fd1bbc0f1457aa0d2b65a" compoundref="error_8h" startline="129">offset_</references>
+        <referencedby refid="struct_parse_result_1a88b6d44f052a19e6436ae6aadc2c40b4" compoundref="error_8h" startline="123" endline="123">Clear</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="struct_parse_result_1a58c9982e833d1c74686506ac7449200c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(ParseErrorCode code, const ParseResult &amp;err)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref></type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_parse_result" kindref="compound">ParseResult</ref> &amp;</type>
+          <declname>err</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="120" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="120" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Result of parsing (wraps ParseErrorCode) </para>    </briefdescription>
+    <detaileddescription>
+<para><programlisting><codeline><highlight class="normal">Document<sp/>doc;</highlight></codeline>
+<codeline><highlight class="normal">ParseResult<sp/>ok<sp/>=<sp/>doc.Parse(&quot;[42]&quot;);</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>(!ok)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/>&quot;JSON<sp/>parse<sp/>error:<sp/>%s<sp/>(%u)&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetParseError_En(ok.Code()),<sp/>ok.Offset());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> <simplesect kind="see"><para><ref refid="class_generic_reader_1a0c450620d14ff1824e58bb7bd9b42099" kindref="member">GenericReader::Parse</ref>, <ref refid="class_generic_document_1aebd4e7fddd80c1e1174837aee6d2159b" kindref="member">GenericDocument::Parse</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1783">
+        <label>size_t</label>
+      </node>
+      <node id="1782">
+        <label>ParseResult</label>
+        <link refid="struct_parse_result"/>
+        <childnode refid="1783" relation="usage">
+          <edgelabel>-offset_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="101" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="101" bodyend="130"/>
+    <listofallmembers>
+      <member refid="struct_parse_result_1a88b6d44f052a19e6436ae6aadc2c40b4" prot="public" virt="non-virtual"><scope>ParseResult</scope><name>Clear</name></member>
+      <member refid="struct_parse_result_1a1062b22f0d006e2f8a5b8c74385ff52d" prot="public" virt="non-virtual"><scope>ParseResult</scope><name>Code</name></member>
+      <member refid="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" prot="private" virt="non-virtual"><scope>ParseResult</scope><name>code_</name></member>
+      <member refid="struct_parse_result_1a07c35a6769f5cb8a73cbc56c41e60a2a" prot="public" virt="non-virtual"><scope>ParseResult</scope><name>IsError</name></member>
+      <member refid="struct_parse_result_1aa65430daa3920be0d42dc4baed86df69" prot="public" virt="non-virtual"><scope>ParseResult</scope><name>Offset</name></member>
+      <member refid="struct_parse_result_1a4854b4b3210fd1bbc0f1457aa0d2b65a" prot="private" virt="non-virtual"><scope>ParseResult</scope><name>offset_</name></member>
+      <member refid="struct_parse_result_1a74ab79dfa41d390002d1ea188a749bce" prot="public" virt="non-virtual"><scope>ParseResult</scope><name>operator bool</name></member>
+      <member refid="struct_parse_result_1a90794619408c295ffa923f3307526bed" prot="public" virt="non-virtual"><scope>ParseResult</scope><name>operator==</name></member>
+      <member refid="struct_parse_result_1a5a0bd70f5bbb383ac63a6450ac4ae4d1" prot="public" virt="non-virtual"><scope>ParseResult</scope><name>operator==</name></member>
+      <member refid="struct_parse_result_1a58c9982e833d1c74686506ac7449200c" prot="public" virt="non-virtual"><scope>ParseResult</scope><name>operator==</name></member>
+      <member refid="struct_parse_result_1acd4a266f815bec59fa27f64f1923fe9e" prot="public" virt="non-virtual"><scope>ParseResult</scope><name>ParseResult</name></member>
+      <member refid="struct_parse_result_1a38ca49a53e80633d0864ad5026adaf84" prot="public" virt="non-virtual"><scope>ParseResult</scope><name>ParseResult</name></member>
+      <member refid="struct_parse_result_1aa81b4a7b776b77216cb752385203a8c1" prot="public" virt="non-virtual"><scope>ParseResult</scope><name>Set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

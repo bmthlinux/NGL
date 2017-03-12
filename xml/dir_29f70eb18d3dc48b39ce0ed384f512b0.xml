@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_29f70eb18d3dc48b39ce0ed384f512b0" kind="dir">
+    <compoundname>error</compoundname>
+    <innerfile refid="en_8h">en.h</innerfile>
+    <innerfile refid="error_8h">error.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/"/>
+  </compounddef>
+</doxygen>

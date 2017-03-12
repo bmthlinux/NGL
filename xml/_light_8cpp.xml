@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_light_8cpp" kind="file" language="C++">
+    <compoundname>Light.cpp</compoundname>
+    <includes refid="_light_8h" local="yes">Light.h</includes>
+    <includes refid="_shader_lib_8h" local="yes">ShaderLib.h</includes>
+    <incdepgraph>
+      <node id="4640">
+        <label>Mat4.h</label>
+        <link refid="_mat4_8h"/>
+        <childnode refid="4625" relation="include">
+        </childnode>
+        <childnode refid="4641" relation="include">
+        </childnode>
+        <childnode refid="4638" relation="include">
+        </childnode>
+      </node>
+      <node id="4647">
+        <label>ShaderProgram.h</label>
+        <link refid="_shader_program_8h"/>
+        <childnode refid="4644" relation="include">
+        </childnode>
+        <childnode refid="4625" relation="include">
+        </childnode>
+        <childnode refid="4648" relation="include">
+        </childnode>
+        <childnode refid="4650" relation="include">
+        </childnode>
+        <childnode refid="4651" relation="include">
+        </childnode>
+      </node>
+      <node id="4625">
+        <label>Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="4626" relation="include">
+        </childnode>
+        <childnode refid="4632" relation="include">
+        </childnode>
+        <childnode refid="4633" relation="include">
+        </childnode>
+        <childnode refid="4634" relation="include">
+        </childnode>
+      </node>
+      <node id="4634">
+        <label>QGLContext</label>
+      </node>
+      <node id="4639">
+        <label>Vec3.h</label>
+        <link refid="_vec3_8h"/>
+        <childnode refid="4625" relation="include">
+        </childnode>
+        <childnode refid="4638" relation="include">
+        </childnode>
+      </node>
+      <node id="4649">
+        <label>cmath</label>
+      </node>
+      <node id="4628">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="4629" relation="include">
+        </childnode>
+        <childnode refid="4630" relation="include">
+        </childnode>
+      </node>
+      <node id="4624">
+        <label>Light.h</label>
+        <link refid="_light_8h"/>
+        <childnode refid="4625" relation="include">
+        </childnode>
+        <childnode refid="4635" relation="include">
+        </childnode>
+        <childnode refid="4636" relation="include">
+        </childnode>
+        <childnode refid="4639" relation="include">
+        </childnode>
+        <childnode refid="4640" relation="include">
+        </childnode>
+        <childnode refid="4642" relation="include">
+        </childnode>
+      </node>
+      <node id="4642">
+        <label>string</label>
+      </node>
+      <node id="4627">
+        <label>stddef.h</label>
+      </node>
+      <node id="4626">
+        <label>glew.h</label>
+        <link refid="glew_8h"/>
+        <childnode refid="4627" relation="include">
+        </childnode>
+        <childnode refid="4628" relation="include">
+        </childnode>
+        <childnode refid="4631" relation="include">
+        </childnode>
+      </node>
+      <node id="4641">
+        <label>ostream</label>
+      </node>
+      <node id="4631">
+        <label>GL/glu.h</label>
+      </node>
+      <node id="4629">
+        <label>limits.h</label>
+      </node>
+      <node id="4636">
+        <label>Vec4.h</label>
+        <link refid="_vec4_8h"/>
+        <childnode refid="4625" relation="include">
+        </childnode>
+        <childnode refid="4637" relation="include">
+        </childnode>
+        <childnode refid="4639" relation="include">
+        </childnode>
+        <childnode refid="4638" relation="include">
+        </childnode>
+      </node>
+      <node id="4643">
+        <label>ShaderLib.h</label>
+        <link refid="_shader_lib_8h"/>
+        <childnode refid="4635" relation="include">
+        </childnode>
+        <childnode refid="4644" relation="include">
+        </childnode>
+        <childnode refid="4647" relation="include">
+        </childnode>
+        <childnode refid="4652" relation="include">
+        </childnode>
+        <childnode refid="4625" relation="include">
+        </childnode>
+        <childnode refid="4653" relation="include">
+        </childnode>
+        <childnode refid="4640" relation="include">
+        </childnode>
+        <childnode refid="4636" relation="include">
+        </childnode>
+        <childnode refid="4642" relation="include">
+        </childnode>
+        <childnode refid="4651" relation="include">
+        </childnode>
+      </node>
+      <node id="4630">
+        <label>wchar.h</label>
+      </node>
+      <node id="4644">
+        <label>Shader.h</label>
+        <link refid="_shader_8h"/>
+        <childnode refid="4625" relation="include">
+        </childnode>
+        <childnode refid="4645" relation="include">
+        </childnode>
+        <childnode refid="4646" relation="include">
+        </childnode>
+      </node>
+      <node id="4635">
+        <label>Colour.h</label>
+        <link refid="_colour_8h"/>
+        <childnode refid="4625" relation="include">
+        </childnode>
+      </node>
+      <node id="4623">
+        <label>Light.cpp</label>
+        <link refid="Light.cpp"/>
+        <childnode refid="4624" relation="include">
+        </childnode>
+        <childnode refid="4643" relation="include">
+        </childnode>
+      </node>
+      <node id="4650">
+        <label>vector</label>
+      </node>
+      <node id="4638">
+        <label>array</label>
+      </node>
+      <node id="4633">
+        <label>QtOpenGL/QGLContext</label>
+      </node>
+      <node id="4646">
+        <label>cstdlib</label>
+      </node>
+      <node id="4645">
+        <label>iostream</label>
+      </node>
+      <node id="4652">
+        <label>Singleton.h</label>
+        <link refid="_singleton_8h"/>
+        <childnode refid="4625" relation="include">
+        </childnode>
+        <childnode refid="4646" relation="include">
+        </childnode>
+      </node>
+      <node id="4653">
+        <label>Mat3.h</label>
+        <link refid="_mat3_8h"/>
+        <childnode refid="4625" relation="include">
+        </childnode>
+        <childnode refid="4638" relation="include">
+        </childnode>
+        <childnode refid="4641" relation="include">
+        </childnode>
+      </node>
+      <node id="4651">
+        <label>unordered_map</label>
+      </node>
+      <node id="4648">
+        <label>Util.h</label>
+        <link refid="_util_8h"/>
+        <childnode refid="4625" relation="include">
+        </childnode>
+        <childnode refid="4636" relation="include">
+        </childnode>
+        <childnode refid="4649" relation="include">
+        </childnode>
+        <childnode refid="4642" relation="include">
+        </childnode>
+      </node>
+      <node id="4632">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="4637">
+        <label>Vec2.h</label>
+        <link refid="_vec2_8h"/>
+        <childnode refid="4625" relation="include">
+        </childnode>
+        <childnode refid="4638" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacengl">ngl</innernamespace>
+    <briefdescription>
+<para>implementation files for Light class </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Copyright<sp/>(C)<sp/>2009<sp/>Jon<sp/>Macey</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_light_8h" kindref="compound">Light.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_shader_lib_8h" kindref="compound">ShaderLib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacengl" kindref="compound">ngl</ref></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classngl_1_1_light_1a859c4c66087cee00501dc380e34afaa2" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_light_1a9ffa32b2597dc3ceea885a4f8963873d" kindref="member">Light::Light</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/>&amp;_pos,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref>&amp;<sp/>_col,<sp/><ref refid="namespacengl_1aed3f973f604db6d64ca9e0b24996a553" kindref="member">LightModes</ref><sp/>_lightMode<sp/>)<sp/>noexcept</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>zero<sp/>now<sp/>means<sp/>un-assigned</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>m_position.set(_pos);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>m_diffuse.set(_col);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>m_specular.set(_col);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>m_lightMode<sp/>=<sp/>_lightMode;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>m_constantAtten=1.0f;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>m_linearAtten=0.0f;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>m_quadraticAtten=0.0f;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>m_active=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>the<sp/>w<sp/>for<sp/>our<sp/>light<sp/>modes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>m_position.m_w=</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(m_lightMode);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>as<sp/>per<sp/>the<sp/>orange<sp/>book<sp/>we<sp/>use<sp/>this<sp/>value<sp/>along<sp/>with<sp/>pos.m_w<sp/>to<sp/>determine<sp/>the<sp/>light</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>m_cutoffAngle=180.0f;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classngl_1_1_light_1aa7390927b726d9dbba055a2dd0799941" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_light_1a9ffa32b2597dc3ceea885a4f8963873d" kindref="member">Light::Light</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_light" kindref="compound">Light</ref><sp/>&amp;_l)<sp/>noexcept</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>m_position=_l.m_position;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>m_diffuse=_l.m_diffuse;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>m_specular=_l.m_specular;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>m_lightMode<sp/>=<sp/>_l.m_lightMode;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>m_constantAtten=_l.m_constantAtten;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>m_linearAtten=_l.m_linearAtten;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>m_quadraticAtten=_l.m_quadraticAtten;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>m_active=_l.m_active;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>the<sp/>w<sp/>for<sp/>our<sp/>light<sp/>modes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>m_position.m_w=</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_l.m_lightMode);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>as<sp/>per<sp/>the<sp/>orange<sp/>book<sp/>we<sp/>use<sp/>this<sp/>value<sp/>along<sp/>with<sp/>pos.m_w<sp/>to<sp/>determine<sp/>the<sp/>light</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>m_cutoffAngle=_l.m_cutoffAngle;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classngl_1_1_light_1a2fb032539669aa763a5a47cd40f5dfa5" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_light_1a9ffa32b2597dc3ceea885a4f8963873d" kindref="member">Light::Light</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/>&amp;_pos,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref>&amp;<sp/>_col,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref>&amp;<sp/>_specColour,<ref refid="namespacengl_1aed3f973f604db6d64ca9e0b24996a553" kindref="member">LightModes</ref><sp/>_lightMode<sp/><sp/>)<sp/>noexcept</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>zero<sp/>now<sp/>means<sp/>un-assigned</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>m_position.set(_pos);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>m_diffuse.set(_col);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>m_specular.set(_specColour);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>m_lightMode=_lightMode;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>m_constantAtten=1.0f;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>m_linearAtten=0.0f;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>m_quadraticAtten=0.0f;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>m_active=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>the<sp/>w<sp/>for<sp/>our<sp/>light<sp/>modes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>m_position.m_w=</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(m_lightMode);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>m_cutoffAngle=180.0f;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classngl_1_1_light_1a9b6d00c8cdb99e89288da74fe4239827" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_light_1a9b6d00c8cdb99e89288da74fe4239827" kindref="member">Light::enable</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_light_1a64d12d0914998cf0296b4284acd1cd08" kindref="member">m_active</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classngl_1_1_light_1a7235d272789d8ab1a86a61081463451c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_light_1a7235d272789d8ab1a86a61081463451c" kindref="member">Light::disable</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_light_1a64d12d0914998cf0296b4284acd1cd08" kindref="member">m_active</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classngl_1_1_light_1ab778c53276b8171eb3ce93ba084d6ddd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_light_1ab778c53276b8171eb3ce93ba084d6ddd" kindref="member">Light::setAttenuation</ref>(<ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_constant,<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_linear,<sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_quadratic<sp/><sp/>)<sp/>noexcept</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_light_1ae599f2dfec737b23af75cbcb6be6613e" kindref="member">m_constantAtten</ref>=_constant;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_light_1aebe8996368d8c7598cffba36883084e0" kindref="member">m_linearAtten</ref>=_linear;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_light_1a926e5c7567ad0b2e09548dd6a8e60d7c" kindref="member">m_quadraticAtten</ref>=_quadratic;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="classngl_1_1_light_1a8dceeb672a20505e05ce0f62976eb311" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_light_1a8dceeb672a20505e05ce0f62976eb311" kindref="member">Light::loadToShader</ref>(<ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>_uniformName<sp/>)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_shader_lib" kindref="compound">ShaderLib</ref><sp/>*<ref refid="glew_8h_1a57b2a96adb1d51204909a82d861e395e" kindref="member">shader</ref>=<ref refid="classngl_1_1_singleton_1ab5d43c93fdc09ecadc5f6ebfd9460396" kindref="member">ShaderLib::instance</ref>();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_light_1a64d12d0914998cf0296b4284acd1cd08" kindref="member">m_active</ref>==</highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref><sp/>pos=<ref refid="classngl_1_1_light_1ad164572a490340edfa376a2415ecf0f3" kindref="member">m_transform</ref>*<ref refid="classngl_1_1_light_1afe8a51aeb598b51b3c42a6ecddd38d08" kindref="member">m_position</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1a9faf1fcc53d2dbec5fd9c9e239808e04" kindref="member">setShaderParam4f</ref>(_uniformName+</highlight><highlight class="stringliteral">&quot;.position&quot;</highlight><highlight class="normal">,pos.<ref refid="classngl_1_1_vec4_1a3ffbb98e16e3e05d658cf38907911fff" kindref="member">m_x</ref>,pos.<ref refid="classngl_1_1_vec4_1adc415581c84f9e54f15198a002f8948b" kindref="member">m_y</ref>,pos.<ref refid="classngl_1_1_vec4_1afef13d1ede4b248147e7dd126fd1e17a" kindref="member">m_z</ref>,<ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref>(<ref refid="classngl_1_1_light_1a98e0a04cb4c892a429381b44ae07a639" kindref="member">m_lightMode</ref>));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1a9faf1fcc53d2dbec5fd9c9e239808e04" kindref="member">setShaderParam4f</ref>(_uniformName+</highlight><highlight class="stringliteral">&quot;.ambient&quot;</highlight><highlight class="normal">,<ref refid="classngl_1_1_light_1acc8c0099d1b3437bc814d19de9d5025f" kindref="member">m_ambient</ref>.<ref refid="classngl_1_1_colour_1a98a3dfe48c9fe96c5206a3004cdaa9e7" kindref="member">m_r</ref>,<ref refid="classngl_1_1_light_1acc8c0099d1b3437bc814d19de9d5025f" kindref="member">m_ambient</ref>.<ref refid="classngl_1_1_colour_1a12072e1aa25ddb1977a8b9acbb3b3085" kindref="member">m_g</ref>,<ref refid="classngl_1_1_light_1acc8c0099d1b3437bc814d19de9d5025f" kindref="member">m_ambient</ref>.<ref refid="classngl_1_1_colour_1a3e577332e227fba3e0a50b72ee65dc2f" kindref="member">m_b</ref>,<ref refid="classngl_1_1_light_1acc8c0099d1b3437bc814d19de9d5025f" kindref="member">m_ambient</ref>.<ref refid="classngl_1_1_colour_1ab96e9e106eb002f99202af9a98f2370f" kindref="member">m_a</ref>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1a9faf1fcc53d2dbec5fd9c9e239808e04" kindref="member">setShaderParam4f</ref>(_uniformName+</highlight><highlight class="stringliteral">&quot;.diffuse&quot;</highlight><highlight class="normal">,<ref refid="classngl_1_1_light_1a7bc1cdc3603b217e66bf4e1d9b1b8e8c" kindref="member">m_diffuse</ref>.<ref refid="classngl_1_1_colour_1a98a3dfe48c9fe96c5206a3004cdaa9e7" kindref="member">m_r</ref>,<ref refid="classngl_1_1_light_1a7bc1cdc3603b217e66bf4e1d9b1b8e8c" kindref="member">m_diffuse</ref>.<ref refid="classngl_1_1_colour_1a12072e1aa25ddb1977a8b9acbb3b3085" kindref="member">m_g</ref>,<ref refid="classngl_1_1_light_1a7bc1cdc3603b217e66bf4e1d9b1b8e8c" kindref="member">m_diffuse</ref>.<ref refid="classngl_1_1_colour_1a3e577332e227fba3e0a50b72ee65dc2f" kindref="member">m_b</ref>,<ref refid="classngl_1_1_light_1a7bc1cdc3603b217e66bf4e1d9b1b8e8c" kindref="member">m_diffuse</ref>.<ref refid="classngl_1_1_colour_1ab96e9e106eb002f99202af9a98f2370f" kindref="member">m_a</ref>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1a9faf1fcc53d2dbec5fd9c9e239808e04" kindref="member">setShaderParam4f</ref>(_uniformName+</highlight><highlight class="stringliteral">&quot;.specular&quot;</highlight><highlight class="normal">,<ref refid="classngl_1_1_light_1aa12f58491b9237345930721b5ac94932" kindref="member">m_specular</ref>.<ref refid="classngl_1_1_colour_1a98a3dfe48c9fe96c5206a3004cdaa9e7" kindref="member">m_r</ref>,<ref refid="classngl_1_1_light_1aa12f58491b9237345930721b5ac94932" kindref="member">m_specular</ref>.<ref refid="classngl_1_1_colour_1a12072e1aa25ddb1977a8b9acbb3b3085" kindref="member">m_g</ref>,<ref refid="classngl_1_1_light_1aa12f58491b9237345930721b5ac94932" kindref="member">m_specular</ref>.<ref refid="classngl_1_1_colour_1a3e577332e227fba3e0a50b72ee65dc2f" kindref="member">m_b</ref>,<ref refid="classngl_1_1_light_1aa12f58491b9237345930721b5ac94932" kindref="member">m_specular</ref>.<ref refid="classngl_1_1_colour_1ab96e9e106eb002f99202af9a98f2370f" kindref="member">m_a</ref>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1a49843176da69f14b25713a8657453885" kindref="member">setShaderParam1f</ref>(_uniformName+</highlight><highlight class="stringliteral">&quot;.constantAttenuation&quot;</highlight><highlight class="normal">,<ref refid="classngl_1_1_light_1ae599f2dfec737b23af75cbcb6be6613e" kindref="member">m_constantAtten</ref>);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1a49843176da69f14b25713a8657453885" kindref="member">setShaderParam1f</ref>(_uniformName+</highlight><highlight class="stringliteral">&quot;.linearAttenuation&quot;</highlight><highlight class="normal">,<ref refid="classngl_1_1_light_1aebe8996368d8c7598cffba36883084e0" kindref="member">m_linearAtten</ref>);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1a49843176da69f14b25713a8657453885" kindref="member">setShaderParam1f</ref>(_uniformName+</highlight><highlight class="stringliteral">&quot;.quadraticAttenuation&quot;</highlight><highlight class="normal">,<ref refid="classngl_1_1_light_1a926e5c7567ad0b2e09548dd6a8e60d7c" kindref="member">m_quadraticAtten</ref>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1a49843176da69f14b25713a8657453885" kindref="member">setShaderParam1f</ref>(_uniformName+</highlight><highlight class="stringliteral">&quot;.spotCosCutoff&quot;</highlight><highlight class="normal">,<ref refid="classngl_1_1_light_1a61ea1115270a6b4798a6383a8c2c1b26" kindref="member">m_cutoffAngle</ref>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>turn<sp/>light<sp/>off<sp/>by<sp/>setting<sp/>0<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1a9faf1fcc53d2dbec5fd9c9e239808e04" kindref="member">setShaderParam4f</ref>(_uniformName+</highlight><highlight class="stringliteral">&quot;.position&quot;</highlight><highlight class="normal">,0,0,0,<ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref>(<ref refid="classngl_1_1_light_1a98e0a04cb4c892a429381b44ae07a639" kindref="member">m_lightMode</ref>));</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1a9faf1fcc53d2dbec5fd9c9e239808e04" kindref="member">setShaderParam4f</ref>(_uniformName+</highlight><highlight class="stringliteral">&quot;.ambient&quot;</highlight><highlight class="normal">,0,0,0,0);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1a9faf1fcc53d2dbec5fd9c9e239808e04" kindref="member">setShaderParam4f</ref>(_uniformName+</highlight><highlight class="stringliteral">&quot;.diffuse&quot;</highlight><highlight class="normal">,0,0,0,0);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1a9faf1fcc53d2dbec5fd9c9e239808e04" kindref="member">setShaderParam4f</ref>(_uniformName+</highlight><highlight class="stringliteral">&quot;.specular&quot;</highlight><highlight class="normal">,0,0,0,0);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="classngl_1_1_light_1aaa5de852f85078e5c5da95652618dd75" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_light_1aaa5de852f85078e5c5da95652618dd75" kindref="member">Light::setTransform</ref>(<ref refid="classngl_1_1_mat4" kindref="compound">Mat4</ref><sp/>&amp;_t)<sp/>noexcept</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_light_1ad164572a490340edfa376a2415ecf0f3" kindref="member">m_transform</ref>=_t;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>ngl<sp/>namespacee</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/src/Light.cpp"/>
+  </compounddef>
+</doxygen>

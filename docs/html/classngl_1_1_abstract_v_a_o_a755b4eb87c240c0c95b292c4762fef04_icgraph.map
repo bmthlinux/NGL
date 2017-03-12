@@ -1,0 +1,27 @@
+<map id="ngl::AbstractVAO::unbind" name="ngl::AbstractVAO::unbind">
+<area shape="rect" id="node2" href="$classngl_1_1_bezier_curve.html#a21d6f57de08c6d06c87f9fbb58da7211" title="destructor " alt="" coords="263,5,391,46"/>
+<area shape="rect" id="node3" href="$classngl_1_1_bezier_curve.html#aaebc65828ecb6bef1e5f894c06b5c9d7" title="draw the control points " alt="" coords="227,70,427,111"/>
+<area shape="rect" id="node4" href="$classngl_1_1_bezier_curve.html#a9d49085e7ae40604418ee0685268e85f" title="Draw the control hull. " alt="" coords="237,136,417,163"/>
+<area shape="rect" id="node5" href="$classngl_1_1_bezier_curve.html#a09380788ad51a31e512e39070eb6c670" title="Draw method to draw the curve Note this will be slow as it calls the CoxDeBoor function to calculate ..." alt="" coords="248,187,405,213"/>
+<area shape="rect" id="node6" href="$classngl_1_1_bezier_curve.html#a56b40c82609b906efa45eb42a2cbce3c" title="set the Level of Detail for Drawing " alt="" coords="230,237,423,264"/>
+<area shape="rect" id="node7" href="$classngl_1_1_multi_buffer_v_a_o.html#acca9153f53ed152ac047a3367089455e" title="remove the VAO and buffers created " alt="" coords="257,289,396,330"/>
+<area shape="rect" id="node9" href="$classngl_1_1_simple_index_v_a_o.html#af2c3002c6d3029c904fca6f9fa483d7a" title="remove the VAO and buffers created " alt="" coords="252,354,401,395"/>
+<area shape="rect" id="node11" href="$classngl_1_1_simple_v_a_o.html#a5c3d99c30dba6c0306858f2a85848510" title="remove the VAO and buffers created " alt="" coords="229,420,425,447"/>
+<area shape="rect" id="node13" href="$classngl_1_1_text.html#a16e24cf8d7e4f310a7dc2b8375546134" title="ctor must pass in a ready constructed QFont make sure the size and emphasis is set before doing this ..." alt="" coords="273,471,380,497"/>
+<area shape="rect" id="node14" href="$classngl_1_1_text.html#a59aa976f5726b2b69ed95c8a0668c0f2" title="render the text to the screen at _x,_y where 0,0 is top left of the screen all positioning is relativ..." alt="" coords="254,521,399,548"/>
+<area shape="rect" id="node15" href="$classngl_1_1_v_a_o_primitives.html#aec14416905218b50f93e43c8661d7d6b" title="create a VAO from a static header file of data in the TNV format this will usually be created from th..." alt="" coords="242,573,411,614"/>
+<area shape="rect" id="node18" href="$classngl_1_1_v_a_o_primitives.html#a9ec8ee427ac69f5dec51792f7014d2af" title="the method to actually create the VAO from the various other methods Note this is used in conjunction..." alt="" coords="260,783,393,825"/>
+<area shape="rect" id="node8" href="$classngl_1_1_multi_buffer_v_a_o.html#a831d5fd192abc2574cdb632548c18e2b" title="dtor don&#39;t do anything as the remove clears things " alt="" coords="505,289,644,330"/>
+<area shape="rect" id="node10" href="$classngl_1_1_simple_index_v_a_o.html#a0e5e52a17b62f2cdc616412a52fe6f9a" title="dtor don&#39;t do anything as the remove clears things " alt="" coords="500,354,649,395"/>
+<area shape="rect" id="node12" href="$classngl_1_1_simple_v_a_o.html#a7286f3a05cc31187828333b866d3d3f4" title="dtor clears the VAO data " alt="" coords="475,420,675,447"/>
+<area shape="rect" id="node16" href="$classngl_1_1_v_a_o_primitives.html#a281188edfc487d7072b40ca3871964f2" title="create the default VAO&#39;s this is done by the ctor anyway but can be called if the clear method is cal..." alt="" coords="503,522,647,563"/>
+<area shape="rect" id="node17" href="$classngl_1_1_v_a_o_primitives.html#ae1e0ef82aeb224aa7f91e49685fab722" title="default constructor " alt="" coords="723,522,856,563"/>
+<area shape="rect" id="node19" href="$classngl_1_1_v_a_o_primitives.html#a93edc7af7c82934c8a5bc739b7c61665" title="create a line based grid (like the maya ground plane) " alt="" coords="508,587,641,629"/>
+<area shape="rect" id="node20" href="$classngl_1_1_v_a_o_primitives.html#aec029e212219801bd87056397be73bf8" title="create a triangulated Sphere as a vbo with auto generated texture cords " alt="" coords="508,653,641,694"/>
+<area shape="rect" id="node21" href="$classngl_1_1_v_a_o_primitives.html#a3333662d6d2f7f017e3d6cad45cb44c7" title="create a triangulated capsule (Cylinder with spherical ends) " alt="" coords="508,718,641,759"/>
+<area shape="rect" id="node22" href="$classngl_1_1_v_a_o_primitives.html#a85f675d14d72f093d4c7afa82155d697" title="create a Quad Cylinder as a vbo with auto generated texture cords " alt="" coords="508,783,641,825"/>
+<area shape="rect" id="node23" href="$classngl_1_1_v_a_o_primitives.html#a02aa220bc52e3e8b579e4b67bb8344af" title="create a Quad Cone as a vao with auto generated texture cords " alt="" coords="508,849,641,890"/>
+<area shape="rect" id="node24" href="$classngl_1_1_v_a_o_primitives.html#a0803af36b2a375a3367d4521ab16a7fe" title="create a trinagle fan disk (use as end caps for Cylinder etc) " alt="" coords="508,914,641,955"/>
+<area shape="rect" id="node25" href="$classngl_1_1_v_a_o_primitives.html#a94653d949fb7c0a665e112fd7330df24" title="create a VBO based torus from rings of quads. " alt="" coords="508,979,641,1021"/>
+<area shape="rect" id="node26" href="$classngl_1_1_v_a_o_primitives.html#ab3742cc5bbc1fee5f7982410911a46b6" title="create a triangulated plane as a vbo with auto generated texture cords " alt="" coords="500,1045,649,1086"/>
+</map>

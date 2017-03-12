@@ -322,6 +322,8 @@ Vec4 Vec4::operator*(const Mat4 &_m ) const noexcept
  }
 
 
+
+
 } // end namspace ngl
 
 

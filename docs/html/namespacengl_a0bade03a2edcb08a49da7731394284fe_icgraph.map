@@ -1,0 +1,51 @@
+<map id="ngl::radians" name="ngl::radians">
+<area shape="rect" id="node2" href="$classngl_1_1_camera.html#ae9ed0a38e96a2cedf785944cf79002de" title="function used to set the perspective projection matrix values " alt="" coords="144,221,357,248"/>
+<area shape="rect" id="node5" href="$classngl_1_1_camera.html#a1dbe60cff8018423633782a3c73ae7ee" title="internal function to calculate the new rotation vectors for the camera after a roll, pitch or yaw " alt="" coords="425,135,572,161"/>
+<area shape="rect" id="node9" href="$classngl_1_1_camera.html#a6bb1f023865029e3b4e28e99a6bd00d2" title="calculate the frustum for clipping etc " alt="" coords="149,537,353,564"/>
+<area shape="rect" id="node23" href="$classngl_1_1_mat3.html#a247f40aff209c5d185f413eb45af47f8" title="set this matrix to a rotation matrix in the X axis for value _deg note the matrix should be set to id..." alt="" coords="187,816,314,843"/>
+<area shape="rect" id="node24" href="$classngl_1_1_mat3.html#a3f78da26a5f7a5598e6d1c0a60ed7280" title="set this matrix to a rotation matrix in the Y axis for value _deg note the matrix should be set to id..." alt="" coords="187,867,314,893"/>
+<area shape="rect" id="node25" href="$classngl_1_1_mat3.html#a69581889c3d2dca6962f0f6a775c3489" title="set this matrix to a rotation matrix in the Z axis for value _deg note the matrix should be set to id..." alt="" coords="187,917,314,944"/>
+<area shape="rect" id="node26" href="$classngl_1_1_mat3.html#ad951681195c63fb2deac67528096cb47" title="axis / angle rotation using the Euler method " alt="" coords="194,968,307,995"/>
+<area shape="rect" id="node27" href="$classngl_1_1_mat4.html#a68e625839a717caa974729099b874087" title="set this matrix to a rotation matrix in the X axis for value _deg note the matrix should be set to id..." alt="" coords="187,715,314,741"/>
+<area shape="rect" id="node35" href="$classngl_1_1_mat4.html#a5b71bf928b9390406b58505be70474ed" title="set this matrix to a rotation matrix in the Y axis for value _deg note the matrix should be set to id..." alt="" coords="187,664,314,691"/>
+<area shape="rect" id="node36" href="$classngl_1_1_mat4.html#adcc7963bb92d9323cb716d467b67940d" title="set this matrix to a rotation matrix in the Z axis for value _deg note the matrix should be set to id..." alt="" coords="187,765,314,792"/>
+<area shape="rect" id="node37" href="$classngl_1_1_mat4.html#a3f6bd22483149967e57471ce6f5d2f42" title="axis / angle rotation using the Euler method " alt="" coords="194,1019,307,1045"/>
+<area shape="rect" id="node38" href="$classngl_1_1_quaternion.html#a632d93cb40661e500c6e0154d6d10706" title="constructor passing in a Vec3 which represents the rolls around the x y and z axis ..." alt="" coords="157,1069,344,1096"/>
+<area shape="rect" id="node39" href="$classngl_1_1_quaternion.html#a6dfed93492f82b5fb126bd128c444ebf" title="set the current quaternion as a rotation around the X cartesian axis [1,0,0] " alt="" coords="169,1120,333,1147"/>
+<area shape="rect" id="node40" href="$classngl_1_1_quaternion.html#aff36f97a44e888b009d643b5034f79a3" title="set the current quaternion as a rotation around the Y cartesian axis [0,1,0] " alt="" coords="169,1171,333,1197"/>
+<area shape="rect" id="node41" href="$classngl_1_1_quaternion.html#a575aadb4a60707541fec638be0786a79" title="set the current quaternion as a rotation around the Z cartesian axis [0,0,1] " alt="" coords="169,1221,332,1248"/>
+<area shape="rect" id="node42" href="$classngl_1_1_quaternion.html#a8f3f2b8f1e1148906464cd3e5388e993" title="set the current quaternion as a rotation around the vector _axis " alt="" coords="165,1273,337,1314"/>
+<area shape="rect" id="node43" href="$classngl_1_1_quaternion.html#aee2cf20d40d7448d2c48a4cc15557461" title="set the current quaternion as a rotation based on 3 Euler angles this will create the quat as a produ..." alt="" coords="161,1338,340,1379"/>
+<area shape="rect" id="node44" href="$classngl_1_1_spot_light.html#a7e1993e0f66b2df0f9dfa22a99af3b51" title="sets the various spot light params " alt="" coords="163,1404,338,1431"/>
+<area shape="rect" id="node45" href="$classngl_1_1_spot_light.html#a6af998903974bf850920712eda0df3c3" title="sets the spot cutoff " alt="" coords="169,1455,333,1481"/>
+<area shape="rect" id="node46" href="$classngl_1_1_spot_light.html#a5214b8ce000e6e6d4f85052d8d871111" title="sets the spot inner cutoff " alt="" coords="171,1506,330,1547"/>
+<area shape="rect" id="node47" href="$namespacengl.html#a73f210e29fef32647692422afcdff776" title="computer a perspective projection matrix similar to the one from the GLM library this is to help make..." alt="" coords="193,1572,309,1599"/>
+<area shape="rect" id="node48" href="$namespacengl.html#a3940b316eec3f6c7c08e603349695834" title="computer a perspective projection matrix similar to the one from the GLM library this is to help make..." alt="" coords="182,1623,319,1649"/>
+<area shape="rect" id="node49" href="$namespacengl.html#a7b39486799ed91f30d762f0a71c9e2c8" title="computer a perspective projection matrix similar to the one from the GLM library this is to help make..." alt="" coords="173,1673,329,1700"/>
+<area shape="rect" id="node50" href="$namespacengl.html#ae7401a08e827ef733e180b6566d54c24" title="ngl::trigInterp" alt="" coords="201,1724,301,1751"/>
+<area shape="rect" id="node3" href="$classngl_1_1_camera.html#a7b22700c172d70bac1e7150cc27a641f" title="set the projection matrix " alt="" coords="409,22,588,63"/>
+<area shape="rect" id="node4" href="$classngl_1_1_camera.html#aa71e21744533c478eb77d2e8534b053e" title="set the shape of the Camera " alt="" coords="669,5,827,32"/>
+<area shape="rect" id="node6" href="$classngl_1_1_camera.html#a446db85c38e883aa54a56d69e60f1e59" title="roll the cameara around the Z axis " alt="" coords="688,56,808,83"/>
+<area shape="rect" id="node7" href="$classngl_1_1_camera.html#a14db532081b77e16bffdb21b85773d73" title="roll the cameara around the x axis " alt="" coords="683,107,813,133"/>
+<area shape="rect" id="node8" href="$classngl_1_1_camera.html#ae3031e26b5dfb2a319d2988d3c931f68" title="roll the cameara around the y axis " alt="" coords="685,157,811,184"/>
+<area shape="rect" id="node10" href="$classngl_1_1_camera.html#aaeece8ece48d769af0a64d03f9605caa" title="method to set the modelview matrix values for the current camera, this method load the matrix Modelvi..." alt="" coords="406,436,591,463"/>
+<area shape="rect" id="node11" href="$classngl_1_1_camera.html#a8df00f3c9e422b7b5de6883c1b132bf8" title="set the Camera position using eye look and up vectors " alt="" coords="688,360,808,387"/>
+<area shape="rect" id="node12" href="$classngl_1_1_camera.html#a911612823285cd59ddfe9bbff62b7066" title="slide the camera around the U V and N axis " alt="" coords="683,411,813,437"/>
+<area shape="rect" id="node13" href="$classngl_1_1_camera.html#a507c4a203398c12816826f2c3fa80240" title="move the camera in world space (i.e. add a translation to each of the axis " alt="" coords="681,461,815,488"/>
+<area shape="rect" id="node14" href="$classngl_1_1_camera.html#a4730ce617d2898ce7b491e3a3febc1b1" title="move both the eye and the look at the same time " alt="" coords="667,512,829,539"/>
+<area shape="rect" id="node15" href="$classngl_1_1_camera.html#aac0efd484c76402e525cb6b7d666bfe2" title="move the eye position " alt="" coords="669,563,827,589"/>
+<area shape="rect" id="node16" href="$classngl_1_1_camera.html#a1e94e9df4db1c19131b188ca9b7a5f3c" title="move the look position " alt="" coords="666,613,830,640"/>
+<area shape="rect" id="node17" href="$classngl_1_1_camera.html#ae559f151151efa506910fe0650672931" title="Use is called to make this the current camera and set the MODELVIEW and PROJECTION matrices in OpenGL..." alt="" coords="677,208,819,235"/>
+<area shape="rect" id="node18" href="$classngl_1_1_camera.html#ac9fc9807630ff5b2ac3b741f25423b23" title="used to do a Yaw based on Euler rotation with normalised values " alt="" coords="651,664,845,691"/>
+<area shape="rect" id="node19" href="$classngl_1_1_camera.html#a249c0d93396b5f2f0c0e2b46ba9b03fb" title="used to do a Roll based on Euler rotation with normalised values " alt="" coords="653,765,843,792"/>
+<area shape="rect" id="node20" href="$classngl_1_1_camera.html#ac81bf6b05d0f1dbc6bc80eb92531fa46" title="used to do a Pitch based on Euler rotation with normalised values " alt="" coords="649,715,847,741"/>
+<area shape="rect" id="node21" href="$classngl_1_1_path_camera.html#a2382bb33b09521e9a31caa8eadc28997" title="update the camera by incrementing the step value and re&#45;calculating the tx matrix ..." alt="" coords="663,259,833,285"/>
+<area shape="rect" id="node22" href="$classngl_1_1_path_camera.html#a5fdf9c69645596935d5fa53f8a9177ad" title="update the camera by incrementing the step value and re&#45;calculating the tx matrix if the camera is at..." alt="" coords="641,309,855,336"/>
+<area shape="rect" id="node28" href="$classngl_1_1_transformation.html#a8ec1f9a99975802624aee9f0125241e2" title="method to compute the matrix, transpose and inverse matrix. set the m_bIsMatrixComputed variable to t..." alt="" coords="430,882,567,923"/>
+<area shape="rect" id="node29" href="$classngl_1_1_transformation.html#a6881e69cde5c7ba1e1da39e922b7fff6" title="Constructor. " alt="" coords="679,1094,817,1135"/>
+<area shape="rect" id="node30" href="$classngl_1_1_transformation.html#a429f78da7e2d45e245166e11746b64ca" title="a method to set all the transforms to the identity " alt="" coords="679,1159,817,1201"/>
+<area shape="rect" id="node31" href="$classngl_1_1_transformation.html#afc5b7e11d9ffbf1b442d8fcb0c392825" title="*= operator " alt="" coords="679,817,817,858"/>
+<area shape="rect" id="node32" href="$classngl_1_1_transformation.html#ac555db268e028953a2e0d162704111ca" title="operator for Transform multiplication will do a matrix multiplication on each of the matrices ..." alt="" coords="679,882,817,923"/>
+<area shape="rect" id="node33" href="$classngl_1_1_transformation.html#a360dc0c8ed23a4c50303145c5e50bd6e" title="load the current transform matrix to the shader " alt="" coords="673,947,823,989"/>
+<area shape="rect" id="node34" href="$classngl_1_1_transformation.html#af3e633320652186de7028fee596e102a" title="load the current * global transform matrix to the shader " alt="" coords="649,1013,847,1069"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="fmt::internal::_finite" name="fmt::internal::_finite">
+<area shape="rect" id="node2" href="$classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4.html#abd1469673d6c36a014a988bce1dfb0ee" title="std::numeric_limits\l\&lt; fmt::internal::DummyInt\l \&gt;::isinfinity" alt="" coords="189,5,360,61"/>
+<area shape="rect" id="node3" href="$classfmt_1_1_basic_writer.html#aa69a013920916ccc74ca7ac5e971abe7" title="fmt::BasicWriter::write\l_double" alt="" coords="408,13,560,54"/>
+<area shape="rect" id="node4" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#a670214e1773c9c86002be07c043566dd" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_any_double" alt="" coords="609,5,837,61"/>
+</map>

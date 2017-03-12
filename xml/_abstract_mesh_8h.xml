@@ -1,0 +1,570 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_abstract_mesh_8h" kind="file" language="C++">
+    <compoundname>AbstractMesh.h</compoundname>
+    <includes refid="_types_8h" local="yes">Types.h</includes>
+    <includes refid="_b_box_8h" local="yes">BBox.h</includes>
+    <includes refid="_rib_export_8h" local="yes">RibExport.h</includes>
+    <includes refid="_texture_8h" local="yes">Texture.h</includes>
+    <includes refid="_n_g_lassert_8h" local="yes">NGLassert.h</includes>
+    <includes refid="_vec4_8h" local="yes">Vec4.h</includes>
+    <includes refid="_abstract_v_a_o_8h" local="yes">AbstractVAO.h</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includes local="no">cstdint</includes>
+    <includes local="no">memory</includes>
+    <includedby refid="_abstract_mesh_8cpp" local="yes">AbstractMesh.cpp</includedby>
+    <includedby refid="_houdini_geo_8h" local="yes">HoudiniGeo.h</includedby>
+    <includedby refid="_n_c_c_a_bin_mesh_8h" local="yes">NCCABinMesh.h</includedby>
+    <includedby refid="_obj_8h" local="yes">Obj.h</includedby>
+    <incdepgraph>
+      <node id="3705">
+        <label>Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="3706" relation="include">
+        </childnode>
+        <childnode refid="3712" relation="include">
+        </childnode>
+        <childnode refid="3713" relation="include">
+        </childnode>
+        <childnode refid="3714" relation="include">
+        </childnode>
+      </node>
+      <node id="3726">
+        <label>Image.h</label>
+        <link refid="_image_8h"/>
+        <childnode refid="3724" relation="include">
+        </childnode>
+        <childnode refid="3721" relation="include">
+        </childnode>
+        <childnode refid="3705" relation="include">
+        </childnode>
+        <childnode refid="3727" relation="include">
+        </childnode>
+      </node>
+      <node id="3730">
+        <label>cstdint</label>
+      </node>
+      <node id="3714">
+        <label>QGLContext</label>
+      </node>
+      <node id="3716">
+        <label>Vec3.h</label>
+        <link refid="_vec3_8h"/>
+        <childnode refid="3705" relation="include">
+        </childnode>
+        <childnode refid="3717" relation="include">
+        </childnode>
+      </node>
+      <node id="3708">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="3709" relation="include">
+        </childnode>
+        <childnode refid="3710" relation="include">
+        </childnode>
+      </node>
+      <node id="3724">
+        <label>string</label>
+      </node>
+      <node id="3707">
+        <label>stddef.h</label>
+      </node>
+      <node id="3723">
+        <label>fstream</label>
+      </node>
+      <node id="3706">
+        <label>glew.h</label>
+        <link refid="glew_8h"/>
+        <childnode refid="3707" relation="include">
+        </childnode>
+        <childnode refid="3708" relation="include">
+        </childnode>
+        <childnode refid="3711" relation="include">
+        </childnode>
+      </node>
+      <node id="3711">
+        <label>GL/glu.h</label>
+      </node>
+      <node id="3709">
+        <label>limits.h</label>
+      </node>
+      <node id="3718">
+        <label>Vec4.h</label>
+        <link refid="_vec4_8h"/>
+        <childnode refid="3705" relation="include">
+        </childnode>
+        <childnode refid="3719" relation="include">
+        </childnode>
+        <childnode refid="3716" relation="include">
+        </childnode>
+        <childnode refid="3717" relation="include">
+        </childnode>
+      </node>
+      <node id="3720">
+        <label>AbstractVAO.h</label>
+        <link refid="_abstract_v_a_o_8h"/>
+        <childnode refid="3705" relation="include">
+        </childnode>
+      </node>
+      <node id="3710">
+        <label>wchar.h</label>
+      </node>
+      <node id="3727">
+        <label>Colour.h</label>
+        <link refid="_colour_8h"/>
+        <childnode refid="3705" relation="include">
+        </childnode>
+      </node>
+      <node id="3725">
+        <label>Texture.h</label>
+        <link refid="_texture_8h"/>
+        <childnode refid="3726" relation="include">
+        </childnode>
+        <childnode refid="3705" relation="include">
+        </childnode>
+        <childnode refid="3724" relation="include">
+        </childnode>
+      </node>
+      <node id="3729">
+        <label>vector</label>
+      </node>
+      <node id="3717">
+        <label>array</label>
+      </node>
+      <node id="3722">
+        <label>RibExport.h</label>
+        <link refid="_rib_export_8h"/>
+        <childnode refid="3705" relation="include">
+        </childnode>
+        <childnode refid="3723" relation="include">
+        </childnode>
+        <childnode refid="3724" relation="include">
+        </childnode>
+      </node>
+      <node id="3713">
+        <label>QtOpenGL/QGLContext</label>
+      </node>
+      <node id="3728">
+        <label>NGLassert.h</label>
+        <link refid="_n_g_lassert_8h"/>
+      </node>
+      <node id="3712">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="3719">
+        <label>Vec2.h</label>
+        <link refid="_vec2_8h"/>
+        <childnode refid="3705" relation="include">
+        </childnode>
+        <childnode refid="3717" relation="include">
+        </childnode>
+      </node>
+      <node id="3721">
+        <label>memory</label>
+      </node>
+      <node id="3715">
+        <label>BBox.h</label>
+        <link refid="_b_box_8h"/>
+        <childnode refid="3705" relation="include">
+        </childnode>
+        <childnode refid="3716" relation="include">
+        </childnode>
+        <childnode refid="3718" relation="include">
+        </childnode>
+        <childnode refid="3720" relation="include">
+        </childnode>
+        <childnode refid="3721" relation="include">
+        </childnode>
+      </node>
+      <node id="3704">
+        <label>AbstractMesh.h</label>
+        <link refid="AbstractMesh.h"/>
+        <childnode refid="3705" relation="include">
+        </childnode>
+        <childnode refid="3715" relation="include">
+        </childnode>
+        <childnode refid="3722" relation="include">
+        </childnode>
+        <childnode refid="3725" relation="include">
+        </childnode>
+        <childnode refid="3728" relation="include">
+        </childnode>
+        <childnode refid="3718" relation="include">
+        </childnode>
+        <childnode refid="3720" relation="include">
+        </childnode>
+        <childnode refid="3729" relation="include">
+        </childnode>
+        <childnode refid="3724" relation="include">
+        </childnode>
+        <childnode refid="3730" relation="include">
+        </childnode>
+        <childnode refid="3721" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3737">
+        <label>Obj.h</label>
+        <link refid="_obj_8h"/>
+        <childnode refid="3738" relation="include">
+        </childnode>
+        <childnode refid="3739" relation="include">
+        </childnode>
+      </node>
+      <node id="3736">
+        <label>NCCABinMesh.cpp</label>
+        <link refid="_n_c_c_a_bin_mesh_8cpp"/>
+      </node>
+      <node id="3735">
+        <label>NCCABinMesh.h</label>
+        <link refid="_n_c_c_a_bin_mesh_8h"/>
+        <childnode refid="3736" relation="include">
+        </childnode>
+      </node>
+      <node id="3738">
+        <label>Obj.cpp</label>
+        <link refid="_obj_8cpp"/>
+      </node>
+      <node id="3740">
+        <label>NCCAPointBake.cpp</label>
+        <link refid="_n_c_c_a_point_bake_8cpp"/>
+      </node>
+      <node id="3733">
+        <label>HoudiniGeo.h</label>
+        <link refid="_houdini_geo_8h"/>
+        <childnode refid="3734" relation="include">
+        </childnode>
+      </node>
+      <node id="3739">
+        <label>NCCAPointBake.h</label>
+        <link refid="_n_c_c_a_point_bake_8h"/>
+        <childnode refid="3740" relation="include">
+        </childnode>
+      </node>
+      <node id="3734">
+        <label>HoudiniGeo.cpp</label>
+        <link refid="_houdini_geo_8cpp"/>
+      </node>
+      <node id="3732">
+        <label>AbstractMesh.cpp</label>
+        <link refid="_abstract_mesh_8cpp"/>
+      </node>
+      <node id="3731">
+        <label>AbstractMesh.h</label>
+        <link refid="AbstractMesh.h"/>
+        <childnode refid="3732" relation="include">
+        </childnode>
+        <childnode refid="3733" relation="include">
+        </childnode>
+        <childnode refid="3735" relation="include">
+        </childnode>
+        <childnode refid="3737" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classngl_1_1_face" prot="public">ngl::Face</innerclass>
+    <innerclass refid="classngl_1_1_index_ref" prot="public">ngl::IndexRef</innerclass>
+    <innerclass refid="classngl_1_1_abstract_mesh" prot="public">ngl::AbstractMesh</innerclass>
+    <innernamespace refid="namespacengl">ngl</innernamespace>
+    <briefdescription>
+<para>a series of classes used to define an abstract 3D mesh of Faces, Vertex Normals and TexCords </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Copyright<sp/>(C)<sp/>2009<sp/>Jon<sp/>Macey</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ABSTRACT_MESH_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ABSTRACT_MESH_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>must<sp/>include<sp/>types.h<sp/>first<sp/>for<sp/>Real<sp/>and<sp/>GLEW<sp/>if<sp/>required</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_types_8h" kindref="compound">Types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_b_box_8h" kindref="compound">BBox.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_rib_export_8h" kindref="compound">RibExport.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_texture_8h" kindref="compound">Texture.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_n_g_lassert_8h" kindref="compound">NGLassert.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vec4_8h" kindref="compound">Vec4.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_abstract_v_a_o_8h" kindref="compound">AbstractVAO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacengl" kindref="compound">ngl</ref></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classngl_1_1_face" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classngl_1_1_face" kindref="compound">Face</ref></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classngl_1_1_face_1a1f631fd5e14f40f6918f04e5138516e1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_face_1a1f631fd5e14f40f6918f04e5138516e1" kindref="member">m_numVerts</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classngl_1_1_face_1a5f36fac982c23b1bac50d1b711415291" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;uint32_t&gt;<sp/><ref refid="classngl_1_1_face_1a5f36fac982c23b1bac50d1b711415291" kindref="member">m_vert</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="classngl_1_1_face_1ab35ab22aa9d56f1420eee0ae718c75db" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;uint32_t&gt;<sp/><ref refid="classngl_1_1_face_1ab35ab22aa9d56f1420eee0ae718c75db" kindref="member">m_tex</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classngl_1_1_face_1ac8eac320a04d818c87997b8dd0737e73" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;uint32_t&gt;<sp/><ref refid="classngl_1_1_face_1ac8eac320a04d818c87997b8dd0737e73" kindref="member">m_norm</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="classngl_1_1_face_1a4e732b36e1c00178cbc1b49d119d9ecf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_face_1a4e732b36e1c00178cbc1b49d119d9ecf" kindref="member">m_textureCoord</ref>;</highlight></codeline>
+<codeline lineno="65" refid="classngl_1_1_face_1a545775cb6a0c8922a6f0b0f17ac937e7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_face_1a545775cb6a0c8922a6f0b0f17ac937e7" kindref="member">m_normals</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classngl_1_1_index_ref" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classngl_1_1_index_ref" kindref="compound">IndexRef</ref></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classngl_1_1_index_ref_1aebb9c85f683937317b1e6fa42e50436a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref><sp/><ref refid="classngl_1_1_index_ref_1aebb9c85f683937317b1e6fa42e50436a" kindref="member">m_v</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classngl_1_1_index_ref_1a108cb3d19c090ff932ddc3531fbacbfe" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref><sp/><ref refid="classngl_1_1_index_ref_1a108cb3d19c090ff932ddc3531fbacbfe" kindref="member">m_n</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classngl_1_1_index_ref_1a5819a27f71f3295a2b545216de121704" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref><sp/><ref refid="classngl_1_1_index_ref_1a5819a27f71f3295a2b545216de121704" kindref="member">m_t</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classngl_1_1_index_ref_1af8dda892cc74c6e8afea0633eb78154a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_index_ref_1af8dda892cc74c6e8afea0633eb78154a" kindref="member">IndexRef</ref>(<ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref><sp/>_v,<sp/><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref><sp/>_n,<sp/><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref><sp/>_t<sp/>)<sp/>noexcept<sp/>:m_v(_v),m_n(_n),m_t(_t)<sp/>{;}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="classngl_1_1_abstract_mesh" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" kindref="member">NGL_DLLEXPORT</ref><sp/><ref refid="classngl_1_1_abstract_mesh" kindref="compound">AbstractMesh</ref></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>load(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>&amp;_fname,</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_calcBB=</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>noexcept<sp/>=0;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="classngl_1_1_abstract_mesh_1a9855de18b9aba11902386995c67299cb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_abstract_mesh_1a9855de18b9aba11902386995c67299cb" kindref="member">AbstractMesh</ref>()<sp/>noexcept<sp/>:<sp/>m_vbo(false),<sp/><sp/>m_vao(false),<sp/>m_ext(</highlight><highlight class="keywordtype">nullptr</highlight><highlight class="normal">)<sp/>{;}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classngl_1_1_abstract_mesh" kindref="compound">AbstractMesh</ref>()<sp/>noexcept;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>drawBBox()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>draw()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadTexture(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>&amp;<sp/>_fname<sp/>)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a281421b881aa7a1266842b73a3bc7655" kindref="member">scale</ref>(<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_sx,<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_sy,<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_sz<sp/>)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calcDimensions()<sp/>noexcept;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calcBoundingSphere()<sp/>noexcept;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeToRibSubdiv(<sp/><ref refid="classngl_1_1_rib_export" kindref="compound">RibExport</ref>&amp;<sp/>_ribFile)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="162"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createVAO()<sp/>noexcept;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="classngl_1_1_abstract_mesh_1a145581378c10284593e958c5974b3a94" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_mesh_1a145581378c10284593e958c5974b3a94" kindref="member">getTextureID</ref>()<sp/>const<sp/><sp/>noexcept{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_textureID;<sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="172"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>*mapVAOVerts()<sp/>noexcept;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="176"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>unMapVAO()<sp/>noexcept;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="classngl_1_1_abstract_mesh_1a89da4b17582a0c763846f5c125eeb57f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;IndexRef&gt;<sp/>&amp;<sp/><ref refid="classngl_1_1_abstract_mesh_1a89da4b17582a0c763846f5c125eeb57f" kindref="member">getIndices</ref>()<sp/><sp/>noexcept{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_indices;<sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="188"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>saveNCCABinaryMesh(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>&amp;_fname<sp/>)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="193"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="classngl_1_1_abstract_mesh_1acc851f38c4f01d3f4bf7bf1b6aed1811" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_b_box" kindref="compound">BBox</ref><sp/>&amp;<ref refid="classngl_1_1_abstract_mesh_1acc851f38c4f01d3f4bf7bf1b6aed1811" kindref="member">getBBox</ref>()<sp/>noexcept{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*m_ext;<sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="199"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="classngl_1_1_abstract_mesh_1ad75f19c35d0c4a954d166681b7a94f5a" refkind="member"><highlight class="normal"><sp/><sp/>std::vector<sp/>&lt;Vec3&gt;<sp/><ref refid="classngl_1_1_abstract_mesh_1ad75f19c35d0c4a954d166681b7a94f5a" kindref="member">getVertexList</ref>()<sp/>noexcept{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_verts;}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="204"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="classngl_1_1_abstract_mesh_1ad62275e74c5d59dfb0d30359aac400e3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/><ref refid="classngl_1_1_abstract_mesh_1ad62275e74c5d59dfb0d30359aac400e3" kindref="member">getVertexAtIndex</ref>(<sp/><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref><sp/>_i<sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//NGL_ASSERT(_i&gt;0<sp/>&amp;&amp;<sp/>_i&lt;m_nVerts);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_verts[_i];</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="214"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="classngl_1_1_abstract_mesh_1a7d9ae4e1116ba2e26cc9ca0db543c4e1" refkind="member"><highlight class="normal"><sp/><sp/>std::vector<sp/>&lt;Vec3&gt;<sp/><ref refid="classngl_1_1_abstract_mesh_1a7d9ae4e1116ba2e26cc9ca0db543c4e1" kindref="member">getNormalList</ref>()<sp/>noexcept{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_face_1ac8eac320a04d818c87997b8dd0737e73" kindref="member">m_norm</ref>;}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="219"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="classngl_1_1_abstract_mesh_1aff2a129e2f6d384e59932cf21fde624f" refkind="member"><highlight class="normal"><sp/><sp/>std::vector<sp/>&lt;Vec3&gt;<sp/><ref refid="classngl_1_1_abstract_mesh_1aff2a129e2f6d384e59932cf21fde624f" kindref="member">getTextureCordList</ref>()<sp/>noexcept{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_face_1ab35ab22aa9d56f1420eee0ae718c75db" kindref="member">m_tex</ref>;}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="224"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="classngl_1_1_abstract_mesh_1ad56784799ae979b3151f29158ce8de36" refkind="member"><highlight class="normal"><sp/><sp/>std::vector<sp/>&lt;Face&gt;<sp/><ref refid="classngl_1_1_abstract_mesh_1ad56784799ae979b3151f29158ce8de36" kindref="member">getFaceList</ref>()<sp/>noexcept{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_face;}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="228"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="classngl_1_1_abstract_mesh_1a11d25262d6e1ef10b9c8542bbb915841" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_mesh_1a11d25262d6e1ef10b9c8542bbb915841" kindref="member">getNumVerts</ref>()<sp/>const<sp/><sp/>noexcept{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_nVerts;}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="classngl_1_1_abstract_mesh_1a0e3e8cd29ebb971c68b85a1c006aeca1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_mesh_1a0e3e8cd29ebb971c68b85a1c006aeca1" kindref="member">getNumNormals</ref>()const<sp/><sp/>noexcept{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_nNorm;}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="236"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="classngl_1_1_abstract_mesh_1acb0b608ef44b029e517234bc8de2026f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_mesh_1acb0b608ef44b029e517234bc8de2026f" kindref="member">getNumTexCords</ref>()const<sp/><sp/>noexcept{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_nTex;}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="240"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="classngl_1_1_abstract_mesh_1a8e54a22df90192e7044abb2c38f11a4b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_mesh_1a8e54a22df90192e7044abb2c38f11a4b" kindref="member">getNumFaces</ref>()const<sp/><sp/>noexcept{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_nFaces;}</highlight></codeline>
+<codeline lineno="242" refid="classngl_1_1_abstract_mesh_1a8d1024b9600630c0e8d70b7d578b6e26" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_mesh_1a8d1024b9600630c0e8d70b7d578b6e26" kindref="member">getMeshSize</ref>()const<sp/><sp/>noexcept{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_meshSize;}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="245"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="classngl_1_1_abstract_mesh_1ad9cdb979042a773f15e4d3011e2a7304" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/><ref refid="classngl_1_1_abstract_mesh_1ad9cdb979042a773f15e4d3011e2a7304" kindref="member">getSphereCenter</ref>()<sp/>const<sp/><sp/>noexcept{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_sphereCenter;}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="249"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="classngl_1_1_abstract_mesh_1af896c587979c488a5290dba8148fac50" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="classngl_1_1_abstract_mesh_1af896c587979c488a5290dba8148fac50" kindref="member">getSphereRadius</ref>()<sp/>const<sp/><sp/>noexcept{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_sphereRadius;}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="253"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="classngl_1_1_abstract_mesh_1ad5de3572327beadfcb68b9ada9880b5e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/><ref refid="classngl_1_1_abstract_mesh_1ad5de3572327beadfcb68b9ada9880b5e" kindref="member">getCenter</ref>()<sp/>const<sp/><sp/>noexcept{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_center;}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="258"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isTriangular()<sp/>noexcept;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="262" refid="classngl_1_1_abstract_mesh_1aacaa1e657658a6ecb55754b35adca513" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classngl_1_1_n_c_c_a_point_bake" kindref="compound">NCCAPointBake</ref>;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="265" refid="classngl_1_1_abstract_mesh_1af927695f9517bf49191548067ff939ed" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_mesh_1af927695f9517bf49191548067ff939ed" kindref="member">m_nVerts</ref>;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="268"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="classngl_1_1_abstract_mesh_1a8536f44940c41d833ce1360e00e925d2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_mesh_1a8536f44940c41d833ce1360e00e925d2" kindref="member">m_nNorm</ref>;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="272"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="classngl_1_1_abstract_mesh_1a2f47063be79b1f065cadc30e35cf0a17" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_mesh_1a2f47063be79b1f065cadc30e35cf0a17" kindref="member">m_nTex</ref>;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="276"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277" refid="classngl_1_1_abstract_mesh_1aa4e5c1cdc67001f14499bb0da40f6cd0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_mesh_1aa4e5c1cdc67001f14499bb0da40f6cd0" kindref="member">m_nFaces</ref>;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="280"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281" refid="classngl_1_1_abstract_mesh_1af94fc1ce4021f973448c355cadf4c4ba" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;Vec3&gt;<sp/><ref refid="classngl_1_1_abstract_mesh_1af94fc1ce4021f973448c355cadf4c4ba" kindref="member">m_verts</ref>;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="284"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285" refid="classngl_1_1_abstract_mesh_1a3987536cc8d7cccbe31429d1b4e14024" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;Vec3&gt;<sp/><ref refid="classngl_1_1_abstract_mesh_1a3987536cc8d7cccbe31429d1b4e14024" kindref="member">m_norm</ref>;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="288"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289" refid="classngl_1_1_abstract_mesh_1a06b3a8bddf3d42830319da379b3b996e" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;Vec3&gt;<sp/><ref refid="classngl_1_1_abstract_mesh_1a06b3a8bddf3d42830319da379b3b996e" kindref="member">m_tex</ref>;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="292"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="classngl_1_1_abstract_mesh_1a1f7de935fd02870065f99cb4685fc7a8" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;Face&gt;<sp/><ref refid="classngl_1_1_abstract_mesh_1a1f7de935fd02870065f99cb4685fc7a8" kindref="member">m_face</ref>;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="296"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297" refid="classngl_1_1_abstract_mesh_1a0cdddd3dd2b076816bd25647acae16c5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/><ref refid="classngl_1_1_abstract_mesh_1a0cdddd3dd2b076816bd25647acae16c5" kindref="member">m_center</ref>;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="300"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301" refid="classngl_1_1_abstract_mesh_1adc01b9c9267485da1fdf3613dc8c9ceb" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;IndexRef&gt;<sp/><ref refid="classngl_1_1_abstract_mesh_1adc01b9c9267485da1fdf3613dc8c9ceb" kindref="member">m_indices</ref>;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="304"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305" refid="classngl_1_1_abstract_mesh_1ae8b4d4fa40a706e2d5a630876f65a8f4" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;GLuint&gt;<sp/><ref refid="classngl_1_1_abstract_mesh_1ae8b4d4fa40a706e2d5a630876f65a8f4" kindref="member">m_outIndices</ref>;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="308"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309" refid="classngl_1_1_abstract_mesh_1a586cec1c03451ef5bef925b03cd6e286" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_mesh_1a586cec1c03451ef5bef925b03cd6e286" kindref="member">m_indexSize</ref>;</highlight></codeline>
+<codeline lineno="310" refid="classngl_1_1_abstract_mesh_1a305a5b883ac911a3bb8723811259acc1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_mesh_1a305a5b883ac911a3bb8723811259acc1" kindref="member">m_meshSize</ref>;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="313"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314" refid="classngl_1_1_abstract_mesh_1af099b62f47c9b9e764f21ddec8522e91" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/><ref refid="classngl_1_1_abstract_mesh_1af099b62f47c9b9e764f21ddec8522e91" kindref="member">m_vboBuffers</ref>;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="317"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318" refid="classngl_1_1_abstract_mesh_1aa5f50e09c03681f06aef1b9f32725744" refkind="member"><highlight class="normal"><sp/><sp/>std::unique_ptr<sp/>&lt;AbstractVAO&gt;<sp/><ref refid="classngl_1_1_abstract_mesh_1aa5f50e09c03681f06aef1b9f32725744" kindref="member">m_vaoMesh</ref>;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="321"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322" refid="classngl_1_1_abstract_mesh_1ab39e5c5c849285d6b17cd735dab4d65d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_mesh_1ab39e5c5c849285d6b17cd735dab4d65d" kindref="member">m_vbo</ref>;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="325"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326" refid="classngl_1_1_abstract_mesh_1a5109b0163236502482095620a5db728f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_mesh_1a5109b0163236502482095620a5db728f" kindref="member">m_vao</ref>;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="329"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330" refid="classngl_1_1_abstract_mesh_1aca2b5ff30a55850a3597154b79c94186" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_mesh_1aca2b5ff30a55850a3597154b79c94186" kindref="member">m_vboMapped</ref>;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="333"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334" refid="classngl_1_1_abstract_mesh_1a56eb30bdaec31e32772833199fd54f22" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_mesh_1a56eb30bdaec31e32772833199fd54f22" kindref="member">m_texture</ref>;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="337"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338" refid="classngl_1_1_abstract_mesh_1ae7d52c8f9cc7cd566967f81198588919" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/><ref refid="classngl_1_1_abstract_mesh_1ae7d52c8f9cc7cd566967f81198588919" kindref="member">m_textureID</ref>;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="341"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342" refid="classngl_1_1_abstract_mesh_1a8264b039550ca93f0ed2caded810accb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="classngl_1_1_abstract_mesh_1a8264b039550ca93f0ed2caded810accb" kindref="member">m_maxX</ref>;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="345"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346" refid="classngl_1_1_abstract_mesh_1a0555c2d79d6ab50da520a482563b43c4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="classngl_1_1_abstract_mesh_1a0555c2d79d6ab50da520a482563b43c4" kindref="member">m_minX</ref>;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="349"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="350" refid="classngl_1_1_abstract_mesh_1acd96df6e97f2ee1483fe8370fecc8241" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="classngl_1_1_abstract_mesh_1acd96df6e97f2ee1483fe8370fecc8241" kindref="member">m_maxY</ref>;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="353"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="354" refid="classngl_1_1_abstract_mesh_1a9702f04680673970644c2325b7a08c60" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="classngl_1_1_abstract_mesh_1a9702f04680673970644c2325b7a08c60" kindref="member">m_minY</ref>;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="357"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358" refid="classngl_1_1_abstract_mesh_1ada8290a2ad1243d255e84f19a800bd95" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="classngl_1_1_abstract_mesh_1ada8290a2ad1243d255e84f19a800bd95" kindref="member">m_maxZ</ref>;</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="361"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="362" refid="classngl_1_1_abstract_mesh_1aace446c6ba3195240df78884a10b78b2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="classngl_1_1_abstract_mesh_1aace446c6ba3195240df78884a10b78b2" kindref="member">m_minZ</ref>;</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="365"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="366" refid="classngl_1_1_abstract_mesh_1a87d423496aaeefcbf960da1d74b9636d" refkind="member"><highlight class="normal"><sp/><sp/>std::unique_ptr<sp/>&lt;BBox&gt;<sp/><ref refid="classngl_1_1_abstract_mesh_1a87d423496aaeefcbf960da1d74b9636d" kindref="member">m_ext</ref>;</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="369"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370" refid="classngl_1_1_abstract_mesh_1a4885d5167a332db76bfd4aa1f462928a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/><ref refid="classngl_1_1_abstract_mesh_1a4885d5167a332db76bfd4aa1f462928a" kindref="member">m_dataPackType</ref>;</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="374"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375" refid="classngl_1_1_abstract_mesh_1ab7f27d366534a8369a420e6a005bb47e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_abstract_mesh_1ab7f27d366534a8369a420e6a005bb47e" kindref="member">m_bufferPackSize</ref>;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="378"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="379" refid="classngl_1_1_abstract_mesh_1af9dff03e37f1d8853ad87b5229262af3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/><ref refid="classngl_1_1_abstract_mesh_1af9dff03e37f1d8853ad87b5229262af3" kindref="member">m_vboDrawType</ref>;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="383"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384" refid="classngl_1_1_abstract_mesh_1ae8cb9140141d33e2534690874c58c031" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_mesh_1ae8cb9140141d33e2534690874c58c031" kindref="member">m_loaded</ref>;</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="387"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="388" refid="classngl_1_1_abstract_mesh_1a5b396d93df500bb90ba5a5f71dccc953" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/><ref refid="classngl_1_1_abstract_mesh_1a5b396d93df500bb90ba5a5f71dccc953" kindref="member">m_sphereCenter</ref>;</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="391"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="392" refid="classngl_1_1_abstract_mesh_1aec6feb6b9e924ac4fccd350aa059922c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="classngl_1_1_abstract_mesh_1aec6feb6b9e924ac4fccd350aa059922c" kindref="member">m_sphereRadius</ref>;</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>namespace<sp/>ngl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>end<sp/>of<sp/>the<sp/>class</highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h"/>
+  </compounddef>
+</doxygen>

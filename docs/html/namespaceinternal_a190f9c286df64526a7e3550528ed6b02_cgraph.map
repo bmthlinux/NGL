@@ -1,0 +1,11 @@
+<map id="internal::CheckWithinHalfULP" name="internal::CheckWithinHalfULP">
+<area shape="rect" id="node2" href="$classinternal_1_1_big_integer.html#afd8b15480df5003ee6b6e1b8ecbf5f45" title="internal::BigInteger\l::Compare" alt="" coords="487,8,620,50"/>
+<area shape="rect" id="node3" href="$classinternal_1_1_big_integer.html#a5741304ce36392adeef716e78b384b61" title="internal::BigInteger\l::Difference" alt="" coords="267,38,400,79"/>
+<area shape="rect" id="node4" href="$classinternal_1_1_double.html#a8e16ee31d521fb56f0b98be427a9d47e" title="internal::Double::Integer\lExponent" alt="" coords="251,103,415,144"/>
+<area shape="rect" id="node8" href="$classinternal_1_1_double.html#a96c5e0f06551e83565b5097950d30e32" title="internal::Double::Integer\lSignificand" alt="" coords="251,168,415,210"/>
+<area shape="rect" id="node9" href="$namespaceinternal.html#ace304441347098a4953ea99f50805da9" title="internal::Min3" alt="" coords="282,234,385,261"/>
+<area shape="rect" id="node10" href="$classinternal_1_1_big_integer.html#a98a13f169c27d1acfa57054f37c61763" title="internal::BigInteger\l::MultiplyPow5" alt="" coords="267,286,400,327"/>
+<area shape="rect" id="node5" href="$classinternal_1_1_double.html#ac34b7871eeb80d2b6bac48f144c97b51" title="internal::Double::IsNormal" alt="" coords="465,144,641,170"/>
+<area shape="rect" id="node7" href="$classinternal_1_1_double.html#a39aa84d5dc24cf22ca44578fab515f44" title="internal::Double::Exponent" alt="" coords="464,93,643,120"/>
+<area shape="rect" id="node6" href="$classinternal_1_1_double.html#a8c3f5cf8152af8588d32530238c35aad" title="internal::Double::Significand" alt="" coords="691,169,879,196"/>
+</map>

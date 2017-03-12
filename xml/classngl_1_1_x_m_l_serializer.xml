@@ -1,0 +1,1537 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classngl_1_1_x_m_l_serializer" kind="class" language="C++" prot="public">
+    <compoundname>ngl::XMLSerializer</compoundname>
+    <includes refid="_x_m_l_serializer_8h" local="no">XMLSerializer.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classngl_1_1_x_m_l_serializer_1a0276519d41a15cd9449159168a6703da" prot="public" static="no">
+        <name>ACCESSMODE</name>
+        <enumvalue id="classngl_1_1_x_m_l_serializer_1a0276519d41a15cd9449159168a6703daac5a0d3d59795f45034396fff7d066b37" prot="public">
+          <name>READ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classngl_1_1_x_m_l_serializer_1a0276519d41a15cd9449159168a6703daacce3d86022857207ad02eaacfb9047a2" prot="public">
+          <name>WRITE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="38" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classngl_1_1_x_m_l_serializer_1a7b2c4722d9caa10ff3b18ba7cb0bf686" prot="private" static="no" mutable="no">
+        <type><ref refid="classrapidxml_1_1xml__document" kindref="compound">rapidxml::xml_document</ref></type>
+        <definition>rapidxml::xml_document ngl::XMLSerializer::m_doc</definition>
+        <argsstring></argsstring>
+        <name>m_doc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="240" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" bodystart="240" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_x_m_l_serializer_1acb72a6df1ebeb6f606a5e91b93eba432" compoundref="_x_m_l_serializer_8cpp" startline="16" endline="23">writeToXML</referencedby>
+        <referencedby refid="classngl_1_1_x_m_l_serializer_1a68ace4d8c072e9a92405711fd88bfe80" compoundref="_x_m_l_serializer_8cpp" startline="33" endline="39">addNode</referencedby>
+        <referencedby refid="classngl_1_1_x_m_l_serializer_1a3d4af73c5422ec397f4c2dfe709b869e" compoundref="_x_m_l_serializer_8cpp" startline="49" endline="60">XMLSerializer</referencedby>
+        <referencedby refid="classngl_1_1_x_m_l_serializer_1a3fe503ca9e18b6cacb332e285f707999" compoundref="_x_m_l_serializer_8cpp" startline="62" endline="71">~XMLSerializer</referencedby>
+        <referencedby refid="classngl_1_1_x_m_l_serializer_1a7cbda35a4e4cc86f777635b09180d23d" compoundref="_x_m_l_serializer_8cpp" startline="110" endline="124">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_x_m_l_serializer_1a06203527560e17656ab9ee37d1cb7853" prot="private" static="no" mutable="no">
+        <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">rapidxml::xml_node</ref> *</type>
+        <definition>rapidxml::xml_node* ngl::XMLSerializer::m_currentNode</definition>
+        <argsstring></argsstring>
+        <name>m_currentNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="242" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" bodystart="242" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_x_m_l_serializer_1a68ace4d8c072e9a92405711fd88bfe80" compoundref="_x_m_l_serializer_8cpp" startline="33" endline="39">addNode</referencedby>
+        <referencedby refid="classngl_1_1_x_m_l_serializer_1a3d4af73c5422ec397f4c2dfe709b869e" compoundref="_x_m_l_serializer_8cpp" startline="49" endline="60">XMLSerializer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_x_m_l_serializer_1a8bd8b8c851371b1d4914fe744cecbec3" prot="private" static="no" mutable="no">
+        <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">rapidxml::xml_node</ref> *</type>
+        <definition>rapidxml::xml_node* ngl::XMLSerializer::m_parent</definition>
+        <argsstring></argsstring>
+        <name>m_parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="243" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_x_m_l_serializer_1af3b1bf2519a572f3264a950007a8086e" prot="private" static="no" mutable="no">
+        <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>std::string ngl::XMLSerializer::m_fname</definition>
+        <argsstring></argsstring>
+        <name>m_fname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="245" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" bodystart="245" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_x_m_l_serializer_1a3d4af73c5422ec397f4c2dfe709b869e" compoundref="_x_m_l_serializer_8cpp" startline="49" endline="60">XMLSerializer</referencedby>
+        <referencedby refid="classngl_1_1_x_m_l_serializer_1a3fe503ca9e18b6cacb332e285f707999" compoundref="_x_m_l_serializer_8cpp" startline="62" endline="71">~XMLSerializer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_x_m_l_serializer_1a06e3fe25a9284514899f2e0ce8554963" prot="private" static="no" mutable="no">
+        <type><ref refid="classngl_1_1_x_m_l_serializer_1a0276519d41a15cd9449159168a6703da" kindref="member">ACCESSMODE</ref></type>
+        <definition>ACCESSMODE ngl::XMLSerializer::m_mode</definition>
+        <argsstring></argsstring>
+        <name>m_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="246" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" bodystart="246" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_x_m_l_serializer_1a3d4af73c5422ec397f4c2dfe709b869e" compoundref="_x_m_l_serializer_8cpp" startline="49" endline="60">XMLSerializer</referencedby>
+        <referencedby refid="classngl_1_1_x_m_l_serializer_1a3fe503ca9e18b6cacb332e285f707999" compoundref="_x_m_l_serializer_8cpp" startline="62" endline="71">~XMLSerializer</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a3d4af73c5422ec397f4c2dfe709b869e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::XMLSerializer::XMLSerializer</definition>
+        <argsstring>(const std::string &amp;_fname, ACCESSMODE _mode)</argsstring>
+        <name>XMLSerializer</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_fname</declname>
+        </param>
+        <param>
+          <type><ref refid="classngl_1_1_x_m_l_serializer_1a0276519d41a15cd9449159168a6703da" kindref="member">ACCESSMODE</ref></type>
+          <declname>_mode</declname>
+        </param>
+        <briefdescription>
+<para>ctor, uses RAII to open the file, flag indicates if we have read or write mode </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">&amp;_fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of file to serialize </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="43" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="49" bodyend="60"/>
+        <references refid="classrapidxml_1_1memory__pool_1a3de2a66c983336e006ea3844e244ed30" compoundref="rapidxml_8hpp" startline="447" endline="467">rapidxml::memory_pool&lt; Ch &gt;::allocate_attribute</references>
+        <references refid="classrapidxml_1_1memory__pool_1a4118581c29ee9a2f6b55ebf7dac185f8" compoundref="rapidxml_8hpp" startline="415" endline="436">rapidxml::memory_pool&lt; Ch &gt;::allocate_node</references>
+        <references refid="classrapidxml_1_1xml__node_1a33ce3386f8c42dd4db658b75cbb6e6c4" compoundref="rapidxml_8hpp" startline="1217" endline="1233">rapidxml::xml_node&lt; Ch &gt;::append_attribute</references>
+        <references refid="classrapidxml_1_1xml__node_1a8696d098ecc9c4d2a646b43e91d58e31" compoundref="rapidxml_8hpp" startline="1097" endline="1113">rapidxml::xml_node&lt; Ch &gt;::append_node</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a06203527560e17656ab9ee37d1cb7853" compoundref="_x_m_l_serializer_8h" startline="242">m_currentNode</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a7b2c4722d9caa10ff3b18ba7cb0bf686" compoundref="_x_m_l_serializer_8h" startline="240">m_doc</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1af3b1bf2519a572f3264a950007a8086e" compoundref="_x_m_l_serializer_8h" startline="245">m_fname</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a06e3fe25a9284514899f2e0ce8554963" compoundref="_x_m_l_serializer_8h" startline="246">m_mode</references>
+        <references refid="namespacerapidxml_1abb456db38f7efb746c4330eed6072a7cafe4ca44261e5fbedf0eab43131751212" compoundref="rapidxml_8hpp" startline="150">rapidxml::node_declaration</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a3fe503ca9e18b6cacb332e285f707999" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ngl::XMLSerializer::~XMLSerializer</definition>
+        <argsstring>()</argsstring>
+        <name>~XMLSerializer</name>
+        <briefdescription>
+<para>dtor will close the file </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="47" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="62" bodyend="71"/>
+        <references refid="classrapidxml_1_1xml__document_1a826929ff54242532198701f19ff5f83f" compoundref="rapidxml_8hpp" startline="1415" endline="1420">rapidxml::xml_document&lt; Ch &gt;::clear</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a7b2c4722d9caa10ff3b18ba7cb0bf686" compoundref="_x_m_l_serializer_8h" startline="240">m_doc</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1af3b1bf2519a572f3264a950007a8086e" compoundref="_x_m_l_serializer_8h" startline="245">m_fname</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a06e3fe25a9284514899f2e0ce8554963" compoundref="_x_m_l_serializer_8h" startline="246">m_mode</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a0276519d41a15cd9449159168a6703daacce3d86022857207ad02eaacfb9047a2" compoundref="_x_m_l_serializer_8h" startline="38">WRITE</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a549204e0f43066d62f023a8a1f3df284" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::read</definition>
+        <argsstring>(AABB &amp;_s)</argsstring>
+        <name>read</name>
+        <param>
+          <type><ref refid="classngl_1_1_a_a_b_b" kindref="compound">AABB</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>read from an <ref refid="classngl_1_1_a_a_b_b" kindref="compound">AABB</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="53" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a178c02a04a06a2ec92ee660a2f47c32c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const AABB &amp;_s)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_a_a_b_b" kindref="compound">AABB</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>write from an <ref refid="classngl_1_1_a_a_b_b" kindref="compound">AABB</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="58" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="78" bodyend="81"/>
+        <referencedby refid="classngl_1_1_x_m_l_serializer_1a7cbda35a4e4cc86f777635b09180d23d" compoundref="_x_m_l_serializer_8cpp" startline="110" endline="124">write</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a9217ab96a233b418ccb664a8567e8f62" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::read</definition>
+        <argsstring>(BBox &amp;_s)</argsstring>
+        <name>read</name>
+        <param>
+          <type><ref refid="classngl_1_1_b_box" kindref="compound">BBox</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>read from an <ref refid="classngl_1_1_b_box" kindref="compound">BBox</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="63" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1ad58b1fc5d4a0b879afadd837279fa983" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const BBox &amp;_s)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_b_box" kindref="compound">BBox</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>write from an <ref refid="classngl_1_1_b_box" kindref="compound">BBox</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="68" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1afbb9cd0533f5b312712d71bf92ee13fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::read</definition>
+        <argsstring>(BezierCurve &amp;_s)</argsstring>
+        <name>read</name>
+        <param>
+          <type><ref refid="classngl_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>read from an <ref refid="classngl_1_1_bezier_curve" kindref="compound">BezierCurve</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="73" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a24b53bfaaa3fe75bf2f57dfd61d04acf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const BezierCurve &amp;_s)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>write from an <ref refid="classngl_1_1_bezier_curve" kindref="compound">BezierCurve</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="78" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a93a2e6f0beea9d5d30d24527aa4a9de2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::read</definition>
+        <argsstring>(Camera &amp;_s)</argsstring>
+        <name>read</name>
+        <param>
+          <type><ref refid="classngl_1_1_camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>read from an <ref refid="classngl_1_1_camera" kindref="compound">Camera</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="83" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a7cbda35a4e4cc86f777635b09180d23d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const Camera &amp;_s, const std::string &amp;_tag)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_tag</declname>
+        </param>
+        <briefdescription>
+<para>write from an <ref refid="classngl_1_1_camera" kindref="compound">Camera</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="88" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="110" bodyend="124"/>
+        <references refid="classrapidxml_1_1memory__pool_1a4118581c29ee9a2f6b55ebf7dac185f8" compoundref="rapidxml_8hpp" startline="415" endline="436">rapidxml::memory_pool&lt; Ch &gt;::allocate_node</references>
+        <references refid="classrapidxml_1_1memory__pool_1a171941b39d55b868358da97462185f58" compoundref="rapidxml_8hpp" startline="476" endline="486">rapidxml::memory_pool&lt; Ch &gt;::allocate_string</references>
+        <references refid="classrapidxml_1_1xml__node_1a8696d098ecc9c4d2a646b43e91d58e31" compoundref="rapidxml_8hpp" startline="1097" endline="1113">rapidxml::xml_node&lt; Ch &gt;::append_node</references>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">fmt::format</references>
+        <references refid="classngl_1_1_camera_1af8f578c1826569899cb0b7f2ce74aa9e" compoundref="_camera_8h" startline="249" endline="249">ngl::Camera::getAspect</references>
+        <references refid="classngl_1_1_camera_1ab399093a43c43fcc839d5100fa9124ed" compoundref="_camera_8h" startline="205" endline="205">ngl::Camera::getEye</references>
+        <references refid="classngl_1_1_camera_1a65c095a8debf975452758522837fa119" compoundref="_camera_8h" startline="259" endline="259">ngl::Camera::getFar</references>
+        <references refid="classngl_1_1_camera_1a422235889ae824047d61e479e9eaf02f" compoundref="_camera_8h" startline="244" endline="244">ngl::Camera::getFOV</references>
+        <references refid="classngl_1_1_camera_1abff65956f350cbfc4806cae3782f89d1" compoundref="_camera_8h" startline="219" endline="219">ngl::Camera::getLook</references>
+        <references refid="classngl_1_1_camera_1a01e7cd82766a19510cf397c0a4277e1b" compoundref="_camera_8h" startline="254" endline="254">ngl::Camera::getNear</references>
+        <references refid="classngl_1_1_camera_1a8c8a7e8fb0c6a379a755fa5691a5b38d" compoundref="_camera_8h" startline="224" endline="224">ngl::Camera::getUp</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a7b2c4722d9caa10ff3b18ba7cb0bf686" compoundref="_x_m_l_serializer_8h" startline="240">m_doc</references>
+        <references refid="namespacerapidxml_1abb456db38f7efb746c4330eed6072a7ca89cbeb4d28046326e4ee953d3c4047ff" compoundref="rapidxml_8hpp" startline="146">rapidxml::node_element</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a178c02a04a06a2ec92ee660a2f47c32c" compoundref="_x_m_l_serializer_8cpp" startline="78" endline="81">write</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1acb72a6df1ebeb6f606a5e91b93eba432" compoundref="_x_m_l_serializer_8cpp" startline="16" endline="23">writeToXML</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1af122ada93affc26d90094d8df7cde1d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::read</definition>
+        <argsstring>(Colour &amp;_s)</argsstring>
+        <name>read</name>
+        <param>
+          <type><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>read from an <ref refid="classngl_1_1_colour" kindref="compound">Colour</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="93" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a517d1797da20ab1cd0cb249a061d14b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const Colour &amp;_s, std::string _tag=&quot;Colour&quot;)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_colour" kindref="compound">Colour</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+          <declname>_tag</declname>
+          <defval>&quot;Colour&quot;</defval>
+        </param>
+        <briefdescription>
+<para>write from an <ref refid="classngl_1_1_colour" kindref="compound">Colour</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="98" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="131" bodyend="134"/>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">fmt::format</references>
+        <references refid="classngl_1_1_colour_1ab96e9e106eb002f99202af9a98f2370f" compoundref="_colour_8h" startline="172">ngl::Colour::m_a</references>
+        <references refid="classngl_1_1_colour_1a3e577332e227fba3e0a50b72ee65dc2f" compoundref="_colour_8h" startline="168">ngl::Colour::m_b</references>
+        <references refid="classngl_1_1_colour_1a12072e1aa25ddb1977a8b9acbb3b3085" compoundref="_colour_8h" startline="164">ngl::Colour::m_g</references>
+        <references refid="classngl_1_1_colour_1a98a3dfe48c9fe96c5206a3004cdaa9e7" compoundref="_colour_8h" startline="160">ngl::Colour::m_r</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1acb72a6df1ebeb6f606a5e91b93eba432" compoundref="_x_m_l_serializer_8cpp" startline="16" endline="23">writeToXML</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a9815588b8698975fbd17d65b769dfa14" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const Colour &amp;_s, rapidxml::xml_node&lt;&gt; *_parent, std::string _tag=&quot;Colour&quot;)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_colour" kindref="compound">Colour</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">rapidxml::xml_node</ref>&lt;&gt; *</type>
+          <declname>_parent</declname>
+        </param>
+        <param>
+          <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+          <declname>_tag</declname>
+          <defval>&quot;Colour&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="99" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="137" bodyend="140"/>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">fmt::format</references>
+        <references refid="classngl_1_1_colour_1ab96e9e106eb002f99202af9a98f2370f" compoundref="_colour_8h" startline="172">ngl::Colour::m_a</references>
+        <references refid="classngl_1_1_colour_1a3e577332e227fba3e0a50b72ee65dc2f" compoundref="_colour_8h" startline="168">ngl::Colour::m_b</references>
+        <references refid="classngl_1_1_colour_1a12072e1aa25ddb1977a8b9acbb3b3085" compoundref="_colour_8h" startline="164">ngl::Colour::m_g</references>
+        <references refid="classngl_1_1_colour_1a98a3dfe48c9fe96c5206a3004cdaa9e7" compoundref="_colour_8h" startline="160">ngl::Colour::m_r</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1acb72a6df1ebeb6f606a5e91b93eba432" compoundref="_x_m_l_serializer_8cpp" startline="16" endline="23">writeToXML</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1aece4c1c925cadc432449dc15ca699f05" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::read</definition>
+        <argsstring>(Light &amp;_s)</argsstring>
+        <name>read</name>
+        <param>
+          <type><ref refid="classngl_1_1_light" kindref="compound">Light</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>read from an <ref refid="classngl_1_1_light" kindref="compound">Light</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="105" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a2359a8b1a54174d0a33c323fca30610f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const Light &amp;_s, const std::string &amp;_tag)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_light" kindref="compound">Light</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_tag</declname>
+        </param>
+        <briefdescription>
+<para>write from an <ref refid="classngl_1_1_light" kindref="compound">Light</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="110" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="147" bodyend="171"/>
+        <references refid="classrapidxml_1_1memory__pool_1a4118581c29ee9a2f6b55ebf7dac185f8" compoundref="rapidxml_8hpp" startline="415" endline="436">rapidxml::memory_pool&lt; Ch &gt;::allocate_node</references>
+        <references refid="classrapidxml_1_1memory__pool_1a171941b39d55b868358da97462185f58" compoundref="rapidxml_8hpp" startline="476" endline="486">rapidxml::memory_pool&lt; Ch &gt;::allocate_string</references>
+        <references refid="classrapidxml_1_1xml__node_1a8696d098ecc9c4d2a646b43e91d58e31" compoundref="rapidxml_8hpp" startline="1097" endline="1113">rapidxml::xml_node&lt; Ch &gt;::append_node</references>
+        <references refid="classngl_1_1_light_1ace92299dbbe393301dbc5b723c2d7195" compoundref="_light_8h" startline="147" endline="147">ngl::Light::getColour</references>
+        <references refid="classngl_1_1_light_1a38146210bf3343d8041014233ecfe9c9" compoundref="_light_8h" startline="142" endline="142">ngl::Light::getPos</references>
+        <references refid="classngl_1_1_light_1a1a23cbec672a1d893ed7e476486dd222" compoundref="_light_8h" startline="152" endline="152">ngl::Light::getSpecColour</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a7b2c4722d9caa10ff3b18ba7cb0bf686" compoundref="_x_m_l_serializer_8h" startline="240">m_doc</references>
+        <references refid="namespacerapidxml_1abb456db38f7efb746c4330eed6072a7ca89cbeb4d28046326e4ee953d3c4047ff" compoundref="rapidxml_8hpp" startline="146">rapidxml::node_element</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a178c02a04a06a2ec92ee660a2f47c32c" compoundref="_x_m_l_serializer_8cpp" startline="78" endline="81">write</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a3f5686aca08349e1c974613bc9453644" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::read</definition>
+        <argsstring>(Mat3 &amp;_s)</argsstring>
+        <name>read</name>
+        <param>
+          <type><ref refid="classngl_1_1_mat3" kindref="compound">Mat3</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>read from an <ref refid="classngl_1_1_mat3" kindref="compound">Mat3</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="115" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="173" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a1c21afe10ec3ace5976a0b460b66a796" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(Mat3 &amp;_s, std::string _tag=&quot;Mat3&quot;)</argsstring>
+        <name>write</name>
+        <param>
+          <type><ref refid="classngl_1_1_mat3" kindref="compound">Mat3</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+          <declname>_tag</declname>
+          <defval>&quot;Mat3&quot;</defval>
+        </param>
+        <briefdescription>
+<para>write from an <ref refid="classngl_1_1_mat3" kindref="compound">Mat3</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="120" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="178" bodyend="185"/>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">fmt::format</references>
+        <references refid="classngl_1_1_mat3_1a9a5fd1b3cbf6d38135451959d9c614f9" compoundref="_mat3_8h" startline="243">ngl::Mat3::m_openGL</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1acb72a6df1ebeb6f606a5e91b93eba432" compoundref="_x_m_l_serializer_8cpp" startline="16" endline="23">writeToXML</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1ab46b4afdb1817798c7009f645992d7d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::read</definition>
+        <argsstring>(Mat4 &amp;_s)</argsstring>
+        <name>read</name>
+        <param>
+          <type><ref refid="classngl_1_1_mat4" kindref="compound">Mat4</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>read from an <ref refid="classngl_1_1_mat4" kindref="compound">Mat4</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="125" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a077fcd4151c2e2b556c63da2a99528d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(Mat4 &amp;_s, std::string _tag=&quot;Mat4&quot;)</argsstring>
+        <name>write</name>
+        <param>
+          <type><ref refid="classngl_1_1_mat4" kindref="compound">Mat4</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+          <declname>_tag</declname>
+          <defval>&quot;Mat4&quot;</defval>
+        </param>
+        <briefdescription>
+<para>write from an <ref refid="classngl_1_1_mat4" kindref="compound">Mat4</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="130" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="192" bodyend="202"/>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">fmt::format</references>
+        <references refid="classngl_1_1_mat4_1aa4b2360876838af8242eba1eee591a0f" compoundref="_mat4_8h" startline="239" endline="239">ngl::Mat4::openGL</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1acb72a6df1ebeb6f606a5e91b93eba432" compoundref="_x_m_l_serializer_8cpp" startline="16" endline="23">writeToXML</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a52e7c65a201cb1b45f9205460d273311" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::read</definition>
+        <argsstring>(Material &amp;_s)</argsstring>
+        <name>read</name>
+        <param>
+          <type>Material &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>read from an Material must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="135" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="204" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a2262207758e75d93d69e74f0e9696b09" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const Material &amp;_s, const std::string &amp;_tag)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const Material &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_tag</declname>
+        </param>
+        <briefdescription>
+<para>write from an Material must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="140" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="209" bodyend="221"/>
+        <references refid="classrapidxml_1_1memory__pool_1a4118581c29ee9a2f6b55ebf7dac185f8" compoundref="rapidxml_8hpp" startline="415" endline="436">rapidxml::memory_pool&lt; Ch &gt;::allocate_node</references>
+        <references refid="classrapidxml_1_1memory__pool_1a171941b39d55b868358da97462185f58" compoundref="rapidxml_8hpp" startline="476" endline="486">rapidxml::memory_pool&lt; Ch &gt;::allocate_string</references>
+        <references refid="classrapidxml_1_1xml__node_1a8696d098ecc9c4d2a646b43e91d58e31" compoundref="rapidxml_8hpp" startline="1097" endline="1113">rapidxml::xml_node&lt; Ch &gt;::append_node</references>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">fmt::format</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a7b2c4722d9caa10ff3b18ba7cb0bf686" compoundref="_x_m_l_serializer_8h" startline="240">m_doc</references>
+        <references refid="namespacerapidxml_1abb456db38f7efb746c4330eed6072a7ca89cbeb4d28046326e4ee953d3c4047ff" compoundref="rapidxml_8hpp" startline="146">rapidxml::node_element</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a178c02a04a06a2ec92ee660a2f47c32c" compoundref="_x_m_l_serializer_8cpp" startline="78" endline="81">write</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1acb72a6df1ebeb6f606a5e91b93eba432" compoundref="_x_m_l_serializer_8cpp" startline="16" endline="23">writeToXML</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1ac80ea78d2b3c5b332598c161141a9e95" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::read</definition>
+        <argsstring>(PathCamera &amp;_s)</argsstring>
+        <name>read</name>
+        <param>
+          <type><ref refid="classngl_1_1_path_camera" kindref="compound">PathCamera</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>read from an <ref refid="classngl_1_1_path_camera" kindref="compound">PathCamera</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="145" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="223" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1aaa30ff044f2be98102d8c41904e56a69" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const PathCamera &amp;_s, const std::string &amp;_tag)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_path_camera" kindref="compound">PathCamera</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_tag</declname>
+        </param>
+        <briefdescription>
+<para>write from an <ref refid="classngl_1_1_path_camera" kindref="compound">PathCamera</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="150" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="228" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a941f1c0f45032d4c1b478a870ead1130" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::read</definition>
+        <argsstring>(Plane &amp;_s)</argsstring>
+        <name>read</name>
+        <param>
+          <type><ref refid="classngl_1_1_plane" kindref="compound">Plane</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>read from an <ref refid="classngl_1_1_plane" kindref="compound">Plane</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="155" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="233" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1ab4ca4cd65f9dc6dc55a0f79eb03a0696" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const Plane &amp;_s, const std::string &amp;_tag)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_plane" kindref="compound">Plane</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_tag</declname>
+        </param>
+        <briefdescription>
+<para>write from an <ref refid="classngl_1_1_plane" kindref="compound">Plane</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="160" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="238" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1aa442b2e192c24bd397a5fad1233493c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::read</definition>
+        <argsstring>(Quaternion &amp;_s)</argsstring>
+        <name>read</name>
+        <param>
+          <type><ref refid="classngl_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>read from an <ref refid="classngl_1_1_quaternion" kindref="compound">Quaternion</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="165" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="243" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1af09e096530638ecc6bda0ca56a4bf21d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const Quaternion &amp;_s, const std::string &amp;_tag=&quot;Quat&quot;)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_tag</declname>
+          <defval>&quot;Quat&quot;</defval>
+        </param>
+        <briefdescription>
+<para>write from an <ref refid="classngl_1_1_quaternion" kindref="compound">Quaternion</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="170" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="249" bodyend="253"/>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">fmt::format</references>
+        <references refid="classngl_1_1_quaternion_1aae275b2005fc4112eb2949fde2e2ff74" compoundref="_quaternion_8h" startline="98" endline="98">ngl::Quaternion::getS</references>
+        <references refid="classngl_1_1_quaternion_1aabbf1f62a783942312fd041114be049c" compoundref="_quaternion_8h" startline="103" endline="103">ngl::Quaternion::getX</references>
+        <references refid="classngl_1_1_quaternion_1a65f77385ff2d1036a182ce35606b91f8" compoundref="_quaternion_8h" startline="108" endline="108">ngl::Quaternion::getY</references>
+        <references refid="classngl_1_1_quaternion_1a4bb95b29c955671ac50f50246762932c" compoundref="_quaternion_8h" startline="113" endline="113">ngl::Quaternion::getZ</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1acb72a6df1ebeb6f606a5e91b93eba432" compoundref="_x_m_l_serializer_8cpp" startline="16" endline="23">writeToXML</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a982cbbe163920076d5759fe8b9bb0558" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::read</definition>
+        <argsstring>(SpotLight &amp;_s)</argsstring>
+        <name>read</name>
+        <param>
+          <type><ref refid="classngl_1_1_spot_light" kindref="compound">SpotLight</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>read from an <ref refid="classngl_1_1_spot_light" kindref="compound">SpotLight</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="175" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="255" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a3679f39e54378aca7a3c4cbb4dc6d2d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const SpotLight &amp;_s, const std::string &amp;_tag)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_spot_light" kindref="compound">SpotLight</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_tag</declname>
+        </param>
+        <briefdescription>
+<para>write from an <ref refid="classngl_1_1_spot_light" kindref="compound">SpotLight</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="180" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="260" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a2db238a23847eb044d43f66b27abaaa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::read</definition>
+        <argsstring>(Transformation &amp;_s)</argsstring>
+        <name>read</name>
+        <param>
+          <type><ref refid="classngl_1_1_transformation" kindref="compound">Transformation</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>read from an <ref refid="classngl_1_1_transformation" kindref="compound">Transformation</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="185" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="266" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1af07b2f24ab5f309bfa328cdbd5dbd6a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const Transformation &amp;_s, const std::string &amp;_tag)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_transformation" kindref="compound">Transformation</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_tag</declname>
+        </param>
+        <briefdescription>
+<para>write from an <ref refid="classngl_1_1_transformation" kindref="compound">Transformation</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="190" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="271" bodyend="285"/>
+        <references refid="classrapidxml_1_1memory__pool_1a4118581c29ee9a2f6b55ebf7dac185f8" compoundref="rapidxml_8hpp" startline="415" endline="436">rapidxml::memory_pool&lt; Ch &gt;::allocate_node</references>
+        <references refid="classrapidxml_1_1memory__pool_1a171941b39d55b868358da97462185f58" compoundref="rapidxml_8hpp" startline="476" endline="486">rapidxml::memory_pool&lt; Ch &gt;::allocate_string</references>
+        <references refid="classrapidxml_1_1xml__node_1a8696d098ecc9c4d2a646b43e91d58e31" compoundref="rapidxml_8hpp" startline="1097" endline="1113">rapidxml::xml_node&lt; Ch &gt;::append_node</references>
+        <references refid="classngl_1_1_transformation_1a131990477c4496e157e4f1052f72c528" compoundref="_transformation_8h" startline="172" endline="172">ngl::Transformation::getPosition</references>
+        <references refid="classngl_1_1_transformation_1a20978038b330c02de0970ee3f43a43e1" compoundref="_transformation_8h" startline="177" endline="177">ngl::Transformation::getRotation</references>
+        <references refid="classngl_1_1_transformation_1a66e96988d0ab9b5afd1c7d13bb99e389" compoundref="_transformation_8h" startline="167" endline="167">ngl::Transformation::getScale</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a7b2c4722d9caa10ff3b18ba7cb0bf686" compoundref="_x_m_l_serializer_8h" startline="240">m_doc</references>
+        <references refid="namespacerapidxml_1abb456db38f7efb746c4330eed6072a7ca89cbeb4d28046326e4ee953d3c4047ff" compoundref="rapidxml_8hpp" startline="146">rapidxml::node_element</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a178c02a04a06a2ec92ee660a2f47c32c" compoundref="_x_m_l_serializer_8cpp" startline="78" endline="81">write</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a2e89260668530888071876bda19e5af6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::read</definition>
+        <argsstring>(Vec2 &amp;_s)</argsstring>
+        <name>read</name>
+        <param>
+          <type><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>read from an <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="195" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="287" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1aa04c1b990bb8db4e32397597634e4bbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const Vec2 &amp;_s, std::string _tag=&quot;Vec2&quot;)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+          <declname>_tag</declname>
+          <defval>&quot;Vec2&quot;</defval>
+        </param>
+        <briefdescription>
+<para>write from an <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="200" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="292" bodyend="297"/>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">fmt::format</references>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">ngl::Vec2::m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">ngl::Vec2::m_y</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1acb72a6df1ebeb6f606a5e91b93eba432" compoundref="_x_m_l_serializer_8cpp" startline="16" endline="23">writeToXML</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1ad6a3c19e8bf90c5235f4afc34a206adf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const Vec2 &amp;_s, rapidxml::xml_node&lt;&gt; *_parent, std::string _tag)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">rapidxml::xml_node</ref>&lt;&gt; *</type>
+          <declname>_parent</declname>
+        </param>
+        <param>
+          <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+          <declname>_tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="201" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="299" bodyend="302"/>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">fmt::format</references>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">ngl::Vec2::m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">ngl::Vec2::m_y</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1acb72a6df1ebeb6f606a5e91b93eba432" compoundref="_x_m_l_serializer_8cpp" startline="16" endline="23">writeToXML</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a94ae9d0ad75b8f0da9b571414405366a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::read</definition>
+        <argsstring>(Vec3 &amp;_s)</argsstring>
+        <name>read</name>
+        <param>
+          <type><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>read from an <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="207" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="306" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a87cd507a23cb7fde06450d03b9112d59" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const Vec3 &amp;_s, std::string _tag=&quot;Vec3&quot;)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+          <declname>_tag</declname>
+          <defval>&quot;Vec3&quot;</defval>
+        </param>
+        <briefdescription>
+<para>write from an <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="212" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="311" bodyend="314"/>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">fmt::format</references>
+        <references refid="classngl_1_1_vec3_1a30f6ffdadd9bdb00159553a4ff3f3f25" compoundref="_vec3_8h" startline="310">ngl::Vec3::m_x</references>
+        <references refid="classngl_1_1_vec3_1a6c46bcd25521e9840d992280bdfb5a91" compoundref="_vec3_8h" startline="311">ngl::Vec3::m_y</references>
+        <references refid="classngl_1_1_vec3_1a1e5d951f56e56b18edadfd661eb6012a" compoundref="_vec3_8h" startline="312">ngl::Vec3::m_z</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1acb72a6df1ebeb6f606a5e91b93eba432" compoundref="_x_m_l_serializer_8cpp" startline="16" endline="23">writeToXML</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a72e1c077654c3b4f66f26e785f6c9a48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const Vec3 &amp;_s, rapidxml::xml_node&lt;&gt; *_parent, std::string _tag)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">rapidxml::xml_node</ref>&lt;&gt; *</type>
+          <declname>_parent</declname>
+        </param>
+        <param>
+          <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+          <declname>_tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="213" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="315" bodyend="320"/>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">fmt::format</references>
+        <references refid="classngl_1_1_vec3_1a30f6ffdadd9bdb00159553a4ff3f3f25" compoundref="_vec3_8h" startline="310">ngl::Vec3::m_x</references>
+        <references refid="classngl_1_1_vec3_1a6c46bcd25521e9840d992280bdfb5a91" compoundref="_vec3_8h" startline="311">ngl::Vec3::m_y</references>
+        <references refid="classngl_1_1_vec3_1a1e5d951f56e56b18edadfd661eb6012a" compoundref="_vec3_8h" startline="312">ngl::Vec3::m_z</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1acb72a6df1ebeb6f606a5e91b93eba432" compoundref="_x_m_l_serializer_8cpp" startline="16" endline="23">writeToXML</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a1372864682c53577caa1818ae5758084" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::read</definition>
+        <argsstring>(Vec4 &amp;_s)</argsstring>
+        <name>read</name>
+        <param>
+          <type><ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <briefdescription>
+<para>read from an <ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="219" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="321" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a95d0be530f4c7e5fe791cb59adeec5ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const Vec4 &amp;_s, std::string _tag=&quot;Vec4&quot;)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+          <declname>_tag</declname>
+          <defval>&quot;Vec4&quot;</defval>
+        </param>
+        <briefdescription>
+<para>write from an <ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref> must be overriden in child </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="224" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="332" bodyend="335"/>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">fmt::format</references>
+        <references refid="classngl_1_1_vec4_1a1d4d2d4bb494f428843f3d600e27811d" compoundref="_vec4_8h" startline="324">ngl::Vec4::m_w</references>
+        <references refid="classngl_1_1_vec4_1a3ffbb98e16e3e05d658cf38907911fff" compoundref="_vec4_8h" startline="321">ngl::Vec4::m_x</references>
+        <references refid="classngl_1_1_vec4_1adc415581c84f9e54f15198a002f8948b" compoundref="_vec4_8h" startline="322">ngl::Vec4::m_y</references>
+        <references refid="classngl_1_1_vec4_1afef13d1ede4b248147e7dd126fd1e17a" compoundref="_vec4_8h" startline="323">ngl::Vec4::m_z</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1acb72a6df1ebeb6f606a5e91b93eba432" compoundref="_x_m_l_serializer_8cpp" startline="16" endline="23">writeToXML</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a8328dfc9d1a12d463cc0376d1963a4bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::write</definition>
+        <argsstring>(const Vec4 &amp;_s, rapidxml::xml_node&lt;&gt; *_parent, std::string _tag)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">rapidxml::xml_node</ref>&lt;&gt; *</type>
+          <declname>_parent</declname>
+        </param>
+        <param>
+          <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+          <declname>_tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="225" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="338" bodyend="341"/>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">fmt::format</references>
+        <references refid="classngl_1_1_vec4_1a1d4d2d4bb494f428843f3d600e27811d" compoundref="_vec4_8h" startline="324">ngl::Vec4::m_w</references>
+        <references refid="classngl_1_1_vec4_1a3ffbb98e16e3e05d658cf38907911fff" compoundref="_vec4_8h" startline="321">ngl::Vec4::m_x</references>
+        <references refid="classngl_1_1_vec4_1adc415581c84f9e54f15198a002f8948b" compoundref="_vec4_8h" startline="322">ngl::Vec4::m_y</references>
+        <references refid="classngl_1_1_vec4_1afef13d1ede4b248147e7dd126fd1e17a" compoundref="_vec4_8h" startline="323">ngl::Vec4::m_z</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1acb72a6df1ebeb6f606a5e91b93eba432" compoundref="_x_m_l_serializer_8cpp" startline="16" endline="23">writeToXML</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1acb72a6df1ebeb6f606a5e91b93eba432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::writeToXML</definition>
+        <argsstring>(const std::string &amp;_s, const std::string &amp;_tag)</argsstring>
+        <name>writeToXML</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="226" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="16" bodyend="23"/>
+        <references refid="classrapidxml_1_1memory__pool_1a4118581c29ee9a2f6b55ebf7dac185f8" compoundref="rapidxml_8hpp" startline="415" endline="436">rapidxml::memory_pool&lt; Ch &gt;::allocate_node</references>
+        <references refid="classrapidxml_1_1memory__pool_1a171941b39d55b868358da97462185f58" compoundref="rapidxml_8hpp" startline="476" endline="486">rapidxml::memory_pool&lt; Ch &gt;::allocate_string</references>
+        <references refid="classrapidxml_1_1xml__node_1a8696d098ecc9c4d2a646b43e91d58e31" compoundref="rapidxml_8hpp" startline="1097" endline="1113">rapidxml::xml_node&lt; Ch &gt;::append_node</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a7b2c4722d9caa10ff3b18ba7cb0bf686" compoundref="_x_m_l_serializer_8h" startline="240">m_doc</references>
+        <references refid="namespacerapidxml_1abb456db38f7efb746c4330eed6072a7ca89cbeb4d28046326e4ee953d3c4047ff" compoundref="rapidxml_8hpp" startline="146">rapidxml::node_element</references>
+        <referencedby refid="classngl_1_1_x_m_l_serializer_1a7cbda35a4e4cc86f777635b09180d23d" compoundref="_x_m_l_serializer_8cpp" startline="110" endline="124">write</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a0c7124fb464ad4cca970f59e98944e1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::writeToXML</definition>
+        <argsstring>(const std::string &amp;_s, rapidxml::xml_node&lt;&gt; *_parent, const std::string &amp;_tag)</argsstring>
+        <name>writeToXML</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_s</declname>
+        </param>
+        <param>
+          <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">rapidxml::xml_node</ref>&lt;&gt; *</type>
+          <declname>_parent</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="227" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="25" bodyend="31"/>
+        <references refid="classrapidxml_1_1memory__pool_1a4118581c29ee9a2f6b55ebf7dac185f8" compoundref="rapidxml_8hpp" startline="415" endline="436">rapidxml::memory_pool&lt; Ch &gt;::allocate_node</references>
+        <references refid="classrapidxml_1_1memory__pool_1a171941b39d55b868358da97462185f58" compoundref="rapidxml_8hpp" startline="476" endline="486">rapidxml::memory_pool&lt; Ch &gt;::allocate_string</references>
+        <references refid="classrapidxml_1_1xml__node_1a8696d098ecc9c4d2a646b43e91d58e31" compoundref="rapidxml_8hpp" startline="1097" endline="1113">rapidxml::xml_node&lt; Ch &gt;::append_node</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a7b2c4722d9caa10ff3b18ba7cb0bf686" compoundref="_x_m_l_serializer_8h" startline="240">m_doc</references>
+        <references refid="namespacerapidxml_1abb456db38f7efb746c4330eed6072a7ca89cbeb4d28046326e4ee953d3c4047ff" compoundref="rapidxml_8hpp" startline="146">rapidxml::node_element</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a68ace4d8c072e9a92405711fd88bfe80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::addNode</definition>
+        <argsstring>(const std::string &amp;_tag)</argsstring>
+        <name>addNode</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="228" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="33" bodyend="39"/>
+        <references refid="classrapidxml_1_1memory__pool_1a4118581c29ee9a2f6b55ebf7dac185f8" compoundref="rapidxml_8hpp" startline="415" endline="436">rapidxml::memory_pool&lt; Ch &gt;::allocate_node</references>
+        <references refid="classrapidxml_1_1memory__pool_1a171941b39d55b868358da97462185f58" compoundref="rapidxml_8hpp" startline="476" endline="486">rapidxml::memory_pool&lt; Ch &gt;::allocate_string</references>
+        <references refid="classrapidxml_1_1xml__node_1a8696d098ecc9c4d2a646b43e91d58e31" compoundref="rapidxml_8hpp" startline="1097" endline="1113">rapidxml::xml_node&lt; Ch &gt;::append_node</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a06203527560e17656ab9ee37d1cb7853" compoundref="_x_m_l_serializer_8h" startline="242">m_currentNode</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a7b2c4722d9caa10ff3b18ba7cb0bf686" compoundref="_x_m_l_serializer_8h" startline="240">m_doc</references>
+        <references refid="namespacerapidxml_1abb456db38f7efb746c4330eed6072a7ca89cbeb4d28046326e4ee953d3c4047ff" compoundref="rapidxml_8hpp" startline="146">rapidxml::node_element</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a7f91e1f50076476f0c72e440d8031672" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::XMLSerializer::addNode</definition>
+        <argsstring>(const std::string &amp;_tag, rapidxml::xml_node&lt;&gt; *_parent)</argsstring>
+        <name>addNode</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_tag</declname>
+        </param>
+        <param>
+          <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">rapidxml::xml_node</ref>&lt;&gt; *</type>
+          <declname>_parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="229" column="1" bodyfile="/Users/jmacey/NGL/src/XMLSerializer.cpp" bodystart="41" bodyend="47"/>
+        <references refid="classrapidxml_1_1memory__pool_1a4118581c29ee9a2f6b55ebf7dac185f8" compoundref="rapidxml_8hpp" startline="415" endline="436">rapidxml::memory_pool&lt; Ch &gt;::allocate_node</references>
+        <references refid="classrapidxml_1_1memory__pool_1a171941b39d55b868358da97462185f58" compoundref="rapidxml_8hpp" startline="476" endline="486">rapidxml::memory_pool&lt; Ch &gt;::allocate_string</references>
+        <references refid="classrapidxml_1_1xml__node_1a8696d098ecc9c4d2a646b43e91d58e31" compoundref="rapidxml_8hpp" startline="1097" endline="1113">rapidxml::xml_node&lt; Ch &gt;::append_node</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a06203527560e17656ab9ee37d1cb7853" compoundref="_x_m_l_serializer_8h" startline="242">m_currentNode</references>
+        <references refid="classngl_1_1_x_m_l_serializer_1a7b2c4722d9caa10ff3b18ba7cb0bf686" compoundref="_x_m_l_serializer_8h" startline="240">m_doc</references>
+        <references refid="namespacerapidxml_1abb456db38f7efb746c4330eed6072a7ca89cbeb4d28046326e4ee953d3c4047ff" compoundref="rapidxml_8hpp" startline="146">rapidxml::node_element</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a037320499f408f8e4ebcd850842ad184" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">rapidxml::xml_node</ref> *</type>
+        <definition>rapidxml::xml_node* ngl::XMLSerializer::getCurrentNode</definition>
+        <argsstring>() const </argsstring>
+        <name>getCurrentNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="232" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" bodystart="232" bodyend="232"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a682929018a336256ae88019429ec723c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ngl::XMLSerializer::XMLSerializer</definition>
+        <argsstring>(const AbstractSerializer &amp;)</argsstring>
+        <name>XMLSerializer</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_abstract_serializer" kindref="compound">AbstractSerializer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>make sure we can&apos;t copy this class; </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="235" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" bodystart="235" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_x_m_l_serializer_1a68e7d4788c299e21bb78e187905c7642" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_x_m_l_serializer" kindref="compound">XMLSerializer</ref> &amp;</type>
+        <definition>XMLSerializer&amp; ngl::XMLSerializer::operator=</definition>
+        <argsstring>(const XMLSerializer &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_x_m_l_serializer" kindref="compound">XMLSerializer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>make sure we can&apos;t copy this class; </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="237" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2128">
+        <label>size_t</label>
+      </node>
+      <node id="2125">
+        <label>rapidxml::xml_document&lt; Ch &gt;</label>
+        <link refid="classrapidxml_1_1xml__document"/>
+        <childnode refid="2126" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2129" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2124">
+        <label>ngl::XMLSerializer</label>
+        <link refid="classngl_1_1_x_m_l_serializer"/>
+        <childnode refid="2125" relation="usage">
+          <edgelabel>-m_doc</edgelabel>
+        </childnode>
+        <childnode refid="2126" relation="usage">
+          <edgelabel>-m_currentNode</edgelabel>
+          <edgelabel>-m_parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2126">
+        <label>rapidxml::xml_node&lt; Ch &gt;</label>
+        <link refid="classrapidxml_1_1xml__node"/>
+        <childnode refid="2127" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2129">
+        <label>rapidxml::memory_pool&lt; Ch &gt;</label>
+        <link refid="classrapidxml_1_1memory__pool"/>
+      </node>
+      <node id="2127">
+        <label>rapidxml::xml_base&lt; Ch &gt;</label>
+        <link refid="classrapidxml_1_1xml__base"/>
+        <childnode refid="2128" relation="usage">
+          <edgelabel>#m_name_size</edgelabel>
+          <edgelabel>#m_value_size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" line="35" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/XMLSerializer.h" bodystart="34" bodyend="248"/>
+    <listofallmembers>
+      <member refid="classngl_1_1_x_m_l_serializer_1a0276519d41a15cd9449159168a6703da" prot="public" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>ACCESSMODE</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a68ace4d8c072e9a92405711fd88bfe80" prot="public" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>addNode</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a7f91e1f50076476f0c72e440d8031672" prot="public" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>addNode</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a037320499f408f8e4ebcd850842ad184" prot="public" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>getCurrentNode</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a06203527560e17656ab9ee37d1cb7853" prot="private" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>m_currentNode</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a7b2c4722d9caa10ff3b18ba7cb0bf686" prot="private" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>m_doc</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1af3b1bf2519a572f3264a950007a8086e" prot="private" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>m_fname</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a06e3fe25a9284514899f2e0ce8554963" prot="private" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>m_mode</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a8bd8b8c851371b1d4914fe744cecbec3" prot="private" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>m_parent</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a68e7d4788c299e21bb78e187905c7642" prot="private" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>operator=</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a549204e0f43066d62f023a8a1f3df284" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>read</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a9217ab96a233b418ccb664a8567e8f62" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>read</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1afbb9cd0533f5b312712d71bf92ee13fc" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>read</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a93a2e6f0beea9d5d30d24527aa4a9de2" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>read</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1af122ada93affc26d90094d8df7cde1d5" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>read</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1aece4c1c925cadc432449dc15ca699f05" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>read</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a3f5686aca08349e1c974613bc9453644" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>read</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1ab46b4afdb1817798c7009f645992d7d0" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>read</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a52e7c65a201cb1b45f9205460d273311" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>read</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1ac80ea78d2b3c5b332598c161141a9e95" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>read</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a941f1c0f45032d4c1b478a870ead1130" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>read</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1aa442b2e192c24bd397a5fad1233493c8" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>read</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a982cbbe163920076d5759fe8b9bb0558" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>read</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a2db238a23847eb044d43f66b27abaaa2" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>read</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a2e89260668530888071876bda19e5af6" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>read</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a94ae9d0ad75b8f0da9b571414405366a" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>read</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a1372864682c53577caa1818ae5758084" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>read</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a0276519d41a15cd9449159168a6703daac5a0d3d59795f45034396fff7d066b37" prot="public" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>READ</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a178c02a04a06a2ec92ee660a2f47c32c" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1ad58b1fc5d4a0b879afadd837279fa983" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a24b53bfaaa3fe75bf2f57dfd61d04acf" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a7cbda35a4e4cc86f777635b09180d23d" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a517d1797da20ab1cd0cb249a061d14b3" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a9815588b8698975fbd17d65b769dfa14" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a2359a8b1a54174d0a33c323fca30610f" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a1c21afe10ec3ace5976a0b460b66a796" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a077fcd4151c2e2b556c63da2a99528d1" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a2262207758e75d93d69e74f0e9696b09" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1aaa30ff044f2be98102d8c41904e56a69" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1ab4ca4cd65f9dc6dc55a0f79eb03a0696" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1af09e096530638ecc6bda0ca56a4bf21d" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a3679f39e54378aca7a3c4cbb4dc6d2d8" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1af07b2f24ab5f309bfa328cdbd5dbd6a8" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1aa04c1b990bb8db4e32397597634e4bbd" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1ad6a3c19e8bf90c5235f4afc34a206adf" prot="public" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a87cd507a23cb7fde06450d03b9112d59" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a72e1c077654c3b4f66f26e785f6c9a48" prot="public" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a95d0be530f4c7e5fe791cb59adeec5ac" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a8328dfc9d1a12d463cc0376d1963a4bf" prot="public" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>write</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a0276519d41a15cd9449159168a6703daacce3d86022857207ad02eaacfb9047a2" prot="public" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>WRITE</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1acb72a6df1ebeb6f606a5e91b93eba432" prot="public" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>writeToXML</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a0c7124fb464ad4cca970f59e98944e1b" prot="public" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>writeToXML</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a3d4af73c5422ec397f4c2dfe709b869e" prot="public" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>XMLSerializer</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a682929018a336256ae88019429ec723c" prot="private" virt="non-virtual"><scope>ngl::XMLSerializer</scope><name>XMLSerializer</name></member>
+      <member refid="classngl_1_1_x_m_l_serializer_1a3fe503ca9e18b6cacb332e285f707999" prot="public" virt="virtual"><scope>ngl::XMLSerializer</scope><name>~XMLSerializer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

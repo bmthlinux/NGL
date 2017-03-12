@@ -1,0 +1,5 @@
+<map id="fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;" name="fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;">
+<area shape="rect" id="node3" href="$classfmt_1_1_basic_formatter.html" title="{fmt::BasicFormatter\l\&lt; Char, ArgFormatter\l\&lt; Char \&gt; \&gt;\n|&#45; writer_\l&#45; map_\l|+ BasicFormatter()\l+ writer()\l+ format()\l+ format()\l&#45; FMT_DISALLOW_COPY_AND\l_ASSIGN()\l&#45; get_arg()\l&#45; parse_arg_index()\l&#45; parse_arg_name()\l}" alt="" coords="5,539,219,778"/>
+<area shape="rect" id="node4" href="$classfmt_1_1_basic_formatter.html" title="{fmt::BasicFormatter\l\&lt; Char, Impl \&gt;\n|&#45; writer_\l&#45; map_\l|+ BasicFormatter()\l+ writer()\l+ format()\l+ format()\l&#45; FMT_DISALLOW_COPY_AND\l_ASSIGN()\l&#45; get_arg()\l&#45; parse_arg_index()\l&#45; parse_arg_name()\l}" alt="" coords="243,547,457,771"/>
+<area shape="rect" id="node2" href="$classfmt_1_1internal_1_1_formatter_base.html" title="{fmt::internal::FormatterBase\n|&#45; args_\l&#45; next_arg_index_\l|# args()\l# FormatterBase()\l# next_arg()\l# get_arg()\l# check_no_auto_index()\l# write()\l&#45; do_get_arg()\l}" alt="" coords="137,6,324,186"/>
+</map>

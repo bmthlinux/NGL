@@ -1,0 +1,5 @@
+<map id="ngl::Plane::setPoints" name="ngl::Plane::setPoints">
+<area shape="rect" id="node2" href="$classngl_1_1_vec3.html#ac59c879f8dfd735903a5cd07eb5c79ce" title="set the Vec3 as the cross product from 2 other Vec3 " alt="" coords="211,5,328,32"/>
+<area shape="rect" id="node3" href="$classngl_1_1_vec3.html#abd4248600950b5da088cb299f3a55fd7" title="calculate the inner product of this vector and vector passed in " alt="" coords="212,56,327,83"/>
+<area shape="rect" id="node4" href="$classngl_1_1_vec3.html#a091a5439ddfd8a25fe486cf026345ef5" title="Normalize the vector using &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;. " alt="" coords="198,107,341,133"/>
+</map>

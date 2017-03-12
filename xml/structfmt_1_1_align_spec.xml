@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structfmt_1_1_align_spec" kind="struct" language="C++" prot="public">
+    <compoundname>fmt::AlignSpec</compoundname>
+    <basecompoundref refid="structfmt_1_1_width_spec" prot="public" virt="non-virtual">fmt::WidthSpec</basecompoundref>
+    <derivedcompoundref refid="structfmt_1_1_align_type_spec" prot="public" virt="non-virtual">fmt::AlignTypeSpec&lt; TYPE &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structfmt_1_1_format_spec" prot="public" virt="non-virtual">fmt::FormatSpec</derivedcompoundref>
+    <derivedcompoundref refid="classfmt_1_1_str_format_spec" prot="public" virt="non-virtual">fmt::StrFormatSpec&lt; Char &gt;</derivedcompoundref>
+    <includes refid="format_8h" local="no">format.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfmt_1_1_align_spec_1aac93fb3829d550af86479f1ecaa73f95" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacefmt_1ac0671080923edbf0a7c67a567417f0d2" kindref="member">Alignment</ref></type>
+        <definition>Alignment fmt::AlignSpec::align_</definition>
+        <argsstring></argsstring>
+        <name>align_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1627" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1627" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1internal_1_1_arg_formatter_base_1ab85eb2158c9d48c847706de26f35460c" compoundref="format_8h" startline="1879" endline="1907">fmt::internal::ArgFormatterBase&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;::visit_char</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ab436d449f9a0678badb672af2a8ecb32" compoundref="format_8h" startline="3564" endline="3731">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_width_handler_1a5c19eabb80250563f3547df9d547d890" compoundref="printf_8h" startline="160" endline="171">fmt::internal::WidthHandler::visit_any_int</referencedby>
+        <referencedby refid="classfmt_1_1_basic_printf_arg_formatter_1a97f26086d50a4553280fbe831ef7e947" compoundref="printf_8h" startline="223" endline="243">fmt::BasicPrintfArgFormatter&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;::visit_char</referencedby>
+        <referencedby refid="classfmt_1_1_printf_formatter_1a9d091db6f48931782be245fcbb0da5c5" compoundref="printf_8h" startline="315" endline="338">fmt::PrintfFormatter&lt; Char, ArgFormatter &gt;::parse_flags</referencedby>
+        <referencedby refid="classfmt_1_1_printf_formatter_1a295c50e11b9a77720c8078f287040e5c" compoundref="printf_8h" startline="387" endline="484">fmt::PrintfFormatter&lt; Char, ArgFormatter &gt;::format</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structfmt_1_1_align_spec_1a7912b22ed62be96be0b9088b629f728c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fmt::AlignSpec::AlignSpec</definition>
+        <argsstring>(unsigned width, wchar_t fill, Alignment align=ALIGN_DEFAULT)</argsstring>
+        <name>AlignSpec</name>
+        <param>
+          <type>unsigned</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>wchar_t</type>
+          <declname>fill</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefmt_1ac0671080923edbf0a7c67a567417f0d2" kindref="member">Alignment</ref></type>
+          <declname>align</declname>
+          <defval><ref refid="namespacefmt_1ac0671080923edbf0a7c67a567417f0d2a63e66a16a075b0b22e5fae027892057f" kindref="member">ALIGN_DEFAULT</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1629" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1629" bodyend="1630"/>
+      </memberdef>
+      <memberdef kind="function" id="structfmt_1_1_align_spec_1abd14faffccf107e6e01bbd014e69262c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacefmt_1ac0671080923edbf0a7c67a567417f0d2" kindref="member">Alignment</ref></type>
+        <definition>Alignment fmt::AlignSpec::align</definition>
+        <argsstring>() const </argsstring>
+        <name>align</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1632" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1632" bodyend="1632"/>
+        <referencedby refid="classfmt_1_1_basic_writer_1aa6ef59115b07ef0ad53fd9bb73bc64ee" compoundref="format_8h" startline="2617" endline="2636">fmt::BasicWriter&lt; Char &gt;::write_str</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1aa69a013920916ccc74ca7ac5e971abe7" compoundref="format_8h" startline="2831" endline="2982">fmt::BasicWriter&lt; Char &gt;::write_double</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structfmt_1_1_align_spec_1acdcb20e3a29b69355825ece5886db27b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int fmt::AlignSpec::precision</definition>
+        <argsstring>() const </argsstring>
+        <name>precision</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1634" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1634" bodyend="1634"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1090">
+        <label>fmt::AlignTypeSpec&lt; TYPE &gt;</label>
+        <link refid="structfmt_1_1_align_type_spec"/>
+        <childnode refid="1088" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1089">
+        <label>fmt::WidthSpec</label>
+        <link refid="structfmt_1_1_width_spec"/>
+      </node>
+      <node id="1088">
+        <label>fmt::AlignSpec</label>
+        <link refid="structfmt_1_1_align_spec"/>
+        <childnode refid="1089" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1091">
+        <label>fmt::FormatSpec</label>
+        <link refid="structfmt_1_1_format_spec"/>
+        <childnode refid="1088" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1092">
+        <label>fmt::StrFormatSpec&lt; Char &gt;</label>
+        <link refid="classfmt_1_1_str_format_spec"/>
+        <childnode refid="1088" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1094">
+        <label>fmt::WidthSpec</label>
+        <link refid="structfmt_1_1_width_spec"/>
+      </node>
+      <node id="1093">
+        <label>fmt::AlignSpec</label>
+        <link refid="structfmt_1_1_align_spec"/>
+        <childnode refid="1094" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1626" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1626" bodyend="1635"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1_align_spec_1abd14faffccf107e6e01bbd014e69262c" prot="public" virt="non-virtual"><scope>fmt::AlignSpec</scope><name>align</name></member>
+      <member refid="structfmt_1_1_align_spec_1aac93fb3829d550af86479f1ecaa73f95" prot="public" virt="non-virtual"><scope>fmt::AlignSpec</scope><name>align_</name></member>
+      <member refid="structfmt_1_1_align_spec_1a7912b22ed62be96be0b9088b629f728c" prot="public" virt="non-virtual"><scope>fmt::AlignSpec</scope><name>AlignSpec</name></member>
+      <member refid="structfmt_1_1_width_spec_1a28a9b78a0ebfd5830025eaf1c917bb16" prot="public" virt="non-virtual"><scope>fmt::AlignSpec</scope><name>fill</name></member>
+      <member refid="structfmt_1_1_width_spec_1ad1c9740afb2b05c4ac7b2d9fa9760891" prot="public" virt="non-virtual"><scope>fmt::AlignSpec</scope><name>fill_</name></member>
+      <member refid="structfmt_1_1_align_spec_1acdcb20e3a29b69355825ece5886db27b" prot="public" virt="non-virtual"><scope>fmt::AlignSpec</scope><name>precision</name></member>
+      <member refid="structfmt_1_1_width_spec_1ad6624ee681712f695f133ba2e9d9ce36" prot="public" virt="non-virtual"><scope>fmt::AlignSpec</scope><name>width</name></member>
+      <member refid="structfmt_1_1_width_spec_1a83fed5d5a674ea54a48feb6edef4c1c7" prot="public" virt="non-virtual"><scope>fmt::AlignSpec</scope><name>width_</name></member>
+      <member refid="structfmt_1_1_width_spec_1a483e63eb1ac98bbdaacc701be5f3cc82" prot="public" virt="non-virtual"><scope>fmt::AlignSpec</scope><name>WidthSpec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

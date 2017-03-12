@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classfmt_1_1internal_1_1_make_arg" kind="class" language="C++" prot="public">
+    <compoundname>fmt::internal::MakeArg</compoundname>
+    <basecompoundref refid="structfmt_1_1internal_1_1_arg" prot="public" virt="non-virtual">fmt::internal::Arg</basecompoundref>
+    <includes refid="format_8h" local="no">format.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Formatter</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_make_arg_1af286ba71f5e8c524766ed1a2c2eff16b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fmt::internal::MakeArg&lt; Formatter &gt;::MakeArg</definition>
+        <argsstring>()</argsstring>
+        <name>MakeArg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1333" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1333" bodyend="1335"/>
+        <references refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa24ae26361d60b04790c06fffecaa7eda" compoundref="format_8h" startline="1027">fmt::internal::Value::NONE</references>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_make_arg_1a53625ddfa5c07dd9cfa516a5a70cc30f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>fmt::internal::MakeArg&lt; Formatter &gt;::MakeArg</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>MakeArg</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1338" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1338" bodyend="1341"/>
+        <references refid="classfmt_1_1internal_1_1_make_value_1a595ab8ee3b95d916881ffe40db3a13b0" compoundref="format_8h" startline="1243" endline="1245">fmt::internal::MakeValue&lt; Formatter &gt;::type</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1667">
+        <label>fmt::internal::Value</label>
+        <link refid="structfmt_1_1internal_1_1_value"/>
+      </node>
+      <node id="1666">
+        <label>fmt::internal::Arg</label>
+        <link refid="structfmt_1_1internal_1_1_arg"/>
+        <childnode refid="1667" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1665">
+        <label>fmt::internal::MakeArg&lt; Formatter &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_make_arg"/>
+        <childnode refid="1666" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1670">
+        <label>fmt::internal::Value</label>
+        <link refid="structfmt_1_1internal_1_1_value"/>
+        <childnode refid="1671" relation="usage">
+          <edgelabel>+custom</edgelabel>
+        </childnode>
+      </node>
+      <node id="1669">
+        <label>fmt::internal::Arg</label>
+        <link refid="structfmt_1_1internal_1_1_arg"/>
+        <childnode refid="1670" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1668">
+        <label>fmt::internal::MakeArg&lt; Formatter &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_make_arg"/>
+        <childnode refid="1669" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1671">
+        <label>fmt::internal::Value::CustomValue</label>
+        <link refid="structfmt_1_1internal_1_1_value_1_1_custom_value"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1331" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1331" bodyend="1342"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa90eda0110259ca26e06430e5f7d7f36b" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>BOOL</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa4000e36300596c89b956b964a23114e0" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>CHAR</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaae36ce7cc208b872c5c43ccb2ae8795a2" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>CSTRING</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a2dcff1e0ac8f7fb7fc6dd448d66978cf" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>custom</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaaeaa06f45cc1a466b789ae71d6d06d1b0" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>CUSTOM</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa61e214d7127ba18d3b0d7b4c0d5f09aa" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>DOUBLE</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1afe6725f2c3ad8fce5867f824c1fa8cc8" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>double_value</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a1bdc8aa6f70614fbb514aaa56106c669" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>FormatFunc</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa6ab1b5ad31036f4c90bae16e873b3396" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>INT</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1ac295b81747c26b97893be505a03381c8" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>int_value</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa1cc1a5881e640c0009f58a05b653d535" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>LAST_INTEGER_TYPE</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaad9dbf0826103ba0fed6466a53bb0421b" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>LAST_NUMERIC_TYPE</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa6578a997089147df95c66231c936c43c" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>LONG_DOUBLE</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a7adfb34f6e0b12676681de8a6597ed17" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>long_double_value</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa7674f34a96c22fec85d9f27d082b4412" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>LONG_LONG</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a1dab8b1df1f88c35b6893d63b1b72af8" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>long_long_value</name></member>
+      <member refid="classfmt_1_1internal_1_1_make_arg_1af286ba71f5e8c524766ed1a2c2eff16b" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>MakeArg</name></member>
+      <member refid="classfmt_1_1internal_1_1_make_arg_1a53625ddfa5c07dd9cfa516a5a70cc30f" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>MakeArg</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaaa9af5928e9c0951d7d4f644bc3cae639" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>NAMED_ARG</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa24ae26361d60b04790c06fffecaa7eda" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>NONE</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaaaaa373dcb5378f0ec6cd6e4dc59a8cfb" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>POINTER</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a3627bcfa0a5bcb7e48f6fc632243b17d" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>pointer</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a4bedea17bc9ddfe00bcd7bf0ee086c66" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>sstring</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a98e3f2f8c44a6d6d4606646e5ef62e0a" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>string</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa167cb315c368dd357a390431477ea049" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>STRING</name></member>
+      <member refid="structfmt_1_1internal_1_1_arg_1af1165b4e8647bea5913922de82599e2e" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>type</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaa" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>Type</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaac7303224391053ae45d4ff13ad0f017c" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>UINT</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a9ced917767812c9572065509f22bec18" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>uint_value</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa8c2ffe6909d26d46781aa6fb9b8ae418" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>ULONG_LONG</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a78424f46c0150190010e5c27ec3c69a0" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>ulong_long_value</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1ae89a416df861650100b0bfc207e19204" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>ustring</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaae94c5eaf7d9283c167bd88765c18b82c" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>WSTRING</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a2add0d3534ad850a089ba4ed0f60b9d8" prot="public" virt="non-virtual"><scope>fmt::internal::MakeArg</scope><name>wstring</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

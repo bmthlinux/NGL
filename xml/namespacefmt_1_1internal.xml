@@ -1,0 +1,1071 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacefmt_1_1internal" kind="namespace" language="C++">
+    <compoundname>fmt::internal</compoundname>
+    <innerclass refid="structfmt_1_1internal_1_1_arg" prot="public">fmt::internal::Arg</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_arg_array" prot="public">fmt::internal::ArgArray</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_arg_array_3_01_n_00_01false_01_4" prot="public">fmt::internal::ArgArray&lt; N, false &gt;</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_arg_array_3_01_n_00_01true_01_4" prot="public">fmt::internal::ArgArray&lt; N, true &gt;</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_arg_converter" prot="public">fmt::internal::ArgConverter</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_arg_formatter_base" prot="public">fmt::internal::ArgFormatterBase</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_arg_map" prot="public">fmt::internal::ArgMap</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_arg_type" prot="public">fmt::internal::ArgType</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_basic_char_traits" prot="public">fmt::internal::BasicCharTraits</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_basic_data" prot="public">fmt::internal::BasicData</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_char_converter" prot="public">fmt::internal::CharConverter</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_char_traits" prot="public">fmt::internal::CharTraits</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_char_traits_3_01char_01_4" prot="public">fmt::internal::CharTraits&lt; char &gt;</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_char_traits_3_01wchar__t_01_4" prot="public">fmt::internal::CharTraits&lt; wchar_t &gt;</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_conditional" prot="public">fmt::internal::Conditional</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_conditional_3_01false_00_01_t_00_01_f_01_4" prot="public">fmt::internal::Conditional&lt; false, T, F &gt;</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_convert_to_int" prot="public">fmt::internal::ConvertToInt</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_convert_to_int_impl" prot="public">fmt::internal::ConvertToIntImpl</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_convert_to_int_impl2" prot="public">fmt::internal::ConvertToIntImpl2</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_convert_to_int_impl2_3_01_t_00_01true_01_4" prot="public">fmt::internal::ConvertToIntImpl2&lt; T, true &gt;</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_convert_to_int_impl_3_01_t_00_01true_01_4" prot="public">fmt::internal::ConvertToIntImpl&lt; T, true &gt;</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_dummy_int" prot="public">fmt::internal::DummyInt</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_dummy_stream" prot="public">fmt::internal::DummyStream</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_enable_if" prot="public">fmt::internal::EnableIf</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_enable_if_3_01true_00_01_t_01_4" prot="public">fmt::internal::EnableIf&lt; true, T &gt;</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_false" prot="public">fmt::internal::False</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_fixed_buffer" prot="public">fmt::internal::FixedBuffer</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_format_buf" prot="public">fmt::internal::FormatBuf</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_formatter_base" prot="public">fmt::internal::FormatterBase</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_int_checker" prot="public">fmt::internal::IntChecker</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_int_checker_3_01true_01_4" prot="public">fmt::internal::IntChecker&lt; true &gt;</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_int_traits" prot="public">fmt::internal::IntTraits</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1is__same" prot="public">fmt::internal::is_same</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1is__same_3_01_t_00_01_t_01_4" prot="public">fmt::internal::is_same&lt; T, T &gt;</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_is_zero_int" prot="public">fmt::internal::IsZeroInt</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_l_conv_check" prot="public">fmt::internal::LConvCheck</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_make_arg" prot="public">fmt::internal::MakeArg</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_make_unsigned" prot="public">fmt::internal::MakeUnsigned</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_make_value" prot="public">fmt::internal::MakeValue</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_memory_buffer" prot="public">fmt::internal::MemoryBuffer</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_named_arg" prot="public">fmt::internal::NamedArg</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_not" prot="public">fmt::internal::Not</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_not_3_01false_01_4" prot="public">fmt::internal::Not&lt; false &gt;</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_no_thousands_sep" prot="public">fmt::internal::NoThousandsSep</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_null" prot="public">fmt::internal::Null</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_precision_handler" prot="public">fmt::internal::PrecisionHandler</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_runtime_error" prot="public">fmt::internal::RuntimeError</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_sign_checker" prot="public">fmt::internal::SignChecker</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_sign_checker_3_01false_01_4" prot="public">fmt::internal::SignChecker&lt; false &gt;</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_string_buffer" prot="public">fmt::internal::StringBuffer</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_thousands_sep" prot="public">fmt::internal::ThousandsSep</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_type_selector" prot="public">fmt::internal::TypeSelector</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_type_selector_3_01false_01_4" prot="public">fmt::internal::TypeSelector&lt; false &gt;</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_value" prot="public">fmt::internal::Value</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_w_char_helper" prot="public">fmt::internal::WCharHelper</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_w_char_helper_3_01_t_00_01wchar__t_01_4" prot="public">fmt::internal::WCharHelper&lt; T, wchar_t &gt;</innerclass>
+    <innerclass refid="classfmt_1_1internal_1_1_width_handler" prot="public">fmt::internal::WidthHandler</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacefmt_1_1internal_1a855d655a8b82a933597acb9eee31b1a3" prot="public" static="no">
+        <name>@1</name>
+        <enumvalue id="namespacefmt_1_1internal_1a855d655a8b82a933597acb9eee31b1a3abf58574b3f45959f076968509372a2fa" prot="public">
+          <name>INLINE_BUFFER_SIZE</name>
+          <initializer>= 500</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="571" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="571" bodyend="571"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacefmt_1_1internal_1ac98c581b032c82b08ee8b1e3c2046a42" prot="public" static="no">
+        <type>std::numeric_limits&lt; <ref refid="structfmt_1_1internal_1_1_dummy_int" kindref="compound">fmt::internal::DummyInt</ref> &gt;</type>
+        <definition>typedef std::numeric_limits&lt;fmt::internal::DummyInt&gt; fmt::internal::FPUtil</definition>
+        <argsstring></argsstring>
+        <name>FPUtil</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="298" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacefmt_1_1internal_1af3cbbbf91dffe18b4cad1116aa088c65" prot="public" static="no">
+        <type><ref refid="structfmt_1_1internal_1_1_basic_data" kindref="compound">BasicData</ref></type>
+        <definition>typedef BasicData fmt::internal::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="851" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="851" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacefmt_1_1internal_1a39cdac57ccb1df4930903dec83078d5e" prot="public" static="no">
+        <type>char</type>
+        <definition>typedef char fmt::internal::Yes[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>Yes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1062" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1062" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacefmt_1_1internal_1abf626ed3fde5ec6d176528219f93fc84" prot="public" static="no">
+        <type>char</type>
+        <definition>typedef char fmt::internal::No[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>No</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1063" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1063" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a74db7f6993170e499037cdf7708a3957" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="format_8h_1a02c8898388e0ae59aab58be14fcd4e05" kindref="member">FMT_FUNC</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>FMT_FUNC void fmt::internal::format_system_error</definition>
+        <argsstring>(Writer &amp;out, int error_code, StringRef message) FMT_NOEXCEPT</argsstring>
+        <name>format_system_error</name>
+        <param>
+          <type><ref refid="namespacefmt_1a4d870bb235d29dfe8f82e22c4c5574e7" kindref="member">Writer</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>error_code</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefmt_1ae5ed3b29f911650a12b4de3d14126c31" kindref="member">StringRef</ref></type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.cc" line="219" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.cc" bodystart="219" bodyend="222"/>
+        <references refid="namespacefmt_1a55e659be843597392ab8621a093a0182" compoundref="format_8cc" startline="386" endline="404">fmt::format_system_error</references>
+        <referencedby refid="classfmt_1_1_system_error_1af42143a0f75c3a962fbe9329cd66720f" compoundref="format_8cc" startline="225" endline="232">fmt::SystemError::init</referencedby>
+        <referencedby refid="namespacefmt_1a6ca15e6d89910192be15bddd428c3a17" compoundref="format_8cc" startline="472" endline="476">fmt::report_system_error</referencedby>
+        <referencedby refid="classfmt_1_1_system_error_1ae6a1e8889412ce7818d4ba22cdb511d7" compoundref="format_8h" startline="2301" endline="2301">fmt::SystemError::error_code</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a59ee392c090dd871eaa9dd487e741fae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structfmt_1_1internal_1_1_dummy_int" kindref="compound">DummyInt</ref></type>
+        <definition>DummyInt fmt::internal::signbit</definition>
+        <argsstring>(...)</argsstring>
+        <name>signbit</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="302" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="302" bodyend="302"/>
+        <referencedby refid="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4_1a1cc82945f63918e9a8603d3ef750990d" compoundref="format_8h" startline="350" endline="360">std::numeric_limits&lt; fmt::internal::DummyInt &gt;::isnegative</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a6658cd22b7b3a0a43fed978d905b486d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structfmt_1_1internal_1_1_dummy_int" kindref="compound">DummyInt</ref></type>
+        <definition>DummyInt fmt::internal::_ecvt_s</definition>
+        <argsstring>(...)</argsstring>
+        <name>_ecvt_s</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="303" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="303" bodyend="303"/>
+        <referencedby refid="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4_1a1cc82945f63918e9a8603d3ef750990d" compoundref="format_8h" startline="350" endline="360">std::numeric_limits&lt; fmt::internal::DummyInt &gt;::isnegative</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a41f3251b84cad32ce5f2ab18152ce3e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structfmt_1_1internal_1_1_dummy_int" kindref="compound">DummyInt</ref></type>
+        <definition>DummyInt fmt::internal::isinf</definition>
+        <argsstring>(...)</argsstring>
+        <name>isinf</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="304" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="304" bodyend="304"/>
+        <referencedby refid="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4_1abd1469673d6c36a014a988bce1dfb0ee" compoundref="format_8h" startline="327" endline="336">std::numeric_limits&lt; fmt::internal::DummyInt &gt;::isinfinity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a364338fa2e549b40a69eb2f89c3ed1b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structfmt_1_1internal_1_1_dummy_int" kindref="compound">DummyInt</ref></type>
+        <definition>DummyInt fmt::internal::_finite</definition>
+        <argsstring>(...)</argsstring>
+        <name>_finite</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="305" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="305" bodyend="305"/>
+        <referencedby refid="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4_1abd1469673d6c36a014a988bce1dfb0ee" compoundref="format_8h" startline="327" endline="336">std::numeric_limits&lt; fmt::internal::DummyInt &gt;::isinfinity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1aa010b06d42f81bf80b44aa2291f7b166" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structfmt_1_1internal_1_1_dummy_int" kindref="compound">DummyInt</ref></type>
+        <definition>DummyInt fmt::internal::isnan</definition>
+        <argsstring>(...)</argsstring>
+        <name>isnan</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="306" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="306" bodyend="306"/>
+        <referencedby refid="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4_1a89433356fbf5b68eb0c13208a5e3b6b1" compoundref="format_8h" startline="340" endline="347">std::numeric_limits&lt; fmt::internal::DummyInt &gt;::isnotanumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1ac71e5e42e71cb4c22fc1da6225b6be50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structfmt_1_1internal_1_1_dummy_int" kindref="compound">DummyInt</ref></type>
+        <definition>DummyInt fmt::internal::_isnan</definition>
+        <argsstring>(...)</argsstring>
+        <name>_isnan</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="307" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="307" bodyend="307"/>
+        <referencedby refid="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4_1a89433356fbf5b68eb0c13208a5e3b6b1" compoundref="format_8h" startline="340" endline="347">std::numeric_limits&lt; fmt::internal::DummyInt &gt;::isnotanumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1abe2cbab571913bf19a52c6f6bc1b5a5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T fmt::internal::const_check</definition>
+        <argsstring>(T value)</argsstring>
+        <name>const_check</name>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="312" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="312" bodyend="312"/>
+        <referencedby refid="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4_1abd1469673d6c36a014a988bce1dfb0ee" compoundref="format_8h" startline="327" endline="336">std::numeric_limits&lt; fmt::internal::DummyInt &gt;::isinfinity</referencedby>
+        <referencedby refid="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4_1a89433356fbf5b68eb0c13208a5e3b6b1" compoundref="format_8h" startline="340" endline="347">std::numeric_limits&lt; fmt::internal::DummyInt &gt;::isnotanumber</referencedby>
+        <referencedby refid="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4_1a1cc82945f63918e9a8603d3ef750990d" compoundref="format_8h" startline="350" endline="360">std::numeric_limits&lt; fmt::internal::DummyInt &gt;::isnegative</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_make_value_1ad7e52c1fc3d087a666bdd55bfda0c79c" compoundref="format_8h" startline="1235" endline="1242">fmt::internal::MakeValue&lt; Formatter &gt;::MakeValue</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_arg_formatter_base_1ab85eb2158c9d48c847706de26f35460c" compoundref="format_8h" startline="1879" endline="1907">fmt::internal::ArgFormatterBase&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;::visit_char</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a0cd2008b4f4761eb023390d46277603c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fmt::internal::FMT_SPECIALIZE_MAKE_UNSIGNED</definition>
+        <argsstring>(char, unsigned char)</argsstring>
+        <name>FMT_SPECIALIZE_MAKE_UNSIGNED</name>
+        <param>
+          <type>char</type>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>char</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="555" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1ae00f66a1acf963dec1e98d6cb5be366d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fmt::internal::FMT_SPECIALIZE_MAKE_UNSIGNED</definition>
+        <argsstring>(signed char, unsigned char)</argsstring>
+        <name>FMT_SPECIALIZE_MAKE_UNSIGNED</name>
+        <param>
+          <type>signed</type>
+          <declname>char</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>char</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="556" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a0039f519798c8e6805eab393871b531c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fmt::internal::FMT_SPECIALIZE_MAKE_UNSIGNED</definition>
+        <argsstring>(short, unsigned short)</argsstring>
+        <name>FMT_SPECIALIZE_MAKE_UNSIGNED</name>
+        <param>
+          <type>short</type>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>short</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="557" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1af8febb74e4fc6376d1a46597e08f3911" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fmt::internal::FMT_SPECIALIZE_MAKE_UNSIGNED</definition>
+        <argsstring>(int, unsigned)</argsstring>
+        <name>FMT_SPECIALIZE_MAKE_UNSIGNED</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        </param>
+        <param>
+          <type>unsigned</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="558" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a3002b5d4536bf119c1ba1b9c54c7aa15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fmt::internal::FMT_SPECIALIZE_MAKE_UNSIGNED</definition>
+        <argsstring>(long, unsigned long)</argsstring>
+        <name>FMT_SPECIALIZE_MAKE_UNSIGNED</name>
+        <param>
+          <type>long</type>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>long</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="559" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a16800629bc23fa3aac67b51cd94e91bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fmt::internal::FMT_SPECIALIZE_MAKE_UNSIGNED</definition>
+        <argsstring>(LongLong, ULongLong)</argsstring>
+        <name>FMT_SPECIALIZE_MAKE_UNSIGNED</name>
+        <param>
+          <type><ref refid="namespacefmt_1aef84b50b68fdc25388fed2952c2db563" kindref="member">LongLong</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespacefmt_1af495ed85910212d4ba243ae2a8ce8f1f" kindref="member">ULongLong</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="560" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a28bed1291226be35437bc3173c19c205" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Int</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structfmt_1_1internal_1_1_make_unsigned" kindref="compound">MakeUnsigned</ref>&lt; Int &gt;::<ref refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7" kindref="member">Type</ref></type>
+        <definition>MakeUnsigned&lt;Int&gt;::Type fmt::internal::to_unsigned</definition>
+        <argsstring>(Int value)</argsstring>
+        <name>to_unsigned</name>
+        <param>
+          <type>Int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="564" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="564" bodyend="567"/>
+        <references refid="format_8h_1a03e7ee720f43adc7d83c652a6a5dd5f8" compoundref="format_8h" startline="229">FMT_ASSERT</references>
+        <referencedby refid="classfmt_1_1_buffer_1a7ca155741c43ec7c7edcea8dd28a2123" compoundref="format_8h" startline="657" endline="664">fmt::Buffer&lt; T &gt;::append</referencedby>
+        <referencedby refid="namespacefmt_1_1internal_1abfe52e52001fd2590fb2015cefe95e18" compoundref="format_8h" startline="864" endline="877">count_digits</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_formatter_base_1ac3d5811aa9b695596fe0dc67f870e3d4" compoundref="format_8h" startline="1949" endline="1954">fmt::internal::FormatterBase::next_arg</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_formatter_base_1ab29b5470b0f02edfde9b81ba24a51bf6" compoundref="format_8h" startline="1972" endline="1975">fmt::internal::FormatterBase::write</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1a64e806cd940571bd6da935add3034604" compoundref="format_8h" startline="2678" endline="2737">fmt::BasicWriter&lt; Char &gt;::prepare_int_buffer</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1aa69a013920916ccc74ca7ac5e971abe7" compoundref="format_8h" startline="2831" endline="2982">fmt::BasicWriter&lt; Char &gt;::write_double</referencedby>
+        <referencedby refid="classfmt_1_1_format_int_1ad09445e55ae7c8944b5275a54a03da14" compoundref="format_8h" startline="3261" endline="3263">fmt::FormatInt::size</referencedby>
+        <referencedby refid="namespacefmt_1_1internal_1a7c721969e9660580a237bd4130422ab6" compoundref="ostream_8cc" startline="15" endline="27">write</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_format_buf_1a37d9219b491e9f05f22334b60cf41c5f" compoundref="ostream_8h" startline="47" endline="49">fmt::internal::FormatBuf&lt; Char &gt;::size</referencedby>
+        <referencedby refid="classfmt_1_1_file_1abc5028be3839fafe1e54aa44bf94cb32" compoundref="posix_8cc" startline="153" endline="159">fmt::File::read</referencedby>
+        <referencedby refid="classfmt_1_1_file_1a0af6a258b5ca604680a83bada8a836d8" compoundref="posix_8cc" startline="161" endline="167">fmt::File::write</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1ab81ed2356d1a6f3bcf03c5bdf5f8d4f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* fmt::internal::make_ptr</definition>
+        <argsstring>(T *ptr, std::size_t)</argsstring>
+        <name>make_ptr</name>
+        <param>
+          <type>T *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="581" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="581" bodyend="581"/>
+        <referencedby refid="classfmt_1_1_buffer_1a7ca155741c43ec7c7edcea8dd28a2123" compoundref="format_8h" startline="657" endline="664">fmt::Buffer&lt; T &gt;::append</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_memory_buffer_1a9d9995949a1aa1011085d3f117001572" compoundref="format_8h" startline="686" endline="686">fmt::internal::MemoryBuffer&lt; Char, internal::INLINE_BUFFER_SIZE, Allocator &gt;::~MemoryBuffer</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_memory_buffer_1a7f7ca74572d97e0d0345d112d85d44a4" compoundref="format_8h" startline="726" endline="743">fmt::internal::MemoryBuffer&lt; T, SIZE, Allocator &gt;::grow</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_thousands_sep_1a57a43bdd242e29d243c5301643f52b4a" compoundref="format_8h" startline="906" endline="912">fmt::internal::ThousandsSep::operator()</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1a974243e12ba11701c6007bbe080c9db5" compoundref="format_8h" startline="2365" endline="2369">fmt::BasicWriter&lt; Char &gt;::grow_buffer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a310d44c09812f7990e50800808c04673" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool fmt::internal::is_negative</definition>
+        <argsstring>(T value)</argsstring>
+        <name>is_negative</name>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="811" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="811" bodyend="813"/>
+        <referencedby refid="classfmt_1_1_basic_writer_1a206f93d73fd5101ff774218f45f6a1a0" compoundref="format_8h" startline="2382" endline="2391">fmt::BasicWriter&lt; Char &gt;::write_decimal</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1a2eb820ad907cede8df8226af444f59d6" compoundref="format_8h" startline="2741" endline="2827">fmt::BasicWriter&lt; Char &gt;::write_int</referencedby>
+        <referencedby refid="namespacefmt_1a14f565b291f639cea172e79f7fa9bc7f" compoundref="format_8h" startline="3292" endline="3312">fmt::format_decimal</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_width_handler_1a5c19eabb80250563f3547df9d547d890" compoundref="printf_8h" startline="160" endline="171">fmt::internal::WidthHandler::visit_any_int</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a92bdabe812efd23c6f9686ddd6a7805f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="format_8h_1a9a4960b70582ed2620911a0b75dce0b5" kindref="member">FMT_API</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>FMT_FUNC void fmt::internal::report_unknown_type</definition>
+        <argsstring>(char code, const char *type)</argsstring>
+        <name>report_unknown_type</name>
+        <param>
+          <type>char</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="830" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.cc" bodystart="296" bodyend="305"/>
+        <references refid="namespacefmt_1_1internal_1aedce4aeaa89239024c67c7682cff3370">convert</references>
+        <references refid="classfmt_1_1_basic_string_ref_1ae9c80502c527437215fe1c11dca8b475" compoundref="format_8h" startline="452" endline="452">fmt::BasicStringRef&lt; Char &gt;::data</references>
+        <references refid="format_8cc_1ab8efe0100a6d7cc74729f5bf7537799c" compoundref="format_8cc" startline="61">FMT_CATCH</references>
+        <references refid="format_8h_1a02c8898388e0ae59aab58be14fcd4e05" compoundref="format_8h" startline="3832">FMT_FUNC</references>
+        <references refid="format_8h_1aef128913e8400683b1cbd1a3a2e11df3" compoundref="format_8h" startline="190">FMT_NOEXCEPT</references>
+        <references refid="format_8h_1ad9e2ed6d3b432a04c9622c34a2495304" compoundref="format_8h" startline="172">FMT_THROW</references>
+        <references refid="format_8cc_1a4aa79926398ee27fe7d6db8b0dd54edf" compoundref="format_8cc" startline="60">FMT_TRY</references>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">fmt::format</references>
+        <references refid="namespacefmt_1_1internal_1a855d655a8b82a933597acb9eee31b1a3abf58574b3f45959f076968509372a2fa" compoundref="format_8h" startline="571">INLINE_BUFFER_SIZE</references>
+        <references refid="classfmt_1_1_buffer_1a20f893164dc20e8ea8c77810d4ea8d59" compoundref="format_8h" startline="623" endline="627">fmt::Buffer&lt; T &gt;::resize</references>
+        <references refid="classfmt_1_1_basic_string_ref_1ae38d9106dd5bec69488e5464aedc266a" compoundref="format_8h" startline="455" endline="455">fmt::BasicStringRef&lt; Char &gt;::size</references>
+        <references refid="classfmt_1_1_buffer_1a14fa72f0ddf584c14ffffb1446f598aa" compoundref="format_8h" startline="615" endline="615">fmt::Buffer&lt; T &gt;::size</references>
+        <references refid="classfmt_1_1_basic_writer_1a91f06ced6e063ee77a99740e0e79faf6" compoundref="format_8h" startline="2486" endline="2488">fmt::BasicWriter&lt; Char &gt;::str</references>
+        <references refid="glew_8h_1a1659df18b3b413a60a397d5a7540f3d2">void</references>
+        <referencedby refid="classfmt_1_1internal_1_1_arg_formatter_base_1a5c11af21a3e1249b78ef87c968572ef5" compoundref="format_8h" startline="1925" endline="1929">fmt::internal::ArgFormatterBase&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;::visit_pointer</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1a8914b930ac43788f801af0008f7b743e" compoundref="format_8h" startline="2640" endline="2657">fmt::BasicWriter&lt; Char &gt;::write_str</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1a2eb820ad907cede8df8226af444f59d6" compoundref="format_8h" startline="2741" endline="2827">fmt::BasicWriter&lt; Char &gt;::write_int</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1aa69a013920916ccc74ca7ac5e971abe7" compoundref="format_8h" startline="2831" endline="2982">fmt::BasicWriter&lt; Char &gt;::write_double</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1abfe52e52001fd2590fb2015cefe95e18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned fmt::internal::count_digits</definition>
+        <argsstring>(uint64_t n)</argsstring>
+        <name>count_digits</name>
+        <param>
+          <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="864" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="864" bodyend="877"/>
+        <references refid="structfmt_1_1internal_1_1_basic_data_1abbc4c0076211263be3f19cce9655caf7" compoundref="format_8h" startline="836">fmt::internal::BasicData&lt; T &gt;::POWERS_OF_10_32</references>
+        <references refid="namespacefmt_1_1internal_1a28bed1291226be35437bc3173c19c205" compoundref="format_8h" startline="564" endline="567">to_unsigned</references>
+        <referencedby refid="classfmt_1_1_basic_writer_1a8236a787e18d88587ca79933a5cdd898" compoundref="format_8h" startline="2373" endline="2378">fmt::BasicWriter&lt; Char &gt;::write_unsigned_decimal</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1a2eb820ad907cede8df8226af444f59d6" compoundref="format_8h" startline="2741" endline="2827">fmt::BasicWriter&lt; Char &gt;::write_int</referencedby>
+        <referencedby refid="namespacefmt_1a14f565b291f639cea172e79f7fa9bc7f" compoundref="format_8h" startline="3292" endline="3312">fmt::format_decimal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1aeee1847660e999ab1e360ffa18515b88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UInt</type>
+          </param>
+          <param>
+            <type>typename Char</type>
+          </param>
+          <param>
+            <type>typename <ref refid="classfmt_1_1internal_1_1_thousands_sep" kindref="compound">ThousandsSep</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::format_decimal</definition>
+        <argsstring>(Char *buffer, UInt value, unsigned num_digits, ThousandsSep thousands_sep)</argsstring>
+        <name>format_decimal</name>
+        <param>
+          <type>Char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>num_digits</declname>
+        </param>
+        <param>
+          <type><ref refid="classfmt_1_1internal_1_1_thousands_sep" kindref="compound">ThousandsSep</ref></type>
+          <declname>thousands_sep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="919" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="919" bodyend="941"/>
+        <references refid="structfmt_1_1internal_1_1_basic_data_1abc0f1b67b25a98d0aa1f2b25c8649e59" compoundref="format_8h" startline="838">fmt::internal::BasicData&lt; T &gt;::DIGITS</references>
+        <references refid="namespacefmt_1_1internal_1a17c95c81f680e8641fd4d2b21bf7b381" compoundref="format_8h" startline="1135" endline="1138">thousands_sep</references>
+        <referencedby refid="namespacefmt_1_1internal_1a80ab0ca0ccee2866b209454bc2b3098e" compoundref="format_8h" startline="944" endline="946">format_decimal</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1a8236a787e18d88587ca79933a5cdd898" compoundref="format_8h" startline="2373" endline="2378">fmt::BasicWriter&lt; Char &gt;::write_unsigned_decimal</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1a2eb820ad907cede8df8226af444f59d6" compoundref="format_8h" startline="2741" endline="2827">fmt::BasicWriter&lt; Char &gt;::write_int</referencedby>
+        <referencedby refid="classfmt_1_1_format_int_1a4f4f203e213feb6abadb3d6f3260e126" compoundref="format_8h" startline="3242" endline="3250">fmt::FormatInt::FormatSigned</referencedby>
+        <referencedby refid="namespacefmt_1a14f565b291f639cea172e79f7fa9bc7f" compoundref="format_8h" startline="3292" endline="3312">fmt::format_decimal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a80ab0ca0ccee2866b209454bc2b3098e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UInt</type>
+          </param>
+          <param>
+            <type>typename Char</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::format_decimal</definition>
+        <argsstring>(Char *buffer, UInt value, unsigned num_digits)</argsstring>
+        <name>format_decimal</name>
+        <param>
+          <type>Char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>UInt</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>num_digits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="944" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="944" bodyend="946"/>
+        <references refid="namespacefmt_1_1internal_1aeee1847660e999ab1e360ffa18515b88" compoundref="format_8h" startline="919" endline="941">format_decimal</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a6e30f5f0e236c1b4303197467246691b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T &amp;</type>
+        <definition>T&amp; fmt::internal::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1066" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1aedce4aeaa89239024c67c7682cff3370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacefmt_1_1internal_1a39cdac57ccb1df4930903dec83078d5e" kindref="member">Yes</ref> &amp;</type>
+        <definition>Yes&amp; fmt::internal::convert</definition>
+        <argsstring>(fmt::ULongLong)</argsstring>
+        <name>convert</name>
+        <param>
+          <type><ref refid="namespacefmt_1af495ed85910212d4ba243ae2a8ce8f1f" kindref="member">fmt::ULongLong</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1069" column="1"/>
+        <referencedby refid="namespacefmt_1_1internal_1a92bdabe812efd23c6f9686ddd6a7805f" compoundref="format_8cc" startline="296" endline="305">report_unknown_type</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_format_buf_1a37d9219b491e9f05f22334b60cf41c5f" compoundref="ostream_8h" startline="47" endline="49">fmt::internal::FormatBuf&lt; Char &gt;::size</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a61ae1bd2ba7d7666274927320c138283" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacefmt_1_1internal_1abf626ed3fde5ec6d176528219f93fc84" kindref="member">No</ref> &amp;</type>
+        <definition>No&amp; fmt::internal::convert</definition>
+        <argsstring>(...)</argsstring>
+        <name>convert</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1070" column="1"/>
+        <referencedby refid="classfmt_1_1_str_format_spec_1a14c888235db04ee0b81197aaccf0a124" compoundref="format_8h" startline="1682" endline="1685">fmt::StrFormatSpec&lt; Char &gt;::StrFormatSpec</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1a45ded4f76427103f3c189855be8c5d46" compoundref="format_8h" startline="2597" endline="2601">fmt::BasicWriter&lt; Char &gt;::operator&lt;&lt;</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1a8914b930ac43788f801af0008f7b743e" compoundref="format_8h" startline="2640" endline="2657">fmt::BasicWriter&lt; Char &gt;::write_str</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1ae26c013b50f0f8b4ddf47f38acfdcd7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fmt::internal::FMT_DISABLE_CONVERSION_TO_INT</definition>
+        <argsstring>(float)</argsstring>
+        <name>FMT_DISABLE_CONVERSION_TO_INT</name>
+        <param>
+          <type>float</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a82788093cd552ed6df68a633fa18bb29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fmt::internal::FMT_DISABLE_CONVERSION_TO_INT</definition>
+        <argsstring>(double)</argsstring>
+        <name>FMT_DISABLE_CONVERSION_TO_INT</name>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1ae48f1fd2c5f079fa6a8c77bdd8ae5f4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fmt::internal::FMT_DISABLE_CONVERSION_TO_INT</definition>
+        <argsstring>(long double)</argsstring>
+        <name>FMT_DISABLE_CONVERSION_TO_INT</name>
+        <param>
+          <type>long</type>
+          <declname>double</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a17c95c81f680e8641fd4d2b21bf7b381" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LConv</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespacefmt_1ae5ed3b29f911650a12b4de3d14126c31" kindref="member">StringRef</ref></type>
+        <definition>StringRef fmt::internal::thousands_sep</definition>
+        <argsstring>(LConv *lc, LConvCheck&lt; char *LConv::*,&amp;LConv::thousands_sep &gt;=0)</argsstring>
+        <name>thousands_sep</name>
+        <param>
+          <type>LConv *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="structfmt_1_1internal_1_1_l_conv_check" kindref="compound">LConvCheck</ref>&lt; char *LConv::*,&amp;LConv::thousands_sep &gt;</type>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1135" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1135" bodyend="1138"/>
+        <referencedby refid="namespacefmt_1_1internal_1aeee1847660e999ab1e360ffa18515b88" compoundref="format_8h" startline="919" endline="941">format_decimal</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1a2eb820ad907cede8df8226af444f59d6" compoundref="format_8h" startline="2741" endline="2827">fmt::BasicWriter&lt; Char &gt;::write_int</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a3a4ed44bd47a353a5854fedb8dce4029" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacefmt_1ae5ed3b29f911650a12b4de3d14126c31" kindref="member">fmt::StringRef</ref></type>
+        <definition>fmt::StringRef fmt::internal::thousands_sep</definition>
+        <argsstring>(...)</argsstring>
+        <name>thousands_sep</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1140" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1140" bodyend="1140"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1ac8923cb1e602be0535f92ef716f4fb57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Formatter</type>
+          </param>
+          <param>
+            <type>typename Char</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::format_arg</definition>
+        <argsstring>(Formatter &amp;, const Char *, const T &amp;)</argsstring>
+        <name>format_arg</name>
+        <param>
+          <type>Formatter &amp;</type>
+        </param>
+        <param>
+          <type>const Char *</type>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1164" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1164" bodyend="1169"/>
+        <references refid="format_8h_1a204f6e58eced6add1741a1778c4690b9" compoundref="format_8h" startline="1159">FMT_STATIC_ASSERT</references>
+        <referencedby refid="classfmt_1_1internal_1_1_make_value_1a9a5a3480de8d1e11edbcd06f3fbd1bb3" compoundref="format_8h" startline="1212" endline="1217">fmt::internal::MakeValue&lt; Formatter &gt;::format_custom_arg</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a7d8abb1ded2bf7989f6658811a0ca93e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+        <definition>uint64_t fmt::internal::make_type</definition>
+        <argsstring>()</argsstring>
+        <name>make_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="2098" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="2098" bodyend="2098"/>
+        <referencedby refid="structfmt_1_1internal_1_1_arg_array_3_01_n_00_01false_01_4_1a5052e0376e3deb4bffc5d1a4941bc7c8" compoundref="format_8h" startline="2131" endline="2131">fmt::internal::ArgArray&lt; N, false &gt;::make</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1aa8063bbe25d68d423a576acca0319397" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+        <definition>uint64_t fmt::internal::make_type</definition>
+        <argsstring>(const T &amp;arg)</argsstring>
+        <name>make_type</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="2101" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="2101" bodyend="2103"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a49d1e1820bdd693a743ec9e5b42b7e81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+        <definition>uint64_t fmt::internal::make_type</definition>
+        <argsstring>(FMT_GEN15(FMT_ARG_TYPE_DEFAULT))</argsstring>
+        <name>make_type</name>
+        <param>
+          <type><ref refid="format_8h_1af245ed926303d044c943b467f3ae31b8" kindref="member">FMT_GEN15</ref>(<ref refid="format_8h_1a314a375c57af00408d198600634361d2" kindref="member">FMT_ARG_TYPE_DEFAULT</ref>)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="2153" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="2153" bodyend="2158"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a27d95fd413ab4be7aca6fe53f1a7f6a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Char</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool fmt::internal::is_name_start</definition>
+        <argsstring>(Char c)</argsstring>
+        <name>is_name_start</name>
+        <param>
+          <type>Char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="3477" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="3477" bodyend="3479"/>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ac6d66a7beef58c3584327bdab9bbd92b" compoundref="format_8h" startline="3549" endline="3561">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::parse_arg_name</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ab436d449f9a0678badb672af2a8ecb32" compoundref="format_8h" startline="3564" endline="3731">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a20352082f5ee17703e71a37e30c6ddaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Char</type>
+          </param>
+        </templateparamlist>
+        <type>unsigned</type>
+        <definition>unsigned fmt::internal::parse_nonnegative_int</definition>
+        <argsstring>(const Char *&amp;s)</argsstring>
+        <name>parse_nonnegative_int</name>
+        <param>
+          <type>const Char *&amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="3484" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="3484" bodyend="3501"/>
+        <references refid="format_8h_1ad9e2ed6d3b432a04c9622c34a2495304" compoundref="format_8h" startline="172">FMT_THROW</references>
+        <referencedby refid="classfmt_1_1_basic_formatter_1af9f5dc339c7dd167253bc1354f0c5a65" compoundref="format_8h" startline="3537" endline="3546">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::parse_arg_index</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ab436d449f9a0678badb672af2a8ecb32" compoundref="format_8h" startline="3564" endline="3731">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+        <referencedby refid="classfmt_1_1_printf_formatter_1a847c4173cd8b0138fd066eb9b9d0877c" compoundref="printf_8h" startline="353" endline="384">fmt::PrintfFormatter&lt; Char, ArgFormatter &gt;::parse_header</referencedby>
+        <referencedby refid="classfmt_1_1_printf_formatter_1a295c50e11b9a77720c8078f287040e5c" compoundref="printf_8h" startline="387" endline="484">fmt::PrintfFormatter&lt; Char, ArgFormatter &gt;::format</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a706fe7cc890026cebbd52e75d8a97afc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::require_numeric_argument</definition>
+        <argsstring>(const Arg &amp;arg, char spec)</argsstring>
+        <name>require_numeric_argument</name>
+        <param>
+          <type>const <ref refid="structfmt_1_1internal_1_1_arg" kindref="compound">Arg</ref> &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>spec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="3503" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="3503" bodyend="3509"/>
+        <references refid="format_8h_1ad9e2ed6d3b432a04c9622c34a2495304" compoundref="format_8h" startline="172">FMT_THROW</references>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">fmt::format</references>
+        <references refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaad9dbf0826103ba0fed6466a53bb0421b" compoundref="format_8h" startline="1031">fmt::internal::Value::LAST_NUMERIC_TYPE</references>
+        <references refid="structfmt_1_1internal_1_1_arg_1af1165b4e8647bea5913922de82599e2e" compoundref="format_8h" startline="1039">fmt::internal::Arg::type</references>
+        <referencedby refid="namespacefmt_1_1internal_1a867432b13d2f634bfb4aa28e464b57a1" compoundref="format_8h" startline="3512" endline="3520">check_sign</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ab436d449f9a0678badb672af2a8ecb32" compoundref="format_8h" startline="3564" endline="3731">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a867432b13d2f634bfb4aa28e464b57a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Char</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::check_sign</definition>
+        <argsstring>(const Char *&amp;s, const Arg &amp;arg)</argsstring>
+        <name>check_sign</name>
+        <param>
+          <type>const Char *&amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfmt_1_1internal_1_1_arg" kindref="compound">Arg</ref> &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="3512" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="3512" bodyend="3520"/>
+        <references refid="format_8h_1ad9e2ed6d3b432a04c9622c34a2495304" compoundref="format_8h" startline="172">FMT_THROW</references>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">fmt::format</references>
+        <references refid="namespacefmt_1_1internal_1a706fe7cc890026cebbd52e75d8a97afc" compoundref="format_8h" startline="3503" endline="3509">require_numeric_argument</references>
+        <references refid="structfmt_1_1internal_1_1_arg_1af1165b4e8647bea5913922de82599e2e" compoundref="format_8h" startline="1039">fmt::internal::Arg::type</references>
+        <references refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaac7303224391053ae45d4ff13ad0f017c" compoundref="format_8h" startline="1029">fmt::internal::Value::UINT</references>
+        <references refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa8c2ffe6909d26d46781aa6fb9b8ae418" compoundref="format_8h" startline="1029">fmt::internal::Value::ULONG_LONG</references>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ab436d449f9a0678badb672af2a8ecb32" compoundref="format_8h" startline="3564" endline="3731">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a7c721969e9660580a237bd4130422ab6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="format_8h_1a02c8898388e0ae59aab58be14fcd4e05" kindref="member">FMT_FUNC</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::write</definition>
+        <argsstring>(std::ostream &amp;os, Writer &amp;w)</argsstring>
+        <name>write</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefmt_1a4d870bb235d29dfe8f82e22c4c5574e7" kindref="member">Writer</ref> &amp;</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/ostream.cc" line="15" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/ostream.cc" bodystart="15" bodyend="27"/>
+        <references refid="classfmt_1_1_basic_writer_1a62d1c7b5be9c3580326320d5d178d096" compoundref="format_8h" startline="2468" endline="2468">fmt::BasicWriter&lt; Char &gt;::data</references>
+        <references refid="classfmt_1_1_basic_writer_1a1b6721b4ba4d3fa18ac781a36616cc2a" compoundref="format_8h" startline="2462" endline="2462">fmt::BasicWriter&lt; Char &gt;::size</references>
+        <references refid="namespacefmt_1_1internal_1a28bed1291226be35437bc3173c19c205" compoundref="format_8h" startline="564" endline="567">to_unsigned</references>
+        <referencedby refid="classfmt_1_1internal_1_1_arg_formatter_base_1a379b2f30d3e0526c88be65f8a2b596be" compoundref="format_8h" startline="1873" endline="1877">fmt::internal::ArgFormatterBase&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;::visit_bool</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_arg_formatter_base_1a35e5c4d1580f7eec032661f9823c0cad" compoundref="format_8h" startline="1909" endline="1913">fmt::internal::ArgFormatterBase&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;::visit_cstring</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1aaa83498c649d4a90ea3366bae62f4eac" compoundref="format_8h" startline="2515" endline="2517">fmt::BasicWriter&lt; Char &gt;::write</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1a63acecbbf9681005f3c7eb4d42a54bf7" compoundref="format_8h" startline="3734" endline="3753">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+        <referencedby refid="namespacefmt_1a553a4de7d3382f362eba0a5e2a7c8184" compoundref="ostream_8cc" startline="30" endline="34">fmt::print</referencedby>
+        <referencedby refid="classfmt_1_1_file_1a0af6a258b5ca604680a83bada8a836d8" compoundref="posix_8cc" startline="161" endline="167">fmt::File::write</referencedby>
+        <referencedby refid="classfmt_1_1_file_1a19976004ecb9edfb762b5255736fe73c" compoundref="posix_8h" startline="266" endline="266">fmt::File::descriptor</referencedby>
+        <referencedby refid="classfmt_1_1_basic_printf_arg_formatter_1a6d33080841bed7fbce18b6a4623fbef5" compoundref="printf_8h" startline="195" endline="198">fmt::BasicPrintfArgFormatter&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;::write_null_pointer</referencedby>
+        <referencedby refid="classfmt_1_1_basic_printf_arg_formatter_1ad7e0c109d588a2e2be9d90f7deee59a2" compoundref="printf_8h" startline="214" endline="220">fmt::BasicPrintfArgFormatter&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;::visit_bool</referencedby>
+        <referencedby refid="classfmt_1_1_basic_printf_arg_formatter_1a4d5af89db6690ef2507ffc8cc8b38497" compoundref="printf_8h" startline="246" endline="253">fmt::BasicPrintfArgFormatter&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;::visit_cstring</referencedby>
+        <referencedby refid="classfmt_1_1_printf_formatter_1a295c50e11b9a77720c8078f287040e5c" compoundref="printf_8h" startline="387" endline="484">fmt::PrintfFormatter&lt; Char, ArgFormatter &gt;::format</referencedby>
+        <referencedby refid="namespacefmt_1adf9e00e4ddf5cad224a101333cfac9e8" compoundref="printf_8h" startline="549" endline="554">fmt::fprintf</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a9d6516d1fe66383e6b4cec9e6f2e375a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacefmt_1_1internal_1a39cdac57ccb1df4930903dec83078d5e" kindref="member">Yes</ref> &amp;</type>
+        <definition>Yes&amp; fmt::internal::convert</definition>
+        <argsstring>(std::ostream &amp;)</argsstring>
+        <name>convert</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/ostream.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1_1internal_1a2ab2dc3e996d40259b9fbb6f980c92fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacefmt_1_1internal_1abf626ed3fde5ec6d176528219f93fc84" kindref="member">No</ref> &amp;</type>
+        <definition>No&amp; fmt::internal::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, int)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/ostream.h" line="60" column="1"/>
+        <referencedby refid="classfmt_1_1_basic_writer_1ac7a6d8759863c9b3f8ef89da04c9c8a7" compoundref="format_8h" startline="2394" endline="2400">fmt::BasicWriter&lt; Char &gt;::prepare_int_buffer</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.cc" line="215" column="1"/>
+  </compounddef>
+</doxygen>

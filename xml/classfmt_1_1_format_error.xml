@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classfmt_1_1_format_error" kind="class" language="C++" prot="public">
+    <compoundname>fmt::FormatError</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">runtime_error</basecompoundref>
+    <includes refid="format_8h" local="no">format.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfmt_1_1_format_error_1adceda84540093a114256a7159b30bf5e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fmt::FormatError::FormatError</definition>
+        <argsstring>(CStringRef message)</argsstring>
+        <name>FormatError</name>
+        <param>
+          <type><ref refid="namespacefmt_1af41028915a2e1f7b8af462c067163aa7" kindref="member">CStringRef</ref></type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="540" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="540" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1_format_error_1aeae25b349cd2dc682f9b29476d82462b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FMT_FUNC fmt::FormatError::~FormatError</definition>
+        <argsstring>()</argsstring>
+        <name>~FormatError</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="542" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.cc" bodystart="85" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A formatting error such as invalid format string. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1501">
+        <label>runtime_error</label>
+      </node>
+      <node id="1500">
+        <label>fmt::FormatError</label>
+        <link refid="classfmt_1_1_format_error"/>
+        <childnode refid="1501" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1503">
+        <label>runtime_error</label>
+      </node>
+      <node id="1502">
+        <label>fmt::FormatError</label>
+        <link refid="classfmt_1_1_format_error"/>
+        <childnode refid="1503" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="538" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="538" bodyend="543"/>
+    <listofallmembers>
+      <member refid="classfmt_1_1_format_error_1adceda84540093a114256a7159b30bf5e" prot="public" virt="non-virtual"><scope>fmt::FormatError</scope><name>FormatError</name></member>
+      <member refid="classfmt_1_1_format_error_1aeae25b349cd2dc682f9b29476d82462b" prot="public" virt="non-virtual"><scope>fmt::FormatError</scope><name>~FormatError</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

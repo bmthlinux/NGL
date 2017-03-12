@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classfmt_1_1internal_1_1_string_buffer" kind="class" language="C++" prot="public">
+    <compoundname>fmt::internal::StringBuffer</compoundname>
+    <basecompoundref refid="classfmt_1_1_buffer" prot="public" virt="non-virtual">fmt::Buffer&lt; Char &gt;</basecompoundref>
+    <includes refid="string_8h" local="no">string.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Char</declname>
+        <defname>Char</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfmt_1_1internal_1_1_string_buffer_1a220b4d9e0ff572152d92456fae4a298c" prot="private" static="no" mutable="no">
+        <type>std::basic_string&lt; Char &gt;</type>
+        <definition>std::basic_string&lt;Char&gt; fmt::internal::StringBuffer&lt; Char &gt;::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/string.h" line="23" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/string.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_string_buffer_1ab772d333926208338ac9f1c1bb569475" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>virtual void fmt::internal::StringBuffer&lt; Char &gt;::grow</definition>
+        <argsstring>(std::size_t size)</argsstring>
+        <name>grow</name>
+        <reimplements refid="classfmt_1_1_buffer_1abdc7aaf5813aa07008b3d715969a7e19">grow</reimplements>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Increases the buffer capacity to hold at least <emphasis>size</emphasis> elements updating <computeroutput>ptr_</computeroutput> and <computeroutput>capacity_</computeroutput>.  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/string.h" line="26" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/string.h" bodystart="26" bodyend="30"/>
+        <references refid="classfmt_1_1_buffer_1ab9c3e293679699058a2d33c4a07ad657" compoundref="format_8h" startline="598">fmt::Buffer&lt; Char &gt;::capacity_</references>
+        <references refid="classfmt_1_1_buffer_1a17b11ccf916407fdb464b53b3e556849" compoundref="format_8h" startline="596">fmt::Buffer&lt; Char &gt;::ptr_</references>
+        <references refid="classfmt_1_1_buffer_1a14fa72f0ddf584c14ffffb1446f598aa" compoundref="format_8h" startline="615" endline="615">fmt::Buffer&lt; Char &gt;::size</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_string_buffer_1a015b27f346306a25cbfd6c8305bccc46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::StringBuffer&lt; Char &gt;::move_to</definition>
+        <argsstring>(std::basic_string&lt; Char &gt; &amp;str)</argsstring>
+        <name>move_to</name>
+        <param>
+          <type>std::basic_string&lt; Char &gt; &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/string.h" line="34" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/string.h" bodystart="34" bodyend="39"/>
+        <references refid="classfmt_1_1_buffer_1ab9c3e293679699058a2d33c4a07ad657" compoundref="format_8h" startline="598">fmt::Buffer&lt; Char &gt;::capacity_</references>
+        <references refid="classfmt_1_1_buffer_1a17b11ccf916407fdb464b53b3e556849" compoundref="format_8h" startline="596">fmt::Buffer&lt; Char &gt;::ptr_</references>
+        <references refid="classfmt_1_1_buffer_1a3959d66180b075a0ae324ea98466e20f" compoundref="format_8h" startline="597">fmt::Buffer&lt; Char &gt;::size_</references>
+        <referencedby refid="classfmt_1_1_basic_string_writer_1aacbc88a87e32dd5b70208bce734aa05a" compoundref="string_8h" startline="92" endline="94">fmt::BasicStringWriter&lt; Char &gt;::move_to</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1946">
+        <label>fmt::internal::StringBuffer&lt; Char &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_string_buffer"/>
+        <childnode refid="1947" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1947">
+        <label>fmt::Buffer&lt; Char &gt;</label>
+        <link refid="classfmt_1_1_buffer"/>
+        <childnode refid="1948" relation="template-instance">
+          <edgelabel>&lt; Char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1948">
+        <label>fmt::Buffer&lt; T &gt;</label>
+        <link refid="classfmt_1_1_buffer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1951">
+        <label>size_t</label>
+      </node>
+      <node id="1953">
+        <label>T</label>
+      </node>
+      <node id="1949">
+        <label>fmt::internal::StringBuffer&lt; Char &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_string_buffer"/>
+        <childnode refid="1950" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1950">
+        <label>fmt::Buffer&lt; Char &gt;</label>
+        <link refid="classfmt_1_1_buffer"/>
+        <childnode refid="1951" relation="usage">
+          <edgelabel>#size_</edgelabel>
+          <edgelabel>#capacity_</edgelabel>
+        </childnode>
+        <childnode refid="1952" relation="template-instance">
+          <edgelabel>&lt; Char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1952">
+        <label>fmt::Buffer&lt; T &gt;</label>
+        <link refid="classfmt_1_1_buffer"/>
+        <childnode refid="1951" relation="usage">
+          <edgelabel>#size_</edgelabel>
+          <edgelabel>#capacity_</edgelabel>
+        </childnode>
+        <childnode refid="1953" relation="usage">
+          <edgelabel>#ptr_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/string.h" line="21" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/string.h" bodystart="21" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classfmt_1_1_buffer_1a7ca155741c43ec7c7edcea8dd28a2123" prot="public" virt="non-virtual"><scope>fmt::internal::StringBuffer</scope><name>append</name></member>
+      <member refid="classfmt_1_1_buffer_1a1830c1ba88170ed60f40f662d7f1886a" prot="protected" virt="non-virtual"><scope>fmt::internal::StringBuffer</scope><name>Buffer</name></member>
+      <member refid="classfmt_1_1_buffer_1aaf54fe786de91157629f96380e0cb215" prot="public" virt="non-virtual"><scope>fmt::internal::StringBuffer</scope><name>capacity</name></member>
+      <member refid="classfmt_1_1_buffer_1ab9c3e293679699058a2d33c4a07ad657" prot="protected" virt="non-virtual"><scope>fmt::internal::StringBuffer</scope><name>capacity_</name></member>
+      <member refid="classfmt_1_1_buffer_1a4591d21c7970ba5205680cb5224ef2b2" prot="public" virt="non-virtual"><scope>fmt::internal::StringBuffer</scope><name>clear</name></member>
+      <member refid="classfmt_1_1internal_1_1_string_buffer_1a220b4d9e0ff572152d92456fae4a298c" prot="private" virt="non-virtual"><scope>fmt::internal::StringBuffer</scope><name>data_</name></member>
+      <member refid="classfmt_1_1internal_1_1_string_buffer_1ab772d333926208338ac9f1c1bb569475" prot="protected" virt="virtual"><scope>fmt::internal::StringBuffer</scope><name>grow</name></member>
+      <member refid="classfmt_1_1internal_1_1_string_buffer_1a015b27f346306a25cbfd6c8305bccc46" prot="public" virt="non-virtual"><scope>fmt::internal::StringBuffer</scope><name>move_to</name></member>
+      <member refid="classfmt_1_1_buffer_1ad1f9ad75ba08826671a78df23161685a" prot="public" virt="non-virtual"><scope>fmt::internal::StringBuffer</scope><name>operator[]</name></member>
+      <member refid="classfmt_1_1_buffer_1a15dd7f9027d6c9fb0fe4b6255c9a7929" prot="public" virt="non-virtual"><scope>fmt::internal::StringBuffer</scope><name>operator[]</name></member>
+      <member refid="classfmt_1_1_buffer_1a17b11ccf916407fdb464b53b3e556849" prot="protected" virt="non-virtual"><scope>fmt::internal::StringBuffer</scope><name>ptr_</name></member>
+      <member refid="classfmt_1_1_buffer_1a4056b71637286b41b3275e3dac57462d" prot="public" virt="non-virtual"><scope>fmt::internal::StringBuffer</scope><name>push_back</name></member>
+      <member refid="classfmt_1_1_buffer_1a7f46a3ce8d86abe35904f6654bd4ea1e" prot="public" virt="non-virtual"><scope>fmt::internal::StringBuffer</scope><name>reserve</name></member>
+      <member refid="classfmt_1_1_buffer_1a20f893164dc20e8ea8c77810d4ea8d59" prot="public" virt="non-virtual"><scope>fmt::internal::StringBuffer</scope><name>resize</name></member>
+      <member refid="classfmt_1_1_buffer_1a14fa72f0ddf584c14ffffb1446f598aa" prot="public" virt="non-virtual"><scope>fmt::internal::StringBuffer</scope><name>size</name></member>
+      <member refid="classfmt_1_1_buffer_1a3959d66180b075a0ae324ea98466e20f" prot="protected" virt="non-virtual"><scope>fmt::internal::StringBuffer</scope><name>size_</name></member>
+      <member refid="classfmt_1_1_buffer_1a5005962059399cc759674da5fd9b3817" prot="public" virt="virtual"><scope>fmt::internal::StringBuffer</scope><name>~Buffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

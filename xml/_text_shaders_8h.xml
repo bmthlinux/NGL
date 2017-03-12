@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_text_shaders_8h" kind="file" language="C++">
+    <compoundname>TextShaders.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="_shader_lib_8cpp" local="yes">ShaderLib.cpp</includedby>
+    <incdepgraph>
+      <node id="6455">
+        <label>string</label>
+      </node>
+      <node id="6454">
+        <label>TextShaders.h</label>
+        <link refid="TextShaders.h"/>
+        <childnode refid="6455" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6457">
+        <label>ShaderLib.cpp</label>
+        <link refid="_shader_lib_8cpp"/>
+      </node>
+      <node id="6456">
+        <label>TextShaders.h</label>
+        <link refid="TextShaders.h"/>
+        <childnode refid="6457" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_text_shaders_8h_1a6e35ec192b803deb45733256c32bb3be" prot="public" static="no" mutable="no">
+        <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>const std::string textVertexShader</definition>
+        <argsstring></argsstring>
+        <name>textVertexShader</name>
+        <initializer>=
+R&quot;DELIM(
+#version 150
+<ref refid="glew_8h_1a83ad0ee7f1e06b59c90271716e689080" kindref="member">in</ref> vec2 inVert;
+<ref refid="glew_8h_1a83ad0ee7f1e06b59c90271716e689080" kindref="member">in</ref> vec2 inUV;
+out vec2 vertUV;
+uniform vec3 textColour;
+uniform float scaleX;
+uniform float scaleY;
+uniform float xpos;
+uniform float ypos;
+<ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> main()
+{
+  vertUV=inUV;
+  gl_Position=vec4( ((xpos+<ref refid="wglew_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">inVert.x</ref>)*scaleX)-1.0,((ypos+<ref refid="wglew_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">inVert.y</ref>)*scaleY)+1.0,0.0,1.0);
+}
+)DELIM&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/src/shaders/TextShaders.h" line="5" column="1" bodyfile="/Users/jmacey/NGL/src/shaders/TextShaders.h" bodystart="5" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_shader_lib_1ac9f874040dab2cb996c3849be284d44b" compoundref="_shader_lib_8cpp" startline="660" endline="686">ngl::ShaderLib::loadTextShaders</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_text_shaders_8h_1a59273a260a531f7859d10b943268925a" prot="public" static="no" mutable="no">
+        <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>const std::string textFragmentShader</definition>
+        <argsstring></argsstring>
+        <name>textFragmentShader</name>
+        <initializer>=
+R&quot;DELIM(
+#version 150
+uniform sampler2D tex;
+<ref refid="glew_8h_1a83ad0ee7f1e06b59c90271716e689080" kindref="member">in</ref> vec2 vertUV;
+out vec4 fragColour;
+uniform vec3 textColour;
+<ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> main()
+{
+  vec4 text=<ref refid="glew_8h_1ab21590c4736d1459a5a0674a42b5a655" kindref="member">texture</ref>(tex,vertUV.st);
+  fragColour.rgb=textColour.rgb;
+  <ref refid="pointer_8h_1ae1f93a8c6f2a4c2a4108d65590a9d37b" kindref="member">fragColour.a</ref>=<ref refid="pointer_8h_1ae1f93a8c6f2a4c2a4108d65590a9d37b" kindref="member">text.a</ref>;
+}
+)DELIM&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/src/shaders/TextShaders.h" line="26" column="1" bodyfile="/Users/jmacey/NGL/src/shaders/TextShaders.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_shader_lib_1ac9f874040dab2cb996c3849be284d44b" compoundref="_shader_lib_8cpp" startline="660" endline="686">ngl::ShaderLib::loadTextShaders</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TEXTSHADERS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEXTSHADERS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_text_shaders_8h_1a6e35ec192b803deb45733256c32bb3be" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="_text_shaders_8h_1a6e35ec192b803deb45733256c32bb3be" kindref="member">textVertexShader</ref><sp/>=</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">R</highlight><highlight class="stringliteral">&quot;DELIM(</highlight></codeline>
+<codeline lineno="7"><highlight class="stringliteral">#version<sp/>150</highlight></codeline>
+<codeline lineno="8"><highlight class="stringliteral">in<sp/>vec2<sp/>inVert;</highlight></codeline>
+<codeline lineno="9"><highlight class="stringliteral">in<sp/>vec2<sp/>inUV;</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral">out<sp/>vec2<sp/>vertUV;</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral">uniform<sp/>vec3<sp/>textColour;</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral">uniform<sp/>float<sp/>scaleX;</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral">uniform<sp/>float<sp/>scaleY;</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral">uniform<sp/>float<sp/>xpos;</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral">uniform<sp/>float<sp/>ypos;</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral">void<sp/>main()</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral">{</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral"><sp/><sp/>vertUV=inUV;</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral"><sp/><sp/>gl_Position=vec4(<sp/>((xpos+inVert.x)*scaleX)-1.0,((ypos+inVert.y)*scaleY)+1.0,0.0,1.0);</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral">}</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral">)DELIM&quot;;</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="26" refid="_text_shaders_8h_1a59273a260a531f7859d10b943268925a" refkind="member"><highlight class="stringliteral"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><sp/><ref refid="_text_shaders_8h_1a59273a260a531f7859d10b943268925a" kindref="member">textFragmentShader</ref>=</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">R</highlight><highlight class="stringliteral">&quot;DELIM(</highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral">#version<sp/>150</highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral">uniform<sp/>sampler2D<sp/>tex;</highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral">in<sp/>vec2<sp/>vertUV;</highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral">out<sp/>vec4<sp/>fragColour;</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral">uniform<sp/>vec3<sp/>textColour;</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral">void<sp/>main()</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral">{</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/>vec4<sp/>text=texture(tex,vertUV.st);</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/>fragColour.rgb=textColour.rgb;</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/>fragColour.a=text.a;</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral">}</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral">)DELIM&quot;;</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/src/shaders/TextShaders.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,431 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structfmt_1_1internal_1_1_value" kind="struct" language="C++" prot="public">
+    <compoundname>fmt::internal::Value</compoundname>
+    <derivedcompoundref refid="structfmt_1_1internal_1_1_arg" prot="public" virt="non-virtual">fmt::internal::Arg</derivedcompoundref>
+    <includes refid="format_8h" local="no">format.h</includes>
+    <innerclass refid="structfmt_1_1internal_1_1_value_1_1_custom_value" prot="public">fmt::internal::Value::CustomValue</innerclass>
+    <innerclass refid="structfmt_1_1internal_1_1_value_1_1_string_value" prot="public">fmt::internal::Value::StringValue</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaa" prot="public" static="no">
+        <name>Type</name>
+        <enumvalue id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa24ae26361d60b04790c06fffecaa7eda" prot="public">
+          <name>NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaaa9af5928e9c0951d7d4f644bc3cae639" prot="public">
+          <name>NAMED_ARG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa6ab1b5ad31036f4c90bae16e873b3396" prot="public">
+          <name>INT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaac7303224391053ae45d4ff13ad0f017c" prot="public">
+          <name>UINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa7674f34a96c22fec85d9f27d082b4412" prot="public">
+          <name>LONG_LONG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa8c2ffe6909d26d46781aa6fb9b8ae418" prot="public">
+          <name>ULONG_LONG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa90eda0110259ca26e06430e5f7d7f36b" prot="public">
+          <name>BOOL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa4000e36300596c89b956b964a23114e0" prot="public">
+          <name>CHAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa1cc1a5881e640c0009f58a05b653d535" prot="public">
+          <name>LAST_INTEGER_TYPE</name>
+          <initializer>= CHAR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa61e214d7127ba18d3b0d7b4c0d5f09aa" prot="public">
+          <name>DOUBLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa6578a997089147df95c66231c936c43c" prot="public">
+          <name>LONG_DOUBLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaad9dbf0826103ba0fed6466a53bb0421b" prot="public">
+          <name>LAST_NUMERIC_TYPE</name>
+          <initializer>= LONG_DOUBLE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaae36ce7cc208b872c5c43ccb2ae8795a2" prot="public">
+          <name>CSTRING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa167cb315c368dd357a390431477ea049" prot="public">
+          <name>STRING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaae94c5eaf7d9283c167bd88765c18b82c" prot="public">
+          <name>WSTRING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaaaaa373dcb5378f0ec6cd6e4dc59a8cfb" prot="public">
+          <name>POINTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaaeaa06f45cc1a466b789ae71d6d06d1b0" prot="public">
+          <name>CUSTOM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1026" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1026" bodyend="1033"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structfmt_1_1internal_1_1_value_1a1bdc8aa6f70614fbb514aaa56106c669" prot="public" static="no">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref>(*</type>
+        <definition>typedef void(* fmt::internal::Value::FormatFunc) (void *formatter, const void *arg, void *format_str_ptr)</definition>
+        <argsstring>)(void *formatter, const void *arg, void *format_str_ptr)</argsstring>
+        <name>FormatFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1003" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1003" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_value_1ac295b81747c26b97893be505a03381c8" prot="public" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int fmt::internal::Value::int_value</definition>
+        <argsstring></argsstring>
+        <name>int_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1012" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1012" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1_arg_visitor_1a19a979776fc789baaf038ab216e245bb" compoundref="format_8h" startline="1551" endline="1585">fmt::ArgVisitor&lt; ArgConverter&lt; T &gt;, void &gt;::visit</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ab436d449f9a0678badb672af2a8ecb32" compoundref="format_8h" startline="3564" endline="3731">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_arg_converter_1a17ef10158defdeb450bcf9c1c8a03d52" compoundref="printf_8h" startline="96" endline="124">fmt::internal::ArgConverter&lt; T &gt;::visit_any_int</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_char_converter_1a45f7fa70f2eca8915632712f79164617" compoundref="printf_8h" startline="138" endline="141">fmt::internal::CharConverter::visit_any_int</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_value_1a9ced917767812c9572065509f22bec18" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned fmt::internal::Value::uint_value</definition>
+        <argsstring></argsstring>
+        <name>uint_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1013" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1013" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1_arg_visitor_1a19a979776fc789baaf038ab216e245bb" compoundref="format_8h" startline="1551" endline="1585">fmt::ArgVisitor&lt; ArgConverter&lt; T &gt;, void &gt;::visit</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ab436d449f9a0678badb672af2a8ecb32" compoundref="format_8h" startline="3564" endline="3731">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_arg_converter_1a17ef10158defdeb450bcf9c1c8a03d52" compoundref="printf_8h" startline="96" endline="124">fmt::internal::ArgConverter&lt; T &gt;::visit_any_int</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_value_1a1dab8b1df1f88c35b6893d63b1b72af8" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacefmt_1aef84b50b68fdc25388fed2952c2db563" kindref="member">LongLong</ref></type>
+        <definition>LongLong fmt::internal::Value::long_long_value</definition>
+        <argsstring></argsstring>
+        <name>long_long_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1014" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1014" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1_arg_visitor_1a19a979776fc789baaf038ab216e245bb" compoundref="format_8h" startline="1551" endline="1585">fmt::ArgVisitor&lt; ArgConverter&lt; T &gt;, void &gt;::visit</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ab436d449f9a0678badb672af2a8ecb32" compoundref="format_8h" startline="3564" endline="3731">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_arg_converter_1a17ef10158defdeb450bcf9c1c8a03d52" compoundref="printf_8h" startline="96" endline="124">fmt::internal::ArgConverter&lt; T &gt;::visit_any_int</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_value_1a78424f46c0150190010e5c27ec3c69a0" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacefmt_1af495ed85910212d4ba243ae2a8ce8f1f" kindref="member">ULongLong</ref></type>
+        <definition>ULongLong fmt::internal::Value::ulong_long_value</definition>
+        <argsstring></argsstring>
+        <name>ulong_long_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1015" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1015" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1_arg_visitor_1a19a979776fc789baaf038ab216e245bb" compoundref="format_8h" startline="1551" endline="1585">fmt::ArgVisitor&lt; ArgConverter&lt; T &gt;, void &gt;::visit</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ab436d449f9a0678badb672af2a8ecb32" compoundref="format_8h" startline="3564" endline="3731">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_arg_converter_1a17ef10158defdeb450bcf9c1c8a03d52" compoundref="printf_8h" startline="96" endline="124">fmt::internal::ArgConverter&lt; T &gt;::visit_any_int</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_value_1afe6725f2c3ad8fce5867f824c1fa8cc8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double fmt::internal::Value::double_value</definition>
+        <argsstring></argsstring>
+        <name>double_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1016" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1016" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1_arg_visitor_1a19a979776fc789baaf038ab216e245bb" compoundref="format_8h" startline="1551" endline="1585">fmt::ArgVisitor&lt; ArgConverter&lt; T &gt;, void &gt;::visit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_value_1a7adfb34f6e0b12676681de8a6597ed17" prot="public" static="no" mutable="no">
+        <type>long double</type>
+        <definition>long double fmt::internal::Value::long_double_value</definition>
+        <argsstring></argsstring>
+        <name>long_double_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1017" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1017" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1_arg_visitor_1a19a979776fc789baaf038ab216e245bb" compoundref="format_8h" startline="1551" endline="1585">fmt::ArgVisitor&lt; ArgConverter&lt; T &gt;, void &gt;::visit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_value_1a3627bcfa0a5bcb7e48f6fc632243b17d" prot="public" static="no" mutable="no">
+        <type>const <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> *</type>
+        <definition>const void* fmt::internal::Value::pointer</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1018" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1018" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1internal_1_1_arg_map_1aba1e77b1b5358a8e354acae3d71ea6cf" compoundref="format_8cc" startline="407" endline="449">fmt::internal::ArgMap&lt; Char &gt;::init</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_formatter_base_1ad902773ddc5de8777c046bb349781e1a" compoundref="format_8cc" startline="456" endline="470">fmt::internal::FormatterBase::do_get_arg</referencedby>
+        <referencedby refid="classfmt_1_1_arg_visitor_1a19a979776fc789baaf038ab216e245bb" compoundref="format_8h" startline="1551" endline="1585">fmt::ArgVisitor&lt; ArgConverter&lt; T &gt;, void &gt;::visit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_value_1a98e3f2f8c44a6d6d4606646e5ef62e0a" prot="public" static="no" mutable="no">
+        <type><ref refid="structfmt_1_1internal_1_1_value_1_1_string_value" kindref="compound">StringValue</ref>&lt; char &gt;</type>
+        <definition>StringValue&lt;char&gt; fmt::internal::Value::string</definition>
+        <argsstring></argsstring>
+        <name>string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1019" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1019" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1_arg_visitor_1a19a979776fc789baaf038ab216e245bb" compoundref="format_8h" startline="1551" endline="1585">fmt::ArgVisitor&lt; ArgConverter&lt; T &gt;, void &gt;::visit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_value_1a4bedea17bc9ddfe00bcd7bf0ee086c66" prot="public" static="no" mutable="no">
+        <type><ref refid="structfmt_1_1internal_1_1_value_1_1_string_value" kindref="compound">StringValue</ref>&lt; signed char &gt;</type>
+        <definition>StringValue&lt;signed char&gt; fmt::internal::Value::sstring</definition>
+        <argsstring></argsstring>
+        <name>sstring</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1020" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1020" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_value_1ae89a416df861650100b0bfc207e19204" prot="public" static="no" mutable="no">
+        <type><ref refid="structfmt_1_1internal_1_1_value_1_1_string_value" kindref="compound">StringValue</ref>&lt; unsigned char &gt;</type>
+        <definition>StringValue&lt;unsigned char&gt; fmt::internal::Value::ustring</definition>
+        <argsstring></argsstring>
+        <name>ustring</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1021" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1021" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_value_1a2add0d3534ad850a089ba4ed0f60b9d8" prot="public" static="no" mutable="no">
+        <type><ref refid="structfmt_1_1internal_1_1_value_1_1_string_value" kindref="compound">StringValue</ref>&lt; wchar_t &gt;</type>
+        <definition>StringValue&lt;wchar_t&gt; fmt::internal::Value::wstring</definition>
+        <argsstring></argsstring>
+        <name>wstring</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1022" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1022" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1_arg_visitor_1a19a979776fc789baaf038ab216e245bb" compoundref="format_8h" startline="1551" endline="1585">fmt::ArgVisitor&lt; ArgConverter&lt; T &gt;, void &gt;::visit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_value_1a2dcff1e0ac8f7fb7fc6dd448d66978cf" prot="public" static="no" mutable="no">
+        <type><ref refid="structfmt_1_1internal_1_1_value_1_1_custom_value" kindref="compound">CustomValue</ref></type>
+        <definition>CustomValue fmt::internal::Value::custom</definition>
+        <argsstring></argsstring>
+        <name>custom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1023" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1023" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1_arg_visitor_1a19a979776fc789baaf038ab216e245bb" compoundref="format_8h" startline="1551" endline="1585">fmt::ArgVisitor&lt; ArgConverter&lt; T &gt;, void &gt;::visit</referencedby>
+        <referencedby refid="structfmt_1_1internal_1_1_arg_array_3_01_n_00_01true_01_4_1a3977c938e1ca5c4c5aedccd85561a76d" compoundref="format_8h" startline="2113" endline="2123">fmt::internal::ArgArray&lt; N, true &gt;::make</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ab436d449f9a0678badb672af2a8ecb32" compoundref="format_8h" startline="3564" endline="3731">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_value_1a6c7191f6381b0c37b6cb7b73a257d4a1" prot="public" static="no" mutable="no">
+        <type>union fmt::internal::Value::@2</type>
+        <definition>union fmt::internal::Value::@2 fmt::internal::Value::@3</definition>
+        <argsstring></argsstring>
+        <name>@3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1024" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2033">
+        <label>fmt::internal::Value</label>
+        <link refid="structfmt_1_1internal_1_1_value"/>
+      </node>
+      <node id="2034">
+        <label>fmt::internal::Arg</label>
+        <link refid="structfmt_1_1internal_1_1_arg"/>
+        <childnode refid="2033" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2035">
+        <label>fmt::internal::MakeArg&lt; Formatter &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_make_arg"/>
+        <childnode refid="2034" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2037">
+        <label>fmt::internal::NamedArg&lt; Char &gt;</label>
+        <link refid="structfmt_1_1internal_1_1_named_arg"/>
+        <childnode refid="2034" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2036">
+        <label>fmt::internal::MakeValue&lt; Formatter &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_make_value"/>
+        <childnode refid="2034" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2038">
+        <label>fmt::internal::Value</label>
+        <link refid="structfmt_1_1internal_1_1_value"/>
+        <childnode refid="2039" relation="usage">
+          <edgelabel>+custom</edgelabel>
+        </childnode>
+      </node>
+      <node id="2039">
+        <label>fmt::internal::Value::CustomValue</label>
+        <link refid="structfmt_1_1internal_1_1_value_1_1_custom_value"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="996" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="996" bodyend="1034"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa90eda0110259ca26e06430e5f7d7f36b" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>BOOL</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa4000e36300596c89b956b964a23114e0" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>CHAR</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaae36ce7cc208b872c5c43ccb2ae8795a2" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>CSTRING</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaaeaa06f45cc1a466b789ae71d6d06d1b0" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>CUSTOM</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a2dcff1e0ac8f7fb7fc6dd448d66978cf" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>custom</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa61e214d7127ba18d3b0d7b4c0d5f09aa" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>DOUBLE</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1afe6725f2c3ad8fce5867f824c1fa8cc8" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>double_value</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a1bdc8aa6f70614fbb514aaa56106c669" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>FormatFunc</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa6ab1b5ad31036f4c90bae16e873b3396" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>INT</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1ac295b81747c26b97893be505a03381c8" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>int_value</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa1cc1a5881e640c0009f58a05b653d535" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>LAST_INTEGER_TYPE</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaad9dbf0826103ba0fed6466a53bb0421b" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>LAST_NUMERIC_TYPE</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa6578a997089147df95c66231c936c43c" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>LONG_DOUBLE</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a7adfb34f6e0b12676681de8a6597ed17" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>long_double_value</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa7674f34a96c22fec85d9f27d082b4412" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>LONG_LONG</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a1dab8b1df1f88c35b6893d63b1b72af8" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>long_long_value</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaaa9af5928e9c0951d7d4f644bc3cae639" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>NAMED_ARG</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa24ae26361d60b04790c06fffecaa7eda" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>NONE</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaaaaa373dcb5378f0ec6cd6e4dc59a8cfb" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>POINTER</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a3627bcfa0a5bcb7e48f6fc632243b17d" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>pointer</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a4bedea17bc9ddfe00bcd7bf0ee086c66" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>sstring</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa167cb315c368dd357a390431477ea049" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>STRING</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a98e3f2f8c44a6d6d4606646e5ef62e0a" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>string</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaa" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>Type</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaac7303224391053ae45d4ff13ad0f017c" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>UINT</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a9ced917767812c9572065509f22bec18" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>uint_value</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaa8c2ffe6909d26d46781aa6fb9b8ae418" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>ULONG_LONG</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a78424f46c0150190010e5c27ec3c69a0" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>ulong_long_value</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1ae89a416df861650100b0bfc207e19204" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>ustring</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a2add0d3534ad850a089ba4ed0f60b9d8" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>wstring</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1a0305339d0a9571e14e26f385367fedaaae94c5eaf7d9283c167bd88765c18b82c" prot="public" virt="non-virtual"><scope>fmt::internal::Value</scope><name>WSTRING</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

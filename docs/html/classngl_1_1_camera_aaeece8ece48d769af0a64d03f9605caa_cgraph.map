@@ -1,0 +1,6 @@
+<map id="ngl::Camera::setViewMatrix" name="ngl::Camera::setViewMatrix">
+<area shape="rect" id="node2" href="$classngl_1_1_camera.html#a6bb1f023865029e3b4e28e99a6bd00d2" title="calculate the frustum for clipping etc " alt="" coords="241,31,445,57"/>
+<area shape="rect" id="node5" href="$classngl_1_1_vec4.html#aec298a908339ba25e4a30856a2fa7bf0" title="return this dotted with _b " alt="" coords="291,81,395,108"/>
+<area shape="rect" id="node3" href="$namespacengl.html#a0bade03a2edcb08a49da7731394284fe" title="converts Degrees to Radians " alt="" coords="512,5,603,32"/>
+<area shape="rect" id="node4" href="$classngl_1_1_vec4.html#a4eb5f6ead61e1ad2f06887b23a94384a" title="get as a Vec3 for glsl etc " alt="" coords="494,56,621,83"/>
+</map>

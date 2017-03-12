@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classngl_1_1_face" kind="class" language="C++" prot="public">
+    <compoundname>ngl::Face</compoundname>
+    <includes refid="_abstract_mesh_8h" local="no">AbstractMesh.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classngl_1_1_face_1a1f631fd5e14f40f6918f04e5138516e1" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>unsigned int ngl::Face::m_numVerts</definition>
+        <argsstring></argsstring>
+        <name>m_numVerts</name>
+        <briefdescription>
+<para>the number of vertices in the face </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="48" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_obj_1a02c9578871d7687522a93f27d729078c" compoundref="_obj_8cpp" startline="94" endline="174">ngl::Obj::parseFace</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_face_1a5f36fac982c23b1bac50d1b711415291" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref> &gt;</type>
+        <definition>std::vector&lt;uint32_t&gt; ngl::Face::m_vert</definition>
+        <argsstring></argsstring>
+        <name>m_vert</name>
+        <briefdescription>
+<para>The vertices index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="52" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_obj_1a02c9578871d7687522a93f27d729078c" compoundref="_obj_8cpp" startline="94" endline="174">ngl::Obj::parseFace</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_face_1ab35ab22aa9d56f1420eee0ae718c75db" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref> &gt;</type>
+        <definition>std::vector&lt;uint32_t&gt; ngl::Face::m_tex</definition>
+        <argsstring></argsstring>
+        <name>m_tex</name>
+        <briefdescription>
+<para>The texture co-ord index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="56" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aff2a129e2f6d384e59932cf21fde624f" compoundref="_abstract_mesh_8h" startline="220" endline="220">ngl::AbstractMesh::getTextureCordList</referencedby>
+        <referencedby refid="classngl_1_1_obj_1a02c9578871d7687522a93f27d729078c" compoundref="_obj_8cpp" startline="94" endline="174">ngl::Obj::parseFace</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_face_1ac8eac320a04d818c87997b8dd0737e73" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref> &gt;</type>
+        <definition>std::vector&lt;uint32_t&gt; ngl::Face::m_norm</definition>
+        <argsstring></argsstring>
+        <name>m_norm</name>
+        <briefdescription>
+<para>the normal index </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="60" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a7d9ae4e1116ba2e26cc9ca0db543c4e1" compoundref="_abstract_mesh_8h" startline="215" endline="215">ngl::AbstractMesh::getNormalList</referencedby>
+        <referencedby refid="classngl_1_1_obj_1a02c9578871d7687522a93f27d729078c" compoundref="_obj_8cpp" startline="94" endline="174">ngl::Obj::parseFace</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_face_1a4e732b36e1c00178cbc1b49d119d9ecf" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ngl::Face::m_textureCoord</definition>
+        <argsstring></argsstring>
+        <name>m_textureCoord</name>
+        <briefdescription>
+<para>debug flag to turn face on and off </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="64" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_obj_1a02c9578871d7687522a93f27d729078c" compoundref="_obj_8cpp" startline="94" endline="174">ngl::Obj::parseFace</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_face_1a545775cb6a0c8922a6f0b0f17ac937e7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ngl::Face::m_normals</definition>
+        <argsstring></argsstring>
+        <name>m_normals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="65" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_obj_1a02c9578871d7687522a93f27d729078c" compoundref="_obj_8cpp" startline="94" endline="174">ngl::Obj::parseFace</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>simple class used to encapsulate a single face of an abstract mesh file </para>    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="todo_1_todo000010"><xreftitle>Todo</xreftitle><xrefdescription><para>add the ability to have user installable attribute lists </para></xrefdescription></xrefsect></para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1468">
+        <label>ngl::Face</label>
+        <link refid="classngl_1_1_face"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="43" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="42" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classngl_1_1_face_1ac8eac320a04d818c87997b8dd0737e73" prot="public" virt="non-virtual"><scope>ngl::Face</scope><name>m_norm</name></member>
+      <member refid="classngl_1_1_face_1a545775cb6a0c8922a6f0b0f17ac937e7" prot="public" virt="non-virtual"><scope>ngl::Face</scope><name>m_normals</name></member>
+      <member refid="classngl_1_1_face_1a1f631fd5e14f40f6918f04e5138516e1" prot="public" virt="non-virtual"><scope>ngl::Face</scope><name>m_numVerts</name></member>
+      <member refid="classngl_1_1_face_1ab35ab22aa9d56f1420eee0ae718c75db" prot="public" virt="non-virtual"><scope>ngl::Face</scope><name>m_tex</name></member>
+      <member refid="classngl_1_1_face_1a4e732b36e1c00178cbc1b49d119d9ecf" prot="public" virt="non-virtual"><scope>ngl::Face</scope><name>m_textureCoord</name></member>
+      <member refid="classngl_1_1_face_1a5f36fac982c23b1bac50d1b711415291" prot="public" virt="non-virtual"><scope>ngl::Face</scope><name>m_vert</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

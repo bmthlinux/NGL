@@ -1,0 +1,8 @@
+<map id="ngl::NCCAPointBake::NCCAPointBake" name="ngl::NCCAPointBake::NCCAPointBake">
+<area shape="rect" id="node2" href="$classngl_1_1_n_c_c_a_point_bake.html#ab78610a7787f4864f9e4d69281d63d84" title="method to load a point baked file " alt="" coords="201,129,346,170"/>
+<area shape="rect" id="node3" href="$classrapidxml_1_1xml__document.html#ac6e73ff9ac323bf5a370c38feb03a6b1" title="rapidxml::xml_document\l::parse" alt="" coords="395,5,562,46"/>
+<area shape="rect" id="node4" href="$classrapidxml_1_1xml__node.html#a2dedeb4e04bb35e06a9a7bddf6ba652d" title="rapidxml::xml_node\l::first_node" alt="" coords="410,70,547,111"/>
+<area shape="rect" id="node5" href="$classrapidxml_1_1xml__node.html#ac59af4dd5f0ec715753e42467dff6aed" title="rapidxml::xml_node\l::next_sibling" alt="" coords="611,99,749,141"/>
+<area shape="rect" id="node6" href="$classrapidxml_1_1xml__base.html#adcdaccff61c665f039d9344e447b7445" title="rapidxml::xml_base\l::value" alt="" coords="410,187,547,229"/>
+<area shape="rect" id="node7" href="$classrapidxml_1_1xml__node.html#ae426802be58114ffc41bf30ac6b8c37d" title="rapidxml::xml_node\l::first_attribute" alt="" coords="410,253,547,294"/>
+</map>

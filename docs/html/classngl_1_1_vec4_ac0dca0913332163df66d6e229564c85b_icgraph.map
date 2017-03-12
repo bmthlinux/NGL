@@ -1,0 +1,11 @@
+<map id="ngl::Vec4::normalize" name="ngl::Vec4::normalize">
+<area shape="rect" id="node2" href="$classngl_1_1_camera.html#a8df00f3c9e422b7b5de6883c1b132bf8" title="set the Camera position using eye look and up vectors " alt="" coords="273,5,393,32"/>
+<area shape="rect" id="node3" href="$classngl_1_1_camera.html#a4730ce617d2898ce7b491e3a3febc1b1" title="move both the eye and the look at the same time " alt="" coords="252,56,415,83"/>
+<area shape="rect" id="node4" href="$classngl_1_1_camera.html#aac0efd484c76402e525cb6b7d666bfe2" title="move the eye position " alt="" coords="255,107,412,133"/>
+<area shape="rect" id="node5" href="$classngl_1_1_camera.html#a1e94e9df4db1c19131b188ca9b7a5f3c" title="move the look position " alt="" coords="251,157,415,184"/>
+<area shape="rect" id="node6" href="$classngl_1_1_path_camera.html#a2382bb33b09521e9a31caa8eadc28997" title="update the camera by incrementing the step value and re&#45;calculating the tx matrix ..." alt="" coords="248,208,419,235"/>
+<area shape="rect" id="node7" href="$classngl_1_1_path_camera.html#a5fdf9c69645596935d5fa53f8a9177ad" title="update the camera by incrementing the step value and re&#45;calculating the tx matrix if the camera is at..." alt="" coords="226,259,441,285"/>
+<area shape="rect" id="node8" href="$classngl_1_1_random.html#a92774596542531f568dd7a9057cdb160" title="get a random vector with componets ranged from +/&#45; 1 and Normalized " alt="" coords="197,309,469,336"/>
+<area shape="rect" id="node9" href="$classngl_1_1_spot_light.html#a079e623ca4f15c02b859e49c29beec46" title="This function sets the light to aim at the specified point. " alt="" coords="267,360,399,387"/>
+<area shape="rect" id="node10" href="$classngl_1_1_vec4.html#aaff03072889c7d6ef48926967dca302f" title="calculate the angle between current vector and _v " alt="" coords="249,411,418,437"/>
+</map>

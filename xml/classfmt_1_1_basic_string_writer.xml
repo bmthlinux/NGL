@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classfmt_1_1_basic_string_writer" kind="class" language="C++" prot="public">
+    <compoundname>fmt::BasicStringWriter</compoundname>
+    <basecompoundref refid="classfmt_1_1_basic_writer" prot="public" virt="non-virtual">fmt::BasicWriter&lt; Char &gt;</basecompoundref>
+    <includes refid="string_8h" local="no">string.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Char</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfmt_1_1_basic_string_writer_1ae05f01b2206a436fe445c980c4894e03" prot="private" static="no" mutable="no">
+        <type><ref refid="classfmt_1_1internal_1_1_string_buffer" kindref="compound">internal::StringBuffer</ref>&lt; Char &gt;</type>
+        <definition>internal::StringBuffer&lt;Char&gt; fmt::BasicStringWriter&lt; Char &gt;::buffer_</definition>
+        <argsstring></argsstring>
+        <name>buffer_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/string.h" line="77" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/string.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfmt_1_1_basic_string_writer_1a7dd722d6571cf3813b47662b3e3b9324" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fmt::BasicStringWriter&lt; Char &gt;::BasicStringWriter</definition>
+        <argsstring>()</argsstring>
+        <name>BasicStringWriter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs a :class:<computeroutput><ref refid="classfmt_1_1_basic_string_writer" kindref="compound">fmt::BasicStringWriter</ref></computeroutput> object.  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/string.h" line="85" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/string.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1_basic_string_writer_1aacbc88a87e32dd5b70208bce734aa05a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::BasicStringWriter&lt; Char &gt;::move_to</definition>
+        <argsstring>(std::basic_string&lt; Char &gt; &amp;str)</argsstring>
+        <name>move_to</name>
+        <param>
+          <type>std::basic_string&lt; Char &gt; &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Moves the buffer content to <emphasis>str</emphasis> clearing the buffer.  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/string.h" line="92" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/string.h" bodystart="92" bodyend="94"/>
+        <references refid="classfmt_1_1internal_1_1_string_buffer_1a015b27f346306a25cbfd6c8305bccc46" compoundref="string_8h" startline="34" endline="39">fmt::internal::StringBuffer&lt; Char &gt;::move_to</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class template provides operations for formatting and writing data into a character stream. The output is stored in <computeroutput>std::string</computeroutput> that grows dynamically.</para><para>You can use one of the following typedefs for common character types and the standard allocator:</para><para>+------------<mdash/>+-------------------------<mdash/>+ | Type | Definition | +===============+============================+ | StringWriter | BasicStringWriter&lt;char&gt; | +------------<mdash/>+-------------------------<mdash/>+ | WStringWriter | BasicStringWriter&lt;wchar_t&gt; | +------------<mdash/>+-------------------------<mdash/>+</para><para>Example**::</para><para>StringWriter out; out &lt;&lt; &quot;The answer is &quot; &lt;&lt; 42 &lt;&lt; &quot;\n&quot;;</para><para>This will write the following output to the <computeroutput>out</computeroutput> object:</para><para>.. code-block:: none</para><para>The answer is 42</para><para>The output can be moved to an <computeroutput>std::string</computeroutput> with <computeroutput>out.move_to()</computeroutput>.  </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1312">
+        <label>fmt::BasicStringWriter&lt; Char &gt;</label>
+        <link refid="classfmt_1_1_basic_string_writer"/>
+        <childnode refid="1313" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1313">
+        <label>fmt::BasicWriter&lt; Char &gt;</label>
+        <link refid="classfmt_1_1_basic_writer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1317">
+        <label>size_t</label>
+      </node>
+      <node id="1319">
+        <label>T</label>
+      </node>
+      <node id="1316">
+        <label>fmt::Buffer&lt; Char &gt;</label>
+        <link refid="classfmt_1_1_buffer"/>
+        <childnode refid="1317" relation="usage">
+          <edgelabel>#size_</edgelabel>
+          <edgelabel>#capacity_</edgelabel>
+        </childnode>
+        <childnode refid="1318" relation="template-instance">
+          <edgelabel>&lt; Char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1318">
+        <label>fmt::Buffer&lt; T &gt;</label>
+        <link refid="classfmt_1_1_buffer"/>
+        <childnode refid="1317" relation="usage">
+          <edgelabel>#size_</edgelabel>
+          <edgelabel>#capacity_</edgelabel>
+        </childnode>
+        <childnode refid="1319" relation="usage">
+          <edgelabel>#ptr_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1314">
+        <label>fmt::BasicStringWriter&lt; Char &gt;</label>
+        <link refid="classfmt_1_1_basic_string_writer"/>
+        <childnode refid="1315" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1315">
+        <label>fmt::BasicWriter&lt; Char &gt;</label>
+        <link refid="classfmt_1_1_basic_writer"/>
+        <childnode refid="1316" relation="usage">
+          <edgelabel>-buffer_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/string.h" line="75" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/string.h" bodystart="75" bodyend="95"/>
+    <listofallmembers>
+      <member refid="classfmt_1_1_basic_string_writer_1a7dd722d6571cf3813b47662b3e3b9324" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>BasicStringWriter</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a586c21bbbd38149bcf48fc30376afc9c" prot="protected" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>BasicWriter</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a9b2a71d2ec402005fca013111bb576cb" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>buffer</name></member>
+      <member refid="classfmt_1_1_basic_string_writer_1ae05f01b2206a436fe445c980c4894e03" prot="private" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>buffer_</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a8b68001f5c1c0ea851ddaef27dcbc691" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>c_str</name></member>
+      <member refid="classfmt_1_1_basic_writer_1aa5b6f4dd01854cbc3ebf06a7f2fce713" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>clear</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a62d1c7b5be9c3580326320d5d178d096" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>data</name></member>
+      <member refid="classfmt_1_1_basic_string_writer_1aacbc88a87e32dd5b70208bce734aa05a" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>move_to</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a3d21148f336a76a71b39abb2fd6c0f88" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a7ec4d6fb4cf9173b14d4ee100fd4a428" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a1fd4183e01fd56ec99af40431b32561b" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a4e0ef5415eb162ec991b69b930245094" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a2c876284b0b3b7f36cc0354e3348912a" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classfmt_1_1_basic_writer_1afb01c45f06b2c13027343b74ce973a40" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classfmt_1_1_basic_writer_1afa435e67e3db3d214f0272b10c0a3878" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a90215ced4a6a9fcd5065f1ffd4105a4b" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a4c7d6b3a40b4083f351de3f9ee0b3818" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a83967e3236b090ba035d5fc04317f4ed" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a5f07d053b9f215b548ba3623e7a09212" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classfmt_1_1_basic_writer_1ac0483272173279436f3d47f49894cafb" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a45ded4f76427103f3c189855be8c5d46" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a79c23ed8ee17ee205ece04571f0dd79b" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a1b6721b4ba4d3fa18ac781a36616cc2a" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>size</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a91f06ced6e063ee77a99740e0e79faf6" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>str</name></member>
+      <member refid="classfmt_1_1_basic_writer_1aaa83498c649d4a90ea3366bae62f4eac" prot="public" virt="non-virtual"><scope>fmt::BasicStringWriter</scope><name>write</name></member>
+      <member refid="classfmt_1_1_basic_writer_1a25f6fc2e43d3bcfb3de9ac33afe6050d" prot="public" virt="virtual"><scope>fmt::BasicStringWriter</scope><name>~BasicWriter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

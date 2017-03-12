@@ -1,0 +1,12 @@
+<map id="fmt::PrintfFormatter::format" name="fmt::PrintfFormatter::format">
+<area shape="rect" id="node2" href="$namespacefmt.html#a4649a895b3f769fe24b268e39a8cf152" title="fmt::arg" alt="" coords="233,5,300,32"/>
+<area shape="rect" id="node3" href="$classfmt_1_1_basic_c_string_ref.html#ae3bafa845b53339b20c4f5edb4f635f9" title="fmt::BasicCStringRef\l::c_str" alt="" coords="194,57,339,98"/>
+<area shape="rect" id="node4" href="$structfmt_1_1_format_spec.html#a2ee0e9bf9979641418a8b30b4e7740f2" title="fmt::FormatSpec::flag" alt="" coords="192,123,341,149"/>
+<area shape="rect" id="node5" href="$namespacefmt_1_1internal.html#a20352082f5ee17703e71a37e30c6ddaf" title="fmt::internal::parse\l_nonnegative_int" alt="" coords="201,174,333,215"/>
+<area shape="rect" id="node6" href="$classfmt_1_1_arg_visitor.html#a19a979776fc789baaf038ab216e245bb" title="fmt::ArgVisitor::visit" alt="" coords="199,240,335,267"/>
+<area shape="rect" id="node7" href="$namespacefmt_1_1internal.html#a7c721969e9660580a237bd4130422ab6" title="fmt::internal::write" alt="" coords="203,291,330,317"/>
+<area shape="rect" id="node8" href="$classfmt_1_1_basic_writer.html#a62d1c7b5be9c3580326320d5d178d096" title="fmt::BasicWriter::data" alt="" coords="401,240,551,267"/>
+<area shape="rect" id="node9" href="$classfmt_1_1_basic_writer.html#a1b6721b4ba4d3fa18ac781a36616cc2a" title="fmt::BasicWriter::size" alt="" coords="403,291,549,317"/>
+<area shape="rect" id="node11" href="$namespacefmt_1_1internal.html#a28bed1291226be35437bc3173c19c205" title="fmt::internal::to_unsigned" alt="" coords="390,341,562,368"/>
+<area shape="rect" id="node10" href="$classfmt_1_1_buffer.html#a14fa72f0ddf584c14ffffb1446f598aa" title="fmt::Buffer::size" alt="" coords="611,291,725,317"/>
+</map>

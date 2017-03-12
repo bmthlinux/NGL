@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_random_8h" kind="file" language="C++">
+    <compoundname>Random.h</compoundname>
+    <includes refid="_colour_8h" local="yes">Colour.h</includes>
+    <includes refid="_singleton_8h" local="yes">Singleton.h</includes>
+    <includes refid="_vec4_8h" local="yes">Vec4.h</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">random</includes>
+    <includedby refid="_random_8cpp" local="yes">Random.cpp</includedby>
+    <incdepgraph>
+      <node id="5653">
+        <label>Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="5654" relation="include">
+        </childnode>
+        <childnode refid="5660" relation="include">
+        </childnode>
+        <childnode refid="5661" relation="include">
+        </childnode>
+        <childnode refid="5662" relation="include">
+        </childnode>
+      </node>
+      <node id="5662">
+        <label>QGLContext</label>
+      </node>
+      <node id="5668">
+        <label>Vec3.h</label>
+        <link refid="_vec3_8h"/>
+        <childnode refid="5653" relation="include">
+        </childnode>
+        <childnode refid="5667" relation="include">
+        </childnode>
+      </node>
+      <node id="5656">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="5657" relation="include">
+        </childnode>
+        <childnode refid="5658" relation="include">
+        </childnode>
+      </node>
+      <node id="5655">
+        <label>stddef.h</label>
+      </node>
+      <node id="5654">
+        <label>glew.h</label>
+        <link refid="glew_8h"/>
+        <childnode refid="5655" relation="include">
+        </childnode>
+        <childnode refid="5656" relation="include">
+        </childnode>
+        <childnode refid="5659" relation="include">
+        </childnode>
+      </node>
+      <node id="5659">
+        <label>GL/glu.h</label>
+      </node>
+      <node id="5657">
+        <label>limits.h</label>
+      </node>
+      <node id="5651">
+        <label>Random.h</label>
+        <link refid="Random.h"/>
+        <childnode refid="5652" relation="include">
+        </childnode>
+        <childnode refid="5663" relation="include">
+        </childnode>
+        <childnode refid="5665" relation="include">
+        </childnode>
+        <childnode refid="5669" relation="include">
+        </childnode>
+        <childnode refid="5670" relation="include">
+        </childnode>
+      </node>
+      <node id="5665">
+        <label>Vec4.h</label>
+        <link refid="_vec4_8h"/>
+        <childnode refid="5653" relation="include">
+        </childnode>
+        <childnode refid="5666" relation="include">
+        </childnode>
+        <childnode refid="5668" relation="include">
+        </childnode>
+        <childnode refid="5667" relation="include">
+        </childnode>
+      </node>
+      <node id="5670">
+        <label>random</label>
+      </node>
+      <node id="5658">
+        <label>wchar.h</label>
+      </node>
+      <node id="5652">
+        <label>Colour.h</label>
+        <link refid="_colour_8h"/>
+        <childnode refid="5653" relation="include">
+        </childnode>
+      </node>
+      <node id="5667">
+        <label>array</label>
+      </node>
+      <node id="5661">
+        <label>QtOpenGL/QGLContext</label>
+      </node>
+      <node id="5664">
+        <label>cstdlib</label>
+      </node>
+      <node id="5663">
+        <label>Singleton.h</label>
+        <link refid="_singleton_8h"/>
+        <childnode refid="5653" relation="include">
+        </childnode>
+        <childnode refid="5664" relation="include">
+        </childnode>
+      </node>
+      <node id="5669">
+        <label>unordered_map</label>
+      </node>
+      <node id="5660">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="5666">
+        <label>Vec2.h</label>
+        <link refid="_vec2_8h"/>
+        <childnode refid="5653" relation="include">
+        </childnode>
+        <childnode refid="5667" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5672">
+        <label>Random.cpp</label>
+        <link refid="_random_8cpp"/>
+      </node>
+      <node id="5671">
+        <label>Random.h</label>
+        <link refid="Random.h"/>
+        <childnode refid="5672" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classngl_1_1_random" prot="public">ngl::Random</innerclass>
+    <innernamespace refid="namespacengl">ngl</innernamespace>
+    <briefdescription>
+<para>an encapsulation of the std::random classes </para>    </briefdescription>
+    <detaileddescription>
+<para>Copyright (C) 2010 Jon Macey</para><para>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</para><para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</para><para>You should have received a copy of the GNU General Public License along with this program. If not, see <ulink url="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</ulink>. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="17"><highlight class="preprocessor">#ifndef<sp/>RANDOM_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RANDOM_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>must<sp/>include<sp/>types.h<sp/>first<sp/>for<sp/>Real<sp/>and<sp/>GLEW<sp/>if<sp/>required</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_colour_8h" kindref="compound">Colour.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_singleton_8h" kindref="compound">Singleton.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vec4_8h" kindref="compound">Vec4.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;random&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacengl" kindref="compound">ngl</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="namespacengl_1ac8f94aebd98f136700074f9d46168a78" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum<sp/><sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacengl_1ac8f94aebd98f136700074f9d46168a78" kindref="member">RANDDIST</ref>{<sp/><ref refid="namespacengl_1ac8f94aebd98f136700074f9d46168a78acc6561d8e69ee9e9f0bb25b493471421" kindref="member">uniform_smallint</ref>,<ref refid="namespacengl_1ac8f94aebd98f136700074f9d46168a78a6af6f90707520cfc0dd68983281ab83a" kindref="member">uniform_int</ref>,<ref refid="namespacengl_1ac8f94aebd98f136700074f9d46168a78a8d51c7745243b03fb337fdee16febb15" kindref="member">uniform_real</ref></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<ref refid="namespacengl_1ac8f94aebd98f136700074f9d46168a78aec905d870179c053ea62e15830543d91" kindref="member">bernoulli_distribution</ref>,<ref refid="namespacengl_1ac8f94aebd98f136700074f9d46168a78a78b10d233b007184c96f47333b626f0e" kindref="member">binomial_distribution</ref>,<ref refid="namespacengl_1ac8f94aebd98f136700074f9d46168a78ac4a54b644bafd097fde288b3f0acbd37" kindref="member">cauchy_distribution</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<ref refid="namespacengl_1ac8f94aebd98f136700074f9d46168a78a0b4fa0ff928534c4791efefc9dd47829" kindref="member">gamma_distribution</ref>,<ref refid="namespacengl_1ac8f94aebd98f136700074f9d46168a78a262ec6a03a7dd3dc89c24d6f1ce39388" kindref="member">poisson_distribution</ref>,<ref refid="namespacengl_1ac8f94aebd98f136700074f9d46168a78a30556143ebcc1893609711dfa282635a" kindref="member">geometric_distribution</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<ref refid="namespacengl_1ac8f94aebd98f136700074f9d46168a78a4267d20a3c5c163fb8561f28612cfaa3" kindref="member">triangle_distribution</ref>,<ref refid="namespacengl_1ac8f94aebd98f136700074f9d46168a78a01bf04dbd7d91e7534a45843f5839dbb" kindref="member">exponential_distribution</ref>,<ref refid="namespacengl_1ac8f94aebd98f136700074f9d46168a78a150480004913d6b1ca4e31d693bb72ec" kindref="member">normal_distribution</ref></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<ref refid="namespacengl_1ac8f94aebd98f136700074f9d46168a78a9ad46085748df00f0588cae64b2c246f" kindref="member">lognormal_distribution</ref><sp/>};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"></highlight></codeline>
+<codeline lineno="58"></codeline>
+<codeline lineno="62"><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classngl_1_1_random" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" kindref="member">NGL_DLLEXPORT</ref><sp/><ref refid="classngl_1_1_random" kindref="compound">Random</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_singleton" kindref="compound">Singleton</ref>&lt;Random&gt;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="classngl_1_1_random_1ad4ba9c502cc704e19f4c21eca8f8ab58" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classngl_1_1_singleton" kindref="compound">Singleton</ref>&lt;<ref refid="classngl_1_1_random" kindref="compound">Random</ref>&gt;;</highlight></codeline>
+<codeline lineno="72" refid="classngl_1_1_random_1ad81f3395aa6851cd578aba895c88a84c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref>;</highlight></codeline>
+<codeline lineno="73" refid="classngl_1_1_random_1ab7e1a25dc5d4fb2a27a441ad09a7b64d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setSeed();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setSeed(<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_value<sp/>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>getFloatFromGeneratorName(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>&amp;_name);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref><sp/>getRandomColour();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref><sp/>getRandomColourAndAlpha();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref><sp/>getRandomVec4();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref><sp/>getRandomNormalizedVec4();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/>getRandomVec3();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/>getRandomNormalizedVec3();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/>getRandomVec2();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/>getRandomNormalizedVec2();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/>getRandomPoint(<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_xRange=1.0,<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_yRange=1.0,<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_zRange=1.0<sp/>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>randomNumber(<ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_mult=1);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>randomPositiveNumber(<sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_mult=1<sp/><sp/>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"><sp/><sp/>//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="156"><highlight class="comment"><sp/><sp/>//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/><sp/>void<sp/>addGenerator(<sp/>const<sp/>std::string<sp/>&amp;_name,<sp/>RANDDIST<sp/>_distribution,<sp/>Real<sp/>_min=0.0,<sp/>Real<sp/>_max=1.0,Real<sp/>_prob=0.5);</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" refkind="member"><highlight class="normal"><sp/><sp/>std::mt19937<sp/><ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="171"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_random" kindref="compound">Random</ref>();</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="177"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" refkind="member"><highlight class="normal"><sp/><sp/>std::unordered_map&lt;std::string,<sp/>std::uniform_real_distribution&lt;Real&gt;<sp/>&gt;<sp/><ref refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" kindref="member">m_floatGenerators</ref>;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight><highlight class="comment">//<sp/>end<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/include/ngl/Random.h"/>
+  </compounddef>
+</doxygen>

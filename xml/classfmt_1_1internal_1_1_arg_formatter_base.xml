@@ -1,0 +1,464 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classfmt_1_1internal_1_1_arg_formatter_base" kind="class" language="C++" prot="public">
+    <compoundname>fmt::internal::ArgFormatterBase</compoundname>
+    <basecompoundref refid="classfmt_1_1_arg_visitor" prot="public" virt="non-virtual">fmt::ArgVisitor&lt; Impl, void &gt;</basecompoundref>
+    <derivedcompoundref refid="classfmt_1_1_basic_arg_formatter" prot="public" virt="non-virtual">fmt::BasicArgFormatter&lt; Impl, Char &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classfmt_1_1_basic_printf_arg_formatter" prot="public" virt="non-virtual">fmt::BasicPrintfArgFormatter&lt; Impl, Char &gt;</derivedcompoundref>
+    <includes refid="format_8h" local="no">format.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Impl</declname>
+        <defname>Impl</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>Char</declname>
+        <defname>Char</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfmt_1_1internal_1_1_arg_formatter_base_1ac0b9f643e8860821bbca0bf9ee14479b" prot="private" static="no" mutable="no">
+        <type><ref refid="classfmt_1_1_basic_writer" kindref="compound">BasicWriter</ref>&lt; Char &gt; &amp;</type>
+        <definition>BasicWriter&lt;Char&gt;&amp; fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;::writer_</definition>
+        <argsstring></argsstring>
+        <name>writer_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1837" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1837" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfmt_1_1internal_1_1_arg_formatter_base_1af6c494ea3a6bc2d54eebabc57a692908" prot="private" static="no" mutable="no">
+        <type><ref refid="structfmt_1_1_format_spec" kindref="compound">FormatSpec</ref> &amp;</type>
+        <definition>FormatSpec&amp; fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;::spec_</definition>
+        <argsstring></argsstring>
+        <name>spec_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1838" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1838" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_arg_formatter_base_1a17d82578adf1569612b54dcf9f2de7f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;::FMT_DISALLOW_COPY_AND_ASSIGN</definition>
+        <argsstring>(ArgFormatterBase)</argsstring>
+        <name>FMT_DISALLOW_COPY_AND_ASSIGN</name>
+        <param>
+          <type><ref refid="classfmt_1_1internal_1_1_arg_formatter_base" kindref="compound">ArgFormatterBase</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1840" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_arg_formatter_base_1a0f4c97899457f6263ae412f231330227" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;::write_pointer</definition>
+        <argsstring>(const void *p)</argsstring>
+        <name>write_pointer</name>
+        <param>
+          <type>const <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1842" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1842" bodyend="1846"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_arg_formatter_base_1a042c1243143197b04c5b4d77a89a4fb5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classfmt_1_1_basic_writer" kindref="compound">BasicWriter</ref>&lt; Char &gt; &amp;</type>
+        <definition>BasicWriter&lt;Char&gt;&amp; fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;::writer</definition>
+        <argsstring>()</argsstring>
+        <name>writer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1849" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1849" bodyend="1849"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_arg_formatter_base_1acdd3bb185f7b444a60faf98fa9806ed4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structfmt_1_1_format_spec" kindref="compound">FormatSpec</ref> &amp;</type>
+        <definition>FormatSpec&amp; fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;::spec</definition>
+        <argsstring>()</argsstring>
+        <name>spec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1850" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1850" bodyend="1850"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_arg_formatter_base_1a002d52aca6bc9a70d7eb62c037ffadc4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;::write</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>write</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1852" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1852" bodyend="1856"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_arg_formatter_base_1a1a706cd6067d51bfa07d5e6c577e0843" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;::write</definition>
+        <argsstring>(const char *value)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1858" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1858" bodyend="1861"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_arg_formatter_base_1a67f48acedb2ba3f243150c41f964252b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;::ArgFormatterBase</definition>
+        <argsstring>(BasicWriter&lt; Char &gt; &amp;w, FormatSpec &amp;s)</argsstring>
+        <name>ArgFormatterBase</name>
+        <param>
+          <type><ref refid="classfmt_1_1_basic_writer" kindref="compound">BasicWriter</ref>&lt; Char &gt; &amp;</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type><ref refid="structfmt_1_1_format_spec" kindref="compound">FormatSpec</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1864" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1864" bodyend="1865"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_arg_formatter_base_1ae6f9ce1fa7940ebda3ac594a45edd32d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;::visit_any_int</definition>
+        <argsstring>(T value)</argsstring>
+        <name>visit_any_int</name>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1868" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1868" bodyend="1868"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_arg_formatter_base_1a670214e1773c9c86002be07c043566dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;::visit_any_double</definition>
+        <argsstring>(T value)</argsstring>
+        <name>visit_any_double</name>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1871" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1871" bodyend="1871"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_arg_formatter_base_1a379b2f30d3e0526c88be65f8a2b596be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;::visit_bool</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>visit_bool</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1873" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1873" bodyend="1877"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_arg_formatter_base_1ab85eb2158c9d48c847706de26f35460c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;::visit_char</definition>
+        <argsstring>(int value)</argsstring>
+        <name>visit_char</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1879" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1879" bodyend="1907"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_arg_formatter_base_1a35e5c4d1580f7eec032661f9823c0cad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;::visit_cstring</definition>
+        <argsstring>(const char *value)</argsstring>
+        <name>visit_cstring</name>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1909" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1909" bodyend="1913"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_arg_formatter_base_1a937a7808ebf21736498e32abba6a0046" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;::visit_string</definition>
+        <argsstring>(Arg::StringValue&lt; char &gt; value)</argsstring>
+        <name>visit_string</name>
+        <param>
+          <type><ref refid="structfmt_1_1internal_1_1_value_1_1_string_value" kindref="compound">Arg::StringValue</ref>&lt; char &gt;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1915" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1915" bodyend="1917"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_arg_formatter_base_1ad3469bff1ffe51395d9f8f0e0824ff2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;::visit_wstring</definition>
+        <argsstring>(Arg::StringValue&lt; Char &gt; value)</argsstring>
+        <name>visit_wstring</name>
+        <param>
+          <type><ref refid="structfmt_1_1internal_1_1_value_1_1_string_value" kindref="compound">Arg::StringValue</ref>&lt; Char &gt;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1921" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1921" bodyend="1923"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_arg_formatter_base_1a5c11af21a3e1249b78ef87c968572ef5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;::visit_pointer</definition>
+        <argsstring>(const void *value)</argsstring>
+        <name>visit_pointer</name>
+        <param>
+          <type>const <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1925" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1925" bodyend="1929"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1160">
+        <label>fmt::BasicPrintfArgFormatter&lt; Impl, Char &gt;</label>
+        <link refid="classfmt_1_1_basic_printf_arg_formatter"/>
+        <childnode refid="1154" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1164">
+        <label>fmt::internal::ArgFormatterBase&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_arg_formatter_base"/>
+        <childnode refid="1154" relation="template-instance">
+          <edgelabel>&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1159">
+        <label>fmt::ArgFormatter&lt; Char &gt;</label>
+        <link refid="classfmt_1_1_arg_formatter"/>
+        <childnode refid="1158" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1154">
+        <label>fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_arg_formatter_base"/>
+        <childnode refid="1155" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1157">
+        <label>fmt::BasicArgFormatter&lt; Impl, Char &gt;</label>
+        <link refid="classfmt_1_1_basic_arg_formatter"/>
+        <childnode refid="1154" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1156">
+        <label>fmt::ArgVisitor&lt; Impl, Result &gt;</label>
+        <link refid="classfmt_1_1_arg_visitor"/>
+      </node>
+      <node id="1155">
+        <label>fmt::ArgVisitor&lt; Impl, void &gt;</label>
+        <link refid="classfmt_1_1_arg_visitor"/>
+        <childnode refid="1156" relation="template-instance">
+          <edgelabel>&lt; Impl, void &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1161">
+        <label>fmt::BasicPrintfArgFormatter&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;</label>
+        <link refid="classfmt_1_1_basic_printf_arg_formatter"/>
+        <childnode refid="1160" relation="template-instance">
+          <edgelabel>&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;</edgelabel>
+        </childnode>
+        <childnode refid="1164" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1162">
+        <label>fmt::PrintfArgFormatter&lt; Char &gt;</label>
+        <link refid="classfmt_1_1_printf_arg_formatter"/>
+        <childnode refid="1161" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1158">
+        <label>fmt::BasicArgFormatter&lt; ArgFormatter&lt; Char &gt;, Char &gt;</label>
+        <link refid="classfmt_1_1_basic_arg_formatter"/>
+        <childnode refid="1157" relation="template-instance">
+          <edgelabel>&lt; ArgFormatter&lt; Char &gt;, Char &gt;</edgelabel>
+        </childnode>
+        <childnode refid="1163" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1163">
+        <label>fmt::internal::ArgFormatterBase&lt; ArgFormatter&lt; Char &gt;, Char &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_arg_formatter_base"/>
+        <childnode refid="1154" relation="template-instance">
+          <edgelabel>&lt; ArgFormatter&lt; Char &gt;, Char &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1165">
+        <label>fmt::internal::ArgFormatterBase&lt; Impl, Char &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_arg_formatter_base"/>
+        <childnode refid="1166" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1168" relation="usage">
+          <edgelabel>-spec_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1170">
+        <label>fmt::WidthSpec</label>
+        <link refid="structfmt_1_1_width_spec"/>
+      </node>
+      <node id="1167">
+        <label>fmt::ArgVisitor&lt; Impl, Result &gt;</label>
+        <link refid="classfmt_1_1_arg_visitor"/>
+      </node>
+      <node id="1166">
+        <label>fmt::ArgVisitor&lt; Impl, void &gt;</label>
+        <link refid="classfmt_1_1_arg_visitor"/>
+        <childnode refid="1167" relation="template-instance">
+          <edgelabel>&lt; Impl, void &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1169">
+        <label>fmt::AlignSpec</label>
+        <link refid="structfmt_1_1_align_spec"/>
+        <childnode refid="1170" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1168">
+        <label>fmt::FormatSpec</label>
+        <link refid="structfmt_1_1_format_spec"/>
+        <childnode refid="1169" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1835" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1835" bodyend="1930"/>
+    <listofallmembers>
+      <member refid="classfmt_1_1internal_1_1_arg_formatter_base_1a67f48acedb2ba3f243150c41f964252b" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>ArgFormatterBase</name></member>
+      <member refid="classfmt_1_1internal_1_1_arg_formatter_base_1a17d82578adf1569612b54dcf9f2de7f0" prot="private" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>FMT_DISALLOW_COPY_AND_ASSIGN</name></member>
+      <member refid="classfmt_1_1_arg_visitor_1a130090f53213407548d93d8ee2801738" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>report_unhandled_arg</name></member>
+      <member refid="classfmt_1_1internal_1_1_arg_formatter_base_1acdd3bb185f7b444a60faf98fa9806ed4" prot="protected" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>spec</name></member>
+      <member refid="classfmt_1_1internal_1_1_arg_formatter_base_1af6c494ea3a6bc2d54eebabc57a692908" prot="private" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>spec_</name></member>
+      <member refid="classfmt_1_1_arg_visitor_1a19a979776fc789baaf038ab216e245bb" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>visit</name></member>
+      <member refid="classfmt_1_1internal_1_1_arg_formatter_base_1a670214e1773c9c86002be07c043566dd" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>visit_any_double</name></member>
+      <member refid="classfmt_1_1internal_1_1_arg_formatter_base_1ae6f9ce1fa7940ebda3ac594a45edd32d" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>visit_any_int</name></member>
+      <member refid="classfmt_1_1internal_1_1_arg_formatter_base_1a379b2f30d3e0526c88be65f8a2b596be" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>visit_bool</name></member>
+      <member refid="classfmt_1_1internal_1_1_arg_formatter_base_1ab85eb2158c9d48c847706de26f35460c" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>visit_char</name></member>
+      <member refid="classfmt_1_1internal_1_1_arg_formatter_base_1a35e5c4d1580f7eec032661f9823c0cad" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>visit_cstring</name></member>
+      <member refid="classfmt_1_1_arg_visitor_1a19a38c25e9c45f9c6a6674f7dfaf3759" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>visit_custom</name></member>
+      <member refid="classfmt_1_1_arg_visitor_1a2a7a4cbb1df7a8b3c310a607600773ae" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>visit_double</name></member>
+      <member refid="classfmt_1_1_arg_visitor_1ac6d79e3d931a9f56f40bca08f8651cdf" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>visit_int</name></member>
+      <member refid="classfmt_1_1_arg_visitor_1aa0b2e1792ff7e62d1a49a3118d3c10db" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>visit_long_double</name></member>
+      <member refid="classfmt_1_1_arg_visitor_1ab5687cccaae516d3e6e94775737ff798" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>visit_long_long</name></member>
+      <member refid="classfmt_1_1internal_1_1_arg_formatter_base_1a5c11af21a3e1249b78ef87c968572ef5" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>visit_pointer</name></member>
+      <member refid="classfmt_1_1internal_1_1_arg_formatter_base_1a937a7808ebf21736498e32abba6a0046" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>visit_string</name></member>
+      <member refid="classfmt_1_1_arg_visitor_1a51494a02bd4573280fc1cc6fc921f871" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>visit_uint</name></member>
+      <member refid="classfmt_1_1_arg_visitor_1ac4424926e9c138b3503039d91c18c087" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>visit_ulong_long</name></member>
+      <member refid="classfmt_1_1_arg_visitor_1a8de54a54b863eb63b5c45c4495c12793" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>visit_unhandled_arg</name></member>
+      <member refid="classfmt_1_1internal_1_1_arg_formatter_base_1ad3469bff1ffe51395d9f8f0e0824ff2c" prot="public" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>visit_wstring</name></member>
+      <member refid="classfmt_1_1_arg_visitor_1abd76337375076717e6089763dcfb1ad0" prot="public" virt="non-virtual" ambiguityscope="ArgVisitor&lt; Impl, void &gt;::"><scope>fmt::internal::ArgFormatterBase</scope><name>visit_wstring</name></member>
+      <member refid="classfmt_1_1internal_1_1_arg_formatter_base_1a002d52aca6bc9a70d7eb62c037ffadc4" prot="protected" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>write</name></member>
+      <member refid="classfmt_1_1internal_1_1_arg_formatter_base_1a1a706cd6067d51bfa07d5e6c577e0843" prot="protected" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>write</name></member>
+      <member refid="classfmt_1_1internal_1_1_arg_formatter_base_1a0f4c97899457f6263ae412f231330227" prot="private" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>write_pointer</name></member>
+      <member refid="classfmt_1_1internal_1_1_arg_formatter_base_1a042c1243143197b04c5b4d77a89a4fb5" prot="protected" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>writer</name></member>
+      <member refid="classfmt_1_1internal_1_1_arg_formatter_base_1ac0b9f643e8860821bbca0bf9ee14479b" prot="private" virt="non-virtual"><scope>fmt::internal::ArgFormatterBase</scope><name>writer_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

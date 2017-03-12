@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structfmt_1_1_width_spec" kind="struct" language="C++" prot="public">
+    <compoundname>fmt::WidthSpec</compoundname>
+    <derivedcompoundref refid="structfmt_1_1_align_spec" prot="public" virt="non-virtual">fmt::AlignSpec</derivedcompoundref>
+    <includes refid="format_8h" local="no">format.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfmt_1_1_width_spec_1a83fed5d5a674ea54a48feb6edef4c1c7" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned fmt::WidthSpec::width_</definition>
+        <argsstring></argsstring>
+        <name>width_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1614" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1614" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1internal_1_1_arg_formatter_base_1ab85eb2158c9d48c847706de26f35460c" compoundref="format_8h" startline="1879" endline="1907">fmt::internal::ArgFormatterBase&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;::visit_char</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ab436d449f9a0678badb672af2a8ecb32" compoundref="format_8h" startline="3564" endline="3731">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+        <referencedby refid="classfmt_1_1_basic_printf_arg_formatter_1a97f26086d50a4553280fbe831ef7e947" compoundref="printf_8h" startline="223" endline="243">fmt::BasicPrintfArgFormatter&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;::visit_char</referencedby>
+        <referencedby refid="classfmt_1_1_printf_formatter_1a847c4173cd8b0138fd066eb9b9d0877c" compoundref="printf_8h" startline="353" endline="384">fmt::PrintfFormatter&lt; Char, ArgFormatter &gt;::parse_header</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structfmt_1_1_width_spec_1ad1c9740afb2b05c4ac7b2d9fa9760891" prot="public" static="no" mutable="no">
+        <type>wchar_t</type>
+        <definition>wchar_t fmt::WidthSpec::fill_</definition>
+        <argsstring></argsstring>
+        <name>fill_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1617" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1617" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ab436d449f9a0678badb672af2a8ecb32" compoundref="format_8h" startline="3564" endline="3731">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+        <referencedby refid="classfmt_1_1_printf_formatter_1a9d091db6f48931782be245fcbb0da5c5" compoundref="printf_8h" startline="315" endline="338">fmt::PrintfFormatter&lt; Char, ArgFormatter &gt;::parse_flags</referencedby>
+        <referencedby refid="classfmt_1_1_printf_formatter_1a847c4173cd8b0138fd066eb9b9d0877c" compoundref="printf_8h" startline="353" endline="384">fmt::PrintfFormatter&lt; Char, ArgFormatter &gt;::parse_header</referencedby>
+        <referencedby refid="classfmt_1_1_printf_formatter_1a295c50e11b9a77720c8078f287040e5c" compoundref="printf_8h" startline="387" endline="484">fmt::PrintfFormatter&lt; Char, ArgFormatter &gt;::format</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structfmt_1_1_width_spec_1a483e63eb1ac98bbdaacc701be5f3cc82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fmt::WidthSpec::WidthSpec</definition>
+        <argsstring>(unsigned width, wchar_t fill)</argsstring>
+        <name>WidthSpec</name>
+        <param>
+          <type>unsigned</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>wchar_t</type>
+          <declname>fill</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1619" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1619" bodyend="1619"/>
+      </memberdef>
+      <memberdef kind="function" id="structfmt_1_1_width_spec_1ad6624ee681712f695f133ba2e9d9ce36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned fmt::WidthSpec::width</definition>
+        <argsstring>() const </argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1621" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1621" bodyend="1621"/>
+        <referencedby refid="classfmt_1_1_basic_writer_1aa6ef59115b07ef0ad53fd9bb73bc64ee" compoundref="format_8h" startline="2617" endline="2636">fmt::BasicWriter&lt; Char &gt;::write_str</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1aa69a013920916ccc74ca7ac5e971abe7" compoundref="format_8h" startline="2831" endline="2982">fmt::BasicWriter&lt; Char &gt;::write_double</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structfmt_1_1_width_spec_1a28a9b78a0ebfd5830025eaf1c917bb16" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>wchar_t</type>
+        <definition>wchar_t fmt::WidthSpec::fill</definition>
+        <argsstring>() const </argsstring>
+        <name>fill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1622" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1622" bodyend="1622"/>
+        <referencedby refid="classfmt_1_1internal_1_1_arg_formatter_base_1ab85eb2158c9d48c847706de26f35460c" compoundref="format_8h" startline="1879" endline="1907">fmt::internal::ArgFormatterBase&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;::visit_char</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1aa6ef59115b07ef0ad53fd9bb73bc64ee" compoundref="format_8h" startline="2617" endline="2636">fmt::BasicWriter&lt; Char &gt;::write_str</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1aa69a013920916ccc74ca7ac5e971abe7" compoundref="format_8h" startline="2831" endline="2982">fmt::BasicWriter&lt; Char &gt;::write_double</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2087">
+        <label>fmt::AlignTypeSpec&lt; TYPE &gt;</label>
+        <link refid="structfmt_1_1_align_type_spec"/>
+        <childnode refid="2086" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2085">
+        <label>fmt::WidthSpec</label>
+        <link refid="structfmt_1_1_width_spec"/>
+      </node>
+      <node id="2086">
+        <label>fmt::AlignSpec</label>
+        <link refid="structfmt_1_1_align_spec"/>
+        <childnode refid="2085" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2088">
+        <label>fmt::FormatSpec</label>
+        <link refid="structfmt_1_1_format_spec"/>
+        <childnode refid="2086" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2089">
+        <label>fmt::StrFormatSpec&lt; Char &gt;</label>
+        <link refid="classfmt_1_1_str_format_spec"/>
+        <childnode refid="2086" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2090">
+        <label>fmt::WidthSpec</label>
+        <link refid="structfmt_1_1_width_spec"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1613" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1613" bodyend="1623"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1_width_spec_1a28a9b78a0ebfd5830025eaf1c917bb16" prot="public" virt="non-virtual"><scope>fmt::WidthSpec</scope><name>fill</name></member>
+      <member refid="structfmt_1_1_width_spec_1ad1c9740afb2b05c4ac7b2d9fa9760891" prot="public" virt="non-virtual"><scope>fmt::WidthSpec</scope><name>fill_</name></member>
+      <member refid="structfmt_1_1_width_spec_1ad6624ee681712f695f133ba2e9d9ce36" prot="public" virt="non-virtual"><scope>fmt::WidthSpec</scope><name>width</name></member>
+      <member refid="structfmt_1_1_width_spec_1a83fed5d5a674ea54a48feb6edef4c1c7" prot="public" virt="non-virtual"><scope>fmt::WidthSpec</scope><name>width_</name></member>
+      <member refid="structfmt_1_1_width_spec_1a483e63eb1ac98bbdaacc701be5f3cc82" prot="public" virt="non-virtual"><scope>fmt::WidthSpec</scope><name>WidthSpec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

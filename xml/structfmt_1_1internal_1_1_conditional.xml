@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structfmt_1_1internal_1_1_conditional" kind="struct" language="C++" prot="public">
+    <compoundname>fmt::internal::Conditional</compoundname>
+    <includes refid="format_8h" local="no">format.h</includes>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>B</declname>
+        <defname>B</defname>
+      </param>
+      <param>
+        <type>class T</type>
+      </param>
+      <param>
+        <type>class F</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structfmt_1_1internal_1_1_conditional_1a2670cd09823078e9ac3d59e8ad5e9e5e" prot="public" static="no">
+        <type>T</type>
+        <definition>typedef T fmt::internal::Conditional&lt; B, T, F &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1112" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1410">
+        <label>fmt::internal::Conditional&lt; B, T, F &gt;</label>
+        <link refid="structfmt_1_1internal_1_1_conditional"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1112" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1112" bodyend="1112"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1internal_1_1_conditional_1a2670cd09823078e9ac3d59e8ad5e9e5e" prot="public" virt="non-virtual"><scope>fmt::internal::Conditional</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

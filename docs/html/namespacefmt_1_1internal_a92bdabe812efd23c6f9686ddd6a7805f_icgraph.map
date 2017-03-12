@@ -1,0 +1,11 @@
+<map id="fmt::internal::report_unknown_type" name="fmt::internal::report_unknown_type">
+<area shape="rect" id="node2" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#a5c11af21a3e1249b78ef87c968572ef5" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_pointer" alt="" coords="187,49,387,105"/>
+<area shape="rect" id="node3" href="$classfmt_1_1_basic_writer.html#a8914b930ac43788f801af0008f7b743e" title="fmt::BasicWriter::write_str" alt="" coords="200,129,373,156"/>
+<area shape="rect" id="node4" href="$classfmt_1_1_basic_writer.html#a2eb820ad907cede8df8226af444f59d6" title="fmt::BasicWriter::write_int" alt="" coords="200,180,373,207"/>
+<area shape="rect" id="node9" href="$classfmt_1_1_basic_writer.html#aa69a013920916ccc74ca7ac5e971abe7" title="fmt::BasicWriter::write\l_double" alt="" coords="211,282,363,323"/>
+<area shape="rect" id="node5" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#a0f4c97899457f6263ae412f231330227" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::write_pointer" alt="" coords="447,5,652,61"/>
+<area shape="rect" id="node6" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#ae6f9ce1fa7940ebda3ac594a45edd32d" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_any_int" alt="" coords="448,85,651,141"/>
+<area shape="rect" id="node7" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#ab85eb2158c9d48c847706de26f35460c" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_char" alt="" coords="457,165,642,221"/>
+<area shape="rect" id="node8" href="$classfmt_1_1_basic_printf_arg_formatter.html#a97f26086d50a4553280fbe831ef7e947" title="fmt::BasicPrintfArgFormatter\l\&lt; PrintfArgFormatter\&lt; Char\l \&gt;, Char \&gt;::visit_char" alt="" coords="454,245,645,301"/>
+<area shape="rect" id="node10" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#a670214e1773c9c86002be07c043566dd" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_any_double" alt="" coords="435,325,663,381"/>
+</map>

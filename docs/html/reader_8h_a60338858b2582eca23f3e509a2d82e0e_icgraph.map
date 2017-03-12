@@ -1,0 +1,6 @@
+<map id="SkipWhitespace" name="SkipWhitespace">
+<area shape="rect" id="node2" href="$class_generic_reader.html#a0c450620d14ff1824e58bb7bd9b42099" title="Parse JSON text. " alt="" coords="191,5,345,32"/>
+<area shape="rect" id="node3" href="$class_generic_reader.html#af7943451d58ae465e9803d5a78beeb90" title="GenericReader::ParseObject" alt="" coords="171,56,365,83"/>
+<area shape="rect" id="node4" href="$class_generic_reader.html#a8f226bb3c17b232ce142594b7620c8a4" title="GenericReader::ParseArray" alt="" coords="175,107,361,133"/>
+<area shape="rect" id="node5" href="$class_generic_reader.html#a55a2d3fd3d5261f26513ed303724bc3a" title="GenericReader::Iterative\lParse" alt="" coords="185,158,351,199"/>
+</map>

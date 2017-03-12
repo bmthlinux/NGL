@@ -1,0 +1,18 @@
+<map id="rapidxml::xml_base::parent" name="rapidxml::xml_base::parent">
+<area shape="rect" id="node2" href="$classrapidxml_1_1xml__node.html#adb6ad21a4590cf13d4a6a5036e3cdbbc" title="rapidxml::xml_node\l::document" alt="" coords="193,5,330,46"/>
+<area shape="rect" id="node3" href="$classrapidxml_1_1xml__node.html#ae86e92908c3eab40bbed8216e4f3f3cb" title="rapidxml::xml_node\l::prepend_node" alt="" coords="193,70,330,111"/>
+<area shape="rect" id="node4" href="$classrapidxml_1_1xml__node.html#a8696d098ecc9c4d2a646b43e91d58e31" title="rapidxml::xml_node\l::append_node" alt="" coords="193,135,330,177"/>
+<area shape="rect" id="node11" href="$classrapidxml_1_1xml__node.html#a666880f42a7e486d78cc45ed51c7c46d" title="rapidxml::xml_node\l::insert_node" alt="" coords="193,201,330,242"/>
+<area shape="rect" id="node12" href="$classrapidxml_1_1xml__node.html#a98289923eb9e8889418a9eb0207ea35c" title="Removes specified child from the node. " alt="" coords="193,266,330,307"/>
+<area shape="rect" id="node13" href="$classrapidxml_1_1xml__node.html#a8b62ee76489faf8e2d1210869d547684" title="rapidxml::xml_node\l::prepend_attribute" alt="" coords="193,331,330,373"/>
+<area shape="rect" id="node14" href="$classrapidxml_1_1xml__node.html#a33ce3386f8c42dd4db658b75cbb6e6c4" title="rapidxml::xml_node\l::append_attribute" alt="" coords="193,397,330,438"/>
+<area shape="rect" id="node16" href="$classrapidxml_1_1xml__node.html#a9fe659cdf4a5b3bbf5e8ffc98db5a84f" title="rapidxml::xml_node\l::insert_attribute" alt="" coords="193,462,330,503"/>
+<area shape="rect" id="node17" href="$classrapidxml_1_1xml__node.html#a6f97b1b4f46a94a4587915df3c0c6b57" title="rapidxml::xml_node\l::remove_attribute" alt="" coords="193,527,330,569"/>
+<area shape="rect" id="node5" href="$classrapidxml_1_1xml__document.html#aec6cedf45179b6378c670bc3ea509e61" title="rapidxml::xml_document\l::parse_and_append_data" alt="" coords="379,5,557,46"/>
+<area shape="rect" id="node6" href="$classrapidxml_1_1xml__document.html#aae0a4c2e1972ab9a9e0ce91cf1166ac9" title="rapidxml::xml_document\l::parse_node_contents" alt="" coords="385,70,551,111"/>
+<area shape="rect" id="node7" href="$classngl_1_1_x_m_l_serializer.html#acb72a6df1ebeb6f606a5e91b93eba432" title="ngl::XMLSerializer\l::writeToXML" alt="" coords="403,135,533,177"/>
+<area shape="rect" id="node8" href="$classngl_1_1_x_m_l_serializer.html#a7cbda35a4e4cc86f777635b09180d23d" title="write from an Camera must be overriden in child " alt="" coords="605,165,736,206"/>
+<area shape="rect" id="node9" href="$classngl_1_1_x_m_l_serializer.html#a68ace4d8c072e9a92405711fd88bfe80" title="ngl::XMLSerializer\l::addNode" alt="" coords="403,253,533,294"/>
+<area shape="rect" id="node10" href="$classngl_1_1_x_m_l_serializer.html#a3d4af73c5422ec397f4c2dfe709b869e" title="ctor, uses RAII to open the file, flag indicates if we have read or write mode " alt="" coords="403,325,533,366"/>
+<area shape="rect" id="node15" href="$classrapidxml_1_1xml__document.html#ac0b3cd07b3d5cbaa83762a196c681519" title="rapidxml::xml_document\l::parse_node_attributes" alt="" coords="385,397,551,438"/>
+</map>

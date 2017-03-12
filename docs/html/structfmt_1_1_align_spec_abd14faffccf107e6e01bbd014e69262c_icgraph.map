@@ -1,0 +1,8 @@
+<map id="fmt::AlignSpec::align" name="fmt::AlignSpec::align">
+<area shape="rect" id="node2" href="$classfmt_1_1_basic_writer.html#aa6ef59115b07ef0ad53fd9bb73bc64ee" title="fmt::BasicWriter::write_str" alt="" coords="197,140,371,167"/>
+<area shape="rect" id="node6" href="$classfmt_1_1_basic_writer.html#aa69a013920916ccc74ca7ac5e971abe7" title="fmt::BasicWriter::write\l_double" alt="" coords="208,202,360,243"/>
+<area shape="rect" id="node3" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#a002d52aca6bc9a70d7eb62c037ffadc4" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::write" alt="" coords="445,5,622,61"/>
+<area shape="rect" id="node4" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#a937a7808ebf21736498e32abba6a0046" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_string" alt="" coords="437,85,629,141"/>
+<area shape="rect" id="node5" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#ad3469bff1ffe51395d9f8f0e0824ff2c" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_wstring" alt="" coords="433,165,634,221"/>
+<area shape="rect" id="node7" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#a670214e1773c9c86002be07c043566dd" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_any_double" alt="" coords="419,245,647,301"/>
+</map>

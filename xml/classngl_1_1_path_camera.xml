@@ -1,0 +1,667 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classngl_1_1_path_camera" kind="class" language="C++" prot="public">
+    <compoundname>ngl::PathCamera</compoundname>
+    <basecompoundref refid="classngl_1_1_camera" prot="public" virt="non-virtual">ngl::Camera</basecompoundref>
+    <includes refid="_path_camera_8h" local="no">PathCamera.h</includes>
+      <sectiondef kind="protected-type">
+      <memberdef kind="enum" id="classngl_1_1_path_camera_1a30ea26f746ca40b7fae5ba627a340e9d" prot="protected" static="no">
+        <name>DIRECTION</name>
+        <enumvalue id="classngl_1_1_path_camera_1a30ea26f746ca40b7fae5ba627a340e9da0fcc6e03327979b5cbd8049c5a69dfa2" prot="protected">
+          <name>CAMFWD</name>
+          <briefdescription>
+<para>camera going forward </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classngl_1_1_path_camera_1a30ea26f746ca40b7fae5ba627a340e9dabcb66a047229f8cc820ffcfd1e435f6b" prot="protected">
+          <name>CAMBWD</name>
+          <briefdescription>
+<para>camera going backwards </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>enumeration for the camera&apos;s direction </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="117" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/PathCamera.h" bodystart="116" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classngl_1_1_path_camera_1a210c1892e3ff170652f97b0ecfd44830" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::PathCamera::m_eyeCurvePoint</definition>
+        <argsstring></argsstring>
+        <name>m_eyeCurvePoint</name>
+        <briefdescription>
+<para>the eye path of the camera&apos;s current position value </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="101" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/PathCamera.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_path_camera_1a2382bb33b09521e9a31caa8eadc28997" compoundref="_path_camera_8cpp" startline="156" endline="180">update</referencedby>
+        <referencedby refid="classngl_1_1_path_camera_1a5fdf9c69645596935d5fa53f8a9177ad" compoundref="_path_camera_8cpp" startline="183" endline="225">updateLooped</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_path_camera_1a9f46b44c3b80fd50dd030be51d67d718" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::PathCamera::m_lookCurvePoint</definition>
+        <argsstring></argsstring>
+        <name>m_lookCurvePoint</name>
+        <briefdescription>
+<para>the look path of the camera&apos;s current position value </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="105" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/PathCamera.h" bodystart="105" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_path_camera_1a2382bb33b09521e9a31caa8eadc28997" compoundref="_path_camera_8cpp" startline="156" endline="180">update</referencedby>
+        <referencedby refid="classngl_1_1_path_camera_1a5fdf9c69645596935d5fa53f8a9177ad" compoundref="_path_camera_8cpp" startline="183" endline="225">updateLooped</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_path_camera_1ad4cb26b8aa8d015823b32a33d6666a36" prot="protected" static="no" mutable="no">
+        <type><ref refid="classngl_1_1_bezier_curve" kindref="compound">BezierCurve</ref></type>
+        <definition>BezierCurve ngl::PathCamera::m_eyePath</definition>
+        <argsstring></argsstring>
+        <name>m_eyePath</name>
+        <briefdescription>
+<para><ref refid="classngl_1_1_bezier_curve" kindref="compound">BezierCurve</ref> for the the eye positions. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="109" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/PathCamera.h" bodystart="109" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_path_camera_1a2382bb33b09521e9a31caa8eadc28997" compoundref="_path_camera_8cpp" startline="156" endline="180">update</referencedby>
+        <referencedby refid="classngl_1_1_path_camera_1a5fdf9c69645596935d5fa53f8a9177ad" compoundref="_path_camera_8cpp" startline="183" endline="225">updateLooped</referencedby>
+        <referencedby refid="classngl_1_1_path_camera_1a137b5885b9e3b973f20bce79ae697983" compoundref="_path_camera_8cpp" startline="233" endline="238">createCurvesForDrawing</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_path_camera_1a1dea76d8114770e24db56f69a996c8c3" prot="protected" static="no" mutable="no">
+        <type><ref refid="classngl_1_1_bezier_curve" kindref="compound">BezierCurve</ref></type>
+        <definition>BezierCurve ngl::PathCamera::m_lookPath</definition>
+        <argsstring></argsstring>
+        <name>m_lookPath</name>
+        <briefdescription>
+<para><ref refid="classngl_1_1_bezier_curve" kindref="compound">BezierCurve</ref> for the look positions. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="112" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/PathCamera.h" bodystart="112" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_path_camera_1a2382bb33b09521e9a31caa8eadc28997" compoundref="_path_camera_8cpp" startline="156" endline="180">update</referencedby>
+        <referencedby refid="classngl_1_1_path_camera_1a5fdf9c69645596935d5fa53f8a9177ad" compoundref="_path_camera_8cpp" startline="183" endline="225">updateLooped</referencedby>
+        <referencedby refid="classngl_1_1_path_camera_1a137b5885b9e3b973f20bce79ae697983" compoundref="_path_camera_8cpp" startline="233" endline="238">createCurvesForDrawing</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_path_camera_1af7b40ecde691bfb08508de1057b14f95" prot="protected" static="no" mutable="no">
+        <type><ref refid="classngl_1_1_path_camera_1a30ea26f746ca40b7fae5ba627a340e9d" kindref="member">DIRECTION</ref></type>
+        <definition>DIRECTION ngl::PathCamera::m_dir</definition>
+        <argsstring></argsstring>
+        <name>m_dir</name>
+        <briefdescription>
+<para>current direction of the camera </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="126" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/PathCamera.h" bodystart="126" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_path_camera_1a5fdf9c69645596935d5fa53f8a9177ad" compoundref="_path_camera_8cpp" startline="183" endline="225">updateLooped</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_path_camera_1a30e3d05b4f1423911aff7fc270455189" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::PathCamera::m_step</definition>
+        <argsstring></argsstring>
+        <name>m_step</name>
+        <briefdescription>
+<para>the step for each update of the camera, the higher the number the smoother the movement </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="130" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/PathCamera.h" bodystart="130" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_path_camera_1a2382bb33b09521e9a31caa8eadc28997" compoundref="_path_camera_8cpp" startline="156" endline="180">update</referencedby>
+        <referencedby refid="classngl_1_1_path_camera_1a5fdf9c69645596935d5fa53f8a9177ad" compoundref="_path_camera_8cpp" startline="183" endline="225">updateLooped</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngl_1_1_path_camera_1ac55242f8096f389d0c139fe84d196f59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ngl::PathCamera::PathCamera</definition>
+        <argsstring>()</argsstring>
+        <name>PathCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="38" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/PathCamera.h" bodystart="38" bodyend="38"/>
+        <referencedby refid="classngl_1_1_path_camera_1a2f690aecbe2e8a1c8278c7179d8bcb2c" compoundref="_path_camera_8cpp" startline="30" endline="39">PathCamera</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_path_camera_1a2f690aecbe2e8a1c8278c7179d8bcb2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::PathCamera::PathCamera</definition>
+        <argsstring>(const Vec3 &amp;_up, const BezierCurve &amp;_eyePath, const BezierCurve &amp;_lookPath, const Real _step) noexcept</argsstring>
+        <name>PathCamera</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_up</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classngl_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>_eyePath</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classngl_1_1_bezier_curve" kindref="compound">BezierCurve</ref> &amp;</type>
+          <declname>_lookPath</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_step</declname>
+        </param>
+        <briefdescription>
+<para>ctor using two curves </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_up</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the up direction of the camera </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_eyePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classngl_1_1_bezier_curve" kindref="compound">BezierCurve</ref> for the eye path </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_lookPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classngl_1_1_bezier_curve" kindref="compound">BezierCurve</ref> for the look path </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the amount of step for the update </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_proj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type of projection for the camera to use </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="47" column="1" bodyfile="/Users/jmacey/NGL/src/PathCamera.cpp" bodystart="30" bodyend="39"/>
+        <references refid="classngl_1_1_path_camera_1ac55242f8096f389d0c139fe84d196f59" compoundref="_path_camera_8h" startline="38" endline="38">PathCamera</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_path_camera_1a0924298c2052bac3cb2f41465bcf24a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::PathCamera::PathCamera</definition>
+        <argsstring>(const Vec3 &amp;_up, Vec3 const *_eyePoints, int _nEyePoints, Vec3 const *_lookPoints, int _nLookPoints, Real _step) noexcept</argsstring>
+        <name>PathCamera</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_up</declname>
+        </param>
+        <param>
+          <type><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> const *</type>
+          <declname>_eyePoints</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_nEyePoints</declname>
+        </param>
+        <param>
+          <type><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> const *</type>
+          <declname>_lookPoints</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_nLookPoints</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_step</declname>
+        </param>
+        <briefdescription>
+<para>ctor using two arrays of points for the eye and look values these will be converted into BezierCurves for the actual camera paths </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_up</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an indication of the camera&apos;s up direction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_eyePoints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to an array of points for the camera path </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_nEyePoints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of points in the _eyePoints array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_lookPoints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to an array of points for the camera look path </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_nLookPoints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of points in the _lookPoints array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the amount of steps for the update </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_path_camera_1ac1d2551323d36446cfefde053708bc68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::PathCamera::PathCamera</definition>
+        <argsstring>(const Vec4 &amp;_up, const std::string &amp;_fName, Real _step) noexcept</argsstring>
+        <name>PathCamera</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref> &amp;</type>
+          <declname>_up</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_fName</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_step</declname>
+        </param>
+        <briefdescription>
+<para>ctor to load the camera data in from a file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_up</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an indication of the camera up direction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_fName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the file to load </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the amount of steps for the Update </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_proj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type of projection for the camera to use. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="67" column="1" bodyfile="/Users/jmacey/NGL/src/PathCamera.cpp" bodystart="65" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_path_camera_1a9df6b1677f6b18d12a5aa5a161854ed6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::PathCamera::~PathCamera</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>~PathCamera</name>
+        <briefdescription>
+<para>dtor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="72" column="1" bodyfile="/Users/jmacey/NGL/src/PathCamera.cpp" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_path_camera_1a2382bb33b09521e9a31caa8eadc28997" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::PathCamera::update</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>update</name>
+        <briefdescription>
+<para>update the camera by incrementing the step value and re-calculating the tx matrix </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="76" column="1" bodyfile="/Users/jmacey/NGL/src/PathCamera.cpp" bodystart="156" bodyend="180"/>
+        <references refid="classngl_1_1_vec4_1ad96cd267cff49372a6d45d840d899727" compoundref="_vec4_8cpp" startline="110" endline="115">ngl::Vec4::cross</references>
+        <references refid="classngl_1_1_bezier_curve_1a9b6aa8855fa01623a327844f355b2a8b" compoundref="_bezier_curve_8cpp" startline="168" endline="188">ngl::BezierCurve::getPointOnCurve</references>
+        <references refid="classngl_1_1_camera_1a157f7132f6b0f17c6019dccc7ac45ea8" compoundref="_camera_8h" startline="319">ngl::Camera::m_eye</references>
+        <references refid="classngl_1_1_path_camera_1a210c1892e3ff170652f97b0ecfd44830" compoundref="_path_camera_8h" startline="101">m_eyeCurvePoint</references>
+        <references refid="classngl_1_1_path_camera_1ad4cb26b8aa8d015823b32a33d6666a36" compoundref="_path_camera_8h" startline="109">m_eyePath</references>
+        <references refid="classngl_1_1_camera_1a8fd68248979fc67ff794a3819062b546" compoundref="_camera_8h" startline="323">ngl::Camera::m_look</references>
+        <references refid="classngl_1_1_path_camera_1a9f46b44c3b80fd50dd030be51d67d718" compoundref="_path_camera_8h" startline="105">m_lookCurvePoint</references>
+        <references refid="classngl_1_1_path_camera_1a1dea76d8114770e24db56f69a996c8c3" compoundref="_path_camera_8h" startline="112">m_lookPath</references>
+        <references refid="classngl_1_1_camera_1a999a2bbaf92b5da7c723f034069e3a21" compoundref="_camera_8h" startline="315">ngl::Camera::m_n</references>
+        <references refid="classngl_1_1_path_camera_1a30e3d05b4f1423911aff7fc270455189" compoundref="_path_camera_8h" startline="130">m_step</references>
+        <references refid="classngl_1_1_camera_1af64f375e9242a8e3534a0c4fb382a459" compoundref="_camera_8h" startline="307">ngl::Camera::m_u</references>
+        <references refid="classngl_1_1_camera_1adba898f9f8eecc12f030ece5d00c57c3" compoundref="_camera_8h" startline="327">ngl::Camera::m_up</references>
+        <references refid="classngl_1_1_camera_1a26241ed15f8999a273de0a417703dc81" compoundref="_camera_8h" startline="311">ngl::Camera::m_v</references>
+        <references refid="classngl_1_1_vec4_1ac0dca0913332163df66d6e229564c85b" compoundref="_vec4_8cpp" startline="99" endline="107">ngl::Vec4::normalize</references>
+        <references refid="classngl_1_1_vec4_1ae1201ced94be9176940fc83ed9054e82" compoundref="_vec4_8cpp" startline="41" endline="47">ngl::Vec4::set</references>
+        <references refid="classngl_1_1_camera_1aaeece8ece48d769af0a64d03f9605caa" compoundref="_camera_8cpp" startline="95" endline="105">ngl::Camera::setViewMatrix</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_path_camera_1a5fdf9c69645596935d5fa53f8a9177ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::PathCamera::updateLooped</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>updateLooped</name>
+        <briefdescription>
+<para>update the camera by incrementing the step value and re-calculating the tx matrix if the camera is at the end of one of the paths it will return the other way </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="81" column="1" bodyfile="/Users/jmacey/NGL/src/PathCamera.cpp" bodystart="183" bodyend="225"/>
+        <references refid="classngl_1_1_path_camera_1a30ea26f746ca40b7fae5ba627a340e9dabcb66a047229f8cc820ffcfd1e435f6b" compoundref="_path_camera_8h" startline="121">CAMBWD</references>
+        <references refid="classngl_1_1_path_camera_1a30ea26f746ca40b7fae5ba627a340e9da0fcc6e03327979b5cbd8049c5a69dfa2" compoundref="_path_camera_8h" startline="119">CAMFWD</references>
+        <references refid="classngl_1_1_vec4_1ad96cd267cff49372a6d45d840d899727" compoundref="_vec4_8cpp" startline="110" endline="115">ngl::Vec4::cross</references>
+        <references refid="classngl_1_1_bezier_curve_1a9b6aa8855fa01623a327844f355b2a8b" compoundref="_bezier_curve_8cpp" startline="168" endline="188">ngl::BezierCurve::getPointOnCurve</references>
+        <references refid="classngl_1_1_path_camera_1af7b40ecde691bfb08508de1057b14f95" compoundref="_path_camera_8h" startline="126">m_dir</references>
+        <references refid="classngl_1_1_camera_1a157f7132f6b0f17c6019dccc7ac45ea8" compoundref="_camera_8h" startline="319">ngl::Camera::m_eye</references>
+        <references refid="classngl_1_1_path_camera_1a210c1892e3ff170652f97b0ecfd44830" compoundref="_path_camera_8h" startline="101">m_eyeCurvePoint</references>
+        <references refid="classngl_1_1_path_camera_1ad4cb26b8aa8d015823b32a33d6666a36" compoundref="_path_camera_8h" startline="109">m_eyePath</references>
+        <references refid="classngl_1_1_camera_1a8fd68248979fc67ff794a3819062b546" compoundref="_camera_8h" startline="323">ngl::Camera::m_look</references>
+        <references refid="classngl_1_1_path_camera_1a9f46b44c3b80fd50dd030be51d67d718" compoundref="_path_camera_8h" startline="105">m_lookCurvePoint</references>
+        <references refid="classngl_1_1_path_camera_1a1dea76d8114770e24db56f69a996c8c3" compoundref="_path_camera_8h" startline="112">m_lookPath</references>
+        <references refid="classngl_1_1_camera_1a999a2bbaf92b5da7c723f034069e3a21" compoundref="_camera_8h" startline="315">ngl::Camera::m_n</references>
+        <references refid="classngl_1_1_path_camera_1a30e3d05b4f1423911aff7fc270455189" compoundref="_path_camera_8h" startline="130">m_step</references>
+        <references refid="classngl_1_1_camera_1af64f375e9242a8e3534a0c4fb382a459" compoundref="_camera_8h" startline="307">ngl::Camera::m_u</references>
+        <references refid="classngl_1_1_camera_1adba898f9f8eecc12f030ece5d00c57c3" compoundref="_camera_8h" startline="327">ngl::Camera::m_up</references>
+        <references refid="classngl_1_1_camera_1a26241ed15f8999a273de0a417703dc81" compoundref="_camera_8h" startline="311">ngl::Camera::m_v</references>
+        <references refid="classngl_1_1_vec4_1ac0dca0913332163df66d6e229564c85b" compoundref="_vec4_8cpp" startline="99" endline="107">ngl::Vec4::normalize</references>
+        <references refid="classngl_1_1_vec4_1ae1201ced94be9176940fc83ed9054e82" compoundref="_vec4_8cpp" startline="41" endline="47">ngl::Vec4::set</references>
+        <references refid="classngl_1_1_camera_1aaeece8ece48d769af0a64d03f9605caa" compoundref="_camera_8cpp" startline="95" endline="105">ngl::Camera::setViewMatrix</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_path_camera_1ad715afd6ff8e47e3ad745feba84f40cc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::PathCamera::drawPaths</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>drawPaths</name>
+        <briefdescription>
+<para>a method to draw the camera paths for debugging etc (note uses immediate mode GL) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="todo_1_todo000008"><xreftitle>Todo</xreftitle><xrefdescription><para>write code to do the drawing </para></xrefdescription></xrefsect></para>        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="85" column="1" bodyfile="/Users/jmacey/NGL/src/PathCamera.cpp" bodystart="228" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_path_camera_1a350e8c3c5c7ac964c2449f0aafd2757b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::PathCamera::loadPath</definition>
+        <argsstring>(const std::string &amp;_fName) noexcept</argsstring>
+        <name>loadPath</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_fName</declname>
+        </param>
+        <briefdescription>
+<para>load a path from a file </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_fName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the file to load </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="todo_1_todo000007"><xreftitle>Todo</xreftitle><xrefdescription><para>get this working with loading from a Vector </para></xrefdescription></xrefsect></para>        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="90" column="1" bodyfile="/Users/jmacey/NGL/src/PathCamera.cpp" bodystart="113" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_path_camera_1a137b5885b9e3b973f20bce79ae697983" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::PathCamera::createCurvesForDrawing</definition>
+        <argsstring>(int _lod) noexcept</argsstring>
+        <name>createCurvesForDrawing</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_lod</declname>
+        </param>
+        <briefdescription>
+<para>create the display lists for the paths so we can see them </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_lod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the level of detail for the paths display list </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="95" column="1" bodyfile="/Users/jmacey/NGL/src/PathCamera.cpp" bodystart="233" bodyend="238"/>
+        <references refid="classngl_1_1_path_camera_1ad4cb26b8aa8d015823b32a33d6666a36" compoundref="_path_camera_8h" startline="109">m_eyePath</references>
+        <references refid="classngl_1_1_path_camera_1a1dea76d8114770e24db56f69a996c8c3" compoundref="_path_camera_8h" startline="112">m_lookPath</references>
+        <references refid="classngl_1_1_bezier_curve_1a2e44d153518b12f4a502f99a1c736f6e" compoundref="_bezier_curve_8h" startline="138" endline="138">ngl::BezierCurve::setLOD</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Inherits from <ref refid="classngl_1_1_camera" kindref="compound">Camera</ref> and adds a path for both eye and look using two Bezier Curves. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1784">
+        <label>ngl::PathCamera</label>
+        <link refid="classngl_1_1_path_camera"/>
+        <childnode refid="1785" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1785">
+        <label>ngl::Camera</label>
+        <link refid="classngl_1_1_camera"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1794">
+        <label>size_t</label>
+      </node>
+      <node id="1788">
+        <label>ngl::Mat4</label>
+        <link refid="classngl_1_1_mat4"/>
+      </node>
+      <node id="1789">
+        <label>ngl::Vec3</label>
+        <link refid="classngl_1_1_vec3"/>
+      </node>
+      <node id="1790">
+        <label>ngl::Vec4</label>
+        <link refid="classngl_1_1_vec4"/>
+      </node>
+      <node id="1786">
+        <label>ngl::PathCamera</label>
+        <link refid="classngl_1_1_path_camera"/>
+        <childnode refid="1787" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1792" relation="usage">
+          <edgelabel>#m_eyePath</edgelabel>
+          <edgelabel>#m_lookPath</edgelabel>
+        </childnode>
+      </node>
+      <node id="1787">
+        <label>ngl::Camera</label>
+        <link refid="classngl_1_1_camera"/>
+        <childnode refid="1788" relation="usage">
+          <edgelabel>#m_projectionMatrix</edgelabel>
+          <edgelabel>#m_viewMatrix</edgelabel>
+        </childnode>
+        <childnode refid="1789" relation="usage">
+          <edgelabel>#m_ntr</edgelabel>
+          <edgelabel>#m_nbr</edgelabel>
+          <edgelabel>#m_ftl</edgelabel>
+          <edgelabel>#m_fbl</edgelabel>
+          <edgelabel>#m_ftr</edgelabel>
+          <edgelabel>#m_fbr</edgelabel>
+          <edgelabel>#m_ntl</edgelabel>
+          <edgelabel>#m_nbl</edgelabel>
+        </childnode>
+        <childnode refid="1790" relation="usage">
+          <edgelabel>#m_look</edgelabel>
+          <edgelabel>#m_n</edgelabel>
+          <edgelabel>#m_eye</edgelabel>
+          <edgelabel>#m_u</edgelabel>
+          <edgelabel>#m_v</edgelabel>
+          <edgelabel>#m_up</edgelabel>
+        </childnode>
+        <childnode refid="1791" relation="usage">
+          <edgelabel>#m_planes</edgelabel>
+        </childnode>
+      </node>
+      <node id="1792">
+        <label>ngl::BezierCurve</label>
+        <link refid="classngl_1_1_bezier_curve"/>
+        <childnode refid="1793" relation="usage">
+          <edgelabel>#m_vaoCurve</edgelabel>
+          <edgelabel>#m_vaoPoints</edgelabel>
+        </childnode>
+      </node>
+      <node id="1793">
+        <label>ngl::AbstractVAO</label>
+        <link refid="classngl_1_1_abstract_v_a_o"/>
+        <childnode refid="1794" relation="usage">
+          <edgelabel>#m_indicesCount</edgelabel>
+        </childnode>
+      </node>
+      <node id="1791">
+        <label>ngl::Plane</label>
+        <link refid="classngl_1_1_plane"/>
+        <childnode refid="1789" relation="usage">
+          <edgelabel>-m_normal</edgelabel>
+          <edgelabel>-m_point</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/PathCamera.h" line="34" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/PathCamera.h" bodystart="33" bodyend="133"/>
+    <listofallmembers>
+      <member refid="classngl_1_1_camera_1a81b57e0a3171256e6c6a63a6e2ae4a80" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>boxInFrustum</name></member>
+      <member refid="classngl_1_1_camera_1a6bb1f023865029e3b4e28e99a6bd00d2" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>calculateFrustum</name></member>
+      <member refid="classngl_1_1_path_camera_1a30ea26f746ca40b7fae5ba627a340e9dabcb66a047229f8cc820ffcfd1e435f6b" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>CAMBWD</name></member>
+      <member refid="classngl_1_1_camera_1a7712c69b175211fa18f146e9ca652215" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>Camera</name></member>
+      <member refid="classngl_1_1_camera_1aec80bc2ad53e399dd5d25baa57984f6d" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>Camera</name></member>
+      <member refid="classngl_1_1_path_camera_1a30ea26f746ca40b7fae5ba627a340e9da0fcc6e03327979b5cbd8049c5a69dfa2" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>CAMFWD</name></member>
+      <member refid="classngl_1_1_path_camera_1a137b5885b9e3b973f20bce79ae697983" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>createCurvesForDrawing</name></member>
+      <member refid="classngl_1_1_path_camera_1a30ea26f746ca40b7fae5ba627a340e9d" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>DIRECTION</name></member>
+      <member refid="classngl_1_1_camera_1ab6030710c1ab0ea3170ff3cf4f090f11" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>drawFrustum</name></member>
+      <member refid="classngl_1_1_path_camera_1ad715afd6ff8e47e3ad745feba84f40cc" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>drawPaths</name></member>
+      <member refid="classngl_1_1_camera_1af8f578c1826569899cb0b7f2ce74aa9e" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>getAspect</name></member>
+      <member refid="classngl_1_1_camera_1ab399093a43c43fcc839d5100fa9124ed" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>getEye</name></member>
+      <member refid="classngl_1_1_camera_1a65c095a8debf975452758522837fa119" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>getFar</name></member>
+      <member refid="classngl_1_1_camera_1a422235889ae824047d61e479e9eaf02f" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>getFOV</name></member>
+      <member refid="classngl_1_1_camera_1abff65956f350cbfc4806cae3782f89d1" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>getLook</name></member>
+      <member refid="classngl_1_1_camera_1a5865d1dfa57dcd52080d0497a9c9249d" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>getN</name></member>
+      <member refid="classngl_1_1_camera_1a01e7cd82766a19510cf397c0a4277e1b" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>getNear</name></member>
+      <member refid="classngl_1_1_camera_1ac419e5ae4feff9010ddc8e153716bccf" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>getProjectionMatrix</name></member>
+      <member refid="classngl_1_1_camera_1a51df125ecde364f3b6fb6c4237117282" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>getU</name></member>
+      <member refid="classngl_1_1_camera_1a8c8a7e8fb0c6a379a755fa5691a5b38d" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>getUp</name></member>
+      <member refid="classngl_1_1_camera_1ad2e9ac6ac35b8d1e6ead468bd58ff362" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>getV</name></member>
+      <member refid="classngl_1_1_camera_1a57d0e89a5376fa07a20035fd0c8b0702" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>getViewMatrix</name></member>
+      <member refid="classngl_1_1_camera_1a4eeca2ee164ad3eb8e461594496fdf06" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>getVPMatrix</name></member>
+      <member refid="classngl_1_1_camera_1a4a035b2f4b9ff41d77b0d5f821d831ed" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>isPointInFrustum</name></member>
+      <member refid="classngl_1_1_camera_1a0dc3ef7af32368950538ca1ee805e781" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>isSphereInFrustum</name></member>
+      <member refid="classngl_1_1_path_camera_1a350e8c3c5c7ac964c2449f0aafd2757b" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>loadPath</name></member>
+      <member refid="classngl_1_1_camera_1adff3e4c4b3f0961d6daeb9bb39d2a12b" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_aspect</name></member>
+      <member refid="classngl_1_1_path_camera_1af7b40ecde691bfb08508de1057b14f95" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_dir</name></member>
+      <member refid="classngl_1_1_camera_1a157f7132f6b0f17c6019dccc7ac45ea8" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_eye</name></member>
+      <member refid="classngl_1_1_path_camera_1a210c1892e3ff170652f97b0ecfd44830" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_eyeCurvePoint</name></member>
+      <member refid="classngl_1_1_path_camera_1ad4cb26b8aa8d015823b32a33d6666a36" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_eyePath</name></member>
+      <member refid="classngl_1_1_camera_1a5542e84f6e9d361fbf3df3b18ae07993" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_fbl</name></member>
+      <member refid="classngl_1_1_camera_1af4dc73bb2d8bc2b6bb17d38a22c08af0" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_fbr</name></member>
+      <member refid="classngl_1_1_camera_1aa78217da5eab7b53bd58c7fdf5a201d8" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_fov</name></member>
+      <member refid="classngl_1_1_camera_1ac848e4b45a974990df196db7cb03941d" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_ftl</name></member>
+      <member refid="classngl_1_1_camera_1ac0fdeb4d1c39106fd9cd3fac10c8bf92" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_ftr</name></member>
+      <member refid="classngl_1_1_camera_1af7668e1b147e3bafeebbbf31a18b8227" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_height</name></member>
+      <member refid="classngl_1_1_camera_1a8fd68248979fc67ff794a3819062b546" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_look</name></member>
+      <member refid="classngl_1_1_path_camera_1a9f46b44c3b80fd50dd030be51d67d718" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_lookCurvePoint</name></member>
+      <member refid="classngl_1_1_path_camera_1a1dea76d8114770e24db56f69a996c8c3" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_lookPath</name></member>
+      <member refid="classngl_1_1_camera_1a999a2bbaf92b5da7c723f034069e3a21" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_n</name></member>
+      <member refid="classngl_1_1_camera_1a1e82335cd810543cdeeff1c32a5684ca" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_nbl</name></member>
+      <member refid="classngl_1_1_camera_1a7833e83f044b244a1c701373d1fe273d" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_nbr</name></member>
+      <member refid="classngl_1_1_camera_1a0c36ab0f9925677f44086be1bb1d2cf8" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_ntl</name></member>
+      <member refid="classngl_1_1_camera_1a5e07a87b6688b14ea2ef492c94457cab" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_ntr</name></member>
+      <member refid="classngl_1_1_camera_1a3fcf3f3412e175c9fb278322c6ba554a" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_planes</name></member>
+      <member refid="classngl_1_1_camera_1a691f31fea5cef7e68118ccb801fefa8f" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_projectionMatrix</name></member>
+      <member refid="classngl_1_1_path_camera_1a30e3d05b4f1423911aff7fc270455189" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_step</name></member>
+      <member refid="classngl_1_1_camera_1af64f375e9242a8e3534a0c4fb382a459" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_u</name></member>
+      <member refid="classngl_1_1_camera_1adba898f9f8eecc12f030ece5d00c57c3" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_up</name></member>
+      <member refid="classngl_1_1_camera_1a26241ed15f8999a273de0a417703dc81" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_v</name></member>
+      <member refid="classngl_1_1_camera_1a39b57117d1427402a4cb11ae0bca1ae6" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_viewMatrix</name></member>
+      <member refid="classngl_1_1_camera_1a930a329ed09c04002f502dd7e0453c80" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_width</name></member>
+      <member refid="classngl_1_1_camera_1a3cd301f8839298d3553e87b46e8abbbf" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_zFar</name></member>
+      <member refid="classngl_1_1_camera_1aba3073832a500e1e586907939166a6c0" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>m_zNear</name></member>
+      <member refid="classngl_1_1_camera_1a507c4a203398c12816826f2c3fa80240" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>move</name></member>
+      <member refid="classngl_1_1_camera_1a4730ce617d2898ce7b491e3a3febc1b1" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>moveBoth</name></member>
+      <member refid="classngl_1_1_camera_1aac0efd484c76402e525cb6b7d666bfe2" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>moveEye</name></member>
+      <member refid="classngl_1_1_camera_1a1e94e9df4db1c19131b188ca9b7a5f3c" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>moveLook</name></member>
+      <member refid="classngl_1_1_camera_1ac81bf6b05d0f1dbc6bc80eb92531fa46" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>normalisedPitch</name></member>
+      <member refid="classngl_1_1_camera_1a249c0d93396b5f2f0c0e2b46ba9b03fb" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>normalisedRoll</name></member>
+      <member refid="classngl_1_1_camera_1ac9fc9807630ff5b2ac3b741f25423b23" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>normalisedYaw</name></member>
+      <member refid="classngl_1_1_path_camera_1ac55242f8096f389d0c139fe84d196f59" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>PathCamera</name></member>
+      <member refid="classngl_1_1_path_camera_1a2f690aecbe2e8a1c8278c7179d8bcb2c" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>PathCamera</name></member>
+      <member refid="classngl_1_1_path_camera_1a0924298c2052bac3cb2f41465bcf24a7" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>PathCamera</name></member>
+      <member refid="classngl_1_1_path_camera_1ac1d2551323d36446cfefde053708bc68" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>PathCamera</name></member>
+      <member refid="classngl_1_1_camera_1a14db532081b77e16bffdb21b85773d73" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>pitch</name></member>
+      <member refid="classngl_1_1_camera_1a0d4e98a0bc1c083eb1c655ca4d99cd56" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>ProjPlane</name></member>
+      <member refid="classngl_1_1_camera_1a446db85c38e883aa54a56d69e60f1e59" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>roll</name></member>
+      <member refid="classngl_1_1_camera_1a1dbe60cff8018423633782a3c73ae7ee" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>rotAxes</name></member>
+      <member refid="classngl_1_1_camera_1a8df00f3c9e422b7b5de6883c1b132bf8" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>set</name></member>
+      <member refid="classngl_1_1_camera_1a9da9930d346a2188c0e1264ea3c8bfd7" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>setAspect</name></member>
+      <member refid="classngl_1_1_camera_1abe618a56d09cfc6bd7ca0b0ffd10f702" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>setDefaultCamera</name></member>
+      <member refid="classngl_1_1_camera_1a6854895a02b9a038553797400b5aa8fd" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>setEye</name></member>
+      <member refid="classngl_1_1_camera_1ab10601607495a522a57b3097bcccddcd" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>setLook</name></member>
+      <member refid="classngl_1_1_camera_1ae9ed0a38e96a2cedf785944cf79002de" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>setPerspProjection</name></member>
+      <member refid="classngl_1_1_camera_1a7b22700c172d70bac1e7150cc27a641f" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>setProjectionMatrix</name></member>
+      <member refid="classngl_1_1_camera_1aa71e21744533c478eb77d2e8534b053e" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>setShape</name></member>
+      <member refid="classngl_1_1_camera_1aaeb7795b3c3878003421c84a80bb686c" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>setViewAngle</name></member>
+      <member refid="classngl_1_1_camera_1aaeece8ece48d769af0a64d03f9605caa" prot="protected" virt="non-virtual"><scope>ngl::PathCamera</scope><name>setViewMatrix</name></member>
+      <member refid="classngl_1_1_camera_1a911612823285cd59ddfe9bbff62b7066" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>slide</name></member>
+      <member refid="classngl_1_1_path_camera_1a2382bb33b09521e9a31caa8eadc28997" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>update</name></member>
+      <member refid="classngl_1_1_path_camera_1a5fdf9c69645596935d5fa53f8a9177ad" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>updateLooped</name></member>
+      <member refid="classngl_1_1_camera_1a82b58d5470b3b5359d721135378df467" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>writeRib</name></member>
+      <member refid="classngl_1_1_camera_1ae3031e26b5dfb2a319d2988d3c931f68" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>yaw</name></member>
+      <member refid="classngl_1_1_path_camera_1a9df6b1677f6b18d12a5aa5a161854ed6" prot="public" virt="non-virtual"><scope>ngl::PathCamera</scope><name>~PathCamera</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

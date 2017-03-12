@@ -14,6 +14,9 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+#include <pybind11/pybind11.h>
+#include <pybind11/operators.h>
+
 #include "Vec3.h"
 #include "Vec4.h"
 #include "Mat3.h"
@@ -290,6 +293,65 @@ void Vec3::clamp(float _max ) noexcept
 
 
 }
+
+
+
+namespace py = pybind11;
+
+PYBIND11_PLUGIN(pyngl)
+{
+    py::module m("pyngl", "pyngl module ");
+
+    py::class_<Vec3>(m, "Vec3")
+        .def(py::init<>())
+        .def(py::init<Real,Real,Real>())
+        .def(py::init<Vec3 &>())
+        .def("set", (void (Vec3::*)(Real,Real,Real)) &Vec3::set)
+        .def("set", (void (Vec3::*)(const Vec3 &)) &Vec3::set)
+        .def("set", (void (Vec3::*)(const Vec4 &)) &Vec3::set)
+        .def("dot", &Vec3::dot)
+        .def("null", &Vec3::null)
+        .def("__getitem__",(Real& (Vec3::*)(const size_t &)) &Vec3::operator[])
+        .def("normalize", &Vec3::normalize)
+        .def("inner", &Vec3::inner)
+        .def("outer", &Vec3::outer)
+        .def("length", &Vec3::length)
+        .def("lengthSquared", &Vec3::lengthSquared)
+        .def("cross",(void (Vec3::*)(const Vec3&, const Vec3&)) &Vec3::cross)
+        .def("cross",( Vec3 (Vec3::*)(const Vec3&) const) &Vec3::cross)
+        .def("clamp",( void (Vec3::*)(float)) &Vec3::clamp)
+        .def("clamp",( void (Vec3::*)(float,float)) &Vec3::clamp)
+        .def("reflect", &Vec3::reflect)
+        .def("up", &Vec3::up)
+        .def("down", &Vec3::down)
+        .def("left", &Vec3::left)
+        .def("right", &Vec3::right)
+        .def("in", &Vec3::in)
+        .def("out", &Vec3::out)
+        .def("zero", &Vec3::zero)
+
+        .def(py::self == py::self)
+        .def(py::self != py::self)
+        .def(py::self += py::self)
+        .def(py::self -= py::self)
+        .def(py::self * ngl::Real())
+        .def(ngl::Real() * py::self)
+        .def(py::self + py::self)
+        .def(py::self - py::self)
+        .def(py::self * py::self)
+        .def(py::self / ngl::Real())
+        .def(py::self / py::self)
+        .def(py::self /= ngl::Real())
+        .def(py::self *= ngl::Real())
+        .def(py::self * ngl::Mat3())
+        .def("__neg__",(Vec3 (Vec3::*)()const) &Vec3::operator-)
+
+        ;
+
+    return m.ptr();
+}
+
+
 
 } // end namspace ngl
 

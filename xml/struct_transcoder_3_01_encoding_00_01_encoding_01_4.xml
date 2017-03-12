@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_transcoder_3_01_encoding_00_01_encoding_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>Transcoder&lt; Encoding, Encoding &gt;</compoundname>
+    <includes refid="encodings_8h" local="no">encodings.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Encoding</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_transcoder_3_01_encoding_00_01_encoding_01_4_1aad11cdc2b829123a7b9969e34d456813" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename OutputStream</type>
+          </param>
+        </templateparamlist>
+        <type>RAPIDJSON_FORCEINLINE bool</type>
+        <definition>static RAPIDJSON_FORCEINLINE bool Transcoder&lt; Encoding, Encoding &gt;::Transcode</definition>
+        <argsstring>(InputStream &amp;is, OutputStream &amp;os)</argsstring>
+        <name>Transcode</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>OutputStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodings.h" line="608" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodings.h" bodystart="608" bodyend="611"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_transcoder_3_01_encoding_00_01_encoding_01_4_1a536aa3930251161d05e112947ec2f9c8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename OutputStream</type>
+          </param>
+        </templateparamlist>
+        <type>RAPIDJSON_FORCEINLINE bool</type>
+        <definition>static RAPIDJSON_FORCEINLINE bool Transcoder&lt; Encoding, Encoding &gt;::Validate</definition>
+        <argsstring>(InputStream &amp;is, OutputStream &amp;os)</argsstring>
+        <name>Validate</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>OutputStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodings.h" line="614" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodings.h" bodystart="614" bodyend="616"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf18f052a98b9f5df5448d39484b743c1" compoundref="rapidjson_8h" startline="119">RAPIDJSON_NAMESPACE_END</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specialization of <ref refid="struct_transcoder" kindref="compound">Transcoder</ref> with same source and target encoding. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1990">
+        <label>Transcoder&lt; Encoding, Encoding &gt;</label>
+        <link refid="struct_transcoder_3_01_encoding_00_01_encoding_01_4"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodings.h" line="606" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodings.h" bodystart="606" bodyend="617"/>
+    <listofallmembers>
+      <member refid="struct_transcoder_3_01_encoding_00_01_encoding_01_4_1aad11cdc2b829123a7b9969e34d456813" prot="public" virt="non-virtual"><scope>Transcoder&lt; Encoding, Encoding &gt;</scope><name>Transcode</name></member>
+      <member refid="struct_transcoder_3_01_encoding_00_01_encoding_01_4_1a536aa3930251161d05e112947ec2f9c8" prot="public" virt="non-virtual"><scope>Transcoder&lt; Encoding, Encoding &gt;</scope><name>Validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

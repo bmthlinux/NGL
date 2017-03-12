@@ -1,0 +1,633 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classrapidxml_1_1xml__document" kind="class" language="C++" prot="public">
+    <compoundname>rapidxml::xml_document</compoundname>
+    <basecompoundref refid="classrapidxml_1_1xml__node" prot="public" virt="non-virtual">rapidxml::xml_node&lt; Ch &gt;</basecompoundref>
+    <basecompoundref refid="classrapidxml_1_1memory__pool" prot="public" virt="non-virtual">rapidxml::memory_pool&lt; Ch &gt;</basecompoundref>
+    <includes refid="rapidxml_8hpp" local="no">rapidxml.hpp</includes>
+    <innerclass refid="structrapidxml_1_1xml__document_1_1attribute__name__pred" prot="private">rapidxml::xml_document::attribute_name_pred</innerclass>
+    <innerclass refid="structrapidxml_1_1xml__document_1_1attribute__value__pred" prot="private">rapidxml::xml_document::attribute_value_pred</innerclass>
+    <innerclass refid="structrapidxml_1_1xml__document_1_1attribute__value__pure__pred" prot="private">rapidxml::xml_document::attribute_value_pure_pred</innerclass>
+    <innerclass refid="structrapidxml_1_1xml__document_1_1node__name__pred" prot="private">rapidxml::xml_document::node_name_pred</innerclass>
+    <innerclass refid="structrapidxml_1_1xml__document_1_1text__pred" prot="private">rapidxml::xml_document::text_pred</innerclass>
+    <innerclass refid="structrapidxml_1_1xml__document_1_1text__pure__no__ws__pred" prot="private">rapidxml::xml_document::text_pure_no_ws_pred</innerclass>
+    <innerclass refid="structrapidxml_1_1xml__document_1_1text__pure__with__ws__pred" prot="private">rapidxml::xml_document::text_pure_with_ws_pred</innerclass>
+    <innerclass refid="structrapidxml_1_1xml__document_1_1whitespace__pred" prot="private">rapidxml::xml_document::whitespace_pred</innerclass>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>Ch</declname>
+        <defname>Ch</defname>
+        <defval>char</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrapidxml_1_1xml__document_1aae8841b15085ba8f32ff46587ace28f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rapidxml::xml_document&lt; Ch &gt;::xml_document</definition>
+        <argsstring>()</argsstring>
+        <name>xml_document</name>
+        <briefdescription>
+<para>Constructs empty XML document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="1364" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="1364" bodyend="1367"/>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1xml__document_1ac6e73ff9ac323bf5a370c38feb03a6b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+            <declname>Flags</declname>
+            <defname>Flags</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void rapidxml::xml_document&lt; Ch &gt;::parse</definition>
+        <argsstring>(Ch *text)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>Ch *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parses zero-terminated XML string according to given flags. Passed string will be modified by the parser, unless <ref refid="namespacerapidxml_1a45d4d8fef551beaaba23a83b847fd6a3" kindref="member">rapidxml::parse_non_destructive</ref> flag is used. The string must persist for the lifetime of the document. In case of error, <ref refid="classrapidxml_1_1parse__error" kindref="compound">rapidxml::parse_error</ref> exception will be thrown. <linebreak/>
+<linebreak/>
+ If you want to parse contents of a file, you must first load the file into the memory, and pass pointer to its beginning. Make sure that data is zero-terminated. <linebreak/>
+<linebreak/>
+ Document can be parsed into multiple times. Each new call to parse removes previous nodes and attributes (if any), but does not clear memory pool. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>XML data to parse; pointer is non-const to denote fact that this data may be modified by the parser. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="1381" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="1381" bodyend="1411"/>
+        <references refid="rapidxml_8hpp_1a65f2be309896ffb841997d467c2f4fff" compoundref="rapidxml_8hpp" startline="55">RAPIDXML_PARSE_ERROR</references>
+        <referencedby refid="classngl_1_1_n_c_c_a_point_bake_1ab78610a7787f4864f9e4d69281d63d84" compoundref="_n_c_c_a_point_bake_8cpp" startline="44" endline="128">ngl::NCCAPointBake::loadPointBake</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1xml__document_1a826929ff54242532198701f19ff5f83f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void rapidxml::xml_document&lt; Ch &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clears the document by deleting all nodes and clearing the memory pool. All nodes owned by document pool are destroyed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="1415" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="1415" bodyend="1420"/>
+        <references refid="classrapidxml_1_1memory__pool_1aad377c835fdaed1cb2cc9df194cf84e4" compoundref="rapidxml_8hpp" startline="525" endline="537">rapidxml::memory_pool&lt; Ch &gt;::clear</references>
+        <referencedby refid="classngl_1_1_x_m_l_serializer_1a3fe503ca9e18b6cacb332e285f707999" compoundref="_x_m_l_serializer_8cpp" startline="62" endline="71">ngl::XMLSerializer::~XMLSerializer</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classrapidxml_1_1xml__document_1ae33040bcfa8e5a29dc6f6f130984a981" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+            <declname>Flags</declname>
+            <defname>Flags</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>static void rapidxml::xml_document&lt; Ch &gt;::insert_coded_character</definition>
+        <argsstring>(Ch *&amp;text, unsigned long code)</argsstring>
+        <name>insert_coded_character</name>
+        <param>
+          <type>Ch *&amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="1511" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="1511" bodyend="1554"/>
+        <references refid="rapidxml_8hpp_1a65f2be309896ffb841997d467c2f4fff" compoundref="rapidxml_8hpp" startline="55">RAPIDXML_PARSE_ERROR</references>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1xml__document_1a27aca5bdcb3bfa899f61b17d7f1d3a0d" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class StopPred</type>
+          </param>
+          <param>
+            <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+            <declname>Flags</declname>
+            <defname>Flags</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>static void rapidxml::xml_document&lt; Ch &gt;::skip</definition>
+        <argsstring>(Ch *&amp;text)</argsstring>
+        <name>skip</name>
+        <param>
+          <type>Ch *&amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="1558" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="1558" bodyend="1564"/>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1xml__document_1af86781975cdfff2105fa8c0b49ab4507" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class StopPred</type>
+          </param>
+          <param>
+            <type>class StopPredPure</type>
+          </param>
+          <param>
+            <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+            <declname>Flags</declname>
+            <defname>Flags</defname>
+          </param>
+        </templateparamlist>
+        <type>Ch *</type>
+        <definition>static Ch* rapidxml::xml_document&lt; Ch &gt;::skip_and_expand_character_refs</definition>
+        <argsstring>(Ch *&amp;text)</argsstring>
+        <name>skip_and_expand_character_refs</name>
+        <param>
+          <type>Ch *&amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="1570" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="1570" bodyend="1718"/>
+        <references refid="rapidxml_8hpp_1a65f2be309896ffb841997d467c2f4fff" compoundref="rapidxml_8hpp" startline="55">RAPIDXML_PARSE_ERROR</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classrapidxml_1_1xml__document_1aaa63a0c7b57ab8fce63d4aebe4da123d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+            <declname>Flags</declname>
+            <defname>Flags</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void rapidxml::xml_document&lt; Ch &gt;::parse_bom</definition>
+        <argsstring>(Ch *&amp;text)</argsstring>
+        <name>parse_bom</name>
+        <param>
+          <type>Ch *&amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="1725" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="1725" bodyend="1734"/>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1xml__document_1a0151c52c82ba79ea0605c2facf39c534" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+            <declname>Flags</declname>
+            <defname>Flags</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref>&lt; Ch &gt; *</type>
+        <definition>xml_node&lt;Ch&gt;* rapidxml::xml_document&lt; Ch &gt;::parse_xml_declaration</definition>
+        <argsstring>(Ch *&amp;text)</argsstring>
+        <name>parse_xml_declaration</name>
+        <param>
+          <type>Ch *&amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="1738" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="1738" bodyend="1769"/>
+        <references refid="namespacerapidxml_1abb456db38f7efb746c4330eed6072a7cafe4ca44261e5fbedf0eab43131751212" compoundref="rapidxml_8hpp" startline="150">rapidxml::node_declaration</references>
+        <references refid="rapidxml_8hpp_1a65f2be309896ffb841997d467c2f4fff" compoundref="rapidxml_8hpp" startline="55">RAPIDXML_PARSE_ERROR</references>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1xml__document_1abc287ce83bcb2dc8519e300236004591" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+            <declname>Flags</declname>
+            <defname>Flags</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref>&lt; Ch &gt; *</type>
+        <definition>xml_node&lt;Ch&gt;* rapidxml::xml_document&lt; Ch &gt;::parse_comment</definition>
+        <argsstring>(Ch *&amp;text)</argsstring>
+        <name>parse_comment</name>
+        <param>
+          <type>Ch *&amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="1773" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="1773" bodyend="1810"/>
+        <references refid="namespacerapidxml_1abb456db38f7efb746c4330eed6072a7ca1a695e1384ec3bd4df3eff65ec609a96" compoundref="rapidxml_8hpp" startline="149">rapidxml::node_comment</references>
+        <references refid="rapidxml_8hpp_1a65f2be309896ffb841997d467c2f4fff" compoundref="rapidxml_8hpp" startline="55">RAPIDXML_PARSE_ERROR</references>
+        <references refid="classrapidxml_1_1xml__base_1adcdaccff61c665f039d9344e447b7445" compoundref="rapidxml_8hpp" startline="692" endline="695">rapidxml::xml_base&lt; Ch &gt;::value</references>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1xml__document_1a4c613f3a928f763b4c788422edda5860" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+            <declname>Flags</declname>
+            <defname>Flags</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref>&lt; Ch &gt; *</type>
+        <definition>xml_node&lt;Ch&gt;* rapidxml::xml_document&lt; Ch &gt;::parse_doctype</definition>
+        <argsstring>(Ch *&amp;text)</argsstring>
+        <name>parse_doctype</name>
+        <param>
+          <type>Ch *&amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="1814" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="1814" bodyend="1876"/>
+        <references refid="namespacerapidxml_1abb456db38f7efb746c4330eed6072a7cadf5002f2efabe231bed01d16f08f832c" compoundref="rapidxml_8hpp" startline="151">rapidxml::node_doctype</references>
+        <references refid="rapidxml_8hpp_1a65f2be309896ffb841997d467c2f4fff" compoundref="rapidxml_8hpp" startline="55">RAPIDXML_PARSE_ERROR</references>
+        <references refid="classrapidxml_1_1xml__base_1adcdaccff61c665f039d9344e447b7445" compoundref="rapidxml_8hpp" startline="692" endline="695">rapidxml::xml_base&lt; Ch &gt;::value</references>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1xml__document_1a09e12a4233a07387d4b5a5ad239388aa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+            <declname>Flags</declname>
+            <defname>Flags</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref>&lt; Ch &gt; *</type>
+        <definition>xml_node&lt;Ch&gt;* rapidxml::xml_document&lt; Ch &gt;::parse_pi</definition>
+        <argsstring>(Ch *&amp;text)</argsstring>
+        <name>parse_pi</name>
+        <param>
+          <type>Ch *&amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="1880" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="1880" bodyend="1934"/>
+        <references refid="classrapidxml_1_1xml__base_1a9a09739310469995db078ebd0da3ed45" compoundref="rapidxml_8hpp" startline="673" endline="676">rapidxml::xml_base&lt; Ch &gt;::name</references>
+        <references refid="classrapidxml_1_1xml__base_1a7e7f98b3d01e1eab8dc1ca69aad9af84" compoundref="rapidxml_8hpp" startline="681" endline="684">rapidxml::xml_base&lt; Ch &gt;::name_size</references>
+        <references refid="namespacerapidxml_1abb456db38f7efb746c4330eed6072a7caeb73b472e77347b9aa89525f16493b87" compoundref="rapidxml_8hpp" startline="152">rapidxml::node_pi</references>
+        <references refid="rapidxml_8hpp_1a65f2be309896ffb841997d467c2f4fff" compoundref="rapidxml_8hpp" startline="55">RAPIDXML_PARSE_ERROR</references>
+        <references refid="classrapidxml_1_1xml__base_1adcdaccff61c665f039d9344e447b7445" compoundref="rapidxml_8hpp" startline="692" endline="695">rapidxml::xml_base&lt; Ch &gt;::value</references>
+        <references refid="classrapidxml_1_1xml__base_1a9fcf201ed0915ac18dd43b0b5dcfaf32" compoundref="rapidxml_8hpp" startline="700" endline="703">rapidxml::xml_base&lt; Ch &gt;::value_size</references>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1xml__document_1aec6cedf45179b6378c670bc3ea509e61" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+            <declname>Flags</declname>
+            <defname>Flags</defname>
+          </param>
+        </templateparamlist>
+        <type>Ch</type>
+        <definition>Ch rapidxml::xml_document&lt; Ch &gt;::parse_and_append_data</definition>
+        <argsstring>(xml_node&lt; Ch &gt; *node, Ch *&amp;text, Ch *contents_start)</argsstring>
+        <name>parse_and_append_data</name>
+        <param>
+          <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref>&lt; Ch &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>Ch *&amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>Ch *</type>
+          <declname>contents_start</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="1940" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="1940" bodyend="1994"/>
+        <references refid="classrapidxml_1_1xml__node_1a8696d098ecc9c4d2a646b43e91d58e31" compoundref="rapidxml_8hpp" startline="1097" endline="1113">rapidxml::xml_node&lt; Ch &gt;::append_node</references>
+        <references refid="namespacerapidxml_1abb456db38f7efb746c4330eed6072a7ca9d669d8e1f4ba9c7eeada4c14a11ad1d" compoundref="rapidxml_8hpp" startline="147">rapidxml::node_data</references>
+        <references refid="classrapidxml_1_1xml__base_1adcdaccff61c665f039d9344e447b7445" compoundref="rapidxml_8hpp" startline="692" endline="695">rapidxml::xml_base&lt; Ch &gt;::value</references>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1xml__document_1ab94daeb25e8a1609e31210a45b2afa6c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+            <declname>Flags</declname>
+            <defname>Flags</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref>&lt; Ch &gt; *</type>
+        <definition>xml_node&lt;Ch&gt;* rapidxml::xml_document&lt; Ch &gt;::parse_cdata</definition>
+        <argsstring>(Ch *&amp;text)</argsstring>
+        <name>parse_cdata</name>
+        <param>
+          <type>Ch *&amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="1998" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="1998" bodyend="2033"/>
+        <references refid="namespacerapidxml_1abb456db38f7efb746c4330eed6072a7caccf0b363d3876a3f83ff9b1bcdaaa536" compoundref="rapidxml_8hpp" startline="148">rapidxml::node_cdata</references>
+        <references refid="rapidxml_8hpp_1a65f2be309896ffb841997d467c2f4fff" compoundref="rapidxml_8hpp" startline="55">RAPIDXML_PARSE_ERROR</references>
+        <references refid="classrapidxml_1_1xml__base_1adcdaccff61c665f039d9344e447b7445" compoundref="rapidxml_8hpp" startline="692" endline="695">rapidxml::xml_base&lt; Ch &gt;::value</references>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1xml__document_1aea385acd096ab200d63a777d53435ada" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+            <declname>Flags</declname>
+            <defname>Flags</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref>&lt; Ch &gt; *</type>
+        <definition>xml_node&lt;Ch&gt;* rapidxml::xml_document&lt; Ch &gt;::parse_element</definition>
+        <argsstring>(Ch *&amp;text)</argsstring>
+        <name>parse_element</name>
+        <param>
+          <type>Ch *&amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="2037" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="2037" bodyend="2077"/>
+        <references refid="classrapidxml_1_1xml__base_1a9a09739310469995db078ebd0da3ed45" compoundref="rapidxml_8hpp" startline="673" endline="676">rapidxml::xml_base&lt; Ch &gt;::name</references>
+        <references refid="classrapidxml_1_1xml__base_1a7e7f98b3d01e1eab8dc1ca69aad9af84" compoundref="rapidxml_8hpp" startline="681" endline="684">rapidxml::xml_base&lt; Ch &gt;::name_size</references>
+        <references refid="namespacerapidxml_1abb456db38f7efb746c4330eed6072a7ca89cbeb4d28046326e4ee953d3c4047ff" compoundref="rapidxml_8hpp" startline="146">rapidxml::node_element</references>
+        <references refid="rapidxml_8hpp_1a65f2be309896ffb841997d467c2f4fff" compoundref="rapidxml_8hpp" startline="55">RAPIDXML_PARSE_ERROR</references>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1xml__document_1a5e94cbc9b02e864cb80961ddb8cc63a7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+            <declname>Flags</declname>
+            <defname>Flags</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref>&lt; Ch &gt; *</type>
+        <definition>xml_node&lt;Ch&gt;* rapidxml::xml_document&lt; Ch &gt;::parse_node</definition>
+        <argsstring>(Ch *&amp;text)</argsstring>
+        <name>parse_node</name>
+        <param>
+          <type>Ch *&amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="2081" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="2081" bodyend="2163"/>
+        <references refid="rapidxml_8hpp_1a65f2be309896ffb841997d467c2f4fff" compoundref="rapidxml_8hpp" startline="55">RAPIDXML_PARSE_ERROR</references>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1xml__document_1aae0a4c2e1972ab9a9e0ce91cf1166ac9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+            <declname>Flags</declname>
+            <defname>Flags</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void rapidxml::xml_document&lt; Ch &gt;::parse_node_contents</definition>
+        <argsstring>(Ch *&amp;text, xml_node&lt; Ch &gt; *node)</argsstring>
+        <name>parse_node_contents</name>
+        <param>
+          <type>Ch *&amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref>&lt; Ch &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="2167" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="2167" bodyend="2233"/>
+        <references refid="classrapidxml_1_1xml__node_1a8696d098ecc9c4d2a646b43e91d58e31" compoundref="rapidxml_8hpp" startline="1097" endline="1113">rapidxml::xml_node&lt; Ch &gt;::append_node</references>
+        <references refid="classrapidxml_1_1xml__base_1a9a09739310469995db078ebd0da3ed45" compoundref="rapidxml_8hpp" startline="673" endline="676">rapidxml::xml_base&lt; Ch &gt;::name</references>
+        <references refid="classrapidxml_1_1xml__base_1a7e7f98b3d01e1eab8dc1ca69aad9af84" compoundref="rapidxml_8hpp" startline="681" endline="684">rapidxml::xml_base&lt; Ch &gt;::name_size</references>
+        <references refid="rapidxml_8hpp_1a65f2be309896ffb841997d467c2f4fff" compoundref="rapidxml_8hpp" startline="55">RAPIDXML_PARSE_ERROR</references>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1xml__document_1ac0b3cd07b3d5cbaa83762a196c681519" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+            <declname>Flags</declname>
+            <defname>Flags</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void rapidxml::xml_document&lt; Ch &gt;::parse_node_attributes</definition>
+        <argsstring>(Ch *&amp;text, xml_node&lt; Ch &gt; *node)</argsstring>
+        <name>parse_node_attributes</name>
+        <param>
+          <type>Ch *&amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref>&lt; Ch &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="2237" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="2237" bodyend="2298"/>
+        <references refid="classrapidxml_1_1xml__node_1a33ce3386f8c42dd4db658b75cbb6e6c4" compoundref="rapidxml_8hpp" startline="1217" endline="1233">rapidxml::xml_node&lt; Ch &gt;::append_attribute</references>
+        <references refid="classrapidxml_1_1xml__base_1a9a09739310469995db078ebd0da3ed45" compoundref="rapidxml_8hpp" startline="673" endline="676">rapidxml::xml_base&lt; Ch &gt;::name</references>
+        <references refid="classrapidxml_1_1xml__base_1a7e7f98b3d01e1eab8dc1ca69aad9af84" compoundref="rapidxml_8hpp" startline="681" endline="684">rapidxml::xml_base&lt; Ch &gt;::name_size</references>
+        <references refid="rapidxml_8hpp_1a65f2be309896ffb841997d467c2f4fff" compoundref="rapidxml_8hpp" startline="55">RAPIDXML_PARSE_ERROR</references>
+        <references refid="classrapidxml_1_1xml__base_1adcdaccff61c665f039d9344e447b7445" compoundref="rapidxml_8hpp" startline="692" endline="695">rapidxml::xml_base&lt; Ch &gt;::value</references>
+        <references refid="classrapidxml_1_1xml__base_1a9fcf201ed0915ac18dd43b0b5dcfaf32" compoundref="rapidxml_8hpp" startline="700" endline="703">rapidxml::xml_base&lt; Ch &gt;::value_size</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class represents root of the DOM hierarchy. It is also an <ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref> and a <ref refid="classrapidxml_1_1memory__pool" kindref="compound">memory_pool</ref> through public inheritance. Use <ref refid="classrapidxml_1_1xml__document_1ac6e73ff9ac323bf5a370c38feb03a6b1" kindref="member">parse()</ref> function to build a DOM tree from a zero-terminated XML text string. <ref refid="classrapidxml_1_1xml__document_1ac6e73ff9ac323bf5a370c38feb03a6b1" kindref="member">parse()</ref> function allocates memory for nodes and attributes by using functions of <ref refid="classrapidxml_1_1xml__document" kindref="compound">xml_document</ref>, which are inherited from <ref refid="classrapidxml_1_1memory__pool" kindref="compound">memory_pool</ref>. To access root node of the document, use the document itself, as if it was an <ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Character type to use. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2108">
+        <label>rapidxml::xml_document&lt; Ch &gt;</label>
+        <link refid="classrapidxml_1_1xml__document"/>
+        <childnode refid="2109" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2111" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2109">
+        <label>rapidxml::xml_node&lt; Ch &gt;</label>
+        <link refid="classrapidxml_1_1xml__node"/>
+        <childnode refid="2110" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2111">
+        <label>rapidxml::memory_pool&lt; Ch &gt;</label>
+        <link refid="classrapidxml_1_1memory__pool"/>
+      </node>
+      <node id="2110">
+        <label>rapidxml::xml_base&lt; Ch &gt;</label>
+        <link refid="classrapidxml_1_1xml__base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2115">
+        <label>size_t</label>
+      </node>
+      <node id="2112">
+        <label>rapidxml::xml_document&lt; Ch &gt;</label>
+        <link refid="classrapidxml_1_1xml__document"/>
+        <childnode refid="2113" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2113">
+        <label>rapidxml::xml_node&lt; Ch &gt;</label>
+        <link refid="classrapidxml_1_1xml__node"/>
+        <childnode refid="2114" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2116">
+        <label>rapidxml::memory_pool&lt; Ch &gt;</label>
+        <link refid="classrapidxml_1_1memory__pool"/>
+      </node>
+      <node id="2114">
+        <label>rapidxml::xml_base&lt; Ch &gt;</label>
+        <link refid="classrapidxml_1_1xml__base"/>
+        <childnode refid="2115" relation="usage">
+          <edgelabel>#m_name_size</edgelabel>
+          <edgelabel>#m_value_size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="139" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="139" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classrapidxml_1_1memory__pool_1a3de2a66c983336e006ea3844e244ed30" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>allocate_attribute</name></member>
+      <member refid="classrapidxml_1_1memory__pool_1a4118581c29ee9a2f6b55ebf7dac185f8" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>allocate_node</name></member>
+      <member refid="classrapidxml_1_1memory__pool_1a171941b39d55b868358da97462185f58" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>allocate_string</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a33ce3386f8c42dd4db658b75cbb6e6c4" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>append_attribute</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a8696d098ecc9c4d2a646b43e91d58e31" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>append_node</name></member>
+      <member refid="classrapidxml_1_1xml__document_1a826929ff54242532198701f19ff5f83f" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>clear</name></member>
+      <member refid="classrapidxml_1_1memory__pool_1a0a10679fc17597d339a0dc107f8a94ac" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>clone_node</name></member>
+      <member refid="classrapidxml_1_1xml__node_1adb6ad21a4590cf13d4a6a5036e3cdbbc" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>document</name></member>
+      <member refid="classrapidxml_1_1xml__node_1ae426802be58114ffc41bf30ac6b8c37d" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>first_attribute</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a2dedeb4e04bb35e06a9a7bddf6ba652d" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>first_node</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a9fe659cdf4a5b3bbf5e8ffc98db5a84f" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>insert_attribute</name></member>
+      <member refid="classrapidxml_1_1xml__document_1ae33040bcfa8e5a29dc6f6f130984a981" prot="private" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>insert_coded_character</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a666880f42a7e486d78cc45ed51c7c46d" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>insert_node</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a50c03f2db3fa51f27a73d86ec29a49d3" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>last_attribute</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a2ace550c18cf10da6303773972d7157f" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>last_node</name></member>
+      <member refid="classrapidxml_1_1xml__base_1afd9851ed43e14619db0d7075ef8e9e8a" prot="protected" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>m_name</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a5a8c76a7274b4180213796422c4df76f" prot="protected" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>m_name_size</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a90d5f660f078f66563fd7b2d8387ccb0" prot="protected" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>m_parent</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a278a1ea63b0b70219b946cec47fa00ea" prot="protected" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>m_value</name></member>
+      <member refid="classrapidxml_1_1xml__base_1aa3a49d8ceddb8a8d7edb773a2226b89c" prot="protected" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>m_value_size</name></member>
+      <member refid="classrapidxml_1_1memory__pool_1a0b609da81dff28a19ebd704400788429" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>memory_pool</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a9a09739310469995db078ebd0da3ed45" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>name</name></member>
+      <member refid="classrapidxml_1_1xml__base_1ae55060ae958c6e6465d6c8db852ec6ce" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>name</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a4611ddc82ac83a527c65606600eb2a0d" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>name</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a7e7f98b3d01e1eab8dc1ca69aad9af84" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>name_size</name></member>
+      <member refid="classrapidxml_1_1xml__node_1ac59af4dd5f0ec715753e42467dff6aed" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>next_sibling</name></member>
+      <member refid="classrapidxml_1_1xml__base_1ad96ff6b1e41dab3ff60b9bc4df769a75" prot="protected" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>nullstr</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a7f31ae930f93852830234db1ae59c4c4" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>parent</name></member>
+      <member refid="classrapidxml_1_1xml__document_1ac6e73ff9ac323bf5a370c38feb03a6b1" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>parse</name></member>
+      <member refid="classrapidxml_1_1xml__document_1aec6cedf45179b6378c670bc3ea509e61" prot="private" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>parse_and_append_data</name></member>
+      <member refid="classrapidxml_1_1xml__document_1aaa63a0c7b57ab8fce63d4aebe4da123d" prot="private" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>parse_bom</name></member>
+      <member refid="classrapidxml_1_1xml__document_1ab94daeb25e8a1609e31210a45b2afa6c" prot="private" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>parse_cdata</name></member>
+      <member refid="classrapidxml_1_1xml__document_1abc287ce83bcb2dc8519e300236004591" prot="private" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>parse_comment</name></member>
+      <member refid="classrapidxml_1_1xml__document_1a4c613f3a928f763b4c788422edda5860" prot="private" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>parse_doctype</name></member>
+      <member refid="classrapidxml_1_1xml__document_1aea385acd096ab200d63a777d53435ada" prot="private" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>parse_element</name></member>
+      <member refid="classrapidxml_1_1xml__document_1a5e94cbc9b02e864cb80961ddb8cc63a7" prot="private" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>parse_node</name></member>
+      <member refid="classrapidxml_1_1xml__document_1ac0b3cd07b3d5cbaa83762a196c681519" prot="private" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>parse_node_attributes</name></member>
+      <member refid="classrapidxml_1_1xml__document_1aae0a4c2e1972ab9a9e0ce91cf1166ac9" prot="private" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>parse_node_contents</name></member>
+      <member refid="classrapidxml_1_1xml__document_1a09e12a4233a07387d4b5a5ad239388aa" prot="private" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>parse_pi</name></member>
+      <member refid="classrapidxml_1_1xml__document_1a0151c52c82ba79ea0605c2facf39c534" prot="private" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>parse_xml_declaration</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a8b62ee76489faf8e2d1210869d547684" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>prepend_attribute</name></member>
+      <member refid="classrapidxml_1_1xml__node_1ae86e92908c3eab40bbed8216e4f3f3cb" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>prepend_node</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a001ece4e227eebbd6ad0ec7dacf1c00b" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>previous_sibling</name></member>
+      <member refid="classrapidxml_1_1xml__node_1aa8d5d9484aa1eb5ff1841a073c84c1aa" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>remove_all_attributes</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a95735358b079ae0adcfbbac69aa1fbc3" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>remove_all_nodes</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a6f97b1b4f46a94a4587915df3c0c6b57" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>remove_attribute</name></member>
+      <member refid="classrapidxml_1_1xml__node_1aa95192d2a165cca16c551ed2a2a06aec" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>remove_first_attribute</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a62bf7b276cf7a651a3337f5e0a0ef6ac" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>remove_first_node</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a1781a2cbedc9a51d609ad5b528125635" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>remove_last_attribute</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a9182512e948ec451a83f116cce7c7674" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>remove_last_node</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a98289923eb9e8889418a9eb0207ea35c" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>remove_node</name></member>
+      <member refid="classrapidxml_1_1memory__pool_1a84d3d8d2cdfc00501e1dcf26d889ae03" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>set_allocator</name></member>
+      <member refid="classrapidxml_1_1xml__document_1a27aca5bdcb3bfa899f61b17d7f1d3a0d" prot="private" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>skip</name></member>
+      <member refid="classrapidxml_1_1xml__document_1af86781975cdfff2105fa8c0b49ab4507" prot="private" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>skip_and_expand_character_refs</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a2c6a4315b98bcfa2e04fed3fa1b22c36" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>type</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a499bbc9300c1b06821d5c08b24164c68" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>type</name></member>
+      <member refid="classrapidxml_1_1xml__base_1adcdaccff61c665f039d9344e447b7445" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>value</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a3b183c2db7022a6d30494dd2f0ac11e9" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>value</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a81e63ec4bfd2d7ef0a6c2ed49be6e623" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>value</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a9fcf201ed0915ac18dd43b0b5dcfaf32" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>value_size</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a23e7f7aac02d17a0a01afb597e4b966b" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>xml_base</name></member>
+      <member refid="classrapidxml_1_1xml__document_1aae8841b15085ba8f32ff46587ace28f5" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>xml_document</name></member>
+      <member refid="classrapidxml_1_1xml__node_1a8bd9019960b90605a45998b661fb1b0e" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>xml_node</name></member>
+      <member refid="classrapidxml_1_1memory__pool_1a0a3e82126e59e4077f41e933130bb5a0" prot="public" virt="non-virtual"><scope>rapidxml::xml_document</scope><name>~memory_pool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

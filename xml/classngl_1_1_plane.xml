@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classngl_1_1_plane" kind="class" language="C++" prot="public">
+    <compoundname>ngl::Plane</compoundname>
+    <includes refid="_plane_8h" local="no">Plane.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classngl_1_1_plane_1a6391973323e52a0a98b77294bc7e64c9" prot="private" static="no" mutable="no">
+        <type><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 ngl::Plane::m_normal</definition>
+        <argsstring></argsstring>
+        <name>m_normal</name>
+        <briefdescription>
+<para>the normal of the plane </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Plane.h" line="111" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Plane.h" bodystart="111" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_plane_1a9ee3f8ba8f51176287b61b886c7aa5e4" compoundref="_plane_8cpp" startline="42" endline="52">setPoints</referencedby>
+        <referencedby refid="classngl_1_1_plane_1a6320b5c5eeaa23c3548ef55147539125" compoundref="_plane_8cpp" startline="54" endline="60">setNormalPoint</referencedby>
+        <referencedby refid="classngl_1_1_plane_1ab113224ea990481344eca0af242adae9" compoundref="_plane_8cpp" startline="62" endline="72">setFloats</referencedby>
+        <referencedby refid="classngl_1_1_plane_1a1fe57e76fa01a2bf299e012b23e34177" compoundref="_plane_8cpp" startline="75" endline="78">distance</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_plane_1a327fd6fd042c46f7368ba5046d270232" prot="private" static="no" mutable="no">
+        <type><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 ngl::Plane::m_point</definition>
+        <argsstring></argsstring>
+        <name>m_point</name>
+        <briefdescription>
+<para>the point position of the normal / plane </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Plane.h" line="115" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Plane.h" bodystart="115" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_plane_1a9ee3f8ba8f51176287b61b886c7aa5e4" compoundref="_plane_8cpp" startline="42" endline="52">setPoints</referencedby>
+        <referencedby refid="classngl_1_1_plane_1a6320b5c5eeaa23c3548ef55147539125" compoundref="_plane_8cpp" startline="54" endline="60">setNormalPoint</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_plane_1a55310fa7f3f3be643e18ca4afb469218" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::Plane::m_d</definition>
+        <argsstring></argsstring>
+        <name>m_d</name>
+        <briefdescription>
+<para>the co-efficient of the plane </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Plane.h" line="119" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Plane.h" bodystart="119" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_plane_1a9ee3f8ba8f51176287b61b886c7aa5e4" compoundref="_plane_8cpp" startline="42" endline="52">setPoints</referencedby>
+        <referencedby refid="classngl_1_1_plane_1a6320b5c5eeaa23c3548ef55147539125" compoundref="_plane_8cpp" startline="54" endline="60">setNormalPoint</referencedby>
+        <referencedby refid="classngl_1_1_plane_1ab113224ea990481344eca0af242adae9" compoundref="_plane_8cpp" startline="62" endline="72">setFloats</referencedby>
+        <referencedby refid="classngl_1_1_plane_1a1fe57e76fa01a2bf299e012b23e34177" compoundref="_plane_8cpp" startline="75" endline="78">distance</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngl_1_1_plane_1a6b858a52e2275ed8643eb63fb14a6a4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::Plane::Plane</definition>
+        <argsstring>(const Vec3 &amp;_v1, const Vec3 &amp;_v2, const Vec3 &amp;_v3) noexcept</argsstring>
+        <name>Plane</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_v2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_v3</declname>
+        </param>
+        <briefdescription>
+<para>ctor passing in 3 vectors for the plane </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_v1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the first Point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_v2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the second Point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_v3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the third Point </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Plane.h" line="50" column="1" bodyfile="/Users/jmacey/NGL/src/Plane.cpp" bodystart="31" bodyend="34"/>
+        <references refid="classngl_1_1_plane_1a9ee3f8ba8f51176287b61b886c7aa5e4" compoundref="_plane_8cpp" startline="42" endline="52">setPoints</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_plane_1a22a123d9f73c20b53d387e5366fe53d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::Plane::Plane</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>Plane</name>
+        <briefdescription>
+<para>default ctor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Plane.h" line="55" column="1" bodyfile="/Users/jmacey/NGL/src/Plane.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_plane_1a2a7e5747b312a6adb13990974af97aa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::Plane::~Plane</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>~Plane</name>
+        <briefdescription>
+<para>dtor (not used) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Plane.h" line="59" column="1" bodyfile="/Users/jmacey/NGL/src/Plane.cpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_plane_1a9ee3f8ba8f51176287b61b886c7aa5e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Plane::setPoints</definition>
+        <argsstring>(const Vec3 &amp;_v1, const Vec3 &amp;_v2, const Vec3 &amp;_v3) noexcept</argsstring>
+        <name>setPoints</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_v2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_v3</declname>
+        </param>
+        <briefdescription>
+<para>set the plane from 3 points </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_v1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the first point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_v2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the second point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_v3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the third point </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Plane.h" line="66" column="1" bodyfile="/Users/jmacey/NGL/src/Plane.cpp" bodystart="42" bodyend="52"/>
+        <references refid="classngl_1_1_vec3_1ac59c879f8dfd735903a5cd07eb5c79ce" compoundref="_vec3_8cpp" startline="187" endline="192">ngl::Vec3::cross</references>
+        <references refid="classngl_1_1_vec3_1abd4248600950b5da088cb299f3a55fd7" compoundref="_vec3_8cpp" startline="216" endline="219">ngl::Vec3::inner</references>
+        <references refid="classngl_1_1_plane_1a55310fa7f3f3be643e18ca4afb469218" compoundref="_plane_8h" startline="119">m_d</references>
+        <references refid="classngl_1_1_plane_1a6391973323e52a0a98b77294bc7e64c9" compoundref="_plane_8h" startline="111">m_normal</references>
+        <references refid="classngl_1_1_plane_1a327fd6fd042c46f7368ba5046d270232" compoundref="_plane_8h" startline="115">m_point</references>
+        <references refid="classngl_1_1_vec3_1a091a5439ddfd8a25fe486cf026345ef5" compoundref="_vec3_8cpp" startline="206" endline="213">ngl::Vec3::normalize</references>
+        <referencedby refid="classngl_1_1_plane_1a6b858a52e2275ed8643eb63fb14a6a4b" compoundref="_plane_8cpp" startline="31" endline="34">Plane</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_plane_1a6320b5c5eeaa23c3548ef55147539125" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Plane::setNormalPoint</definition>
+        <argsstring>(const Vec3 &amp;_normal, const Vec3 &amp;_point) noexcept</argsstring>
+        <name>setNormalPoint</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_normal</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_point</declname>
+        </param>
+        <briefdescription>
+<para>set the plane from a normal and a point </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_normal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the normal </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the point </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Plane.h" line="72" column="1" bodyfile="/Users/jmacey/NGL/src/Plane.cpp" bodystart="54" bodyend="60"/>
+        <references refid="classngl_1_1_vec3_1abd4248600950b5da088cb299f3a55fd7" compoundref="_vec3_8cpp" startline="216" endline="219">ngl::Vec3::inner</references>
+        <references refid="classngl_1_1_plane_1a55310fa7f3f3be643e18ca4afb469218" compoundref="_plane_8h" startline="119">m_d</references>
+        <references refid="classngl_1_1_plane_1a6391973323e52a0a98b77294bc7e64c9" compoundref="_plane_8h" startline="111">m_normal</references>
+        <references refid="classngl_1_1_plane_1a327fd6fd042c46f7368ba5046d270232" compoundref="_plane_8h" startline="115">m_point</references>
+        <references refid="classngl_1_1_vec3_1a091a5439ddfd8a25fe486cf026345ef5" compoundref="_vec3_8cpp" startline="206" endline="213">ngl::Vec3::normalize</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_plane_1ab113224ea990481344eca0af242adae9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Plane::setFloats</definition>
+        <argsstring>(Real _a, Real _b, Real _c, Real _d) noexcept</argsstring>
+        <name>setFloats</name>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_a</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_b</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_c</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_d</declname>
+        </param>
+        <briefdescription>
+<para>set the plane from the co-efficients </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the first co-efficient </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the second co-efficient </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the third co-efficient </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the fourth co-efficient </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Plane.h" line="81" column="1" bodyfile="/Users/jmacey/NGL/src/Plane.cpp" bodystart="62" bodyend="72"/>
+        <references refid="classngl_1_1_vec3_1aad53df190ff4513b4684ce60a7cc52fa" compoundref="_vec3_8cpp" startline="233" endline="236">ngl::Vec3::length</references>
+        <references refid="classngl_1_1_plane_1a55310fa7f3f3be643e18ca4afb469218" compoundref="_plane_8h" startline="119">m_d</references>
+        <references refid="classngl_1_1_plane_1a6391973323e52a0a98b77294bc7e64c9" compoundref="_plane_8h" startline="111">m_normal</references>
+        <references refid="classngl_1_1_vec3_1a091a5439ddfd8a25fe486cf026345ef5" compoundref="_vec3_8cpp" startline="206" endline="213">ngl::Vec3::normalize</references>
+        <references refid="classngl_1_1_vec3_1a13e680783f23f676545ef12d12ea3f0b" compoundref="_vec3_8cpp" startline="33" endline="38">ngl::Vec3::set</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_plane_1a1fe57e76fa01a2bf299e012b23e34177" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::Plane::distance</definition>
+        <argsstring>(const Vec3 &amp;_p) const  noexcept</argsstring>
+        <name>distance</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_p</declname>
+        </param>
+        <briefdescription>
+<para>get the distance from the point _p to the plane </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the position to check agains </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the distance from point to plane </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Plane.h" line="87" column="1" bodyfile="/Users/jmacey/NGL/src/Plane.cpp" bodystart="75" bodyend="78"/>
+        <references refid="classngl_1_1_vec3_1abd4248600950b5da088cb299f3a55fd7" compoundref="_vec3_8cpp" startline="216" endline="219">ngl::Vec3::inner</references>
+        <references refid="classngl_1_1_plane_1a55310fa7f3f3be643e18ca4afb469218" compoundref="_plane_8h" startline="119">m_d</references>
+        <references refid="classngl_1_1_plane_1a6391973323e52a0a98b77294bc7e64c9" compoundref="_plane_8h" startline="111">m_normal</references>
+        <referencedby refid="classngl_1_1_camera_1a0dc3ef7af32368950538ca1ee805e781" compoundref="_camera_8cpp" startline="457" endline="476">ngl::Camera::isSphereInFrustum</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_plane_1a71e004575f06c19a9d5c8b179fbe08e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 ngl::Plane::getNormal</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>getNormal</name>
+        <briefdescription>
+<para>accesor to get the normal </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the normal </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Plane.h" line="93" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Plane.h" bodystart="93" bodyend="93"/>
+        <referencedby refid="classngl_1_1_camera_1a81b57e0a3171256e6c6a63a6e2ae4a80" compoundref="_camera_8cpp" startline="479" endline="493">ngl::Camera::boxInFrustum</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_plane_1aa9a627eae727fd2f3231ab37bc58e1ee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 ngl::Plane::getPoint</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>getPoint</name>
+        <briefdescription>
+<para>accesor to get the point </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the point </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Plane.h" line="99" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Plane.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_plane_1a8a2051e250dcc86543c6eede09b61b69" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::Plane::getD</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>getD</name>
+        <briefdescription>
+<para>accesor to get D </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the m_d </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Plane.h" line="104" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Plane.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1801">
+        <label>ngl::Vec3</label>
+        <link refid="classngl_1_1_vec3"/>
+      </node>
+      <node id="1800">
+        <label>ngl::Plane</label>
+        <link refid="classngl_1_1_plane"/>
+        <childnode refid="1801" relation="usage">
+          <edgelabel>-m_normal</edgelabel>
+          <edgelabel>-m_point</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/Plane.h" line="42" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Plane.h" bodystart="41" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classngl_1_1_plane_1a1fe57e76fa01a2bf299e012b23e34177" prot="public" virt="non-virtual"><scope>ngl::Plane</scope><name>distance</name></member>
+      <member refid="classngl_1_1_plane_1a8a2051e250dcc86543c6eede09b61b69" prot="public" virt="non-virtual"><scope>ngl::Plane</scope><name>getD</name></member>
+      <member refid="classngl_1_1_plane_1a71e004575f06c19a9d5c8b179fbe08e7" prot="public" virt="non-virtual"><scope>ngl::Plane</scope><name>getNormal</name></member>
+      <member refid="classngl_1_1_plane_1aa9a627eae727fd2f3231ab37bc58e1ee" prot="public" virt="non-virtual"><scope>ngl::Plane</scope><name>getPoint</name></member>
+      <member refid="classngl_1_1_plane_1a55310fa7f3f3be643e18ca4afb469218" prot="private" virt="non-virtual"><scope>ngl::Plane</scope><name>m_d</name></member>
+      <member refid="classngl_1_1_plane_1a6391973323e52a0a98b77294bc7e64c9" prot="private" virt="non-virtual"><scope>ngl::Plane</scope><name>m_normal</name></member>
+      <member refid="classngl_1_1_plane_1a327fd6fd042c46f7368ba5046d270232" prot="private" virt="non-virtual"><scope>ngl::Plane</scope><name>m_point</name></member>
+      <member refid="classngl_1_1_plane_1a6b858a52e2275ed8643eb63fb14a6a4b" prot="public" virt="non-virtual"><scope>ngl::Plane</scope><name>Plane</name></member>
+      <member refid="classngl_1_1_plane_1a22a123d9f73c20b53d387e5366fe53d0" prot="public" virt="non-virtual"><scope>ngl::Plane</scope><name>Plane</name></member>
+      <member refid="classngl_1_1_plane_1ab113224ea990481344eca0af242adae9" prot="public" virt="non-virtual"><scope>ngl::Plane</scope><name>setFloats</name></member>
+      <member refid="classngl_1_1_plane_1a6320b5c5eeaa23c3548ef55147539125" prot="public" virt="non-virtual"><scope>ngl::Plane</scope><name>setNormalPoint</name></member>
+      <member refid="classngl_1_1_plane_1a9ee3f8ba8f51176287b61b886c7aa5e4" prot="public" virt="non-virtual"><scope>ngl::Plane</scope><name>setPoints</name></member>
+      <member refid="classngl_1_1_plane_1a2a7e5747b312a6adb13990974af97aa4" prot="public" virt="non-virtual"><scope>ngl::Plane</scope><name>~Plane</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

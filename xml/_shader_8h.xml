@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_shader_8h" kind="file" language="C++">
+    <compoundname>Shader.h</compoundname>
+    <includes refid="_types_8h" local="yes">Types.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">cstdlib</includes>
+    <includedby refid="_shader_8cpp" local="yes">Shader.cpp</includedby>
+    <includedby refid="_shader_lib_8h" local="yes">ShaderLib.h</includedby>
+    <includedby refid="_shader_program_8h" local="yes">ShaderProgram.h</includedby>
+    <incdepgraph>
+      <node id="5847">
+        <label>Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="5848" relation="include">
+        </childnode>
+        <childnode refid="5854" relation="include">
+        </childnode>
+        <childnode refid="5855" relation="include">
+        </childnode>
+        <childnode refid="5856" relation="include">
+        </childnode>
+      </node>
+      <node id="5856">
+        <label>QGLContext</label>
+      </node>
+      <node id="5850">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="5851" relation="include">
+        </childnode>
+        <childnode refid="5852" relation="include">
+        </childnode>
+      </node>
+      <node id="5849">
+        <label>stddef.h</label>
+      </node>
+      <node id="5848">
+        <label>glew.h</label>
+        <link refid="glew_8h"/>
+        <childnode refid="5849" relation="include">
+        </childnode>
+        <childnode refid="5850" relation="include">
+        </childnode>
+        <childnode refid="5853" relation="include">
+        </childnode>
+      </node>
+      <node id="5853">
+        <label>GL/glu.h</label>
+      </node>
+      <node id="5851">
+        <label>limits.h</label>
+      </node>
+      <node id="5852">
+        <label>wchar.h</label>
+      </node>
+      <node id="5846">
+        <label>Shader.h</label>
+        <link refid="Shader.h"/>
+        <childnode refid="5847" relation="include">
+        </childnode>
+        <childnode refid="5857" relation="include">
+        </childnode>
+        <childnode refid="5858" relation="include">
+        </childnode>
+      </node>
+      <node id="5855">
+        <label>QtOpenGL/QGLContext</label>
+      </node>
+      <node id="5858">
+        <label>cstdlib</label>
+      </node>
+      <node id="5857">
+        <label>iostream</label>
+      </node>
+      <node id="5854">
+        <label>GL/gl.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5869">
+        <label>ShaderProgram.h</label>
+        <link refid="_shader_program_8h"/>
+        <childnode refid="5870" relation="include">
+        </childnode>
+        <childnode refid="5861" relation="include">
+        </childnode>
+      </node>
+      <node id="5866">
+        <label>SpotLight.cpp</label>
+        <link refid="_spot_light_8cpp"/>
+      </node>
+      <node id="5868">
+        <label>Transformation.cpp</label>
+        <link refid="_transformation_8cpp"/>
+      </node>
+      <node id="5860">
+        <label>Shader.cpp</label>
+        <link refid="_shader_8cpp"/>
+      </node>
+      <node id="5863">
+        <label>Material.cpp</label>
+        <link refid="_material_8cpp"/>
+      </node>
+      <node id="5865">
+        <label>ShaderLib.cpp</label>
+        <link refid="_shader_lib_8cpp"/>
+      </node>
+      <node id="5870">
+        <label>ShaderProgram.cpp</label>
+        <link refid="_shader_program_8cpp"/>
+      </node>
+      <node id="5861">
+        <label>ShaderLib.h</label>
+        <link refid="_shader_lib_8h"/>
+        <childnode refid="5862" relation="include">
+        </childnode>
+        <childnode refid="5863" relation="include">
+        </childnode>
+        <childnode refid="5864" relation="include">
+        </childnode>
+        <childnode refid="5865" relation="include">
+        </childnode>
+        <childnode refid="5866" relation="include">
+        </childnode>
+        <childnode refid="5867" relation="include">
+        </childnode>
+        <childnode refid="5868" relation="include">
+        </childnode>
+      </node>
+      <node id="5864">
+        <label>NGLInit.cpp</label>
+        <link refid="_n_g_l_init_8cpp"/>
+      </node>
+      <node id="5859">
+        <label>Shader.h</label>
+        <link refid="Shader.h"/>
+        <childnode refid="5860" relation="include">
+        </childnode>
+        <childnode refid="5861" relation="include">
+        </childnode>
+        <childnode refid="5869" relation="include">
+        </childnode>
+      </node>
+      <node id="5862">
+        <label>Light.cpp</label>
+        <link refid="_light_8cpp"/>
+      </node>
+      <node id="5867">
+        <label>Text.cpp</label>
+        <link refid="_text_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classngl_1_1_shader" prot="public">ngl::Shader</innerclass>
+    <innernamespace refid="namespacengl">ngl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Copyright<sp/>(C)<sp/>2009<sp/>Jon<sp/>Macey</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SHADER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHADER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_types_8h" kindref="compound">Types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacengl" kindref="compound">ngl</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="comment">//<sp/>for<sp/>c++<sp/>11<sp/>use<sp/>enum<sp/>class<sp/>at<sp/>present<sp/>internal<sp/>only</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="namespacengl_1affa062a5da165462559270d064bc0f7d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/><sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacengl_1affa062a5da165462559270d064bc0f7d" kindref="member">ShaderType</ref><sp/>:<sp/>char<sp/>{<ref refid="namespacengl_1affa062a5da165462559270d064bc0f7da0c3e47aef93a7f244f41ab309a33634b" kindref="member">VERTEX</ref>,<ref refid="namespacengl_1affa062a5da165462559270d064bc0f7da7345a249ed5c2f850d85dc1727c24716" kindref="member">FRAGMENT</ref>,<ref refid="namespacengl_1affa062a5da165462559270d064bc0f7dab22957ad8078e8d73de61aef53d13a74" kindref="member">GEOMETRY</ref>,<ref refid="namespacengl_1affa062a5da165462559270d064bc0f7da46501e52c3411c5c5879a8fe4432d885" kindref="member">TESSCONTROL</ref>,<ref refid="namespacengl_1affa062a5da165462559270d064bc0f7da1094991cfaebfc09516e6eee108f83d2" kindref="member">TESSEVAL</ref>,<ref refid="namespacengl_1affa062a5da165462559270d064bc0f7daac404d7ce6ca5862e9b8a2641fbafd90" kindref="member">COMPUTE</ref>,<ref refid="namespacengl_1affa062a5da165462559270d064bc0f7dab50339a10e1de285ac99d4c3990b8693" kindref="member">NONE</ref>};</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classngl_1_1_shader" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" kindref="member">NGL_DLLEXPORT</ref><sp/><ref refid="classngl_1_1_shader" kindref="compound">Shader</ref></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_shader" kindref="compound">Shader</ref>(<sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>_name,<sp/><sp/><ref refid="namespacengl_1affa062a5da165462559270d064bc0f7d" kindref="member">ShaderType</ref><sp/>_type<sp/>)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>~<ref refid="classngl_1_1_shader" kindref="compound">Shader</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>compile()<sp/>noexcept;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>load(<sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>_name<sp/>)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadFromString(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>&amp;_string<sp/><sp/>)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="classngl_1_1_shader_1abdb11e245fc0bec8830067050eb12980" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_shader_1abdb11e245fc0bec8830067050eb12980" kindref="member">toggleDebug</ref>()<sp/>noexcept<sp/>{m_debugState<sp/>^=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classngl_1_1_shader_1ad5f3f53d1fbb17a651506f9b673816d6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/><ref refid="classngl_1_1_shader_1ad5f3f53d1fbb17a651506f9b673816d6" kindref="member">getShaderHandle</ref>()const<sp/>noexcept<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_shaderHandle;}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="classngl_1_1_shader_1a109d6a595f70d9b80cb8c46f2d2dc6c2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_shader_1a109d6a595f70d9b80cb8c46f2d2dc6c2" kindref="member">incrementRefCount</ref>()<sp/>noexcept<sp/>{<sp/>++m_refCount;}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="classngl_1_1_shader_1aa48d16209b907a12422d2d6383f34ec5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_shader_1aa48d16209b907a12422d2d6383f34ec5" kindref="member">decrementRefCount</ref>()<sp/>noexcept<sp/>{<sp/>--m_refCount;}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classngl_1_1_shader_1a69ae6c9e57a9c91a454751de373ac631" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_shader_1a69ae6c9e57a9c91a454751de373ac631" kindref="member">getRefCount</ref>()const<sp/><sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_refCount;<sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classngl_1_1_shader_1ab4b05e1b5a92f6aa5779649c8d0456d9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><sp/><ref refid="classngl_1_1_shader_1ab4b05e1b5a92f6aa5779649c8d0456d9" kindref="member">getShaderSource</ref>()<sp/>const<sp/>noexcept<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_source;}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="classngl_1_1_shader_1a8ede272d2dc4193cb13e730d60ab8f5b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="classngl_1_1_shader_1a8ede272d2dc4193cb13e730d60ab8f5b" kindref="member">m_name</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classngl_1_1_shader_1acb23e11bcd0da35ac79a530bf3ef3fa7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/><ref refid="classngl_1_1_shader_1acb23e11bcd0da35ac79a530bf3ef3fa7" kindref="member">m_source</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="classngl_1_1_shader_1abc94c01f99c5df19d86e70178a0d8bd4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_shader_1abc94c01f99c5df19d86e70178a0d8bd4" kindref="member">m_compiled</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="classngl_1_1_shader_1a31483b9d1eb19b0ae744b6d4c9cdeae5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1affa062a5da165462559270d064bc0f7d" kindref="member">ShaderType</ref><sp/><ref refid="classngl_1_1_shader_1a31483b9d1eb19b0ae744b6d4c9cdeae5" kindref="member">m_shaderType</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="classngl_1_1_shader_1a1a84e2d7821f791183eb4b914a22d583" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/><ref refid="classngl_1_1_shader_1a1a84e2d7821f791183eb4b914a22d583" kindref="member">m_shaderHandle</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="classngl_1_1_shader_1a5edc58c302d6a1825bd21a2b36545fa8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_shader_1a5edc58c302d6a1825bd21a2b36545fa8" kindref="member">m_debugState</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="classngl_1_1_shader_1a958b091252111eb8118e35737f4325cd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_shader_1a958b091252111eb8118e35737f4325cd" kindref="member">m_refCount</ref>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>NGL<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/include/ngl/Shader.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,10 @@
+<map id="ngl::Camera::moveBoth" name="ngl::Camera::moveBoth">
+<area shape="rect" id="node2" href="$classngl_1_1_vec4.html#ad96cd267cff49372a6d45d840d899727" title="set the vector as the cross product from 2 other vectors " alt="" coords="251,5,368,32"/>
+<area shape="rect" id="node3" href="$classngl_1_1_vec4.html#ac0dca0913332163df66d6e229564c85b" title="Normalize the vector using &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;. " alt="" coords="238,56,381,83"/>
+<area shape="rect" id="node4" href="$classngl_1_1_vec4.html#ae1201ced94be9176940fc83ed9054e82" title="sets the vector component from 3 values " alt="" coords="258,107,361,133"/>
+<area shape="rect" id="node5" href="$classngl_1_1_camera.html#aaeece8ece48d769af0a64d03f9605caa" title="method to set the modelview matrix values for the current camera, this method load the matrix Modelvi..." alt="" coords="217,157,402,184"/>
+<area shape="rect" id="node6" href="$classngl_1_1_vec4.html#aec298a908339ba25e4a30856a2fa7bf0" title="return this dotted with _b " alt="" coords="501,132,605,159"/>
+<area shape="rect" id="node7" href="$classngl_1_1_camera.html#a6bb1f023865029e3b4e28e99a6bd00d2" title="calculate the frustum for clipping etc " alt="" coords="451,183,655,209"/>
+<area shape="rect" id="node8" href="$namespacengl.html#a0bade03a2edcb08a49da7731394284fe" title="converts Degrees to Radians " alt="" coords="723,157,813,184"/>
+<area shape="rect" id="node9" href="$classngl_1_1_vec4.html#a4eb5f6ead61e1ad2f06887b23a94384a" title="get as a Vec3 for glsl etc " alt="" coords="705,208,831,235"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="UTF8::Take" name="UTF8::Take">
+<area shape="rect" id="node2" href="$struct_u_t_f8.html#a1b2359d6ea50ae32fefc9b28e9878a31" title="UTF8::TakeBOM" alt="" coords="160,5,283,32"/>
+<area shape="rect" id="node3" href="$struct_u_t_f16_l_e.html#ab1d5f43903815155796733f76b21deea" title="UTF16LE::TakeBOM" alt="" coords="148,56,295,83"/>
+<area shape="rect" id="node4" href="$struct_u_t_f16_b_e.html#a5d5184a373149c69b4b8baf8507f9591" title="UTF16BE::TakeBOM" alt="" coords="147,107,295,133"/>
+<area shape="rect" id="node5" href="$struct_u_t_f32_l_e.html#a8729612b0a8b1126c61c4f8f8c34410e" title="UTF32LE::TakeBOM" alt="" coords="148,157,295,184"/>
+<area shape="rect" id="node6" href="$struct_u_t_f32_b_e.html#a07d228f51ad43ef83af2529ca4bd1181" title="UTF32BE::TakeBOM" alt="" coords="147,208,295,235"/>
+<area shape="rect" id="node7" href="$struct_a_s_c_i_i.html#aad78500eb98f45582a4df020e3fb2278" title="ASCII::TakeBOM" alt="" coords="159,259,283,285"/>
+</map>

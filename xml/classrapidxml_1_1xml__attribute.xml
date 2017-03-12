@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classrapidxml_1_1xml__attribute" kind="class" language="C++" prot="public">
+    <compoundname>rapidxml::xml_attribute</compoundname>
+    <basecompoundref refid="classrapidxml_1_1xml__base" prot="public" virt="non-virtual">rapidxml::xml_base&lt; Ch &gt;</basecompoundref>
+    <includes refid="rapidxml_8hpp" local="no">rapidxml.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>Ch</declname>
+        <defname>Ch</defname>
+        <defval>char</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classrapidxml_1_1xml__attribute_1aa7e464ce3fe512598ff8dda47291941f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class xml_node&lt; Ch &gt;</definition>
+        <argsstring></argsstring>
+        <name>xml_node&lt; Ch &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="788" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="801" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrapidxml_1_1xml__attribute_1a204438287a5ad384405584726a1d8559" prot="private" static="no" mutable="no">
+        <type><ref refid="classrapidxml_1_1xml__attribute" kindref="compound">xml_attribute</ref>&lt; Ch &gt; *</type>
+        <definition>xml_attribute&lt;Ch&gt;* rapidxml::xml_attribute&lt; Ch &gt;::m_prev_attribute</definition>
+        <argsstring></argsstring>
+        <name>m_prev_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="873" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="873" bodyend="-1"/>
+        <referencedby refid="classrapidxml_1_1xml__attribute_1ae3547cc30b201fd6d7b98c04dda26f89" compoundref="rapidxml_8hpp" startline="836" endline="849">rapidxml::xml_attribute&lt; Ch &gt;::previous_attribute</referencedby>
+        <referencedby refid="classrapidxml_1_1xml__node_1a50c03f2db3fa51f27a73d86ec29a49d3" compoundref="rapidxml_8hpp" startline="1045" endline="1058">rapidxml::xml_node&lt; Ch &gt;::last_attribute</referencedby>
+        <referencedby refid="classrapidxml_1_1xml__node_1a8b62ee76489faf8e2d1210869d547684" compoundref="rapidxml_8hpp" startline="1197" endline="1213">rapidxml::xml_node&lt; Ch &gt;::prepend_attribute</referencedby>
+        <referencedby refid="classrapidxml_1_1xml__node_1a33ce3386f8c42dd4db658b75cbb6e6c4" compoundref="rapidxml_8hpp" startline="1217" endline="1233">rapidxml::xml_node&lt; Ch &gt;::append_attribute</referencedby>
+        <referencedby refid="classrapidxml_1_1xml__node_1a9fe659cdf4a5b3bbf5e8ffc98db5a84f" compoundref="rapidxml_8hpp" startline="1239" endline="1255">rapidxml::xml_node&lt; Ch &gt;::insert_attribute</referencedby>
+        <referencedby refid="classrapidxml_1_1xml__node_1a1781a2cbedc9a51d609ad5b528125635" compoundref="rapidxml_8hpp" startline="1277" endline="1289">rapidxml::xml_node&lt; Ch &gt;::remove_last_attribute</referencedby>
+        <referencedby refid="classrapidxml_1_1xml__node_1a6f97b1b4f46a94a4587915df3c0c6b57" compoundref="rapidxml_8hpp" startline="1293" endline="1306">rapidxml::xml_node&lt; Ch &gt;::remove_attribute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classrapidxml_1_1xml__attribute_1a3254e4b040a9b71c6b6d1c27ec03352a" prot="private" static="no" mutable="no">
+        <type><ref refid="classrapidxml_1_1xml__attribute" kindref="compound">xml_attribute</ref>&lt; Ch &gt; *</type>
+        <definition>xml_attribute&lt;Ch&gt;* rapidxml::xml_attribute&lt; Ch &gt;::m_next_attribute</definition>
+        <argsstring></argsstring>
+        <name>m_next_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="874" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="874" bodyend="-1"/>
+        <referencedby refid="classrapidxml_1_1xml__attribute_1a56c08d7c96203286c889a43849328a86" compoundref="rapidxml_8hpp" startline="856" endline="869">rapidxml::xml_attribute&lt; Ch &gt;::next_attribute</referencedby>
+        <referencedby refid="classrapidxml_1_1xml__node_1ae426802be58114ffc41bf30ac6b8c37d" compoundref="rapidxml_8hpp" startline="1025" endline="1038">rapidxml::xml_node&lt; Ch &gt;::first_attribute</referencedby>
+        <referencedby refid="classrapidxml_1_1xml__node_1a8b62ee76489faf8e2d1210869d547684" compoundref="rapidxml_8hpp" startline="1197" endline="1213">rapidxml::xml_node&lt; Ch &gt;::prepend_attribute</referencedby>
+        <referencedby refid="classrapidxml_1_1xml__node_1a33ce3386f8c42dd4db658b75cbb6e6c4" compoundref="rapidxml_8hpp" startline="1217" endline="1233">rapidxml::xml_node&lt; Ch &gt;::append_attribute</referencedby>
+        <referencedby refid="classrapidxml_1_1xml__node_1a9fe659cdf4a5b3bbf5e8ffc98db5a84f" compoundref="rapidxml_8hpp" startline="1239" endline="1255">rapidxml::xml_node&lt; Ch &gt;::insert_attribute</referencedby>
+        <referencedby refid="classrapidxml_1_1xml__node_1aa95192d2a165cca16c551ed2a2a06aec" compoundref="rapidxml_8hpp" startline="1260" endline="1272">rapidxml::xml_node&lt; Ch &gt;::remove_first_attribute</referencedby>
+        <referencedby refid="classrapidxml_1_1xml__node_1a6f97b1b4f46a94a4587915df3c0c6b57" compoundref="rapidxml_8hpp" startline="1293" endline="1306">rapidxml::xml_node&lt; Ch &gt;::remove_attribute</referencedby>
+        <referencedby refid="classrapidxml_1_1xml__node_1aa8d5d9484aa1eb5ff1841a073c84c1aa" compoundref="rapidxml_8hpp" startline="1309" endline="1314">rapidxml::xml_node&lt; Ch &gt;::remove_all_attributes</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrapidxml_1_1xml__attribute_1a26be291103917d3e8de110d46dd83816" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rapidxml::xml_attribute&lt; Ch &gt;::xml_attribute</definition>
+        <argsstring>()</argsstring>
+        <name>xml_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs an empty attribute with the specified type. Consider using <ref refid="classrapidxml_1_1memory__pool" kindref="compound">memory_pool</ref> of appropriate <ref refid="classrapidxml_1_1xml__document" kindref="compound">xml_document</ref> if allocating attributes manually. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="810" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="810" bodyend="812"/>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1xml__attribute_1a8b6d31d899e27f01bde35b53d98496ec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrapidxml_1_1xml__document" kindref="compound">xml_document</ref>&lt; Ch &gt; *</type>
+        <definition>xml_document&lt;Ch&gt;* rapidxml::xml_attribute&lt; Ch &gt;::document</definition>
+        <argsstring>() const </argsstring>
+        <name>document</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets document of which attribute is a child. <simplesect kind="return"><para>Pointer to document that contains this attribute, or 0 if there is no parent document. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="819" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="819" bodyend="829"/>
+        <references refid="namespacerapidxml_1abb456db38f7efb746c4330eed6072a7ca4023b6a1c7059fd8fbec2112d5c35424" compoundref="rapidxml_8hpp" startline="145">rapidxml::node_document</references>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1xml__attribute_1ae3547cc30b201fd6d7b98c04dda26f89" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrapidxml_1_1xml__attribute" kindref="compound">xml_attribute</ref>&lt; Ch &gt; *</type>
+        <definition>xml_attribute&lt;Ch&gt;* rapidxml::xml_attribute&lt; Ch &gt;::previous_attribute</definition>
+        <argsstring>(const Ch *name=0, std::size_t name_size=0, bool case_sensitive=true) const </argsstring>
+        <name>previous_attribute</name>
+        <param>
+          <type>const Ch *</type>
+          <declname>name</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>name_size</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>case_sensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets previous attribute, optionally matching attribute name. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of attribute to find, or 0 to return previous attribute regardless of its name; this string doesn&apos;t have to be zero-terminated if name_size is non-zero </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of name, in characters, or 0 to have size calculated automatically from string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>case_sensitive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should name comparison be case-sensitive; non case-sensitive comparison works properly only for <ref refid="struct_a_s_c_i_i" kindref="compound">ASCII</ref> characters </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to found attribute, or 0 if not found. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="836" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="836" bodyend="849"/>
+        <references refid="classrapidxml_1_1xml__attribute_1a204438287a5ad384405584726a1d8559" compoundref="rapidxml_8hpp" startline="873">rapidxml::xml_attribute&lt; Ch &gt;::m_prev_attribute</references>
+        <referencedby refid="classrapidxml_1_1attribute__iterator_1af22f1ad3c11d3269b43b49e29b89d7d1" compoundref="rapidxml__iterators_8hpp" startline="142" endline="147">rapidxml::attribute_iterator&lt; Ch &gt;::operator--</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1xml__attribute_1a56c08d7c96203286c889a43849328a86" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrapidxml_1_1xml__attribute" kindref="compound">xml_attribute</ref>&lt; Ch &gt; *</type>
+        <definition>xml_attribute&lt;Ch&gt;* rapidxml::xml_attribute&lt; Ch &gt;::next_attribute</definition>
+        <argsstring>(const Ch *name=0, std::size_t name_size=0, bool case_sensitive=true) const </argsstring>
+        <name>next_attribute</name>
+        <param>
+          <type>const Ch *</type>
+          <declname>name</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>name_size</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>case_sensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets next attribute, optionally matching attribute name. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of attribute to find, or 0 to return next attribute regardless of its name; this string doesn&apos;t have to be zero-terminated if name_size is non-zero </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of name, in characters, or 0 to have size calculated automatically from string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>case_sensitive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should name comparison be case-sensitive; non case-sensitive comparison works properly only for <ref refid="struct_a_s_c_i_i" kindref="compound">ASCII</ref> characters </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to found attribute, or 0 if not found. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="856" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="856" bodyend="869"/>
+        <references refid="classrapidxml_1_1xml__attribute_1a3254e4b040a9b71c6b6d1c27ec03352a" compoundref="rapidxml_8hpp" startline="874">rapidxml::xml_attribute&lt; Ch &gt;::m_next_attribute</references>
+        <referencedby refid="namespacerapidxml_1a6255d15e5d8ad12ebcd7c60da51c97e2" compoundref="rapidxml__utils_8hpp" startline="108" endline="118">rapidxml::count_attributes</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class representing attribute node of XML document. Each attribute has name and value strings, which are available through <ref refid="classrapidxml_1_1xml__base_1a9a09739310469995db078ebd0da3ed45" kindref="member">name()</ref> and <ref refid="classrapidxml_1_1xml__base_1adcdaccff61c665f039d9344e447b7445" kindref="member">value()</ref> functions (inherited from <ref refid="classrapidxml_1_1xml__base" kindref="compound">xml_base</ref>). Note that after parse, both name and value of attribute will point to interior of source text used for parsing. Thus, this text must persist in memory for the lifetime of attribute. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Character type to use. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2097">
+        <label>rapidxml::xml_attribute&lt; Ch &gt;</label>
+        <link refid="classrapidxml_1_1xml__attribute"/>
+        <childnode refid="2098" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2098">
+        <label>rapidxml::xml_base&lt; Ch &gt;</label>
+        <link refid="classrapidxml_1_1xml__base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2101">
+        <label>size_t</label>
+      </node>
+      <node id="2099">
+        <label>rapidxml::xml_attribute&lt; Ch &gt;</label>
+        <link refid="classrapidxml_1_1xml__attribute"/>
+        <childnode refid="2100" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2100">
+        <label>rapidxml::xml_base&lt; Ch &gt;</label>
+        <link refid="classrapidxml_1_1xml__base"/>
+        <childnode refid="2101" relation="usage">
+          <edgelabel>#m_name_size</edgelabel>
+          <edgelabel>#m_value_size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" line="138" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidxml/rapidxml.hpp" bodystart="138" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classrapidxml_1_1xml__attribute_1a8b6d31d899e27f01bde35b53d98496ec" prot="public" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>document</name></member>
+      <member refid="classrapidxml_1_1xml__base_1afd9851ed43e14619db0d7075ef8e9e8a" prot="protected" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>m_name</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a5a8c76a7274b4180213796422c4df76f" prot="protected" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>m_name_size</name></member>
+      <member refid="classrapidxml_1_1xml__attribute_1a3254e4b040a9b71c6b6d1c27ec03352a" prot="private" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>m_next_attribute</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a90d5f660f078f66563fd7b2d8387ccb0" prot="protected" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>m_parent</name></member>
+      <member refid="classrapidxml_1_1xml__attribute_1a204438287a5ad384405584726a1d8559" prot="private" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>m_prev_attribute</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a278a1ea63b0b70219b946cec47fa00ea" prot="protected" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>m_value</name></member>
+      <member refid="classrapidxml_1_1xml__base_1aa3a49d8ceddb8a8d7edb773a2226b89c" prot="protected" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>m_value_size</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a9a09739310469995db078ebd0da3ed45" prot="public" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>name</name></member>
+      <member refid="classrapidxml_1_1xml__base_1ae55060ae958c6e6465d6c8db852ec6ce" prot="public" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>name</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a4611ddc82ac83a527c65606600eb2a0d" prot="public" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>name</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a7e7f98b3d01e1eab8dc1ca69aad9af84" prot="public" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>name_size</name></member>
+      <member refid="classrapidxml_1_1xml__attribute_1a56c08d7c96203286c889a43849328a86" prot="public" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>next_attribute</name></member>
+      <member refid="classrapidxml_1_1xml__base_1ad96ff6b1e41dab3ff60b9bc4df769a75" prot="protected" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>nullstr</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a7f31ae930f93852830234db1ae59c4c4" prot="public" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>parent</name></member>
+      <member refid="classrapidxml_1_1xml__attribute_1ae3547cc30b201fd6d7b98c04dda26f89" prot="public" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>previous_attribute</name></member>
+      <member refid="classrapidxml_1_1xml__base_1adcdaccff61c665f039d9344e447b7445" prot="public" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>value</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a3b183c2db7022a6d30494dd2f0ac11e9" prot="public" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>value</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a81e63ec4bfd2d7ef0a6c2ed49be6e623" prot="public" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>value</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a9fcf201ed0915ac18dd43b0b5dcfaf32" prot="public" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>value_size</name></member>
+      <member refid="classrapidxml_1_1xml__attribute_1a26be291103917d3e8de110d46dd83816" prot="public" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>xml_attribute</name></member>
+      <member refid="classrapidxml_1_1xml__base_1a23e7f7aac02d17a0a01afb597e4b966b" prot="public" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>xml_base</name></member>
+      <member refid="classrapidxml_1_1xml__attribute_1aa7e464ce3fe512598ff8dda47291941f" prot="private" virt="non-virtual"><scope>rapidxml::xml_attribute</scope><name>xml_node&lt; Ch &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

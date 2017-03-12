@@ -1,0 +1,654 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_vec2_8h" kind="file" language="C++">
+    <compoundname>Vec2.h</compoundname>
+    <includes refid="_types_8h" local="yes">Types.h</includes>
+    <includes local="no">array</includes>
+    <includedby refid="_mat3_8cpp" local="yes">Mat3.cpp</includedby>
+    <includedby refid="_n_g_l_stream_8cpp" local="yes">NGLStream.cpp</includedby>
+    <includedby refid="_vec2_8cpp" local="yes">Vec2.cpp</includedby>
+    <includedby refid="_vec4_8cpp" local="yes">Vec4.cpp</includedby>
+    <includedby refid="_vec4_8h" local="yes">Vec4.h</includedby>
+    <includedby refid="_text_8h" local="yes">Text.h</includedby>
+    <incdepgraph>
+      <node id="6864">
+        <label>Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="6865" relation="include">
+        </childnode>
+        <childnode refid="6871" relation="include">
+        </childnode>
+        <childnode refid="6872" relation="include">
+        </childnode>
+        <childnode refid="6873" relation="include">
+        </childnode>
+      </node>
+      <node id="6873">
+        <label>QGLContext</label>
+      </node>
+      <node id="6867">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="6868" relation="include">
+        </childnode>
+        <childnode refid="6869" relation="include">
+        </childnode>
+      </node>
+      <node id="6866">
+        <label>stddef.h</label>
+      </node>
+      <node id="6865">
+        <label>glew.h</label>
+        <link refid="glew_8h"/>
+        <childnode refid="6866" relation="include">
+        </childnode>
+        <childnode refid="6867" relation="include">
+        </childnode>
+        <childnode refid="6870" relation="include">
+        </childnode>
+      </node>
+      <node id="6870">
+        <label>GL/glu.h</label>
+      </node>
+      <node id="6868">
+        <label>limits.h</label>
+      </node>
+      <node id="6869">
+        <label>wchar.h</label>
+      </node>
+      <node id="6874">
+        <label>array</label>
+      </node>
+      <node id="6872">
+        <label>QtOpenGL/QGLContext</label>
+      </node>
+      <node id="6871">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="6863">
+        <label>Vec2.h</label>
+        <link refid="Vec2.h"/>
+        <childnode refid="6864" relation="include">
+        </childnode>
+        <childnode refid="6874" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6917">
+        <label>ShaderProgram.h</label>
+        <link refid="_shader_program_8h"/>
+        <childnode refid="6918" relation="include">
+        </childnode>
+        <childnode refid="6919" relation="include">
+        </childnode>
+      </node>
+      <node id="6881">
+        <label>Util.cpp</label>
+        <link refid="_util_8cpp"/>
+      </node>
+      <node id="6889">
+        <label>PathCamera.cpp</label>
+        <link refid="_path_camera_8cpp"/>
+      </node>
+      <node id="6898">
+        <label>Obj.h</label>
+        <link refid="_obj_8h"/>
+        <childnode refid="6899" relation="include">
+        </childnode>
+        <childnode refid="6900" relation="include">
+        </childnode>
+      </node>
+      <node id="6911">
+        <label>SpotLight.cpp</label>
+        <link refid="_spot_light_8cpp"/>
+      </node>
+      <node id="6924">
+        <label>Transformation.cpp</label>
+        <link refid="_transformation_8cpp"/>
+      </node>
+      <node id="6883">
+        <label>AABB.h</label>
+        <link refid="_a_a_b_b_8h"/>
+        <childnode refid="6884" relation="include">
+        </childnode>
+        <childnode refid="6885" relation="include">
+        </childnode>
+      </node>
+      <node id="6925">
+        <label>Transformation.h</label>
+        <link refid="_transformation_8h"/>
+        <childnode refid="6924" relation="include">
+        </childnode>
+        <childnode refid="6887" relation="include">
+        </childnode>
+        <childnode refid="6925" relation="include">
+        </childnode>
+      </node>
+      <node id="6891">
+        <label>BBox.cpp</label>
+        <link refid="_b_box_8cpp"/>
+      </node>
+      <node id="6877">
+        <label>NGLStream.cpp</label>
+        <link refid="_n_g_l_stream_8cpp"/>
+      </node>
+      <node id="6920">
+        <label>Material.cpp</label>
+        <link refid="_material_8cpp"/>
+      </node>
+      <node id="6908">
+        <label>Light.h</label>
+        <link refid="_light_8h"/>
+        <childnode refid="6909" relation="include">
+        </childnode>
+        <childnode refid="6887" relation="include">
+        </childnode>
+        <childnode refid="6910" relation="include">
+        </childnode>
+      </node>
+      <node id="6913">
+        <label>Random.cpp</label>
+        <link refid="_random_8cpp"/>
+      </node>
+      <node id="6904">
+        <label>Quaternion.cpp</label>
+        <link refid="_quaternion_8cpp"/>
+      </node>
+      <node id="6910">
+        <label>SpotLight.h</label>
+        <link refid="_spot_light_8h"/>
+        <childnode refid="6911" relation="include">
+        </childnode>
+      </node>
+      <node id="6897">
+        <label>NCCABinMesh.cpp</label>
+        <link refid="_n_c_c_a_bin_mesh_8cpp"/>
+      </node>
+      <node id="6896">
+        <label>NCCABinMesh.h</label>
+        <link refid="_n_c_c_a_bin_mesh_8h"/>
+        <childnode refid="6897" relation="include">
+        </childnode>
+      </node>
+      <node id="6922">
+        <label>ShaderLib.cpp</label>
+        <link refid="_shader_lib_8cpp"/>
+      </node>
+      <node id="6899">
+        <label>Obj.cpp</label>
+        <link refid="_obj_8cpp"/>
+      </node>
+      <node id="6915">
+        <label>Texture.cpp</label>
+        <link refid="_texture_8cpp"/>
+      </node>
+      <node id="6918">
+        <label>ShaderProgram.cpp</label>
+        <link refid="_shader_program_8cpp"/>
+      </node>
+      <node id="6888">
+        <label>PathCamera.h</label>
+        <link refid="_path_camera_8h"/>
+        <childnode refid="6889" relation="include">
+        </childnode>
+      </node>
+      <node id="6901">
+        <label>NCCAPointBake.cpp</label>
+        <link refid="_n_c_c_a_point_bake_8cpp"/>
+      </node>
+      <node id="6906">
+        <label>AbstractSerializer.cpp</label>
+        <link refid="_abstract_serializer_8cpp"/>
+      </node>
+      <node id="6912">
+        <label>Random.h</label>
+        <link refid="_random_8h"/>
+        <childnode refid="6913" relation="include">
+        </childnode>
+      </node>
+      <node id="6880">
+        <label>Vec4.h</label>
+        <link refid="_vec4_8h"/>
+        <childnode refid="6877" relation="include">
+        </childnode>
+        <childnode refid="6881" relation="include">
+        </childnode>
+        <childnode refid="6878" relation="include">
+        </childnode>
+        <childnode refid="6882" relation="include">
+        </childnode>
+        <childnode refid="6879" relation="include">
+        </childnode>
+        <childnode refid="6883" relation="include">
+        </childnode>
+        <childnode refid="6890" relation="include">
+        </childnode>
+        <childnode refid="6892" relation="include">
+        </childnode>
+        <childnode refid="6902" relation="include">
+        </childnode>
+        <childnode refid="6885" relation="include">
+        </childnode>
+        <childnode refid="6908" relation="include">
+        </childnode>
+        <childnode refid="6896" relation="include">
+        </childnode>
+        <childnode refid="6898" relation="include">
+        </childnode>
+        <childnode refid="6900" relation="include">
+        </childnode>
+        <childnode refid="6912" relation="include">
+        </childnode>
+        <childnode refid="6914" relation="include">
+        </childnode>
+        <childnode refid="6919" relation="include">
+        </childnode>
+        <childnode refid="6925" relation="include">
+        </childnode>
+      </node>
+      <node id="6919">
+        <label>ShaderLib.h</label>
+        <link refid="_shader_lib_8h"/>
+        <childnode refid="6909" relation="include">
+        </childnode>
+        <childnode refid="6920" relation="include">
+        </childnode>
+        <childnode refid="6921" relation="include">
+        </childnode>
+        <childnode refid="6922" relation="include">
+        </childnode>
+        <childnode refid="6911" relation="include">
+        </childnode>
+        <childnode refid="6923" relation="include">
+        </childnode>
+        <childnode refid="6924" relation="include">
+        </childnode>
+      </node>
+      <node id="6894">
+        <label>HoudiniGeo.h</label>
+        <link refid="_houdini_geo_8h"/>
+        <childnode refid="6895" relation="include">
+        </childnode>
+      </node>
+      <node id="6921">
+        <label>NGLInit.cpp</label>
+        <link refid="_n_g_l_init_8cpp"/>
+      </node>
+      <node id="6905">
+        <label>AbstractSerializer.h</label>
+        <link refid="_abstract_serializer_8h"/>
+        <childnode refid="6906" relation="include">
+        </childnode>
+        <childnode refid="6907" relation="include">
+        </childnode>
+      </node>
+      <node id="6907">
+        <label>XMLSerializer.h</label>
+        <link refid="_x_m_l_serializer_8h"/>
+        <childnode refid="6887" relation="include">
+        </childnode>
+      </node>
+      <node id="6876">
+        <label>Mat3.cpp</label>
+        <link refid="_mat3_8cpp"/>
+      </node>
+      <node id="6909">
+        <label>Light.cpp</label>
+        <link refid="_light_8cpp"/>
+      </node>
+      <node id="6903">
+        <label>Mat4.cpp</label>
+        <link refid="_mat4_8cpp"/>
+      </node>
+      <node id="6916">
+        <label>VAOPrimitives.cpp</label>
+        <link refid="_v_a_o_primitives_8cpp"/>
+      </node>
+      <node id="6902">
+        <label>Quaternion.h</label>
+        <link refid="_quaternion_8h"/>
+        <childnode refid="6876" relation="include">
+        </childnode>
+        <childnode refid="6903" relation="include">
+        </childnode>
+        <childnode refid="6877" relation="include">
+        </childnode>
+        <childnode refid="6904" relation="include">
+        </childnode>
+        <childnode refid="6905" relation="include">
+        </childnode>
+      </node>
+      <node id="6900">
+        <label>NCCAPointBake.h</label>
+        <link refid="_n_c_c_a_point_bake_8h"/>
+        <childnode refid="6901" relation="include">
+        </childnode>
+      </node>
+      <node id="6926">
+        <label>Text.h</label>
+        <link refid="_text_8h"/>
+        <childnode refid="6923" relation="include">
+        </childnode>
+      </node>
+      <node id="6878">
+        <label>Vec2.cpp</label>
+        <link refid="_vec2_8cpp"/>
+      </node>
+      <node id="6884">
+        <label>AABB.cpp</label>
+        <link refid="_a_a_b_b_8cpp"/>
+      </node>
+      <node id="6895">
+        <label>HoudiniGeo.cpp</label>
+        <link refid="_houdini_geo_8cpp"/>
+      </node>
+      <node id="6882">
+        <label>Vec3.cpp</label>
+        <link refid="_vec3_8cpp"/>
+      </node>
+      <node id="6885">
+        <label>Camera.h</label>
+        <link refid="_camera_8h"/>
+        <childnode refid="6886" relation="include">
+        </childnode>
+        <childnode refid="6877" relation="include">
+        </childnode>
+        <childnode refid="6887" relation="include">
+        </childnode>
+        <childnode refid="6888" relation="include">
+        </childnode>
+      </node>
+      <node id="6879">
+        <label>Vec4.cpp</label>
+        <link refid="_vec4_8cpp"/>
+      </node>
+      <node id="6914">
+        <label>Util.h</label>
+        <link refid="_util_8h"/>
+        <childnode refid="6893" relation="include">
+        </childnode>
+        <childnode refid="6886" relation="include">
+        </childnode>
+        <childnode refid="6876" relation="include">
+        </childnode>
+        <childnode refid="6903" relation="include">
+        </childnode>
+        <childnode refid="6904" relation="include">
+        </childnode>
+        <childnode refid="6915" relation="include">
+        </childnode>
+        <childnode refid="6916" relation="include">
+        </childnode>
+        <childnode refid="6917" relation="include">
+        </childnode>
+      </node>
+      <node id="6887">
+        <label>XMLSerializer.cpp</label>
+        <link refid="_x_m_l_serializer_8cpp"/>
+      </node>
+      <node id="6875">
+        <label>Vec2.h</label>
+        <link refid="Vec2.h"/>
+        <childnode refid="6876" relation="include">
+        </childnode>
+        <childnode refid="6877" relation="include">
+        </childnode>
+        <childnode refid="6878" relation="include">
+        </childnode>
+        <childnode refid="6879" relation="include">
+        </childnode>
+        <childnode refid="6880" relation="include">
+        </childnode>
+        <childnode refid="6926" relation="include">
+        </childnode>
+      </node>
+      <node id="6893">
+        <label>AbstractMesh.cpp</label>
+        <link refid="_abstract_mesh_8cpp"/>
+      </node>
+      <node id="6886">
+        <label>Camera.cpp</label>
+        <link refid="_camera_8cpp"/>
+      </node>
+      <node id="6890">
+        <label>BBox.h</label>
+        <link refid="_b_box_8h"/>
+        <childnode refid="6891" relation="include">
+        </childnode>
+        <childnode refid="6883" relation="include">
+        </childnode>
+        <childnode refid="6892" relation="include">
+        </childnode>
+        <childnode refid="6896" relation="include">
+        </childnode>
+        <childnode refid="6898" relation="include">
+        </childnode>
+      </node>
+      <node id="6923">
+        <label>Text.cpp</label>
+        <link refid="_text_8cpp"/>
+      </node>
+      <node id="6892">
+        <label>AbstractMesh.h</label>
+        <link refid="_abstract_mesh_8h"/>
+        <childnode refid="6893" relation="include">
+        </childnode>
+        <childnode refid="6894" relation="include">
+        </childnode>
+        <childnode refid="6896" relation="include">
+        </childnode>
+        <childnode refid="6898" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classngl_1_1_vec2" prot="public">ngl::Vec2</innerclass>
+    <innernamespace refid="namespacengl">ngl</innernamespace>
+    <briefdescription>
+<para>a simple 2 tuple container for compatibility with glsl </para>    </briefdescription>
+    <detaileddescription>
+<para>encapsulates a 2 float object like glsl Vec2 but not maths use the Vec2 class for maths and the asVec2 to return a Vec2</para><para><simplesect kind="author"><para>Jonathan Macey </para></simplesect>
+<simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="date"><para>20/6/11 initial version Revision History : Initial Version 20/6/11 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Copyright<sp/>(C)<sp/>2011<sp/>Jon<sp/>Macey</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VEC2_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VEC2_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>must<sp/>include<sp/>types.h<sp/>first<sp/>for<sp/>Real<sp/>and<sp/>GLEW<sp/>if<sp/>required</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_types_8h" kindref="compound">Types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacengl" kindref="compound">ngl</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Vec4;</highlight></codeline>
+<codeline lineno="49" refid="classngl_1_1_vec2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" kindref="member">NGL_DLLEXPORT</ref><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_x,<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_y<sp/><sp/>)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref>&amp;<sp/>_v<sp/>)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref>&amp;<sp/>_v)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref>*<sp/>_v)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classngl_1_1_vec2_1a0fb6ef9edfa0875bfbe25d0bbeee9fce" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec2_1a0fb6ef9edfa0875bfbe25d0bbeee9fce" kindref="member">Vec2</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref>&amp;<sp/>_v)<sp/><sp/>noexcept<sp/>:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_x(_v.m_x),</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_y(_v.m_y){;}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classngl_1_1_vec2_1a158268af6d49cb7761174a8ef6a10c2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><ref refid="classngl_1_1_vec2_1a158268af6d49cb7761174a8ef6a10c2c" kindref="member">Vec2</ref>(<ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_x=0.0,<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_y=0.0<sp/>)<sp/><sp/>noexcept:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/>m_x(_x),</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/>m_y(_y){;}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="classngl_1_1_vec2_1a215ad71db1a88fe717e257a5ca503d50" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec2_1a215ad71db1a88fe717e257a5ca503d50" kindref="member">Vec2</ref>(<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_x<sp/><sp/>)<sp/><sp/>noexcept:</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>m_x(_x),</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>m_y(_x){;}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>null()<sp/>noexcept;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref>&amp;<sp/>operator[](<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_i<sp/>)<sp/><sp/>noexcept;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="classngl_1_1_vec2_1affebb1bc6057fe98acda2f8fc0f198b6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref>&amp;<sp/><ref refid="classngl_1_1_vec2_1affebb1bc6057fe98acda2f8fc0f198b6" kindref="member">operator[]</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_i<sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/>noexcept{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_openGL[_i];<sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator+=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/>&amp;_v<sp/>)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator-=(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref>&amp;<sp/>_v<sp/>)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/><ref refid="namespacengl_1abf8f4c8a842fda025d266ea490dd1ab0" kindref="member">operator *</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>&amp;_i<sp/><sp/>)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="glew_8h_1a921fa83f7755f0139c84ba1831417a2e" kindref="member">length</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>lengthSquared()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/>operator<sp/>+(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/>&amp;_v<sp/><sp/>)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/>operator/(<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_v<sp/>)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator/=(<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_v<sp/>)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="173"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator*=(<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_v<sp/>)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/>operator-(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref>&amp;<sp/>_v<sp/><sp/>)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/><ref refid="namespacengl_1abf8f4c8a842fda025d266ea490dd1ab0" kindref="member">operator*</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/>&amp;_v<sp/>)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="193"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/>&amp;operator<sp/>=(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/>&amp;_v<sp/>)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="198"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/>operator-()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="204"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacengl_1a2828b006f18ee4614b5bcd5957b33c7e" kindref="member">operator==</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/>&amp;_v<sp/>)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="210"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/>&amp;_v<sp/>)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="216"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/>operator/(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref>&amp;<sp/>_v<sp/>)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="222"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/><ref refid="namespacengl_1abf8f4c8a842fda025d266ea490dd1ab0" kindref="member">operator *</ref>(<sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_i<sp/>)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="228"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>normalize()<sp/>noexcept;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="234"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>dot(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/>&amp;_b<sp/><sp/>)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="238"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="classngl_1_1_vec2_1a2b1e77f5b76d647499a8cd2541a1af73" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref>*<sp/><ref refid="classngl_1_1_vec2_1a2b1e77f5b76d647499a8cd2541a1af73" kindref="member">openGL</ref>()<sp/>noexcept{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;m_openGL[0];}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="keyword">public</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push,1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BUILDING_DOCS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="255"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" kindref="member">m_x</ref>;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="259"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260" refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" kindref="member">m_y</ref>;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BUILDING_DOCS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="271"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="classngl_1_1_vec2_1a729d19d18c8ac8a448cc2497a5dabaa6" refkind="member"><highlight class="normal"><sp/><sp/>std::array<sp/>&lt;Real,2&gt;<sp/><ref refid="classngl_1_1_vec2_1a729d19d18c8ac8a448cc2497a5dabaa6" kindref="member">m_openGL</ref>;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BUILDING_DOCS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="285"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="namespacengl_1abf8f4c8a842fda025d266ea490dd1ab0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/><ref refid="namespacengl_1abf8f4c8a842fda025d266ea490dd1ab0" kindref="member">operator *</ref>(<ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_k,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/>&amp;_v)<sp/>noexcept</highlight></codeline>
+<codeline lineno="287"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref>(_k*_v.m_x,<sp/>_k*_v.m_y);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>ngl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/include/ngl/Vec2.h"/>
+  </compounddef>
+</doxygen>

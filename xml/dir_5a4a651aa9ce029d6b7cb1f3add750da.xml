@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_5a4a651aa9ce029d6b7cb1f3add750da" kind="dir">
+    <compoundname>NGL</compoundname>
+    <innerdir refid="dir_160534d09e20912e08c432d74a1fa215">include</innerdir>
+    <innerdir refid="dir_f2508e4b96efd3302602cfcc30a60daf">src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/jmacey/NGL/"/>
+  </compounddef>
+</doxygen>

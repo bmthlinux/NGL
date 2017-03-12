@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classngl_1_1_light.html" title="Simple class to encapsulate OpenGL Light functions this will fill in the following structure..." alt="" coords="6,5,82,32"/>
+<area shape="rect" id="node2" href="$classngl_1_1_spot_light.html" title="Encapsulation of OpenGL spotlight inherits from the Light class. " alt="" coords="131,5,235,32"/>
+</map>

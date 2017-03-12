@@ -1,0 +1,10 @@
+<map id="ngl::ShaderProgram::autoRegisterUniforms" name="ngl::ShaderProgram::autoRegisterUniforms">
+<area shape="rect" id="node2" href="$namespacefmt.html#a638f25c535b3bfa12dc1478b11885b6f" title="fmt::format" alt="" coords="213,75,299,101"/>
+<area shape="rect" id="node3" href="$classfmt_1_1_basic_writer.html#a91f06ced6e063ee77a99740e0e79faf6" title="fmt::BasicWriter::str" alt="" coords="547,5,685,32"/>
+<area shape="rect" id="node5" href="$classfmt_1_1_basic_writer.html#aaa83498c649d4a90ea3366bae62f4eac" title="fmt::BasicWriter::write" alt="" coords="347,75,499,101"/>
+<area shape="rect" id="node4" href="$classfmt_1_1_buffer.html#a14fa72f0ddf584c14ffffb1446f598aa" title="fmt::Buffer::size" alt="" coords="955,52,1069,79"/>
+<area shape="rect" id="node6" href="$namespacefmt_1_1internal.html#a7c721969e9660580a237bd4130422ab6" title="fmt::internal::write" alt="" coords="553,100,679,127"/>
+<area shape="rect" id="node7" href="$classfmt_1_1_basic_writer.html#a62d1c7b5be9c3580326320d5d178d096" title="fmt::BasicWriter::data" alt="" coords="745,52,895,79"/>
+<area shape="rect" id="node8" href="$classfmt_1_1_basic_writer.html#a1b6721b4ba4d3fa18ac781a36616cc2a" title="fmt::BasicWriter::size" alt="" coords="747,103,893,129"/>
+<area shape="rect" id="node9" href="$namespacefmt_1_1internal.html#a28bed1291226be35437bc3173c19c205" title="fmt::internal::to_unsigned" alt="" coords="734,153,906,180"/>
+</map>

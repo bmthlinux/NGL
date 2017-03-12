@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classngl_1_1_n_g_l_init" kind="class" language="C++" prot="public">
+    <compoundname>ngl::NGLInit</compoundname>
+    <basecompoundref refid="classngl_1_1_singleton" prot="public" virt="non-virtual">ngl::Singleton&lt; NGLInit &gt;</basecompoundref>
+    <includes refid="_n_g_l_init_8h" local="no">NGLInit.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classngl_1_1_n_g_l_init_1a003343ee951e927219e61bab94b60da2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Singleton&lt; NGLInit &gt;</definition>
+        <argsstring></argsstring>
+        <name>Singleton&lt; NGLInit &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/NGLInit.h" line="174" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/NGLInit.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classngl_1_1_n_g_l_init_1a47fb467f1972831171973dc2b5098342" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::NGLInit::NGLInit</definition>
+        <argsstring>()</argsstring>
+        <name>NGLInit</name>
+        <briefdescription>
+<para>dtor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/NGLInit.h" line="51" column="1" bodyfile="/Users/jmacey/NGL/src/NGLInit.cpp" bodystart="39" bodyend="72"/>
+        <references refid="classngl_1_1_simple_v_a_o_1a141d878b6a5eb1cbb2d609142017f7c0" compoundref="_simple_v_a_o_8h" startline="42" endline="42">ngl::SimpleVAO::create</references>
+        <references refid="classngl_1_1_multi_buffer_v_a_o_1ac0b584778c203e8ac9728ffb7776d258" compoundref="_multi_buffer_v_a_o_8h" startline="42" endline="42">ngl::MultiBufferVAO::create</references>
+        <references refid="classngl_1_1_simple_index_v_a_o_1a247a9caad6a5cb9ce5725218633d6bc2" compoundref="_simple_index_v_a_o_8h" startline="55" endline="55">ngl::SimpleIndexVAO::create</references>
+        <references refid="glew_8h_1a2b2319323c7cfb4ed795be005209d73d" compoundref="glew_8h" startline="2070">GL_MAJOR_VERSION</references>
+        <references refid="glew_8h_1ad45fb154a63b2b32a07732388e8251ad" compoundref="glew_8h" startline="2071">GL_MINOR_VERSION</references>
+        <references refid="glew_8h_1a411ef2829ad14972de3e9c74b158cf33" compoundref="glew_8h" startline="20050">GLEW_OK</references>
+        <references refid="glew_8h_1a1cc86591f43892d7056e6b07cac49c4d" compoundref="glew_8h" startline="20057">GLEW_VERSION</references>
+        <references refid="glew_8h_1adaa3a59b9332d7cb361d0c07e6789160" compoundref="glew_8h" startline="20086">glewExperimental</references>
+        <references refid="glew_8h_1a3ba21bf3bf28ab16daced9b88704163e">glewGetErrorString</references>
+        <references refid="glew_8h_1aa4a314bfcf2a94acb9b59dde42dc6473">glewGetString</references>
+        <references refid="glew_8h_1af39d420d8826819cb0108c6f1be0dc1b">glewInit</references>
+        <references refid="glew_8h_1ae27c08a6023d21d076006ecb3ad955a7">glewIsSupported</references>
+        <references refid="glew_8h_1ae9ebc290561b3321b629610807155a35">glGetIntegerv</references>
+        <references refid="classngl_1_1_v_a_o_factory_1a6759583fae984611463674ed82272161" compoundref="_v_a_o_factory_8cpp" startline="9" endline="12">ngl::VAOFactory::registerVAOCreator</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_n_g_l_init_1a7c7c573c28b36b8dd3e55f8a0304644e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::NGLInit::~NGLInit</definition>
+        <argsstring>()</argsstring>
+        <name>~NGLInit</name>
+        <briefdescription>
+<para>dtor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/NGLInit.h" line="56" column="1" bodyfile="/Users/jmacey/NGL/src/NGLInit.cpp" bodystart="75" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>a class to initialise all of the ngl elements includeing GLEW if needed as well vbo prims this class is a singletone so can only be created once </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Jonathan Macey </para></simplesect>
+<simplesect kind="version"><para>4.0 </para></simplesect>
+<simplesect kind="date"><para>Last Revision 19/11/09 changed the whole lib to be NGL not GraphicsLib so change names to reflect 29/09/09 Updated to meet NCCA Coding standard </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1727">
+        <label>ngl::NGLInit</label>
+        <link refid="classngl_1_1_n_g_l_init"/>
+        <childnode refid="1728" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1728">
+        <label>ngl::Singleton&lt; NGLInit &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+        <childnode refid="1729" relation="template-instance">
+          <edgelabel>&lt; NGLInit &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1729">
+        <label>ngl::Singleton&lt; T &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1733">
+        <label>T</label>
+      </node>
+      <node id="1730">
+        <label>ngl::NGLInit</label>
+        <link refid="classngl_1_1_n_g_l_init"/>
+        <childnode refid="1731" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1731">
+        <label>ngl::Singleton&lt; NGLInit &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+        <childnode refid="1730" relation="usage">
+          <edgelabel>#s_instance</edgelabel>
+        </childnode>
+        <childnode refid="1732" relation="template-instance">
+          <edgelabel>&lt; NGLInit &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1732">
+        <label>ngl::Singleton&lt; T &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+        <childnode refid="1733" relation="usage">
+          <edgelabel>#s_instance</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/NGLInit.h" line="43" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/NGLInit.h" bodystart="42" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classngl_1_1_singleton_1ab5d43c93fdc09ecadc5f6ebfd9460396" prot="public" virt="non-virtual"><scope>ngl::NGLInit</scope><name>instance</name></member>
+      <member refid="classngl_1_1_singleton_1a68355e8cd8b6a575b29e11e05584b75d" prot="protected" virt="non-virtual"><scope>ngl::NGLInit</scope><name>killSingleton</name></member>
+      <member refid="classngl_1_1_n_g_l_init_1a47fb467f1972831171973dc2b5098342" prot="protected" virt="non-virtual"><scope>ngl::NGLInit</scope><name>NGLInit</name></member>
+      <member refid="classngl_1_1_singleton_1a9cc1ea7cc82996782d48c50877157543" prot="public" virt="non-virtual"><scope>ngl::NGLInit</scope><name>operator=</name></member>
+      <member refid="classngl_1_1_singleton_1a7fd779d31c1d8d44153ccbec0a181ac3" prot="protected" virt="non-virtual"><scope>ngl::NGLInit</scope><name>s_instance</name></member>
+      <member refid="classngl_1_1_singleton_1ad6341f60af3e395419484ba3108f73d8" prot="public" virt="non-virtual"><scope>ngl::NGLInit</scope><name>Singleton</name></member>
+      <member refid="classngl_1_1_singleton_1ae55278fc5cc669ddb9da4f7e3d8ae7a8" prot="protected" virt="non-virtual"><scope>ngl::NGLInit</scope><name>Singleton</name></member>
+      <member refid="classngl_1_1_n_g_l_init_1a003343ee951e927219e61bab94b60da2" prot="private" virt="non-virtual"><scope>ngl::NGLInit</scope><name>Singleton&lt; NGLInit &gt;</name></member>
+      <member refid="classngl_1_1_n_g_l_init_1a7c7c573c28b36b8dd3e55f8a0304644e" prot="protected" virt="non-virtual"><scope>ngl::NGLInit</scope><name>~NGLInit</name></member>
+      <member refid="classngl_1_1_singleton_1a4b66d1c7d1f91f12a5ac2a428a3ff1c0" prot="protected" virt="virtual"><scope>ngl::NGLInit</scope><name>~Singleton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

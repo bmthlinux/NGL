@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classngl_1_1_text" kind="class" language="C++" prot="public">
+    <compoundname>ngl::Text</compoundname>
+    <includes refid="_text_8h" local="no">Text.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classngl_1_1_text_1ac618ecf9331818ed4180bf16ffc1e9ef" prot="protected" static="no" mutable="no">
+        <type>QHash&lt; char, <ref refid="structngl_1_1_font_char" kindref="compound">FontChar</ref> &gt;</type>
+        <definition>QHash&lt;char,FontChar&gt; ngl::Text::m_characters</definition>
+        <argsstring></argsstring>
+        <name>m_characters</name>
+        <briefdescription>
+<para>a hash to store our <ref refid="structngl_1_1_font_char" kindref="compound">FontChar</ref> data looked up by the char we want to render according to the Qt Docs a hash has faster lookups than QMap so using this </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Text.h" line="121" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Text.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngl_1_1_text_1a16e24cf8d7e4f310a7dc2b8375546134" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::Text::Text</definition>
+        <argsstring>(const QFont &amp;_f) noexcept</argsstring>
+        <name>Text</name>
+        <param>
+          <type>const QFont &amp;</type>
+          <declname>_f</declname>
+        </param>
+        <briefdescription>
+<para>ctor must pass in a ready constructed QFont make sure the size and emphasis is set before doing this as you can&apos;t modify the font after construction and you will need a new <ref refid="classngl_1_1_text" kindref="compound">Text</ref> class for each different type of text / font </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the font to use for drawing the text </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Text.h" line="74" column="1" bodyfile="/Users/jmacey/NGL/src/Text.cpp" bodystart="53" bodyend="246"/>
+        <references refid="classngl_1_1_abstract_v_a_o_1a32a42493f94df2674c89a90cb25cfa2a" compoundref="_abstract_v_a_o_8cpp" startline="23" endline="27">ngl::AbstractVAO::bind</references>
+        <references refid="classngl_1_1_v_a_o_factory_1adee5532df7151fab8e8db0e9ebf94305" compoundref="_v_a_o_factory_8cpp" startline="19" endline="29">ngl::VAOFactory::createVAO</references>
+        <references refid="glew_8h_1a6d19915d4237cb559505bd3e5dcfcf3c" compoundref="glew_8h" startline="642">GL_FLOAT</references>
+        <references refid="glew_8h_1a4e682f218130b98b27a1e33fa7325080" compoundref="glew_8h" startline="718">GL_LINEAR</references>
+        <references refid="glew_8h_1a5665daac108402324f1db7b89006c0b6" compoundref="glew_8h" startline="721">GL_NEAREST_MIPMAP_LINEAR</references>
+        <references refid="glew_8h_1a9f2854f4a91a0d83d2d54cb8110bfca4" compoundref="glew_8h" startline="681">GL_RGBA</references>
+        <references refid="glew_8h_1ad4de17abefa73fa2ef53379f73b734be" compoundref="glew_8h" startline="10194">GL_TEXTURE_2D</references>
+        <references refid="glew_8h_1acb47a41b5963d44826f44b7370bccc26" compoundref="glew_8h" startline="723">GL_TEXTURE_MAG_FILTER</references>
+        <references refid="glew_8h_1a173a2b2453322dd8d613df6cf2e72480" compoundref="glew_8h" startline="724">GL_TEXTURE_MIN_FILTER</references>
+        <references refid="glew_8h_1a6079e7a02a59adad65eb953d9482b1ed" compoundref="glew_8h" startline="330">GL_TRIANGLES</references>
+        <references refid="glew_8h_1a80a33c79f69417372d65d2a65ca36d49" compoundref="glew_8h" startline="637">GL_UNSIGNED_BYTE</references>
+        <references refid="glew_8h_1a940f58f3728713267a58e2d09ff602b2">glBindTexture</references>
+        <references refid="glew_8h_1af24c49639dd0c5748c08354cb9fda28c" compoundref="glew_8h" startline="4579">glGenerateMipmap</references>
+        <references refid="glew_8h_1a99e77ebf136a8c511226cf705049a305">glGenTextures</references>
+        <references refid="glew_8h_1ae0c4b34c030bad60c4e2b94cd0a6d804">glTexImage2D</references>
+        <references refid="glew_8h_1ac8dbabff536e520bc700960dadd8d787">glTexParameteri</references>
+        <references refid="namespacestd_1a37ba44826afa04fddf20fd70c45ac3b4" compoundref="posix_8h" startline="361" endline="361">std::move</references>
+        <references refid="namespacengl_1afc75774b1d580ae31122e5fa262c7ce3" compoundref="_text_8cpp" startline="40" endline="49">ngl::nearestPowerOfTwo</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1aeeabb8d7a3be60a6814d1c44cb52f27a">ngl::AbstractVAO::setData</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1ac3bab1083764b87a06bf658e6b6727a8" compoundref="_abstract_v_a_o_8h" startline="91" endline="91">ngl::AbstractVAO::setNumIndices</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1aa51d9e09fa5d76cb0868cdff08e94911" compoundref="_abstract_v_a_o_8cpp" startline="36" endline="45">ngl::AbstractVAO::setVertexAttributePointer</references>
+        <references refid="structngl_1_1_font_char_1a8dc38f92d2fd50d8432b4e21e54a2d40" compoundref="_text_8h" startline="61">ngl::FontChar::textureID</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1a755b4eb87c240c0c95b292c4762fef04" compoundref="_abstract_v_a_o_8cpp" startline="29" endline="33">ngl::AbstractVAO::unbind</references>
+        <references refid="structngl_1_1_font_char_1ae8a1e2d3e672ee1b79d3e7037e1faa8d" compoundref="_text_8h" startline="62">ngl::FontChar::vao</references>
+        <references refid="structngl_1_1_font_char_1aa656d9d10a65e64cf5b17f33344d7fd9" compoundref="_text_8h" startline="60">ngl::FontChar::width</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_text_1a2f7f1ad3b2f8a1ee09dc74556a2de314" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::Text::~Text</definition>
+        <argsstring>()</argsstring>
+        <name>~Text</name>
+        <briefdescription>
+<para>dtor will clean / remove textures and VAO&apos;s for the class </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Text.h" line="79" column="1" bodyfile="/Users/jmacey/NGL/src/Text.cpp" bodystart="250" bodyend="259"/>
+        <references refid="glew_8h_1a2f5eccab2c3938a8c0c141035b4df47c">glDeleteTextures</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_text_1a59aa976f5726b2b69ed95c8a0668c0f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Text::renderText</definition>
+        <argsstring>(float _x, float _y, const QString &amp;_text) const  noexcept</argsstring>
+        <name>renderText</name>
+        <param>
+          <type>float</type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_y</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>_text</declname>
+        </param>
+        <briefdescription>
+<para>render the text to the screen at _x,_y where 0,0 is top left of the screen all positioning is relative to the screen size set with the setScreenSize method so it is important that changes in screen size are updated. These value will be sent to the nglTextShader to be rendered (see source ) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>font quad is drawn as 0,0 being bottom left so if we draw at 0,0 the font will not be visible, we need to add the offset of the font height to any y value (i.e. a 16pt font drawn at 0,16 will appear at top right of the screen) </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the x position of the text in screen space </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the y position of the text in screen space </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the text to draw (this is limited to <ref refid="struct_a_s_c_i_i" kindref="compound">ASCII</ref> chars &apos; &apos;-&gt;&apos;~&apos; at present but unicode will be done soon </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Text.h" line="91" column="1" bodyfile="/Users/jmacey/NGL/src/Text.cpp" bodystart="265" bodyend="311"/>
+        <references refid="classngl_1_1_abstract_v_a_o_1a32a42493f94df2674c89a90cb25cfa2a" compoundref="_abstract_v_a_o_8cpp" startline="23" endline="27">ngl::AbstractVAO::bind</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1a0365aa18813979ae23b2854b25c782a5">ngl::AbstractVAO::draw</references>
+        <references refid="glew_8h_1aa290e8f9ee6f6862778355aa22bb0b13" compoundref="glew_8h" startline="485">GL_BLEND</references>
+        <references refid="glew_8h_1a4ccf1dc093190cc3798b9abea3655f98" compoundref="glew_8h" startline="454">GL_DEPTH_TEST</references>
+        <references refid="glew_8h_1aa3926eb5e008f14829baa8d72435215f" compoundref="glew_8h" startline="359">GL_ONE_MINUS_SRC_ALPHA</references>
+        <references refid="glew_8h_1a51e6c75d54b3a9fb93fbc880463c212c" compoundref="glew_8h" startline="358">GL_SRC_ALPHA</references>
+        <references refid="glew_8h_1a16cc91096144fc7048b45e2add14915b" compoundref="glew_8h" startline="1292">GL_TEXTURE0</references>
+        <references refid="glew_8h_1ad4de17abefa73fa2ef53379f73b734be" compoundref="glew_8h" startline="10194">GL_TEXTURE_2D</references>
+        <references refid="glew_8h_1af15266b67de988f5ddf442bbbdd1b3fc" compoundref="glew_8h" startline="1427">glActiveTexture</references>
+        <references refid="glew_8h_1a940f58f3728713267a58e2d09ff602b2">glBindTexture</references>
+        <references refid="glew_8h_1a8e13e72c3a7bac1f4685fcf3d32bf98c">glBlendFunc</references>
+        <references refid="glew_8h_1acfd692f7e3361a218a542300f35ea816">glDisable</references>
+        <references refid="glew_8h_1a1beaf822e5a901dc3fe429b68efb77d4">glEnable</references>
+        <references refid="classngl_1_1_singleton_1ab5d43c93fdc09ecadc5f6ebfd9460396">ngl::Singleton&lt; ShaderLib &gt;::instance</references>
+        <references refid="classngl_1_1_shader_lib_1a9210462acc20cd79a256a9674ab30692" compoundref="_shader_lib_8cpp" startline="160" endline="163">ngl::ShaderLib::setRegisteredUniform1f</references>
+        <references refid="structngl_1_1_font_char_1a8dc38f92d2fd50d8432b4e21e54a2d40" compoundref="_text_8h" startline="61">ngl::FontChar::textureID</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1a755b4eb87c240c0c95b292c4762fef04" compoundref="_abstract_v_a_o_8cpp" startline="29" endline="33">ngl::AbstractVAO::unbind</references>
+        <references refid="structngl_1_1_font_char_1ae8a1e2d3e672ee1b79d3e7037e1faa8d" compoundref="_text_8h" startline="62">ngl::FontChar::vao</references>
+        <references refid="structngl_1_1_font_char_1aa656d9d10a65e64cf5b17f33344d7fd9" compoundref="_text_8h" startline="60">ngl::FontChar::width</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_text_1af325f6e59eea7727d2476c5d667bb899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Text::setScreenSize</definition>
+        <argsstring>(int _w, int _h) noexcept</argsstring>
+        <name>setScreenSize</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_w</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_h</declname>
+        </param>
+        <briefdescription>
+<para>set the size of the screen to scale our font to fit correctly this basically creates the orthographic projection needed for x/y assuming that the openGL window has 0,0 at the center and we use NDC co-ordinates -1 -&gt; 1 in X and Y we then get x=(x*xScale)+xtran y=(y*yScale)+ytrans; to place the text in screen space </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current width of the screen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current height of the screen </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Text.h" line="100" column="1" bodyfile="/Users/jmacey/NGL/src/Text.cpp" bodystart="314" bodyend="329"/>
+        <references refid="classngl_1_1_singleton_1ab5d43c93fdc09ecadc5f6ebfd9460396">ngl::Singleton&lt; ShaderLib &gt;::instance</references>
+        <references refid="classngl_1_1_shader_lib_1a9210462acc20cd79a256a9674ab30692" compoundref="_shader_lib_8cpp" startline="160" endline="163">ngl::ShaderLib::setRegisteredUniform1f</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_text_1a82485ee4aeec828d207440da74e40993" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Text::setColour</definition>
+        <argsstring>(const Colour &amp;_c) noexcept</argsstring>
+        <name>setColour</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_colour" kindref="compound">Colour</ref> &amp;</type>
+          <declname>_c</declname>
+        </param>
+        <briefdescription>
+<para>set the colour of the font from an <ref refid="classngl_1_1_colour" kindref="compound">Colour</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the colour to set for the font (alpha is overridden by the texture) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Text.h" line="105" column="1" bodyfile="/Users/jmacey/NGL/src/Text.cpp" bodystart="340" bodyend="348"/>
+        <references refid="classngl_1_1_singleton_1ab5d43c93fdc09ecadc5f6ebfd9460396">ngl::Singleton&lt; ShaderLib &gt;::instance</references>
+        <references refid="classngl_1_1_shader_lib_1aac8e14e81625357cbc5da8659d3709eb" compoundref="_shader_lib_8cpp" startline="120" endline="123">ngl::ShaderLib::setRegisteredUniform3f</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_text_1a8602c53031c8ce86d44bc9b6a2b67345" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Text::setColour</definition>
+        <argsstring>(Real _r, Real _g, Real _b) noexcept</argsstring>
+        <name>setColour</name>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_r</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_g</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_b</declname>
+        </param>
+        <briefdescription>
+<para>set the colour of the font from three floats as a convenience method </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the red component of the colour for the font </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the green component of the colour for the font </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the blue component of the colour for the font </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Text.h" line="112" column="1" bodyfile="/Users/jmacey/NGL/src/Text.cpp" bodystart="352" bodyend="359"/>
+        <references refid="classngl_1_1_singleton_1ab5d43c93fdc09ecadc5f6ebfd9460396">ngl::Singleton&lt; ShaderLib &gt;::instance</references>
+        <references refid="classngl_1_1_shader_lib_1aac8e14e81625357cbc5da8659d3709eb" compoundref="_shader_lib_8cpp" startline="120" endline="123">ngl::ShaderLib::setRegisteredUniform3f</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_text_1a0c4cdf067afabdf1b4e111af36c09d87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Text::setTransform</definition>
+        <argsstring>(float _x, float _y) noexcept</argsstring>
+        <name>setTransform</name>
+        <param>
+          <type>float</type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Text.h" line="114" column="1" bodyfile="/Users/jmacey/NGL/src/Text.cpp" bodystart="361" bodyend="368"/>
+        <references refid="classngl_1_1_singleton_1ab5d43c93fdc09ecadc5f6ebfd9460396">ngl::Singleton&lt; ShaderLib &gt;::instance</references>
+        <references refid="classngl_1_1_shader_lib_1a52eca9f0f6d6566a7f3064d7dd6315fd" compoundref="_shader_lib_8cpp" startline="133" endline="136">ngl::ShaderLib::setRegisteredUniform2f</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1969">
+        <label>ngl::Text</label>
+        <link refid="classngl_1_1_text"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/Text.h" line="66" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Text.h" bodystart="65" bodyend="122"/>
+    <listofallmembers>
+      <member refid="classngl_1_1_text_1ac618ecf9331818ed4180bf16ffc1e9ef" prot="protected" virt="non-virtual"><scope>ngl::Text</scope><name>m_characters</name></member>
+      <member refid="classngl_1_1_text_1a59aa976f5726b2b69ed95c8a0668c0f2" prot="public" virt="non-virtual"><scope>ngl::Text</scope><name>renderText</name></member>
+      <member refid="classngl_1_1_text_1a82485ee4aeec828d207440da74e40993" prot="public" virt="non-virtual"><scope>ngl::Text</scope><name>setColour</name></member>
+      <member refid="classngl_1_1_text_1a8602c53031c8ce86d44bc9b6a2b67345" prot="public" virt="non-virtual"><scope>ngl::Text</scope><name>setColour</name></member>
+      <member refid="classngl_1_1_text_1af325f6e59eea7727d2476c5d667bb899" prot="public" virt="non-virtual"><scope>ngl::Text</scope><name>setScreenSize</name></member>
+      <member refid="classngl_1_1_text_1a0c4cdf067afabdf1b4e111af36c09d87" prot="public" virt="non-virtual"><scope>ngl::Text</scope><name>setTransform</name></member>
+      <member refid="classngl_1_1_text_1a16e24cf8d7e4f310a7dc2b8375546134" prot="public" virt="non-virtual"><scope>ngl::Text</scope><name>Text</name></member>
+      <member refid="classngl_1_1_text_1a2f7f1ad3b2f8a1ee09dc74556a2de314" prot="public" virt="non-virtual"><scope>ngl::Text</scope><name>~Text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

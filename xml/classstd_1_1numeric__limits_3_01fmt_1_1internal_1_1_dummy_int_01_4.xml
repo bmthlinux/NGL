@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4" kind="class" language="C++" prot="public">
+    <compoundname>std::numeric_limits&lt; fmt::internal::DummyInt &gt;</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::numeric_limits&lt; int &gt;</basecompoundref>
+    <includes refid="format_8h" local="no">format.h</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4_1abd1469673d6c36a014a988bce1dfb0ee" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool std::numeric_limits&lt; fmt::internal::DummyInt &gt;::isinfinity</definition>
+        <argsstring>(T x)</argsstring>
+        <name>isinfinity</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="327" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="327" bodyend="336"/>
+        <references refid="namespacefmt_1_1internal_1a364338fa2e549b40a69eb2f89c3ed1b7" compoundref="format_8h" startline="305" endline="305">fmt::internal::_finite</references>
+        <references refid="namespacefmt_1_1internal_1abe2cbab571913bf19a52c6f6bc1b5a5a" compoundref="format_8h" startline="312" endline="312">fmt::internal::const_check</references>
+        <references refid="namespacefmt_1_1internal_1a41f3251b84cad32ce5f2ab18152ce3e3" compoundref="format_8h" startline="304" endline="304">fmt::internal::isinf</references>
+        <referencedby refid="classfmt_1_1_basic_writer_1aa69a013920916ccc74ca7ac5e971abe7" compoundref="format_8h" startline="2831" endline="2982">fmt::BasicWriter&lt; Char &gt;::write_double</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4_1a89433356fbf5b68eb0c13208a5e3b6b1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool std::numeric_limits&lt; fmt::internal::DummyInt &gt;::isnotanumber</definition>
+        <argsstring>(T x)</argsstring>
+        <name>isnotanumber</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="340" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="340" bodyend="347"/>
+        <references refid="namespacefmt_1_1internal_1ac71e5e42e71cb4c22fc1da6225b6be50" compoundref="format_8h" startline="307" endline="307">fmt::internal::_isnan</references>
+        <references refid="namespacefmt_1_1internal_1abe2cbab571913bf19a52c6f6bc1b5a5a" compoundref="format_8h" startline="312" endline="312">fmt::internal::const_check</references>
+        <references refid="namespacefmt_1_1internal_1aa010b06d42f81bf80b44aa2291f7b166" compoundref="format_8h" startline="306" endline="306">fmt::internal::isnan</references>
+        <referencedby refid="classfmt_1_1_basic_writer_1aa69a013920916ccc74ca7ac5e971abe7" compoundref="format_8h" startline="2831" endline="2982">fmt::BasicWriter&lt; Char &gt;::write_double</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4_1a1cc82945f63918e9a8603d3ef750990d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool std::numeric_limits&lt; fmt::internal::DummyInt &gt;::isnegative</definition>
+        <argsstring>(double x)</argsstring>
+        <name>isnegative</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="350" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="350" bodyend="360"/>
+        <references refid="namespacefmt_1_1internal_1a6658cd22b7b3a0a43fed978d905b486d" compoundref="format_8h" startline="303" endline="303">fmt::internal::_ecvt_s</references>
+        <references refid="namespacefmt_1_1internal_1abe2cbab571913bf19a52c6f6bc1b5a5a" compoundref="format_8h" startline="312" endline="312">fmt::internal::const_check</references>
+        <references refid="namespacefmt_1_1internal_1a59ee392c090dd871eaa9dd487e741fae" compoundref="format_8h" startline="302" endline="302">fmt::internal::signbit</references>
+        <referencedby refid="classfmt_1_1_basic_writer_1aa69a013920916ccc74ca7ac5e971abe7" compoundref="format_8h" startline="2831" endline="2982">fmt::BasicWriter&lt; Char &gt;::write_double</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1765">
+        <label>std::numeric_limits&lt; int &gt;</label>
+      </node>
+      <node id="1764">
+        <label>std::numeric_limits&lt; fmt::internal::DummyInt &gt;</label>
+        <link refid="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4"/>
+        <childnode refid="1765" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1767">
+        <label>std::numeric_limits&lt; int &gt;</label>
+      </node>
+      <node id="1766">
+        <label>std::numeric_limits&lt; fmt::internal::DummyInt &gt;</label>
+        <link refid="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4"/>
+        <childnode refid="1767" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="323" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="322" bodyend="361"/>
+    <listofallmembers>
+      <member refid="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4_1abd1469673d6c36a014a988bce1dfb0ee" prot="public" virt="non-virtual"><scope>std::numeric_limits&lt; fmt::internal::DummyInt &gt;</scope><name>isinfinity</name></member>
+      <member refid="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4_1a1cc82945f63918e9a8603d3ef750990d" prot="public" virt="non-virtual"><scope>std::numeric_limits&lt; fmt::internal::DummyInt &gt;</scope><name>isnegative</name></member>
+      <member refid="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4_1a89433356fbf5b68eb0c13208a5e3b6b1" prot="public" virt="non-virtual"><scope>std::numeric_limits&lt; fmt::internal::DummyInt &gt;</scope><name>isnotanumber</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

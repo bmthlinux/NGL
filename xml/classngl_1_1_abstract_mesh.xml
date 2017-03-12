@@ -1,0 +1,1271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classngl_1_1_abstract_mesh" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>ngl::AbstractMesh</compoundname>
+    <derivedcompoundref refid="classngl_1_1_houdini_geo" prot="public" virt="non-virtual">ngl::HoudiniGeo</derivedcompoundref>
+    <derivedcompoundref refid="classngl_1_1_n_c_c_a_bin_mesh" prot="public" virt="non-virtual">ngl::NCCABinMesh</derivedcompoundref>
+    <derivedcompoundref refid="classngl_1_1_obj" prot="public" virt="non-virtual">ngl::Obj</derivedcompoundref>
+    <includes refid="_abstract_mesh_8h" local="no">AbstractMesh.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classngl_1_1_abstract_mesh_1aacaa1e657658a6ecb55754b35adca513" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class NCCAPointBake</definition>
+        <argsstring></argsstring>
+        <name>NCCAPointBake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="262" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1af927695f9517bf49191548067ff939ed" prot="protected" static="no" mutable="no">
+        <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>unsigned int ngl::AbstractMesh::m_nVerts</definition>
+        <argsstring></argsstring>
+        <name>m_nVerts</name>
+        <briefdescription>
+<para>The number of vertices in the object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="265" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="265" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a3d08025470bb7939b209a2c2d63cc3d8" compoundref="_abstract_mesh_8cpp" startline="41" endline="55">scale</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a279b4c298c26705ebbaddb5120144ba1" compoundref="_abstract_mesh_8cpp" startline="98" endline="183">writeToRibSubdiv</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a8cbb6c3661cdcc06436db68dd76fa585" compoundref="_abstract_mesh_8cpp" startline="387" endline="429">calcDimensions</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+        <referencedby refid="classngl_1_1_houdini_geo_1a8e50ea5f8174ec8f843a9a12ed27985e" compoundref="_houdini_geo_8cpp" startline="86" endline="149">ngl::HoudiniGeo::loadHeader</referencedby>
+        <referencedby refid="classngl_1_1_houdini_geo_1a573790d8e9f7ff430b3063b550e25e68" compoundref="_houdini_geo_8cpp" startline="151" endline="209">ngl::HoudiniGeo::loadPoints</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1a8536f44940c41d833ce1360e00e925d2" prot="protected" static="no" mutable="no">
+        <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>unsigned int ngl::AbstractMesh::m_nNorm</definition>
+        <argsstring></argsstring>
+        <name>m_nNorm</name>
+        <briefdescription>
+<para>The number of normals in the object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="269" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="269" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">createVAO</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1a2f47063be79b1f065cadc30e35cf0a17" prot="protected" static="no" mutable="no">
+        <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>unsigned int ngl::AbstractMesh::m_nTex</definition>
+        <argsstring></argsstring>
+        <name>m_nTex</name>
+        <briefdescription>
+<para>the number of texture co-ordinates in the object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="273" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="273" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">createVAO</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1aa4e5c1cdc67001f14499bb0da40f6cd0" prot="protected" static="no" mutable="no">
+        <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>unsigned int ngl::AbstractMesh::m_nFaces</definition>
+        <argsstring></argsstring>
+        <name>m_nFaces</name>
+        <briefdescription>
+<para>the number of faces in the object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="277" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="277" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">createVAO</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+        <referencedby refid="classngl_1_1_houdini_geo_1a8e50ea5f8174ec8f843a9a12ed27985e" compoundref="_houdini_geo_8cpp" startline="86" endline="149">ngl::HoudiniGeo::loadHeader</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1af94fc1ce4021f973448c355cadf4c4ba" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &gt;</type>
+        <definition>std::vector&lt;Vec3&gt; ngl::AbstractMesh::m_verts</definition>
+        <argsstring></argsstring>
+        <name>m_verts</name>
+        <briefdescription>
+<para>Pointer to the Vertex list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="281" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="281" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a3d08025470bb7939b209a2c2d63cc3d8" compoundref="_abstract_mesh_8cpp" startline="41" endline="55">scale</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aa500b8c1affa589eee0da6d2f8431b39" compoundref="_abstract_mesh_8cpp" startline="60" endline="76">~AbstractMesh</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a279b4c298c26705ebbaddb5120144ba1" compoundref="_abstract_mesh_8cpp" startline="98" endline="183">writeToRibSubdiv</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">createVAO</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a8cbb6c3661cdcc06436db68dd76fa585" compoundref="_abstract_mesh_8cpp" startline="387" endline="429">calcDimensions</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1ad37269f60f9bb3d9018df90ffe63812c" compoundref="_abstract_mesh_8cpp" startline="501" endline="604">calcBoundingSphere</referencedby>
+        <referencedby refid="classngl_1_1_houdini_geo_1a8e50ea5f8174ec8f843a9a12ed27985e" compoundref="_houdini_geo_8cpp" startline="86" endline="149">ngl::HoudiniGeo::loadHeader</referencedby>
+        <referencedby refid="classngl_1_1_houdini_geo_1a573790d8e9f7ff430b3063b550e25e68" compoundref="_houdini_geo_8cpp" startline="151" endline="209">ngl::HoudiniGeo::loadPoints</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1a3987536cc8d7cccbe31429d1b4e14024" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &gt;</type>
+        <definition>std::vector&lt;Vec3&gt; ngl::AbstractMesh::m_norm</definition>
+        <argsstring></argsstring>
+        <name>m_norm</name>
+        <briefdescription>
+<para>Pointer to the Normal List. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="285" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="285" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aa500b8c1affa589eee0da6d2f8431b39" compoundref="_abstract_mesh_8cpp" startline="60" endline="76">~AbstractMesh</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">createVAO</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1a06b3a8bddf3d42830319da379b3b996e" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &gt;</type>
+        <definition>std::vector&lt;Vec3&gt; ngl::AbstractMesh::m_tex</definition>
+        <argsstring></argsstring>
+        <name>m_tex</name>
+        <briefdescription>
+<para>Pointer to the <ref refid="classngl_1_1_texture" kindref="compound">Texture</ref> co-ord list (note that only x and y are used) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="289" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="289" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aa500b8c1affa589eee0da6d2f8431b39" compoundref="_abstract_mesh_8cpp" startline="60" endline="76">~AbstractMesh</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">createVAO</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1a1f7de935fd02870065f99cb4685fc7a8" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classngl_1_1_face" kindref="compound">Face</ref> &gt;</type>
+        <definition>std::vector&lt;Face&gt; ngl::AbstractMesh::m_face</definition>
+        <argsstring></argsstring>
+        <name>m_face</name>
+        <briefdescription>
+<para>Pointer to the <ref refid="classngl_1_1_face" kindref="compound">Face</ref> list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="293" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="293" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aa500b8c1affa589eee0da6d2f8431b39" compoundref="_abstract_mesh_8cpp" startline="60" endline="76">~AbstractMesh</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a279b4c298c26705ebbaddb5120144ba1" compoundref="_abstract_mesh_8cpp" startline="98" endline="183">writeToRibSubdiv</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1af509c12d1dda2d1ad25841a4362edb5f" compoundref="_abstract_mesh_8cpp" startline="186" endline="196">isTriangular</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">createVAO</referencedby>
+        <referencedby refid="classngl_1_1_houdini_geo_1a8e50ea5f8174ec8f843a9a12ed27985e" compoundref="_houdini_geo_8cpp" startline="86" endline="149">ngl::HoudiniGeo::loadHeader</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1a0cdddd3dd2b076816bd25647acae16c5" prot="protected" static="no" mutable="no">
+        <type><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 ngl::AbstractMesh::m_center</definition>
+        <argsstring></argsstring>
+        <name>m_center</name>
+        <briefdescription>
+<para>Center of the object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="297" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="297" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a3d08025470bb7939b209a2c2d63cc3d8" compoundref="_abstract_mesh_8cpp" startline="41" endline="55">scale</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a8cbb6c3661cdcc06436db68dd76fa585" compoundref="_abstract_mesh_8cpp" startline="387" endline="429">calcDimensions</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1adc01b9c9267485da1fdf3613dc8c9ceb" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classngl_1_1_index_ref" kindref="compound">IndexRef</ref> &gt;</type>
+        <definition>std::vector&lt;IndexRef&gt; ngl::AbstractMesh::m_indices</definition>
+        <argsstring></argsstring>
+        <name>m_indices</name>
+        <briefdescription>
+<para>a vector of indices used to pass the index into the Data arrays to the VBO </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="301" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="301" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aa500b8c1affa589eee0da6d2f8431b39" compoundref="_abstract_mesh_8cpp" startline="60" endline="76">~AbstractMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1ae8b4d4fa40a706e2d5a630876f65a8f4" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref> &gt;</type>
+        <definition>std::vector&lt;GLuint&gt; ngl::AbstractMesh::m_outIndices</definition>
+        <argsstring></argsstring>
+        <name>m_outIndices</name>
+        <briefdescription>
+<para>a vectr of indices without duplicates which are actually passed to the VBO when creating </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="305" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="305" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aa500b8c1affa589eee0da6d2f8431b39" compoundref="_abstract_mesh_8cpp" startline="60" endline="76">~AbstractMesh</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1a586cec1c03451ef5bef925b03cd6e286" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t ngl::AbstractMesh::m_indexSize</definition>
+        <argsstring></argsstring>
+        <name>m_indexSize</name>
+        <briefdescription>
+<para>the size of the index array </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="309" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="309" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1a305a5b883ac911a3bb8723811259acc1" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t ngl::AbstractMesh::m_meshSize</definition>
+        <argsstring></argsstring>
+        <name>m_meshSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="310" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="310" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">createVAO</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1af099b62f47c9b9e764f21ddec8522e91" prot="protected" static="no" mutable="no">
+        <type><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref></type>
+        <definition>GLuint ngl::AbstractMesh::m_vboBuffers</definition>
+        <argsstring></argsstring>
+        <name>m_vboBuffers</name>
+        <briefdescription>
+<para>buffers for the VBO in order Vert, Tex, Norm </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="314" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="314" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aa500b8c1affa589eee0da6d2f8431b39" compoundref="_abstract_mesh_8cpp" startline="60" endline="76">~AbstractMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1aa5f50e09c03681f06aef1b9f32725744" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classngl_1_1_abstract_v_a_o" kindref="compound">AbstractVAO</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;AbstractVAO&gt; ngl::AbstractMesh::m_vaoMesh</definition>
+        <argsstring></argsstring>
+        <name>m_vaoMesh</name>
+        <briefdescription>
+<para>id for our vertexArray object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="318" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="318" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">createVAO</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aeca778cf5182566bb68edce31f817c5e" compoundref="_abstract_mesh_8cpp" startline="336" endline="349">draw</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a778aab7afc0c3015b0d5133dfbf33b94" compoundref="_abstract_mesh_8cpp" startline="353" endline="372">mapVAOVerts</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1ad5a08610ff985730c8116b337d9d578a" compoundref="_abstract_mesh_8cpp" startline="375" endline="385">unMapVAO</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1ab39e5c5c849285d6b17cd735dab4d65d" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ngl::AbstractMesh::m_vbo</definition>
+        <argsstring></argsstring>
+        <name>m_vbo</name>
+        <briefdescription>
+<para>flag to indicate if a VBO has been created </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="322" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="322" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aa500b8c1affa589eee0da6d2f8431b39" compoundref="_abstract_mesh_8cpp" startline="60" endline="76">~AbstractMesh</referencedby>
+        <referencedby refid="classngl_1_1_houdini_geo_1ad05cccf96720d28aad1b87701fb51702" compoundref="_houdini_geo_8cpp" startline="59" endline="65">ngl::HoudiniGeo::HoudiniGeo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1a5109b0163236502482095620a5db728f" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ngl::AbstractMesh::m_vao</definition>
+        <argsstring></argsstring>
+        <name>m_vao</name>
+        <briefdescription>
+<para>flag to indicate if a VBO has been created </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="326" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="326" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">createVAO</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aeca778cf5182566bb68edce31f817c5e" compoundref="_abstract_mesh_8cpp" startline="336" endline="349">draw</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1aca2b5ff30a55850a3597154b79c94186" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ngl::AbstractMesh::m_vboMapped</definition>
+        <argsstring></argsstring>
+        <name>m_vboMapped</name>
+        <briefdescription>
+<para>flag to indicate if the VBO vertex data has been mapped </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="330" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="330" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a778aab7afc0c3015b0d5133dfbf33b94" compoundref="_abstract_mesh_8cpp" startline="353" endline="372">mapVAOVerts</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1ad5a08610ff985730c8116b337d9d578a" compoundref="_abstract_mesh_8cpp" startline="375" endline="385">unMapVAO</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1a56eb30bdaec31e32772833199fd54f22" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ngl::AbstractMesh::m_texture</definition>
+        <argsstring></argsstring>
+        <name>m_texture</name>
+        <briefdescription>
+<para>flag to indicate if texture assigned </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="334" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="334" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a2f0e3afb860b5c7bb6b99b96c016fef5" compoundref="_abstract_mesh_8cpp" startline="80" endline="87">loadTexture</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aeca778cf5182566bb68edce31f817c5e" compoundref="_abstract_mesh_8cpp" startline="336" endline="349">draw</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1ae7d52c8f9cc7cd566967f81198588919" prot="protected" static="no" mutable="no">
+        <type><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref></type>
+        <definition>GLuint ngl::AbstractMesh::m_textureID</definition>
+        <argsstring></argsstring>
+        <name>m_textureID</name>
+        <briefdescription>
+<para>The openGL id of the texture for the texture generation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="338" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="338" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a2f0e3afb860b5c7bb6b99b96c016fef5" compoundref="_abstract_mesh_8cpp" startline="80" endline="87">loadTexture</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aeca778cf5182566bb68edce31f817c5e" compoundref="_abstract_mesh_8cpp" startline="336" endline="349">draw</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1a8264b039550ca93f0ed2caded810accb" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::AbstractMesh::m_maxX</definition>
+        <argsstring></argsstring>
+        <name>m_maxX</name>
+        <briefdescription>
+<para>The Maximum X value in the obj file used to calculate the extents bbox. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="342" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="342" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a8cbb6c3661cdcc06436db68dd76fa585" compoundref="_abstract_mesh_8cpp" startline="387" endline="429">calcDimensions</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1a0555c2d79d6ab50da520a482563b43c4" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::AbstractMesh::m_minX</definition>
+        <argsstring></argsstring>
+        <name>m_minX</name>
+        <briefdescription>
+<para>The Min X value in the obj file used to calculate the extents bbox. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="346" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="346" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a8cbb6c3661cdcc06436db68dd76fa585" compoundref="_abstract_mesh_8cpp" startline="387" endline="429">calcDimensions</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1acd96df6e97f2ee1483fe8370fecc8241" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::AbstractMesh::m_maxY</definition>
+        <argsstring></argsstring>
+        <name>m_maxY</name>
+        <briefdescription>
+<para>The Max Y value in the obj file used to calculate the extents bbox. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="350" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="350" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a8cbb6c3661cdcc06436db68dd76fa585" compoundref="_abstract_mesh_8cpp" startline="387" endline="429">calcDimensions</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1a9702f04680673970644c2325b7a08c60" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::AbstractMesh::m_minY</definition>
+        <argsstring></argsstring>
+        <name>m_minY</name>
+        <briefdescription>
+<para>The Min Y value in the obj file used to calculate the extents bbox. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="354" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="354" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a8cbb6c3661cdcc06436db68dd76fa585" compoundref="_abstract_mesh_8cpp" startline="387" endline="429">calcDimensions</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1ada8290a2ad1243d255e84f19a800bd95" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::AbstractMesh::m_maxZ</definition>
+        <argsstring></argsstring>
+        <name>m_maxZ</name>
+        <briefdescription>
+<para>The Max Z value in the obj file used to calculate the extents bbox. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="358" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="358" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a8cbb6c3661cdcc06436db68dd76fa585" compoundref="_abstract_mesh_8cpp" startline="387" endline="429">calcDimensions</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1aace446c6ba3195240df78884a10b78b2" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::AbstractMesh::m_minZ</definition>
+        <argsstring></argsstring>
+        <name>m_minZ</name>
+        <briefdescription>
+<para>The Min Z value in the obj file used to calculate the extents bbox. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="362" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="362" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a8cbb6c3661cdcc06436db68dd76fa585" compoundref="_abstract_mesh_8cpp" startline="387" endline="429">calcDimensions</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1a87d423496aaeefcbf960da1d74b9636d" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classngl_1_1_b_box" kindref="compound">BBox</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;BBox&gt; ngl::AbstractMesh::m_ext</definition>
+        <argsstring></argsstring>
+        <name>m_ext</name>
+        <briefdescription>
+<para>Create a bounding box of the object to store it&apos;s extents. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="366" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="366" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aeb837456dbbf0051cac81797a90b149e" compoundref="_abstract_mesh_8cpp" startline="36" endline="39">drawBBox</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a8cbb6c3661cdcc06436db68dd76fa585" compoundref="_abstract_mesh_8cpp" startline="387" endline="429">calcDimensions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1a4885d5167a332db76bfd4aa1f462928a" prot="protected" static="no" mutable="no">
+        <type><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref></type>
+        <definition>GLuint ngl::AbstractMesh::m_dataPackType</definition>
+        <argsstring></argsstring>
+        <name>m_dataPackType</name>
+        <briefdescription>
+<para>determines if the data is Packed as either TRI or QUAD </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="370" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="370" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">createVAO</referencedby>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1ab7f27d366534a8369a420e6a005bb47e" prot="protected" static="no" mutable="no">
+        <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>unsigned int ngl::AbstractMesh::m_bufferPackSize</definition>
+        <argsstring></argsstring>
+        <name>m_bufferPackSize</name>
+        <briefdescription>
+<para>the size of the buffer pack we use this for the saving of bin vbo but it actually holds the size of the data (3 for just verts 5 verts norms etc) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="375" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="375" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1af9dff03e37f1d8853ad87b5229262af3" prot="protected" static="no" mutable="no">
+        <type><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref></type>
+        <definition>GLenum ngl::AbstractMesh::m_vboDrawType</definition>
+        <argsstring></argsstring>
+        <name>m_vboDrawType</name>
+        <briefdescription>
+<para>which type of VBO are we going to draw </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="379" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1ae8cb9140141d33e2534690874c58c031" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ngl::AbstractMesh::m_loaded</definition>
+        <argsstring></argsstring>
+        <name>m_loaded</name>
+        <briefdescription>
+<para>flag to indicate if anything loaded for dtor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="384" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="384" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aa500b8c1affa589eee0da6d2f8431b39" compoundref="_abstract_mesh_8cpp" startline="60" endline="76">~AbstractMesh</referencedby>
+        <referencedby refid="classngl_1_1_houdini_geo_1ad05cccf96720d28aad1b87701fb51702" compoundref="_houdini_geo_8cpp" startline="59" endline="65">ngl::HoudiniGeo::HoudiniGeo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1a5b396d93df500bb90ba5a5f71dccc953" prot="protected" static="no" mutable="no">
+        <type><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 ngl::AbstractMesh::m_sphereCenter</definition>
+        <argsstring></argsstring>
+        <name>m_sphereCenter</name>
+        <briefdescription>
+<para>the center of the bounding sphere </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="388" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="388" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1ad37269f60f9bb3d9018df90ffe63812c" compoundref="_abstract_mesh_8cpp" startline="501" endline="604">calcBoundingSphere</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_abstract_mesh_1aec6feb6b9e924ac4fccd350aa059922c" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::AbstractMesh::m_sphereRadius</definition>
+        <argsstring></argsstring>
+        <name>m_sphereRadius</name>
+        <briefdescription>
+<para>the radius of the bounding sphere </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="392" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="392" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1ad37269f60f9bb3d9018df90ffe63812c" compoundref="_abstract_mesh_8cpp" startline="501" endline="604">calcBoundingSphere</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1a677c1de57a7ea8086473df6c95b76c93" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool ngl::AbstractMesh::load</definition>
+        <argsstring>(const std::string &amp;_fname, bool _calcBB=true) noexcept=0</argsstring>
+        <name>load</name>
+        <reimplementedby refid="classngl_1_1_n_c_c_a_bin_mesh_1a2e5874bc036178bb25267a7a80b594ee">load</reimplementedby>
+        <reimplementedby refid="classngl_1_1_obj_1af478e04439a0a83c4594cfa34df33efc">load</reimplementedby>
+        <reimplementedby refid="classngl_1_1_houdini_geo_1af5e5e397e0e6c9532945afa99e3bde3a">load</reimplementedby>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_fname</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_calcBB</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Method to load the file in. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">&amp;_fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the obj file to load </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1a9855de18b9aba11902386995c67299cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ngl::AbstractMesh::AbstractMesh</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>AbstractMesh</name>
+        <briefdescription>
+<para>default ctor must be called from the child class so our dtor is called </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="118" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="118" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1aa500b8c1affa589eee0da6d2f8431b39" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ngl::AbstractMesh::~AbstractMesh</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>~AbstractMesh</name>
+        <briefdescription>
+<para>destructor this will clear out all the vert data and the vbo if created </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="122" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="60" bodyend="76"/>
+        <references refid="glew_8h_1a55652a3f087bb13267a5481b6ff1fe19" compoundref="glew_8h" startline="1706">glDeleteBuffers</references>
+        <references refid="classngl_1_1_abstract_mesh_1a1f7de935fd02870065f99cb4685fc7a8" compoundref="_abstract_mesh_8h" startline="293">m_face</references>
+        <references refid="classngl_1_1_abstract_mesh_1adc01b9c9267485da1fdf3613dc8c9ceb" compoundref="_abstract_mesh_8h" startline="301">m_indices</references>
+        <references refid="classngl_1_1_abstract_mesh_1ae8cb9140141d33e2534690874c58c031" compoundref="_abstract_mesh_8h" startline="384">m_loaded</references>
+        <references refid="classngl_1_1_abstract_mesh_1a3987536cc8d7cccbe31429d1b4e14024" compoundref="_abstract_mesh_8h" startline="285">m_norm</references>
+        <references refid="classngl_1_1_abstract_mesh_1ae8b4d4fa40a706e2d5a630876f65a8f4" compoundref="_abstract_mesh_8h" startline="305">m_outIndices</references>
+        <references refid="classngl_1_1_abstract_mesh_1a06b3a8bddf3d42830319da379b3b996e" compoundref="_abstract_mesh_8h" startline="289">m_tex</references>
+        <references refid="classngl_1_1_abstract_mesh_1ab39e5c5c849285d6b17cd735dab4d65d" compoundref="_abstract_mesh_8h" startline="322">m_vbo</references>
+        <references refid="classngl_1_1_abstract_mesh_1af099b62f47c9b9e764f21ddec8522e91" compoundref="_abstract_mesh_8h" startline="314">m_vboBuffers</references>
+        <references refid="classngl_1_1_abstract_mesh_1af94fc1ce4021f973448c355cadf4c4ba" compoundref="_abstract_mesh_8h" startline="281">m_verts</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1aeb837456dbbf0051cac81797a90b149e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::AbstractMesh::drawBBox</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>drawBBox</name>
+        <briefdescription>
+<para>method to draw the bounding box </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="126" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="36" bodyend="39"/>
+        <references refid="classngl_1_1_abstract_mesh_1a87d423496aaeefcbf960da1d74b9636d" compoundref="_abstract_mesh_8h" startline="366">m_ext</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1aeca778cf5182566bb68edce31f817c5e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::AbstractMesh::draw</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>draw</name>
+        <briefdescription>
+<para>draw method to draw the obj as a VBO. The VBO first needs to be created using the CreateVBO method </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="130" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="336" bodyend="349"/>
+        <references refid="glew_8h_1ad4de17abefa73fa2ef53379f73b734be" compoundref="glew_8h" startline="10194">GL_TEXTURE_2D</references>
+        <references refid="glew_8h_1a940f58f3728713267a58e2d09ff602b2">glBindTexture</references>
+        <references refid="classngl_1_1_abstract_mesh_1a56eb30bdaec31e32772833199fd54f22" compoundref="_abstract_mesh_8h" startline="334">m_texture</references>
+        <references refid="classngl_1_1_abstract_mesh_1ae7d52c8f9cc7cd566967f81198588919" compoundref="_abstract_mesh_8h" startline="338">m_textureID</references>
+        <references refid="classngl_1_1_abstract_mesh_1a5109b0163236502482095620a5db728f" compoundref="_abstract_mesh_8h" startline="326">m_vao</references>
+        <references refid="classngl_1_1_abstract_mesh_1aa5f50e09c03681f06aef1b9f32725744" compoundref="_abstract_mesh_8h" startline="318">m_vaoMesh</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1a2f0e3afb860b5c7bb6b99b96c016fef5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::AbstractMesh::loadTexture</definition>
+        <argsstring>(const std::string &amp;_fname) noexcept</argsstring>
+        <name>loadTexture</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_fname</declname>
+        </param>
+        <briefdescription>
+<para>load int a texture and set it as the active texture of the <ref refid="classngl_1_1_obj" kindref="compound">Obj</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">&amp;_fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the file to load </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="135" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="80" bodyend="87"/>
+        <references refid="classngl_1_1_abstract_mesh_1a56eb30bdaec31e32772833199fd54f22" compoundref="_abstract_mesh_8h" startline="334">m_texture</references>
+        <references refid="classngl_1_1_abstract_mesh_1ae7d52c8f9cc7cd566967f81198588919" compoundref="_abstract_mesh_8h" startline="338">m_textureID</references>
+        <references refid="classngl_1_1_texture_1a5be4a26f970a417950ad4b7f0cf87c5d" compoundref="_texture_8cpp" startline="64" endline="78">ngl::Texture::setTextureGL</references>
+        <referencedby refid="classngl_1_1_houdini_geo_1a306b110b7cfe58531e740d241c39def0" compoundref="_houdini_geo_8cpp" startline="68" endline="77">ngl::HoudiniGeo::HoudiniGeo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1a3d08025470bb7939b209a2c2d63cc3d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::AbstractMesh::scale</definition>
+        <argsstring>(Real _sx, Real _sy, Real _sz) noexcept</argsstring>
+        <name>scale</name>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_sx</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_sy</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_sz</declname>
+        </param>
+        <briefdescription>
+<para>scale the obj by multiplying the actual vertex values by sx,sy and sz </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_sx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the scale value in x </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_sy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the scale value in y </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_sz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the scale value in z </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="143" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="41" bodyend="55"/>
+        <references refid="classngl_1_1_abstract_mesh_1a8cbb6c3661cdcc06436db68dd76fa585" compoundref="_abstract_mesh_8cpp" startline="387" endline="429">calcDimensions</references>
+        <references refid="classngl_1_1_abstract_mesh_1a0cdddd3dd2b076816bd25647acae16c5" compoundref="_abstract_mesh_8h" startline="297">m_center</references>
+        <references refid="classngl_1_1_abstract_mesh_1af927695f9517bf49191548067ff939ed" compoundref="_abstract_mesh_8h" startline="265">m_nVerts</references>
+        <references refid="classngl_1_1_abstract_mesh_1af94fc1ce4021f973448c355cadf4c4ba" compoundref="_abstract_mesh_8h" startline="281">m_verts</references>
+        <references refid="classngl_1_1_vec3_1a30f6ffdadd9bdb00159553a4ff3f3f25" compoundref="_vec3_8h" startline="310">ngl::Vec3::m_x</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1a8cbb6c3661cdcc06436db68dd76fa585" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::AbstractMesh::calcDimensions</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>calcDimensions</name>
+        <briefdescription>
+<para>a method to set the <ref refid="classngl_1_1_b_box" kindref="compound">BBox</ref> and center </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="147" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="387" bodyend="429"/>
+        <references refid="classngl_1_1_abstract_mesh_1a0cdddd3dd2b076816bd25647acae16c5" compoundref="_abstract_mesh_8h" startline="297">m_center</references>
+        <references refid="classngl_1_1_abstract_mesh_1a87d423496aaeefcbf960da1d74b9636d" compoundref="_abstract_mesh_8h" startline="366">m_ext</references>
+        <references refid="classngl_1_1_abstract_mesh_1a8264b039550ca93f0ed2caded810accb" compoundref="_abstract_mesh_8h" startline="342">m_maxX</references>
+        <references refid="classngl_1_1_abstract_mesh_1acd96df6e97f2ee1483fe8370fecc8241" compoundref="_abstract_mesh_8h" startline="350">m_maxY</references>
+        <references refid="classngl_1_1_abstract_mesh_1ada8290a2ad1243d255e84f19a800bd95" compoundref="_abstract_mesh_8h" startline="358">m_maxZ</references>
+        <references refid="classngl_1_1_abstract_mesh_1a0555c2d79d6ab50da520a482563b43c4" compoundref="_abstract_mesh_8h" startline="346">m_minX</references>
+        <references refid="classngl_1_1_abstract_mesh_1a9702f04680673970644c2325b7a08c60" compoundref="_abstract_mesh_8h" startline="354">m_minY</references>
+        <references refid="classngl_1_1_abstract_mesh_1aace446c6ba3195240df78884a10b78b2" compoundref="_abstract_mesh_8h" startline="362">m_minZ</references>
+        <references refid="classngl_1_1_abstract_mesh_1af927695f9517bf49191548067ff939ed" compoundref="_abstract_mesh_8h" startline="265">m_nVerts</references>
+        <references refid="classngl_1_1_abstract_mesh_1af94fc1ce4021f973448c355cadf4c4ba" compoundref="_abstract_mesh_8h" startline="281">m_verts</references>
+        <references refid="classngl_1_1_vec3_1a30f6ffdadd9bdb00159553a4ff3f3f25" compoundref="_vec3_8h" startline="310">ngl::Vec3::m_x</references>
+        <references refid="classngl_1_1_vec3_1a6c46bcd25521e9840d992280bdfb5a91" compoundref="_vec3_8h" startline="311">ngl::Vec3::m_y</references>
+        <references refid="classngl_1_1_vec3_1a1e5d951f56e56b18edadfd661eb6012a" compoundref="_vec3_8h" startline="312">ngl::Vec3::m_z</references>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a3d08025470bb7939b209a2c2d63cc3d8" compoundref="_abstract_mesh_8cpp" startline="41" endline="55">scale</referencedby>
+        <referencedby refid="classngl_1_1_houdini_geo_1af5e5e397e0e6c9532945afa99e3bde3a" compoundref="_houdini_geo_8cpp" startline="28" endline="56">ngl::HoudiniGeo::load</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1ad37269f60f9bb3d9018df90ffe63812c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::AbstractMesh::calcBoundingSphere</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>calcBoundingSphere</name>
+        <briefdescription>
+<para>a method to caluculate the bounding Sphere will set m_sphereCenter and m_sphereRadius </para>        </briefdescription>
+        <detaileddescription>
+<para>modified from example in Rick Parent book Computer Animation Algorithms and Techniques Morgan Korfman Appendix B </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="152" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="501" bodyend="604"/>
+        <references refid="classngl_1_1_abstract_mesh_1a5b396d93df500bb90ba5a5f71dccc953" compoundref="_abstract_mesh_8h" startline="388">m_sphereCenter</references>
+        <references refid="classngl_1_1_abstract_mesh_1aec6feb6b9e924ac4fccd350aa059922c" compoundref="_abstract_mesh_8h" startline="392">m_sphereRadius</references>
+        <references refid="classngl_1_1_abstract_mesh_1af94fc1ce4021f973448c355cadf4c4ba" compoundref="_abstract_mesh_8h" startline="281">m_verts</references>
+        <references refid="classngl_1_1_vec3_1a30f6ffdadd9bdb00159553a4ff3f3f25" compoundref="_vec3_8h" startline="310">ngl::Vec3::m_x</references>
+        <references refid="classngl_1_1_vec3_1a6c46bcd25521e9840d992280bdfb5a91" compoundref="_vec3_8h" startline="311">ngl::Vec3::m_y</references>
+        <references refid="classngl_1_1_vec3_1a1e5d951f56e56b18edadfd661eb6012a" compoundref="_vec3_8h" startline="312">ngl::Vec3::m_z</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1a279b4c298c26705ebbaddb5120144ba1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::AbstractMesh::writeToRibSubdiv</definition>
+        <argsstring>(RibExport &amp;_ribFile) const  noexcept</argsstring>
+        <name>writeToRibSubdiv</name>
+        <param>
+          <type><ref refid="classngl_1_1_rib_export" kindref="compound">RibExport</ref> &amp;</type>
+          <declname>_ribFile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>method to write out the obj mesh to a renderman sub div <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_ribFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the instance of the <ref refid="classngl_1_1_rib_export" kindref="compound">RibExport</ref> class</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para>correct the rib exporter and add Normal information to the export </para></xrefdescription></xrefsect><verbatim>/// The following code is adapted from an MSc project by
+/// Authors: Elaine Kieran, Gavin Harrison, Luke Openshaw
+/// Write the obj as a SubdivisionMesh package to the rib file
+/// Renderman specification: SubdivisionMesh scheme nverts vertids tags nargs intargs floatargs parameterlist
+/// </verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="158" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="98" bodyend="183"/>
+        <references refid="_types_8h_1a04b3daeb8f076608db8eb09234c8d29f" compoundref="_types_8h" startline="136">FCompare</references>
+        <references refid="classngl_1_1_abstract_mesh_1a1f7de935fd02870065f99cb4685fc7a8" compoundref="_abstract_mesh_8h" startline="293">m_face</references>
+        <references refid="classngl_1_1_abstract_mesh_1af927695f9517bf49191548067ff939ed" compoundref="_abstract_mesh_8h" startline="265">m_nVerts</references>
+        <references refid="classngl_1_1_abstract_mesh_1af94fc1ce4021f973448c355cadf4c4ba" compoundref="_abstract_mesh_8h" startline="281">m_verts</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::AbstractMesh::createVAO</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>createVAO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="163" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="214" bodyend="331"/>
+        <references refid="classngl_1_1_v_a_o_factory_1adee5532df7151fab8e8db0e9ebf94305" compoundref="_v_a_o_factory_8cpp" startline="19" endline="29">ngl::VAOFactory::createVAO</references>
+        <references refid="glew_8h_1a6d19915d4237cb559505bd3e5dcfcf3c" compoundref="glew_8h" startline="642">GL_FLOAT</references>
+        <references refid="glew_8h_1a6079e7a02a59adad65eb953d9482b1ed" compoundref="glew_8h" startline="330">GL_TRIANGLES</references>
+        <references refid="classngl_1_1_abstract_mesh_1af509c12d1dda2d1ad25841a4362edb5f" compoundref="_abstract_mesh_8cpp" startline="186" endline="196">isTriangular</references>
+        <references refid="classngl_1_1_abstract_mesh_1a4885d5167a332db76bfd4aa1f462928a" compoundref="_abstract_mesh_8h" startline="370">m_dataPackType</references>
+        <references refid="classngl_1_1_abstract_mesh_1a1f7de935fd02870065f99cb4685fc7a8" compoundref="_abstract_mesh_8h" startline="293">m_face</references>
+        <references refid="classngl_1_1_abstract_mesh_1a305a5b883ac911a3bb8723811259acc1" compoundref="_abstract_mesh_8h" startline="310">m_meshSize</references>
+        <references refid="classngl_1_1_abstract_mesh_1aa4e5c1cdc67001f14499bb0da40f6cd0" compoundref="_abstract_mesh_8h" startline="277">m_nFaces</references>
+        <references refid="classngl_1_1_abstract_mesh_1a8536f44940c41d833ce1360e00e925d2" compoundref="_abstract_mesh_8h" startline="269">m_nNorm</references>
+        <references refid="classngl_1_1_abstract_mesh_1a3987536cc8d7cccbe31429d1b4e14024" compoundref="_abstract_mesh_8h" startline="285">m_norm</references>
+        <references refid="classngl_1_1_abstract_mesh_1a2f47063be79b1f065cadc30e35cf0a17" compoundref="_abstract_mesh_8h" startline="273">m_nTex</references>
+        <references refid="classngl_1_1_abstract_mesh_1a06b3a8bddf3d42830319da379b3b996e" compoundref="_abstract_mesh_8h" startline="289">m_tex</references>
+        <references refid="classngl_1_1_abstract_mesh_1a5109b0163236502482095620a5db728f" compoundref="_abstract_mesh_8h" startline="326">m_vao</references>
+        <references refid="classngl_1_1_abstract_mesh_1aa5f50e09c03681f06aef1b9f32725744" compoundref="_abstract_mesh_8h" startline="318">m_vaoMesh</references>
+        <references refid="classngl_1_1_abstract_mesh_1af94fc1ce4021f973448c355cadf4c4ba" compoundref="_abstract_mesh_8h" startline="281">m_verts</references>
+        <references refid="structngl_1_1_vert_data_1ae3b5846610df9f8c1bf5244a3879f7fe" compoundref="_abstract_mesh_8cpp" startline="205">ngl::VertData::nx</references>
+        <references refid="structngl_1_1_vert_data_1ad4afb7472fe8797266ec29964cde0b6f" compoundref="_abstract_mesh_8cpp" startline="206">ngl::VertData::ny</references>
+        <references refid="structngl_1_1_vert_data_1ae4735ab5ef64463bd3f2338fe1446abd" compoundref="_abstract_mesh_8cpp" startline="207">ngl::VertData::nz</references>
+        <references refid="structngl_1_1_vert_data_1a1d7face66c785a131f14a2f7a0a01218" compoundref="_abstract_mesh_8cpp" startline="203">ngl::VertData::u</references>
+        <references refid="structngl_1_1_vert_data_1a4fd4a95037c1eb7056fbb0412672cd2d" compoundref="_abstract_mesh_8cpp" startline="204">ngl::VertData::v</references>
+        <references refid="structngl_1_1_vert_data_1aed6fc63566ddbfce8bbd666b2c803dfc" compoundref="_abstract_mesh_8cpp" startline="208">ngl::VertData::x</references>
+        <references refid="structngl_1_1_vert_data_1af28b10411e756a2e184fd3556f959a06" compoundref="_abstract_mesh_8cpp" startline="209">ngl::VertData::y</references>
+        <references refid="structngl_1_1_vert_data_1ac33030b30e49d058297bd4eaec0c1625" compoundref="_abstract_mesh_8cpp" startline="210">ngl::VertData::z</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1a145581378c10284593e958c5974b3a94" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>unsigned int ngl::AbstractMesh::getTextureID</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>getTextureID</name>
+        <briefdescription>
+<para>get the texture id </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the texture id </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="168" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="168" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1a778aab7afc0c3015b0d5133dfbf33b94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref> *</type>
+        <definition>Real * ngl::AbstractMesh::mapVAOVerts</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>mapVAOVerts</name>
+        <briefdescription>
+<para>map the VBO vertex data </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a pointer to the VBO vertex data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="173" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="353" bodyend="372"/>
+        <references refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" compoundref="glew_8h" startline="1648">GL_ARRAY_BUFFER</references>
+        <references refid="glew_8h_1aa5fd429fd2b79f5936c1421afb205dcd" compoundref="glew_8h" startline="1664">GL_READ_WRITE</references>
+        <references refid="glew_8h_1a3b3a3f8200f094b781e9f61e2f19fc50" compoundref="glew_8h" startline="1703">glBindBuffer</references>
+        <references refid="glew_8h_1a88f951d9fb1bd55e28bc3c8581adf2eb" compoundref="glew_8h" startline="1719">glMapBuffer</references>
+        <references refid="classngl_1_1_abstract_mesh_1aa5f50e09c03681f06aef1b9f32725744" compoundref="_abstract_mesh_8h" startline="318">m_vaoMesh</references>
+        <references refid="classngl_1_1_abstract_mesh_1aca2b5ff30a55850a3597154b79c94186" compoundref="_abstract_mesh_8h" startline="330">m_vboMapped</references>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+        <referencedby refid="classngl_1_1_n_c_c_a_point_bake_1ab3fb20f6af7c77b7daf6bc652becdbaa" compoundref="_n_c_c_a_point_bake_8cpp" startline="246" endline="275">ngl::NCCAPointBake::setMeshToFrame</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1ad5a08610ff985730c8116b337d9d578a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::AbstractMesh::unMapVAO</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>unMapVAO</name>
+        <briefdescription>
+<para>unmap the VBO based </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="177" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="375" bodyend="385"/>
+        <references refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" compoundref="glew_8h" startline="1648">GL_ARRAY_BUFFER</references>
+        <references refid="glew_8h_1ae6a0a2dca1b86176367fab8941e9ab8f" compoundref="glew_8h" startline="1720">glUnmapBuffer</references>
+        <references refid="classngl_1_1_abstract_mesh_1aa5f50e09c03681f06aef1b9f32725744" compoundref="_abstract_mesh_8h" startline="318">m_vaoMesh</references>
+        <references refid="classngl_1_1_abstract_mesh_1aca2b5ff30a55850a3597154b79c94186" compoundref="_abstract_mesh_8h" startline="330">m_vboMapped</references>
+        <referencedby refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">saveNCCABinaryMesh</referencedby>
+        <referencedby refid="classngl_1_1_n_c_c_a_point_bake_1ab3fb20f6af7c77b7daf6bc652becdbaa" compoundref="_n_c_c_a_point_bake_8cpp" startline="246" endline="275">ngl::NCCAPointBake::setMeshToFrame</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1a89da4b17582a0c763846f5c125eeb57f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="classngl_1_1_index_ref" kindref="compound">IndexRef</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt;IndexRef&gt;&amp; ngl::AbstractMesh::getIndices</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>getIndices</name>
+        <briefdescription>
+<para>get a pointer to the indices used to represent the VBO data, this is used in the clip class when re-ordering the clip data values </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the array of indices </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="183" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="183" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::AbstractMesh::saveNCCABinaryMesh</definition>
+        <argsstring>(const std::string &amp;_fname) noexcept</argsstring>
+        <name>saveNCCABinaryMesh</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_fname</declname>
+        </param>
+        <briefdescription>
+<para>save the mesh as NCCA Binary VBO format basically this format is the processed binary vbo mesh data as as packed by the CreateVBO() method is called. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>The number of vertices in the object</para><para>The number of normals in the object</para><para>the number of texture co-ordinates in the object</para><para>the number of faces in the object</para><para>now we can dump the data from the vbo </para>        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="189" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="431" bodyend="496"/>
+        <references refid="classngl_1_1_abstract_mesh_1ab7f27d366534a8369a420e6a005bb47e" compoundref="_abstract_mesh_8h" startline="375">m_bufferPackSize</references>
+        <references refid="classngl_1_1_abstract_mesh_1a0cdddd3dd2b076816bd25647acae16c5" compoundref="_abstract_mesh_8h" startline="297">m_center</references>
+        <references refid="classngl_1_1_abstract_mesh_1a4885d5167a332db76bfd4aa1f462928a" compoundref="_abstract_mesh_8h" startline="370">m_dataPackType</references>
+        <references refid="classngl_1_1_abstract_mesh_1a586cec1c03451ef5bef925b03cd6e286" compoundref="_abstract_mesh_8h" startline="309">m_indexSize</references>
+        <references refid="classngl_1_1_abstract_mesh_1a8264b039550ca93f0ed2caded810accb" compoundref="_abstract_mesh_8h" startline="342">m_maxX</references>
+        <references refid="classngl_1_1_abstract_mesh_1acd96df6e97f2ee1483fe8370fecc8241" compoundref="_abstract_mesh_8h" startline="350">m_maxY</references>
+        <references refid="classngl_1_1_abstract_mesh_1ada8290a2ad1243d255e84f19a800bd95" compoundref="_abstract_mesh_8h" startline="358">m_maxZ</references>
+        <references refid="classngl_1_1_abstract_mesh_1a0555c2d79d6ab50da520a482563b43c4" compoundref="_abstract_mesh_8h" startline="346">m_minX</references>
+        <references refid="classngl_1_1_abstract_mesh_1a9702f04680673970644c2325b7a08c60" compoundref="_abstract_mesh_8h" startline="354">m_minY</references>
+        <references refid="classngl_1_1_abstract_mesh_1aace446c6ba3195240df78884a10b78b2" compoundref="_abstract_mesh_8h" startline="362">m_minZ</references>
+        <references refid="classngl_1_1_abstract_mesh_1aa4e5c1cdc67001f14499bb0da40f6cd0" compoundref="_abstract_mesh_8h" startline="277">m_nFaces</references>
+        <references refid="classngl_1_1_abstract_mesh_1a8536f44940c41d833ce1360e00e925d2" compoundref="_abstract_mesh_8h" startline="269">m_nNorm</references>
+        <references refid="classngl_1_1_abstract_mesh_1a2f47063be79b1f065cadc30e35cf0a17" compoundref="_abstract_mesh_8h" startline="273">m_nTex</references>
+        <references refid="classngl_1_1_abstract_mesh_1af927695f9517bf49191548067ff939ed" compoundref="_abstract_mesh_8h" startline="265">m_nVerts</references>
+        <references refid="classngl_1_1_abstract_mesh_1ae8b4d4fa40a706e2d5a630876f65a8f4" compoundref="_abstract_mesh_8h" startline="305">m_outIndices</references>
+        <references refid="classngl_1_1_abstract_mesh_1a56eb30bdaec31e32772833199fd54f22" compoundref="_abstract_mesh_8h" startline="334">m_texture</references>
+        <references refid="classngl_1_1_vec3_1a30f6ffdadd9bdb00159553a4ff3f3f25" compoundref="_vec3_8h" startline="310">ngl::Vec3::m_x</references>
+        <references refid="classngl_1_1_vec3_1a6c46bcd25521e9840d992280bdfb5a91" compoundref="_vec3_8h" startline="311">ngl::Vec3::m_y</references>
+        <references refid="classngl_1_1_vec3_1a1e5d951f56e56b18edadfd661eb6012a" compoundref="_vec3_8h" startline="312">ngl::Vec3::m_z</references>
+        <references refid="classngl_1_1_abstract_mesh_1a778aab7afc0c3015b0d5133dfbf33b94" compoundref="_abstract_mesh_8cpp" startline="353" endline="372">mapVAOVerts</references>
+        <references refid="classngl_1_1_abstract_mesh_1ad5a08610ff985730c8116b337d9d578a" compoundref="_abstract_mesh_8cpp" startline="375" endline="385">unMapVAO</references>
+        <referencedby refid="classngl_1_1_n_c_c_a_bin_mesh_1a79e26e8148d2413548984c6d309f88cf" compoundref="_n_c_c_a_bin_mesh_8cpp" startline="138" endline="141">ngl::NCCABinMesh::save</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1acc851f38c4f01d3f4bf7bf1b6aed1811" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classngl_1_1_b_box" kindref="compound">BBox</ref> &amp;</type>
+        <definition>BBox&amp; ngl::AbstractMesh::getBBox</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>getBBox</name>
+        <briefdescription>
+<para>a method to get the current bounding box of the mesh </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the bounding box for the loaded mesh; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="195" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="195" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1ad75f19c35d0c4a954d166681b7a94f5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &gt;</type>
+        <definition>std::vector&lt;Vec3&gt; ngl::AbstractMesh::getVertexList</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>getVertexList</name>
+        <briefdescription>
+<para>accessor for the vertex data </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a std::vector containing the vert data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="200" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="200" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1ad62275e74c5d59dfb0d30359aac400e3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 ngl::AbstractMesh::getVertexAtIndex</definition>
+        <argsstring>(uint32_t _i) const  noexcept</argsstring>
+        <name>getVertexAtIndex</name>
+        <param>
+          <type><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref></type>
+          <declname>_i</declname>
+        </param>
+        <briefdescription>
+<para>accessor for the vertex data </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a std::vector containing the vert data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="205" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="205" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1a7d9ae4e1116ba2e26cc9ca0db543c4e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &gt;</type>
+        <definition>std::vector&lt;Vec3&gt; ngl::AbstractMesh::getNormalList</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>getNormalList</name>
+        <briefdescription>
+<para>accessor for the normals data </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a std::vector containing the normal data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="215" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="215" bodyend="215"/>
+        <references refid="classngl_1_1_face_1ac8eac320a04d818c87997b8dd0737e73" compoundref="_abstract_mesh_8h" startline="60">ngl::Face::m_norm</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1aff2a129e2f6d384e59932cf21fde624f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &gt;</type>
+        <definition>std::vector&lt;Vec3&gt; ngl::AbstractMesh::getTextureCordList</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>getTextureCordList</name>
+        <briefdescription>
+<para>accessor for the texture co-ordinates data </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a std::vector containing the texture cord data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="220" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="220" bodyend="220"/>
+        <references refid="classngl_1_1_face_1ab35ab22aa9d56f1420eee0ae718c75db" compoundref="_abstract_mesh_8h" startline="56">ngl::Face::m_tex</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1ad56784799ae979b3151f29158ce8de36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classngl_1_1_face" kindref="compound">Face</ref> &gt;</type>
+        <definition>std::vector&lt;Face&gt; ngl::AbstractMesh::getFaceList</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>getFaceList</name>
+        <briefdescription>
+<para>accessor for the <ref refid="classngl_1_1_face" kindref="compound">Face</ref> data </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a std::vector containing the face data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="225" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="225" bodyend="225"/>
+        <referencedby refid="classngl_1_1_n_c_c_a_point_bake_1ab3fb20f6af7c77b7daf6bc652becdbaa" compoundref="_n_c_c_a_point_bake_8cpp" startline="246" endline="275">ngl::NCCAPointBake::setMeshToFrame</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1a11d25262d6e1ef10b9c8542bbb915841" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>unsigned int ngl::AbstractMesh::getNumVerts</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>getNumVerts</name>
+        <briefdescription>
+<para>accessor to get the number of vertices in the object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="229" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="229" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1a0e3e8cd29ebb971c68b85a1c006aeca1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>unsigned int ngl::AbstractMesh::getNumNormals</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>getNumNormals</name>
+        <briefdescription>
+<para>accessor to get the number of normals in the object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="233" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="233" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1acb0b608ef44b029e517234bc8de2026f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>unsigned int ngl::AbstractMesh::getNumTexCords</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>getNumTexCords</name>
+        <briefdescription>
+<para>accessor to get the number of texture co-ordinates in the object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="237" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="237" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1a8e54a22df90192e7044abb2c38f11a4b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>unsigned int ngl::AbstractMesh::getNumFaces</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>getNumFaces</name>
+        <briefdescription>
+<para>accessor to get the number of faces in the object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="241" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="241" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1a8d1024b9600630c0e8d70b7d578b6e26" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>unsigned int ngl::AbstractMesh::getMeshSize</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>getMeshSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="242" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="242" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1ad9cdb979042a773f15e4d3011e2a7304" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 ngl::AbstractMesh::getSphereCenter</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>getSphereCenter</name>
+        <briefdescription>
+<para>accesor to get the bounding sphere center </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="246" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="246" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1af896c587979c488a5290dba8148fac50" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::AbstractMesh::getSphereRadius</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>getSphereRadius</name>
+        <briefdescription>
+<para>accesor to get the bounding sphere center </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="250" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="250" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1ad5de3572327beadfcb68b9ada9880b5e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 ngl::AbstractMesh::getCenter</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>getCenter</name>
+        <briefdescription>
+<para>accesor to get the center </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="254" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="254" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_abstract_mesh_1af509c12d1dda2d1ad25841a4362edb5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngl::AbstractMesh::isTriangular</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>isTriangular</name>
+        <briefdescription>
+<para>check to see if obj is triangulated as we only support tri or quad objs at the moment </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true or false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="259" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="186" bodyend="196"/>
+        <references refid="classngl_1_1_abstract_mesh_1a1f7de935fd02870065f99cb4685fc7a8" compoundref="_abstract_mesh_8h" startline="293">m_face</references>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">createVAO</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>an abstract base mesh used to build specific meshes such as <ref refid="classngl_1_1_obj" kindref="compound">Obj</ref> </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Jonathan Macey </para></simplesect>
+<simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="date"><para>24/09/09 Last Revision 16/06/10 added accessors for the mesh elements </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1075">
+        <label>ngl::NCCABinMesh</label>
+        <link refid="classngl_1_1_n_c_c_a_bin_mesh"/>
+        <childnode refid="1073" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1074">
+        <label>ngl::HoudiniGeo</label>
+        <link refid="classngl_1_1_houdini_geo"/>
+        <childnode refid="1073" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1073">
+        <label>ngl::AbstractMesh</label>
+        <link refid="classngl_1_1_abstract_mesh"/>
+      </node>
+      <node id="1076">
+        <label>ngl::Obj</label>
+        <link refid="classngl_1_1_obj"/>
+        <childnode refid="1073" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1079">
+        <label>size_t</label>
+      </node>
+      <node id="1078">
+        <label>ngl::Vec3</label>
+        <link refid="classngl_1_1_vec3"/>
+      </node>
+      <node id="1077">
+        <label>ngl::AbstractMesh</label>
+        <link refid="classngl_1_1_abstract_mesh"/>
+        <childnode refid="1078" relation="usage">
+          <edgelabel>#m_center</edgelabel>
+          <edgelabel>#m_sphereCenter</edgelabel>
+        </childnode>
+        <childnode refid="1079" relation="usage">
+          <edgelabel>#m_indexSize</edgelabel>
+          <edgelabel>#m_meshSize</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" line="106" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/AbstractMesh.h" bodystart="105" bodyend="394"/>
+    <listofallmembers>
+      <member refid="classngl_1_1_abstract_mesh_1a9855de18b9aba11902386995c67299cb" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>AbstractMesh</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ad37269f60f9bb3d9018df90ffe63812c" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>calcBoundingSphere</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a8cbb6c3661cdcc06436db68dd76fa585" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>calcDimensions</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" prot="public" virt="virtual"><scope>ngl::AbstractMesh</scope><name>createVAO</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aeca778cf5182566bb68edce31f817c5e" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>draw</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aeb837456dbbf0051cac81797a90b149e" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>drawBBox</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1acc851f38c4f01d3f4bf7bf1b6aed1811" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>getBBox</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ad5de3572327beadfcb68b9ada9880b5e" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>getCenter</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ad56784799ae979b3151f29158ce8de36" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>getFaceList</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a89da4b17582a0c763846f5c125eeb57f" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>getIndices</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a8d1024b9600630c0e8d70b7d578b6e26" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>getMeshSize</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a7d9ae4e1116ba2e26cc9ca0db543c4e1" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>getNormalList</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a8e54a22df90192e7044abb2c38f11a4b" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>getNumFaces</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a0e3e8cd29ebb971c68b85a1c006aeca1" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>getNumNormals</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1acb0b608ef44b029e517234bc8de2026f" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>getNumTexCords</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a11d25262d6e1ef10b9c8542bbb915841" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>getNumVerts</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ad9cdb979042a773f15e4d3011e2a7304" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>getSphereCenter</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1af896c587979c488a5290dba8148fac50" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>getSphereRadius</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aff2a129e2f6d384e59932cf21fde624f" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>getTextureCordList</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a145581378c10284593e958c5974b3a94" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>getTextureID</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ad62275e74c5d59dfb0d30359aac400e3" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>getVertexAtIndex</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ad75f19c35d0c4a954d166681b7a94f5a" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>getVertexList</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1af509c12d1dda2d1ad25841a4362edb5f" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>isTriangular</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a677c1de57a7ea8086473df6c95b76c93" prot="public" virt="pure-virtual"><scope>ngl::AbstractMesh</scope><name>load</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a2f0e3afb860b5c7bb6b99b96c016fef5" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>loadTexture</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ab7f27d366534a8369a420e6a005bb47e" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_bufferPackSize</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a0cdddd3dd2b076816bd25647acae16c5" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_center</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a4885d5167a332db76bfd4aa1f462928a" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_dataPackType</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a87d423496aaeefcbf960da1d74b9636d" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_ext</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a1f7de935fd02870065f99cb4685fc7a8" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_face</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a586cec1c03451ef5bef925b03cd6e286" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_indexSize</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1adc01b9c9267485da1fdf3613dc8c9ceb" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_indices</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ae8cb9140141d33e2534690874c58c031" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_loaded</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a8264b039550ca93f0ed2caded810accb" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_maxX</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1acd96df6e97f2ee1483fe8370fecc8241" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_maxY</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ada8290a2ad1243d255e84f19a800bd95" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_maxZ</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a305a5b883ac911a3bb8723811259acc1" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_meshSize</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a0555c2d79d6ab50da520a482563b43c4" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_minX</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a9702f04680673970644c2325b7a08c60" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_minY</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aace446c6ba3195240df78884a10b78b2" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_minZ</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aa4e5c1cdc67001f14499bb0da40f6cd0" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_nFaces</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a8536f44940c41d833ce1360e00e925d2" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_nNorm</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a3987536cc8d7cccbe31429d1b4e14024" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_norm</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a2f47063be79b1f065cadc30e35cf0a17" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_nTex</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1af927695f9517bf49191548067ff939ed" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_nVerts</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ae8b4d4fa40a706e2d5a630876f65a8f4" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_outIndices</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a5b396d93df500bb90ba5a5f71dccc953" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_sphereCenter</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aec6feb6b9e924ac4fccd350aa059922c" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_sphereRadius</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a06b3a8bddf3d42830319da379b3b996e" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_tex</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a56eb30bdaec31e32772833199fd54f22" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_texture</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ae7d52c8f9cc7cd566967f81198588919" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_textureID</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a5109b0163236502482095620a5db728f" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_vao</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aa5f50e09c03681f06aef1b9f32725744" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_vaoMesh</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ab39e5c5c849285d6b17cd735dab4d65d" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_vbo</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1af099b62f47c9b9e764f21ddec8522e91" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_vboBuffers</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1af9dff03e37f1d8853ad87b5229262af3" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_vboDrawType</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aca2b5ff30a55850a3597154b79c94186" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_vboMapped</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1af94fc1ce4021f973448c355cadf4c4ba" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>m_verts</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a778aab7afc0c3015b0d5133dfbf33b94" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>mapVAOVerts</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aacaa1e657658a6ecb55754b35adca513" prot="protected" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>NCCAPointBake</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>saveNCCABinaryMesh</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a3d08025470bb7939b209a2c2d63cc3d8" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>scale</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ad5a08610ff985730c8116b337d9d578a" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>unMapVAO</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a279b4c298c26705ebbaddb5120144ba1" prot="public" virt="non-virtual"><scope>ngl::AbstractMesh</scope><name>writeToRibSubdiv</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aa500b8c1affa589eee0da6d2f8431b39" prot="public" virt="virtual"><scope>ngl::AbstractMesh</scope><name>~AbstractMesh</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,9 @@
+<map id="ngl::PathCamera" name="ngl::PathCamera">
+<area shape="rect" id="node2" href="$classngl_1_1_camera.html" title="simple camera class to allow movement in an opengl scene. a lot of this stuff is from the HILL book C..." alt="" coords="261,1107,416,1463"/>
+<area shape="rect" id="node3" href="$classngl_1_1_mat4.html" title="Matrix Class to do simple matrix operations included operator overloaded functions for maths and matr..." alt="" coords="5,556,112,927"/>
+<area shape="rect" id="node4" href="$classngl_1_1_vec3.html" title="simple Vec3 encapsulates a 3 float object like glsl vec3 but not maths use the Vec3 class for maths a..." alt="" coords="217,5,324,435"/>
+<area shape="rect" id="node6" href="$classngl_1_1_plane.html" title="{ngl::Plane\n|&#45; m_d\l|+ Plane()\l+ Plane()\l+ ~Plane()\l+ setPoints()\l+ setNormalPoint()\l+ setFloats()\l+ distance()\l+ getNormal()\l+ getPoint()\l+ getD()\l}" alt="" coords="272,637,405,846"/>
+<area shape="rect" id="node5" href="$classngl_1_1_vec4.html" title="simple Vector class for OpenGL graphics, contains overloaded operators for most math functions..." alt="" coords="430,512,537,971"/>
+<area shape="rect" id="node7" href="$classngl_1_1_bezier_curve.html" title="Generic Bezier Curve Class allowing the user to generate basic curves using a number of different con..." alt="" coords="489,1122,639,1449"/>
+<area shape="rect" id="node8" href="$classngl_1_1_abstract_v_a_o.html" title="base class for all VAO from the VAOFactory this defines the base class type with simple draw / bind b..." alt="" coords="562,600,752,883"/>
+</map>

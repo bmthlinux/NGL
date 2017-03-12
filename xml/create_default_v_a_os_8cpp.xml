@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="create_default_v_a_os_8cpp" kind="file" language="C++">
+    <compoundname>createDefaultVAOs.cpp</compoundname>
+    <includes refid="_v_a_o_primitives_8h" local="yes">VAOPrimitives.h</includes>
+    <includes refid="_meshes_8h" local="yes">Meshes.h</includes>
+    <incdepgraph>
+      <node id="4151">
+        <label>Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="4152" relation="include">
+        </childnode>
+        <childnode refid="4158" relation="include">
+        </childnode>
+        <childnode refid="4159" relation="include">
+        </childnode>
+        <childnode refid="4160" relation="include">
+        </childnode>
+      </node>
+      <node id="4169">
+        <label>Meshes.h</label>
+        <link refid="_meshes_8h"/>
+      </node>
+      <node id="4160">
+        <label>QGLContext</label>
+      </node>
+      <node id="4162">
+        <label>Vec3.h</label>
+        <link refid="_vec3_8h"/>
+        <childnode refid="4151" relation="include">
+        </childnode>
+        <childnode refid="4163" relation="include">
+        </childnode>
+      </node>
+      <node id="4149">
+        <label>VAOPrimitives.h</label>
+        <link refid="_v_a_o_primitives_8h"/>
+        <childnode refid="4150" relation="include">
+        </childnode>
+        <childnode refid="4151" relation="include">
+        </childnode>
+        <childnode refid="4162" relation="include">
+        </childnode>
+        <childnode refid="4164" relation="include">
+        </childnode>
+        <childnode refid="4165" relation="include">
+        </childnode>
+        <childnode refid="4166" relation="include">
+        </childnode>
+        <childnode refid="4167" relation="include">
+        </childnode>
+        <childnode refid="4168" relation="include">
+        </childnode>
+      </node>
+      <node id="4154">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="4155" relation="include">
+        </childnode>
+        <childnode refid="4156" relation="include">
+        </childnode>
+      </node>
+      <node id="4166">
+        <label>string</label>
+      </node>
+      <node id="4148">
+        <label>createDefaultVAOs.cpp</label>
+        <link refid="createDefaultVAOs.cpp"/>
+        <childnode refid="4149" relation="include">
+        </childnode>
+        <childnode refid="4169" relation="include">
+        </childnode>
+      </node>
+      <node id="4153">
+        <label>stddef.h</label>
+      </node>
+      <node id="4152">
+        <label>glew.h</label>
+        <link refid="glew_8h"/>
+        <childnode refid="4153" relation="include">
+        </childnode>
+        <childnode refid="4154" relation="include">
+        </childnode>
+        <childnode refid="4157" relation="include">
+        </childnode>
+      </node>
+      <node id="4157">
+        <label>GL/glu.h</label>
+      </node>
+      <node id="4155">
+        <label>limits.h</label>
+      </node>
+      <node id="4164">
+        <label>AbstractVAO.h</label>
+        <link refid="_abstract_v_a_o_8h"/>
+        <childnode refid="4151" relation="include">
+        </childnode>
+      </node>
+      <node id="4156">
+        <label>wchar.h</label>
+      </node>
+      <node id="4165">
+        <label>vector</label>
+      </node>
+      <node id="4163">
+        <label>array</label>
+      </node>
+      <node id="4159">
+        <label>QtOpenGL/QGLContext</label>
+      </node>
+      <node id="4161">
+        <label>cstdlib</label>
+      </node>
+      <node id="4150">
+        <label>Singleton.h</label>
+        <link refid="_singleton_8h"/>
+        <childnode refid="4151" relation="include">
+        </childnode>
+        <childnode refid="4161" relation="include">
+        </childnode>
+      </node>
+      <node id="4167">
+        <label>unordered_map</label>
+      </node>
+      <node id="4158">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="4168">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacengl">ngl</innernamespace>
+    <briefdescription>
+<para>implementation files for VAOPrimitives this has been split as it takes a long time to compile this file due to the size of the stanford models, as this file is not updated that often it was decided to split out this method to increase compilation speed when modifying the rest of the VAO primitives class </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_v_a_o_primitives_8h" kindref="compound">VAOPrimitives.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_meshes_8h" kindref="compound">Meshes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacengl" kindref="compound">ngl</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classngl_1_1_v_a_o_primitives_1a281188edfc487d7072b40ca3871964f2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_v_a_o_primitives_1a281188edfc487d7072b40ca3871964f2" kindref="member">VAOPrimitives::createDefaultVAOs</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>load<sp/>into<sp/>the<sp/>vbo<sp/>list<sp/>some<sp/>basic<sp/>primitives<sp/>(these<sp/>are<sp/>created<sp/>in<sp/>.h<sp/>file<sp/>arrays<sp/>from<sp/>Obj2VBO)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Obj2VBO<sp/>and<sp/>the<sp/>original<sp/>models<sp/>may<sp/>be<sp/>found<sp/>in<sp/>the<sp/>Models<sp/>directory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_v_a_o_primitives_1aec14416905218b50f93e43c8661d7d6b" kindref="member">createVAOFromHeader</ref>(</highlight><highlight class="stringliteral">&quot;teapot&quot;</highlight><highlight class="normal">,<ref refid="namespacengl_1a35496943ca9c61d27052db07c1786b85" kindref="member">teapot</ref>,<ref refid="namespacengl_1a02b7cf5fe3a93004481703bdb1e5bf7c" kindref="member">teapotSIZE</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_v_a_o_primitives_1aec14416905218b50f93e43c8661d7d6b" kindref="member">createVAOFromHeader</ref>(</highlight><highlight class="stringliteral">&quot;octahedron&quot;</highlight><highlight class="normal">,<ref refid="namespacengl_1a12aa45956de115c63448e0990a8764cc" kindref="member">Octahedron</ref>,<ref refid="namespacengl_1a67d35406f2905a22b26ae748fafa2d33" kindref="member">OctahedronSIZE</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_v_a_o_primitives_1aec14416905218b50f93e43c8661d7d6b" kindref="member">createVAOFromHeader</ref>(</highlight><highlight class="stringliteral">&quot;dodecahedron&quot;</highlight><highlight class="normal">,<ref refid="namespacengl_1a2b7856a84338c1f9c0bf352a1105db94" kindref="member">dodecahedron</ref>,<ref refid="namespacengl_1a74b87db4dcf59ff75ef530fbf065349e" kindref="member">dodecahedronSIZE</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_v_a_o_primitives_1aec14416905218b50f93e43c8661d7d6b" kindref="member">createVAOFromHeader</ref>(</highlight><highlight class="stringliteral">&quot;icosahedron&quot;</highlight><highlight class="normal">,<ref refid="namespacengl_1a5e9b6fcefa2d59457f18296b7de64f9d" kindref="member">icosahedron</ref>,<ref refid="namespacengl_1a0879f82683ca79e25adf4e80ef3f90ee" kindref="member">icosahedronSIZE</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_v_a_o_primitives_1aec14416905218b50f93e43c8661d7d6b" kindref="member">createVAOFromHeader</ref>(</highlight><highlight class="stringliteral">&quot;tetrahedron&quot;</highlight><highlight class="normal">,<ref refid="_tetrahedron_8h_1a7cb3a5c2ed0775cfb6b8ddb406ac4c30" kindref="member">tetrahedron</ref>,<ref refid="_tetrahedron_8h_1a3bcd95344be88a5414971440f6cafa83" kindref="member">tetrahedronSIZE</ref>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_v_a_o_primitives_1aec14416905218b50f93e43c8661d7d6b" kindref="member">createVAOFromHeader</ref>(</highlight><highlight class="stringliteral">&quot;football&quot;</highlight><highlight class="normal">,<ref refid="namespacengl_1ab4b713f48fb628df3f8b848fbbc36570" kindref="member">football</ref>,<ref refid="namespacengl_1a36d623b8465bf0a1d61be7f06cc6a5d5" kindref="member">footballSIZE</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_v_a_o_primitives_1aec14416905218b50f93e43c8661d7d6b" kindref="member">createVAOFromHeader</ref>(</highlight><highlight class="stringliteral">&quot;cube&quot;</highlight><highlight class="normal">,<ref refid="namespacengl_1aa57275b8cd7018968711369e707c4d48" kindref="member">cube</ref>,<ref refid="namespacengl_1a02ddaf7fe5717c580f2abff2e279cbbb" kindref="member">cubeSIZE</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_v_a_o_primitives_1aec14416905218b50f93e43c8661d7d6b" kindref="member">createVAOFromHeader</ref>(</highlight><highlight class="stringliteral">&quot;troll&quot;</highlight><highlight class="normal">,<ref refid="namespacengl_1a6d4035490be5b22cfccb1c098aa14b51" kindref="member">troll</ref>,<ref refid="namespacengl_1a45c60d0ae3483d366f9db1a586cacba3" kindref="member">trollSIZE</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor">#ifdef<sp/>ADDLARGEMODELS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_v_a_o_primitives_1aec14416905218b50f93e43c8661d7d6b" kindref="member">createVAOFromHeader</ref>(</highlight><highlight class="stringliteral">&quot;bunny&quot;</highlight><highlight class="normal">,<ref refid="namespacengl_1aa63b83fdad485c3cf4659793afc5e952" kindref="member">bunny</ref>,<ref refid="namespacengl_1afb9929b0df1d77f6ece12616771db585" kindref="member">bunnySIZE</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_v_a_o_primitives_1aec14416905218b50f93e43c8661d7d6b" kindref="member">createVAOFromHeader</ref>(</highlight><highlight class="stringliteral">&quot;dragon&quot;</highlight><highlight class="normal">,<ref refid="namespacengl_1ab1d28b3e4be5d10e28c5b8bae337c969" kindref="member">dragon</ref>,<ref refid="namespacengl_1a1cab5012385fb567b92c73d1891d291f" kindref="member">dragonSIZE</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_v_a_o_primitives_1aec14416905218b50f93e43c8661d7d6b" kindref="member">createVAOFromHeader</ref>(</highlight><highlight class="stringliteral">&quot;buddah&quot;</highlight><highlight class="normal">,<ref refid="namespacengl_1a4f56c986d594a3ba00636067fde68660" kindref="member">buddah</ref>,<ref refid="namespacengl_1a408072921324db81dcf15f5b276f9b96" kindref="member">buddahSIZE</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/src/createDefaultVAOs.cpp"/>
+  </compounddef>
+</doxygen>

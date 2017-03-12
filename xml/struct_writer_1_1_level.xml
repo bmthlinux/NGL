@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_writer_1_1_level" kind="struct" language="C++" prot="protected">
+    <compoundname>Writer::Level</compoundname>
+    <includes refid="writer_8h" local="no">writer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_writer_1_1_level_1a01214721e4001d997f3057d26edba9a0" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::Level::valueCount</definition>
+        <argsstring></argsstring>
+        <name>valueCount</name>
+        <briefdescription>
+<para>number of values in this level </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/writer.h" line="184" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/writer.h" bodystart="184" bodyend="-1"/>
+        <referencedby refid="class_pretty_writer_1a7841433d45abbfc5a1799be0ca1ed792" compoundref="prettywriter_8h" startline="146" endline="185">PrettyWriter&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::PrettyPrefix</referencedby>
+        <referencedby refid="class_writer_1ad56f2e953b7919ad2157a2fc2bedf873" compoundref="writer_8h" startline="317" endline="335">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::Prefix</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_writer_1_1_level_1aa188a24842bcadebcd037ab852b978bb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::Level::inArray</definition>
+        <argsstring></argsstring>
+        <name>inArray</name>
+        <briefdescription>
+<para>true if in array, otherwise in object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/writer.h" line="185" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/writer.h" bodystart="185" bodyend="-1"/>
+        <referencedby refid="class_pretty_writer_1a7841433d45abbfc5a1799be0ca1ed792" compoundref="prettywriter_8h" startline="146" endline="185">PrettyWriter&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::PrettyPrefix</referencedby>
+        <referencedby refid="class_writer_1ad56f2e953b7919ad2157a2fc2bedf873" compoundref="writer_8h" startline="317" endline="335">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::Prefix</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_writer_1_1_level_1a4c9d2a6336d707725cd749b80059e59d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::Level::Level</definition>
+        <argsstring>(bool inArray_)</argsstring>
+        <name>Level</name>
+        <param>
+          <type>bool</type>
+          <declname>inArray_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/writer.h" line="183" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/writer.h" bodystart="183" bodyend="183"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Information for each nested level. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1650">
+        <label>Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::Level</label>
+        <link refid="struct_writer_1_1_level"/>
+        <childnode refid="1651" relation="usage">
+          <edgelabel>+valueCount</edgelabel>
+        </childnode>
+      </node>
+      <node id="1651">
+        <label>size_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/writer.h" line="182" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/writer.h" bodystart="182" bodyend="186"/>
+    <listofallmembers>
+      <member refid="struct_writer_1_1_level_1aa188a24842bcadebcd037ab852b978bb" prot="public" virt="non-virtual"><scope>Writer::Level</scope><name>inArray</name></member>
+      <member refid="struct_writer_1_1_level_1a4c9d2a6336d707725cd749b80059e59d" prot="public" virt="non-virtual"><scope>Writer::Level</scope><name>Level</name></member>
+      <member refid="struct_writer_1_1_level_1a01214721e4001d997f3057d26edba9a0" prot="public" virt="non-virtual"><scope>Writer::Level</scope><name>valueCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

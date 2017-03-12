@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_n_g_l_stream_8cpp" kind="file" language="C++">
+    <compoundname>NGLStream.cpp</compoundname>
+    <includes refid="_camera_8h" local="yes">Camera.h</includes>
+    <includes refid="_colour_8h" local="yes">Colour.h</includes>
+    <includes refid="_vec2_8h" local="yes">Vec2.h</includes>
+    <includes refid="_vec3_8h" local="yes">Vec3.h</includes>
+    <includes refid="_vec4_8h" local="yes">Vec4.h</includes>
+    <includes refid="_mat3_8h" local="yes">Mat3.h</includes>
+    <includes refid="_mat4_8h" local="yes">Mat4.h</includes>
+    <includes refid="_quaternion_8h" local="yes">Quaternion.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">limits</includes>
+    <includes local="no">iomanip</includes>
+    <incdepgraph>
+      <node id="5202">
+        <label>Mat4.h</label>
+        <link refid="_mat4_8h"/>
+        <childnode refid="5188" relation="include">
+        </childnode>
+        <childnode refid="5203" relation="include">
+        </childnode>
+        <childnode refid="5200" relation="include">
+        </childnode>
+      </node>
+      <node id="5188">
+        <label>Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="5189" relation="include">
+        </childnode>
+        <childnode refid="5195" relation="include">
+        </childnode>
+        <childnode refid="5196" relation="include">
+        </childnode>
+        <childnode refid="5197" relation="include">
+        </childnode>
+      </node>
+      <node id="5218">
+        <label>iomanip</label>
+      </node>
+      <node id="5217">
+        <label>limits</label>
+      </node>
+      <node id="5209">
+        <label>AABB.h</label>
+        <link refid="_a_a_b_b_8h"/>
+        <childnode refid="5188" relation="include">
+        </childnode>
+        <childnode refid="5198" relation="include">
+        </childnode>
+        <childnode refid="5210" relation="include">
+        </childnode>
+      </node>
+      <node id="5197">
+        <label>QGLContext</label>
+      </node>
+      <node id="5186">
+        <label>NGLStream.cpp</label>
+        <link refid="NGLStream.cpp"/>
+        <childnode refid="5187" relation="include">
+        </childnode>
+        <childnode refid="5213" relation="include">
+        </childnode>
+        <childnode refid="5199" relation="include">
+        </childnode>
+        <childnode refid="5201" relation="include">
+        </childnode>
+        <childnode refid="5198" relation="include">
+        </childnode>
+        <childnode refid="5214" relation="include">
+        </childnode>
+        <childnode refid="5202" relation="include">
+        </childnode>
+        <childnode refid="5215" relation="include">
+        </childnode>
+        <childnode refid="5216" relation="include">
+        </childnode>
+        <childnode refid="5217" relation="include">
+        </childnode>
+        <childnode refid="5218" relation="include">
+        </childnode>
+      </node>
+      <node id="5201">
+        <label>Vec3.h</label>
+        <link refid="_vec3_8h"/>
+        <childnode refid="5188" relation="include">
+        </childnode>
+        <childnode refid="5200" relation="include">
+        </childnode>
+      </node>
+      <node id="5204">
+        <label>cmath</label>
+      </node>
+      <node id="5191">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="5192" relation="include">
+        </childnode>
+        <childnode refid="5193" relation="include">
+        </childnode>
+      </node>
+      <node id="5207">
+        <label>string</label>
+      </node>
+      <node id="5190">
+        <label>stddef.h</label>
+      </node>
+      <node id="5206">
+        <label>fstream</label>
+      </node>
+      <node id="5189">
+        <label>glew.h</label>
+        <link refid="glew_8h"/>
+        <childnode refid="5190" relation="include">
+        </childnode>
+        <childnode refid="5191" relation="include">
+        </childnode>
+        <childnode refid="5194" relation="include">
+        </childnode>
+      </node>
+      <node id="5203">
+        <label>ostream</label>
+      </node>
+      <node id="5194">
+        <label>GL/glu.h</label>
+      </node>
+      <node id="5192">
+        <label>limits.h</label>
+      </node>
+      <node id="5198">
+        <label>Vec4.h</label>
+        <link refid="_vec4_8h"/>
+        <childnode refid="5188" relation="include">
+        </childnode>
+        <childnode refid="5199" relation="include">
+        </childnode>
+        <childnode refid="5201" relation="include">
+        </childnode>
+        <childnode refid="5200" relation="include">
+        </childnode>
+      </node>
+      <node id="5211">
+        <label>AbstractVAO.h</label>
+        <link refid="_abstract_v_a_o_8h"/>
+        <childnode refid="5188" relation="include">
+        </childnode>
+      </node>
+      <node id="5193">
+        <label>wchar.h</label>
+      </node>
+      <node id="5213">
+        <label>Colour.h</label>
+        <link refid="_colour_8h"/>
+        <childnode refid="5188" relation="include">
+        </childnode>
+      </node>
+      <node id="5208">
+        <label>Plane.h</label>
+        <link refid="_plane_8h"/>
+        <childnode refid="5188" relation="include">
+        </childnode>
+        <childnode refid="5201" relation="include">
+        </childnode>
+      </node>
+      <node id="5200">
+        <label>array</label>
+      </node>
+      <node id="5205">
+        <label>RibExport.h</label>
+        <link refid="_rib_export_8h"/>
+        <childnode refid="5188" relation="include">
+        </childnode>
+        <childnode refid="5206" relation="include">
+        </childnode>
+        <childnode refid="5207" relation="include">
+        </childnode>
+      </node>
+      <node id="5215">
+        <label>Quaternion.h</label>
+        <link refid="_quaternion_8h"/>
+        <childnode refid="5188" relation="include">
+        </childnode>
+        <childnode refid="5198" relation="include">
+        </childnode>
+        <childnode refid="5202" relation="include">
+        </childnode>
+      </node>
+      <node id="5196">
+        <label>QtOpenGL/QGLContext</label>
+      </node>
+      <node id="5216">
+        <label>iostream</label>
+      </node>
+      <node id="5214">
+        <label>Mat3.h</label>
+        <link refid="_mat3_8h"/>
+        <childnode refid="5188" relation="include">
+        </childnode>
+        <childnode refid="5200" relation="include">
+        </childnode>
+        <childnode refid="5203" relation="include">
+        </childnode>
+      </node>
+      <node id="5187">
+        <label>Camera.h</label>
+        <link refid="_camera_8h"/>
+        <childnode refid="5188" relation="include">
+        </childnode>
+        <childnode refid="5198" relation="include">
+        </childnode>
+        <childnode refid="5201" relation="include">
+        </childnode>
+        <childnode refid="5202" relation="include">
+        </childnode>
+        <childnode refid="5204" relation="include">
+        </childnode>
+        <childnode refid="5205" relation="include">
+        </childnode>
+        <childnode refid="5208" relation="include">
+        </childnode>
+        <childnode refid="5209" relation="include">
+        </childnode>
+      </node>
+      <node id="5195">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="5199">
+        <label>Vec2.h</label>
+        <link refid="_vec2_8h"/>
+        <childnode refid="5188" relation="include">
+        </childnode>
+        <childnode refid="5200" relation="include">
+        </childnode>
+      </node>
+      <node id="5212">
+        <label>memory</label>
+      </node>
+      <node id="5210">
+        <label>BBox.h</label>
+        <link refid="_b_box_8h"/>
+        <childnode refid="5188" relation="include">
+        </childnode>
+        <childnode refid="5201" relation="include">
+        </childnode>
+        <childnode refid="5198" relation="include">
+        </childnode>
+        <childnode refid="5211" relation="include">
+        </childnode>
+        <childnode refid="5212" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacengl">ngl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_camera_8h" kindref="compound">Camera.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_colour_8h" kindref="compound">Colour.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vec2_8h" kindref="compound">Vec2.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vec3_8h" kindref="compound">Vec3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vec4_8h" kindref="compound">Vec4.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_mat3_8h" kindref="compound">Mat3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_mat4_8h" kindref="compound">Mat4.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_quaternion_8h" kindref="compound">Quaternion.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacengl" kindref="compound">ngl</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="namespacengl_1a574af334b4fbd01c53e584db411cf16e" refkind="member"><highlight class="normal"><ref refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" kindref="member">NGL_DLLEXPORT</ref><sp/>std::ostream&amp;<sp/><ref refid="namespacengl_1a574af334b4fbd01c53e584db411cf16e" kindref="member">operator&lt;&lt;</ref>(<sp/>std::ostream&amp;<sp/>_output,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref>&amp;<sp/>_v<sp/>)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_output&lt;&lt;</highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal">&lt;&lt;_v.<ref refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" kindref="member">m_x</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_v.<ref refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" kindref="member">m_y</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="namespacengl_1a8ed185d9f779bc5e1bf0ad7fa5990798" refkind="member"><highlight class="normal"><ref refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" kindref="member">NGL_DLLEXPORT</ref><sp/>std::istream&amp;<sp/><ref refid="namespacengl_1a8ed185d9f779bc5e1bf0ad7fa5990798" kindref="member">operator&gt;&gt;</ref>(<sp/>std::istream&amp;<sp/>_input,<sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref>&amp;<sp/>_s<sp/><sp/>)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_input<sp/>&gt;&gt;<sp/>_s.<ref refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" kindref="member">m_x</ref><sp/>&gt;&gt;<sp/>_s.<ref refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" kindref="member">m_y</ref><sp/>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="namespacengl_1ad65c6a05ae9818c29746f5b1b21121d2" refkind="member"><highlight class="normal"><ref refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" kindref="member">NGL_DLLEXPORT</ref><sp/>std::ostream&amp;<sp/><ref refid="namespacengl_1a574af334b4fbd01c53e584db411cf16e" kindref="member">operator&lt;&lt;</ref>(<sp/>std::ostream&amp;<sp/>_output,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref>&amp;<sp/>_v<sp/>)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_output&lt;&lt;</highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal">&lt;&lt;_v.<ref refid="classngl_1_1_vec3_1a30f6ffdadd9bdb00159553a4ff3f3f25" kindref="member">m_x</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_v.<ref refid="classngl_1_1_vec3_1a6c46bcd25521e9840d992280bdfb5a91" kindref="member">m_y</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_v.<ref refid="classngl_1_1_vec3_1a1e5d951f56e56b18edadfd661eb6012a" kindref="member">m_z</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="namespacengl_1a3598e21803cb22a2eaf8dfc39fb72600" refkind="member"><highlight class="normal"><ref refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" kindref="member">NGL_DLLEXPORT</ref><sp/>std::istream&amp;<sp/><ref refid="namespacengl_1a8ed185d9f779bc5e1bf0ad7fa5990798" kindref="member">operator&gt;&gt;</ref>(std::istream&amp;<sp/>_input,<sp/><sp/><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref>&amp;<sp/>_s<sp/>)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_input<sp/>&gt;&gt;<sp/>_s.<ref refid="classngl_1_1_vec3_1a30f6ffdadd9bdb00159553a4ff3f3f25" kindref="member">m_x</ref><sp/>&gt;&gt;<sp/>_s.<ref refid="classngl_1_1_vec3_1a6c46bcd25521e9840d992280bdfb5a91" kindref="member">m_y</ref><sp/>&gt;&gt;<sp/>_s.<ref refid="classngl_1_1_vec3_1a1e5d951f56e56b18edadfd661eb6012a" kindref="member">m_z</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="namespacengl_1a67bfdce88f063557714ee4849eeb7bfb" refkind="member"><highlight class="normal"><ref refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" kindref="member">NGL_DLLEXPORT</ref><sp/>std::ostream&amp;<sp/><ref refid="namespacengl_1a574af334b4fbd01c53e584db411cf16e" kindref="member">operator&lt;&lt;</ref>(<sp/>std::ostream&amp;<sp/>_output,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref>&amp;<sp/>_v<sp/>)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_output&lt;&lt;</highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal">&lt;&lt;_v.<ref refid="classngl_1_1_vec4_1a3ffbb98e16e3e05d658cf38907911fff" kindref="member">m_x</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_v.<ref refid="classngl_1_1_vec4_1adc415581c84f9e54f15198a002f8948b" kindref="member">m_y</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_v.<ref refid="classngl_1_1_vec4_1afef13d1ede4b248147e7dd126fd1e17a" kindref="member">m_z</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_v.<ref refid="classngl_1_1_vec4_1a1d4d2d4bb494f428843f3d600e27811d" kindref="member">m_w</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="namespacengl_1a23c4725ef62c79eee0dab9232a6b4de2" refkind="member"><highlight class="normal"><ref refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" kindref="member">NGL_DLLEXPORT</ref><sp/>std::istream&amp;<sp/><ref refid="namespacengl_1a8ed185d9f779bc5e1bf0ad7fa5990798" kindref="member">operator&gt;&gt;</ref>(std::istream&amp;<sp/>_input,<sp/><ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref>&amp;<sp/>_s)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_input<sp/>&gt;&gt;<sp/>_s.<ref refid="classngl_1_1_vec4_1a3ffbb98e16e3e05d658cf38907911fff" kindref="member">m_x</ref><sp/>&gt;&gt;<sp/>_s.<ref refid="classngl_1_1_vec4_1adc415581c84f9e54f15198a002f8948b" kindref="member">m_y</ref><sp/>&gt;&gt;<sp/>_s.<ref refid="classngl_1_1_vec4_1afef13d1ede4b248147e7dd126fd1e17a" kindref="member">m_z</ref><sp/>&gt;&gt;<sp/>_s.<ref refid="classngl_1_1_vec4_1a1d4d2d4bb494f428843f3d600e27811d" kindref="member">m_w</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="namespacengl_1a18f530aeb722cc55f2cee0333e883012" refkind="member"><highlight class="normal"><ref refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" kindref="member">NGL_DLLEXPORT</ref><sp/>std::ostream&amp;<sp/><ref refid="namespacengl_1a574af334b4fbd01c53e584db411cf16e" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>_output,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_camera" kindref="compound">Camera</ref><sp/>&amp;_c<sp/><sp/>)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_output&lt;&lt;</highlight><highlight class="stringliteral">&quot;m_eye&quot;</highlight><highlight class="normal">&lt;&lt;_c.<ref refid="classngl_1_1_camera_1ab399093a43c43fcc839d5100fa9124ed" kindref="member">getEye</ref>()&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>m_look&quot;</highlight><highlight class="normal">&lt;&lt;_c.<ref refid="classngl_1_1_camera_1abff65956f350cbfc4806cae3782f89d1" kindref="member">getLook</ref>()&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>Up&quot;</highlight><highlight class="normal">&lt;&lt;_c.<ref refid="classngl_1_1_camera_1a8c8a7e8fb0c6a379a755fa5691a5b38d" kindref="member">getUp</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="namespacengl_1a54a094050bf0576d2b4acff3a0daee0b" refkind="member"><highlight class="normal"><ref refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" kindref="member">NGL_DLLEXPORT</ref><sp/><sp/>std::ostream&amp;<sp/><sp/><ref refid="namespacengl_1a574af334b4fbd01c53e584db411cf16e" kindref="member">operator&lt;&lt;</ref>(<sp/>std::ostream<sp/>&amp;_output,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref>&amp;<sp/>_s<sp/>)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_output&lt;&lt;</highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal">&lt;&lt;_s.<ref refid="classngl_1_1_colour_1a98a3dfe48c9fe96c5206a3004cdaa9e7" kindref="member">m_r</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_s.<ref refid="classngl_1_1_colour_1a12072e1aa25ddb1977a8b9acbb3b3085" kindref="member">m_g</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_s.<ref refid="classngl_1_1_colour_1a3e577332e227fba3e0a50b72ee65dc2f" kindref="member">m_b</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_s.<ref refid="classngl_1_1_colour_1ab96e9e106eb002f99202af9a98f2370f" kindref="member">m_a</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="namespacengl_1ab12aa0d1dcf421ef819cd150b54e3c09" refkind="member"><highlight class="normal"><ref refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" kindref="member">NGL_DLLEXPORT</ref><sp/><sp/>std::istream&amp;<sp/><ref refid="namespacengl_1a8ed185d9f779bc5e1bf0ad7fa5990798" kindref="member">operator&gt;&gt;</ref>(<sp/>std::istream<sp/>&amp;_input,<sp/><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref><sp/>&amp;_s<sp/>)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/>_input<sp/>&gt;&gt;<sp/>_s.<ref refid="classngl_1_1_colour_1a98a3dfe48c9fe96c5206a3004cdaa9e7" kindref="member">m_r</ref><sp/>&gt;&gt;<sp/>_s.<ref refid="classngl_1_1_colour_1a12072e1aa25ddb1977a8b9acbb3b3085" kindref="member">m_g</ref><sp/>&gt;&gt;<sp/>_s.<ref refid="classngl_1_1_colour_1a3e577332e227fba3e0a50b72ee65dc2f" kindref="member">m_b</ref><sp/>&gt;&gt;<sp/>_s.<ref refid="classngl_1_1_colour_1ab96e9e106eb002f99202af9a98f2370f" kindref="member">m_a</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_input;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="namespacengl_1a4e4efa4e836df87832ba618052d52076" refkind="member"><highlight class="normal"><ref refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" kindref="member">NGL_DLLEXPORT</ref><sp/>std::ostream&amp;<sp/><ref refid="namespacengl_1a574af334b4fbd01c53e584db411cf16e" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;_output,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_mat3" kindref="compound">Mat3</ref><sp/>&amp;_m<sp/>)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>std::cout.setf(std::ios::fixed|std::ios::adjustfield|std::ios::showpos);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>std::cout.precision(12);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_output</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat3_1a79dce4c92b4ce7b309082dca6a06e1b4" kindref="member">m_00</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat3_1a4cb55655a60a7a0ddd7fa1cab1c89a9e" kindref="member">m_01</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat3_1a6a184f33f9858bc993d210b993295f55" kindref="member">m_02</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">&lt;&lt;std::endl</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat3_1a9c57db78427ec09423d415c4696303c5" kindref="member">m_10</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat3_1a4471c6d9813e387f09510ed6b0ecaabc" kindref="member">m_11</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat3_1a5b60ddb0f71cfcccef9820d465c89ab8" kindref="member">m_12</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">&lt;&lt;std::endl</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat3_1a7b6e86885819d9aa07ae6f8db0628f20" kindref="member">m_20</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat3_1a5ce239e6f37a3e9ad2e4fdb2bacaac95" kindref="member">m_21</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat3_1a1393be388466012b43886373bc7224f6" kindref="member">m_22</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="namespacengl_1a224e7dd2fa131a0e3b1dd414bfc00859" refkind="member"><highlight class="normal"><ref refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" kindref="member">NGL_DLLEXPORT</ref><sp/>std::ostream&amp;<sp/><ref refid="namespacengl_1a574af334b4fbd01c53e584db411cf16e" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;_output,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_mat4" kindref="compound">Mat4</ref><sp/>&amp;_m)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>std::cout.setf(std::ios::fixed|std::ios::adjustfield|std::ios::showpos);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>std::cout.precision(std::numeric_limits&lt;double&gt;::digits10<sp/>+<sp/>1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_output</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat4_1ab23be1d15f5b462e84749ccbdb2a6e0a" kindref="member">m_00</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat4_1a93eebe78e55bdd20e01fa14fad2287fb" kindref="member">m_10</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat4_1ac15ea3ce6fac408829db236b837d6c83" kindref="member">m_20</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat4_1a11a9c1fe925610c60306316a744d41bd" kindref="member">m_30</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">&lt;&lt;std::endl</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat4_1a7775b927709a5e564b1f7188a39ee204" kindref="member">m_01</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat4_1a0887062a5237da67543393d31a1652a3" kindref="member">m_11</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat4_1a584010ed5a34bc284349f638c40f411e" kindref="member">m_21</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat4_1a4529b7a8d9cbcb633be566c4ec28e956" kindref="member">m_31</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">&lt;&lt;std::endl</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat4_1a2184311676d677dd0678ad0683e0ce04" kindref="member">m_02</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat4_1ac4bdd90c29beffde048b466cb673e2f6" kindref="member">m_12</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat4_1abfb8419c8bd1267e5b8160b5ac734d86" kindref="member">m_22</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat4_1adfd1134853ac50e7575ece24a82661b1" kindref="member">m_32</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">&lt;&lt;std::endl</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat4_1abfe3185a1e14e3c757edfd97509c8209" kindref="member">m_03</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat4_1a3a4c9d11885619be70d25a610f98c361" kindref="member">m_13</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat4_1a0155c0f72ae127e841f3f11bb7e34445" kindref="member">m_23</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">&lt;&lt;_m.<ref refid="classngl_1_1_mat4_1ae9c2d66c9d664b6baf4f15cbf1178a57" kindref="member">m_33</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//NGL_DLLEXPORT<sp/>std::istream&amp;<sp/>operator<sp/>&gt;&gt;<sp/>(<sp/>std::istream&amp;<sp/>_ifs,<sp/>Quaternion<sp/>&amp;_q<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//<sp/>//return<sp/>_ifs<sp/>&gt;&gt;<sp/>_q.setS<sp/>&gt;&gt;<sp/>_q.m_x<sp/>&gt;&gt;<sp/>_q.m_y<sp/>&gt;&gt;<sp/>_q.m_z;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="namespacengl_1af7d6529b9460ca8d335e5c90e2ec310f" refkind="member"><highlight class="normal"><ref refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" kindref="member">NGL_DLLEXPORT</ref><sp/>std::ostream&amp;<sp/><ref refid="namespacengl_1a574af334b4fbd01c53e584db411cf16e" kindref="member">operator &lt;&lt; </ref>(<sp/>std::ostream&amp;<sp/>i_s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_quaternion" kindref="compound">Quaternion</ref><sp/>&amp;i_q)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i_s<sp/>&lt;&lt;<sp/>i_q.<ref refid="classngl_1_1_quaternion_1aae275b2005fc4112eb2949fde2e2ff74" kindref="member">getS</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>[&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>i_q.<ref refid="classngl_1_1_quaternion_1aabbf1f62a783942312fd041114be049c" kindref="member">getX</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;i,&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>i_q.<ref refid="classngl_1_1_quaternion_1a65f77385ff2d1036a182ce35606b91f8" kindref="member">getY</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;j,&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>i_q.<ref refid="classngl_1_1_quaternion_1a4bb95b29c955671ac50f50246762932c" kindref="member">getZ</ref>()&lt;&lt;</highlight><highlight class="stringliteral">&quot;k]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/src/NGLStream.cpp"/>
+  </compounddef>
+</doxygen>

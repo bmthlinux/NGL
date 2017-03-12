@@ -1,0 +1,6 @@
+<map id="fmt::WidthSpec" name="fmt::WidthSpec">
+<area shape="rect" id="node2" href="$structfmt_1_1_align_spec.html" title="{fmt::AlignSpec\n|+ align_\l|+ AlignSpec()\l+ align()\l+ precision()\l}" alt="" coords="173,176,280,283"/>
+<area shape="rect" id="node3" href="$structfmt_1_1_align_type_spec.html" title="{fmt::AlignTypeSpec\l\&lt; TYPE \&gt;\n||+ AlignTypeSpec()\l+ flag()\l+ type()\l}" alt="" coords="5,346,141,467"/>
+<area shape="rect" id="node4" href="$structfmt_1_1_format_spec.html" title="{fmt::FormatSpec\n|+ flags_\l+ precision_\l+ type_\l|+ FormatSpec()\l+ flag()\l+ precision()\l+ type()\l}" alt="" coords="167,331,287,482"/>
+<area shape="rect" id="node5" href="$classfmt_1_1_str_format_spec.html" title="{fmt::StrFormatSpec\l\&lt; Char \&gt;\n|&#45; str_\l|+ StrFormatSpec()\l+ str()\l}" alt="" coords="311,353,448,460"/>
+</map>

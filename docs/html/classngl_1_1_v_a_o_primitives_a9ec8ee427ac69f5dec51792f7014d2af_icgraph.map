@@ -1,0 +1,10 @@
+<map id="ngl::VAOPrimitives::createVAO" name="ngl::VAOPrimitives::createVAO">
+<area shape="rect" id="node2" href="$classngl_1_1_v_a_o_primitives.html#a93edc7af7c82934c8a5bc739b7c61665" title="create a line based grid (like the maya ground plane) " alt="" coords="195,5,328,46"/>
+<area shape="rect" id="node3" href="$classngl_1_1_v_a_o_primitives.html#aec029e212219801bd87056397be73bf8" title="create a triangulated Sphere as a vbo with auto generated texture cords " alt="" coords="195,70,328,111"/>
+<area shape="rect" id="node4" href="$classngl_1_1_v_a_o_primitives.html#a3333662d6d2f7f017e3d6cad45cb44c7" title="create a triangulated capsule (Cylinder with spherical ends) " alt="" coords="195,135,328,177"/>
+<area shape="rect" id="node5" href="$classngl_1_1_v_a_o_primitives.html#a85f675d14d72f093d4c7afa82155d697" title="create a Quad Cylinder as a vbo with auto generated texture cords " alt="" coords="195,201,328,242"/>
+<area shape="rect" id="node6" href="$classngl_1_1_v_a_o_primitives.html#a02aa220bc52e3e8b579e4b67bb8344af" title="create a Quad Cone as a vao with auto generated texture cords " alt="" coords="195,266,328,307"/>
+<area shape="rect" id="node7" href="$classngl_1_1_v_a_o_primitives.html#a0803af36b2a375a3367d4521ab16a7fe" title="create a trinagle fan disk (use as end caps for Cylinder etc) " alt="" coords="195,331,328,373"/>
+<area shape="rect" id="node8" href="$classngl_1_1_v_a_o_primitives.html#a94653d949fb7c0a665e112fd7330df24" title="create a VBO based torus from rings of quads. " alt="" coords="195,397,328,438"/>
+<area shape="rect" id="node9" href="$classngl_1_1_v_a_o_primitives.html#ab3742cc5bbc1fee5f7982410911a46b6" title="create a triangulated plane as a vbo with auto generated texture cords " alt="" coords="187,462,336,503"/>
+</map>

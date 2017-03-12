@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_crt_allocator" kind="class" language="C++" prot="public">
+    <compoundname>CrtAllocator</compoundname>
+    <includes refid="allocators_8h" local="no">allocators.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_crt_allocator_1ac7df8398c529290f0cd5950d9492f524" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool CrtAllocator::kNeedFree</definition>
+        <argsstring></argsstring>
+        <name>kNeedFree</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="64" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_crt_allocator_1acd720631f8c094041afa6c7951f0d935" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> *</type>
+        <definition>void* CrtAllocator::Malloc</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>Malloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="65" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="65" bodyend="70"/>
+        <referencedby refid="class_memory_pool_allocator_1aba75280d42184b0ad414243f7f5ac6c7" compoundref="allocators_8h" startline="190" endline="217">MemoryPoolAllocator&lt; BaseAllocator &gt;::Realloc</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_crt_allocator_1a646bb6f68afe773a62a22f7f14f83e97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> *</type>
+        <definition>void* CrtAllocator::Realloc</definition>
+        <argsstring>(void *originalPtr, size_t originalSize, size_t newSize)</argsstring>
+        <name>Realloc</name>
+        <param>
+          <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> *</type>
+          <declname>originalPtr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>originalSize</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>newSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="71" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="71" bodyend="78"/>
+        <references refid="glew_8h_1a1659df18b3b413a60a397d5a7540f3d2">void</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_crt_allocator_1a5043907058d906dcb1291e9491560373" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>static void CrtAllocator::Free</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>Free</name>
+        <param>
+          <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="79" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>C-runtime library allocator. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class is just wrapper for standard C library memory routines. <simplesect kind="note"><para>implements Allocator concept </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1428">
+        <label>CrtAllocator</label>
+        <link refid="class_crt_allocator"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="62" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="62" bodyend="80"/>
+    <listofallmembers>
+      <member refid="class_crt_allocator_1a5043907058d906dcb1291e9491560373" prot="public" virt="non-virtual"><scope>CrtAllocator</scope><name>Free</name></member>
+      <member refid="class_crt_allocator_1ac7df8398c529290f0cd5950d9492f524" prot="public" virt="non-virtual"><scope>CrtAllocator</scope><name>kNeedFree</name></member>
+      <member refid="class_crt_allocator_1acd720631f8c094041afa6c7951f0d935" prot="public" virt="non-virtual"><scope>CrtAllocator</scope><name>Malloc</name></member>
+      <member refid="class_crt_allocator_1a646bb6f68afe773a62a22f7f14f83e97" prot="public" virt="non-virtual"><scope>CrtAllocator</scope><name>Realloc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

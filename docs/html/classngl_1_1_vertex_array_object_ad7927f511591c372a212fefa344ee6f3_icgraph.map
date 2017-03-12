@@ -1,0 +1,4 @@
+<map id="ngl::VertexArrayObject::getVBOid" name="ngl::VertexArrayObject::getVBOid">
+<area shape="rect" id="node2" href="$classngl_1_1_vertex_array_object.html#a81097b71002b5e122c7ff0b5dbcd22d2" title="allow to update the vertex data of the VBO when declared as dynamic (with GL_STREAM_DRAW) ..." alt="" coords="211,5,367,46"/>
+<area shape="rect" id="node3" href="$classngl_1_1_vertex_array_object.html#abd24371ac017f02b37cb469275387cd0" title="allow to update the vertex data of the VBO when declared as dynamic (with GL_STREAM_DRAW) ..." alt="" coords="211,70,367,111"/>
+</map>

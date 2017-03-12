@@ -1,0 +1,12 @@
+<map id="ngl::PathCamera::updateLooped" name="ngl::PathCamera::updateLooped">
+<area shape="rect" id="node2" href="$classngl_1_1_vec4.html#ad96cd267cff49372a6d45d840d899727" title="set the vector as the cross product from 2 other vectors " alt="" coords="304,5,421,32"/>
+<area shape="rect" id="node3" href="$classngl_1_1_bezier_curve.html#a9b6aa8855fa01623a327844f355b2a8b" title="get a point on the curve in the range of 0 &#45; 1 based on the control points " alt="" coords="274,57,451,98"/>
+<area shape="rect" id="node5" href="$classngl_1_1_vec4.html#ac0dca0913332163df66d6e229564c85b" title="Normalize the vector using &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;. " alt="" coords="291,123,434,149"/>
+<area shape="rect" id="node6" href="$classngl_1_1_vec4.html#ae1201ced94be9176940fc83ed9054e82" title="sets the vector component from 3 values " alt="" coords="311,173,414,200"/>
+<area shape="rect" id="node7" href="$classngl_1_1_camera.html#aaeece8ece48d769af0a64d03f9605caa" title="method to set the modelview matrix values for the current camera, this method load the matrix Modelvi..." alt="" coords="270,224,455,251"/>
+<area shape="rect" id="node4" href="$classngl_1_1_bezier_curve.html#ae81fbe1a0dfb6d0cf8fce2068be69ca9" title="implementation of the CoxDeBoor algorithm for Bezier Curves borrowed from Rob Bateman&#39;s example and m..." alt="" coords="510,64,703,91"/>
+<area shape="rect" id="node8" href="$classngl_1_1_camera.html#a6bb1f023865029e3b4e28e99a6bd00d2" title="calculate the frustum for clipping etc " alt="" coords="505,199,709,225"/>
+<area shape="rect" id="node11" href="$classngl_1_1_vec4.html#aec298a908339ba25e4a30856a2fa7bf0" title="return this dotted with _b " alt="" coords="555,249,659,276"/>
+<area shape="rect" id="node9" href="$namespacengl.html#a0bade03a2edcb08a49da7731394284fe" title="converts Degrees to Radians " alt="" coords="776,173,867,200"/>
+<area shape="rect" id="node10" href="$classngl_1_1_vec4.html#a4eb5f6ead61e1ad2f06887b23a94384a" title="get as a Vec3 for glsl etc " alt="" coords="758,224,885,251"/>
+</map>

@@ -1,0 +1,418 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structinternal_1_1_diy_fp" kind="struct" language="C++" prot="public">
+    <compoundname>internal::DiyFp</compoundname>
+    <includes refid="diyfp_8h" local="no">diyfp.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structinternal_1_1_diy_fp_1aac30e0c32d43425ac403281fc9b0cee4" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>const int internal::DiyFp::kDiySignificandSize</definition>
+        <argsstring></argsstring>
+        <name>kDiySignificandSize</name>
+        <initializer>= 64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="145" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="145" bodyend="-1"/>
+        <referencedby refid="structinternal_1_1_diy_fp_1a1a4589d19230c9930d7f3dd5a9b7f7e7" compoundref="diyfp_8h" startline="114" endline="123">NormalizeBoundary</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structinternal_1_1_diy_fp_1a037aed0fa0b66af0a13657418edef19e" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>const int internal::DiyFp::kDpSignificandSize</definition>
+        <argsstring></argsstring>
+        <name>kDpSignificandSize</name>
+        <initializer>= 52</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="146" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="146" bodyend="-1"/>
+        <referencedby refid="structinternal_1_1_diy_fp_1adc132c7da4c8e3ee5ae12efdcf6dbf7c" compoundref="diyfp_8h" startline="43" endline="59">DiyFp</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1a1a4589d19230c9930d7f3dd5a9b7f7e7" compoundref="diyfp_8h" startline="114" endline="123">NormalizeBoundary</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1a9bbdcfcf5d1b3a7b16a8f5f860d74038" compoundref="diyfp_8h" startline="134" endline="143">ToDouble</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structinternal_1_1_diy_fp_1a38b6f864ae0859d43fa96c3ff27959be" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>const int internal::DiyFp::kDpExponentBias</definition>
+        <argsstring></argsstring>
+        <name>kDpExponentBias</name>
+        <initializer>= 0x3FF + kDpSignificandSize</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="147" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="147" bodyend="-1"/>
+        <referencedby refid="structinternal_1_1_diy_fp_1adc132c7da4c8e3ee5ae12efdcf6dbf7c" compoundref="diyfp_8h" startline="43" endline="59">DiyFp</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1a9bbdcfcf5d1b3a7b16a8f5f860d74038" compoundref="diyfp_8h" startline="134" endline="143">ToDouble</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structinternal_1_1_diy_fp_1a80535a5594dae96fc482757a54162c7d" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>const int internal::DiyFp::kDpMaxExponent</definition>
+        <argsstring></argsstring>
+        <name>kDpMaxExponent</name>
+        <initializer>= 0x7FF - kDpExponentBias</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="148" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinternal_1_1_diy_fp_1a9ad1b0cdbab318e45d2bc48e64707ef3" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>const int internal::DiyFp::kDpMinExponent</definition>
+        <argsstring></argsstring>
+        <name>kDpMinExponent</name>
+        <initializer>= -<ref refid="structinternal_1_1_diy_fp_1a38b6f864ae0859d43fa96c3ff27959be" kindref="member">kDpExponentBias</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="149" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="149" bodyend="-1"/>
+        <referencedby refid="structinternal_1_1_diy_fp_1adc132c7da4c8e3ee5ae12efdcf6dbf7c" compoundref="diyfp_8h" startline="43" endline="59">DiyFp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structinternal_1_1_diy_fp_1a994f16a1247a290cfc3a875715e3a92b" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>const int internal::DiyFp::kDpDenormalExponent</definition>
+        <argsstring></argsstring>
+        <name>kDpDenormalExponent</name>
+        <initializer>= -<ref refid="structinternal_1_1_diy_fp_1a38b6f864ae0859d43fa96c3ff27959be" kindref="member">kDpExponentBias</ref> + 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="150" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="150" bodyend="-1"/>
+        <referencedby refid="structinternal_1_1_diy_fp_1a9bbdcfcf5d1b3a7b16a8f5f860d74038" compoundref="diyfp_8h" startline="134" endline="143">ToDouble</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structinternal_1_1_diy_fp_1aaacbf068c44275f4451db750938bd1d3" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+        <definition>const uint64_t internal::DiyFp::kDpExponentMask</definition>
+        <argsstring></argsstring>
+        <name>kDpExponentMask</name>
+        <initializer>= <ref refid="rapidjson_8h_1aaee1245f375a71be1ac9b8a07ba5fb8f" kindref="member">RAPIDJSON_UINT64_C2</ref>(0x7FF00000, 0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="151" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="151" bodyend="-1"/>
+        <referencedby refid="structinternal_1_1_diy_fp_1adc132c7da4c8e3ee5ae12efdcf6dbf7c" compoundref="diyfp_8h" startline="43" endline="59">DiyFp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structinternal_1_1_diy_fp_1a841ef0ae29ccd2889e7f96aad76b0179" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+        <definition>const uint64_t internal::DiyFp::kDpSignificandMask</definition>
+        <argsstring></argsstring>
+        <name>kDpSignificandMask</name>
+        <initializer>= <ref refid="rapidjson_8h_1aaee1245f375a71be1ac9b8a07ba5fb8f" kindref="member">RAPIDJSON_UINT64_C2</ref>(0x000FFFFF, 0xFFFFFFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="152" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="152" bodyend="-1"/>
+        <referencedby refid="structinternal_1_1_diy_fp_1adc132c7da4c8e3ee5ae12efdcf6dbf7c" compoundref="diyfp_8h" startline="43" endline="59">DiyFp</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1a9bbdcfcf5d1b3a7b16a8f5f860d74038" compoundref="diyfp_8h" startline="134" endline="143">ToDouble</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structinternal_1_1_diy_fp_1a43ea451ce20095b1ff53cccf132ca15f" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+        <definition>const uint64_t internal::DiyFp::kDpHiddenBit</definition>
+        <argsstring></argsstring>
+        <name>kDpHiddenBit</name>
+        <initializer>= <ref refid="rapidjson_8h_1aaee1245f375a71be1ac9b8a07ba5fb8f" kindref="member">RAPIDJSON_UINT64_C2</ref>(0x00100000, 0x00000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="153" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="153" bodyend="-1"/>
+        <referencedby refid="structinternal_1_1_diy_fp_1adc132c7da4c8e3ee5ae12efdcf6dbf7c" compoundref="diyfp_8h" startline="43" endline="59">DiyFp</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1a1a4589d19230c9930d7f3dd5a9b7f7e7" compoundref="diyfp_8h" startline="114" endline="123">NormalizeBoundary</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1a64e623c1742d1d5ad551ab456f0deb62" compoundref="diyfp_8h" startline="125" endline="132">NormalizedBoundaries</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1a9bbdcfcf5d1b3a7b16a8f5f860d74038" compoundref="diyfp_8h" startline="134" endline="143">ToDouble</referencedby>
+        <referencedby refid="namespaceinternal_1a8861eacf25d2024c832dfa611407d25a" compoundref="strtod_8h" startline="130" endline="205">internal::StrtodDiyFp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structinternal_1_1_diy_fp_1a09b9217a86e8a2e6aa8d2d48fc351008" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+        <definition>uint64_t internal::DiyFp::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="155" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="155" bodyend="-1"/>
+        <referencedby refid="structinternal_1_1_diy_fp_1ade3efb95107203f2327fc3d5a802d4b7" compoundref="diyfp_8h" startline="61" endline="63">operator-</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1ab536022d225b3014c98517a2dec4b986" compoundref="diyfp_8h" startline="65" endline="94">operator*</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1adae1948b1bb65d950cd3801a4a2bb7fd" compoundref="diyfp_8h" startline="96" endline="112">Normalize</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1a1a4589d19230c9930d7f3dd5a9b7f7e7" compoundref="diyfp_8h" startline="114" endline="123">NormalizeBoundary</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1a64e623c1742d1d5ad551ab456f0deb62" compoundref="diyfp_8h" startline="125" endline="132">NormalizedBoundaries</referencedby>
+        <referencedby refid="namespaceinternal_1a47be9aea8d0f9cae49dc03dc046d2450" compoundref="dtoa_8h" startline="59" endline="108">internal::DigitGen</referencedby>
+        <referencedby refid="namespaceinternal_1aeb7b6c0784b644968003cbd1b9da57e3" compoundref="dtoa_8h" startline="110" endline="122">internal::Grisu2</referencedby>
+        <referencedby refid="namespaceinternal_1a8861eacf25d2024c832dfa611407d25a" compoundref="strtod_8h" startline="130" endline="205">internal::StrtodDiyFp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structinternal_1_1_diy_fp_1afa9db335eeb61c7f966d888d89b1e6f2" prot="public" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int internal::DiyFp::e</definition>
+        <argsstring></argsstring>
+        <name>e</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="156" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="156" bodyend="-1"/>
+        <referencedby refid="structinternal_1_1_diy_fp_1adc132c7da4c8e3ee5ae12efdcf6dbf7c" compoundref="diyfp_8h" startline="43" endline="59">DiyFp</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1ade3efb95107203f2327fc3d5a802d4b7" compoundref="diyfp_8h" startline="61" endline="63">operator-</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1ab536022d225b3014c98517a2dec4b986" compoundref="diyfp_8h" startline="65" endline="94">operator*</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1adae1948b1bb65d950cd3801a4a2bb7fd" compoundref="diyfp_8h" startline="96" endline="112">Normalize</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1a1a4589d19230c9930d7f3dd5a9b7f7e7" compoundref="diyfp_8h" startline="114" endline="123">NormalizeBoundary</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1a64e623c1742d1d5ad551ab456f0deb62" compoundref="diyfp_8h" startline="125" endline="132">NormalizedBoundaries</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1a9bbdcfcf5d1b3a7b16a8f5f860d74038" compoundref="diyfp_8h" startline="134" endline="143">ToDouble</referencedby>
+        <referencedby refid="namespaceinternal_1abac3dbfa1070756c37725829148f6038" compoundref="diyfp_8h" startline="221" endline="233">internal::GetCachedPower</referencedby>
+        <referencedby refid="namespaceinternal_1a47be9aea8d0f9cae49dc03dc046d2450" compoundref="dtoa_8h" startline="59" endline="108">internal::DigitGen</referencedby>
+        <referencedby refid="namespaceinternal_1aeb7b6c0784b644968003cbd1b9da57e3" compoundref="dtoa_8h" startline="110" endline="122">internal::Grisu2</referencedby>
+        <referencedby refid="namespaceinternal_1a8861eacf25d2024c832dfa611407d25a" compoundref="strtod_8h" startline="130" endline="205">internal::StrtodDiyFp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structinternal_1_1_diy_fp_1aea27f027c58a55245d700df08be4ff7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>internal::DiyFp::DiyFp</definition>
+        <argsstring>()</argsstring>
+        <name>DiyFp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="39" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="39" bodyend="39"/>
+        <referencedby refid="structinternal_1_1_diy_fp_1ade3efb95107203f2327fc3d5a802d4b7" compoundref="diyfp_8h" startline="61" endline="63">operator-</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1ab536022d225b3014c98517a2dec4b986" compoundref="diyfp_8h" startline="65" endline="94">operator*</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1adae1948b1bb65d950cd3801a4a2bb7fd" compoundref="diyfp_8h" startline="96" endline="112">Normalize</referencedby>
+        <referencedby refid="structinternal_1_1_diy_fp_1a64e623c1742d1d5ad551ab456f0deb62" compoundref="diyfp_8h" startline="125" endline="132">NormalizedBoundaries</referencedby>
+        <referencedby refid="namespaceinternal_1a3e95f043ed6c40cda1c1bc33c2f0ece2" compoundref="diyfp_8h" startline="159" endline="219">internal::GetCachedPowerByIndex</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structinternal_1_1_diy_fp_1a9a8f2f5c49dfa0dee4a527f0829cc2e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>internal::DiyFp::DiyFp</definition>
+        <argsstring>(uint64_t fp, int exp)</argsstring>
+        <name>DiyFp</name>
+        <param>
+          <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+          <declname>fp</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>exp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="41" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="structinternal_1_1_diy_fp_1adc132c7da4c8e3ee5ae12efdcf6dbf7c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>internal::DiyFp::DiyFp</definition>
+        <argsstring>(double d)</argsstring>
+        <name>DiyFp</name>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="43" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="43" bodyend="59"/>
+        <references refid="structinternal_1_1_diy_fp_1afa9db335eeb61c7f966d888d89b1e6f2" compoundref="diyfp_8h" startline="156">e</references>
+        <references refid="structinternal_1_1_diy_fp_1a38b6f864ae0859d43fa96c3ff27959be" compoundref="diyfp_8h" startline="147">kDpExponentBias</references>
+        <references refid="structinternal_1_1_diy_fp_1aaacbf068c44275f4451db750938bd1d3" compoundref="diyfp_8h" startline="151">kDpExponentMask</references>
+        <references refid="structinternal_1_1_diy_fp_1a43ea451ce20095b1ff53cccf132ca15f" compoundref="diyfp_8h" startline="153">kDpHiddenBit</references>
+        <references refid="structinternal_1_1_diy_fp_1a9ad1b0cdbab318e45d2bc48e64707ef3" compoundref="diyfp_8h" startline="149">kDpMinExponent</references>
+        <references refid="structinternal_1_1_diy_fp_1a841ef0ae29ccd2889e7f96aad76b0179" compoundref="diyfp_8h" startline="152">kDpSignificandMask</references>
+        <references refid="structinternal_1_1_diy_fp_1a037aed0fa0b66af0a13657418edef19e" compoundref="diyfp_8h" startline="146">kDpSignificandSize</references>
+      </memberdef>
+      <memberdef kind="function" id="structinternal_1_1_diy_fp_1ade3efb95107203f2327fc3d5a802d4b7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structinternal_1_1_diy_fp" kindref="compound">DiyFp</ref></type>
+        <definition>DiyFp internal::DiyFp::operator-</definition>
+        <argsstring>(const DiyFp &amp;rhs) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="structinternal_1_1_diy_fp" kindref="compound">DiyFp</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="61" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="61" bodyend="63"/>
+        <references refid="structinternal_1_1_diy_fp_1aea27f027c58a55245d700df08be4ff7e" compoundref="diyfp_8h" startline="39" endline="39">DiyFp</references>
+        <references refid="structinternal_1_1_diy_fp_1afa9db335eeb61c7f966d888d89b1e6f2" compoundref="diyfp_8h" startline="156">e</references>
+        <references refid="structinternal_1_1_diy_fp_1a09b9217a86e8a2e6aa8d2d48fc351008" compoundref="diyfp_8h" startline="155">f</references>
+      </memberdef>
+      <memberdef kind="function" id="structinternal_1_1_diy_fp_1ab536022d225b3014c98517a2dec4b986" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structinternal_1_1_diy_fp" kindref="compound">DiyFp</ref></type>
+        <definition>DiyFp internal::DiyFp::operator*</definition>
+        <argsstring>(const DiyFp &amp;rhs) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="structinternal_1_1_diy_fp" kindref="compound">DiyFp</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>mult_round </para>        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="65" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="65" bodyend="94"/>
+        <references refid="structinternal_1_1_diy_fp_1aea27f027c58a55245d700df08be4ff7e" compoundref="diyfp_8h" startline="39" endline="39">DiyFp</references>
+        <references refid="structinternal_1_1_diy_fp_1afa9db335eeb61c7f966d888d89b1e6f2" compoundref="diyfp_8h" startline="156">e</references>
+        <references refid="structinternal_1_1_diy_fp_1a09b9217a86e8a2e6aa8d2d48fc351008" compoundref="diyfp_8h" startline="155">f</references>
+      </memberdef>
+      <memberdef kind="function" id="structinternal_1_1_diy_fp_1adae1948b1bb65d950cd3801a4a2bb7fd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structinternal_1_1_diy_fp" kindref="compound">DiyFp</ref></type>
+        <definition>DiyFp internal::DiyFp::Normalize</definition>
+        <argsstring>() const </argsstring>
+        <name>Normalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="96" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="96" bodyend="112"/>
+        <references refid="structinternal_1_1_diy_fp_1aea27f027c58a55245d700df08be4ff7e" compoundref="diyfp_8h" startline="39" endline="39">DiyFp</references>
+        <references refid="structinternal_1_1_diy_fp_1afa9db335eeb61c7f966d888d89b1e6f2" compoundref="diyfp_8h" startline="156">e</references>
+        <references refid="structinternal_1_1_diy_fp_1a09b9217a86e8a2e6aa8d2d48fc351008" compoundref="diyfp_8h" startline="155">f</references>
+        <referencedby refid="namespaceinternal_1aeb7b6c0784b644968003cbd1b9da57e3" compoundref="dtoa_8h" startline="110" endline="122">internal::Grisu2</referencedby>
+        <referencedby refid="namespaceinternal_1a8861eacf25d2024c832dfa611407d25a" compoundref="strtod_8h" startline="130" endline="205">internal::StrtodDiyFp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structinternal_1_1_diy_fp_1a1a4589d19230c9930d7f3dd5a9b7f7e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structinternal_1_1_diy_fp" kindref="compound">DiyFp</ref></type>
+        <definition>DiyFp internal::DiyFp::NormalizeBoundary</definition>
+        <argsstring>() const </argsstring>
+        <name>NormalizeBoundary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="114" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="114" bodyend="123"/>
+        <references refid="structinternal_1_1_diy_fp_1afa9db335eeb61c7f966d888d89b1e6f2" compoundref="diyfp_8h" startline="156">e</references>
+        <references refid="structinternal_1_1_diy_fp_1a09b9217a86e8a2e6aa8d2d48fc351008" compoundref="diyfp_8h" startline="155">f</references>
+        <references refid="structinternal_1_1_diy_fp_1aac30e0c32d43425ac403281fc9b0cee4" compoundref="diyfp_8h" startline="145">kDiySignificandSize</references>
+        <references refid="structinternal_1_1_diy_fp_1a43ea451ce20095b1ff53cccf132ca15f" compoundref="diyfp_8h" startline="153">kDpHiddenBit</references>
+        <references refid="structinternal_1_1_diy_fp_1a037aed0fa0b66af0a13657418edef19e" compoundref="diyfp_8h" startline="146">kDpSignificandSize</references>
+      </memberdef>
+      <memberdef kind="function" id="structinternal_1_1_diy_fp_1a64e623c1742d1d5ad551ab456f0deb62" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void internal::DiyFp::NormalizedBoundaries</definition>
+        <argsstring>(DiyFp *minus, DiyFp *plus) const </argsstring>
+        <name>NormalizedBoundaries</name>
+        <param>
+          <type><ref refid="structinternal_1_1_diy_fp" kindref="compound">DiyFp</ref> *</type>
+          <declname>minus</declname>
+        </param>
+        <param>
+          <type><ref refid="structinternal_1_1_diy_fp" kindref="compound">DiyFp</ref> *</type>
+          <declname>plus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="125" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="125" bodyend="132"/>
+        <references refid="structinternal_1_1_diy_fp_1aea27f027c58a55245d700df08be4ff7e" compoundref="diyfp_8h" startline="39" endline="39">DiyFp</references>
+        <references refid="structinternal_1_1_diy_fp_1afa9db335eeb61c7f966d888d89b1e6f2" compoundref="diyfp_8h" startline="156">e</references>
+        <references refid="structinternal_1_1_diy_fp_1a09b9217a86e8a2e6aa8d2d48fc351008" compoundref="diyfp_8h" startline="155">f</references>
+        <references refid="structinternal_1_1_diy_fp_1a43ea451ce20095b1ff53cccf132ca15f" compoundref="diyfp_8h" startline="153">kDpHiddenBit</references>
+        <referencedby refid="namespaceinternal_1aeb7b6c0784b644968003cbd1b9da57e3" compoundref="dtoa_8h" startline="110" endline="122">internal::Grisu2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structinternal_1_1_diy_fp_1a9bbdcfcf5d1b3a7b16a8f5f860d74038" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double internal::DiyFp::ToDouble</definition>
+        <argsstring>() const </argsstring>
+        <name>ToDouble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="134" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="134" bodyend="143"/>
+        <references refid="structinternal_1_1_diy_fp_1afa9db335eeb61c7f966d888d89b1e6f2" compoundref="diyfp_8h" startline="156">e</references>
+        <references refid="structinternal_1_1_diy_fp_1a994f16a1247a290cfc3a875715e3a92b" compoundref="diyfp_8h" startline="150">kDpDenormalExponent</references>
+        <references refid="structinternal_1_1_diy_fp_1a38b6f864ae0859d43fa96c3ff27959be" compoundref="diyfp_8h" startline="147">kDpExponentBias</references>
+        <references refid="structinternal_1_1_diy_fp_1a43ea451ce20095b1ff53cccf132ca15f" compoundref="diyfp_8h" startline="153">kDpHiddenBit</references>
+        <references refid="structinternal_1_1_diy_fp_1a841ef0ae29ccd2889e7f96aad76b0179" compoundref="diyfp_8h" startline="152">kDpSignificandMask</references>
+        <references refid="structinternal_1_1_diy_fp_1a037aed0fa0b66af0a13657418edef19e" compoundref="diyfp_8h" startline="146">kDpSignificandSize</references>
+        <referencedby refid="namespaceinternal_1a8861eacf25d2024c832dfa611407d25a" compoundref="strtod_8h" startline="130" endline="205">internal::StrtodDiyFp</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1443">
+        <label>internal::DiyFp</label>
+        <link refid="structinternal_1_1_diy_fp"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" line="38" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/diyfp.h" bodystart="38" bodyend="157"/>
+    <listofallmembers>
+      <member refid="structinternal_1_1_diy_fp_1aea27f027c58a55245d700df08be4ff7e" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>DiyFp</name></member>
+      <member refid="structinternal_1_1_diy_fp_1a9a8f2f5c49dfa0dee4a527f0829cc2e5" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>DiyFp</name></member>
+      <member refid="structinternal_1_1_diy_fp_1adc132c7da4c8e3ee5ae12efdcf6dbf7c" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>DiyFp</name></member>
+      <member refid="structinternal_1_1_diy_fp_1afa9db335eeb61c7f966d888d89b1e6f2" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>e</name></member>
+      <member refid="structinternal_1_1_diy_fp_1a09b9217a86e8a2e6aa8d2d48fc351008" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>f</name></member>
+      <member refid="structinternal_1_1_diy_fp_1aac30e0c32d43425ac403281fc9b0cee4" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>kDiySignificandSize</name></member>
+      <member refid="structinternal_1_1_diy_fp_1a994f16a1247a290cfc3a875715e3a92b" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>kDpDenormalExponent</name></member>
+      <member refid="structinternal_1_1_diy_fp_1a38b6f864ae0859d43fa96c3ff27959be" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>kDpExponentBias</name></member>
+      <member refid="structinternal_1_1_diy_fp_1aaacbf068c44275f4451db750938bd1d3" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>kDpExponentMask</name></member>
+      <member refid="structinternal_1_1_diy_fp_1a43ea451ce20095b1ff53cccf132ca15f" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>kDpHiddenBit</name></member>
+      <member refid="structinternal_1_1_diy_fp_1a80535a5594dae96fc482757a54162c7d" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>kDpMaxExponent</name></member>
+      <member refid="structinternal_1_1_diy_fp_1a9ad1b0cdbab318e45d2bc48e64707ef3" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>kDpMinExponent</name></member>
+      <member refid="structinternal_1_1_diy_fp_1a841ef0ae29ccd2889e7f96aad76b0179" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>kDpSignificandMask</name></member>
+      <member refid="structinternal_1_1_diy_fp_1a037aed0fa0b66af0a13657418edef19e" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>kDpSignificandSize</name></member>
+      <member refid="structinternal_1_1_diy_fp_1adae1948b1bb65d950cd3801a4a2bb7fd" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>Normalize</name></member>
+      <member refid="structinternal_1_1_diy_fp_1a1a4589d19230c9930d7f3dd5a9b7f7e7" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>NormalizeBoundary</name></member>
+      <member refid="structinternal_1_1_diy_fp_1a64e623c1742d1d5ad551ab456f0deb62" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>NormalizedBoundaries</name></member>
+      <member refid="structinternal_1_1_diy_fp_1ab536022d225b3014c98517a2dec4b986" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>operator*</name></member>
+      <member refid="structinternal_1_1_diy_fp_1ade3efb95107203f2327fc3d5a802d4b7" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>operator-</name></member>
+      <member refid="structinternal_1_1_diy_fp_1a9bbdcfcf5d1b3a7b16a8f5f860d74038" prot="public" virt="non-virtual"><scope>internal::DiyFp</scope><name>ToDouble</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

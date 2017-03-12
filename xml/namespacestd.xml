@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacestd" kind="namespace" language="C++">
+    <compoundname>std</compoundname>
+    <innerclass refid="classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4" prot="public">std::numeric_limits&lt; fmt::internal::DummyInt &gt;</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacestd_1a37ba44826afa04fddf20fd70c45ac3b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classfmt_1_1_buffered_file" kindref="compound">fmt::BufferedFile</ref> &amp;</type>
+        <definition>fmt::BufferedFile&amp; std::move</definition>
+        <argsstring>(fmt::BufferedFile &amp;f)</argsstring>
+        <name>move</name>
+        <param>
+          <type><ref refid="classfmt_1_1_buffered_file" kindref="compound">fmt::BufferedFile</ref> &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/posix.h" line="361" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/posix.h" bodystart="361" bodyend="361"/>
+        <referencedby refid="class_generic_document_1a6b1c313ad538cafc4d23d4bd5f97178c" compoundref="document_8h" startline="1798" endline="1803">GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::GenericDocument</referencedby>
+        <referencedby refid="class_generic_document_1aa9f980909298a4de32f66526484820bf" compoundref="document_8h" startline="1820" endline="1822">GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::~GenericDocument</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_memory_buffer_1a9d9995949a1aa1011085d3f117001572" compoundref="format_8h" startline="686" endline="686">fmt::internal::MemoryBuffer&lt; Char, internal::INLINE_BUFFER_SIZE, Allocator &gt;::~MemoryBuffer</referencedby>
+        <referencedby refid="classfmt_1_1_basic_memory_writer_1a36ef881adce8fc7a0b3632d2fb66fdfb" compoundref="format_8h" startline="3024" endline="3025">fmt::BasicMemoryWriter&lt; Char, Allocator &gt;::BasicMemoryWriter</referencedby>
+        <referencedby refid="class_generic_string_buffer_1a62f5ea1a53a2a3f98088f8c152b6183e" compoundref="stringbuffer_8h" startline="39" endline="39">GenericStringBuffer&lt; Encoding, Allocator &gt;::GenericStringBuffer</referencedby>
+        <referencedby refid="classngl_1_1_text_1a16e24cf8d7e4f310a7dc2b8375546134" compoundref="_text_8cpp" startline="53" endline="246">ngl::Text::Text</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacestd_1a8efbeec947c80dbebd7d657d123495db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classfmt_1_1_file" kindref="compound">fmt::File</ref> &amp;</type>
+        <definition>fmt::File&amp; std::move</definition>
+        <argsstring>(fmt::File &amp;f)</argsstring>
+        <name>move</name>
+        <param>
+          <type><ref refid="classfmt_1_1_file" kindref="compound">fmt::File</ref> &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/posix.h" line="362" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/posix.h" bodystart="362" bodyend="362"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="316" column="1"/>
+  </compounddef>
+</doxygen>

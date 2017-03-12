@@ -1,0 +1,7 @@
+<map id="fmt::Buffer&lt; T &gt;" name="fmt::Buffer&lt; T &gt;">
+<area shape="rect" id="node2" href="$classfmt_1_1internal_1_1_memory_buffer.html" title="{fmt::internal::MemoryBuffer\&lt; T \&gt;\n|&#45; data_\l|+ MemoryBuffer()\l+ ~MemoryBuffer()\l+ get_allocator()\l# grow()\l&#45; deallocate()\l}" alt="" coords="5,449,219,585"/>
+<area shape="rect" id="node4" href="$classfmt_1_1_buffer.html" title="{fmt::Buffer\&lt; Char \&gt;\n|# ptr_\l# size_\l# capacity_\l|+ ~Buffer()\l+ size()\l+ capacity()\l+ resize()\l+ reserve()\l+ clear()\l+ push_back()\l+ append()\l+ operator[]()\l+ operator[]()\l# Buffer()\l# grow()\l&#45; FMT_DISALLOW_COPY_AND\l_ASSIGN()\l}" alt="" coords="243,369,457,666"/>
+<area shape="rect" id="node3" href="$classfmt_1_1internal_1_1_memory_buffer.html" title="{fmt::internal::MemoryBuffer\l\&lt; Char, internal::INLINE\l_BUFFER_SIZE, Allocator \&gt;\n|&#45; data_\l|+ MemoryBuffer()\l+ ~MemoryBuffer()\l+ get_allocator()\l# grow()\l&#45; deallocate()\l}" alt="" coords="38,744,228,909"/>
+<area shape="rect" id="node5" href="$classfmt_1_1internal_1_1_fixed_buffer.html" title="{fmt::internal::FixedBuffer\l\&lt; Char \&gt;\n||+ FixedBuffer()\l# grow()\l}" alt="" coords="265,773,431,880"/>
+<area shape="rect" id="node6" href="$classfmt_1_1internal_1_1_string_buffer.html" title="{fmt::internal::StringBuffer\l\&lt; Char \&gt;\n|&#45; data_\l|+ move_to()\l# grow()\l}" alt="" coords="455,773,624,880"/>
+</map>

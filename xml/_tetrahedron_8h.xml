@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_tetrahedron_8h" kind="file" language="C++">
+    <compoundname>Tetrahedron.h</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_tetrahedron_8h_1a3bcd95344be88a5414971440f6cafa83" prot="public" static="no" mutable="no">
+        <type>constexpr unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>constexpr unsigned int tetrahedronSIZE</definition>
+        <argsstring></argsstring>
+        <name>tetrahedronSIZE</name>
+        <initializer>=96</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/src/ngl/Tetrahedron.h" line="26" column="1" bodyfile="/Users/jmacey/NGL/src/ngl/Tetrahedron.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1a281188edfc487d7072b40ca3871964f2" compoundref="create_default_v_a_os_8cpp" startline="14" endline="35">ngl::VAOPrimitives::createDefaultVAOs</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_tetrahedron_8h_1a7cb3a5c2ed0775cfb6b8ddb406ac4c30" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float tetrahedron[tetrahedronSIZE]</definition>
+        <argsstring>[tetrahedronSIZE]</argsstring>
+        <name>tetrahedron</name>
+        <initializer>={
+        
+         0.250000f,0.375000f,0.0f, -1.000000f, 0.0f,1.000000f,-1.0f,0.0f,
+         0.500000f,0.0f,0.0f, -1.000000f, 0.0f,-1.0f,-1.0f,1.0f,
+         0.750000f,0.375000f,0.0f, -1.000000f, 0.0f,-1.0f,-1.0f,-1.0f,
+         
+         0.0f,0.0f,0.471405f, 0.333333f, 1.0f,1.000000f,-1.0f,0.0f,
+         0.500000f,0.0f,0.471405f, 0.333333f, 1.0f,0.0f,1.0f,0.0f,
+         0.250000f,0.375000f,0.471405f, 0.333333f, 1.0f,-1.0f,-1.0f,1.0f,
+         
+         0.250000f,0.375000f,0.471405f, 0.333333f, -0.816497f,0.0f,1.0f,0.0f,
+         0.750000f,0.375000f,0.471405f, 0.333333f, -0.816497f,1.000000f,-1.0f,0.0f,
+         0.500000f,0.750000f,0.471405f, 0.333333f, -0.816497f,-1.0f,-1.0f,-1.0f,
+         
+         0.750000f,0.375000f,-0.942809f, 0.333333f, 0.0f,-1.0f,-1.0f,1.0f,
+         0.500000f,0.0f,-0.942809f, 0.333333f, 0.0f,0.0f,1.0f,0.0f,
+         1.000000f,0.0f,-0.942809f, 0.333333f, 0.0f,-1.0f,-1.0f,-1.0f
+         
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/src/ngl/Tetrahedron.h" line="27" column="1" bodyfile="/Users/jmacey/NGL/src/ngl/Tetrahedron.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1a281188edfc487d7072b40ca3871964f2" compoundref="create_default_v_a_os_8cpp" startline="14" endline="35">ngl::VAOPrimitives::createDefaultVAOs</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>raw data for the tetrahedron in VBOPrimitives </para>    </briefdescription>
+    <detaileddescription>
+<para>implementation files for Clip class </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Copyright<sp/>(C)<sp/>2009<sp/>Jon<sp/>Macey</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>VBO<sp/>File<sp/>in<sp/>the<sp/>format<sp/>tx,ty,nx,ny,nz,vx,vy,vz<sp/>for<sp/>use<sp/>with<sp/>LoadBinaryVBO<sp/>function<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>VBOPrimitives.cpp<sp/>from<sp/>the<sp/>NCCA<sp/>GraphicsLib.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//Automatically<sp/>generated<sp/>using<sp/>WriteVBO<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>brief<sp/>data<sp/>for<sp/>a<sp/>unit<sp/>tetrahedron<sp/>stored<sp/>in<sp/>GL_T2_N3_V3<sp/>format</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"></highlight><highlight class="preprocessor">#ifndef<sp/>TETRAHEDRON_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TETRAHEDRON_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="_tetrahedron_8h_1a3bcd95344be88a5414971440f6cafa83" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_tetrahedron_8h_1a3bcd95344be88a5414971440f6cafa83" kindref="member">tetrahedronSIZE</ref>=96;</highlight></codeline>
+<codeline lineno="27" refid="_tetrahedron_8h_1a7cb3a5c2ed0775cfb6b8ddb406ac4c30" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_tetrahedron_8h_1a7cb3a5c2ed0775cfb6b8ddb406ac4c30" kindref="member">tetrahedron</ref>[<ref refid="_tetrahedron_8h_1a3bcd95344be88a5414971440f6cafa83" kindref="member">tetrahedronSIZE</ref>]={</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Triangle<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.250000f,0.375000f,0.0f,<sp/>-1.000000f,<sp/>0.0f,1.000000f,-1.0f,0.0f,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.500000f,0.0f,0.0f,<sp/>-1.000000f,<sp/>0.0f,-1.0f,-1.0f,1.0f,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.750000f,0.375000f,0.0f,<sp/>-1.000000f,<sp/>0.0f,-1.0f,-1.0f,-1.0f,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Triangle<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.0f,0.0f,0.471405f,<sp/>0.333333f,<sp/>1.0f,1.000000f,-1.0f,0.0f,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.500000f,0.0f,0.471405f,<sp/>0.333333f,<sp/>1.0f,0.0f,1.0f,0.0f,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.250000f,0.375000f,0.471405f,<sp/>0.333333f,<sp/>1.0f,-1.0f,-1.0f,1.0f,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Triangle<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.250000f,0.375000f,0.471405f,<sp/>0.333333f,<sp/>-0.816497f,0.0f,1.0f,0.0f,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.750000f,0.375000f,0.471405f,<sp/>0.333333f,<sp/>-0.816497f,1.000000f,-1.0f,0.0f,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.500000f,0.750000f,0.471405f,<sp/>0.333333f,<sp/>-0.816497f,-1.0f,-1.0f,-1.0f,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Triangle<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.750000f,0.375000f,-0.942809f,<sp/>0.333333f,<sp/>0.0f,-1.0f,-1.0f,1.0f,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.500000f,0.0f,-0.942809f,<sp/>0.333333f,<sp/>0.0f,0.0f,1.0f,0.0f,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.000000f,0.0f,-0.942809f,<sp/>0.333333f,<sp/>0.0f,-1.0f,-1.0f,-1.0f</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Triangle<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">};<sp/></highlight><highlight class="comment">//end<sp/>of<sp/>declaration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"></highlight></codeline>
+<codeline lineno="51"><highlight class="comment">vn<sp/>0.471405,<sp/>0.333333,<sp/>-0.816497</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">vn<sp/>0.471405<sp/>0.333333<sp/>-0.816497</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">vn<sp/>0.471405<sp/>0.333333<sp/>-0.816497</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">vn<sp/>-0.942809,<sp/>0.333333,<sp/>0</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">vn<sp/>-0.942809<sp/>0.333333<sp/>0</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">vn<sp/>-0.942809<sp/>0.333333<sp/>0</highlight></codeline>
+<codeline lineno="57"><highlight class="comment">f<sp/>3/1/1<sp/>2/2/2<sp/>1/3/3</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">f<sp/>3/4/4<sp/>4/5/5<sp/>2/6/6</highlight></codeline>
+<codeline lineno="59"><highlight class="comment">f<sp/>4/7/7<sp/>3/8/8<sp/>1/9/9</highlight></codeline>
+<codeline lineno="60"><highlight class="comment">f<sp/>2/10/10<sp/>4/11/11<sp/>1/12/12</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"></highlight></codeline>
+<codeline lineno="62"><highlight class="comment"></highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/src/ngl/Tetrahedron.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,49 @@
+<map id="void" name="void">
+<area shape="rect" id="node2" href="$class_crt_allocator.html#a646bb6f68afe773a62a22f7f14f83e97" title="CrtAllocator::Realloc" alt="" coords="135,5,279,32"/>
+<area shape="rect" id="node3" href="$class_memory_pool_allocator.html#a6b180eb150451b4df8b70d827cd1191c" title="Frees a memory block (concept Allocator) " alt="" coords="132,57,281,98"/>
+<area shape="rect" id="node4" href="$class_auto_u_t_f_output_stream.html#abcfbaa81ceaddf06ae435ba3e78421d7" title="AutoUTFOutputStream\l::PutBOM" alt="" coords="127,122,286,163"/>
+<area shape="rect" id="node5" href="$struct_a_s_c_i_i.html#a3036dc1d604039c3224ca0a890ee0134" title="ASCII::PutBOM" alt="" coords="149,188,264,215"/>
+<area shape="rect" id="node6" href="$struct_auto_u_t_f.html#a414946115261f886e74dd42cb4b98781" title="AutoUTF::Encode" alt="" coords="143,239,271,265"/>
+<area shape="rect" id="node7" href="$namespacefmt_1_1internal.html#a92bdabe812efd23c6f9686ddd6a7805f" title="fmt::internal::report\l_unknown_type" alt="" coords="140,290,273,331"/>
+<area shape="rect" id="node17" href="$structfmt_1_1internal_1_1_arg_array_3_01_n_00_01true_01_4.html#a3977c938e1ca5c4c5aedccd85561a76d" title="fmt::internal::ArgArray\l\&lt; N, true \&gt;::make" alt="" coords="131,355,283,397"/>
+<area shape="rect" id="node18" href="$class_pretty_writer.html#ae6cec4b69e86cff3121451f29e4862ef" title="PrettyWriter::String" alt="" coords="393,371,527,397"/>
+<area shape="rect" id="node20" href="$class_pretty_writer.html#a5837a63cac4735eaeedbaff287e1ab9e" title="PrettyWriter::EndObject" alt="" coords="125,472,288,499"/>
+<area shape="rect" id="node21" href="$class_pretty_writer.html#a5196275e826a37a163d178da612f58f9" title="PrettyWriter::EndArray" alt="" coords="129,523,285,549"/>
+<area shape="rect" id="node22" href="$class_pretty_writer.html#a7841433d45abbfc5a1799be0ca1ed792" title="PrettyWriter::PrettyPrefix" alt="" coords="122,573,291,600"/>
+<area shape="rect" id="node32" href="$classfmt_1_1_printf_formatter.html#a771c36f34331ffc3389ba25a87bf7ea0" title="fmt::PrintfFormatter\l::get_arg" alt="" coords="138,625,275,666"/>
+<area shape="rect" id="node33" href="$class_generic_reader_1_1_number_stream_3_01_input_stream_00_01false_01_4.html#a36147966643537c3c02af7f362282d24" title="GenericReader::NumberStream\l\&lt; InputStream, false \&gt;::\lNumberStream" alt="" coords="101,691,312,747"/>
+<area shape="rect" id="node34" href="$class_generic_reader.html#a09637865e7aea8e50fb8f9fc25dd65ad" title="GenericReader::Transit" alt="" coords="127,771,287,797"/>
+<area shape="rect" id="node35" href="$class_writer.html#ac317eb622ea116293d99e3edffe6f1c3" title="Writer::String" alt="" coords="410,877,510,904"/>
+<area shape="rect" id="node37" href="$class_writer.html#a3705f6d3f9a820f0a6652089222ed3ac" title="Writer::EndObject" alt="" coords="143,872,270,899"/>
+<area shape="rect" id="node38" href="$class_writer.html#ad8680f9f8d3289dad72f1f18a8763aa1" title="Writer::EndArray" alt="" coords="147,923,267,949"/>
+<area shape="rect" id="node39" href="$class_writer.html#ad56f2e953b7919ad2157a2fc2bedf873" title="Writer::Prefix" alt="" coords="157,1080,256,1107"/>
+<area shape="rect" id="node8" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#a5c11af21a3e1249b78ef87c968572ef5" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_pointer" alt="" coords="360,123,560,179"/>
+<area shape="rect" id="node9" href="$classfmt_1_1_basic_writer.html#a8914b930ac43788f801af0008f7b743e" title="fmt::BasicWriter::write_str" alt="" coords="373,203,547,229"/>
+<area shape="rect" id="node10" href="$classfmt_1_1_basic_writer.html#a2eb820ad907cede8df8226af444f59d6" title="fmt::BasicWriter::write_int" alt="" coords="373,253,547,280"/>
+<area shape="rect" id="node15" href="$classfmt_1_1_basic_writer.html#aa69a013920916ccc74ca7ac5e971abe7" title="fmt::BasicWriter::write\l_double" alt="" coords="384,305,536,346"/>
+<area shape="rect" id="node11" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#a0f4c97899457f6263ae412f231330227" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::write_pointer" alt="" coords="620,39,825,95"/>
+<area shape="rect" id="node12" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#ae6f9ce1fa7940ebda3ac594a45edd32d" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_any_int" alt="" coords="621,119,824,175"/>
+<area shape="rect" id="node13" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#ab85eb2158c9d48c847706de26f35460c" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_char" alt="" coords="630,199,815,255"/>
+<area shape="rect" id="node14" href="$classfmt_1_1_basic_printf_arg_formatter.html#a97f26086d50a4553280fbe831ef7e947" title="fmt::BasicPrintfArgFormatter\l\&lt; PrintfArgFormatter\&lt; Char\l \&gt;, Char \&gt;::visit_char" alt="" coords="627,279,818,335"/>
+<area shape="rect" id="node16" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#a670214e1773c9c86002be07c043566dd" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_any_double" alt="" coords="609,359,837,415"/>
+<area shape="rect" id="node19" href="$class_pretty_writer.html#a26932858cdca972598f7caa6f415f310" title="PrettyWriter::Key" alt="" coords="661,439,784,465"/>
+<area shape="rect" id="node23" href="$class_pretty_writer.html#acbcab646050e5e9204ab2b13c798092b" title="PrettyWriter::Null" alt="" coords="399,421,521,448"/>
+<area shape="rect" id="node24" href="$class_pretty_writer.html#afddf1586eeba72bc4fbb0e1346ced9b9" title="PrettyWriter::Bool" alt="" coords="397,472,523,499"/>
+<area shape="rect" id="node25" href="$class_pretty_writer.html#a14da2a84e9f41ba42edf2819363be614" title="PrettyWriter::Int" alt="" coords="403,523,517,549"/>
+<area shape="rect" id="node26" href="$class_pretty_writer.html#a65227d9de9a9f92eb3ca83c616a9c809" title="PrettyWriter::Uint" alt="" coords="398,573,522,600"/>
+<area shape="rect" id="node27" href="$class_pretty_writer.html#a2ce0d71e221d72b8cf17d2b60ae610af" title="PrettyWriter::Int64" alt="" coords="395,624,525,651"/>
+<area shape="rect" id="node28" href="$class_pretty_writer.html#a888229dc2e5a15b2fd577b47e86a17b3" title="PrettyWriter::Uint64" alt="" coords="391,675,529,701"/>
+<area shape="rect" id="node29" href="$class_pretty_writer.html#a20ffcf3ada1be664719f44cec76711ed" title="PrettyWriter::Double" alt="" coords="389,725,531,752"/>
+<area shape="rect" id="node30" href="$class_pretty_writer.html#a445e063722149f86bf1a0cd7b8892f07" title="PrettyWriter::StartObject" alt="" coords="377,776,543,803"/>
+<area shape="rect" id="node31" href="$class_pretty_writer.html#a12dd02678ab52b9061bb6ac01cca2601" title="PrettyWriter::StartArray" alt="" coords="380,827,540,853"/>
+<area shape="rect" id="node36" href="$class_writer.html#a88f8aa2df45426ba81d293ddc71698af" title="Writer::Key" alt="" coords="679,877,767,904"/>
+<area shape="rect" id="node40" href="$class_writer.html#a7d80ac367783ac4eb8b0118924b377bd" title="Writer::Null" alt="" coords="416,928,504,955"/>
+<area shape="rect" id="node41" href="$class_writer.html#adf126d95f0aec7c2f7667df048227929" title="Writer::Bool" alt="" coords="414,979,506,1005"/>
+<area shape="rect" id="node42" href="$class_writer.html#ae006cfa073c369c57797bc842b817ba4" title="Writer::Int" alt="" coords="420,1029,500,1056"/>
+<area shape="rect" id="node43" href="$class_writer.html#a20c4edc79c0d5a9402e1deb8f09feadf" title="Writer::Uint" alt="" coords="416,1080,504,1107"/>
+<area shape="rect" id="node44" href="$class_writer.html#aa63032bf3dce66f817267cc451922a6e" title="Writer::Int64" alt="" coords="413,1131,507,1157"/>
+<area shape="rect" id="node45" href="$class_writer.html#a71b2ee12ae85d181eb9abdb686565615" title="Writer::Uint64" alt="" coords="408,1181,512,1208"/>
+<area shape="rect" id="node46" href="$class_writer.html#ae80dc830a4f1d84e6eaf6b182c0ceccb" title="Writes the given double value to the stream. " alt="" coords="407,1232,513,1259"/>
+<area shape="rect" id="node47" href="$class_writer.html#a393fe59329dfd8110016183090b02d57" title="Writer::StartObject" alt="" coords="394,1283,526,1309"/>
+<area shape="rect" id="node48" href="$class_writer.html#a8a981ed4f5618a545724789ee4c8dedb" title="Writer::StartArray" alt="" coords="397,1333,523,1360"/>
+</map>

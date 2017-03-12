@@ -1,0 +1,5 @@
+<map id="ngl::VAOPrimitives::fghCircleTable" name="ngl::VAOPrimitives::fghCircleTable">
+<area shape="rect" id="node2" href="$classngl_1_1_v_a_o_primitives.html#a85f675d14d72f093d4c7afa82155d697" title="create a Quad Cylinder as a vbo with auto generated texture cords " alt="" coords="187,5,320,46"/>
+<area shape="rect" id="node3" href="$classngl_1_1_v_a_o_primitives.html#a02aa220bc52e3e8b579e4b67bb8344af" title="create a Quad Cone as a vao with auto generated texture cords " alt="" coords="187,70,320,111"/>
+<area shape="rect" id="node4" href="$classngl_1_1_v_a_o_primitives.html#a0803af36b2a375a3367d4521ab16a7fe" title="create a trinagle fan disk (use as end caps for Cylinder etc) " alt="" coords="187,135,320,177"/>
+</map>

@@ -1,0 +1,527 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classngl_1_1_random" kind="class" language="C++" prot="public">
+    <compoundname>ngl::Random</compoundname>
+    <basecompoundref refid="classngl_1_1_singleton" prot="public" virt="non-virtual">ngl::Singleton&lt; Random &gt;</basecompoundref>
+    <includes refid="_random_8h" local="no">Random.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classngl_1_1_random_1ad4ba9c502cc704e19f4c21eca8f8ab58" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Singleton&lt; Random &gt;</definition>
+        <argsstring></argsstring>
+        <name>Singleton&lt; Random &gt;</name>
+        <briefdescription>
+<para>we are a friend with singelton so we can assess the template methods </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="312" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Random.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classngl_1_1_random_1ad81f3395aa6851cd578aba895c88a84c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Colour</definition>
+        <argsstring></argsstring>
+        <name>Colour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="72" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Random.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_random_1a27879b98765830fd299432efb696bc07" compoundref="_random_8cpp" startline="80" endline="85">getRandomColour</referencedby>
+        <referencedby refid="classngl_1_1_random_1af45d991a4d57ce1ea3b96852b5f0c937" compoundref="_random_8cpp" startline="88" endline="94">getRandomColourAndAlpha</referencedby>
+      </memberdef>
+      <memberdef kind="friend" id="classngl_1_1_random_1ab7e1a25dc5d4fb2a27a441ad09a7b64d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Vec4</definition>
+        <argsstring></argsstring>
+        <name>Vec4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="73" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Random.h" bodystart="73" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_random_1a377a556cb66da919996c179aacb3543e" compoundref="_random_8cpp" startline="97" endline="101">getRandomVec4</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" prot="protected" static="no" mutable="no">
+        <type>std::mt19937</type>
+        <definition>std::mt19937 ngl::Random::m_generator</definition>
+        <argsstring></argsstring>
+        <name>m_generator</name>
+        <briefdescription>
+<para>the generator for rng class where all funcs and distribs are added. all we need to do is replace this one define to use any of the other boost rng engines. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="166" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Random.h" bodystart="166" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_random_1aff5bd03f34f7880d58e13de99abfbd9f" compoundref="_random_8cpp" startline="32" endline="35">setSeed</referencedby>
+        <referencedby refid="classngl_1_1_random_1a0e40a12fc390933f2e6f94c665d485d9" compoundref="_random_8cpp" startline="60" endline="76">getFloatFromGeneratorName</referencedby>
+        <referencedby refid="classngl_1_1_random_1a27879b98765830fd299432efb696bc07" compoundref="_random_8cpp" startline="80" endline="85">getRandomColour</referencedby>
+        <referencedby refid="classngl_1_1_random_1af45d991a4d57ce1ea3b96852b5f0c937" compoundref="_random_8cpp" startline="88" endline="94">getRandomColourAndAlpha</referencedby>
+        <referencedby refid="classngl_1_1_random_1a377a556cb66da919996c179aacb3543e" compoundref="_random_8cpp" startline="97" endline="101">getRandomVec4</referencedby>
+        <referencedby refid="classngl_1_1_random_1a92774596542531f568dd7a9057cdb160" compoundref="_random_8cpp" startline="104" endline="110">getRandomNormalizedVec4</referencedby>
+        <referencedby refid="classngl_1_1_random_1a96649d8ece45b0662623e8b895531bd7" compoundref="_random_8cpp" startline="114" endline="118">getRandomVec3</referencedby>
+        <referencedby refid="classngl_1_1_random_1a538b0426e409cab2aa9b5e7f661fb97b" compoundref="_random_8cpp" startline="121" endline="127">getRandomNormalizedVec3</referencedby>
+        <referencedby refid="classngl_1_1_random_1aa8f7b99ba1adcf3302ad6b500f37c57d" compoundref="_random_8cpp" startline="130" endline="134">getRandomVec2</referencedby>
+        <referencedby refid="classngl_1_1_random_1a64fede9255ffee6ba7ad76982243070d" compoundref="_random_8cpp" startline="137" endline="143">getRandomNormalizedVec2</referencedby>
+        <referencedby refid="classngl_1_1_random_1a2412577f66bbf9b6168c433583c328f1" compoundref="_random_8cpp" startline="148" endline="153">getRandomPoint</referencedby>
+        <referencedby refid="classngl_1_1_random_1a1d38793296010431e10d5ac11fd0a396" compoundref="_random_8cpp" startline="157" endline="161">randomNumber</referencedby>
+        <referencedby refid="classngl_1_1_random_1a10fd0b9d572d073cfa6ff7a4288e81a3" compoundref="_random_8cpp" startline="164" endline="168">randomPositiveNumber</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" prot="protected" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>, std::uniform_real_distribution&lt; <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref> &gt; &gt;</type>
+        <definition>std::unordered_map&lt;std::string, std::uniform_real_distribution&lt;Real&gt; &gt; ngl::Random::m_floatGenerators</definition>
+        <argsstring></argsstring>
+        <name>m_floatGenerators</name>
+        <briefdescription>
+<para>our map to hold the generator data basically we are going to hold a name / function pair, and this function will be called returning a Real value </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="178" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Random.h" bodystart="178" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_random_1a0fdd411f92bc51194df7b7310a4a5ed7" compoundref="_random_8cpp" startline="46" endline="56">Random</referencedby>
+        <referencedby refid="classngl_1_1_random_1a0e40a12fc390933f2e6f94c665d485d9" compoundref="_random_8cpp" startline="60" endline="76">getFloatFromGeneratorName</referencedby>
+        <referencedby refid="classngl_1_1_random_1a27879b98765830fd299432efb696bc07" compoundref="_random_8cpp" startline="80" endline="85">getRandomColour</referencedby>
+        <referencedby refid="classngl_1_1_random_1af45d991a4d57ce1ea3b96852b5f0c937" compoundref="_random_8cpp" startline="88" endline="94">getRandomColourAndAlpha</referencedby>
+        <referencedby refid="classngl_1_1_random_1a377a556cb66da919996c179aacb3543e" compoundref="_random_8cpp" startline="97" endline="101">getRandomVec4</referencedby>
+        <referencedby refid="classngl_1_1_random_1a92774596542531f568dd7a9057cdb160" compoundref="_random_8cpp" startline="104" endline="110">getRandomNormalizedVec4</referencedby>
+        <referencedby refid="classngl_1_1_random_1a96649d8ece45b0662623e8b895531bd7" compoundref="_random_8cpp" startline="114" endline="118">getRandomVec3</referencedby>
+        <referencedby refid="classngl_1_1_random_1a538b0426e409cab2aa9b5e7f661fb97b" compoundref="_random_8cpp" startline="121" endline="127">getRandomNormalizedVec3</referencedby>
+        <referencedby refid="classngl_1_1_random_1aa8f7b99ba1adcf3302ad6b500f37c57d" compoundref="_random_8cpp" startline="130" endline="134">getRandomVec2</referencedby>
+        <referencedby refid="classngl_1_1_random_1a64fede9255ffee6ba7ad76982243070d" compoundref="_random_8cpp" startline="137" endline="143">getRandomNormalizedVec2</referencedby>
+        <referencedby refid="classngl_1_1_random_1a2412577f66bbf9b6168c433583c328f1" compoundref="_random_8cpp" startline="148" endline="153">getRandomPoint</referencedby>
+        <referencedby refid="classngl_1_1_random_1a1d38793296010431e10d5ac11fd0a396" compoundref="_random_8cpp" startline="157" endline="161">randomNumber</referencedby>
+        <referencedby refid="classngl_1_1_random_1a10fd0b9d572d073cfa6ff7a4288e81a3" compoundref="_random_8cpp" startline="164" endline="168">randomPositiveNumber</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngl_1_1_random_1aff5bd03f34f7880d58e13de99abfbd9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Random::setSeed</definition>
+        <argsstring>()</argsstring>
+        <name>setSeed</name>
+        <briefdescription>
+<para>set the seed using std::time(NULL) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="80" column="1" bodyfile="/Users/jmacey/NGL/src/Random.cpp" bodystart="32" bodyend="35"/>
+        <references refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" compoundref="_random_8h" startline="166">m_generator</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_random_1a4a26b6e0a56d67a1ae485cb85e6a74ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Random::setSeed</definition>
+        <argsstring>(unsigned int _value)</argsstring>
+        <name>setSeed</name>
+        <param>
+          <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>set the seed using a param value </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the seed value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="85" column="1" bodyfile="/Users/jmacey/NGL/src/Random.cpp" bodystart="39" bodyend="42"/>
+        <references refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" compoundref="_random_8h" startline="166">m_generator</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_random_1a0e40a12fc390933f2e6f94c665d485d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::Random::getFloatFromGeneratorName</definition>
+        <argsstring>(const std::string &amp;_name)</argsstring>
+        <name>getFloatFromGeneratorName</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+<para>gets a pre-generated Real value for a genetator </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the generator to use for the number returns a random number created by the generator or 0 if the generator is not found </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="92" column="1" bodyfile="/Users/jmacey/NGL/src/Random.cpp" bodystart="60" bodyend="76"/>
+        <references refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" compoundref="_random_8h" startline="178">m_floatGenerators</references>
+        <references refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" compoundref="_random_8h" startline="166">m_generator</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_random_1a27879b98765830fd299432efb696bc07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref></type>
+        <definition>Colour ngl::Random::getRandomColour</definition>
+        <argsstring>()</argsstring>
+        <name>getRandomColour</name>
+        <briefdescription>
+<para>return a random colour with rgb components clamped between 0-1 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="96" column="1" bodyfile="/Users/jmacey/NGL/src/Random.cpp" bodystart="80" bodyend="85"/>
+        <references refid="classngl_1_1_random_1ad81f3395aa6851cd578aba895c88a84c" compoundref="_random_8h" startline="72">Colour</references>
+        <references refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" compoundref="_random_8h" startline="178">m_floatGenerators</references>
+        <references refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" compoundref="_random_8h" startline="166">m_generator</references>
+        <references refid="namespacengl_1a287dd47b74538adca7e24787f4e6c837" compoundref="_random_8cpp" startline="29">ngl::RandomPositiveFloat</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_random_1af45d991a4d57ce1ea3b96852b5f0c937" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref></type>
+        <definition>Colour ngl::Random::getRandomColourAndAlpha</definition>
+        <argsstring>()</argsstring>
+        <name>getRandomColourAndAlpha</name>
+        <briefdescription>
+<para>return a random colour with rgba components clamped between 0-1 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="100" column="1" bodyfile="/Users/jmacey/NGL/src/Random.cpp" bodystart="88" bodyend="94"/>
+        <references refid="classngl_1_1_random_1ad81f3395aa6851cd578aba895c88a84c" compoundref="_random_8h" startline="72">Colour</references>
+        <references refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" compoundref="_random_8h" startline="178">m_floatGenerators</references>
+        <references refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" compoundref="_random_8h" startline="166">m_generator</references>
+        <references refid="namespacengl_1a287dd47b74538adca7e24787f4e6c837" compoundref="_random_8cpp" startline="29">ngl::RandomPositiveFloat</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_random_1a377a556cb66da919996c179aacb3543e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref></type>
+        <definition>Vec4 ngl::Random::getRandomVec4</definition>
+        <argsstring>()</argsstring>
+        <name>getRandomVec4</name>
+        <briefdescription>
+<para>get a random vector with componets ranged from +/- 1 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="104" column="1" bodyfile="/Users/jmacey/NGL/src/Random.cpp" bodystart="97" bodyend="101"/>
+        <references refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" compoundref="_random_8h" startline="178">m_floatGenerators</references>
+        <references refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" compoundref="_random_8h" startline="166">m_generator</references>
+        <references refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" compoundref="_random_8cpp" startline="28">ngl::RandomFloat</references>
+        <references refid="classngl_1_1_random_1ab7e1a25dc5d4fb2a27a441ad09a7b64d" compoundref="_random_8h" startline="73">Vec4</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_random_1a92774596542531f568dd7a9057cdb160" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref></type>
+        <definition>Vec4 ngl::Random::getRandomNormalizedVec4</definition>
+        <argsstring>()</argsstring>
+        <name>getRandomNormalizedVec4</name>
+        <briefdescription>
+<para>get a random vector with componets ranged from +/- 1 and Normalized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="108" column="1" bodyfile="/Users/jmacey/NGL/src/Random.cpp" bodystart="104" bodyend="110"/>
+        <references refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" compoundref="_random_8h" startline="178">m_floatGenerators</references>
+        <references refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" compoundref="_random_8h" startline="166">m_generator</references>
+        <references refid="classngl_1_1_vec4_1ac0dca0913332163df66d6e229564c85b" compoundref="_vec4_8cpp" startline="99" endline="107">ngl::Vec4::normalize</references>
+        <references refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" compoundref="_random_8cpp" startline="28">ngl::RandomFloat</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_random_1a96649d8ece45b0662623e8b895531bd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 ngl::Random::getRandomVec3</definition>
+        <argsstring>()</argsstring>
+        <name>getRandomVec3</name>
+        <briefdescription>
+<para>get a random vector with componets ranged from +/- 1 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="112" column="1" bodyfile="/Users/jmacey/NGL/src/Random.cpp" bodystart="114" bodyend="118"/>
+        <references refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" compoundref="_random_8h" startline="178">m_floatGenerators</references>
+        <references refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" compoundref="_random_8h" startline="166">m_generator</references>
+        <references refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" compoundref="_random_8cpp" startline="28">ngl::RandomFloat</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_random_1a538b0426e409cab2aa9b5e7f661fb97b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 ngl::Random::getRandomNormalizedVec3</definition>
+        <argsstring>()</argsstring>
+        <name>getRandomNormalizedVec3</name>
+        <briefdescription>
+<para>get a random vector with componets ranged from +/- 1 and Normalized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="116" column="1" bodyfile="/Users/jmacey/NGL/src/Random.cpp" bodystart="121" bodyend="127"/>
+        <references refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" compoundref="_random_8h" startline="178">m_floatGenerators</references>
+        <references refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" compoundref="_random_8h" startline="166">m_generator</references>
+        <references refid="classngl_1_1_vec3_1a091a5439ddfd8a25fe486cf026345ef5" compoundref="_vec3_8cpp" startline="206" endline="213">ngl::Vec3::normalize</references>
+        <references refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" compoundref="_random_8cpp" startline="28">ngl::RandomFloat</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_random_1aa8f7b99ba1adcf3302ad6b500f37c57d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref></type>
+        <definition>Vec2 ngl::Random::getRandomVec2</definition>
+        <argsstring>()</argsstring>
+        <name>getRandomVec2</name>
+        <briefdescription>
+<para>get a random vector with componets ranged from +/- 1 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="120" column="1" bodyfile="/Users/jmacey/NGL/src/Random.cpp" bodystart="130" bodyend="134"/>
+        <references refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" compoundref="_random_8h" startline="178">m_floatGenerators</references>
+        <references refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" compoundref="_random_8h" startline="166">m_generator</references>
+        <references refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" compoundref="_random_8cpp" startline="28">ngl::RandomFloat</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_random_1a64fede9255ffee6ba7ad76982243070d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref></type>
+        <definition>Vec2 ngl::Random::getRandomNormalizedVec2</definition>
+        <argsstring>()</argsstring>
+        <name>getRandomNormalizedVec2</name>
+        <briefdescription>
+<para>get a random vector with componets ranged from +/- 1 and Normalized </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="124" column="1" bodyfile="/Users/jmacey/NGL/src/Random.cpp" bodystart="137" bodyend="143"/>
+        <references refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" compoundref="_random_8h" startline="178">m_floatGenerators</references>
+        <references refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" compoundref="_random_8h" startline="166">m_generator</references>
+        <references refid="classngl_1_1_vec2_1ad75752e11438b9899e982f78cbb232c4" compoundref="_vec2_8cpp" startline="164" endline="170">ngl::Vec2::normalize</references>
+        <references refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" compoundref="_random_8cpp" startline="28">ngl::RandomFloat</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_random_1a2412577f66bbf9b6168c433583c328f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 ngl::Random::getRandomPoint</definition>
+        <argsstring>(Real _xRange=1.0, Real _yRange=1.0, Real _zRange=1.0)</argsstring>
+        <name>getRandomPoint</name>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_xRange</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_yRange</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_zRange</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+<para>get a random point in 3D space defaults to +/- 1 else user defined range </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_xRange</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the +/-x range </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_yRange</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the +/-y range </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_zRange</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the +/-z range </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a random point </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="133" column="1" bodyfile="/Users/jmacey/NGL/src/Random.cpp" bodystart="148" bodyend="153"/>
+        <references refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" compoundref="_random_8h" startline="178">m_floatGenerators</references>
+        <references refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" compoundref="_random_8h" startline="166">m_generator</references>
+        <references refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" compoundref="_random_8cpp" startline="28">ngl::RandomFloat</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_random_1a1d38793296010431e10d5ac11fd0a396" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::Random::randomNumber</definition>
+        <argsstring>(Real _mult=1)</argsstring>
+        <name>randomNumber</name>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_mult</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>a replacement for the old RandomNumber func this is basically a convinience function </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_mult</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional multiplyer for the output </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(uniform_random(-1-0-+1) * _mult) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="140" column="1" bodyfile="/Users/jmacey/NGL/src/Random.cpp" bodystart="157" bodyend="161"/>
+        <references refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" compoundref="_random_8h" startline="178">m_floatGenerators</references>
+        <references refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" compoundref="_random_8h" startline="166">m_generator</references>
+        <references refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" compoundref="_random_8cpp" startline="28">ngl::RandomFloat</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_random_1a10fd0b9d572d073cfa6ff7a4288e81a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::Random::randomPositiveNumber</definition>
+        <argsstring>(Real _mult=1)</argsstring>
+        <name>randomPositiveNumber</name>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_mult</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>a replacement for the old ReandomPosNum this is basically a convinience function </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_mult</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional multiplyer for the output </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(uniform_random(0-1) * _mult) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="147" column="1" bodyfile="/Users/jmacey/NGL/src/Random.cpp" bodystart="164" bodyend="168"/>
+        <references refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" compoundref="_random_8h" startline="178">m_floatGenerators</references>
+        <references refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" compoundref="_random_8h" startline="166">m_generator</references>
+        <references refid="namespacengl_1a287dd47b74538adca7e24787f4e6c837" compoundref="_random_8cpp" startline="29">ngl::RandomPositiveFloat</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classngl_1_1_random_1a0fdd411f92bc51194df7b7310a4a5ed7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::Random::Random</definition>
+        <argsstring>()</argsstring>
+        <name>Random</name>
+        <briefdescription>
+<para>ctor hidden in protected as we are a singleton class </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="172" column="1" bodyfile="/Users/jmacey/NGL/src/Random.cpp" bodystart="46" bodyend="56"/>
+        <references refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" compoundref="_random_8h" startline="178">m_floatGenerators</references>
+        <references refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" compoundref="_random_8cpp" startline="28">ngl::RandomFloat</references>
+        <references refid="namespacengl_1a287dd47b74538adca7e24787f4e6c837" compoundref="_random_8cpp" startline="29">ngl::RandomPositiveFloat</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>wrapper for std random and distribution functions, it will generate two basic random functions for RandPositiveFloat (0-1) and RandFloat() +/- 1 these are also overloaded to have a param for range added to this are functions for <ref refid="classngl_1_1_random" kindref="compound">Random</ref> Colours and Vectors and Points and also the ability to add other distributions random library. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>by default we use the mt19937 mersenne twister but this can be changed in the library by modifying the define ENGINE to any of the following </para></simplesect>
+<simplesect kind="note"><para>as each call to the random generator function accesses the ENGINE m_generator no callable method that invokes any of the generators can be constant as the internal state of m_generator is modified with the call hence the lack of const methods</para></simplesect>
+<simplesect kind="author"><para>Jonathan Macey </para></simplesect>
+<simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="date"><para>17/05/10 Initial version </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1851">
+        <label>ngl::Singleton&lt; Random &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+        <childnode refid="1852" relation="template-instance">
+          <edgelabel>&lt; Random &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1852">
+        <label>ngl::Singleton&lt; T &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+      </node>
+      <node id="1850">
+        <label>ngl::Random</label>
+        <link refid="classngl_1_1_random"/>
+        <childnode refid="1851" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1856">
+        <label>T</label>
+      </node>
+      <node id="1854">
+        <label>ngl::Singleton&lt; Random &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+        <childnode refid="1853" relation="usage">
+          <edgelabel>#s_instance</edgelabel>
+        </childnode>
+        <childnode refid="1855" relation="template-instance">
+          <edgelabel>&lt; Random &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1855">
+        <label>ngl::Singleton&lt; T &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+        <childnode refid="1856" relation="usage">
+          <edgelabel>#s_instance</edgelabel>
+        </childnode>
+      </node>
+      <node id="1853">
+        <label>ngl::Random</label>
+        <link refid="classngl_1_1_random"/>
+        <childnode refid="1854" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/Random.h" line="67" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Random.h" bodystart="66" bodyend="180"/>
+    <listofallmembers>
+      <member refid="classngl_1_1_random_1ad81f3395aa6851cd578aba895c88a84c" prot="private" virt="non-virtual"><scope>ngl::Random</scope><name>Colour</name></member>
+      <member refid="classngl_1_1_random_1a0e40a12fc390933f2e6f94c665d485d9" prot="public" virt="non-virtual"><scope>ngl::Random</scope><name>getFloatFromGeneratorName</name></member>
+      <member refid="classngl_1_1_random_1a27879b98765830fd299432efb696bc07" prot="public" virt="non-virtual"><scope>ngl::Random</scope><name>getRandomColour</name></member>
+      <member refid="classngl_1_1_random_1af45d991a4d57ce1ea3b96852b5f0c937" prot="public" virt="non-virtual"><scope>ngl::Random</scope><name>getRandomColourAndAlpha</name></member>
+      <member refid="classngl_1_1_random_1a64fede9255ffee6ba7ad76982243070d" prot="public" virt="non-virtual"><scope>ngl::Random</scope><name>getRandomNormalizedVec2</name></member>
+      <member refid="classngl_1_1_random_1a538b0426e409cab2aa9b5e7f661fb97b" prot="public" virt="non-virtual"><scope>ngl::Random</scope><name>getRandomNormalizedVec3</name></member>
+      <member refid="classngl_1_1_random_1a92774596542531f568dd7a9057cdb160" prot="public" virt="non-virtual"><scope>ngl::Random</scope><name>getRandomNormalizedVec4</name></member>
+      <member refid="classngl_1_1_random_1a2412577f66bbf9b6168c433583c328f1" prot="public" virt="non-virtual"><scope>ngl::Random</scope><name>getRandomPoint</name></member>
+      <member refid="classngl_1_1_random_1aa8f7b99ba1adcf3302ad6b500f37c57d" prot="public" virt="non-virtual"><scope>ngl::Random</scope><name>getRandomVec2</name></member>
+      <member refid="classngl_1_1_random_1a96649d8ece45b0662623e8b895531bd7" prot="public" virt="non-virtual"><scope>ngl::Random</scope><name>getRandomVec3</name></member>
+      <member refid="classngl_1_1_random_1a377a556cb66da919996c179aacb3543e" prot="public" virt="non-virtual"><scope>ngl::Random</scope><name>getRandomVec4</name></member>
+      <member refid="classngl_1_1_singleton_1ab5d43c93fdc09ecadc5f6ebfd9460396" prot="public" virt="non-virtual"><scope>ngl::Random</scope><name>instance</name></member>
+      <member refid="classngl_1_1_singleton_1a68355e8cd8b6a575b29e11e05584b75d" prot="protected" virt="non-virtual"><scope>ngl::Random</scope><name>killSingleton</name></member>
+      <member refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" prot="protected" virt="non-virtual"><scope>ngl::Random</scope><name>m_floatGenerators</name></member>
+      <member refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" prot="protected" virt="non-virtual"><scope>ngl::Random</scope><name>m_generator</name></member>
+      <member refid="classngl_1_1_singleton_1a9cc1ea7cc82996782d48c50877157543" prot="public" virt="non-virtual"><scope>ngl::Random</scope><name>operator=</name></member>
+      <member refid="classngl_1_1_random_1a0fdd411f92bc51194df7b7310a4a5ed7" prot="protected" virt="non-virtual"><scope>ngl::Random</scope><name>Random</name></member>
+      <member refid="classngl_1_1_random_1a1d38793296010431e10d5ac11fd0a396" prot="public" virt="non-virtual"><scope>ngl::Random</scope><name>randomNumber</name></member>
+      <member refid="classngl_1_1_random_1a10fd0b9d572d073cfa6ff7a4288e81a3" prot="public" virt="non-virtual"><scope>ngl::Random</scope><name>randomPositiveNumber</name></member>
+      <member refid="classngl_1_1_singleton_1a7fd779d31c1d8d44153ccbec0a181ac3" prot="protected" virt="non-virtual"><scope>ngl::Random</scope><name>s_instance</name></member>
+      <member refid="classngl_1_1_random_1aff5bd03f34f7880d58e13de99abfbd9f" prot="public" virt="non-virtual"><scope>ngl::Random</scope><name>setSeed</name></member>
+      <member refid="classngl_1_1_random_1a4a26b6e0a56d67a1ae485cb85e6a74ba" prot="public" virt="non-virtual"><scope>ngl::Random</scope><name>setSeed</name></member>
+      <member refid="classngl_1_1_singleton_1ad6341f60af3e395419484ba3108f73d8" prot="public" virt="non-virtual"><scope>ngl::Random</scope><name>Singleton</name></member>
+      <member refid="classngl_1_1_singleton_1ae55278fc5cc669ddb9da4f7e3d8ae7a8" prot="protected" virt="non-virtual"><scope>ngl::Random</scope><name>Singleton</name></member>
+      <member refid="classngl_1_1_random_1ad4ba9c502cc704e19f4c21eca8f8ab58" prot="private" virt="non-virtual"><scope>ngl::Random</scope><name>Singleton&lt; Random &gt;</name></member>
+      <member refid="classngl_1_1_random_1ab7e1a25dc5d4fb2a27a441ad09a7b64d" prot="private" virt="non-virtual"><scope>ngl::Random</scope><name>Vec4</name></member>
+      <member refid="classngl_1_1_singleton_1a4b66d1c7d1f91f12a5ac2a428a3ff1c0" prot="protected" virt="virtual"><scope>ngl::Random</scope><name>~Singleton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

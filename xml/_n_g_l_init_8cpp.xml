@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_n_g_l_init_8cpp" kind="file" language="C++">
+    <compoundname>NGLInit.cpp</compoundname>
+    <includes refid="_n_g_l_init_8h" local="yes">NGLInit.h</includes>
+    <includes refid="_shader_lib_8h" local="yes">ShaderLib.h</includes>
+    <includes refid="_v_a_o_primitives_8h" local="yes">VAOPrimitives.h</includes>
+    <includes refid="_v_a_o_factory_8h" local="yes">VAOFactory.h</includes>
+    <includes refid="_simple_v_a_o_8h" local="yes">SimpleVAO.h</includes>
+    <includes refid="_multi_buffer_v_a_o_8h" local="yes">MultiBufferVAO.h</includes>
+    <includes refid="_simple_index_v_a_o_8h" local="yes">SimpleIndexVAO.h</includes>
+    <incdepgraph>
+      <node id="5156">
+        <label>Mat4.h</label>
+        <link refid="_mat4_8h"/>
+        <childnode refid="5126" relation="include">
+        </childnode>
+        <childnode refid="5155" relation="include">
+        </childnode>
+        <childnode refid="5139" relation="include">
+        </childnode>
+      </node>
+      <node id="5149">
+        <label>ShaderProgram.h</label>
+        <link refid="_shader_program_8h"/>
+        <childnode refid="5147" relation="include">
+        </childnode>
+        <childnode refid="5126" relation="include">
+        </childnode>
+        <childnode refid="5150" relation="include">
+        </childnode>
+        <childnode refid="5141" relation="include">
+        </childnode>
+        <childnode refid="5143" relation="include">
+        </childnode>
+      </node>
+      <node id="5126">
+        <label>Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="5127" relation="include">
+        </childnode>
+        <childnode refid="5133" relation="include">
+        </childnode>
+        <childnode refid="5134" relation="include">
+        </childnode>
+        <childnode refid="5135" relation="include">
+        </childnode>
+      </node>
+      <node id="5158">
+        <label>functional</label>
+      </node>
+      <node id="5157">
+        <label>VAOFactory.h</label>
+        <link refid="_v_a_o_factory_8h"/>
+        <childnode refid="5126" relation="include">
+        </childnode>
+        <childnode refid="5140" relation="include">
+        </childnode>
+        <childnode refid="5143" relation="include">
+        </childnode>
+        <childnode refid="5142" relation="include">
+        </childnode>
+        <childnode refid="5158" relation="include">
+        </childnode>
+      </node>
+      <node id="5161">
+        <label>SimpleIndexVAO.h</label>
+        <link refid="_simple_index_v_a_o_8h"/>
+        <childnode refid="5140" relation="include">
+        </childnode>
+      </node>
+      <node id="5135">
+        <label>QGLContext</label>
+      </node>
+      <node id="5138">
+        <label>Vec3.h</label>
+        <link refid="_vec3_8h"/>
+        <childnode refid="5126" relation="include">
+        </childnode>
+        <childnode refid="5139" relation="include">
+        </childnode>
+      </node>
+      <node id="5137">
+        <label>VAOPrimitives.h</label>
+        <link refid="_v_a_o_primitives_8h"/>
+        <childnode refid="5125" relation="include">
+        </childnode>
+        <childnode refid="5126" relation="include">
+        </childnode>
+        <childnode refid="5138" relation="include">
+        </childnode>
+        <childnode refid="5140" relation="include">
+        </childnode>
+        <childnode refid="5141" relation="include">
+        </childnode>
+        <childnode refid="5142" relation="include">
+        </childnode>
+        <childnode refid="5143" relation="include">
+        </childnode>
+        <childnode refid="5144" relation="include">
+        </childnode>
+      </node>
+      <node id="5153">
+        <label>cmath</label>
+      </node>
+      <node id="5129">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="5130" relation="include">
+        </childnode>
+        <childnode refid="5131" relation="include">
+        </childnode>
+      </node>
+      <node id="5160">
+        <label>MultiBufferVAO.h</label>
+        <link refid="_multi_buffer_v_a_o_8h"/>
+        <childnode refid="5140" relation="include">
+        </childnode>
+        <childnode refid="5141" relation="include">
+        </childnode>
+      </node>
+      <node id="5142">
+        <label>string</label>
+      </node>
+      <node id="5124">
+        <label>NGLInit.h</label>
+        <link refid="_n_g_l_init_8h"/>
+        <childnode refid="5125" relation="include">
+        </childnode>
+        <childnode refid="5126" relation="include">
+        </childnode>
+        <childnode refid="5137" relation="include">
+        </childnode>
+      </node>
+      <node id="5128">
+        <label>stddef.h</label>
+      </node>
+      <node id="5127">
+        <label>glew.h</label>
+        <link refid="glew_8h"/>
+        <childnode refid="5128" relation="include">
+        </childnode>
+        <childnode refid="5129" relation="include">
+        </childnode>
+        <childnode refid="5132" relation="include">
+        </childnode>
+      </node>
+      <node id="5155">
+        <label>ostream</label>
+      </node>
+      <node id="5132">
+        <label>GL/glu.h</label>
+      </node>
+      <node id="5130">
+        <label>limits.h</label>
+      </node>
+      <node id="5151">
+        <label>Vec4.h</label>
+        <link refid="_vec4_8h"/>
+        <childnode refid="5126" relation="include">
+        </childnode>
+        <childnode refid="5152" relation="include">
+        </childnode>
+        <childnode refid="5138" relation="include">
+        </childnode>
+        <childnode refid="5139" relation="include">
+        </childnode>
+      </node>
+      <node id="5145">
+        <label>ShaderLib.h</label>
+        <link refid="_shader_lib_8h"/>
+        <childnode refid="5146" relation="include">
+        </childnode>
+        <childnode refid="5147" relation="include">
+        </childnode>
+        <childnode refid="5149" relation="include">
+        </childnode>
+        <childnode refid="5125" relation="include">
+        </childnode>
+        <childnode refid="5126" relation="include">
+        </childnode>
+        <childnode refid="5154" relation="include">
+        </childnode>
+        <childnode refid="5156" relation="include">
+        </childnode>
+        <childnode refid="5151" relation="include">
+        </childnode>
+        <childnode refid="5142" relation="include">
+        </childnode>
+        <childnode refid="5143" relation="include">
+        </childnode>
+      </node>
+      <node id="5140">
+        <label>AbstractVAO.h</label>
+        <link refid="_abstract_v_a_o_8h"/>
+        <childnode refid="5126" relation="include">
+        </childnode>
+      </node>
+      <node id="5123">
+        <label>NGLInit.cpp</label>
+        <link refid="NGLInit.cpp"/>
+        <childnode refid="5124" relation="include">
+        </childnode>
+        <childnode refid="5145" relation="include">
+        </childnode>
+        <childnode refid="5137" relation="include">
+        </childnode>
+        <childnode refid="5157" relation="include">
+        </childnode>
+        <childnode refid="5159" relation="include">
+        </childnode>
+        <childnode refid="5160" relation="include">
+        </childnode>
+        <childnode refid="5161" relation="include">
+        </childnode>
+      </node>
+      <node id="5131">
+        <label>wchar.h</label>
+      </node>
+      <node id="5147">
+        <label>Shader.h</label>
+        <link refid="_shader_8h"/>
+        <childnode refid="5126" relation="include">
+        </childnode>
+        <childnode refid="5148" relation="include">
+        </childnode>
+        <childnode refid="5136" relation="include">
+        </childnode>
+      </node>
+      <node id="5146">
+        <label>Colour.h</label>
+        <link refid="_colour_8h"/>
+        <childnode refid="5126" relation="include">
+        </childnode>
+      </node>
+      <node id="5141">
+        <label>vector</label>
+      </node>
+      <node id="5139">
+        <label>array</label>
+      </node>
+      <node id="5134">
+        <label>QtOpenGL/QGLContext</label>
+      </node>
+      <node id="5136">
+        <label>cstdlib</label>
+      </node>
+      <node id="5148">
+        <label>iostream</label>
+      </node>
+      <node id="5125">
+        <label>Singleton.h</label>
+        <link refid="_singleton_8h"/>
+        <childnode refid="5126" relation="include">
+        </childnode>
+        <childnode refid="5136" relation="include">
+        </childnode>
+      </node>
+      <node id="5154">
+        <label>Mat3.h</label>
+        <link refid="_mat3_8h"/>
+        <childnode refid="5126" relation="include">
+        </childnode>
+        <childnode refid="5139" relation="include">
+        </childnode>
+        <childnode refid="5155" relation="include">
+        </childnode>
+      </node>
+      <node id="5143">
+        <label>unordered_map</label>
+      </node>
+      <node id="5159">
+        <label>SimpleVAO.h</label>
+        <link refid="_simple_v_a_o_8h"/>
+        <childnode refid="5140" relation="include">
+        </childnode>
+      </node>
+      <node id="5150">
+        <label>Util.h</label>
+        <link refid="_util_8h"/>
+        <childnode refid="5126" relation="include">
+        </childnode>
+        <childnode refid="5151" relation="include">
+        </childnode>
+        <childnode refid="5153" relation="include">
+        </childnode>
+        <childnode refid="5142" relation="include">
+        </childnode>
+      </node>
+      <node id="5133">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="5152">
+        <label>Vec2.h</label>
+        <link refid="_vec2_8h"/>
+        <childnode refid="5126" relation="include">
+        </childnode>
+        <childnode refid="5139" relation="include">
+        </childnode>
+      </node>
+      <node id="5144">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacengl">ngl</innernamespace>
+    <briefdescription>
+<para>implementation files for NGLInit class </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Copyright<sp/>(C)<sp/>2009<sp/>Jon<sp/>Macey</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_n_g_l_init_8h" kindref="compound">NGLInit.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_shader_lib_8h" kindref="compound">ShaderLib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_v_a_o_primitives_8h" kindref="compound">VAOPrimitives.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_v_a_o_factory_8h" kindref="compound">VAOFactory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_simple_v_a_o_8h" kindref="compound">SimpleVAO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_multi_buffer_v_a_o_8h" kindref="compound">MultiBufferVAO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_simple_index_v_a_o_8h" kindref="compound">SimpleIndexVAO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LINUX)<sp/>||<sp/>defined(WIN32)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacengl" kindref="compound">ngl</ref></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classngl_1_1_n_g_l_init_1a47fb467f1972831171973dc2b5098342" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_n_g_l_init_1a47fb467f1972831171973dc2b5098342" kindref="member">NGLInit::NGLInit</ref>()</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>USINGIOS_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>this<sp/>first<sp/>so<sp/>that<sp/>new<sp/>driver<sp/>features<sp/>are<sp/>included.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1adaa3a59b9332d7cb361d0c07e6789160" kindref="member">glewExperimental</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>init<sp/>glew</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>err<sp/>=<sp/><ref refid="glew_8h_1af39d420d8826819cb0108c6f1be0dc1b" kindref="member">glewInit</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>error<sp/>check</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="glew_8h_1a411ef2829ad14972de3e9c74b158cf33" kindref="member">GLEW_OK</ref><sp/>!=<sp/>err)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;Error:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="glew_8h_1a3ba21bf3bf28ab16daced9b88704163e" kindref="member">glewGetErrorString</ref>(err)&lt;&lt;</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>see<sp/>if<sp/>NGL<sp/>can<sp/>run<sp/>in<sp/>this<sp/>environment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Using<sp/>GLEW<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="glew_8h_1aa4a314bfcf2a94acb9b59dde42dc6473" kindref="member">glewGetString</ref>(<ref refid="glew_8h_1a1cc86591f43892d7056e6b07cac49c4d" kindref="member">GLEW_VERSION</ref>)&lt;&lt;</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="glew_8h_1ae27c08a6023d21d076006ecb3ad955a7" kindref="member">glewIsSupported</ref>(</highlight><highlight class="stringliteral">&quot;GL_VERSION_3_2&quot;</highlight><highlight class="normal">)<sp/>)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;To<sp/>run<sp/>these<sp/>demos<sp/>you<sp/>need<sp/>a<sp/>modern<sp/>OpenGL<sp/>Version\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;The<sp/>lowest<sp/>level<sp/>OpenGL<sp/>we<sp/>support<sp/>is<sp/>3.2\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;It<sp/>could<sp/>be<sp/>you<sp/>don&apos;t<sp/>have<sp/>the<sp/>correct<sp/>drivers<sp/>installed\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;Or<sp/>if<sp/>linux<sp/>on<sp/>a<sp/>laptop<sp/>it<sp/>could<sp/>be<sp/>using<sp/>the<sp/>intel<sp/>driver<sp/>and<sp/>not<sp/>the<sp/>GPU\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;for<sp/>more<sp/>info<sp/>contact<sp/>Jon\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>majorVersion,minorVersion;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1ae9ebc290561b3321b629610807155a35" kindref="member">glGetIntegerv</ref>(<ref refid="glew_8h_1a2b2319323c7cfb4ed795be005209d73d" kindref="member">GL_MAJOR_VERSION</ref>,<sp/>&amp;majorVersion);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1ae9ebc290561b3321b629610807155a35" kindref="member">glGetIntegerv</ref>(<ref refid="glew_8h_1ad45fb154a63b2b32a07732388e8251ad" kindref="member">GL_MINOR_VERSION</ref>,<sp/>&amp;minorVersion);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>NGL_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;ngl::<sp/>configured<sp/>with<sp/>GL<sp/>version<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;majorVersion&lt;&lt;</highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">&lt;&lt;minorVersion&lt;&lt;</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_v_a_o_factory_1a6759583fae984611463674ed82272161" kindref="member">VAOFactory::registerVAOCreator</ref>(</highlight><highlight class="stringliteral">&quot;simpleVAO&quot;</highlight><highlight class="normal">,<ref refid="classngl_1_1_simple_v_a_o_1a141d878b6a5eb1cbb2d609142017f7c0" kindref="member">SimpleVAO::create</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_v_a_o_factory_1a6759583fae984611463674ed82272161" kindref="member">VAOFactory::registerVAOCreator</ref>(</highlight><highlight class="stringliteral">&quot;multiBufferVAO&quot;</highlight><highlight class="normal">,<ref refid="classngl_1_1_multi_buffer_v_a_o_1ac0b584778c203e8ac9728ffb7776d258" kindref="member">MultiBufferVAO::create</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_v_a_o_factory_1a6759583fae984611463674ed82272161" kindref="member">VAOFactory::registerVAOCreator</ref>(</highlight><highlight class="stringliteral">&quot;simpleIndexVAO&quot;</highlight><highlight class="normal">,<ref refid="classngl_1_1_simple_index_v_a_o_1a247a9caad6a5cb9ce5725218633d6bc2" kindref="member">SimpleIndexVAO::create</ref>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="classngl_1_1_n_g_l_init_1a7c7c573c28b36b8dd3e55f8a0304644e" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_n_g_l_init_1a7c7c573c28b36b8dd3e55f8a0304644e" kindref="member">NGLInit::~NGLInit</ref>()</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>ngl<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/src/NGLInit.cpp"/>
+  </compounddef>
+</doxygen>

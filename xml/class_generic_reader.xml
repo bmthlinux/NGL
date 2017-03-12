@@ -1,0 +1,1272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_generic_reader" kind="class" language="C++" prot="public">
+    <compoundname>GenericReader</compoundname>
+    <includes refid="reader_8h" local="no">reader.h</includes>
+    <innerclass refid="struct_generic_reader_1_1_clear_stack_on_exit" prot="private">GenericReader::ClearStackOnExit</innerclass>
+    <innerclass refid="class_generic_reader_1_1_number_stream" prot="private">GenericReader::NumberStream</innerclass>
+    <innerclass refid="class_generic_reader_1_1_number_stream_3_01_input_stream_00_01false_01_4" prot="private">GenericReader::NumberStream&lt; InputStream, false &gt;</innerclass>
+    <innerclass refid="class_generic_reader_1_1_number_stream_3_01_input_stream_00_01true_01_4" prot="private">GenericReader::NumberStream&lt; InputStream, true &gt;</innerclass>
+    <innerclass refid="class_generic_reader_1_1_stack_stream" prot="private">GenericReader::StackStream</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>SourceEncoding</declname>
+        <defname>SourceEncoding</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>TargetEncoding</declname>
+        <defname>TargetEncoding</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>StackAllocator</declname>
+        <defname>StackAllocator</defname>
+        <defval><ref refid="class_crt_allocator" kindref="compound">CrtAllocator</ref></defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277e" prot="private" static="no">
+        <name>IterativeParsingState</name>
+        <enumvalue id="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277eaf17685095fd55d935b9e6b9cf6a54159" prot="private">
+          <name>IterativeParsingStartState</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277ea57e40efdbe78a825a306003f45be0166" prot="private">
+          <name>IterativeParsingFinishState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277ea326dd1efe3866f0d57c5f52a270ba8e1" prot="private">
+          <name>IterativeParsingErrorState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277eaaf54ec0c42830e9b42a9bc2a5bbb71de" prot="private">
+          <name>IterativeParsingObjectInitialState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277ea9c1d0b88cbc53c04790d9086c4068e13" prot="private">
+          <name>IterativeParsingMemberKeyState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277ea04d80601d75bcebcc7c98ad6a4f402cb" prot="private">
+          <name>IterativeParsingKeyValueDelimiterState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277ead323d1265edcac75c48038cf73e4d035" prot="private">
+          <name>IterativeParsingMemberValueState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277ea9a246402fe6a9307095cd412a9328f8c" prot="private">
+          <name>IterativeParsingMemberDelimiterState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277ea210d982844ae622f74731acb0e1c37e3" prot="private">
+          <name>IterativeParsingObjectFinishState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277eaef925723e66b3c1de7e98203774607fd" prot="private">
+          <name>IterativeParsingArrayInitialState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277eaf71361a62b9a27ce47ba680502b54138" prot="private">
+          <name>IterativeParsingElementState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277ea8b27efdb1104733da9625e0e397442cd" prot="private">
+          <name>IterativeParsingElementDelimiterState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277eab25951e89a18765eee6cf80dae400aa4" prot="private">
+          <name>IterativeParsingArrayFinishState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277eaee2be3de24a8fe605a56a1ac8495b15e" prot="private">
+          <name>IterativeParsingValueState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277eac7a053fab876f4447b5c034b9e25bf38" prot="private">
+          <name>cIterativeParsingStateCount</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="1002" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="1002" bodyend="1025"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8" prot="private" static="no">
+        <name>Token</name>
+        <enumvalue id="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8a6b35a147e77cd0bad1eb975e29c2853a" prot="private">
+          <name>LeftBracketToken</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8aa37f043d8a3851436653046e36d72f4f" prot="private">
+          <name>RightBracketToken</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8abb24015be27f1c42d12cdf7baf1fa59c" prot="private">
+          <name>LeftCurlyBracketToken</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8a7eb49c93ed5c98df68c843731292984f" prot="private">
+          <name>RightCurlyBracketToken</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8ae8c27b8a8b2e8cd6745e46aab269bbf1" prot="private">
+          <name>CommaToken</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8a7ae2cccd94aa5c6f02de28c344d99cab" prot="private">
+          <name>ColonToken</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8a9743581f6cf4c657ad6bec344f31f44b" prot="private">
+          <name>StringToken</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8a017affbd2f29580b93d732733eb455da" prot="private">
+          <name>FalseToken</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8a0cd697f774a54815817a1c3b4bde88eb" prot="private">
+          <name>TrueToken</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8abdd797a9fe4ace1702d2fe3561577e3a" prot="private">
+          <name>NullToken</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8ace41a2b9df4435cf9a1610e1707bd850" prot="private">
+          <name>NumberToken</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8a93abbfd4654e7b17d9557bbc7621be45" prot="private">
+          <name>kTokenCount</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="1028" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="1028" bodyend="1045"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_generic_reader_1ab39a92bb26d50aee6469df604622218a" prot="public" static="no">
+        <type>SourceEncoding::Ch</type>
+        <definition>typedef SourceEncoding::Ch GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::Ch</definition>
+        <argsstring></argsstring>
+        <name>Ch</name>
+        <briefdescription>
+<para>SourceEncoding character type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="376" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_generic_reader_1ac507ea8672bf2b5d01b35583c0597f15" prot="private" static="yes" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::kDefaultStackCapacity</definition>
+        <argsstring></argsstring>
+        <name>kDefaultStackCapacity</name>
+        <initializer>= 256</initializer>
+        <briefdescription>
+<para>Default stack capacity in bytes for storing a single decoded string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="1434" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="1434" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_generic_reader_1a7c04f4aa27561d358376920d06b78cdb" prot="private" static="no" mutable="no">
+        <type><ref refid="classinternal_1_1_stack" kindref="compound">internal::Stack</ref>&lt; StackAllocator &gt;</type>
+        <definition>internal::Stack&lt;StackAllocator&gt; GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::stack_</definition>
+        <argsstring></argsstring>
+        <name>stack_</name>
+        <briefdescription>
+<para>A stack for storing decoded string temporarily during non-destructive parsing. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="1435" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="1435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_generic_reader_1a156018c2805bfa730287314ee9d9257d" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_parse_result" kindref="compound">ParseResult</ref></type>
+        <definition>ParseResult GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::parseResult_</definition>
+        <argsstring></argsstring>
+        <name>parseResult_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="1436" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="1436" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_generic_reader_1aab875a34b3092df9fb4e2b8eac6dbb96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::GenericReader</definition>
+        <argsstring>(StackAllocator *stackAllocator=0, size_t stackCapacity=kDefaultStackCapacity)</argsstring>
+        <name>GenericReader</name>
+        <param>
+          <type>StackAllocator *</type>
+          <declname>stackAllocator</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>stackCapacity</declname>
+          <defval><ref refid="class_generic_reader_1ac507ea8672bf2b5d01b35583c0597f15" kindref="member">kDefaultStackCapacity</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stackAllocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional allocator for allocating stack memory. (Only use for non-destructive parsing) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stackCapacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stack capacity in bytes for storing a single decoded string. (Only use for non-destructive parsing) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="382" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="382" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1a0c450620d14ff1824e58bb7bd9b42099" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>parseFlags</declname>
+            <defname>parseFlags</defname>
+          </param>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename Handler</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_parse_result" kindref="compound">ParseResult</ref></type>
+        <definition>ParseResult GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::Parse</definition>
+        <argsstring>(InputStream &amp;is, Handler &amp;handler)</argsstring>
+        <name>Parse</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>Handler &amp;</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Parse JSON text. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>parseFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Combination of <ref refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450" kindref="member">ParseFlag</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InputStream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of input stream, implementing Stream concept. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of handler, implementing Handler concept. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input stream to be parsed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler to receive events. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the parsing is successful. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="393" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="393" bodyend="422"/>
+        <references refid="struct_parse_result_1a88b6d44f052a19e6436ae6aadc2c40b4" compoundref="error_8h" startline="123" endline="123">ParseResult::Clear</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a04b368d184e84b50580be2faa55f738a" compoundref="error_8h" startline="62">kParseErrorDocumentEmpty</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a2293b39033220f4c2a568482c497dab5" compoundref="error_8h" startline="63">kParseErrorDocumentRootNotSingular</references>
+        <references refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450aadb14f5a3b6b33e28055e913a2eae5e9" compoundref="reader_8h" startline="140">kParseIterativeFlag</references>
+        <references refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450af77d115d3bbed0a448b6b335f3b93b36" compoundref="reader_8h" startline="141">kParseStopWhenDoneFlag</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga7f8c4265b2edda78568ae3338aaf1461" compoundref="reader_8h" startline="90">RAPIDJSON_PARSE_ERROR_NORETURN</references>
+        <references refid="reader_8h_1a60338858b2582eca23f3e509a2d82e0e" compoundref="reader_8h" startline="247" endline="253">SkipWhitespace</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1a76d91e5fd8dfe48aea7dd6d8a51dd6dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename Handler</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_parse_result" kindref="compound">ParseResult</ref></type>
+        <definition>ParseResult GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::Parse</definition>
+        <argsstring>(InputStream &amp;is, Handler &amp;handler)</argsstring>
+        <name>Parse</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>Handler &amp;</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Parse JSON text (with <ref refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450a9104b0946d648e9467cb7a967401ec80" kindref="member">kParseDefaultFlags</ref>) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>InputStream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of input stream, implementing Stream concept </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of handler, implementing Handler concept. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input stream to be parsed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler to receive events. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the parsing is successful. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="432" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="432" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1aa9d10652062557ebf26cf414bfeabf84" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::HasParseError</definition>
+        <argsstring>() const </argsstring>
+        <name>HasParseError</name>
+        <briefdescription>
+<para>Whether a parse error has occured in the last parsing. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="437" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="437" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1ac45a26246877c4daa85021ae67caa017" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref></type>
+        <definition>ParseErrorCode GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::GetParseErrorCode</definition>
+        <argsstring>() const </argsstring>
+        <name>GetParseErrorCode</name>
+        <briefdescription>
+<para>Get the <ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref> of last parsing. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="440" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="440" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1a77399ac40cca1fb113a2d507f476b4e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::GetErrorOffset</definition>
+        <argsstring>() const </argsstring>
+        <name>GetErrorOffset</name>
+        <briefdescription>
+<para>Get the position of last parsing error in input, 0 otherwise. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="443" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="443" bodyend="443"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_generic_reader_1ae50079444295bf109730c3b708a818a6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::SetParseError</definition>
+        <argsstring>(ParseErrorCode code, size_t offset)</argsstring>
+        <name>SetParseError</name>
+        <param>
+          <type><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref></type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="446" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="446" bodyend="446"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_generic_reader_1ac767384e34b7078fa9f97ba57c884328" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::GenericReader</definition>
+        <argsstring>(const GenericReader &amp;)</argsstring>
+        <name>GenericReader</name>
+        <param>
+          <type>const <ref refid="class_generic_reader" kindref="compound">GenericReader</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="450" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1ab07a979626cfa121365bb09b61558c11" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_generic_reader" kindref="compound">GenericReader</ref> &amp;</type>
+        <definition>GenericReader&amp; GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::operator=</definition>
+        <argsstring>(const GenericReader &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_generic_reader" kindref="compound">GenericReader</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="451" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1a1c3db4c395db98714ffb257d559fb28e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::ClearStack</definition>
+        <argsstring>()</argsstring>
+        <name>ClearStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="453" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="453" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1af7943451d58ae465e9803d5a78beeb90" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>parseFlags</declname>
+            <defname>parseFlags</defname>
+          </param>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename Handler</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::ParseObject</definition>
+        <argsstring>(InputStream &amp;is, Handler &amp;handler)</argsstring>
+        <name>ParseObject</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>Handler &amp;</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="467" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="467" bodyend="513"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a55cda7eb30436986ab42a61e06caf017" compoundref="error_8h" startline="68">kParseErrorObjectMissColon</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a34f70d7ed2fa121954f5fc5b5113d05f" compoundref="error_8h" startline="69">kParseErrorObjectMissCommaOrCurlyBracket</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ae3142fbadf2c4cdfd0c7200d7b6b8ed3" compoundref="error_8h" startline="67">kParseErrorObjectMissName</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a6fed2d9a15f88540a1ba785f0de2cbe6" compoundref="error_8h" startline="83">kParseErrorTermination</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gae3689840fa6e89a241313f33b602f865" compoundref="reader_8h" startline="109">RAPIDJSON_PARSE_ERROR</references>
+        <references refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" compoundref="rapidjson_8h" startline="322">SizeType</references>
+        <references refid="reader_8h_1a60338858b2582eca23f3e509a2d82e0e" compoundref="reader_8h" startline="247" endline="253">SkipWhitespace</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1a8f226bb3c17b232ce142594b7620c8a4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>parseFlags</declname>
+            <defname>parseFlags</defname>
+          </param>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename Handler</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::ParseArray</definition>
+        <argsstring>(InputStream &amp;is, Handler &amp;handler)</argsstring>
+        <name>ParseArray</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>Handler &amp;</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="517" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="517" bodyend="549"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7abfdd2bd90134fec4fe6a22762d16a5f5" compoundref="error_8h" startline="71">kParseErrorArrayMissCommaOrSquareBracket</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a6fed2d9a15f88540a1ba785f0de2cbe6" compoundref="error_8h" startline="83">kParseErrorTermination</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gae3689840fa6e89a241313f33b602f865" compoundref="reader_8h" startline="109">RAPIDJSON_PARSE_ERROR</references>
+        <references refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" compoundref="rapidjson_8h" startline="322">SizeType</references>
+        <references refid="reader_8h_1a60338858b2582eca23f3e509a2d82e0e" compoundref="reader_8h" startline="247" endline="253">SkipWhitespace</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1ae624956124c98a85d23decd86a406a0b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>parseFlags</declname>
+            <defname>parseFlags</defname>
+          </param>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename Handler</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::ParseNull</definition>
+        <argsstring>(InputStream &amp;is, Handler &amp;handler)</argsstring>
+        <name>ParseNull</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>Handler &amp;</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="552" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="552" bodyend="562"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a6fed2d9a15f88540a1ba785f0de2cbe6" compoundref="error_8h" startline="83">kParseErrorTermination</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a20a50e257aab726699ab02192db72ba9" compoundref="error_8h" startline="65">kParseErrorValueInvalid</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gae3689840fa6e89a241313f33b602f865" compoundref="reader_8h" startline="109">RAPIDJSON_PARSE_ERROR</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1a762f074e0f99c71f0a82cff19bb763cd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>parseFlags</declname>
+            <defname>parseFlags</defname>
+          </param>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename Handler</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::ParseTrue</definition>
+        <argsstring>(InputStream &amp;is, Handler &amp;handler)</argsstring>
+        <name>ParseTrue</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>Handler &amp;</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="565" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="565" bodyend="575"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a6fed2d9a15f88540a1ba785f0de2cbe6" compoundref="error_8h" startline="83">kParseErrorTermination</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a20a50e257aab726699ab02192db72ba9" compoundref="error_8h" startline="65">kParseErrorValueInvalid</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gae3689840fa6e89a241313f33b602f865" compoundref="reader_8h" startline="109">RAPIDJSON_PARSE_ERROR</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1af3af2d4e8efa1b8ef2f0bb281d8f0540" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>parseFlags</declname>
+            <defname>parseFlags</defname>
+          </param>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename Handler</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::ParseFalse</definition>
+        <argsstring>(InputStream &amp;is, Handler &amp;handler)</argsstring>
+        <name>ParseFalse</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>Handler &amp;</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="578" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="578" bodyend="588"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a6fed2d9a15f88540a1ba785f0de2cbe6" compoundref="error_8h" startline="83">kParseErrorTermination</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a20a50e257aab726699ab02192db72ba9" compoundref="error_8h" startline="65">kParseErrorValueInvalid</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gae3689840fa6e89a241313f33b602f865" compoundref="reader_8h" startline="109">RAPIDJSON_PARSE_ERROR</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1a72ded3654cef16bba1b9574b5e3611c8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+        </templateparamlist>
+        <type>unsigned</type>
+        <definition>unsigned GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::ParseHex4</definition>
+        <argsstring>(InputStream &amp;is)</argsstring>
+        <name>ParseHex4</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="592" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="592" bodyend="610"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7afc65ea941a0a26812f0f258d2429e5d2" compoundref="error_8h" startline="73">kParseErrorStringUnicodeEscapeInvalidHex</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga7f8c4265b2edda78568ae3338aaf1461" compoundref="reader_8h" startline="90">RAPIDJSON_PARSE_ERROR_NORETURN</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1ab4d4f63b23b55a72069e2e13eb010cff" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>parseFlags</declname>
+            <defname>parseFlags</defname>
+          </param>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename Handler</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::ParseString</definition>
+        <argsstring>(InputStream &amp;is, Handler &amp;handler, bool isKey=false)</argsstring>
+        <name>ParseString</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>Handler &amp;</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isKey</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="637" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="637" bodyend="661"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a6fed2d9a15f88540a1ba785f0de2cbe6" compoundref="error_8h" startline="83">kParseErrorTermination</references>
+        <references refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450a13188bd483b4df0b6582bebe2aeb5b01" compoundref="reader_8h" startline="138">kParseInsituFlag</references>
+        <references refid="class_generic_reader_1_1_stack_stream_1abe63b4ec2320b9eb83013d29e731bf20" compoundref="reader_8h" startline="622" endline="622">GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::StackStream&lt; CharType &gt;::Length</references>
+        <references refid="class_generic_reader_1_1_stack_stream_1a4c654610639025799a533b188cdfeb62" compoundref="reader_8h" startline="623" endline="625">GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::StackStream&lt; CharType &gt;::Pop</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gae3689840fa6e89a241313f33b602f865" compoundref="reader_8h" startline="109">RAPIDJSON_PARSE_ERROR</references>
+        <references refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" compoundref="rapidjson_8h" startline="322">SizeType</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1a8fa22aded7085b3fe5f9d59467318f8a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>parseFlags</declname>
+            <defname>parseFlags</defname>
+          </param>
+          <param>
+            <type>typename SEncoding</type>
+          </param>
+          <param>
+            <type>typename TEncoding</type>
+          </param>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename OutputStream</type>
+          </param>
+        </templateparamlist>
+        <type>RAPIDJSON_FORCEINLINE <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>RAPIDJSON_FORCEINLINE void GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::ParseStringToStream</definition>
+        <argsstring>(InputStream &amp;is, OutputStream &amp;os)</argsstring>
+        <name>ParseStringToStream</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>OutputStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="666" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="666" bodyend="724"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a98bb3f3b1e12fdb7f278b9fa4029306f" compoundref="error_8h" startline="75">kParseErrorStringEscapeInvalid</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a17ecb2ed1524b513d64a93f4a7a8b456" compoundref="error_8h" startline="77">kParseErrorStringInvalidEncoding</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a6369e5b4e4922720cbc45c5941efc4af" compoundref="error_8h" startline="76">kParseErrorStringMissQuotationMark</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ad9fced6763a06435ca448626c74e5c72" compoundref="error_8h" startline="74">kParseErrorStringUnicodeSurrogateInvalid</references>
+        <references refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450a9b3baa16346575d2dc072b23a88e1928" compoundref="reader_8h" startline="139">kParseValidateEncodingFlag</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gae3689840fa6e89a241313f33b602f865" compoundref="reader_8h" startline="109">RAPIDJSON_PARSE_ERROR</references>
+        <references refid="struct_transcoder_1a0ea2edfe35784ebf1063921d2bd5fb66" compoundref="encodings_8h" startline="589" endline="595">Transcoder&lt; SourceEncoding, TargetEncoding &gt;::Transcode</references>
+        <references refid="writer_8h_1ae2c492a0a464591893d4255ea26d5e3a">Z16</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1a2447207fde31185e2bb8fbf1250b72e0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>parseFlags</declname>
+            <defname>parseFlags</defname>
+          </param>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename Handler</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::ParseNumber</definition>
+        <argsstring>(InputStream &amp;is, Handler &amp;handler)</argsstring>
+        <name>ParseNumber</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>Handler &amp;</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="772" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="772" bodyend="983"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a82cdbd740e22b819a70d05e585c2a442" compoundref="error_8h" startline="81">kParseErrorNumberMissExponent</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a08a2cc2b4cacfba1673ed536eee229ce" compoundref="error_8h" startline="80">kParseErrorNumberMissFraction</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ae52aaa70fde46e4cc422420309700b82" compoundref="error_8h" startline="79">kParseErrorNumberTooBig</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a6fed2d9a15f88540a1ba785f0de2cbe6" compoundref="error_8h" startline="83">kParseErrorTermination</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a20a50e257aab726699ab02192db72ba9" compoundref="error_8h" startline="65">kParseErrorValueInvalid</references>
+        <references refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450a057fbeacafb16bb7d24c9998262cae46" compoundref="reader_8h" startline="142">kParseFullPrecisionFlag</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gae3689840fa6e89a241313f33b602f865" compoundref="reader_8h" startline="109">RAPIDJSON_PARSE_ERROR</references>
+        <references refid="rapidjson_8h_1aaee1245f375a71be1ac9b8a07ba5fb8f" compoundref="rapidjson_8h" startline="261">RAPIDJSON_UINT64_C2</references>
+        <references refid="namespaceinternal_1a899ff5a0c5f9b203d720bb6f5631ed10" compoundref="strtod_8h" startline="225" endline="265">internal::StrtodFullPrecision</references>
+        <references refid="namespaceinternal_1a9e5fac4695310f09892fe52b1d24ab19" compoundref="strtod_8h" startline="36" endline="45">internal::StrtodNormalPrecision</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1a8c0d07512c0fa447f45c9e5b00dd2d70" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>parseFlags</declname>
+            <defname>parseFlags</defname>
+          </param>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename Handler</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::ParseValue</definition>
+        <argsstring>(InputStream &amp;is, Handler &amp;handler)</argsstring>
+        <name>ParseValue</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>Handler &amp;</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="987" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="987" bodyend="997"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1a9b3547ce0d99a8e53177c3d193e3d462" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>RAPIDJSON_FORCEINLINE <ref refid="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8" kindref="member">Token</ref></type>
+        <definition>RAPIDJSON_FORCEINLINE Token GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::Tokenize</definition>
+        <argsstring>(Ch c)</argsstring>
+        <name>Tokenize</name>
+        <param>
+          <type><ref refid="class_generic_reader_1ab39a92bb26d50aee6469df604622218a" kindref="member">Ch</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="1047" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="1047" bodyend="1072"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1ae20c2989d379782f3bbf81561a67ebcd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>RAPIDJSON_FORCEINLINE <ref refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277e" kindref="member">IterativeParsingState</ref></type>
+        <definition>RAPIDJSON_FORCEINLINE IterativeParsingState GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::Predict</definition>
+        <argsstring>(IterativeParsingState state, Token token)</argsstring>
+        <name>Predict</name>
+        <param>
+          <type><ref refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277e" kindref="member">IterativeParsingState</ref></type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type><ref refid="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8" kindref="member">Token</ref></type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="1074" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="1074" bodyend="1236"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1a09637865e7aea8e50fb8f9fc25dd65ad" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>parseFlags</declname>
+            <defname>parseFlags</defname>
+          </param>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename Handler</type>
+          </param>
+        </templateparamlist>
+        <type>RAPIDJSON_FORCEINLINE <ref refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277e" kindref="member">IterativeParsingState</ref></type>
+        <definition>RAPIDJSON_FORCEINLINE IterativeParsingState GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::Transit</definition>
+        <argsstring>(IterativeParsingState src, Token token, IterativeParsingState dst, InputStream &amp;is, Handler &amp;handler)</argsstring>
+        <name>Transit</name>
+        <param>
+          <type><ref refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277e" kindref="member">IterativeParsingState</ref></type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type><ref refid="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8" kindref="member">Token</ref></type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type><ref refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277e" kindref="member">IterativeParsingState</ref></type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>Handler &amp;</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="1241" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="1241" bodyend="1380"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a6fed2d9a15f88540a1ba785f0de2cbe6" compoundref="error_8h" startline="83">kParseErrorTermination</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga7f8c4265b2edda78568ae3338aaf1461" compoundref="reader_8h" startline="90">RAPIDJSON_PARSE_ERROR_NORETURN</references>
+        <references refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" compoundref="rapidjson_8h" startline="322">SizeType</references>
+        <references refid="glew_8h_1a1659df18b3b413a60a397d5a7540f3d2">void</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1a46660019ff1ed42bc192d9b5f9119b0f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::HandleError</definition>
+        <argsstring>(IterativeParsingState src, InputStream &amp;is)</argsstring>
+        <name>HandleError</name>
+        <param>
+          <type><ref refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277e" kindref="member">IterativeParsingState</ref></type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="1383" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="1383" bodyend="1399"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7abfdd2bd90134fec4fe6a22762d16a5f5" compoundref="error_8h" startline="71">kParseErrorArrayMissCommaOrSquareBracket</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a04b368d184e84b50580be2faa55f738a" compoundref="error_8h" startline="62">kParseErrorDocumentEmpty</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a2293b39033220f4c2a568482c497dab5" compoundref="error_8h" startline="63">kParseErrorDocumentRootNotSingular</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a55cda7eb30436986ab42a61e06caf017" compoundref="error_8h" startline="68">kParseErrorObjectMissColon</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a34f70d7ed2fa121954f5fc5b5113d05f" compoundref="error_8h" startline="69">kParseErrorObjectMissCommaOrCurlyBracket</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ae3142fbadf2c4cdfd0c7200d7b6b8ed3" compoundref="error_8h" startline="67">kParseErrorObjectMissName</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a2bec6b26bddd3e093a37fc0d6399e0be" compoundref="error_8h" startline="84">kParseErrorUnspecificSyntaxError</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gae3689840fa6e89a241313f33b602f865" compoundref="reader_8h" startline="109">RAPIDJSON_PARSE_ERROR</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_reader_1a55a2d3fd3d5261f26513ed303724bc3a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>parseFlags</declname>
+            <defname>parseFlags</defname>
+          </param>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename Handler</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_parse_result" kindref="compound">ParseResult</ref></type>
+        <definition>ParseResult GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::IterativeParse</definition>
+        <argsstring>(InputStream &amp;is, Handler &amp;handler)</argsstring>
+        <name>IterativeParse</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>Handler &amp;</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="1402" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="1402" bodyend="1432"/>
+        <references refid="struct_parse_result_1a88b6d44f052a19e6436ae6aadc2c40b4" compoundref="error_8h" startline="123" endline="123">ParseResult::Clear</references>
+        <references refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450af77d115d3bbed0a448b6b335f3b93b36" compoundref="reader_8h" startline="141">kParseStopWhenDoneFlag</references>
+        <references refid="reader_8h_1a60338858b2582eca23f3e509a2d82e0e" compoundref="reader_8h" startline="247" endline="253">SkipWhitespace</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SAX-style JSON parser. Use <ref refid="reader_8h_1a84f3b66a66647f4ac4267078359188ba" kindref="member">Reader</ref> for <ref refid="struct_u_t_f8" kindref="compound">UTF8</ref> encoding and default allocator. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_generic_reader" kindref="compound">GenericReader</ref> parses JSON text from a stream, and send events synchronously to an object implementing Handler concept.</para><para>It needs to allocate a stack for storing a single decoded string during non-destructive parsing.</para><para>For in-situ parsing, the decoded string is directly written to the source text string, no temporary buffer is required.</para><para>A <ref refid="class_generic_reader" kindref="compound">GenericReader</ref> object can be reused for parsing multiple JSON text.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>SourceEncoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Encoding of the input stream. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TargetEncoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Encoding of the parse output. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StackAllocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Allocator type for stack. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1558">
+        <label>size_t</label>
+      </node>
+      <node id="1557">
+        <label>ParseResult</label>
+        <link refid="struct_parse_result"/>
+        <childnode refid="1558" relation="usage">
+          <edgelabel>-offset_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1556">
+        <label>GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;</label>
+        <link refid="class_generic_reader"/>
+        <childnode refid="1557" relation="usage">
+          <edgelabel>-parseResult_</edgelabel>
+        </childnode>
+        <childnode refid="1559" relation="usage">
+          <edgelabel>-stack_</edgelabel>
+        </childnode>
+        <childnode refid="1558" relation="usage">
+          <edgelabel>-kDefaultStackCapacity</edgelabel>
+        </childnode>
+      </node>
+      <node id="1560">
+        <label>internal::Stack&lt; Allocator &gt;</label>
+        <link refid="classinternal_1_1_stack"/>
+        <childnode refid="1558" relation="usage">
+          <edgelabel>-initialCapacity_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1559">
+        <label>internal::Stack&lt; StackAllocator &gt;</label>
+        <link refid="classinternal_1_1_stack"/>
+        <childnode refid="1558" relation="usage">
+          <edgelabel>-initialCapacity_</edgelabel>
+        </childnode>
+        <childnode refid="1560" relation="template-instance">
+          <edgelabel>&lt; StackAllocator &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" line="374" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/reader.h" bodystart="374" bodyend="1437"/>
+    <listofallmembers>
+      <member refid="class_generic_reader_1ab39a92bb26d50aee6469df604622218a" prot="public" virt="non-virtual"><scope>GenericReader</scope><name>Ch</name></member>
+      <member refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277eac7a053fab876f4447b5c034b9e25bf38" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>cIterativeParsingStateCount</name></member>
+      <member refid="class_generic_reader_1a1c3db4c395db98714ffb257d559fb28e" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>ClearStack</name></member>
+      <member refid="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8a7ae2cccd94aa5c6f02de28c344d99cab" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>ColonToken</name></member>
+      <member refid="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8ae8c27b8a8b2e8cd6745e46aab269bbf1" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>CommaToken</name></member>
+      <member refid="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8a017affbd2f29580b93d732733eb455da" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>FalseToken</name></member>
+      <member refid="class_generic_reader_1aab875a34b3092df9fb4e2b8eac6dbb96" prot="public" virt="non-virtual"><scope>GenericReader</scope><name>GenericReader</name></member>
+      <member refid="class_generic_reader_1ac767384e34b7078fa9f97ba57c884328" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>GenericReader</name></member>
+      <member refid="class_generic_reader_1a77399ac40cca1fb113a2d507f476b4e7" prot="public" virt="non-virtual"><scope>GenericReader</scope><name>GetErrorOffset</name></member>
+      <member refid="class_generic_reader_1ac45a26246877c4daa85021ae67caa017" prot="public" virt="non-virtual"><scope>GenericReader</scope><name>GetParseErrorCode</name></member>
+      <member refid="class_generic_reader_1a46660019ff1ed42bc192d9b5f9119b0f" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>HandleError</name></member>
+      <member refid="class_generic_reader_1aa9d10652062557ebf26cf414bfeabf84" prot="public" virt="non-virtual"><scope>GenericReader</scope><name>HasParseError</name></member>
+      <member refid="class_generic_reader_1a55a2d3fd3d5261f26513ed303724bc3a" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>IterativeParse</name></member>
+      <member refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277eab25951e89a18765eee6cf80dae400aa4" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>IterativeParsingArrayFinishState</name></member>
+      <member refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277eaef925723e66b3c1de7e98203774607fd" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>IterativeParsingArrayInitialState</name></member>
+      <member refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277ea8b27efdb1104733da9625e0e397442cd" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>IterativeParsingElementDelimiterState</name></member>
+      <member refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277eaf71361a62b9a27ce47ba680502b54138" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>IterativeParsingElementState</name></member>
+      <member refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277ea326dd1efe3866f0d57c5f52a270ba8e1" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>IterativeParsingErrorState</name></member>
+      <member refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277ea57e40efdbe78a825a306003f45be0166" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>IterativeParsingFinishState</name></member>
+      <member refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277ea04d80601d75bcebcc7c98ad6a4f402cb" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>IterativeParsingKeyValueDelimiterState</name></member>
+      <member refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277ea9a246402fe6a9307095cd412a9328f8c" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>IterativeParsingMemberDelimiterState</name></member>
+      <member refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277ea9c1d0b88cbc53c04790d9086c4068e13" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>IterativeParsingMemberKeyState</name></member>
+      <member refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277ead323d1265edcac75c48038cf73e4d035" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>IterativeParsingMemberValueState</name></member>
+      <member refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277ea210d982844ae622f74731acb0e1c37e3" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>IterativeParsingObjectFinishState</name></member>
+      <member refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277eaaf54ec0c42830e9b42a9bc2a5bbb71de" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>IterativeParsingObjectInitialState</name></member>
+      <member refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277eaf17685095fd55d935b9e6b9cf6a54159" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>IterativeParsingStartState</name></member>
+      <member refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277e" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>IterativeParsingState</name></member>
+      <member refid="class_generic_reader_1a269700a68b925db2f3ecc84b75f2277eaee2be3de24a8fe605a56a1ac8495b15e" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>IterativeParsingValueState</name></member>
+      <member refid="class_generic_reader_1ac507ea8672bf2b5d01b35583c0597f15" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>kDefaultStackCapacity</name></member>
+      <member refid="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8a93abbfd4654e7b17d9557bbc7621be45" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>kTokenCount</name></member>
+      <member refid="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8a6b35a147e77cd0bad1eb975e29c2853a" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>LeftBracketToken</name></member>
+      <member refid="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8abb24015be27f1c42d12cdf7baf1fa59c" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>LeftCurlyBracketToken</name></member>
+      <member refid="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8abdd797a9fe4ace1702d2fe3561577e3a" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>NullToken</name></member>
+      <member refid="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8ace41a2b9df4435cf9a1610e1707bd850" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>NumberToken</name></member>
+      <member refid="class_generic_reader_1ab07a979626cfa121365bb09b61558c11" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>operator=</name></member>
+      <member refid="class_generic_reader_1a0c450620d14ff1824e58bb7bd9b42099" prot="public" virt="non-virtual"><scope>GenericReader</scope><name>Parse</name></member>
+      <member refid="class_generic_reader_1a76d91e5fd8dfe48aea7dd6d8a51dd6dc" prot="public" virt="non-virtual"><scope>GenericReader</scope><name>Parse</name></member>
+      <member refid="class_generic_reader_1a8f226bb3c17b232ce142594b7620c8a4" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>ParseArray</name></member>
+      <member refid="class_generic_reader_1af3af2d4e8efa1b8ef2f0bb281d8f0540" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>ParseFalse</name></member>
+      <member refid="class_generic_reader_1a72ded3654cef16bba1b9574b5e3611c8" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>ParseHex4</name></member>
+      <member refid="class_generic_reader_1ae624956124c98a85d23decd86a406a0b" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>ParseNull</name></member>
+      <member refid="class_generic_reader_1a2447207fde31185e2bb8fbf1250b72e0" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>ParseNumber</name></member>
+      <member refid="class_generic_reader_1af7943451d58ae465e9803d5a78beeb90" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>ParseObject</name></member>
+      <member refid="class_generic_reader_1a156018c2805bfa730287314ee9d9257d" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>parseResult_</name></member>
+      <member refid="class_generic_reader_1ab4d4f63b23b55a72069e2e13eb010cff" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>ParseString</name></member>
+      <member refid="class_generic_reader_1a8fa22aded7085b3fe5f9d59467318f8a" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>ParseStringToStream</name></member>
+      <member refid="class_generic_reader_1a762f074e0f99c71f0a82cff19bb763cd" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>ParseTrue</name></member>
+      <member refid="class_generic_reader_1a8c0d07512c0fa447f45c9e5b00dd2d70" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>ParseValue</name></member>
+      <member refid="class_generic_reader_1ae20c2989d379782f3bbf81561a67ebcd" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>Predict</name></member>
+      <member refid="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8aa37f043d8a3851436653046e36d72f4f" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>RightBracketToken</name></member>
+      <member refid="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8a7eb49c93ed5c98df68c843731292984f" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>RightCurlyBracketToken</name></member>
+      <member refid="class_generic_reader_1ae50079444295bf109730c3b708a818a6" prot="protected" virt="non-virtual"><scope>GenericReader</scope><name>SetParseError</name></member>
+      <member refid="class_generic_reader_1a7c04f4aa27561d358376920d06b78cdb" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>stack_</name></member>
+      <member refid="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8a9743581f6cf4c657ad6bec344f31f44b" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>StringToken</name></member>
+      <member refid="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>Token</name></member>
+      <member refid="class_generic_reader_1a9b3547ce0d99a8e53177c3d193e3d462" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>Tokenize</name></member>
+      <member refid="class_generic_reader_1a09637865e7aea8e50fb8f9fc25dd65ad" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>Transit</name></member>
+      <member refid="class_generic_reader_1a78cbc3012843daeaa44cb3c2b779a8a8a0cd697f774a54815817a1c3b4bde88eb" prot="private" virt="non-virtual"><scope>GenericReader</scope><name>TrueToken</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

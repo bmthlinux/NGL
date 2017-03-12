@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classngl_1_1_singleton.html" title="ngl::Singleton\&lt; VAOPrimitives \&gt;" alt="" coords="6,5,218,32"/>
+<area shape="rect" id="node2" href="$classngl_1_1_v_a_o_primitives.html" title="VAO based object primitives used for fast openGL drawing this is a singelton class so we use the inst..." alt="" coords="267,5,400,32"/>
+</map>

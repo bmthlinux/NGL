@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structfmt_1_1internal_1_1_convert_to_int_impl2" kind="struct" language="C++" prot="public">
+    <compoundname>fmt::internal::ConvertToIntImpl2</compoundname>
+    <includes refid="format_8h" local="no">format.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>bool</type>
+        <declname>ENABLE_CONVERSION</declname>
+        <defname>ENABLE_CONVERSION</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structfmt_1_1internal_1_1_convert_to_int_impl2_1a02f141c427fd8b08496ff6f6d6c7805c" prot="public" static="no">
+        <name>@5</name>
+        <enumvalue id="structfmt_1_1internal_1_1_convert_to_int_impl2_1a02f141c427fd8b08496ff6f6d6c7805ca19320504b255303a51eb0c95d5283668" prot="public">
+          <name>value</name>
+          <initializer>= false</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1079" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1079" bodyend="1079"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1418">
+        <label>fmt::internal::ConvertToIntImpl2&lt; T, ENABLE_CONVERSION &gt;</label>
+        <link refid="structfmt_1_1internal_1_1_convert_to_int_impl2"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1078" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1078" bodyend="1080"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1internal_1_1_convert_to_int_impl2_1a02f141c427fd8b08496ff6f6d6c7805ca19320504b255303a51eb0c95d5283668" prot="public" virt="non-virtual"><scope>fmt::internal::ConvertToIntImpl2</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

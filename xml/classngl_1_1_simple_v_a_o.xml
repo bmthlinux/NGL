@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classngl_1_1_simple_v_a_o" kind="class" language="C++" prot="public">
+    <compoundname>ngl::SimpleVAO</compoundname>
+    <basecompoundref refid="classngl_1_1_abstract_v_a_o" prot="public" virt="non-virtual">ngl::AbstractVAO</basecompoundref>
+    <includes refid="_simple_v_a_o_8h" local="no">SimpleVAO.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classngl_1_1_simple_v_a_o_1abe95d362ec235023ea90edfa4d8cdc2b" prot="private" static="no" mutable="no">
+        <type><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref></type>
+        <definition>GLuint ngl::SimpleVAO::m_buffer</definition>
+        <argsstring></argsstring>
+        <name>m_buffer</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+<para>the id of the buffer for the VAO </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SimpleVAO.h" line="80" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/SimpleVAO.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_simple_v_a_o_1a5c3d99c30dba6c0306858f2a85848510" compoundref="_simple_v_a_o_8cpp" startline="23" endline="35">removeVAO</referencedby>
+        <referencedby refid="classngl_1_1_simple_v_a_o_1a368172998936ad5dfd7201d75bd3e421" compoundref="_simple_v_a_o_8cpp" startline="37" endline="54">setData</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classngl_1_1_simple_v_a_o_1a141d878b6a5eb1cbb2d609142017f7c0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classngl_1_1_abstract_v_a_o" kindref="compound">AbstractVAO</ref> *</type>
+        <definition>static AbstractVAO* ngl::SimpleVAO::create</definition>
+        <argsstring>(GLenum _mode=GL_TRIANGLES)</argsstring>
+        <name>create</name>
+        <param>
+          <type><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref></type>
+          <declname>_mode</declname>
+          <defval><ref refid="glew_8h_1a6079e7a02a59adad65eb953d9482b1ed" kindref="member">GL_TRIANGLES</ref></defval>
+        </param>
+        <briefdescription>
+<para>creator method for the factory </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the mode to draw with. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a new <ref refid="classngl_1_1_abstract_v_a_o" kindref="compound">AbstractVAO</ref> * object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SimpleVAO.h" line="42" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/SimpleVAO.h" bodystart="42" bodyend="42"/>
+        <referencedby refid="classngl_1_1_n_g_l_init_1a47fb467f1972831171973dc2b5098342" compoundref="_n_g_l_init_8cpp" startline="39" endline="72">ngl::NGLInit::NGLInit</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngl_1_1_simple_v_a_o_1ae2fe27cdef2b4b14916915bf4cba7fca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::SimpleVAO::draw</definition>
+        <argsstring>() const </argsstring>
+        <name>draw</name>
+        <reimplements refid="classngl_1_1_abstract_v_a_o_1a0365aa18813979ae23b2854b25c782a5">draw</reimplements>
+        <briefdescription>
+<para>draw the VAO using glDrawArrays </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SimpleVAO.h" line="46" column="1" bodyfile="/Users/jmacey/NGL/src/SimpleVAO.cpp" bodystart="10" bodyend="21"/>
+        <references refid="glew_8h_1a1101b854177debf0c1d2611fbec24ffa">glDrawArrays</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1a7dc1263ac463214a116981b77636a948" compoundref="_abstract_v_a_o_8h" startline="129">ngl::AbstractVAO::m_allocated</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1a8f5bab0afa205e8aa96b4d1ad1b8751c" compoundref="_abstract_v_a_o_8h" startline="125">ngl::AbstractVAO::m_bound</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1a04cd955b0987f618a279bbe6da056b46" compoundref="_abstract_v_a_o_8h" startline="133">ngl::AbstractVAO::m_indicesCount</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1a7df62921ae3aff699778d17dc9d37df9" compoundref="_abstract_v_a_o_8h" startline="117">ngl::AbstractVAO::m_mode</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_simple_v_a_o_1a7286f3a05cc31187828333b866d3d3f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ngl::SimpleVAO::~SimpleVAO</definition>
+        <argsstring>()</argsstring>
+        <name>~SimpleVAO</name>
+        <briefdescription>
+<para>dtor clears the VAO data </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SimpleVAO.h" line="50" column="1" bodyfile="/Users/jmacey/NGL/src/SimpleVAO.cpp" bodystart="5" bodyend="8"/>
+        <references refid="classngl_1_1_simple_v_a_o_1a5c3d99c30dba6c0306858f2a85848510" compoundref="_simple_v_a_o_8cpp" startline="23" endline="35">removeVAO</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_simple_v_a_o_1a5c3d99c30dba6c0306858f2a85848510" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::SimpleVAO::removeVAO</definition>
+        <argsstring>()</argsstring>
+        <name>removeVAO</name>
+        <reimplements refid="classngl_1_1_abstract_v_a_o_1a0c8a76bda28c062cc2c772c8ec7ddd12">removeVAO</reimplements>
+        <briefdescription>
+<para>remove the VAO and buffers created </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SimpleVAO.h" line="54" column="1" bodyfile="/Users/jmacey/NGL/src/SimpleVAO.cpp" bodystart="23" bodyend="35"/>
+        <references refid="glew_8h_1a55652a3f087bb13267a5481b6ff1fe19" compoundref="glew_8h" startline="1706">glDeleteBuffers</references>
+        <references refid="glew_8h_1a214386aefdc30034088a21a6bccfbcbd" compoundref="glew_8h" startline="7446">glDeleteVertexArrays</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1a7dc1263ac463214a116981b77636a948" compoundref="_abstract_v_a_o_8h" startline="129">ngl::AbstractVAO::m_allocated</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1a8f5bab0afa205e8aa96b4d1ad1b8751c" compoundref="_abstract_v_a_o_8h" startline="125">ngl::AbstractVAO::m_bound</references>
+        <references refid="classngl_1_1_simple_v_a_o_1abe95d362ec235023ea90edfa4d8cdc2b" compoundref="_simple_v_a_o_8h" startline="80">m_buffer</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1a7c7d6a3322e757a3a7298f4321e48f1d" compoundref="_abstract_v_a_o_8h" startline="121">ngl::AbstractVAO::m_id</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1a755b4eb87c240c0c95b292c4762fef04" compoundref="_abstract_v_a_o_8cpp" startline="29" endline="33">ngl::AbstractVAO::unbind</references>
+        <referencedby refid="classngl_1_1_simple_v_a_o_1a7286f3a05cc31187828333b866d3d3f4" compoundref="_simple_v_a_o_8cpp" startline="5" endline="8">~SimpleVAO</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_simple_v_a_o_1a368172998936ad5dfd7201d75bd3e421" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::SimpleVAO::setData</definition>
+        <argsstring>(const VertexData &amp;_data)</argsstring>
+        <name>setData</name>
+        <reimplements refid="classngl_1_1_abstract_v_a_o_1aeeabb8d7a3be60a6814d1c44cb52f27a">setData</reimplements>
+        <param>
+          <type>const <ref refid="classngl_1_1_abstract_v_a_o_1_1_vertex_data" kindref="compound">VertexData</ref> &amp;</type>
+          <declname>_data</declname>
+        </param>
+        <briefdescription>
+<para>, this method sets the data for the VAO if data has already been set it will remove the existing data and then re-set with the new data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SimpleVAO.h" line="59" column="1" bodyfile="/Users/jmacey/NGL/src/SimpleVAO.cpp" bodystart="37" bodyend="54"/>
+        <references refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" compoundref="glew_8h" startline="1648">GL_ARRAY_BUFFER</references>
+        <references refid="glew_8h_1a3b3a3f8200f094b781e9f61e2f19fc50" compoundref="glew_8h" startline="1703">glBindBuffer</references>
+        <references refid="glew_8h_1a9419a03f5c46e2758f884e9c56d92b6a" compoundref="glew_8h" startline="1704">glBufferData</references>
+        <references refid="glew_8h_1a55652a3f087bb13267a5481b6ff1fe19" compoundref="glew_8h" startline="1706">glDeleteBuffers</references>
+        <references refid="glew_8h_1a1b33d322b89d94ad4938461db0a0424a" compoundref="glew_8h" startline="1709">glGenBuffers</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1a7dc1263ac463214a116981b77636a948" compoundref="_abstract_v_a_o_8h" startline="129">ngl::AbstractVAO::m_allocated</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1a8f5bab0afa205e8aa96b4d1ad1b8751c" compoundref="_abstract_v_a_o_8h" startline="125">ngl::AbstractVAO::m_bound</references>
+        <references refid="classngl_1_1_simple_v_a_o_1abe95d362ec235023ea90edfa4d8cdc2b" compoundref="_simple_v_a_o_8h" startline="80">m_buffer</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1_1_vertex_data_1aced95e3e8893a259344de637d0dd7d72" compoundref="_abstract_v_a_o_8h" startline="44">ngl::AbstractVAO::VertexData::m_data</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1_1_vertex_data_1a3aea6d6bc943b07efe4c44bf5dd4d2a9" compoundref="_abstract_v_a_o_8h" startline="45">ngl::AbstractVAO::VertexData::m_mode</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1_1_vertex_data_1ac70e6ea1e79a22adac0ebfff20aab5ff" compoundref="_abstract_v_a_o_8h" startline="43">ngl::AbstractVAO::VertexData::m_size</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_simple_v_a_o_1a2a0895f2e24b11ce24d6a9c5cb283d87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref></type>
+        <definition>GLuint ngl::SimpleVAO::getBufferID</definition>
+        <argsstring>(unsigned int)</argsstring>
+        <name>getBufferID</name>
+        <reimplements refid="classngl_1_1_abstract_v_a_o_1ab4a9741786b036753f7b0beb891ef3c3">getBufferID</reimplements>
+        <param>
+          <type>unsigned</type>
+          <declname>int</declname>
+        </param>
+        <briefdescription>
+<para>return the id of the buffer, if there is only 1 buffer just return this if we have the more than one buffer the sub class manages the id&apos;s </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index (default to 0 for single buffer VAO&apos;s) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SimpleVAO.h" line="65" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/SimpleVAO.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classngl_1_1_simple_v_a_o_1a552ef8c09ed746d9d24bcb0b170e7b33" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ngl::SimpleVAO::SimpleVAO</definition>
+        <argsstring>(GLenum _mode)</argsstring>
+        <name>SimpleVAO</name>
+        <param>
+          <type><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref></type>
+          <declname>_mode</declname>
+        </param>
+        <briefdescription>
+<para>ctor calles parent ctor to allocate vao; </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SimpleVAO.h" line="71" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/SimpleVAO.h" bodystart="71" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simple non index vao using one buffer and float data see <ulink url="https://github.com/NCCA/VertexArrayObject/tree/master/SimpleVAOFactory">https://github.com/NCCA/VertexArrayObject/tree/master/SimpleVAOFactory</ulink> for examples of use. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Jonathan Macey </para></simplesect>
+<simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="date"><para>6/4/16 </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1889">
+        <label>ngl::SimpleVAO</label>
+        <link refid="classngl_1_1_simple_v_a_o"/>
+        <childnode refid="1890" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1890">
+        <label>ngl::AbstractVAO</label>
+        <link refid="classngl_1_1_abstract_v_a_o"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1893">
+        <label>size_t</label>
+      </node>
+      <node id="1891">
+        <label>ngl::SimpleVAO</label>
+        <link refid="classngl_1_1_simple_v_a_o"/>
+        <childnode refid="1892" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1892">
+        <label>ngl::AbstractVAO</label>
+        <link refid="classngl_1_1_abstract_v_a_o"/>
+        <childnode refid="1893" relation="usage">
+          <edgelabel>#m_indicesCount</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/SimpleVAO.h" line="35" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/SimpleVAO.h" bodystart="34" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classngl_1_1_abstract_v_a_o_1a40cbd8b1fa53cc3a885c52b03a098d0a" prot="protected" virt="non-virtual"><scope>ngl::SimpleVAO</scope><name>AbstractVAO</name></member>
+      <member refid="classngl_1_1_abstract_v_a_o_1a32a42493f94df2674c89a90cb25cfa2a" prot="public" virt="non-virtual"><scope>ngl::SimpleVAO</scope><name>bind</name></member>
+      <member refid="classngl_1_1_simple_v_a_o_1a141d878b6a5eb1cbb2d609142017f7c0" prot="public" virt="non-virtual"><scope>ngl::SimpleVAO</scope><name>create</name></member>
+      <member refid="classngl_1_1_simple_v_a_o_1ae2fe27cdef2b4b14916915bf4cba7fca" prot="public" virt="virtual"><scope>ngl::SimpleVAO</scope><name>draw</name></member>
+      <member refid="classngl_1_1_simple_v_a_o_1a2a0895f2e24b11ce24d6a9c5cb283d87" prot="public" virt="virtual"><scope>ngl::SimpleVAO</scope><name>getBufferID</name></member>
+      <member refid="classngl_1_1_abstract_v_a_o_1aa3821d01c4e0faa831d963dffcf850e7" prot="public" virt="non-virtual"><scope>ngl::SimpleVAO</scope><name>getMode</name></member>
+      <member refid="classngl_1_1_abstract_v_a_o_1a7dc1263ac463214a116981b77636a948" prot="protected" virt="non-virtual"><scope>ngl::SimpleVAO</scope><name>m_allocated</name></member>
+      <member refid="classngl_1_1_abstract_v_a_o_1a8f5bab0afa205e8aa96b4d1ad1b8751c" prot="protected" virt="non-virtual"><scope>ngl::SimpleVAO</scope><name>m_bound</name></member>
+      <member refid="classngl_1_1_simple_v_a_o_1abe95d362ec235023ea90edfa4d8cdc2b" prot="private" virt="non-virtual"><scope>ngl::SimpleVAO</scope><name>m_buffer</name></member>
+      <member refid="classngl_1_1_abstract_v_a_o_1a7c7d6a3322e757a3a7298f4321e48f1d" prot="protected" virt="non-virtual"><scope>ngl::SimpleVAO</scope><name>m_id</name></member>
+      <member refid="classngl_1_1_abstract_v_a_o_1a04cd955b0987f618a279bbe6da056b46" prot="protected" virt="non-virtual"><scope>ngl::SimpleVAO</scope><name>m_indicesCount</name></member>
+      <member refid="classngl_1_1_abstract_v_a_o_1a7df62921ae3aff699778d17dc9d37df9" prot="protected" virt="non-virtual"><scope>ngl::SimpleVAO</scope><name>m_mode</name></member>
+      <member refid="classngl_1_1_simple_v_a_o_1a5c3d99c30dba6c0306858f2a85848510" prot="public" virt="virtual"><scope>ngl::SimpleVAO</scope><name>removeVAO</name></member>
+      <member refid="classngl_1_1_simple_v_a_o_1a368172998936ad5dfd7201d75bd3e421" prot="public" virt="virtual"><scope>ngl::SimpleVAO</scope><name>setData</name></member>
+      <member refid="classngl_1_1_abstract_v_a_o_1a712e386f5ed795cf42484d3311625ade" prot="public" virt="non-virtual"><scope>ngl::SimpleVAO</scope><name>setMode</name></member>
+      <member refid="classngl_1_1_abstract_v_a_o_1ac3bab1083764b87a06bf658e6b6727a8" prot="public" virt="non-virtual"><scope>ngl::SimpleVAO</scope><name>setNumIndices</name></member>
+      <member refid="classngl_1_1_abstract_v_a_o_1aa51d9e09fa5d76cb0868cdff08e94911" prot="public" virt="non-virtual"><scope>ngl::SimpleVAO</scope><name>setVertexAttributePointer</name></member>
+      <member refid="classngl_1_1_simple_v_a_o_1a552ef8c09ed746d9d24bcb0b170e7b33" prot="protected" virt="non-virtual"><scope>ngl::SimpleVAO</scope><name>SimpleVAO</name></member>
+      <member refid="classngl_1_1_abstract_v_a_o_1a755b4eb87c240c0c95b292c4762fef04" prot="public" virt="non-virtual"><scope>ngl::SimpleVAO</scope><name>unbind</name></member>
+      <member refid="classngl_1_1_abstract_v_a_o_1ad1a2439ce2af5efb7703c0724cd12a6a" prot="public" virt="virtual"><scope>ngl::SimpleVAO</scope><name>~AbstractVAO</name></member>
+      <member refid="classngl_1_1_simple_v_a_o_1a7286f3a05cc31187828333b866d3d3f4" prot="public" virt="virtual"><scope>ngl::SimpleVAO</scope><name>~SimpleVAO</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

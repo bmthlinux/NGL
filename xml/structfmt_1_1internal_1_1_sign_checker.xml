@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structfmt_1_1internal_1_1_sign_checker" kind="struct" language="C++" prot="public">
+    <compoundname>fmt::internal::SignChecker</compoundname>
+    <includes refid="format_8h" local="no">format.h</includes>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>IsSigned</declname>
+        <defname>IsSigned</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structfmt_1_1internal_1_1_sign_checker_1ae60ea5795026fd1d83b34ec79d145baf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool fmt::internal::SignChecker&lt; IsSigned &gt;::is_negative</definition>
+        <argsstring>(T value)</argsstring>
+        <name>is_negative</name>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="799" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="799" bodyend="799"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1881">
+        <label>fmt::internal::SignChecker&lt; IsSigned &gt;</label>
+        <link refid="structfmt_1_1internal_1_1_sign_checker"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="797" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="797" bodyend="800"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1internal_1_1_sign_checker_1ae60ea5795026fd1d83b34ec79d145baf" prot="public" virt="non-virtual"><scope>fmt::internal::SignChecker</scope><name>is_negative</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

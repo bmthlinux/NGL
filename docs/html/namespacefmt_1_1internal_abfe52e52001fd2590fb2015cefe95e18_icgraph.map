@@ -1,0 +1,9 @@
+<map id="fmt::internal::count_digits" name="fmt::internal::count_digits">
+<area shape="rect" id="node2" href="$classfmt_1_1_basic_writer.html#a8236a787e18d88587ca79933a5cdd898" title="fmt::BasicWriter::write\l_unsigned_decimal" alt="" coords="197,74,349,115"/>
+<area shape="rect" id="node3" href="$classfmt_1_1_basic_writer.html#a2eb820ad907cede8df8226af444f59d6" title="fmt::BasicWriter::write_int" alt="" coords="187,140,360,167"/>
+<area shape="rect" id="node8" href="$namespacefmt.html#a14f565b291f639cea172e79f7fa9bc7f" title="fmt::format_decimal" alt="" coords="204,191,343,217"/>
+<area shape="rect" id="node4" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#a0f4c97899457f6263ae412f231330227" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::write_pointer" alt="" coords="408,5,613,61"/>
+<area shape="rect" id="node5" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#ae6f9ce1fa7940ebda3ac594a45edd32d" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_any_int" alt="" coords="409,85,612,141"/>
+<area shape="rect" id="node6" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#ab85eb2158c9d48c847706de26f35460c" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_char" alt="" coords="418,165,603,221"/>
+<area shape="rect" id="node7" href="$classfmt_1_1_basic_printf_arg_formatter.html#a97f26086d50a4553280fbe831ef7e947" title="fmt::BasicPrintfArgFormatter\l\&lt; PrintfArgFormatter\&lt; Char\l \&gt;, Char \&gt;::visit_char" alt="" coords="415,245,606,301"/>
+</map>

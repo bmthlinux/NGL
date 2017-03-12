@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classfmt_1_1_str_format_spec" kind="class" language="C++" prot="public">
+    <compoundname>fmt::StrFormatSpec</compoundname>
+    <basecompoundref refid="structfmt_1_1_align_spec" prot="public" virt="non-virtual">fmt::AlignSpec</basecompoundref>
+    <includes refid="format_8h" local="no">format.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Char</declname>
+        <defname>Char</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfmt_1_1_str_format_spec_1a519b15bfa1afa691e2c0106fa9281169" prot="private" static="no" mutable="no">
+        <type>const Char *</type>
+        <definition>const Char* fmt::StrFormatSpec&lt; Char &gt;::str_</definition>
+        <argsstring></argsstring>
+        <name>str_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1678" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1678" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfmt_1_1_str_format_spec_1a14c888235db04ee0b81197aaccf0a124" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename FillChar</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>fmt::StrFormatSpec&lt; Char &gt;::StrFormatSpec</definition>
+        <argsstring>(const Char *str, unsigned width, FillChar fill)</argsstring>
+        <name>StrFormatSpec</name>
+        <param>
+          <type>const Char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>FillChar</type>
+          <declname>fill</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1682" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1682" bodyend="1685"/>
+        <references refid="namespacefmt_1_1internal_1a61ae1bd2ba7d7666274927320c138283">fmt::internal::convert</references>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1_str_format_spec_1a58da4d50f18458f703dece272f06bda3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const Char *</type>
+        <definition>const Char* fmt::StrFormatSpec&lt; Char &gt;::str</definition>
+        <argsstring>() const </argsstring>
+        <name>str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1687" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1687" bodyend="1687"/>
+        <references refid="namespacefmt_1a73baa9bfe9b6f660313ca71317a241bc">fmt::bin</references>
+        <references refid="namespacefmt_1aed8f2728309382ece798b4666722af7a">fmt::hex</references>
+        <references refid="namespacefmt_1a992ca088208c70c6625468d3d5248f38">fmt::hexu</references>
+        <references refid="namespacefmt_1a2d84223df5715510de007ff274cd6c3d">fmt::oct</references>
+        <references refid="namespacefmt_1a48d6010061d1710d807853ad9125d825">fmt::pad</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1940">
+        <label>fmt::WidthSpec</label>
+        <link refid="structfmt_1_1_width_spec"/>
+      </node>
+      <node id="1939">
+        <label>fmt::AlignSpec</label>
+        <link refid="structfmt_1_1_align_spec"/>
+        <childnode refid="1940" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1938">
+        <label>fmt::StrFormatSpec&lt; Char &gt;</label>
+        <link refid="classfmt_1_1_str_format_spec"/>
+        <childnode refid="1939" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1943">
+        <label>fmt::WidthSpec</label>
+        <link refid="structfmt_1_1_width_spec"/>
+      </node>
+      <node id="1942">
+        <label>fmt::AlignSpec</label>
+        <link refid="structfmt_1_1_align_spec"/>
+        <childnode refid="1943" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1941">
+        <label>fmt::StrFormatSpec&lt; Char &gt;</label>
+        <link refid="classfmt_1_1_str_format_spec"/>
+        <childnode refid="1942" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1676" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1676" bodyend="1688"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1_align_spec_1abd14faffccf107e6e01bbd014e69262c" prot="public" virt="non-virtual"><scope>fmt::StrFormatSpec</scope><name>align</name></member>
+      <member refid="structfmt_1_1_align_spec_1aac93fb3829d550af86479f1ecaa73f95" prot="public" virt="non-virtual"><scope>fmt::StrFormatSpec</scope><name>align_</name></member>
+      <member refid="structfmt_1_1_align_spec_1a7912b22ed62be96be0b9088b629f728c" prot="public" virt="non-virtual"><scope>fmt::StrFormatSpec</scope><name>AlignSpec</name></member>
+      <member refid="structfmt_1_1_width_spec_1a28a9b78a0ebfd5830025eaf1c917bb16" prot="public" virt="non-virtual"><scope>fmt::StrFormatSpec</scope><name>fill</name></member>
+      <member refid="structfmt_1_1_width_spec_1ad1c9740afb2b05c4ac7b2d9fa9760891" prot="public" virt="non-virtual"><scope>fmt::StrFormatSpec</scope><name>fill_</name></member>
+      <member refid="structfmt_1_1_align_spec_1acdcb20e3a29b69355825ece5886db27b" prot="public" virt="non-virtual"><scope>fmt::StrFormatSpec</scope><name>precision</name></member>
+      <member refid="classfmt_1_1_str_format_spec_1a58da4d50f18458f703dece272f06bda3" prot="public" virt="non-virtual"><scope>fmt::StrFormatSpec</scope><name>str</name></member>
+      <member refid="classfmt_1_1_str_format_spec_1a519b15bfa1afa691e2c0106fa9281169" prot="private" virt="non-virtual"><scope>fmt::StrFormatSpec</scope><name>str_</name></member>
+      <member refid="classfmt_1_1_str_format_spec_1a14c888235db04ee0b81197aaccf0a124" prot="public" virt="non-virtual"><scope>fmt::StrFormatSpec</scope><name>StrFormatSpec</name></member>
+      <member refid="structfmt_1_1_width_spec_1ad6624ee681712f695f133ba2e9d9ce36" prot="public" virt="non-virtual"><scope>fmt::StrFormatSpec</scope><name>width</name></member>
+      <member refid="structfmt_1_1_width_spec_1a83fed5d5a674ea54a48feb6edef4c1c7" prot="public" virt="non-virtual"><scope>fmt::StrFormatSpec</scope><name>width_</name></member>
+      <member refid="structfmt_1_1_width_spec_1a483e63eb1ac98bbdaacc701be5f3cc82" prot="public" virt="non-virtual"><scope>fmt::StrFormatSpec</scope><name>WidthSpec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

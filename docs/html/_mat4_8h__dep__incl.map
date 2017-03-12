@@ -1,0 +1,29 @@
+<map id="Mat4.h" name="Mat4.h">
+<area shape="rect" id="node2" href="$_mat3_8cpp.html" title="Mat3.cpp" alt="" coords="5,155,83,181"/>
+<area shape="rect" id="node3" href="$_mat4_8cpp.html" title="implementation files for Matrix class " alt="" coords="107,155,184,181"/>
+<area shape="rect" id="node4" href="$_n_g_l_stream_8cpp.html" title="NGLStream.cpp" alt="" coords="508,155,625,181"/>
+<area shape="rect" id="node5" href="$_util_8cpp.html" title="implementation files for Util class " alt="" coords="461,80,528,107"/>
+<area shape="rect" id="node6" href="$_vec4_8cpp.html" title="Vec4.cpp" alt="" coords="552,80,629,107"/>
+<area shape="rect" id="node7" href="$_quaternion_8h.html" title="Defines the class Quaternion based on John Vinces lecture notes basically we have a scalar part and t..." alt="" coords="319,80,417,107"/>
+<area shape="rect" id="node13" href="$_camera_8h.html" title="a simple camera class based on the Hill Book " alt="" coords="704,80,784,107"/>
+<area shape="rect" id="node17" href="$_light_8h.html" title="an encapsulation of an OpenGL Light " alt="" coords="1741,80,1803,107"/>
+<area shape="rect" id="node21" href="$_shader_lib_8h.html" title="main shader loader / manager class for GLSL shaders " alt="" coords="1277,80,1371,107"/>
+<area shape="rect" id="node27" href="$_text_8h.html" title="Basic text rendering for OpenGL 3.x. " alt="" coords="1463,80,1521,107"/>
+<area shape="rect" id="node28" href="$_transformation_8h.html" title="a simple transformation object containing rot / tx / scale and final matrix " alt="" coords="904,80,1027,107"/>
+<area shape="rect" id="node8" href="$_quaternion_8cpp.html" title="implementation files for Quaternion class " alt="" coords="209,155,321,181"/>
+<area shape="rect" id="node9" href="$_abstract_serializer_8h.html" title="this class is the base class for all NGL serialisation code " alt="" coords="346,155,483,181"/>
+<area shape="rect" id="node10" href="$_abstract_serializer_8cpp.html" title="AbstractSerializer.cpp" alt="" coords="339,229,491,256"/>
+<area shape="rect" id="node11" href="$_x_m_l_serializer_8h.html" title="XML Serialization for NGL. " alt="" coords="565,229,680,256"/>
+<area shape="rect" id="node12" href="$_x_m_l_serializer_8cpp.html" title="XMLSerializer.cpp" alt="" coords="875,304,1005,331"/>
+<area shape="rect" id="node14" href="$_camera_8cpp.html" title="implementation files for Camera class " alt="" coords="650,155,744,181"/>
+<area shape="rect" id="node15" href="$_path_camera_8h.html" title="a simple camera attached to a path inherits from Camera " alt="" coords="769,155,876,181"/>
+<area shape="rect" id="node16" href="$_path_camera_8cpp.html" title="implementation files for PathCamera class " alt="" coords="755,229,877,256"/>
+<area shape="rect" id="node18" href="$_light_8cpp.html" title="implementation files for Light class " alt="" coords="1681,155,1756,181"/>
+<area shape="rect" id="node19" href="$_spot_light_8h.html" title="Encapsulation of OpenGL spotlight inherits from the Light class. " alt="" coords="1781,155,1869,181"/>
+<area shape="rect" id="node20" href="$_spot_light_8cpp.html" title="implementation files for SpotLight class " alt="" coords="1447,229,1551,256"/>
+<area shape="rect" id="node22" href="$_material_8cpp.html" title="implementation files for Material class " alt="" coords="1465,155,1559,181"/>
+<area shape="rect" id="node23" href="$_n_g_l_init_8cpp.html" title="implementation files for NGLInit class " alt="" coords="1217,155,1308,181"/>
+<area shape="rect" id="node24" href="$_shader_lib_8cpp.html" title="implementation files for ShaderLibrary and manager class " alt="" coords="1333,155,1440,181"/>
+<area shape="rect" id="node25" href="$_text_8cpp.html" title="Text.cpp" alt="" coords="1583,155,1656,181"/>
+<area shape="rect" id="node26" href="$_transformation_8cpp.html" title="implementation files for Transformation class " alt="" coords="1003,155,1140,181"/>
+</map>

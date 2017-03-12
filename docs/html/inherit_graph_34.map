@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classfmt_1_1_format_error.html" title="fmt::FormatError" alt="" coords="187,5,307,32"/>
+<area shape="rect" id="node3" href="$classfmt_1_1internal_1_1_runtime_error.html" title="fmt::internal::RuntimeError" alt="" coords="157,56,336,83"/>
+<area shape="rect" id="node4" href="$classfmt_1_1_system_error.html" title="fmt::SystemError" alt="" coords="384,56,507,83"/>
+</map>

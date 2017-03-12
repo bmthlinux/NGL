@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_random_8cpp" kind="file" language="C++">
+    <compoundname>Random.cpp</compoundname>
+    <includes refid="_random_8h" local="yes">Random.h</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">ctime</includes>
+    <incdepgraph>
+      <node id="5631">
+        <label>Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="5632" relation="include">
+        </childnode>
+        <childnode refid="5638" relation="include">
+        </childnode>
+        <childnode refid="5639" relation="include">
+        </childnode>
+        <childnode refid="5640" relation="include">
+        </childnode>
+      </node>
+      <node id="5640">
+        <label>QGLContext</label>
+      </node>
+      <node id="5646">
+        <label>Vec3.h</label>
+        <link refid="_vec3_8h"/>
+        <childnode refid="5631" relation="include">
+        </childnode>
+        <childnode refid="5645" relation="include">
+        </childnode>
+      </node>
+      <node id="5634">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="5635" relation="include">
+        </childnode>
+        <childnode refid="5636" relation="include">
+        </childnode>
+      </node>
+      <node id="5628">
+        <label>Random.cpp</label>
+        <link refid="Random.cpp"/>
+        <childnode refid="5629" relation="include">
+        </childnode>
+        <childnode refid="5642" relation="include">
+        </childnode>
+        <childnode refid="5649" relation="include">
+        </childnode>
+      </node>
+      <node id="5633">
+        <label>stddef.h</label>
+      </node>
+      <node id="5632">
+        <label>glew.h</label>
+        <link refid="glew_8h"/>
+        <childnode refid="5633" relation="include">
+        </childnode>
+        <childnode refid="5634" relation="include">
+        </childnode>
+        <childnode refid="5637" relation="include">
+        </childnode>
+      </node>
+      <node id="5637">
+        <label>GL/glu.h</label>
+      </node>
+      <node id="5635">
+        <label>limits.h</label>
+      </node>
+      <node id="5629">
+        <label>Random.h</label>
+        <link refid="_random_8h"/>
+        <childnode refid="5630" relation="include">
+        </childnode>
+        <childnode refid="5641" relation="include">
+        </childnode>
+        <childnode refid="5643" relation="include">
+        </childnode>
+        <childnode refid="5647" relation="include">
+        </childnode>
+        <childnode refid="5648" relation="include">
+        </childnode>
+      </node>
+      <node id="5643">
+        <label>Vec4.h</label>
+        <link refid="_vec4_8h"/>
+        <childnode refid="5631" relation="include">
+        </childnode>
+        <childnode refid="5644" relation="include">
+        </childnode>
+        <childnode refid="5646" relation="include">
+        </childnode>
+        <childnode refid="5645" relation="include">
+        </childnode>
+      </node>
+      <node id="5648">
+        <label>random</label>
+      </node>
+      <node id="5636">
+        <label>wchar.h</label>
+      </node>
+      <node id="5630">
+        <label>Colour.h</label>
+        <link refid="_colour_8h"/>
+        <childnode refid="5631" relation="include">
+        </childnode>
+      </node>
+      <node id="5649">
+        <label>ctime</label>
+      </node>
+      <node id="5645">
+        <label>array</label>
+      </node>
+      <node id="5639">
+        <label>QtOpenGL/QGLContext</label>
+      </node>
+      <node id="5642">
+        <label>cstdlib</label>
+      </node>
+      <node id="5641">
+        <label>Singleton.h</label>
+        <link refid="_singleton_8h"/>
+        <childnode refid="5631" relation="include">
+        </childnode>
+        <childnode refid="5642" relation="include">
+        </childnode>
+      </node>
+      <node id="5647">
+        <label>unordered_map</label>
+      </node>
+      <node id="5638">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="5644">
+        <label>Vec2.h</label>
+        <link refid="_vec2_8h"/>
+        <childnode refid="5631" relation="include">
+        </childnode>
+        <childnode refid="5645" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacengl">ngl</innernamespace>
+    <briefdescription>
+<para>implementation files for Random class </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Copyright<sp/>(C)<sp/>2009<sp/>Rob<sp/>Bateman<sp/>/<sp/>Jon<sp/>Macey</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITH<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>progra_m.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_random_8h" kindref="compound">Random.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>for<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacengl" kindref="compound">ngl</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28" refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" refkind="member"><highlight class="normal"><sp/><sp/>constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" kindref="member">RandomFloat</ref>=</highlight><highlight class="stringliteral">&quot;RandomFloat&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29" refid="namespacengl_1a287dd47b74538adca7e24787f4e6c837" refkind="member"><highlight class="normal"><sp/><sp/>constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacengl_1a287dd47b74538adca7e24787f4e6c837" kindref="member">RandomPositiveFloat</ref>=</highlight><highlight class="stringliteral">&quot;RandomPositiveFloat&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classngl_1_1_random_1aff5bd03f34f7880d58e13de99abfbd9f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_random_1aff5bd03f34f7880d58e13de99abfbd9f" kindref="member">Random::setSeed</ref>()</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>.seed(static_cast&lt;unsigned<sp/>int&gt;(std::time(0)));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classngl_1_1_random_1a4a26b6e0a56d67a1ae485cb85e6a74ba" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_random_1aff5bd03f34f7880d58e13de99abfbd9f" kindref="member">Random::setSeed</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_value)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>.seed(_value);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classngl_1_1_random_1a0fdd411f92bc51194df7b7310a4a5ed7" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_random_1a0fdd411f92bc51194df7b7310a4a5ed7" kindref="member">Random::Random</ref>()</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>have<sp/>two<sp/>default<sp/>generators<sp/>built<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>first<sp/>create<sp/>a<sp/>simple<sp/>uniform<sp/>real<sp/>distrib</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>std::uniform_real_distribution&lt;Real&gt;<sp/>MinusPlusOneFloatDistrib(-1.0<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>1.0<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" kindref="member">m_floatGenerators</ref>[<ref refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" kindref="member">RandomFloat</ref>]<sp/>=MinusPlusOneFloatDistrib;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>same<sp/>for<sp/>below<sp/>but<sp/>using<sp/>0-1<sp/>for<sp/>distrib</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>std::uniform_real_distribution&lt;Real&gt;<sp/>ZeroOneFloatDistrib(0.0,<sp/>1.0);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" kindref="member">m_floatGenerators</ref>[<ref refid="namespacengl_1a287dd47b74538adca7e24787f4e6c837" kindref="member">RandomPositiveFloat</ref>]<sp/>=ZeroOneFloatDistrib;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classngl_1_1_random_1a0e40a12fc390933f2e6f94c665d485d9" refkind="member"><highlight class="normal"><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="classngl_1_1_random_1a0e40a12fc390933f2e6f94c665d485d9" kindref="member">Random::getFloatFromGeneratorName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>&amp;_name<sp/><sp/>)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>grab<sp/>a<sp/>function<sp/>pointer<sp/>based<sp/>on<sp/>the<sp/>_name<sp/>from<sp/>the<sp/>map</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//auto<sp/>func=m_floatGenerators[_name];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>func<sp/>=<sp/><ref refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" kindref="member">m_floatGenerators</ref>.find(_name);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>see<sp/>if<sp/>we<sp/>got<sp/>anything<sp/>we<sp/>can<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(func<sp/>!=<sp/><ref refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" kindref="member">m_floatGenerators</ref>.end())</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>it<sp/>exists<sp/>execute<sp/>the<sp/>function<sp/>and<sp/>return<sp/>the<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>func-&gt;second(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>otherwise<sp/>we<sp/>return<sp/>the<sp/>safest<sp/>possible<sp/>value<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classngl_1_1_random_1a27879b98765830fd299432efb696bc07" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref><sp/><ref refid="classngl_1_1_random_1a27879b98765830fd299432efb696bc07" kindref="member">Random::getRandomColour</ref>()</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>our<sp/>positive<sp/>gen<sp/>function<sp/>and<sp/>assign<sp/>valus<sp/>to<sp/>a<sp/>colour<sp/>(alpha<sp/>=1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>gen=<ref refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" kindref="member">m_floatGenerators</ref>[<ref refid="namespacengl_1a287dd47b74538adca7e24787f4e6c837" kindref="member">RandomPositiveFloat</ref>];</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_random_1ad81f3395aa6851cd578aba895c88a84c" kindref="member">Colour</ref>(gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>),gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>),gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>));</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classngl_1_1_random_1af45d991a4d57ce1ea3b96852b5f0c937" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref><sp/><ref refid="classngl_1_1_random_1af45d991a4d57ce1ea3b96852b5f0c937" kindref="member">Random::getRandomColourAndAlpha</ref>()</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>our<sp/>positive<sp/>gen<sp/>function<sp/>and<sp/>assign<sp/>valus<sp/>to<sp/>a<sp/>colour<sp/>with<sp/>rand<sp/>alpha</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>gen=<ref refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" kindref="member">m_floatGenerators</ref>[<ref refid="namespacengl_1a287dd47b74538adca7e24787f4e6c837" kindref="member">RandomPositiveFloat</ref>];</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_random_1ad81f3395aa6851cd578aba895c88a84c" kindref="member">Colour</ref>(gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>),gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>),gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>),gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>));</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="classngl_1_1_random_1a377a556cb66da919996c179aacb3543e" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref><sp/><ref refid="classngl_1_1_random_1a377a556cb66da919996c179aacb3543e" kindref="member">Random::getRandomVec4</ref>()</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>gen=<ref refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" kindref="member">m_floatGenerators</ref>[<ref refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" kindref="member">RandomFloat</ref>];</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_random_1ab7e1a25dc5d4fb2a27a441ad09a7b64d" kindref="member">Vec4</ref>(gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>),gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>),gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>),0.0<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="classngl_1_1_random_1a92774596542531f568dd7a9057cdb160" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref><sp/><ref refid="classngl_1_1_random_1a92774596542531f568dd7a9057cdb160" kindref="member">Random::getRandomNormalizedVec4</ref>()</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>gen=<ref refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" kindref="member">m_floatGenerators</ref>[<ref refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" kindref="member">RandomFloat</ref>];</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref><sp/><ref refid="glew_8h_1a6509431814422c215a65946289dd98b8" kindref="member">v</ref>(gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>),gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>),gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>),0.0<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>v.<ref refid="classngl_1_1_vec4_1ac0dca0913332163df66d6e229564c85b" kindref="member">normalize</ref>();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a6509431814422c215a65946289dd98b8" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="classngl_1_1_random_1a96649d8ece45b0662623e8b895531bd7" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/><ref refid="classngl_1_1_random_1a96649d8ece45b0662623e8b895531bd7" kindref="member">Random::getRandomVec3</ref>()</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>gen=<ref refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" kindref="member">m_floatGenerators</ref>[<ref refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" kindref="member">RandomFloat</ref>];</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref>(gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>),gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>),gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>));</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="classngl_1_1_random_1a538b0426e409cab2aa9b5e7f661fb97b" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/><ref refid="classngl_1_1_random_1a538b0426e409cab2aa9b5e7f661fb97b" kindref="member">Random::getRandomNormalizedVec3</ref>()</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>gen=<ref refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" kindref="member">m_floatGenerators</ref>[<ref refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" kindref="member">RandomFloat</ref>];</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/><ref refid="glew_8h_1a6509431814422c215a65946289dd98b8" kindref="member">v</ref>(gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>),gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>),gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>));</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>v.<ref refid="classngl_1_1_vec3_1a091a5439ddfd8a25fe486cf026345ef5" kindref="member">normalize</ref>();</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a6509431814422c215a65946289dd98b8" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="classngl_1_1_random_1aa8f7b99ba1adcf3302ad6b500f37c57d" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/><ref refid="classngl_1_1_random_1aa8f7b99ba1adcf3302ad6b500f37c57d" kindref="member">Random::getRandomVec2</ref>()</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>gen=<ref refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" kindref="member">m_floatGenerators</ref>[<ref refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" kindref="member">RandomFloat</ref>];</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref>(gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>),gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>));</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="classngl_1_1_random_1a64fede9255ffee6ba7ad76982243070d" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/><ref refid="classngl_1_1_random_1a64fede9255ffee6ba7ad76982243070d" kindref="member">Random::getRandomNormalizedVec2</ref>()</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>gen=<ref refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" kindref="member">m_floatGenerators</ref>[<ref refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" kindref="member">RandomFloat</ref>];</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref><sp/><ref refid="glew_8h_1a6509431814422c215a65946289dd98b8" kindref="member">v</ref>(gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>),gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>));</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>v.<ref refid="classngl_1_1_vec2_1ad75752e11438b9899e982f78cbb232c4" kindref="member">normalize</ref>();</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a6509431814422c215a65946289dd98b8" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="classngl_1_1_random_1a2412577f66bbf9b6168c433583c328f1" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/><ref refid="classngl_1_1_random_1a2412577f66bbf9b6168c433583c328f1" kindref="member">Random::getRandomPoint</ref>(<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_xRange,<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_yRange,<sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_zRange<sp/>)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>gen=<ref refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" kindref="member">m_floatGenerators</ref>[<ref refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" kindref="member">RandomFloat</ref>];</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref>(gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>)*_xRange,gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>)*_yRange,gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>)*_zRange);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="classngl_1_1_random_1a1d38793296010431e10d5ac11fd0a396" refkind="member"><highlight class="normal"><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="classngl_1_1_random_1a1d38793296010431e10d5ac11fd0a396" kindref="member">Random::randomNumber</ref>(<ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_mult)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>gen=<ref refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" kindref="member">m_floatGenerators</ref>[<ref refid="namespacengl_1a98bd8781a0ff9487dfbd1c7e105f76c0" kindref="member">RandomFloat</ref>];</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>)*_mult;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="classngl_1_1_random_1a10fd0b9d572d073cfa6ff7a4288e81a3" refkind="member"><highlight class="normal"><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="classngl_1_1_random_1a10fd0b9d572d073cfa6ff7a4288e81a3" kindref="member">Random::randomPositiveNumber</ref>(<ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_mult)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>gen=<ref refid="classngl_1_1_random_1a0cb26a6a073ed8dad4f416977846a1fe" kindref="member">m_floatGenerators</ref>[<ref refid="namespacengl_1a287dd47b74538adca7e24787f4e6c837" kindref="member">RandomPositiveFloat</ref>];</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gen(<ref refid="classngl_1_1_random_1ad3da61f8e4de1c058eff22ce454db4d5" kindref="member">m_generator</ref>)*_mult;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="170"><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="171"><highlight class="comment">void<sp/>Random::addGenerator(<sp/>const<sp/>std::string<sp/>&amp;_name,RANDDIST<sp/>_distribution,<sp/>Real<sp/>_min,<sp/>Real<sp/>_max,<sp/>Real<sp/>_prob)</highlight></codeline>
+<codeline lineno="172"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="175"><highlight class="comment"><sp/><sp/>if(_distribution==uniform_smallint)</highlight></codeline>
+<codeline lineno="176"><highlight class="comment"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::uniform_smallint&lt;int&gt;<sp/>distrib(_min,<sp/>_max);</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::variate_generator&lt;ENGINE<sp/>&amp;,<sp/>boost::uniform_smallint&lt;int&gt;<sp/>&gt;gen(m_generator,distrib);</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/><sp/><sp/><sp/>m_floatGenerators[_name]<sp/>=gen;</highlight></codeline>
+<codeline lineno="180"><highlight class="comment"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"></highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/><sp/>else<sp/>if(_distribution==uniform_int)</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::uniform_int&lt;int&gt;<sp/>distrib(_min,<sp/>_max);</highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::variate_generator&lt;ENGINE<sp/>&amp;,<sp/>boost::uniform_int&lt;int&gt;<sp/>&gt;gen(m_generator,distrib);</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"><sp/><sp/><sp/><sp/>m_floatGenerators[_name]<sp/>=gen;</highlight></codeline>
+<codeline lineno="187"><highlight class="comment"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="comment"><sp/><sp/>else<sp/>if(_distribution==uniform_real)</highlight></codeline>
+<codeline lineno="189"><highlight class="comment"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::uniform_real&lt;Real&gt;<sp/>distrib(_min,<sp/>_max);</highlight></codeline>
+<codeline lineno="191"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::variate_generator&lt;ENGINE<sp/>&amp;,<sp/>boost::uniform_real&lt;Real&gt;<sp/>&gt;gen(m_generator,distrib);</highlight></codeline>
+<codeline lineno="192"><highlight class="comment"><sp/><sp/><sp/><sp/>m_floatGenerators[_name]<sp/>=gen;</highlight></codeline>
+<codeline lineno="193"><highlight class="comment"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="comment"><sp/><sp/>else<sp/>if(_distribution==bernoulli_distribution)</highlight></codeline>
+<codeline lineno="195"><highlight class="comment"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::bernoulli_distribution&lt;Real&gt;<sp/>distrib(_min);</highlight></codeline>
+<codeline lineno="197"><highlight class="comment"></highlight></codeline>
+<codeline lineno="198"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::variate_generator&lt;ENGINE<sp/>&amp;,<sp/>boost::bernoulli_distribution&lt;Real&gt;<sp/>&gt;gen(m_generator,distrib);</highlight></codeline>
+<codeline lineno="199"><highlight class="comment"><sp/><sp/><sp/><sp/>m_floatGenerators[_name]<sp/>=gen;</highlight></codeline>
+<codeline lineno="200"><highlight class="comment"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="comment"></highlight></codeline>
+<codeline lineno="202"><highlight class="comment"><sp/><sp/>else<sp/>if(_distribution==binomial_distribution)</highlight></codeline>
+<codeline lineno="203"><highlight class="comment"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::binomial_distribution&lt;&gt;<sp/>distrib(int(_min),_max);</highlight></codeline>
+<codeline lineno="205"><highlight class="comment"></highlight></codeline>
+<codeline lineno="206"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::variate_generator&lt;ENGINE<sp/>&amp;,<sp/>boost::binomial_distribution&lt;&gt;<sp/>&gt;gen(m_generator,distrib);</highlight></codeline>
+<codeline lineno="207"><highlight class="comment"><sp/><sp/><sp/><sp/>m_floatGenerators[_name]<sp/>=gen;</highlight></codeline>
+<codeline lineno="208"><highlight class="comment"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="comment"><sp/><sp/>else<sp/>if(_distribution==cauchy_distribution)</highlight></codeline>
+<codeline lineno="210"><highlight class="comment"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="211"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::cauchy_distribution&lt;Real&gt;<sp/>distrib(_min,_max);</highlight></codeline>
+<codeline lineno="212"><highlight class="comment"></highlight></codeline>
+<codeline lineno="213"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::variate_generator&lt;ENGINE<sp/>&amp;,<sp/>boost::cauchy_distribution&lt;Real&gt;<sp/>&gt;gen(m_generator,distrib);</highlight></codeline>
+<codeline lineno="214"><highlight class="comment"><sp/><sp/><sp/><sp/>m_floatGenerators[_name]<sp/>=gen;</highlight></codeline>
+<codeline lineno="215"><highlight class="comment"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="comment"><sp/><sp/>else<sp/>if(_distribution==gamma_distribution)</highlight></codeline>
+<codeline lineno="217"><highlight class="comment"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="218"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::gamma_distribution&lt;Real&gt;<sp/>distrib(_min);</highlight></codeline>
+<codeline lineno="219"><highlight class="comment"></highlight></codeline>
+<codeline lineno="220"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::variate_generator&lt;ENGINE<sp/>&amp;,<sp/>boost::gamma_distribution&lt;Real&gt;<sp/>&gt;gen(m_generator,distrib);</highlight></codeline>
+<codeline lineno="221"><highlight class="comment"><sp/><sp/><sp/><sp/>m_floatGenerators[_name]<sp/>=gen;</highlight></codeline>
+<codeline lineno="222"><highlight class="comment"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="comment"><sp/><sp/>else<sp/>if(_distribution==poisson_distribution)</highlight></codeline>
+<codeline lineno="224"><highlight class="comment"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::poisson_distribution&lt;int&gt;<sp/>distrib(_min);</highlight></codeline>
+<codeline lineno="226"><highlight class="comment"></highlight></codeline>
+<codeline lineno="227"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::variate_generator&lt;ENGINE<sp/>&amp;,<sp/>boost::poisson_distribution&lt;int&gt;<sp/>&gt;gen(m_generator,distrib);</highlight></codeline>
+<codeline lineno="228"><highlight class="comment"><sp/><sp/><sp/><sp/>m_floatGenerators[_name]<sp/>=gen;</highlight></codeline>
+<codeline lineno="229"><highlight class="comment"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="comment"></highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/><sp/>else<sp/>if(_distribution==geometric_distribution)</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::geometric_distribution&lt;int&gt;<sp/>distrib(_min);</highlight></codeline>
+<codeline lineno="234"><highlight class="comment"></highlight></codeline>
+<codeline lineno="235"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::variate_generator&lt;ENGINE<sp/>&amp;,<sp/>boost::geometric_distribution&lt;int&gt;<sp/>&gt;gen(m_generator,distrib);</highlight></codeline>
+<codeline lineno="236"><highlight class="comment"><sp/><sp/><sp/><sp/>m_floatGenerators[_name]<sp/>=gen;</highlight></codeline>
+<codeline lineno="237"><highlight class="comment"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="comment"></highlight></codeline>
+<codeline lineno="239"><highlight class="comment"><sp/><sp/>else<sp/>if(_distribution==triangle_distribution)</highlight></codeline>
+<codeline lineno="240"><highlight class="comment"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::triangle_distribution&lt;Real&gt;<sp/>distrib(_min,_prob,_max);</highlight></codeline>
+<codeline lineno="242"><highlight class="comment"></highlight></codeline>
+<codeline lineno="243"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::variate_generator&lt;ENGINE<sp/>&amp;,<sp/>boost::triangle_distribution&lt;Real&gt;<sp/>&gt;gen(m_generator,distrib);</highlight></codeline>
+<codeline lineno="244"><highlight class="comment"><sp/><sp/><sp/><sp/>m_floatGenerators[_name]<sp/>=gen;</highlight></codeline>
+<codeline lineno="245"><highlight class="comment"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="comment"></highlight></codeline>
+<codeline lineno="247"><highlight class="comment"><sp/><sp/>else<sp/>if(_distribution==exponential_distribution)</highlight></codeline>
+<codeline lineno="248"><highlight class="comment"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="249"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::exponential_distribution&lt;Real&gt;<sp/>distrib(_min);</highlight></codeline>
+<codeline lineno="250"><highlight class="comment"></highlight></codeline>
+<codeline lineno="251"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::variate_generator&lt;ENGINE<sp/>&amp;,<sp/>boost::exponential_distribution&lt;Real&gt;<sp/>&gt;gen(m_generator,distrib);</highlight></codeline>
+<codeline lineno="252"><highlight class="comment"><sp/><sp/><sp/><sp/>m_floatGenerators[_name]<sp/>=gen;</highlight></codeline>
+<codeline lineno="253"><highlight class="comment"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="254"><highlight class="comment"></highlight></codeline>
+<codeline lineno="255"><highlight class="comment"><sp/><sp/>else<sp/>if(_distribution==normal_distribution)</highlight></codeline>
+<codeline lineno="256"><highlight class="comment"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::normal_distribution&lt;Real&gt;<sp/>distrib(_min,_max);</highlight></codeline>
+<codeline lineno="258"><highlight class="comment"></highlight></codeline>
+<codeline lineno="259"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::variate_generator&lt;ENGINE<sp/>&amp;,<sp/>boost::normal_distribution&lt;Real&gt;<sp/>&gt;gen(m_generator,distrib);</highlight></codeline>
+<codeline lineno="260"><highlight class="comment"><sp/><sp/><sp/><sp/>m_floatGenerators[_name]<sp/>=gen;</highlight></codeline>
+<codeline lineno="261"><highlight class="comment"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="comment"></highlight></codeline>
+<codeline lineno="263"><highlight class="comment"><sp/><sp/>else<sp/>if(_distribution==lognormal_distribution)</highlight></codeline>
+<codeline lineno="264"><highlight class="comment"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="265"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::lognormal_distribution&lt;Real&gt;<sp/>distrib(_min,_max);</highlight></codeline>
+<codeline lineno="266"><highlight class="comment"></highlight></codeline>
+<codeline lineno="267"><highlight class="comment"><sp/><sp/><sp/><sp/>boost::variate_generator&lt;ENGINE<sp/>&amp;,<sp/>boost::lognormal_distribution&lt;Real&gt;<sp/>&gt;gen(m_generator,distrib);</highlight></codeline>
+<codeline lineno="268"><highlight class="comment"><sp/><sp/><sp/><sp/>m_floatGenerators[_name]<sp/>=gen;</highlight></codeline>
+<codeline lineno="269"><highlight class="comment"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="270"><highlight class="comment"></highlight></codeline>
+<codeline lineno="271"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="272"><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="273"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/src/Random.cpp"/>
+  </compounddef>
+</doxygen>

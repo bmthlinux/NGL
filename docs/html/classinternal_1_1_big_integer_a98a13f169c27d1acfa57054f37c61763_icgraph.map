@@ -1,0 +1,8 @@
+<map id="internal::BigInteger::MultiplyPow5" name="internal::BigInteger::MultiplyPow5">
+<area shape="rect" id="node2" href="$classinternal_1_1_big_integer.html#abd04f535d8f1f443c7551a6845f7749c" title="internal::BigInteger\l::AppendDecimal64" alt="" coords="216,5,355,46"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a190f9c286df64526a7e3550528ed6b02" title="internal::CheckWithinHalfULP" alt="" coords="187,71,384,97"/>
+<area shape="rect" id="node3" href="$classinternal_1_1_big_integer.html#a656bd1bd4af3920beb90ba4af87b6181" title="internal::BigInteger\l::BigInteger" alt="" coords="451,5,584,46"/>
+<area shape="rect" id="node5" href="$namespaceinternal.html#a21546973704caf6e4c8b0d4869a614a6" title="internal::StrtodBigInteger" alt="" coords="433,71,602,97"/>
+<area shape="rect" id="node6" href="$namespaceinternal.html#a899ff5a0c5f9b203d720bb6f5631ed10" title="internal::StrtodFullPrecision" alt="" coords="651,71,837,97"/>
+<area shape="rect" id="node7" href="$class_generic_reader.html#a2447207fde31185e2bb8fbf1250b72e0" title="GenericReader::ParseNumber" alt="" coords="885,71,1088,97"/>
+</map>

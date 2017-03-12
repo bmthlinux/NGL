@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_generic_string_buffer" kind="class" language="C++" prot="public">
+    <compoundname>GenericStringBuffer</compoundname>
+    <includes refid="stringbuffer_8h" local="no">stringbuffer.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Encoding</type>
+      </param>
+      <param>
+        <type>typename Allocator</type>
+        <defval><ref refid="class_crt_allocator" kindref="compound">CrtAllocator</ref></defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_generic_string_buffer_1a735b75db076ffe86d0d294be49655d46" prot="public" static="no">
+        <type>Encoding::Ch</type>
+        <definition>typedef Encoding::Ch GenericStringBuffer&lt; Encoding, Allocator &gt;::Ch</definition>
+        <argsstring></argsstring>
+        <name>Ch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" line="37" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_generic_string_buffer_1ae74f9df854dd5a7db4315ef44b016d22" prot="public" static="yes" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t GenericStringBuffer&lt; Encoding, Allocator &gt;::kDefaultCapacity</definition>
+        <argsstring></argsstring>
+        <name>kDefaultCapacity</name>
+        <initializer>= 256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" line="73" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" prot="public" static="no" mutable="yes">
+        <type><ref refid="classinternal_1_1_stack" kindref="compound">internal::Stack</ref>&lt; Allocator &gt;</type>
+        <definition>internal::Stack&lt;Allocator&gt; GenericStringBuffer&lt; Encoding, Allocator &gt;::stack_</definition>
+        <argsstring></argsstring>
+        <name>stack_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" line="74" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="class_generic_string_buffer_1a62f5ea1a53a2a3f98088f8c152b6183e" compoundref="stringbuffer_8h" startline="39" endline="39">GenericStringBuffer&lt; Encoding, Allocator &gt;::GenericStringBuffer</referencedby>
+        <referencedby refid="class_generic_string_buffer_1a8be5c8fadccacdcf40e20220f38e0afa" compoundref="stringbuffer_8h" startline="50" endline="50">GenericStringBuffer&lt; Encoding, Allocator &gt;::Put</referencedby>
+        <referencedby refid="class_generic_string_buffer_1a42f15c959046d899cb74c3120a6995f9" compoundref="stringbuffer_8h" startline="53" endline="53">GenericStringBuffer&lt; Encoding, Allocator &gt;::Clear</referencedby>
+        <referencedby refid="class_generic_string_buffer_1a0dbdb77489b95923795011a24f705be5" compoundref="stringbuffer_8h" startline="54" endline="59">GenericStringBuffer&lt; Encoding, Allocator &gt;::ShrinkToFit</referencedby>
+        <referencedby refid="class_generic_string_buffer_1a49fd10cdd5dd97a4cf9813d01334d660" compoundref="stringbuffer_8h" startline="60" endline="60">GenericStringBuffer&lt; Encoding, Allocator &gt;::Push</referencedby>
+        <referencedby refid="class_generic_string_buffer_1a0038e53ba03c271bc4cbbac403ec4de4" compoundref="stringbuffer_8h" startline="61" endline="61">GenericStringBuffer&lt; Encoding, Allocator &gt;::Pop</referencedby>
+        <referencedby refid="class_generic_string_buffer_1a42ed917a29012d932802f2709e11c572" compoundref="stringbuffer_8h" startline="63" endline="69">GenericStringBuffer&lt; Encoding, Allocator &gt;::GetString</referencedby>
+        <referencedby refid="class_generic_string_buffer_1abd04725d776322157be3381f5559c40b" compoundref="stringbuffer_8h" startline="71" endline="71">GenericStringBuffer&lt; Encoding, Allocator &gt;::GetSize</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_generic_string_buffer_1a62f5ea1a53a2a3f98088f8c152b6183e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericStringBuffer&lt; Encoding, Allocator &gt;::GenericStringBuffer</definition>
+        <argsstring>(Allocator *allocator=0, size_t capacity=kDefaultCapacity)</argsstring>
+        <name>GenericStringBuffer</name>
+        <param>
+          <type>Allocator *</type>
+          <declname>allocator</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>capacity</declname>
+          <defval><ref refid="class_generic_string_buffer_1ae74f9df854dd5a7db4315ef44b016d22" kindref="member">kDefaultCapacity</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" line="39" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" bodystart="39" bodyend="39"/>
+        <references refid="namespacestd_1a37ba44826afa04fddf20fd70c45ac3b4" compoundref="posix_8h" startline="361" endline="361">std::move</references>
+        <references refid="class_generic_string_buffer_1a09937913fd2f426be04ae6d6a8abb0f6">GenericStringBuffer&lt; Encoding, Allocator &gt;::operator=</references>
+        <references refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" compoundref="stringbuffer_8h" startline="74">GenericStringBuffer&lt; Encoding, Allocator &gt;::stack_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_string_buffer_1a8be5c8fadccacdcf40e20220f38e0afa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericStringBuffer&lt; Encoding, Allocator &gt;::Put</definition>
+        <argsstring>(Ch c)</argsstring>
+        <name>Put</name>
+        <param>
+          <type><ref refid="class_generic_string_buffer_1a735b75db076ffe86d0d294be49655d46" kindref="member">Ch</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" line="50" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" bodystart="50" bodyend="50"/>
+        <references refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" compoundref="stringbuffer_8h" startline="74">GenericStringBuffer&lt; Encoding, Allocator &gt;::stack_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_string_buffer_1a28bb539487db17b07314a532f3b8847c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericStringBuffer&lt; Encoding, Allocator &gt;::Flush</definition>
+        <argsstring>()</argsstring>
+        <name>Flush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" line="51" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_string_buffer_1a42f15c959046d899cb74c3120a6995f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericStringBuffer&lt; Encoding, Allocator &gt;::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" line="53" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" bodystart="53" bodyend="53"/>
+        <references refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" compoundref="stringbuffer_8h" startline="74">GenericStringBuffer&lt; Encoding, Allocator &gt;::stack_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_string_buffer_1a0dbdb77489b95923795011a24f705be5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericStringBuffer&lt; Encoding, Allocator &gt;::ShrinkToFit</definition>
+        <argsstring>()</argsstring>
+        <name>ShrinkToFit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" line="54" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" bodystart="54" bodyend="59"/>
+        <references refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" compoundref="stringbuffer_8h" startline="74">GenericStringBuffer&lt; Encoding, Allocator &gt;::stack_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_string_buffer_1a49fd10cdd5dd97a4cf9813d01334d660" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_string_buffer_1a735b75db076ffe86d0d294be49655d46" kindref="member">Ch</ref> *</type>
+        <definition>Ch* GenericStringBuffer&lt; Encoding, Allocator &gt;::Push</definition>
+        <argsstring>(size_t count)</argsstring>
+        <name>Push</name>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" line="60" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" bodystart="60" bodyend="60"/>
+        <references refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" compoundref="stringbuffer_8h" startline="74">GenericStringBuffer&lt; Encoding, Allocator &gt;::stack_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_string_buffer_1a0038e53ba03c271bc4cbbac403ec4de4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericStringBuffer&lt; Encoding, Allocator &gt;::Pop</definition>
+        <argsstring>(size_t count)</argsstring>
+        <name>Pop</name>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" line="61" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" bodystart="61" bodyend="61"/>
+        <references refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" compoundref="stringbuffer_8h" startline="74">GenericStringBuffer&lt; Encoding, Allocator &gt;::stack_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_string_buffer_1a42ed917a29012d932802f2709e11c572" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_generic_string_buffer_1a735b75db076ffe86d0d294be49655d46" kindref="member">Ch</ref> *</type>
+        <definition>const Ch* GenericStringBuffer&lt; Encoding, Allocator &gt;::GetString</definition>
+        <argsstring>() const </argsstring>
+        <name>GetString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" line="63" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" bodystart="63" bodyend="69"/>
+        <references refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" compoundref="stringbuffer_8h" startline="74">GenericStringBuffer&lt; Encoding, Allocator &gt;::stack_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_string_buffer_1abd04725d776322157be3381f5559c40b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t GenericStringBuffer&lt; Encoding, Allocator &gt;::GetSize</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" line="71" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" bodystart="71" bodyend="71"/>
+        <references refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" compoundref="stringbuffer_8h" startline="74">GenericStringBuffer&lt; Encoding, Allocator &gt;::stack_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_generic_string_buffer_1aec9340c9906ce399bb142706a61a9501" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GenericStringBuffer&lt; Encoding, Allocator &gt;::GenericStringBuffer</definition>
+        <argsstring>(const GenericStringBuffer &amp;)</argsstring>
+        <name>GenericStringBuffer</name>
+        <param>
+          <type>const <ref refid="class_generic_string_buffer" kindref="compound">GenericStringBuffer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_string_buffer_1a09937913fd2f426be04ae6d6a8abb0f6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_generic_string_buffer" kindref="compound">GenericStringBuffer</ref> &amp;</type>
+        <definition>GenericStringBuffer&amp; GenericStringBuffer&lt; Encoding, Allocator &gt;::operator=</definition>
+        <argsstring>(const GenericStringBuffer &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_generic_string_buffer" kindref="compound">GenericStringBuffer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" line="79" column="1"/>
+        <referencedby refid="class_generic_string_buffer_1a62f5ea1a53a2a3f98088f8c152b6183e" compoundref="stringbuffer_8h" startline="39" endline="39">GenericStringBuffer&lt; Encoding, Allocator &gt;::GenericStringBuffer</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents an in-memory output stream. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Encoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Encoding of the stream. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Allocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type for allocating memory buffer. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>implements Stream concept </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1563">
+        <label>size_t</label>
+      </node>
+      <node id="1562">
+        <label>GenericStringBuffer&lt; Encoding, Allocator &gt;</label>
+        <link refid="class_generic_string_buffer"/>
+        <childnode refid="1563" relation="usage">
+          <edgelabel>+kDefaultCapacity</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" line="35" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/stringbuffer.h" bodystart="35" bodyend="80"/>
+    <listofallmembers>
+      <member refid="class_generic_string_buffer_1a735b75db076ffe86d0d294be49655d46" prot="public" virt="non-virtual"><scope>GenericStringBuffer</scope><name>Ch</name></member>
+      <member refid="class_generic_string_buffer_1a42f15c959046d899cb74c3120a6995f9" prot="public" virt="non-virtual"><scope>GenericStringBuffer</scope><name>Clear</name></member>
+      <member refid="class_generic_string_buffer_1a28bb539487db17b07314a532f3b8847c" prot="public" virt="non-virtual"><scope>GenericStringBuffer</scope><name>Flush</name></member>
+      <member refid="class_generic_string_buffer_1a62f5ea1a53a2a3f98088f8c152b6183e" prot="public" virt="non-virtual"><scope>GenericStringBuffer</scope><name>GenericStringBuffer</name></member>
+      <member refid="class_generic_string_buffer_1aec9340c9906ce399bb142706a61a9501" prot="private" virt="non-virtual"><scope>GenericStringBuffer</scope><name>GenericStringBuffer</name></member>
+      <member refid="class_generic_string_buffer_1abd04725d776322157be3381f5559c40b" prot="public" virt="non-virtual"><scope>GenericStringBuffer</scope><name>GetSize</name></member>
+      <member refid="class_generic_string_buffer_1a42ed917a29012d932802f2709e11c572" prot="public" virt="non-virtual"><scope>GenericStringBuffer</scope><name>GetString</name></member>
+      <member refid="class_generic_string_buffer_1ae74f9df854dd5a7db4315ef44b016d22" prot="public" virt="non-virtual"><scope>GenericStringBuffer</scope><name>kDefaultCapacity</name></member>
+      <member refid="class_generic_string_buffer_1a09937913fd2f426be04ae6d6a8abb0f6" prot="private" virt="non-virtual"><scope>GenericStringBuffer</scope><name>operator=</name></member>
+      <member refid="class_generic_string_buffer_1a0038e53ba03c271bc4cbbac403ec4de4" prot="public" virt="non-virtual"><scope>GenericStringBuffer</scope><name>Pop</name></member>
+      <member refid="class_generic_string_buffer_1a49fd10cdd5dd97a4cf9813d01334d660" prot="public" virt="non-virtual"><scope>GenericStringBuffer</scope><name>Push</name></member>
+      <member refid="class_generic_string_buffer_1a8be5c8fadccacdcf40e20220f38e0afa" prot="public" virt="non-virtual"><scope>GenericStringBuffer</scope><name>Put</name></member>
+      <member refid="class_generic_string_buffer_1a0dbdb77489b95923795011a24f705be5" prot="public" virt="non-virtual"><scope>GenericStringBuffer</scope><name>ShrinkToFit</name></member>
+      <member refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" prot="public" virt="non-virtual"><scope>GenericStringBuffer</scope><name>stack_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,8 @@
+<map id="GenericPointer::GenericPointer" name="GenericPointer::GenericPointer">
+<area shape="rect" id="node2" href="$class_generic_pointer.html#a542a313d11b2296c92420179b9e9cf87" title="Parse a JSON String or its URI fragment representation into tokens. " alt="" coords="262,143,415,169"/>
+<area shape="rect" id="node3" href="$struct_generic_insitu_string_stream.html#afc671072f56eb6e8d9009061c6565dd4" title="GenericInsituStringStream\l::PutBegin" alt="" coords="480,5,659,46"/>
+<area shape="rect" id="node4" href="$class_generic_pointer_1_1_percent_decode_stream.html#a0deba6d1e988138c1431028b7fdfde3d" title="GenericPointer::PercentDecode\lStream::IsValid" alt="" coords="464,70,675,111"/>
+<area shape="rect" id="node5" href="$struct_generic_insitu_string_stream.html#a93702b08ff29c66bde389b0d4e9efa5a" title="GenericInsituStringStream\l::PutEnd" alt="" coords="480,135,659,177"/>
+<area shape="rect" id="node6" href="$class_generic_pointer_1_1_percent_decode_stream.html#af9ed027feb3fa8d62364f75ff9931c1a" title="GenericPointer::PercentDecode\lStream::Tell" alt="" coords="464,201,675,242"/>
+<area shape="rect" id="node7" href="$class_generic_pointer.html#ab7dc9f4a09830b4c19083608e25ef0a9" title="Check whether a character should be percent&#45;encoded. " alt="" coords="471,266,667,307"/>
+</map>

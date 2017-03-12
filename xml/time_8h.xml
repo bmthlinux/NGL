@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="time_8h" kind="file" language="C++">
+    <compoundname>time.h</compoundname>
+    <includes refid="format_8h" local="yes">fmt/format.h</includes>
+    <includes local="no">ctime</includes>
+    <incdepgraph>
+      <node id="6517">
+        <label>limits</label>
+      </node>
+      <node id="6510">
+        <label>time.h</label>
+        <link refid="time.h"/>
+        <childnode refid="6511" relation="include">
+        </childnode>
+        <childnode refid="6526" relation="include">
+        </childnode>
+      </node>
+      <node id="6514">
+        <label>cmath</label>
+      </node>
+      <node id="6512">
+        <label>cassert</label>
+      </node>
+      <node id="6519">
+        <label>stdexcept</label>
+      </node>
+      <node id="6523">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="6524" relation="include">
+        </childnode>
+        <childnode refid="6525" relation="include">
+        </childnode>
+      </node>
+      <node id="6520">
+        <label>string</label>
+      </node>
+      <node id="6524">
+        <label>limits.h</label>
+      </node>
+      <node id="6525">
+        <label>wchar.h</label>
+      </node>
+      <node id="6515">
+        <label>cstdio</label>
+      </node>
+      <node id="6526">
+        <label>ctime</label>
+      </node>
+      <node id="6521">
+        <label>vector</label>
+      </node>
+      <node id="6522">
+        <label>utility</label>
+      </node>
+      <node id="6511">
+        <label>fmt/format.h</label>
+        <link refid="format_8h"/>
+        <childnode refid="6512" relation="include">
+        </childnode>
+        <childnode refid="6513" relation="include">
+        </childnode>
+        <childnode refid="6514" relation="include">
+        </childnode>
+        <childnode refid="6515" relation="include">
+        </childnode>
+        <childnode refid="6516" relation="include">
+        </childnode>
+        <childnode refid="6517" relation="include">
+        </childnode>
+        <childnode refid="6518" relation="include">
+        </childnode>
+        <childnode refid="6519" relation="include">
+        </childnode>
+        <childnode refid="6520" relation="include">
+        </childnode>
+        <childnode refid="6521" relation="include">
+        </childnode>
+        <childnode refid="6522" relation="include">
+        </childnode>
+        <childnode refid="6523" relation="include">
+        </childnode>
+      </node>
+      <node id="6513">
+        <label>clocale</label>
+      </node>
+      <node id="6516">
+        <label>cstring</label>
+      </node>
+      <node id="6518">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacefmt">fmt</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>Formatting<sp/>library<sp/>for<sp/>C++<sp/>-<sp/>time<sp/>formatting</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>Copyright<sp/>(c)<sp/>2012<sp/>-<sp/>2016,<sp/>Victor<sp/>Zverovich</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>For<sp/>the<sp/>license<sp/>information<sp/>refer<sp/>to<sp/>format.h.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>FMT_TIME_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FMT_TIME_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="format_8h" kindref="compound">fmt/format.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacefmt" kindref="compound">fmt</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ArgFormatter&gt;</highlight></codeline>
+<codeline lineno="18" refid="namespacefmt_1a9a337b83f27681daadc5565b49e8409d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacefmt_1a3e1efc349649f867c4cc16cab445d7c5" kindref="member">format_arg</ref>(<ref refid="classfmt_1_1_basic_formatter" kindref="compound">BasicFormatter&lt;char, ArgFormatter&gt;</ref><sp/>&amp;<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*&amp;format_str,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::tm<sp/>&amp;tm)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*format_str<sp/>==<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>++format_str;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="glew_8h_1a432111147038972f06e049e18a837002" kindref="member">end</ref><sp/>=<sp/>format_str;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(*end<sp/>&amp;&amp;<sp/>*end<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;}&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>++<ref refid="glew_8h_1a432111147038972f06e049e18a837002" kindref="member">end</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*end<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;}&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="format_8h_1ad9e2ed6d3b432a04c9622c34a2495304" kindref="member">FMT_THROW</ref>(<ref refid="classfmt_1_1_format_error" kindref="compound">FormatError</ref>(</highlight><highlight class="stringliteral">&quot;missing<sp/>&apos;}&apos;<sp/>in<sp/>format<sp/>string&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><ref refid="classfmt_1_1internal_1_1_memory_buffer" kindref="compound">internal::MemoryBuffer&lt;char, internal::INLINE_BUFFER_SIZE&gt;</ref><sp/><ref refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" kindref="member">format</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>format.<ref refid="classfmt_1_1_buffer_1a7ca155741c43ec7c7edcea8dd28a2123" kindref="member">append</ref>(format_str,<sp/>end<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>format[format.<ref refid="classfmt_1_1_buffer_1a14fa72f0ddf584c14ffffb1446f598aa" kindref="member">size</ref>()<sp/>-<sp/>1]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><ref refid="classfmt_1_1_buffer" kindref="compound">Buffer&lt;char&gt;</ref><sp/>&amp;<ref refid="glew_8h_1a6c0f527f003707dfaca177b40f406ed9" kindref="member">buffer</ref><sp/>=<sp/>f.<ref refid="classfmt_1_1_basic_formatter_1abd5692d2f2123b27da7941d56fc6073c" kindref="member">writer</ref>().buffer();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>std::size_t<sp/><ref refid="glew_8h_1ac55adc720a3098c1b454d2a4647f4361" kindref="member">start</ref><sp/>=<sp/>buffer.<ref refid="classfmt_1_1_buffer_1a14fa72f0ddf584c14ffffb1446f598aa" kindref="member">size</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;;)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>std::size_t<sp/><ref refid="glew_8h_1a3d1e3edfcf61ca2d831883e1afbad89e" kindref="member">size</ref><sp/>=<sp/>buffer.<ref refid="classfmt_1_1_buffer_1aaf54fe786de91157629f96380e0cb215" kindref="member">capacity</ref>()<sp/>-<sp/><ref refid="glew_8h_1ac55adc720a3098c1b454d2a4647f4361" kindref="member">start</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>std::size_t<sp/><ref refid="glew_8h_1a10b284d589000663becfbc6867a3a9f7" kindref="member">count</ref><sp/>=<sp/>std::strftime(&amp;buffer[start],<sp/>size,<sp/>&amp;format[0],<sp/>&amp;tm);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(count<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>buffer.<ref refid="classfmt_1_1_buffer_1a20f893164dc20e8ea8c77810d4ea8d59" kindref="member">resize</ref>(start<sp/>+<sp/>count);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(size<sp/>&gt;=<sp/>format.<ref refid="classfmt_1_1_buffer_1a14fa72f0ddf584c14ffffb1446f598aa" kindref="member">size</ref>()<sp/>*<sp/>256)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>buffer<sp/>is<sp/>256<sp/>times<sp/>larger<sp/>than<sp/>the<sp/>format<sp/>string,<sp/>assume</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>that<sp/>`strftime`<sp/>gives<sp/>an<sp/>empty<sp/>result.<sp/>There<sp/>doesn&apos;t<sp/>seem<sp/>to<sp/>be<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>better<sp/>way<sp/>to<sp/>distinguish<sp/>the<sp/>two<sp/>cases:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>https://github.com/fmtlib/fmt/issues/367</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::size_t<sp/>MIN_GROWTH<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>buffer.<ref refid="classfmt_1_1_buffer_1a7f46a3ce8d86abe35904f6654bd4ea1e" kindref="member">reserve</ref>(buffer.<ref refid="classfmt_1_1_buffer_1aaf54fe786de91157629f96380e0cb215" kindref="member">capacity</ref>()<sp/>+<sp/>(size<sp/>&gt;<sp/>MIN_GROWTH<sp/>?<sp/>size<sp/>:<sp/>MIN_GROWTH));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>format_str<sp/>=<sp/>end<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>FMT_TIME_H_</highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/time.h"/>
+  </compounddef>
+</doxygen>

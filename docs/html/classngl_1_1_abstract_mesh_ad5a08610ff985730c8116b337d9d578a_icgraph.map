@@ -1,0 +1,5 @@
+<map id="ngl::AbstractMesh::unMapVAO" name="ngl::AbstractMesh::unMapVAO">
+<area shape="rect" id="node2" href="$classngl_1_1_abstract_mesh.html#aecd194e72054c0ba2a89f606368af14a" title="save the mesh as NCCA Binary VBO format basically this format is the processed binary vbo mesh data a..." alt="" coords="190,5,349,46"/>
+<area shape="rect" id="node4" href="$classngl_1_1_n_c_c_a_point_bake.html#ab3fb20f6af7c77b7daf6bc652becdbaa" title="set the attached mesh to the current frame " alt="" coords="197,70,342,111"/>
+<area shape="rect" id="node3" href="$classngl_1_1_n_c_c_a_bin_mesh.html#a79e26e8148d2413548984c6d309f88cf" title="method to save the obj " alt="" coords="398,12,570,39"/>
+</map>

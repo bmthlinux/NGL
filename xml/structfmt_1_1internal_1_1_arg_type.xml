@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structfmt_1_1internal_1_1_arg_type" kind="struct" language="C++" prot="public">
+    <compoundname>fmt::internal::ArgType</compoundname>
+    <includes refid="format_8h" local="no">format.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_arg_type_1acfa7078681b7047cb448d523f5eb2a54" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+        <definition>uint64_t fmt::internal::ArgType::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="2143" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="2143" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structfmt_1_1internal_1_1_arg_type_1af18fdbe0560a1b7ada9a698cc8b0cb70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fmt::internal::ArgType::ArgType</definition>
+        <argsstring>()</argsstring>
+        <name>ArgType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="2145" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="2145" bodyend="2145"/>
+      </memberdef>
+      <memberdef kind="function" id="structfmt_1_1internal_1_1_arg_type_1a011f9d3d3e6da48d17967466c3d94fc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>fmt::internal::ArgType::ArgType</definition>
+        <argsstring>(const T &amp;arg)</argsstring>
+        <name>ArgType</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="2148" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="2148" bodyend="2148"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1179">
+        <label>fmt::internal::ArgType</label>
+        <link refid="structfmt_1_1internal_1_1_arg_type"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="2142" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="2142" bodyend="2149"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1internal_1_1_arg_type_1af18fdbe0560a1b7ada9a698cc8b0cb70" prot="public" virt="non-virtual"><scope>fmt::internal::ArgType</scope><name>ArgType</name></member>
+      <member refid="structfmt_1_1internal_1_1_arg_type_1a011f9d3d3e6da48d17967466c3d94fc8" prot="public" virt="non-virtual"><scope>fmt::internal::ArgType</scope><name>ArgType</name></member>
+      <member refid="structfmt_1_1internal_1_1_arg_type_1acfa7078681b7047cb448d523f5eb2a54" prot="public" virt="non-virtual"><scope>fmt::internal::ArgType</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

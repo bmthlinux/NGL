@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_create_core_g_l_context" kind="class" language="C++" prot="public">
+    <compoundname>CreateCoreGLContext</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QGLContext</basecompoundref>
+    <includes refid="_types_8h" local="no">Types.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_create_core_g_l_context_1a68fdb285452250226f3da53b19f17c71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CreateCoreGLContext::CreateCoreGLContext</definition>
+        <argsstring>(const QGLFormat &amp;format, QPaintDevice *device)</argsstring>
+        <name>CreateCoreGLContext</name>
+        <param>
+          <type>const QGLFormat &amp;</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>QPaintDevice *</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Types.h" line="87" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Types.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_create_core_g_l_context_1adde10e42bae2a9b95e581393fdd8f9a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CreateCoreGLContext::CreateCoreGLContext</definition>
+        <argsstring>(const QGLFormat &amp;format)</argsstring>
+        <name>CreateCoreGLContext</name>
+        <param>
+          <type>const QGLFormat &amp;</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Types.h" line="88" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Types.h" bodystart="88" bodyend="88"/>
+        <references refid="_types_8h_1a131d6caa19a9ad580e98441a3c8f8e7f" compoundref="set_g_l32_visual_mac_8mm" startline="4" endline="33">setGL32VisualMac</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1424">
+        <label>QGLContext</label>
+      </node>
+      <node id="1423">
+        <label>CreateCoreGLContext</label>
+        <link refid="class_create_core_g_l_context"/>
+        <childnode refid="1424" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1426">
+        <label>QGLContext</label>
+      </node>
+      <node id="1425">
+        <label>CreateCoreGLContext</label>
+        <link refid="class_create_core_g_l_context"/>
+        <childnode refid="1426" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/Types.h" line="85" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Types.h" bodystart="84" bodyend="98"/>
+    <listofallmembers>
+      <member refid="class_create_core_g_l_context_1a68fdb285452250226f3da53b19f17c71" prot="public" virt="non-virtual"><scope>CreateCoreGLContext</scope><name>CreateCoreGLContext</name></member>
+      <member refid="class_create_core_g_l_context_1adde10e42bae2a9b95e581393fdd8f9a6" prot="public" virt="non-virtual"><scope>CreateCoreGLContext</scope><name>CreateCoreGLContext</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,8 @@
+<map id="fmt::File::descriptor" name="fmt::File::descriptor">
+<area shape="rect" id="node2" href="$namespacefmt.html#a28071220364a5499348cec5dbba7a005" title="fmt::getpagesize" alt="" coords="193,5,313,32"/>
+<area shape="rect" id="node3" href="$namespacefmt_1_1internal.html#a7c721969e9660580a237bd4130422ab6" title="fmt::internal::write" alt="" coords="190,56,317,83"/>
+<area shape="rect" id="node4" href="$classfmt_1_1_basic_writer.html#a62d1c7b5be9c3580326320d5d178d096" title="fmt::BasicWriter::data" alt="" coords="377,5,527,32"/>
+<area shape="rect" id="node5" href="$classfmt_1_1_basic_writer.html#a1b6721b4ba4d3fa18ac781a36616cc2a" title="fmt::BasicWriter::size" alt="" coords="379,56,525,83"/>
+<area shape="rect" id="node7" href="$namespacefmt_1_1internal.html#a28bed1291226be35437bc3173c19c205" title="fmt::internal::to_unsigned" alt="" coords="366,107,538,133"/>
+<area shape="rect" id="node6" href="$classfmt_1_1_buffer.html#a14fa72f0ddf584c14ffffb1446f598aa" title="fmt::Buffer::size" alt="" coords="587,56,701,83"/>
+</map>

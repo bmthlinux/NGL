@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classngl_1_1_spot_light" kind="class" language="C++" prot="public">
+    <compoundname>ngl::SpotLight</compoundname>
+    <basecompoundref refid="classngl_1_1_light" prot="public" virt="non-virtual">ngl::Light</basecompoundref>
+    <includes refid="_spot_light_8h" local="no">SpotLight.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classngl_1_1_spot_light_1a1565f0ed1a95d9696b01c41f42a28801" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::SpotLight::m_innerCutoffAngle</definition>
+        <argsstring></argsstring>
+        <name>m_innerCutoffAngle</name>
+        <briefdescription>
+<para>the spot inner cutoff angle </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SpotLight.h" line="145" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/SpotLight.h" bodystart="145" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_spot_light_1a5214b8ce000e6e6d4f85052d8d871111" compoundref="_spot_light_8cpp" startline="117" endline="120">setInnerCutoff</referencedby>
+        <referencedby refid="classngl_1_1_spot_light_1ab5b407ff1b1489463898bbecc8130d3d" compoundref="_spot_light_8cpp" startline="121" endline="161">loadToShader</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_spot_light_1a27c8849128695abde940ae03b707a586" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::SpotLight::m_spotExponent</definition>
+        <argsstring></argsstring>
+        <name>m_spotExponent</name>
+        <briefdescription>
+<para>the SpotExponent value </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SpotLight.h" line="149" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/SpotLight.h" bodystart="149" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_spot_light_1a7e1993e0f66b2df0f9dfa22a99af3b51" compoundref="_spot_light_8cpp" startline="103" endline="111">setParams</referencedby>
+        <referencedby refid="classngl_1_1_spot_light_1ab5b407ff1b1489463898bbecc8130d3d" compoundref="_spot_light_8cpp" startline="121" endline="161">loadToShader</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_spot_light_1a247daa506ab8458680cd18f276b0a459" prot="protected" static="no" mutable="no">
+        <type><ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref></type>
+        <definition>Vec4 ngl::SpotLight::m_aim</definition>
+        <argsstring></argsstring>
+        <name>m_aim</name>
+        <briefdescription>
+<para>where the spot is to be aimed </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SpotLight.h" line="153" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/SpotLight.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_spot_light_1a1de1c6d2c4af902dfc6f36e654147514" prot="protected" static="no" mutable="no">
+        <type><ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref></type>
+        <definition>Vec4 ngl::SpotLight::m_dir</definition>
+        <argsstring></argsstring>
+        <name>m_dir</name>
+        <briefdescription>
+<para>the spot light direction vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SpotLight.h" line="157" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/SpotLight.h" bodystart="157" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_spot_light_1ab5b407ff1b1489463898bbecc8130d3d" compoundref="_spot_light_8cpp" startline="121" endline="161">loadToShader</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngl_1_1_spot_light_1a9ba7e5fcd9118ff7cc74c197f2817096" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ngl::SpotLight::SpotLight</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>SpotLight</name>
+        <briefdescription>
+<para>default ctor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SpotLight.h" line="65" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/SpotLight.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_spot_light_1aa536470f72c40d774a7edc95b0f10f10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::SpotLight::SpotLight</definition>
+        <argsstring>(const Vec3 &amp;_pos, const Vec3 &amp;_dir, const Colour &amp;_col) noexcept</argsstring>
+        <name>SpotLight</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_pos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_dir</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classngl_1_1_colour" kindref="compound">Colour</ref> &amp;</type>
+          <declname>_col</declname>
+        </param>
+        <briefdescription>
+<para>ctor </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the spot position </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the spot direction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the spot colour </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SpotLight.h" line="72" column="1" bodyfile="/Users/jmacey/NGL/src/SpotLight.cpp" bodystart="29" bodyend="49"/>
+        <references refid="namespacengl_1aed3f973f604db6d64ca9e0b24996a553aa2bf56aca8daa3e75044eb407ccd15bb">ngl::SPOTLIGHT</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_spot_light_1afa55a7fe9c05dffa91d090e1535ce426" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::SpotLight::SpotLight</definition>
+        <argsstring>(const SpotLight &amp;_l) noexcept</argsstring>
+        <name>SpotLight</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_spot_light" kindref="compound">SpotLight</ref> &amp;</type>
+          <declname>_l</declname>
+        </param>
+        <briefdescription>
+<para>copy ctor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SpotLight.h" line="76" column="1" bodyfile="/Users/jmacey/NGL/src/SpotLight.cpp" bodystart="51" bodyend="57"/>
+        <references refid="namespacengl_1aed3f973f604db6d64ca9e0b24996a553aa2bf56aca8daa3e75044eb407ccd15bb">ngl::SPOTLIGHT</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_spot_light_1a1ec1e6e35f587e82d22c4c44f4ce5a60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::SpotLight::set</definition>
+        <argsstring>(const Vec3 &amp;_pos, const Vec3 &amp;_dir, const Colour &amp;_col) noexcept</argsstring>
+        <name>set</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_pos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_dir</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classngl_1_1_colour" kindref="compound">Colour</ref> &amp;</type>
+          <declname>_col</declname>
+        </param>
+        <briefdescription>
+<para>a method to set the spotlight parameters </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the position of the <ref refid="classngl_1_1_light" kindref="compound">Light</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the direction of the light </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the colour of the light </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SpotLight.h" line="83" column="1" bodyfile="/Users/jmacey/NGL/src/SpotLight.cpp" bodystart="61" bodyend="80"/>
+        <references refid="namespacengl_1aed3f973f604db6d64ca9e0b24996a553aa2bf56aca8daa3e75044eb407ccd15bb">ngl::SPOTLIGHT</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_spot_light_1aa00e4103dfa275b3be40932c7cf167eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::SpotLight::enable</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>enable</name>
+        <reimplements refid="classngl_1_1_light_1a9b6d00c8cdb99e89288da74fe4239827">enable</reimplements>
+        <briefdescription>
+<para>enables the spot light </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SpotLight.h" line="87" column="1" bodyfile="/Users/jmacey/NGL/src/SpotLight.cpp" bodystart="97" bodyend="100"/>
+        <references refid="classngl_1_1_light_1a64d12d0914998cf0296b4284acd1cd08" compoundref="_light_8h" startline="206">ngl::Light::m_active</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_spot_light_1a7e1993e0f66b2df0f9dfa22a99af3b51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::SpotLight::setParams</definition>
+        <argsstring>(const Real _cutoff, const Real _exponent, const Real _constant, const Real _linear, const Real _quadratic) noexcept</argsstring>
+        <name>setParams</name>
+        <param>
+          <type>const <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_cutoff</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_exponent</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_constant</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_linear</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_quadratic</declname>
+        </param>
+        <briefdescription>
+<para>sets the various spot light params </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_cutoff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the spot cutoff value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_exponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the spot exponent vlaue </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_constant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant attenuation value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_linear</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linear attenuation value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_quadratic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>quadratic attenuation value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SpotLight.h" line="96" column="1" bodyfile="/Users/jmacey/NGL/src/SpotLight.cpp" bodystart="103" bodyend="111"/>
+        <references refid="classngl_1_1_light_1ae599f2dfec737b23af75cbcb6be6613e" compoundref="_light_8h" startline="194">ngl::Light::m_constantAtten</references>
+        <references refid="classngl_1_1_light_1a61ea1115270a6b4798a6383a8c2c1b26" compoundref="_light_8h" startline="211">ngl::Light::m_cutoffAngle</references>
+        <references refid="classngl_1_1_light_1aebe8996368d8c7598cffba36883084e0" compoundref="_light_8h" startline="198">ngl::Light::m_linearAtten</references>
+        <references refid="classngl_1_1_light_1a926e5c7567ad0b2e09548dd6a8e60d7c" compoundref="_light_8h" startline="202">ngl::Light::m_quadraticAtten</references>
+        <references refid="classngl_1_1_spot_light_1a27c8849128695abde940ae03b707a586" compoundref="_spot_light_8h" startline="149">m_spotExponent</references>
+        <references refid="namespacengl_1a0bade03a2edcb08a49da7731394284fe" compoundref="_util_8cpp" startline="89" endline="92">ngl::radians</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_spot_light_1a6af998903974bf850920712eda0df3c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::SpotLight::setCutoff</definition>
+        <argsstring>(const Real &amp;_cutoff) noexcept</argsstring>
+        <name>setCutoff</name>
+        <param>
+          <type>const <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref> &amp;</type>
+          <declname>_cutoff</declname>
+        </param>
+        <briefdescription>
+<para>sets the spot cutoff </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_cutoff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>this is the spot cos cutoff value, we need to calc the cos(radians(_cutoff)) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SpotLight.h" line="101" column="1" bodyfile="/Users/jmacey/NGL/src/SpotLight.cpp" bodystart="113" bodyend="116"/>
+        <references refid="classngl_1_1_light_1a61ea1115270a6b4798a6383a8c2c1b26" compoundref="_light_8h" startline="211">ngl::Light::m_cutoffAngle</references>
+        <references refid="namespacengl_1a0bade03a2edcb08a49da7731394284fe" compoundref="_util_8cpp" startline="89" endline="92">ngl::radians</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_spot_light_1a5214b8ce000e6e6d4f85052d8d871111" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::SpotLight::setInnerCutoff</definition>
+        <argsstring>(const Real &amp;_cutoff) noexcept</argsstring>
+        <name>setInnerCutoff</name>
+        <param>
+          <type>const <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref> &amp;</type>
+          <declname>_cutoff</declname>
+        </param>
+        <briefdescription>
+<para>sets the spot inner cutoff </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_cutoff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>this is the spot cos cutoff value, we need to calc the cos(radians(_cutoff)) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SpotLight.h" line="106" column="1" bodyfile="/Users/jmacey/NGL/src/SpotLight.cpp" bodystart="117" bodyend="120"/>
+        <references refid="classngl_1_1_spot_light_1a1565f0ed1a95d9696b01c41f42a28801" compoundref="_spot_light_8h" startline="145">m_innerCutoffAngle</references>
+        <references refid="namespacengl_1a0bade03a2edcb08a49da7731394284fe" compoundref="_util_8cpp" startline="89" endline="92">ngl::radians</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_spot_light_1a319f9e0fb17c342e26ad572eccc00204" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::SpotLight::setExponent</definition>
+        <argsstring>(const Real &amp;_exp) noexcept</argsstring>
+        <name>setExponent</name>
+        <param>
+          <type>const <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref> &amp;</type>
+          <declname>_exp</declname>
+        </param>
+        <briefdescription>
+<para>sets the exponent </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_exponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the spot exponent vlaue </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SpotLight.h" line="111" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/SpotLight.h" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_spot_light_1a079e623ca4f15c02b859e49c29beec46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::SpotLight::aim</definition>
+        <argsstring>(const Vec4 &amp;_pos) noexcept</argsstring>
+        <name>aim</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref> &amp;</type>
+          <declname>_pos</declname>
+        </param>
+        <briefdescription>
+<para>This function sets the light to aim at the specified point. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the aim position </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SpotLight.h" line="116" column="1" bodyfile="/Users/jmacey/NGL/src/SpotLight.cpp" bodystart="84" bodyend="92"/>
+        <references refid="classngl_1_1_vec4_1ac0dca0913332163df66d6e229564c85b" compoundref="_vec4_8cpp" startline="99" endline="107">ngl::Vec4::normalize</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_spot_light_1ab5b407ff1b1489463898bbecc8130d3d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::SpotLight::loadToShader</definition>
+        <argsstring>(std::string _uniformName) const  noexcept</argsstring>
+        <name>loadToShader</name>
+        <param>
+          <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+          <declname>_uniformName</declname>
+        </param>
+        <briefdescription>
+<para>this method loads the spotlight values to the shader </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_uniformName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the uniform base name to load shader values to the struct will be _uniformName.position; _uniformName.direction; _uniformName.ambient; _uniformName.diffuse; _uniformName.specular; _uniformName.spotCosCutoff; _uniformName.spotExponent; _uniformName.constantAttenuation; _uniformName.linearAttenuation; _uniformName.quadraticAttenuation; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>struct Lights { vec4 position; vec3 direction; vec4 ambient; vec4 diffuse; vec4 specular; float spotCosCutoff; float constantAttenuation; float linearAttenuation; float quadraticAttenuation; }; </para>        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SpotLight.h" line="132" column="1" bodyfile="/Users/jmacey/NGL/src/SpotLight.cpp" bodystart="121" bodyend="161"/>
+        <references refid="classngl_1_1_singleton_1ab5d43c93fdc09ecadc5f6ebfd9460396">ngl::Singleton&lt; ShaderLib &gt;::instance</references>
+        <references refid="classngl_1_1_colour_1ab96e9e106eb002f99202af9a98f2370f" compoundref="_colour_8h" startline="172">ngl::Colour::m_a</references>
+        <references refid="classngl_1_1_light_1a64d12d0914998cf0296b4284acd1cd08" compoundref="_light_8h" startline="206">ngl::Light::m_active</references>
+        <references refid="classngl_1_1_light_1acc8c0099d1b3437bc814d19de9d5025f" compoundref="_light_8h" startline="186">ngl::Light::m_ambient</references>
+        <references refid="classngl_1_1_colour_1a3e577332e227fba3e0a50b72ee65dc2f" compoundref="_colour_8h" startline="168">ngl::Colour::m_b</references>
+        <references refid="classngl_1_1_light_1ae599f2dfec737b23af75cbcb6be6613e" compoundref="_light_8h" startline="194">ngl::Light::m_constantAtten</references>
+        <references refid="classngl_1_1_light_1a61ea1115270a6b4798a6383a8c2c1b26" compoundref="_light_8h" startline="211">ngl::Light::m_cutoffAngle</references>
+        <references refid="classngl_1_1_light_1a7bc1cdc3603b217e66bf4e1d9b1b8e8c" compoundref="_light_8h" startline="178">ngl::Light::m_diffuse</references>
+        <references refid="classngl_1_1_spot_light_1a1de1c6d2c4af902dfc6f36e654147514" compoundref="_spot_light_8h" startline="157">m_dir</references>
+        <references refid="classngl_1_1_colour_1a12072e1aa25ddb1977a8b9acbb3b3085" compoundref="_colour_8h" startline="164">ngl::Colour::m_g</references>
+        <references refid="classngl_1_1_spot_light_1a1565f0ed1a95d9696b01c41f42a28801" compoundref="_spot_light_8h" startline="145">m_innerCutoffAngle</references>
+        <references refid="classngl_1_1_light_1a98e0a04cb4c892a429381b44ae07a639" compoundref="_light_8h" startline="190">ngl::Light::m_lightMode</references>
+        <references refid="classngl_1_1_light_1aebe8996368d8c7598cffba36883084e0" compoundref="_light_8h" startline="198">ngl::Light::m_linearAtten</references>
+        <references refid="classngl_1_1_light_1afe8a51aeb598b51b3c42a6ecddd38d08" compoundref="_light_8h" startline="174">ngl::Light::m_position</references>
+        <references refid="classngl_1_1_light_1a926e5c7567ad0b2e09548dd6a8e60d7c" compoundref="_light_8h" startline="202">ngl::Light::m_quadraticAtten</references>
+        <references refid="classngl_1_1_colour_1a98a3dfe48c9fe96c5206a3004cdaa9e7" compoundref="_colour_8h" startline="160">ngl::Colour::m_r</references>
+        <references refid="classngl_1_1_light_1aa12f58491b9237345930721b5ac94932" compoundref="_light_8h" startline="182">ngl::Light::m_specular</references>
+        <references refid="classngl_1_1_spot_light_1a27c8849128695abde940ae03b707a586" compoundref="_spot_light_8h" startline="149">m_spotExponent</references>
+        <references refid="classngl_1_1_light_1ad164572a490340edfa376a2415ecf0f3" compoundref="_light_8h" startline="217">ngl::Light::m_transform</references>
+        <references refid="classngl_1_1_vec4_1a3ffbb98e16e3e05d658cf38907911fff" compoundref="_vec4_8h" startline="321">ngl::Vec4::m_x</references>
+        <references refid="classngl_1_1_vec4_1adc415581c84f9e54f15198a002f8948b" compoundref="_vec4_8h" startline="322">ngl::Vec4::m_y</references>
+        <references refid="classngl_1_1_vec4_1afef13d1ede4b248147e7dd126fd1e17a" compoundref="_vec4_8h" startline="323">ngl::Vec4::m_z</references>
+        <references refid="classngl_1_1_shader_lib_1a49843176da69f14b25713a8657453885" compoundref="_shader_lib_8cpp" startline="153" endline="157">ngl::ShaderLib::setShaderParam1f</references>
+        <references refid="classngl_1_1_shader_lib_1a912550dd1d05853a49a1e458f250614f" compoundref="_shader_lib_8cpp" startline="114" endline="117">ngl::ShaderLib::setShaderParam3f</references>
+        <references refid="classngl_1_1_shader_lib_1a9faf1fcc53d2dbec5fd9c9e239808e04" compoundref="_shader_lib_8cpp" startline="102" endline="105">ngl::ShaderLib::setShaderParam4f</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_spot_light_1ae8a428f50cd8d0d0bbf7256ae45c4290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::SpotLight::setTransform</definition>
+        <argsstring>(Mat4 &amp;_t) noexcept</argsstring>
+        <name>setTransform</name>
+        <param>
+          <type><ref refid="classngl_1_1_mat4" kindref="compound">Mat4</ref> &amp;</type>
+          <declname>_t</declname>
+        </param>
+        <briefdescription>
+<para>set the transform of the light this will be multiplied by the position <ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref> pos=m_transform*m_position; </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the transform </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/SpotLight.h" line="138" column="1" bodyfile="/Users/jmacey/NGL/src/SpotLight.cpp" bodystart="162" bodyend="165"/>
+        <references refid="classngl_1_1_light_1ad164572a490340edfa376a2415ecf0f3" compoundref="_light_8h" startline="217">ngl::Light::m_transform</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Encapsulation of OpenGL spotlight inherits from the <ref refid="classngl_1_1_light" kindref="compound">Light</ref> class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1908">
+        <label>ngl::Light</label>
+        <link refid="classngl_1_1_light"/>
+      </node>
+      <node id="1907">
+        <label>ngl::SpotLight</label>
+        <link refid="classngl_1_1_spot_light"/>
+        <childnode refid="1908" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1911">
+        <label>ngl::Mat4</label>
+        <link refid="classngl_1_1_mat4"/>
+      </node>
+      <node id="1910">
+        <label>ngl::Light</label>
+        <link refid="classngl_1_1_light"/>
+        <childnode refid="1911" relation="usage">
+          <edgelabel>#m_transform</edgelabel>
+        </childnode>
+        <childnode refid="1912" relation="usage">
+          <edgelabel>#m_ambient</edgelabel>
+          <edgelabel>#m_specular</edgelabel>
+          <edgelabel>#m_diffuse</edgelabel>
+        </childnode>
+        <childnode refid="1913" relation="usage">
+          <edgelabel>#m_position</edgelabel>
+        </childnode>
+      </node>
+      <node id="1913">
+        <label>ngl::Vec4</label>
+        <link refid="classngl_1_1_vec4"/>
+      </node>
+      <node id="1912">
+        <label>ngl::Colour</label>
+        <link refid="classngl_1_1_colour"/>
+      </node>
+      <node id="1909">
+        <label>ngl::SpotLight</label>
+        <link refid="classngl_1_1_spot_light"/>
+        <childnode refid="1910" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1913" relation="usage">
+          <edgelabel>#m_dir</edgelabel>
+          <edgelabel>#m_aim</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/SpotLight.h" line="59" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/SpotLight.h" bodystart="58" bodyend="159"/>
+    <listofallmembers>
+      <member refid="classngl_1_1_spot_light_1a079e623ca4f15c02b859e49c29beec46" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>aim</name></member>
+      <member refid="classngl_1_1_light_1a7235d272789d8ab1a86a61081463451c" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>disable</name></member>
+      <member refid="classngl_1_1_spot_light_1aa00e4103dfa275b3be40932c7cf167eb" prot="public" virt="virtual"><scope>ngl::SpotLight</scope><name>enable</name></member>
+      <member refid="classngl_1_1_light_1ace92299dbbe393301dbc5b723c2d7195" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>getColour</name></member>
+      <member refid="classngl_1_1_light_1a38146210bf3343d8041014233ecfe9c9" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>getPos</name></member>
+      <member refid="classngl_1_1_light_1a1a23cbec672a1d893ed7e476486dd222" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>getSpecColour</name></member>
+      <member refid="classngl_1_1_light_1a9ffa32b2597dc3ceea885a4f8963873d" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>Light</name></member>
+      <member refid="classngl_1_1_light_1aa7390927b726d9dbba055a2dd0799941" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>Light</name></member>
+      <member refid="classngl_1_1_light_1a859c4c66087cee00501dc380e34afaa2" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>Light</name></member>
+      <member refid="classngl_1_1_light_1a2fb032539669aa763a5a47cd40f5dfa5" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>Light</name></member>
+      <member refid="classngl_1_1_spot_light_1ab5b407ff1b1489463898bbecc8130d3d" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>loadToShader</name></member>
+      <member refid="classngl_1_1_light_1a64d12d0914998cf0296b4284acd1cd08" prot="protected" virt="non-virtual"><scope>ngl::SpotLight</scope><name>m_active</name></member>
+      <member refid="classngl_1_1_spot_light_1a247daa506ab8458680cd18f276b0a459" prot="protected" virt="non-virtual"><scope>ngl::SpotLight</scope><name>m_aim</name></member>
+      <member refid="classngl_1_1_light_1acc8c0099d1b3437bc814d19de9d5025f" prot="protected" virt="non-virtual"><scope>ngl::SpotLight</scope><name>m_ambient</name></member>
+      <member refid="classngl_1_1_light_1ae599f2dfec737b23af75cbcb6be6613e" prot="protected" virt="non-virtual"><scope>ngl::SpotLight</scope><name>m_constantAtten</name></member>
+      <member refid="classngl_1_1_light_1a61ea1115270a6b4798a6383a8c2c1b26" prot="protected" virt="non-virtual"><scope>ngl::SpotLight</scope><name>m_cutoffAngle</name></member>
+      <member refid="classngl_1_1_light_1a7bc1cdc3603b217e66bf4e1d9b1b8e8c" prot="protected" virt="non-virtual"><scope>ngl::SpotLight</scope><name>m_diffuse</name></member>
+      <member refid="classngl_1_1_spot_light_1a1de1c6d2c4af902dfc6f36e654147514" prot="protected" virt="non-virtual"><scope>ngl::SpotLight</scope><name>m_dir</name></member>
+      <member refid="classngl_1_1_spot_light_1a1565f0ed1a95d9696b01c41f42a28801" prot="protected" virt="non-virtual"><scope>ngl::SpotLight</scope><name>m_innerCutoffAngle</name></member>
+      <member refid="classngl_1_1_light_1a98e0a04cb4c892a429381b44ae07a639" prot="protected" virt="non-virtual"><scope>ngl::SpotLight</scope><name>m_lightMode</name></member>
+      <member refid="classngl_1_1_light_1aebe8996368d8c7598cffba36883084e0" prot="protected" virt="non-virtual"><scope>ngl::SpotLight</scope><name>m_linearAtten</name></member>
+      <member refid="classngl_1_1_light_1afe8a51aeb598b51b3c42a6ecddd38d08" prot="protected" virt="non-virtual"><scope>ngl::SpotLight</scope><name>m_position</name></member>
+      <member refid="classngl_1_1_light_1a926e5c7567ad0b2e09548dd6a8e60d7c" prot="protected" virt="non-virtual"><scope>ngl::SpotLight</scope><name>m_quadraticAtten</name></member>
+      <member refid="classngl_1_1_light_1aa12f58491b9237345930721b5ac94932" prot="protected" virt="non-virtual"><scope>ngl::SpotLight</scope><name>m_specular</name></member>
+      <member refid="classngl_1_1_spot_light_1a27c8849128695abde940ae03b707a586" prot="protected" virt="non-virtual"><scope>ngl::SpotLight</scope><name>m_spotExponent</name></member>
+      <member refid="classngl_1_1_light_1ad164572a490340edfa376a2415ecf0f3" prot="protected" virt="non-virtual"><scope>ngl::SpotLight</scope><name>m_transform</name></member>
+      <member refid="classngl_1_1_spot_light_1a1ec1e6e35f587e82d22c4c44f4ce5a60" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>set</name></member>
+      <member refid="classngl_1_1_light_1ab778c53276b8171eb3ce93ba084d6ddd" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>setAttenuation</name></member>
+      <member refid="classngl_1_1_light_1a6c04c0d80b490f22960ea93d3abfc7e8" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>setColour</name></member>
+      <member refid="classngl_1_1_spot_light_1a6af998903974bf850920712eda0df3c3" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>setCutoff</name></member>
+      <member refid="classngl_1_1_spot_light_1a319f9e0fb17c342e26ad572eccc00204" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>setExponent</name></member>
+      <member refid="classngl_1_1_spot_light_1a5214b8ce000e6e6d4f85052d8d871111" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>setInnerCutoff</name></member>
+      <member refid="classngl_1_1_spot_light_1a7e1993e0f66b2df0f9dfa22a99af3b51" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>setParams</name></member>
+      <member refid="classngl_1_1_light_1a9e9629d7d15db786481e716f3b45a290" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>setPosition</name></member>
+      <member refid="classngl_1_1_light_1a08f1752effa58f27f3348a37bbe12655" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>setSpecColour</name></member>
+      <member refid="classngl_1_1_spot_light_1ae8a428f50cd8d0d0bbf7256ae45c4290" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>setTransform</name></member>
+      <member refid="classngl_1_1_spot_light_1a9ba7e5fcd9118ff7cc74c197f2817096" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>SpotLight</name></member>
+      <member refid="classngl_1_1_spot_light_1aa536470f72c40d774a7edc95b0f10f10" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>SpotLight</name></member>
+      <member refid="classngl_1_1_spot_light_1afa55a7fe9c05dffa91d090e1535ce426" prot="public" virt="non-virtual"><scope>ngl::SpotLight</scope><name>SpotLight</name></member>
+      <member refid="classngl_1_1_light_1aeb3827e83550655705cfde61ce21930b" prot="public" virt="virtual"><scope>ngl::SpotLight</scope><name>~Light</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

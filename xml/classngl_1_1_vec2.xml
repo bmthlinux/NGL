@@ -1,0 +1,911 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classngl_1_1_vec2" kind="class" language="C++" prot="public">
+    <compoundname>ngl::Vec2</compoundname>
+    <includes refid="_vec2_8h" local="no">Vec2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::Vec2::m_x</definition>
+        <argsstring></argsstring>
+        <name>m_x</name>
+        <briefdescription>
+<para>x component of the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>I&apos;ve made this public as some compilers automatically make the anonymous unions public whereas clang++ complains see this post <ulink url="http://jonmacey.blogspot.com/2011/03/anonymous-union-struct-weirdness.html">http://jonmacey.blogspot.com/2011/03/anonymous-union-struct-weirdness.html</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="256" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Vec2.h" bodystart="256" bodyend="-1"/>
+        <referencedby refid="namespacengl_1a574af334b4fbd01c53e584db411cf16e" compoundref="_n_g_l_stream_8cpp" startline="15" endline="18">ngl::operator&lt;&lt;</referencedby>
+        <referencedby refid="namespacengl_1a8ed185d9f779bc5e1bf0ad7fa5990798" compoundref="_n_g_l_stream_8cpp" startline="20" endline="23">ngl::operator&gt;&gt;</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a600ed1a51d1bbffacb2f362b9e478bc3" compoundref="_vec2_8cpp" startline="49" endline="53">null</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a07d2b3dc8e2358664014e5f92186cd42" compoundref="_vec2_8cpp" startline="56" endline="60">operator[]</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1af031e629a42869c24732c82464e7ef85" compoundref="_vec2_8cpp" startline="65" endline="68">operator-</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1ab24a1ba3b509001ea8d585ffa1977a98" compoundref="_vec2_8cpp" startline="72" endline="76">operator+=</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1ad59bab1cb6e5911f74fa262c963ce854" compoundref="_vec2_8cpp" startline="79" endline="84">operator/=</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1aa0fd58417fb31640f9d815a70e494278" compoundref="_vec2_8cpp" startline="86" endline="90">operator*=</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a7049e450d9e3b28d44a372d56e4d2660" compoundref="_vec2_8cpp" startline="92" endline="96">operator-=</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a85e3a796d8218935528f036bc16ff094" compoundref="_vec2_8cpp" startline="99" endline="102">operator/</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a56c2a63fb6eba00ba1e6ed6f0429bc9d" compoundref="_vec2_8cpp" startline="105" endline="108">operator+</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a24abca5689802377e652ef1a10c66648" compoundref="_vec2_8cpp" startline="117" endline="123">operator==</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a526e2628efef25ca9e3338cc2aa9ef6c" compoundref="_vec2_8cpp" startline="125" endline="131">operator!=</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a123ae7ecea98ea03b37fcc2658627f5d" compoundref="_vec2_8cpp" startline="133" endline="139">operator*</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1abd6710830b8b27fa52dbb3d8038233ac" compoundref="_vec2_8cpp" startline="156" endline="161">operator=</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1ad75752e11438b9899e982f78cbb232c4" compoundref="_vec2_8cpp" startline="164" endline="170">normalize</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1ac29fc8afd7e64e04b041756f5cf59b28" compoundref="_vec2_8cpp" startline="177" endline="180">dot</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a6dfbfc0608957de5ae701f4eb5f13896" compoundref="_vec2_8cpp" startline="184" endline="187">lengthSquared</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1aa8feae8f17a16f6e622ac490ea78be3b" compoundref="_vec2_8cpp" startline="195" endline="198">length</referencedby>
+        <referencedby refid="classngl_1_1_x_m_l_serializer_1aa04c1b990bb8db4e32397597634e4bbd" compoundref="_x_m_l_serializer_8cpp" startline="292" endline="297">ngl::XMLSerializer::write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::Vec2::m_y</definition>
+        <argsstring></argsstring>
+        <name>m_y</name>
+        <briefdescription>
+<para>y component of the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="260" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Vec2.h" bodystart="260" bodyend="-1"/>
+        <referencedby refid="namespacengl_1a574af334b4fbd01c53e584db411cf16e" compoundref="_n_g_l_stream_8cpp" startline="15" endline="18">ngl::operator&lt;&lt;</referencedby>
+        <referencedby refid="namespacengl_1a8ed185d9f779bc5e1bf0ad7fa5990798" compoundref="_n_g_l_stream_8cpp" startline="20" endline="23">ngl::operator&gt;&gt;</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a600ed1a51d1bbffacb2f362b9e478bc3" compoundref="_vec2_8cpp" startline="49" endline="53">null</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1af031e629a42869c24732c82464e7ef85" compoundref="_vec2_8cpp" startline="65" endline="68">operator-</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1ab24a1ba3b509001ea8d585ffa1977a98" compoundref="_vec2_8cpp" startline="72" endline="76">operator+=</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1ad59bab1cb6e5911f74fa262c963ce854" compoundref="_vec2_8cpp" startline="79" endline="84">operator/=</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1aa0fd58417fb31640f9d815a70e494278" compoundref="_vec2_8cpp" startline="86" endline="90">operator*=</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a7049e450d9e3b28d44a372d56e4d2660" compoundref="_vec2_8cpp" startline="92" endline="96">operator-=</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a85e3a796d8218935528f036bc16ff094" compoundref="_vec2_8cpp" startline="99" endline="102">operator/</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a56c2a63fb6eba00ba1e6ed6f0429bc9d" compoundref="_vec2_8cpp" startline="105" endline="108">operator+</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a24abca5689802377e652ef1a10c66648" compoundref="_vec2_8cpp" startline="117" endline="123">operator==</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a526e2628efef25ca9e3338cc2aa9ef6c" compoundref="_vec2_8cpp" startline="125" endline="131">operator!=</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a123ae7ecea98ea03b37fcc2658627f5d" compoundref="_vec2_8cpp" startline="133" endline="139">operator*</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1abd6710830b8b27fa52dbb3d8038233ac" compoundref="_vec2_8cpp" startline="156" endline="161">operator=</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1ad75752e11438b9899e982f78cbb232c4" compoundref="_vec2_8cpp" startline="164" endline="170">normalize</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1ac29fc8afd7e64e04b041756f5cf59b28" compoundref="_vec2_8cpp" startline="177" endline="180">dot</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a6dfbfc0608957de5ae701f4eb5f13896" compoundref="_vec2_8cpp" startline="184" endline="187">lengthSquared</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1aa8feae8f17a16f6e622ac490ea78be3b" compoundref="_vec2_8cpp" startline="195" endline="198">length</referencedby>
+        <referencedby refid="classngl_1_1_x_m_l_serializer_1aa04c1b990bb8db4e32397597634e4bbd" compoundref="_x_m_l_serializer_8cpp" startline="292" endline="297">ngl::XMLSerializer::write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_vec2_1a729d19d18c8ac8a448cc2497a5dabaa6" prot="public" static="no" mutable="no">
+        <type><ref refid="glew_8h_1a52f38e7d822a46377fde7a02708eedb1" kindref="member">std::array</ref>&lt; <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref>, 2 &gt;</type>
+        <definition>std::array&lt;Real,2&gt; ngl::Vec2::m_openGL</definition>
+        <argsstring></argsstring>
+        <name>m_openGL</name>
+        <briefdescription>
+<para>array of four floats mapped to the x,y,z,w components of the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> useful for openGL fv data types this is mapped as a union to the following <linebreak/>
+m_x == m_openGL[0] <linebreak/>
+m_y == m_openGL[1] <linebreak/>
+</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="273" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Vec2.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngl_1_1_vec2_1a8016f2f368afe71937d2d4690d7c8b77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Vec2::set</definition>
+        <argsstring>(Real _x, Real _y) noexcept</argsstring>
+        <name>set</name>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_y</declname>
+        </param>
+        <briefdescription>
+<para>sets the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> component from 3 values </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the x component </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the y component </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="59" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="29" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1a3e7c45726f6ab7fca05ba32f89d804fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Vec2::set</definition>
+        <argsstring>(const Vec2 &amp;_v) noexcept</argsstring>
+        <name>set</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>_v</declname>
+        </param>
+        <briefdescription>
+<para>set from another <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> to set from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="65" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1ab25597f58d0f639e2ed30100af0a6c4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Vec2::set</definition>
+        <argsstring>(const Vec4 &amp;_v) noexcept</argsstring>
+        <name>set</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref> &amp;</type>
+          <declname>_v</declname>
+        </param>
+        <briefdescription>
+<para>set from another Vector </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> to set from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1a5fe721366dd0046344c69e0ab4d9e247" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Vec2::set</definition>
+        <argsstring>(const Vec2 *_v) noexcept</argsstring>
+        <name>set</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> *</type>
+          <declname>_v</declname>
+        </param>
+        <briefdescription>
+<para>set from another <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> to set from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="76" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1a0fb6ef9edfa0875bfbe25d0bbeee9fce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ngl::Vec2::Vec2</definition>
+        <argsstring>(const Vec2 &amp;_v) noexcept</argsstring>
+        <name>Vec2</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>_v</declname>
+        </param>
+        <briefdescription>
+<para>copy ctor </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="81" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Vec2.h" bodystart="81" bodyend="83"/>
+        <referencedby refid="classngl_1_1_vec2_1af031e629a42869c24732c82464e7ef85" compoundref="_vec2_8cpp" startline="65" endline="68">operator-</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a85e3a796d8218935528f036bc16ff094" compoundref="_vec2_8cpp" startline="99" endline="102">operator/</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a56c2a63fb6eba00ba1e6ed6f0429bc9d" compoundref="_vec2_8cpp" startline="105" endline="108">operator+</referencedby>
+        <referencedby refid="classngl_1_1_vec2_1a123ae7ecea98ea03b37fcc2658627f5d" compoundref="_vec2_8cpp" startline="133" endline="139">operator*</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1a158268af6d49cb7761174a8ef6a10c2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ngl::Vec2::Vec2</definition>
+        <argsstring>(Real _x=0.0, Real _y=0.0) noexcept</argsstring>
+        <name>Vec2</name>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_x</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_y</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+<para>initialise the constructor from 3 or 4 Real </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>y value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1.0f default so acts as a points </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="91" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Vec2.h" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1a215ad71db1a88fe717e257a5ca503d50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ngl::Vec2::Vec2</definition>
+        <argsstring>(Real _x) noexcept</argsstring>
+        <name>Vec2</name>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_x</declname>
+        </param>
+        <briefdescription>
+<para>ctor using a single float all components are set to the value _x </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to set all components </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="98" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Vec2.h" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1a600ed1a51d1bbffacb2f362b9e478bc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Vec2::null</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>null</name>
+        <briefdescription>
+<para>clears the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> to 0,0,0 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="105" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="49" bodyend="53"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1a07d2b3dc8e2358664014e5f92186cd42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref> &amp;</type>
+        <definition>Real &amp; ngl::Vec2::operator[]</definition>
+        <argsstring>(int _i) noexcept</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_i</declname>
+        </param>
+        <briefdescription>
+<para>[] index operator to access the index component of the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>this[x] as a Real </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="110" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="56" bodyend="60"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="_n_g_lassert_8h_1acef7dc418d5bcc430c79741ba952beb4" compoundref="_n_g_lassert_8h" startline="53">NGL_ASSERT</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1affebb1bc6057fe98acda2f8fc0f198b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref> &amp;</type>
+        <definition>const Real&amp; ngl::Vec2::operator[]</definition>
+        <argsstring>(int _i) const  noexcept</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_i</declname>
+        </param>
+        <briefdescription>
+<para>[] index operator to access the index component of the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>this[x] as a Real </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="116" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Vec2.h" bodystart="116" bodyend="116"/>
+        <references refid="namespacengl_1abf8f4c8a842fda025d266ea490dd1ab0" compoundref="_vec2_8h" startline="286" endline="289">ngl::operator*</references>
+        <references refid="namespacengl_1a2828b006f18ee4614b5bcd5957b33c7e" compoundref="_mat3_8h" startline="297" endline="307">ngl::operator==</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1ab24a1ba3b509001ea8d585ffa1977a98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Vec2::operator+=</definition>
+        <argsstring>(const Vec2 &amp;_v) noexcept</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>_v</declname>
+        </param>
+        <briefdescription>
+<para>+= operator add <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> v to current <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">&amp;_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> to add </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="123" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="72" bodyend="76"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1a7049e450d9e3b28d44a372d56e4d2660" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Vec2::operator-=</definition>
+        <argsstring>(const Vec2 &amp;_v) noexcept</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>_v</declname>
+        </param>
+        <briefdescription>
+<para>-= operator this-=v </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">&amp;_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> to subtract </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="129" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="92" bodyend="96"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1a298c68994196fa8c1eb6b8b1aeb85048" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref></type>
+        <definition>Vec2 ngl::Vec2::operator*</definition>
+        <argsstring>(const Real &amp;_i) const  noexcept</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref> &amp;</type>
+          <declname>_i</declname>
+        </param>
+        <briefdescription>
+<para>this * i for each element </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the scalar to mult by </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1aa8feae8f17a16f6e622ac490ea78be3b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::Vec2::length</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>length</name>
+        <briefdescription>
+<para>returns the length of the vector </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><formula id="0">$\sqrt{x^2+y^2} $</formula> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="141" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="195" bodyend="198"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1a6dfbfc0608957de5ae701f4eb5f13896" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::Vec2::lengthSquared</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>lengthSquared</name>
+        <briefdescription>
+<para>returns the length squared of the vector (no sqrt so quicker) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><formula id="1">$x^2+y^2$</formula> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="146" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="184" bodyend="187"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1a56c2a63fb6eba00ba1e6ed6f0429bc9d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref></type>
+        <definition>Vec2 ngl::Vec2::operator+</definition>
+        <argsstring>(const Vec2 &amp;_v) const  noexcept</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>_v</declname>
+        </param>
+        <briefdescription>
+<para><itemizedlist>
+<listitem><para>operator add Vec2+Vec2 </para></listitem></itemizedlist>
+</para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">&amp;_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to add </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> + v </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="154" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="105" bodyend="108"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+        <references refid="classngl_1_1_vec2_1a0fb6ef9edfa0875bfbe25d0bbeee9fce" compoundref="_vec2_8h" startline="81" endline="83">Vec2</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1a85e3a796d8218935528f036bc16ff094" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref></type>
+        <definition>Vec2 ngl::Vec2::operator/</definition>
+        <argsstring>(Real _v) const  noexcept</argsstring>
+        <name>operator/</name>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_v</declname>
+        </param>
+        <briefdescription>
+<para>divide <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> components by a scalar </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the scalar to divide by </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> V(x/v,y/v,z/v,w) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="161" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="99" bodyend="102"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+        <references refid="classngl_1_1_vec2_1a0fb6ef9edfa0875bfbe25d0bbeee9fce" compoundref="_vec2_8h" startline="81" endline="83">Vec2</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1ad59bab1cb6e5911f74fa262c963ce854" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Vec2::operator/=</definition>
+        <argsstring>(Real _v) noexcept</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_v</declname>
+        </param>
+        <briefdescription>
+<para>divide this <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> components by a scalar </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the scalar to divide by sets the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> to <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> V(x/v,y/v) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="168" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="79" bodyend="84"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+        <references refid="_n_g_lassert_8h_1acef7dc418d5bcc430c79741ba952beb4" compoundref="_n_g_lassert_8h" startline="53">NGL_ASSERT</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1aa0fd58417fb31640f9d815a70e494278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Vec2::operator*=</definition>
+        <argsstring>(Real _v) noexcept</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_v</declname>
+        </param>
+        <briefdescription>
+<para>multiply this <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> components by a scalar </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the scalar to multiply by sets the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> to <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> V(x*v,y*v) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="174" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="86" bodyend="90"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1a04dd3a0ec27b7c25d7cc7ae96032f4b3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref></type>
+        <definition>Vec2 ngl::Vec2::operator-</definition>
+        <argsstring>(const Vec2 &amp;_v) const  noexcept</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>_v</declname>
+        </param>
+        <briefdescription>
+<para>subtraction operator subtract vevtor-Vec2 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">&amp;_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to sub </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>this - v </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="180" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="111" bodyend="114"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+        <references refid="classngl_1_1_vec2_1a0fb6ef9edfa0875bfbe25d0bbeee9fce" compoundref="_vec2_8h" startline="81" endline="83">Vec2</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1a123ae7ecea98ea03b37fcc2658627f5d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref></type>
+        <definition>Vec2 ngl::Vec2::operator*</definition>
+        <argsstring>(const Vec2 &amp;_v) const  noexcept</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>_v</declname>
+        </param>
+        <briefdescription>
+<para><itemizedlist>
+<listitem><para>operator mult vevtor*Vec2 </para></listitem></itemizedlist>
+</para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to mult </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> this*v </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="187" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="133" bodyend="139"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+        <references refid="classngl_1_1_vec2_1a0fb6ef9edfa0875bfbe25d0bbeee9fce" compoundref="_vec2_8h" startline="81" endline="83">Vec2</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1abd6710830b8b27fa52dbb3d8038233ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> &amp;</type>
+        <definition>Vec2 &amp; ngl::Vec2::operator=</definition>
+        <argsstring>(const Vec2 &amp;_v) noexcept</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>_v</declname>
+        </param>
+        <briefdescription>
+<para>assignment operator set the current <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> to rhs </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a new <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="194" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="156" bodyend="161"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1af031e629a42869c24732c82464e7ef85" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref></type>
+        <definition>Vec2 ngl::Vec2::operator-</definition>
+        <argsstring>() const  noexcept</argsstring>
+        <name>operator-</name>
+        <briefdescription>
+<para>negate the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> components </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="199" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="65" bodyend="68"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+        <references refid="classngl_1_1_vec2_1a0fb6ef9edfa0875bfbe25d0bbeee9fce" compoundref="_vec2_8h" startline="81" endline="83">Vec2</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1a24abca5689802377e652ef1a10c66648" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngl::Vec2::operator==</definition>
+        <argsstring>(const Vec2 &amp;_v) const  noexcept</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>_v</declname>
+        </param>
+        <briefdescription>
+<para>check for equality uses FCompare (from Util.h) as float values </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> to check against </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true or false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="205" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="117" bodyend="123"/>
+        <references refid="_types_8h_1a04b3daeb8f076608db8eb09234c8d29f" compoundref="_types_8h" startline="136">FCompare</references>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1a526e2628efef25ca9e3338cc2aa9ef6c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ngl::Vec2::operator!=</definition>
+        <argsstring>(const Vec2 &amp;_v) const  noexcept</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>_v</declname>
+        </param>
+        <briefdescription>
+<para>not equal check </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> to check against </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true of false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="211" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="125" bodyend="131"/>
+        <references refid="_types_8h_1a04b3daeb8f076608db8eb09234c8d29f" compoundref="_types_8h" startline="136">FCompare</references>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1ae993c00ed4d670221e243bf13e06024b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref></type>
+        <definition>Vec2 ngl::Vec2::operator/</definition>
+        <argsstring>(const Vec2 &amp;_v) const  noexcept</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>_v</declname>
+        </param>
+        <briefdescription>
+<para>\ operator div Vec2/Vec2 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to div by </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> / <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="217" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="142" bodyend="145"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+        <references refid="classngl_1_1_vec2_1a0fb6ef9edfa0875bfbe25d0bbeee9fce" compoundref="_vec2_8h" startline="81" endline="83">Vec2</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1af72ecaa06b163ea7e411f8f1570813c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref></type>
+        <definition>Vec2 ngl::Vec2::operator*</definition>
+        <argsstring>(Real _i) const  noexcept</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_i</declname>
+        </param>
+        <briefdescription>
+<para>this * i for each element </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the scalar to mult by </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="223" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="148" bodyend="151"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+        <references refid="classngl_1_1_vec2_1a0fb6ef9edfa0875bfbe25d0bbeee9fce" compoundref="_vec2_8h" startline="81" endline="83">Vec2</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1ad75752e11438b9899e982f78cbb232c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::Vec2::normalize</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>normalize</name>
+        <briefdescription>
+<para>Normalize the vector using <linebreak/>
+ <formula id="2">$x=x/\sqrt{x^2+y^2} $</formula> <linebreak/>
+ <formula id="3">$y=y/\sqrt{x^2+y^2} $</formula>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="229" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="164" bodyend="170"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+        <references refid="_n_g_lassert_8h_1acef7dc418d5bcc430c79741ba952beb4" compoundref="_n_g_lassert_8h" startline="53">NGL_ASSERT</references>
+        <referencedby refid="classngl_1_1_random_1a64fede9255ffee6ba7ad76982243070d" compoundref="_random_8cpp" startline="137" endline="143">ngl::Random::getRandomNormalizedVec2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1ac29fc8afd7e64e04b041756f5cf59b28" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+        <definition>Real ngl::Vec2::dot</definition>
+        <argsstring>(const Vec2 &amp;_b) const  noexcept</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>_b</declname>
+        </param>
+        <briefdescription>
+<para>return this dotted with _b </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector to dot current vector with </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the dot product </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="235" column="1" bodyfile="/Users/jmacey/NGL/src/Vec2.cpp" bodystart="177" bodyend="180"/>
+        <references refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" compoundref="_vec2_8h" startline="256">m_x</references>
+        <references refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" compoundref="_vec2_8h" startline="260">m_y</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_vec2_1a2b1e77f5b76d647499a8cd2541a1af73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref> *</type>
+        <definition>Real* ngl::Vec2::openGL</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>openGL</name>
+        <briefdescription>
+<para>accesor to the m_openGL matrix returns the address of the 0th element </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="239" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Vec2.h" bodystart="239" bodyend="239"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>simple <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> encapsulates a 3 float object like glsl <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> but not maths use the <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> class for maths and the asVec2 to return a <ref refid="classngl_1_1_vec2" kindref="compound">Vec2</ref> </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2050">
+        <label>ngl::Vec2</label>
+        <link refid="classngl_1_1_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/Vec2.h" line="50" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Vec2.h" bodystart="49" bodyend="278"/>
+    <listofallmembers>
+      <member refid="classngl_1_1_vec2_1ac29fc8afd7e64e04b041756f5cf59b28" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>dot</name></member>
+      <member refid="classngl_1_1_vec2_1aa8feae8f17a16f6e622ac490ea78be3b" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>length</name></member>
+      <member refid="classngl_1_1_vec2_1a6dfbfc0608957de5ae701f4eb5f13896" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>lengthSquared</name></member>
+      <member refid="classngl_1_1_vec2_1a729d19d18c8ac8a448cc2497a5dabaa6" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>m_openGL</name></member>
+      <member refid="classngl_1_1_vec2_1a5e33889a1eee5b2e652e7252b463fdd0" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>m_x</name></member>
+      <member refid="classngl_1_1_vec2_1adac8284405dda6d80f83150ca4843b0b" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>m_y</name></member>
+      <member refid="classngl_1_1_vec2_1ad75752e11438b9899e982f78cbb232c4" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>normalize</name></member>
+      <member refid="classngl_1_1_vec2_1a600ed1a51d1bbffacb2f362b9e478bc3" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>null</name></member>
+      <member refid="classngl_1_1_vec2_1a2b1e77f5b76d647499a8cd2541a1af73" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>openGL</name></member>
+      <member refid="classngl_1_1_vec2_1a526e2628efef25ca9e3338cc2aa9ef6c" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>operator!=</name></member>
+      <member refid="classngl_1_1_vec2_1a298c68994196fa8c1eb6b8b1aeb85048" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>operator*</name></member>
+      <member refid="classngl_1_1_vec2_1a123ae7ecea98ea03b37fcc2658627f5d" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>operator*</name></member>
+      <member refid="classngl_1_1_vec2_1af72ecaa06b163ea7e411f8f1570813c5" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>operator*</name></member>
+      <member refid="classngl_1_1_vec2_1aa0fd58417fb31640f9d815a70e494278" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>operator*=</name></member>
+      <member refid="classngl_1_1_vec2_1a56c2a63fb6eba00ba1e6ed6f0429bc9d" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>operator+</name></member>
+      <member refid="classngl_1_1_vec2_1ab24a1ba3b509001ea8d585ffa1977a98" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>operator+=</name></member>
+      <member refid="classngl_1_1_vec2_1a04dd3a0ec27b7c25d7cc7ae96032f4b3" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>operator-</name></member>
+      <member refid="classngl_1_1_vec2_1af031e629a42869c24732c82464e7ef85" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>operator-</name></member>
+      <member refid="classngl_1_1_vec2_1a7049e450d9e3b28d44a372d56e4d2660" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>operator-=</name></member>
+      <member refid="classngl_1_1_vec2_1a85e3a796d8218935528f036bc16ff094" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>operator/</name></member>
+      <member refid="classngl_1_1_vec2_1ae993c00ed4d670221e243bf13e06024b" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>operator/</name></member>
+      <member refid="classngl_1_1_vec2_1ad59bab1cb6e5911f74fa262c963ce854" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>operator/=</name></member>
+      <member refid="classngl_1_1_vec2_1abd6710830b8b27fa52dbb3d8038233ac" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>operator=</name></member>
+      <member refid="classngl_1_1_vec2_1a24abca5689802377e652ef1a10c66648" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>operator==</name></member>
+      <member refid="classngl_1_1_vec2_1a07d2b3dc8e2358664014e5f92186cd42" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>operator[]</name></member>
+      <member refid="classngl_1_1_vec2_1affebb1bc6057fe98acda2f8fc0f198b6" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>operator[]</name></member>
+      <member refid="classngl_1_1_vec2_1a8016f2f368afe71937d2d4690d7c8b77" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>set</name></member>
+      <member refid="classngl_1_1_vec2_1a3e7c45726f6ab7fca05ba32f89d804fe" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>set</name></member>
+      <member refid="classngl_1_1_vec2_1ab25597f58d0f639e2ed30100af0a6c4f" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>set</name></member>
+      <member refid="classngl_1_1_vec2_1a5fe721366dd0046344c69e0ab4d9e247" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>set</name></member>
+      <member refid="classngl_1_1_vec2_1a0fb6ef9edfa0875bfbe25d0bbeee9fce" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>Vec2</name></member>
+      <member refid="classngl_1_1_vec2_1a158268af6d49cb7761174a8ef6a10c2c" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>Vec2</name></member>
+      <member refid="classngl_1_1_vec2_1a215ad71db1a88fe717e257a5ca503d50" prot="public" virt="non-virtual"><scope>ngl::Vec2</scope><name>Vec2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

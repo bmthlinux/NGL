@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classfmt_1_1internal_1_1_basic_char_traits" kind="class" language="C++" prot="public">
+    <compoundname>fmt::internal::BasicCharTraits</compoundname>
+    <includes refid="format_8h" local="no">format.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Char</declname>
+        <defname>Char</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classfmt_1_1internal_1_1_basic_char_traits_1a32f5cad709328e0450b8690960d6b8b5" prot="public" static="no">
+        <type>Char *</type>
+        <definition>typedef Char* fmt::internal::BasicCharTraits&lt; Char &gt;::CharPtr</definition>
+        <argsstring></argsstring>
+        <name>CharPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="761" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="761" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_basic_char_traits_1a5ec7e07adb183b9bf1e63a7507382ec6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Char</type>
+        <definition>static Char fmt::internal::BasicCharTraits&lt; Char &gt;::cast</definition>
+        <argsstring>(int value)</argsstring>
+        <name>cast</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="763" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="763" bodyend="763"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1264">
+        <label>fmt::internal::CharTraits&lt; wchar_t &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_char_traits_3_01wchar__t_01_4"/>
+        <childnode refid="1263" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1263">
+        <label>fmt::internal::BasicCharTraits&lt; wchar_t &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_basic_char_traits"/>
+        <childnode refid="1262" relation="template-instance">
+          <edgelabel>&lt; wchar_t &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1266">
+        <label>fmt::internal::CharTraits&lt; char &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_char_traits_3_01char_01_4"/>
+        <childnode refid="1265" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1262">
+        <label>fmt::internal::BasicCharTraits&lt; Char &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_basic_char_traits"/>
+      </node>
+      <node id="1265">
+        <label>fmt::internal::BasicCharTraits&lt; char &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_basic_char_traits"/>
+        <childnode refid="1262" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1267">
+        <label>fmt::internal::BasicCharTraits&lt; Char &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_basic_char_traits"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="756" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="756" bodyend="764"/>
+    <listofallmembers>
+      <member refid="classfmt_1_1internal_1_1_basic_char_traits_1a5ec7e07adb183b9bf1e63a7507382ec6" prot="public" virt="non-virtual"><scope>fmt::internal::BasicCharTraits</scope><name>cast</name></member>
+      <member refid="classfmt_1_1internal_1_1_basic_char_traits_1a32f5cad709328e0450b8690960d6b8b5" prot="public" virt="non-virtual"><scope>fmt::internal::BasicCharTraits</scope><name>CharPtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

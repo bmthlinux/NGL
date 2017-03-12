@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classngl_1_1_hou_dictionary_entry" kind="class" language="C++" prot="public">
+    <compoundname>ngl::HouDictionaryEntry</compoundname>
+    <includes refid="_houdini_geo_8h" local="no">HoudiniGeo.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classngl_1_1_hou_dictionary_entry_1a5873eb758009beb145e0c317f223f2aa" prot="public" static="no" mutable="no">
+        <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>std::string ngl::HouDictionaryEntry::m_name</definition>
+        <argsstring></argsstring>
+        <name>m_name</name>
+        <briefdescription>
+<para>the name of the entry will be used for the lookup </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/HoudiniGeo.h" line="44" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/HoudiniGeo.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_hou_dictionary_entry_1a61fed58c999f696ddd97a20b63be8a66" prot="public" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int ngl::HouDictionaryEntry::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <briefdescription>
+<para>this determines how many elements the entry has i.e. 3 = x,y,z etc </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/HoudiniGeo.h" line="48" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/HoudiniGeo.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_hou_dictionary_entry_1acad9e83ecc1b720a5d882968ef98ef6e" prot="public" static="no" mutable="no">
+        <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>std::string ngl::HouDictionaryEntry::m_type</definition>
+        <argsstring></argsstring>
+        <name>m_type</name>
+        <briefdescription>
+<para>the data type as a string float / string int etc used to determine which lexical cast to used </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/HoudiniGeo.h" line="53" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/HoudiniGeo.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classngl_1_1_hou_dictionary_entry_1ae558e7858b7387f149894042e782dbd6" prot="public" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int ngl::HouDictionaryEntry::m_relIndex</definition>
+        <argsstring></argsstring>
+        <name>m_relIndex</name>
+        <briefdescription>
+<para>the relative index into the data stream for this data </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/HoudiniGeo.h" line="57" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/HoudiniGeo.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngl_1_1_hou_dictionary_entry_1a981e8afde9778f50bf2f365872ffa256" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ngl::HouDictionaryEntry::HouDictionaryEntry</definition>
+        <argsstring>(std::string _name, int _size, std::string _type, int _relIndex)</argsstring>
+        <name>HouDictionaryEntry</name>
+        <param>
+          <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_size</declname>
+        </param>
+        <param>
+          <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+          <declname>_type</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_relIndex</declname>
+        </param>
+        <briefdescription>
+<para>ctor for the dictionary entry </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/HoudiniGeo.h" line="61" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/HoudiniGeo.h" bodystart="61" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_hou_dictionary_entry_1a9bd0b93b4128192ec57734fc93f846ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::HouDictionaryEntry::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <briefdescription>
+<para>debug print method </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/HoudiniGeo.h" line="74" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/HoudiniGeo.h" bodystart="74" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>a class to hold the dictionary entries for the houdini geo header this will be put into a map for easy lookup of the data when parsing </para>    </briefdescription>
+    <detaileddescription>
+<para>class <ref refid="classngl_1_1_hou_dictionary_entry" kindref="compound">HouDictionaryEntry</ref> &quot;include/HoudiniGeo&quot; <simplesect kind="author"><para>Jon Macey </para></simplesect>
+<simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="date"><para>Last Revision 12/10/09 First version </para></simplesect>
+<xrefsect id="todo_1_todo000016"><xreftitle>Todo</xreftitle><xrefdescription><para>finish this off at some stage </para></xrefdescription></xrefsect></para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1597">
+        <label>ngl::HouDictionaryEntry</label>
+        <link refid="classngl_1_1_hou_dictionary_entry"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/HoudiniGeo.h" line="39" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/HoudiniGeo.h" bodystart="38" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classngl_1_1_hou_dictionary_entry_1a981e8afde9778f50bf2f365872ffa256" prot="public" virt="non-virtual"><scope>ngl::HouDictionaryEntry</scope><name>HouDictionaryEntry</name></member>
+      <member refid="classngl_1_1_hou_dictionary_entry_1a5873eb758009beb145e0c317f223f2aa" prot="public" virt="non-virtual"><scope>ngl::HouDictionaryEntry</scope><name>m_name</name></member>
+      <member refid="classngl_1_1_hou_dictionary_entry_1ae558e7858b7387f149894042e782dbd6" prot="public" virt="non-virtual"><scope>ngl::HouDictionaryEntry</scope><name>m_relIndex</name></member>
+      <member refid="classngl_1_1_hou_dictionary_entry_1a61fed58c999f696ddd97a20b63be8a66" prot="public" virt="non-virtual"><scope>ngl::HouDictionaryEntry</scope><name>m_size</name></member>
+      <member refid="classngl_1_1_hou_dictionary_entry_1acad9e83ecc1b720a5d882968ef98ef6e" prot="public" virt="non-virtual"><scope>ngl::HouDictionaryEntry</scope><name>m_type</name></member>
+      <member refid="classngl_1_1_hou_dictionary_entry_1a9bd0b93b4128192ec57734fc93f846ca" prot="public" virt="non-virtual"><scope>ngl::HouDictionaryEntry</scope><name>print</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

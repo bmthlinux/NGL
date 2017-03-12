@@ -1,0 +1,5 @@
+<map id="GenericReader::IterativeParse" name="GenericReader::IterativeParse">
+<area shape="rect" id="node2" href="$struct_parse_result.html#a88b6d44f052a19e6436ae6aadc2c40b4" title="Reset error code. " alt="" coords="221,5,355,32"/>
+<area shape="rect" id="node4" href="$reader_8h.html#a60338858b2582eca23f3e509a2d82e0e" title="Skip the JSON white spaces in a stream. " alt="" coords="229,56,347,83"/>
+<area shape="rect" id="node3" href="$struct_parse_result.html#aa81b4a7b776b77216cb752385203a8c1" title="Update error code and offset. " alt="" coords="403,5,525,32"/>
+</map>

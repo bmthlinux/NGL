@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structfmt_1_1internal_1_1_arg_array_3_01_n_00_01false_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>fmt::internal::ArgArray&lt; N, false &gt;</compoundname>
+    <includes refid="format_8h" local="no">format.h</includes>
+    <templateparamlist>
+      <param>
+        <type>unsigned</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structfmt_1_1internal_1_1_arg_array_3_01_n_00_01false_01_4_1ab53fffd4174d8cdc70c205ba6dc54b17" prot="public" static="no">
+        <type><ref refid="structfmt_1_1internal_1_1_arg" kindref="compound">Arg</ref></type>
+        <definition>typedef Arg fmt::internal::ArgArray&lt; N, false &gt;::Type[N+1]</definition>
+        <argsstring>[N+1]</argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="2128" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="2128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structfmt_1_1internal_1_1_arg_array_3_01_n_00_01false_01_4_1a5052e0376e3deb4bffc5d1a4941bc7c8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Formatter</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structfmt_1_1internal_1_1_arg" kindref="compound">Arg</ref></type>
+        <definition>static Arg fmt::internal::ArgArray&lt; N, false &gt;::make</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="2131" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="2131" bodyend="2131"/>
+        <references refid="namespacefmt_1_1internal_1a7d8abb1ded2bf7989f6658811a0ca93e" compoundref="format_8h" startline="2098" endline="2098">fmt::internal::make_type</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1114">
+        <label>fmt::internal::ArgArray&lt; N, false &gt;</label>
+        <link refid="structfmt_1_1internal_1_1_arg_array_3_01_n_00_01false_01_4"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="2127" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="2127" bodyend="2132"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1internal_1_1_arg_array_3_01_n_00_01false_01_4_1a5052e0376e3deb4bffc5d1a4941bc7c8" prot="public" virt="non-virtual"><scope>fmt::internal::ArgArray&lt; N, false &gt;</scope><name>make</name></member>
+      <member refid="structfmt_1_1internal_1_1_arg_array_3_01_n_00_01false_01_4_1ab53fffd4174d8cdc70c205ba6dc54b17" prot="public" virt="non-virtual"><scope>fmt::internal::ArgArray&lt; N, false &gt;</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

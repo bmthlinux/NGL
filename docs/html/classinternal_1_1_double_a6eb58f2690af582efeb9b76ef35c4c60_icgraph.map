@@ -1,0 +1,6 @@
+<map id="internal::Double::IsZero" name="internal::Double::IsZero">
+<area shape="rect" id="node2" href="$namespaceinternal.html#a43bb02fa46863dcc2dc8a2484f7ad5b1" title="internal::dtoa" alt="" coords="213,31,312,57"/>
+<area shape="rect" id="node3" href="$class_writer.html#aced9cb2b88abc16c4a0bdb75920cd424" title="Writer::WriteDouble" alt="" coords="360,31,499,57"/>
+<area shape="rect" id="node4" href="$class_pretty_writer.html#a20ffcf3ada1be664719f44cec76711ed" title="PrettyWriter::Double" alt="" coords="547,5,690,32"/>
+<area shape="rect" id="node5" href="$class_writer.html#ae80dc830a4f1d84e6eaf6b182c0ceccb" title="Writes the given double value to the stream. " alt="" coords="565,56,672,83"/>
+</map>

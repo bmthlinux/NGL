@@ -1,0 +1,3 @@
+<map id="ParseResult::IsError" name="ParseResult::IsError">
+<area shape="rect" id="node2" href="$struct_parse_result.html#a74ab79dfa41d390002d1ea188a749bce" title="Conversion to bool, returns true, iff !IsError(). " alt="" coords="198,5,378,32"/>
+</map>

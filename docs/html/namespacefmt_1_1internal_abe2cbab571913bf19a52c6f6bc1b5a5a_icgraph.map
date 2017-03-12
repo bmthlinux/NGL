@@ -1,0 +1,9 @@
+<map id="fmt::internal::const_check" name="fmt::internal::const_check">
+<area shape="rect" id="node2" href="$classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4.html#abd1469673d6c36a014a988bce1dfb0ee" title="std::numeric_limits\l\&lt; fmt::internal::DummyInt\l \&gt;::isinfinity" alt="" coords="192,5,363,61"/>
+<area shape="rect" id="node5" href="$classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4.html#a89433356fbf5b68eb0c13208a5e3b6b1" title="std::numeric_limits\l\&lt; fmt::internal::DummyInt\l \&gt;::isnotanumber" alt="" coords="192,85,363,141"/>
+<area shape="rect" id="node6" href="$classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4.html#a1cc82945f63918e9a8603d3ef750990d" title="std::numeric_limits\l\&lt; fmt::internal::DummyInt\l \&gt;::isnegative" alt="" coords="192,165,363,221"/>
+<area shape="rect" id="node7" href="$classfmt_1_1internal_1_1_make_value.html#ad7e52c1fc3d087a666bdd55bfda0c79c" title="fmt::internal::MakeValue\l::MakeValue" alt="" coords="195,246,360,287"/>
+<area shape="rect" id="node8" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#ab85eb2158c9d48c847706de26f35460c" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_char" alt="" coords="185,312,370,368"/>
+<area shape="rect" id="node3" href="$classfmt_1_1_basic_writer.html#aa69a013920916ccc74ca7ac5e971abe7" title="fmt::BasicWriter::write\l_double" alt="" coords="419,93,571,134"/>
+<area shape="rect" id="node4" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#a670214e1773c9c86002be07c043566dd" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_any_double" alt="" coords="619,85,847,141"/>
+</map>

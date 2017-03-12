@@ -1,0 +1,6 @@
+<map id="ngl::Vec2::Vec2" name="ngl::Vec2::Vec2">
+<area shape="rect" id="node2" href="$classngl_1_1_vec2.html#af031e629a42869c24732c82464e7ef85" title="negate the Vec2 components " alt="" coords="173,5,312,32"/>
+<area shape="rect" id="node3" href="$classngl_1_1_vec2.html#a85e3a796d8218935528f036bc16ff094" title="divide Vec2 components by a scalar " alt="" coords="173,56,312,83"/>
+<area shape="rect" id="node4" href="$classngl_1_1_vec2.html#a56c2a63fb6eba00ba1e6ed6f0429bc9d" title="operator add Vec2+Vec2 " alt="" coords="171,107,314,133"/>
+<area shape="rect" id="node5" href="$classngl_1_1_vec2.html#a123ae7ecea98ea03b37fcc2658627f5d" title="operator mult vevtor*Vec2 " alt="" coords="173,157,313,184"/>
+</map>

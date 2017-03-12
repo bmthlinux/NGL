@@ -344,6 +344,7 @@ inline Vec3 operator *(Real _k, const Vec3 &_v) noexcept
 }
 
 
+
 } // end namespace ngl
 #endif
 

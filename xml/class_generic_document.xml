@@ -1,0 +1,1341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_generic_document" kind="class" language="C++" prot="public">
+    <compoundname>GenericDocument</compoundname>
+    <basecompoundref refid="class_generic_value" prot="public" virt="non-virtual">GenericValue&lt; Encoding, Allocator &gt;</basecompoundref>
+    <includes refid="document_8h" local="no">document.h</includes>
+    <innerclass refid="struct_generic_document_1_1_clear_stack_on_exit" prot="private">GenericDocument::ClearStackOnExit</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Encoding</declname>
+        <defname>Encoding</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>Allocator</declname>
+        <defname>Allocator</defname>
+        <defval><ref refid="class_memory_pool_allocator" kindref="compound">MemoryPoolAllocator</ref>&lt;&gt;</defval>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>StackAllocator</declname>
+        <defname>StackAllocator</defname>
+        <defval><ref refid="class_crt_allocator" kindref="compound">CrtAllocator</ref></defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="user-defined">
+      <header>Parse from stream</header>
+      <memberdef kind="function" id="class_generic_document_1afe94c0abc83a20f2d7dc1ba7677e6238" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>parseFlags</declname>
+            <defname>parseFlags</defname>
+          </param>
+          <param>
+            <type>typename SourceEncoding</type>
+          </param>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_generic_document" kindref="compound">GenericDocument</ref> &amp;</type>
+        <definition>GenericDocument&amp; GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::ParseStream</definition>
+        <argsstring>(InputStream &amp;is)</argsstring>
+        <name>ParseStream</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <briefdescription>
+<para>Parse JSON text from an input stream (with Encoding conversion) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>parseFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Combination of <ref refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450" kindref="member">ParseFlag</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SourceEncoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Encoding of input stream </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InputStream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of input stream, implementing Stream concept </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input stream to be parsed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The document itself for fluent API. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1888" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1888" bodyend="1898"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1a6e154066c6f5024b91aaab25e03700e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>parseFlags</declname>
+            <defname>parseFlags</defname>
+          </param>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_generic_document" kindref="compound">GenericDocument</ref> &amp;</type>
+        <definition>GenericDocument&amp; GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::ParseStream</definition>
+        <argsstring>(InputStream &amp;is)</argsstring>
+        <name>ParseStream</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <briefdescription>
+<para>Parse JSON text from an input stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>parseFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Combination of <ref refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450" kindref="member">ParseFlag</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InputStream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of input stream, implementing Stream concept </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input stream to be parsed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The document itself for fluent API. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1907" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1907" bodyend="1909"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1abe07ededbe9aaceb0058e3d254892b71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_generic_document" kindref="compound">GenericDocument</ref> &amp;</type>
+        <definition>GenericDocument&amp; GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::ParseStream</definition>
+        <argsstring>(InputStream &amp;is)</argsstring>
+        <name>ParseStream</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <briefdescription>
+<para>Parse JSON text from an input stream (with <ref refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450a9104b0946d648e9467cb7a967401ec80" kindref="member">kParseDefaultFlags</ref>) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>InputStream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of input stream, implementing Stream concept </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input stream to be parsed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The document itself for fluent API. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1917" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1917" bodyend="1919"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Parse in-place from mutable string</header>
+      <memberdef kind="function" id="class_generic_document_1a301f8f297a5a0da4b6be5459ad766f75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>parseFlags</declname>
+            <defname>parseFlags</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_generic_document" kindref="compound">GenericDocument</ref> &amp;</type>
+        <definition>GenericDocument&amp; GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::ParseInsitu</definition>
+        <argsstring>(Ch *str)</argsstring>
+        <name>ParseInsitu</name>
+        <param>
+          <type><ref refid="class_generic_value_1ade0e0ce64ccd5d852da57a35e720bafb" kindref="member">Ch</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Parse JSON text from a mutable string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>parseFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Combination of <ref refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450" kindref="member">ParseFlag</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mutable zero-terminated string to be parsed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The document itself for fluent API. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1931" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1931" bodyend="1934"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1a81922881357539d5482d31aea14b5664" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_document" kindref="compound">GenericDocument</ref> &amp;</type>
+        <definition>GenericDocument&amp; GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::ParseInsitu</definition>
+        <argsstring>(Ch *str)</argsstring>
+        <name>ParseInsitu</name>
+        <param>
+          <type><ref refid="class_generic_value_1ade0e0ce64ccd5d852da57a35e720bafb" kindref="member">Ch</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Parse JSON text from a mutable string (with <ref refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450a9104b0946d648e9467cb7a967401ec80" kindref="member">kParseDefaultFlags</ref>) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mutable zero-terminated string to be parsed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The document itself for fluent API. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1940" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1940" bodyend="1942"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Parse from read-only string</header>
+      <memberdef kind="function" id="class_generic_document_1aebd4e7fddd80c1e1174837aee6d2159b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>parseFlags</declname>
+            <defname>parseFlags</defname>
+          </param>
+          <param>
+            <type>typename SourceEncoding</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_generic_document" kindref="compound">GenericDocument</ref> &amp;</type>
+        <definition>GenericDocument&amp; GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::Parse</definition>
+        <argsstring>(const Ch *str)</argsstring>
+        <name>Parse</name>
+        <param>
+          <type>const <ref refid="class_generic_value_1ade0e0ce64ccd5d852da57a35e720bafb" kindref="member">Ch</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Parse JSON text from a read-only string (with Encoding conversion) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>parseFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Combination of <ref refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450" kindref="member">ParseFlag</ref> (must not contain <ref refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450a13188bd483b4df0b6582bebe2aeb5b01" kindref="member">kParseInsituFlag</ref>). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SourceEncoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transcoding from input Encoding </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Read-only zero-terminated string to be parsed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1954" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1954" bodyend="1958"/>
+        <references refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450a13188bd483b4df0b6582bebe2aeb5b01" compoundref="reader_8h" startline="138">kParseInsituFlag</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1a5e377f840009b5cee6757be29525ce0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned</type>
+            <declname>parseFlags</declname>
+            <defname>parseFlags</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_generic_document" kindref="compound">GenericDocument</ref> &amp;</type>
+        <definition>GenericDocument&amp; GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::Parse</definition>
+        <argsstring>(const Ch *str)</argsstring>
+        <name>Parse</name>
+        <param>
+          <type>const <ref refid="class_generic_value_1ade0e0ce64ccd5d852da57a35e720bafb" kindref="member">Ch</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Parse JSON text from a read-only string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>parseFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Combination of <ref refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450" kindref="member">ParseFlag</ref> (must not contain <ref refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450a13188bd483b4df0b6582bebe2aeb5b01" kindref="member">kParseInsituFlag</ref>). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Read-only zero-terminated string to be parsed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1965" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1965" bodyend="1967"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1a49ae6de6fd0bc820d9864a106c10b4da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_document" kindref="compound">GenericDocument</ref> &amp;</type>
+        <definition>GenericDocument&amp; GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::Parse</definition>
+        <argsstring>(const Ch *str)</argsstring>
+        <name>Parse</name>
+        <param>
+          <type>const <ref refid="class_generic_value_1ade0e0ce64ccd5d852da57a35e720bafb" kindref="member">Ch</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Parse JSON text from a read-only string (with <ref refid="reader_8h_1ab7be7dabe6ffcba60fad441505583450a9104b0946d648e9467cb7a967401ec80" kindref="member">kParseDefaultFlags</ref>) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Read-only zero-terminated string to be parsed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1972" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1972" bodyend="1974"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Handling parse errors</header>
+      <memberdef kind="function" id="class_generic_document_1afe0c87d9fc13a78597360e0646479419" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::HasParseError</definition>
+        <argsstring>() const </argsstring>
+        <name>HasParseError</name>
+        <briefdescription>
+<para>Whether a parse error has occured in the last parsing. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1981" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1981" bodyend="1981"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1aab4771355aa3c6e5368da3ae36f38cc1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref></type>
+        <definition>ParseErrorCode GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::GetParseError</definition>
+        <argsstring>() const </argsstring>
+        <name>GetParseError</name>
+        <briefdescription>
+<para>Get the <ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref> of last parsing. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1984" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1984" bodyend="1984"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1a2db6ad11d157342f725470fb898b6712" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::GetErrorOffset</definition>
+        <argsstring>() const </argsstring>
+        <name>GetErrorOffset</name>
+        <briefdescription>
+<para>Get the position of last parsing error in input, 0 otherwise. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1987" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1987" bodyend="1987"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_generic_document_1a6f5b0b7b6626508d094ae67490269700" prot="public" static="no">
+        <type>Encoding::Ch</type>
+        <definition>typedef Encoding::Ch GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::Ch</definition>
+        <argsstring></argsstring>
+        <name>Ch</name>
+        <briefdescription>
+<para>Character type derived from Encoding. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1774" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1774" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_document_1a8936205dc215dda029060d7e835e0549" prot="public" static="no">
+        <type><ref refid="class_generic_value" kindref="compound">GenericValue</ref>&lt; Encoding, Allocator &gt;</type>
+        <definition>typedef GenericValue&lt;Encoding, Allocator&gt; GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::ValueType</definition>
+        <argsstring></argsstring>
+        <name>ValueType</name>
+        <briefdescription>
+<para>Value type of the document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1775" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1775" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_document_1a35155b912da66ced38d22e2551364c57" prot="public" static="no">
+        <type>Allocator</type>
+        <definition>typedef Allocator GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::AllocatorType</definition>
+        <argsstring></argsstring>
+        <name>AllocatorType</name>
+        <briefdescription>
+<para>Allocator type from template parameter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1776" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1776" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_generic_document_1a22b985b0f7f78ef254a566655ee0550f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+          </param>
+          <param>
+            <type>typename</type>
+          </param>
+          <param>
+            <type>typename</type>
+          </param>
+        </templateparamlist>
+        <type>friend class</type>
+        <definition>friend class GenericReader</definition>
+        <argsstring></argsstring>
+        <name>GenericReader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2012" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2012" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_generic_document_1a899449e1a645b5e377af059fb61113d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+          </param>
+          <param>
+            <type>typename</type>
+          </param>
+        </templateparamlist>
+        <type>friend class</type>
+        <definition>friend class GenericValue</definition>
+        <argsstring></argsstring>
+        <name>GenericValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2013" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2013" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_generic_document_1a0d63efcc43758ac3aed77e868233369d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void swap</definition>
+        <argsstring>(GenericDocument &amp;a, GenericDocument &amp;b) RAPIDJSON_NOEXCEPT</argsstring>
+        <name>swap</name>
+        <param>
+          <type><ref refid="class_generic_document" kindref="compound">GenericDocument</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="class_generic_document" kindref="compound">GenericDocument</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>free-standing swap function helper </para>        </briefdescription>
+        <detaileddescription>
+<para>Helper function to enable support for common swap implementation pattern based on <computeroutput>std::swap:</computeroutput> <programlisting><codeline><highlight class="normal">void<sp/>swap(MyClass&amp;<sp/>a,<sp/>MyClass&amp;<sp/>b)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>using<sp/>std::swap;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>swap(a.doc,<sp/>b.doc);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>...</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> <simplesect kind="see"><para><ref refid="class_generic_document_1a6290e1290fad74177625af5938c0c58f" kindref="member">Swap()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1875" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1875" bodyend="1875"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_generic_document_1a90d452abe8940d8a9c9634d1c49d8f49" prot="private" static="yes" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::kDefaultStackCapacity</definition>
+        <argsstring></argsstring>
+        <name>kDefaultStackCapacity</name>
+        <initializer>= 1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2069" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2069" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_generic_document_1a9b5f15fc75c8035612c37f796548e87a" prot="private" static="no" mutable="no">
+        <type>Allocator *</type>
+        <definition>Allocator* GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::allocator_</definition>
+        <argsstring></argsstring>
+        <name>allocator_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2070" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2070" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_generic_document_1ada153f6865201106b3a753861c870266" prot="private" static="no" mutable="no">
+        <type>Allocator *</type>
+        <definition>Allocator* GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::ownAllocator_</definition>
+        <argsstring></argsstring>
+        <name>ownAllocator_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2071" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2071" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_generic_document_1ad2169359326bdf8a7180338fec77e77f" prot="private" static="no" mutable="no">
+        <type><ref refid="classinternal_1_1_stack" kindref="compound">internal::Stack</ref>&lt; StackAllocator &gt;</type>
+        <definition>internal::Stack&lt;StackAllocator&gt; GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::stack_</definition>
+        <argsstring></argsstring>
+        <name>stack_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2072" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2072" bodyend="-1"/>
+        <referencedby refid="class_generic_value_1a5161c0c98ba9144c50a38acde28a5ede" compoundref="document_8h" startline="2083" endline="2105">GenericValue&lt; Encoding, Allocator &gt;::GenericValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_generic_document_1a499058f1c615928337d96cfaf374373e" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_parse_result" kindref="compound">ParseResult</ref></type>
+        <definition>ParseResult GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::parseResult_</definition>
+        <argsstring></argsstring>
+        <name>parseResult_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2073" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2073" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_generic_document_1a3da21e72ec8f26b9da77d86cc1d41cdd" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::GenericDocument</definition>
+        <argsstring>(Type type, Allocator *allocator=0, size_t stackCapacity=kDefaultStackCapacity, StackAllocator *stackAllocator=0)</argsstring>
+        <name>GenericDocument</name>
+        <param>
+          <type><ref refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7" kindref="member">Type</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>Allocator *</type>
+          <declname>allocator</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>stackCapacity</declname>
+          <defval><ref refid="class_generic_document_1a90d452abe8940d8a9c9634d1c49d8f49" kindref="member">kDefaultStackCapacity</ref></defval>
+        </param>
+        <param>
+          <type>StackAllocator *</type>
+          <declname>stackAllocator</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates an empty document of specified type. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mandatory type of object to create. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>allocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional allocator for allocating memory. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stackCapacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional initial capacity of stack in bytes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stackAllocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional allocator for allocating memory for stack. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1785" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1785" bodyend="1790"/>
+        <references refid="rapidjson_8h_1ab9e102fa2f1a0ae4914d4dac21f690a2" compoundref="rapidjson_8h" startline="480">RAPIDJSON_NEW</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1a6b1c313ad538cafc4d23d4bd5f97178c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::GenericDocument</definition>
+        <argsstring>(Allocator *allocator=0, size_t stackCapacity=kDefaultStackCapacity, StackAllocator *stackAllocator=0)</argsstring>
+        <name>GenericDocument</name>
+        <param>
+          <type>Allocator *</type>
+          <declname>allocator</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>stackCapacity</declname>
+          <defval><ref refid="class_generic_document_1a90d452abe8940d8a9c9634d1c49d8f49" kindref="member">kDefaultStackCapacity</ref></defval>
+        </param>
+        <param>
+          <type>StackAllocator *</type>
+          <declname>stackAllocator</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates an empty document which type is Null. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>allocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional allocator for allocating memory. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stackCapacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional initial capacity of stack in bytes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stackAllocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional allocator for allocating memory for stack. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1798" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1798" bodyend="1803"/>
+        <references refid="namespacestd_1a37ba44826afa04fddf20fd70c45ac3b4" compoundref="posix_8h" startline="361" endline="361">std::move</references>
+        <references refid="rapidjson_8h_1ab9e102fa2f1a0ae4914d4dac21f690a2" compoundref="rapidjson_8h" startline="480">RAPIDJSON_NEW</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1aa9f980909298a4de32f66526484820bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::~GenericDocument</definition>
+        <argsstring>()</argsstring>
+        <name>~GenericDocument</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1820" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1820" bodyend="1822"/>
+        <references refid="namespacestd_1a37ba44826afa04fddf20fd70c45ac3b4" compoundref="posix_8h" startline="361" endline="361">std::move</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1a6290e1290fad74177625af5938c0c58f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_document" kindref="compound">GenericDocument</ref> &amp;</type>
+        <definition>GenericDocument&amp; GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::Swap</definition>
+        <argsstring>(GenericDocument &amp;rhs) RAPIDJSON_NOEXCEPT</argsstring>
+        <name>Swap</name>
+        <param>
+          <type><ref refid="class_generic_document" kindref="compound">GenericDocument</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Exchange the contents of this document with those of another. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Another document. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Constant complexity. </para></simplesect>
+<simplesect kind="see"><para>GenericValue::Swap </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1854" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1854" bodyend="1861"/>
+        <references refid="namespaceinternal_1a72b2c71d36273b9691487f58c671ce04" compoundref="swap_8h" startline="28" endline="32">internal::Swap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1aa4609d6b19f86aec1a6b96edf2c27686" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Allocator &amp;</type>
+        <definition>Allocator&amp; GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::GetAllocator</definition>
+        <argsstring>()</argsstring>
+        <name>GetAllocator</name>
+        <briefdescription>
+<para>Get the allocator of this document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1992" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1992" bodyend="1995"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+        <referencedby refid="class_generic_pointer_1afa59f450284e5cc6f989dab4b8344168" compoundref="pointer_8h" startline="620" endline="622">GenericPointer&lt; ValueType, Allocator &gt;::Set</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1aa99f03016f4907332fcf70aadb645194" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::GetStackCapacity</definition>
+        <argsstring>() const </argsstring>
+        <name>GetStackCapacity</name>
+        <briefdescription>
+<para>Get the capacity of stack in bytes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1998" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1998" bodyend="1998"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_generic_document_1a87dc7f66b2b92660b8a43546733f9df2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::Null</definition>
+        <argsstring>()</argsstring>
+        <name>Null</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2016" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2016" bodyend="2016"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1a4c44780642518dd34bd241a1ea0ceaf1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::Bool</definition>
+        <argsstring>(bool b)</argsstring>
+        <name>Bool</name>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2017" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2017" bodyend="2017"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1a8cc986266becaa268474c607489745c7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::Int</definition>
+        <argsstring>(int i)</argsstring>
+        <name>Int</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2018" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2018" bodyend="2018"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1a530dd899a04a00ba74f52507b488d2c1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::Uint</definition>
+        <argsstring>(unsigned i)</argsstring>
+        <name>Uint</name>
+        <param>
+          <type>unsigned</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2019" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2019" bodyend="2019"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1a934b1b7a7ed89917615a5410db77a942" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::Int64</definition>
+        <argsstring>(int64_t i)</argsstring>
+        <name>Int64</name>
+        <param>
+          <type><ref refid="stdint_8h_1a414156feea104f8f75b4ed9e3121b2f6" kindref="member">int64_t</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2020" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2020" bodyend="2020"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1a50ac3451a1afd0ce248dcc023d5e09e8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::Uint64</definition>
+        <argsstring>(uint64_t i)</argsstring>
+        <name>Uint64</name>
+        <param>
+          <type><ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2021" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2021" bodyend="2021"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1a934bf7a5d1ff062ab079756d842e4f6b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::Double</definition>
+        <argsstring>(double d)</argsstring>
+        <name>Double</name>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2022" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2022" bodyend="2022"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1ad319fcc9e13606b6795424b9374a7398" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::String</definition>
+        <argsstring>(const Ch *str, SizeType length, bool copy)</argsstring>
+        <name>String</name>
+        <param>
+          <type>const <ref refid="class_generic_value_1ade0e0ce64ccd5d852da57a35e720bafb" kindref="member">Ch</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" kindref="member">SizeType</ref></type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2024" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2024" bodyend="2030"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1abb1417fde52cc34cb340e3b50a3295da" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::StartObject</definition>
+        <argsstring>()</argsstring>
+        <name>StartObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2032" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2032" bodyend="2032"/>
+        <references refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7a146f46700e905e8df96a6a90b5c7640f" compoundref="rapidjson_8h" startline="646">kObjectType</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1a600d0950baabbcab11197cacb1459c7a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::Key</definition>
+        <argsstring>(const Ch *str, SizeType length, bool copy)</argsstring>
+        <name>Key</name>
+        <param>
+          <type>const <ref refid="class_generic_value_1ade0e0ce64ccd5d852da57a35e720bafb" kindref="member">Ch</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" kindref="member">SizeType</ref></type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2034" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2034" bodyend="2034"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1a42f2df68f9c9d8b88a15b609716867d9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::EndObject</definition>
+        <argsstring>(SizeType memberCount)</argsstring>
+        <name>EndObject</name>
+        <param>
+          <type><ref refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" kindref="member">SizeType</ref></type>
+          <declname>memberCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2036" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2036" bodyend="2040"/>
+        <references refid="class_generic_value_1a26c8ec7d68858df1038506df7fcff22d" compoundref="document_8h" startline="1695" endline="1704">GenericValue&lt; Encoding, Allocator &gt;::SetObjectRaw</references>
+        <references refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" compoundref="rapidjson_8h" startline="322">SizeType</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1ae12c513c61745ae731a47b1ca33db063" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::StartArray</definition>
+        <argsstring>()</argsstring>
+        <name>StartArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2042" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2042" bodyend="2042"/>
+        <references refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7af41527d6925efa3c5c3dadb23dfef7c8" compoundref="rapidjson_8h" startline="647">kArrayType</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1a14097c833bed1a9c7be064ea619c887f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::EndArray</definition>
+        <argsstring>(SizeType elementCount)</argsstring>
+        <name>EndArray</name>
+        <param>
+          <type><ref refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" kindref="member">SizeType</ref></type>
+          <declname>elementCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2044" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2044" bodyend="2048"/>
+        <references refid="class_generic_value_1ab05bc9e52e201a2867ea5bac141ee1ae" compoundref="document_8h" startline="1577">GenericValue&lt; Encoding, Allocator &gt;::GenericDocument</references>
+        <references refid="class_generic_value_1a9018a40d7c52efc00daf803c51d3236c" compoundref="document_8h" startline="606" endline="611">GenericValue&lt; Encoding, Allocator &gt;::operator=</references>
+        <references refid="class_generic_value_1a8f5f309065479de40a16cf28a340da65" compoundref="document_8h" startline="1683" endline="1692">GenericValue&lt; Encoding, Allocator &gt;::SetArrayRaw</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1a58dd6c300949aeb9627de7f9e34796db" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::GenericDocument</definition>
+        <argsstring>(const GenericDocument &amp;)</argsstring>
+        <name>GenericDocument</name>
+        <param>
+          <type>const <ref refid="class_generic_document" kindref="compound">GenericDocument</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Prohibit copying. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2052" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1ae31cd36a3b677d697d0a3bed68edf3c3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_generic_document" kindref="compound">GenericDocument</ref> &amp;</type>
+        <definition>GenericDocument&amp; GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::operator=</definition>
+        <argsstring>(const GenericDocument &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_generic_document" kindref="compound">GenericDocument</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Prohibit assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2054" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1aa6f040219ed1d4cdd48f7ed9353942a4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::ClearStack</definition>
+        <argsstring>()</argsstring>
+        <name>ClearStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2056" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2056" bodyend="2063"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_document_1ad72f36087f5129ad4b5321cf8418c923" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::Destroy</definition>
+        <argsstring>()</argsstring>
+        <name>Destroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="2065" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="2065" bodyend="2067"/>
+        <references refid="rapidjson_8h_1a52c941c3fdd646527cdcd42aa846a28a" compoundref="rapidjson_8h" startline="484">RAPIDJSON_DELETE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A document for parsing JSON text as DOM. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>implements Handler concept </para></simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Encoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Encoding for both parsing and string storage. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Allocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Allocator for allocating memory for the DOM </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StackAllocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Allocator for allocating memory for stack during parsing. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>Although <ref refid="class_generic_document" kindref="compound">GenericDocument</ref> inherits from <ref refid="class_generic_value" kindref="compound">GenericValue</ref>, the API does <bold>not</bold> provide any virtual functions, especially no virtual destructor. To avoid memory leaks, do not <computeroutput>delete</computeroutput> a <ref refid="class_generic_document" kindref="compound">GenericDocument</ref> object via a pointer to a <ref refid="class_generic_value" kindref="compound">GenericValue</ref>. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1522">
+        <label>GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;</label>
+        <link refid="class_generic_document"/>
+        <childnode refid="1523" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1523">
+        <label>GenericValue&lt; Encoding, Allocator &gt;</label>
+        <link refid="class_generic_value"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1532">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Object</label>
+        <link refid="struct_generic_value_1_1_object"/>
+        <childnode refid="1533" relation="usage">
+          <edgelabel>+members</edgelabel>
+        </childnode>
+      </node>
+      <node id="1536">
+        <label>size_t</label>
+      </node>
+      <node id="1527">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::String</label>
+        <link refid="struct_generic_value_1_1_string"/>
+      </node>
+      <node id="1535">
+        <label>ParseResult</label>
+        <link refid="struct_parse_result"/>
+        <childnode refid="1536" relation="usage">
+          <edgelabel>-offset_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1526">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Data</label>
+        <link refid="union_generic_value_1_1_data"/>
+        <childnode refid="1527" relation="usage">
+          <edgelabel>+s</edgelabel>
+        </childnode>
+        <childnode refid="1528" relation="usage">
+          <edgelabel>+a</edgelabel>
+        </childnode>
+        <childnode refid="1529" relation="usage">
+          <edgelabel>+n</edgelabel>
+        </childnode>
+        <childnode refid="1532" relation="usage">
+          <edgelabel>+o</edgelabel>
+        </childnode>
+        <childnode refid="1534" relation="usage">
+          <edgelabel>+ss</edgelabel>
+        </childnode>
+      </node>
+      <node id="1530">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Number::U</label>
+        <link refid="struct_generic_value_1_1_number_1_1_u"/>
+      </node>
+      <node id="1531">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Number::I</label>
+        <link refid="struct_generic_value_1_1_number_1_1_i"/>
+      </node>
+      <node id="1534">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::ShortString</label>
+        <link refid="struct_generic_value_1_1_short_string"/>
+      </node>
+      <node id="1538">
+        <label>internal::Stack&lt; Allocator &gt;</label>
+        <link refid="classinternal_1_1_stack"/>
+        <childnode refid="1536" relation="usage">
+          <edgelabel>-initialCapacity_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1537">
+        <label>internal::Stack&lt; StackAllocator &gt;</label>
+        <link refid="classinternal_1_1_stack"/>
+        <childnode refid="1536" relation="usage">
+          <edgelabel>-initialCapacity_</edgelabel>
+        </childnode>
+        <childnode refid="1538" relation="template-instance">
+          <edgelabel>&lt; StackAllocator &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1533">
+        <label>GenericMember&lt; Encoding, Allocator &gt;</label>
+        <link refid="struct_generic_member"/>
+      </node>
+      <node id="1524">
+        <label>GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;</label>
+        <link refid="class_generic_document"/>
+        <childnode refid="1525" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1535" relation="usage">
+          <edgelabel>-parseResult_</edgelabel>
+        </childnode>
+        <childnode refid="1537" relation="usage">
+          <edgelabel>-stack_</edgelabel>
+        </childnode>
+        <childnode refid="1536" relation="usage">
+          <edgelabel>-kDefaultStackCapacity</edgelabel>
+        </childnode>
+      </node>
+      <node id="1528">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Array</label>
+        <link refid="struct_generic_value_1_1_array"/>
+        <childnode refid="1525" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1525">
+        <label>GenericValue&lt; Encoding, Allocator &gt;</label>
+        <link refid="class_generic_value"/>
+        <childnode refid="1526" relation="usage">
+          <edgelabel>+data_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1529">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Number</label>
+        <link refid="union_generic_value_1_1_number"/>
+        <childnode refid="1530" relation="usage">
+          <edgelabel>+u</edgelabel>
+        </childnode>
+        <childnode refid="1531" relation="usage">
+          <edgelabel>+i</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="73" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="73" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="class_generic_document_1a9b5f15fc75c8035612c37f796548e87a" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>allocator_</name></member>
+      <member refid="class_generic_document_1a35155b912da66ced38d22e2551364c57" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>AllocatorType</name></member>
+      <member refid="class_generic_document_1a4c44780642518dd34bd241a1ea0ceaf1" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>Bool</name></member>
+      <member refid="class_generic_document_1a6f5b0b7b6626508d094ae67490269700" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>Ch</name></member>
+      <member refid="class_generic_document_1aa6f040219ed1d4cdd48f7ed9353942a4" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>ClearStack</name></member>
+      <member refid="class_generic_value_1aac08c3e660a9036d3dcb8b10ff6c61f4" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>ConstMemberIterator</name></member>
+      <member refid="class_generic_value_1a49010c6d6886f96ff0b0c51bccc7f6ea" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>ConstValueIterator</name></member>
+      <member refid="class_generic_value_1aaf80f2c91d26fdde60b9edeeecd3509f" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>data_</name></member>
+      <member refid="class_generic_document_1ad72f36087f5129ad4b5321cf8418c923" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>Destroy</name></member>
+      <member refid="class_generic_document_1a934bf7a5d1ff062ab079756d842e4f6b" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>Double</name></member>
+      <member refid="class_generic_value_1a28c2cb8d04d12566c1af37597a46d209" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>EncodingType</name></member>
+      <member refid="class_generic_document_1a14097c833bed1a9c7be064ea619c887f" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>EndArray</name></member>
+      <member refid="class_generic_document_1a42f2df68f9c9d8b88a15b609716867d9" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>EndObject</name></member>
+      <member refid="class_generic_value_1ad0f9ce0bc0d1714678a77a2295da420c" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>flags_</name></member>
+      <member refid="class_generic_document_1a3da21e72ec8f26b9da77d86cc1d41cdd" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>GenericDocument</name></member>
+      <member refid="class_generic_document_1a6b1c313ad538cafc4d23d4bd5f97178c" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>GenericDocument</name></member>
+      <member refid="class_generic_document_1a58dd6c300949aeb9627de7f9e34796db" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>GenericDocument</name></member>
+      <member refid="class_generic_document_1a22b985b0f7f78ef254a566655ee0550f" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>GenericReader</name></member>
+      <member refid="class_generic_document_1a899449e1a645b5e377af059fb61113d8" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1ab0205d57176d83814ea4e4598c596fe8" prot="public" virt="non-virtual" ambiguityscope="GenericValue::"><scope>GenericDocument</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a83c8f84b8e61f2f40414b703b75aea61" prot="public" virt="non-virtual" ambiguityscope="GenericValue::"><scope>GenericDocument</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a5161c0c98ba9144c50a38acde28a5ede" prot="public" virt="non-virtual" ambiguityscope="GenericValue::"><scope>GenericDocument</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a88f02daf621c42b96d49d608fa9214de" prot="public" virt="non-virtual" ambiguityscope="GenericValue::"><scope>GenericDocument</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1aafc754ade38421c179f5c8933ecbaf45" prot="public" virt="non-virtual" ambiguityscope="GenericValue::"><scope>GenericDocument</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a972bff6c56ac3d04622ff7fad8d98331" prot="public" virt="non-virtual" ambiguityscope="GenericValue::"><scope>GenericDocument</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a964b69f1d2596f75ded5421b6db01a14" prot="public" virt="non-virtual" ambiguityscope="GenericValue::"><scope>GenericDocument</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1ad04805a57f5050c8e04be469ba64d6f3" prot="public" virt="non-virtual" ambiguityscope="GenericValue::"><scope>GenericDocument</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a267d05b7e98c3507908eaf085fe41155" prot="public" virt="non-virtual" ambiguityscope="GenericValue::"><scope>GenericDocument</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a4d9af98141360cd801daab4ed1ca2c91" prot="public" virt="non-virtual" ambiguityscope="GenericValue::"><scope>GenericDocument</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1abb2887958974fef1b2b5c8e32cc72ddb" prot="public" virt="non-virtual" ambiguityscope="GenericValue::"><scope>GenericDocument</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a9ec2c7cda8c8845acfa3565c6b1b4e10" prot="public" virt="non-virtual" ambiguityscope="GenericValue::"><scope>GenericDocument</scope><name>GenericValue</name></member>
+      <member refid="class_generic_value_1a9b72b2e3347d4cd77b16c3b45e8decf1" prot="public" virt="non-virtual" ambiguityscope="GenericValue::"><scope>GenericDocument</scope><name>GenericValue</name></member>
+      <member refid="class_generic_document_1aa4609d6b19f86aec1a6b96edf2c27686" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>GetAllocator</name></member>
+      <member refid="class_generic_document_1a2db6ad11d157342f725470fb898b6712" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>GetErrorOffset</name></member>
+      <member refid="class_generic_document_1aab4771355aa3c6e5368da3ae36f38cc1" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>GetParseError</name></member>
+      <member refid="class_generic_document_1aa99f03016f4907332fcf70aadb645194" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>GetStackCapacity</name></member>
+      <member refid="class_generic_document_1afe0c87d9fc13a78597360e0646479419" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>HasParseError</name></member>
+      <member refid="class_generic_document_1a8cc986266becaa268474c607489745c7" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>Int</name></member>
+      <member refid="class_generic_document_1a934b1b7a7ed89917615a5410db77a942" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>Int64</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484af7d99965ba807c718b482a9a7fb28b47" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kArrayFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ac48966386b231124da7c3fb870e237ee" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kBoolFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a5d26a84f26833eafd0028c0102a388a9" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kConstStringFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a10ef921aef1773bc1f88796bf1828f92" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kCopyFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a10c83f7f191dce81bb0273adc0d838de" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kCopyStringFlag</name></member>
+      <member refid="class_generic_value_1a188f57bdb1923c1fefe74baa995871a3" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kDefaultArrayCapacity</name></member>
+      <member refid="class_generic_value_1a284d018914629aed9a4bd97fe2dc5899" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kDefaultObjectCapacity</name></member>
+      <member refid="class_generic_document_1a90d452abe8940d8a9c9634d1c49d8f49" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>kDefaultStackCapacity</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a70c741e7c488835892aa857f50090d7c" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kDoubleFlag</name></member>
+      <member refid="class_generic_document_1a600d0950baabbcab11197cacb1459c7a" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>Key</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a66d3877b074bb1a0455a6f6d3f7f91a3" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kFalseFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ae58a76d504c6a67566aebfa4a6bd2e55" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kInlineStrFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a87c567a71dfa5a63363d82d32346884a" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kInt64Flag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ae3fb211193e0067efaddeb5a067120fb" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kIntFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a8c5507cf143edac6e50abec2d89cc40d" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kNullFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ab7805b1908fd181afc8d70fe07b17e18" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kNumberAnyFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a29bc91c155577923abd8f19aa050058b" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kNumberDoubleFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484aa4776df2584fe4f341b183cdf3e00a79" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kNumberFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ad117eb41bb8015a76aadf6149bbd8ce5" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kNumberInt64Flag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484acfe8b720220d0a2e378683367386cbaf" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kNumberIntFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484aaa1ee6a546d4db67f4bdef41d1f54f02" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kNumberUint64Flag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ae8c6c6286edf9c309e77af0ea0cf039c" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kNumberUintFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484aba5811d4baeb56dc793a6510fe28748c" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kObjectFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484aca24fa09485fa10b17071509a985ff01" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kShortStringFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484af3bf3661275a38c86addba900c52dccb" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kStringFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a75dbcdbacc82f9379c602f0b6c41cf07" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kTrueFlag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a793e0bc40e0abe1ed8bcb3e6fbba65c2" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kTypeMask</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484ac9200c78f749b6efaae640167a370c94" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kUint64Flag</name></member>
+      <member refid="class_generic_value_1a18e5d55a4becf92f69cb5cd977c8d484a7eba561e6cc6dcd704f907c5a005f3ce" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>kUintFlag</name></member>
+      <member refid="class_generic_value_1a7ccf27c44058b4c11c3efc6473afb886" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>Member</name></member>
+      <member refid="class_generic_value_1a349b8faae61edc42b4289726820be439" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>MemberIterator</name></member>
+      <member refid="class_generic_document_1a87dc7f66b2b92660b8a43546733f9df2" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>Null</name></member>
+      <member refid="class_generic_document_1ae31cd36a3b677d697d0a3bed68edf3c3" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>operator=</name></member>
+      <member refid="class_generic_value_1a9018a40d7c52efc00daf803c51d3236c" prot="public" virt="non-virtual" ambiguityscope="GenericValue::"><scope>GenericDocument</scope><name>operator=</name></member>
+      <member refid="class_generic_value_1a386708557555e6389184de608af5e6a6" prot="public" virt="non-virtual" ambiguityscope="GenericValue::"><scope>GenericDocument</scope><name>operator=</name></member>
+      <member refid="class_generic_document_1ada153f6865201106b3a753861c870266" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>ownAllocator_</name></member>
+      <member refid="class_generic_document_1aebd4e7fddd80c1e1174837aee6d2159b" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>Parse</name></member>
+      <member refid="class_generic_document_1a5e377f840009b5cee6757be29525ce0b" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>Parse</name></member>
+      <member refid="class_generic_document_1a49ae6de6fd0bc820d9864a106c10b4da" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>Parse</name></member>
+      <member refid="class_generic_document_1a301f8f297a5a0da4b6be5459ad766f75" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>ParseInsitu</name></member>
+      <member refid="class_generic_document_1a81922881357539d5482d31aea14b5664" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>ParseInsitu</name></member>
+      <member refid="class_generic_document_1a499058f1c615928337d96cfaf374373e" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>parseResult_</name></member>
+      <member refid="class_generic_document_1afe94c0abc83a20f2d7dc1ba7677e6238" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>ParseStream</name></member>
+      <member refid="class_generic_document_1a6e154066c6f5024b91aaab25e03700e3" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>ParseStream</name></member>
+      <member refid="class_generic_document_1abe07ededbe9aaceb0058e3d254892b71" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>ParseStream</name></member>
+      <member refid="class_generic_value_1a4a4418a93777942e1fb7ea71f8aaf680" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>RAPIDJSON_DISABLEIF_RETURN</name></member>
+      <member refid="class_generic_value_1abb8ea2dfbe74ff4ee7dac6be31317f81" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>RawAssign</name></member>
+      <member refid="class_generic_value_1a8f5f309065479de40a16cf28a340da65" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>SetArrayRaw</name></member>
+      <member refid="class_generic_value_1a26c8ec7d68858df1038506df7fcff22d" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>SetObjectRaw</name></member>
+      <member refid="class_generic_value_1a1451603922dcdf34976f125dc60f70ee" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>SetStringRaw</name></member>
+      <member refid="class_generic_value_1ad3d91db36dfdbfc1af40a79aae07723c" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>SetStringRaw</name></member>
+      <member refid="class_generic_document_1ad2169359326bdf8a7180338fec77e77f" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>stack_</name></member>
+      <member refid="class_generic_document_1ae12c513c61745ae731a47b1ca33db063" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>StartArray</name></member>
+      <member refid="class_generic_document_1abb1417fde52cc34cb340e3b50a3295da" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>StartObject</name></member>
+      <member refid="class_generic_document_1ad319fcc9e13606b6795424b9374a7398" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>String</name></member>
+      <member refid="class_generic_value_1a5ff908402687e14f5f14552ec58113a4" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>StringEqual</name></member>
+      <member refid="class_generic_value_1a32e0f30ee278072374c8168b14d3317f" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>StringRefType</name></member>
+      <member refid="class_generic_document_1a0d63efcc43758ac3aed77e868233369d" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>swap</name></member>
+      <member refid="class_generic_document_1a6290e1290fad74177625af5938c0c58f" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>Swap</name></member>
+      <member refid="class_generic_document_1a530dd899a04a00ba74f52507b488d2c1" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>Uint</name></member>
+      <member refid="class_generic_document_1a50ac3451a1afd0ce248dcc023d5e09e8" prot="private" virt="non-virtual"><scope>GenericDocument</scope><name>Uint64</name></member>
+      <member refid="class_generic_value_1aee30721a49688ba0f865f5d581eb6be9" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>ValueIterator</name></member>
+      <member refid="class_generic_document_1a8936205dc215dda029060d7e835e0549" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>ValueType</name></member>
+      <member refid="class_generic_document_1aa9f980909298a4de32f66526484820bf" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>~GenericDocument</name></member>
+      <member refid="class_generic_value_1a213ba89ef5ef961a5e655bd8c78ac9f4" prot="public" virt="non-virtual"><scope>GenericDocument</scope><name>~GenericValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

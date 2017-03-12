@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_abstract_v_a_o_8cpp" kind="file" language="C++">
+    <compoundname>AbstractVAO.cpp</compoundname>
+    <includes refid="_abstract_v_a_o_8h" local="yes">AbstractVAO.h</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="3795">
+        <label>Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="3796" relation="include">
+        </childnode>
+        <childnode refid="3802" relation="include">
+        </childnode>
+        <childnode refid="3803" relation="include">
+        </childnode>
+        <childnode refid="3804" relation="include">
+        </childnode>
+      </node>
+      <node id="3793">
+        <label>AbstractVAO.cpp</label>
+        <link refid="AbstractVAO.cpp"/>
+        <childnode refid="3794" relation="include">
+        </childnode>
+        <childnode refid="3805" relation="include">
+        </childnode>
+      </node>
+      <node id="3804">
+        <label>QGLContext</label>
+      </node>
+      <node id="3798">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="3799" relation="include">
+        </childnode>
+        <childnode refid="3800" relation="include">
+        </childnode>
+      </node>
+      <node id="3797">
+        <label>stddef.h</label>
+      </node>
+      <node id="3796">
+        <label>glew.h</label>
+        <link refid="glew_8h"/>
+        <childnode refid="3797" relation="include">
+        </childnode>
+        <childnode refid="3798" relation="include">
+        </childnode>
+        <childnode refid="3801" relation="include">
+        </childnode>
+      </node>
+      <node id="3801">
+        <label>GL/glu.h</label>
+      </node>
+      <node id="3799">
+        <label>limits.h</label>
+      </node>
+      <node id="3794">
+        <label>AbstractVAO.h</label>
+        <link refid="_abstract_v_a_o_8h"/>
+        <childnode refid="3795" relation="include">
+        </childnode>
+      </node>
+      <node id="3800">
+        <label>wchar.h</label>
+      </node>
+      <node id="3803">
+        <label>QtOpenGL/QGLContext</label>
+      </node>
+      <node id="3805">
+        <label>iostream</label>
+      </node>
+      <node id="3802">
+        <label>GL/gl.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacengl">ngl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_abstract_v_a_o_8h" kindref="compound">AbstractVAO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacengl" kindref="compound">ngl</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="classngl_1_1_abstract_v_a_o_1a40cbd8b1fa53cc3a885c52b03a098d0a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_abstract_v_a_o_1a40cbd8b1fa53cc3a885c52b03a098d0a" kindref="member">AbstractVAO::AbstractVAO</ref>(<ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>_mode)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>first<sp/>we<sp/>create<sp/>a<sp/>vertex<sp/>array<sp/>Object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a71a2d01a12606fc26c1a28dba23dfce2" kindref="member">glGenVertexArrays</ref>(1,<sp/>&amp;<ref refid="classngl_1_1_abstract_v_a_o_1a7c7d6a3322e757a3a7298f4321e48f1d" kindref="member">m_id</ref>);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_abstract_v_a_o_1a7df62921ae3aff699778d17dc9d37df9" kindref="member">m_mode</ref>=_mode;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classngl_1_1_abstract_v_a_o_1aa3821d01c4e0faa831d963dffcf850e7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/><ref refid="classngl_1_1_abstract_v_a_o_1aa3821d01c4e0faa831d963dffcf850e7" kindref="member">AbstractVAO::getMode</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="13"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_v_a_o_1a7df62921ae3aff699778d17dc9d37df9" kindref="member">m_mode</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classngl_1_1_abstract_v_a_o_1a712e386f5ed795cf42484d3311625ade" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_v_a_o_1a712e386f5ed795cf42484d3311625ade" kindref="member">AbstractVAO::setMode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>&amp;_mode)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_abstract_v_a_o_1a7df62921ae3aff699778d17dc9d37df9" kindref="member">m_mode</ref><sp/>=<sp/>_mode;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classngl_1_1_abstract_v_a_o_1a32a42493f94df2674c89a90cb25cfa2a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_v_a_o_1a32a42493f94df2674c89a90cb25cfa2a" kindref="member">AbstractVAO::bind</ref>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a4c13098a615d32e7f04aa4105149564f" kindref="member">glBindVertexArray</ref>(<ref refid="classngl_1_1_abstract_v_a_o_1a7c7d6a3322e757a3a7298f4321e48f1d" kindref="member">m_id</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_abstract_v_a_o_1a8f5bab0afa205e8aa96b4d1ad1b8751c" kindref="member">m_bound</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classngl_1_1_abstract_v_a_o_1a755b4eb87c240c0c95b292c4762fef04" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_v_a_o_1a755b4eb87c240c0c95b292c4762fef04" kindref="member">AbstractVAO::unbind</ref>()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a4c13098a615d32e7f04aa4105149564f" kindref="member">glBindVertexArray</ref>(0);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_abstract_v_a_o_1a8f5bab0afa205e8aa96b4d1ad1b8751c" kindref="member">m_bound</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classngl_1_1_abstract_v_a_o_1aa51d9e09fa5d76cb0868cdff08e94911" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_abstract_v_a_o_1aa51d9e09fa5d76cb0868cdff08e94911" kindref="member">AbstractVAO::setVertexAttributePointer</ref>(<ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/>_id,<sp/><ref refid="glew_8h_1acebcc1c5663f14ebde1d16831e5fed94" kindref="member">GLint</ref><sp/>_size,<sp/><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/>_type,<sp/><ref refid="glew_8h_1a9289d5b99dc1f27f01480360f2e18ae0" kindref="member">GLsizei</ref><sp/>_stride,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_dataOffset,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_normalise<sp/>)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_abstract_v_a_o_1a8f5bab0afa205e8aa96b4d1ad1b8751c" kindref="member">m_bound</ref><sp/>!=</highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;Warning<sp/>trying<sp/>to<sp/>set<sp/>attribute<sp/>on<sp/>Unbound<sp/>VOA\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>and<sp/>enable<sp/>the<sp/>generic<sp/>vertex<sp/>attribute</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a8afadc1fe36886688a02097cc63a17cb" kindref="member">glVertexAttribPointer</ref>(_id,_size,_type,_normalise,_stride,static_cast&lt;Real<sp/>*&gt;(NULL)<sp/><sp/>+<sp/>_dataOffset);</highlight><highlight class="comment">//<sp/><sp/><sp/>((Real<sp/>*)NULL<sp/>+<sp/>(_dataOffset)));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a6e8ee482001ee8fb9b3d4851116779b4" kindref="member">glEnableVertexAttribArray</ref>(_id);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/src/AbstractVAO.cpp"/>
+  </compounddef>
+</doxygen>

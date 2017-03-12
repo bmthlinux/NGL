@@ -1,0 +1,16 @@
+<map id="ngl::AbstractVAO::setData" name="ngl::AbstractVAO::setData">
+<area shape="rect" id="node2" href="$classngl_1_1_bezier_curve.html#a56b40c82609b906efa45eb42a2cbce3c" title="set the Level of Detail for Drawing " alt="" coords="233,5,426,32"/>
+<area shape="rect" id="node3" href="$classngl_1_1_text.html#a16e24cf8d7e4f310a7dc2b8375546134" title="ctor must pass in a ready constructed QFont make sure the size and emphasis is set before doing this ..." alt="" coords="276,56,383,83"/>
+<area shape="rect" id="node4" href="$classngl_1_1_v_a_o_primitives.html#aec14416905218b50f93e43c8661d7d6b" title="create a VAO from a static header file of data in the TNV format this will usually be created from th..." alt="" coords="245,107,414,149"/>
+<area shape="rect" id="node7" href="$classngl_1_1_v_a_o_primitives.html#a9ec8ee427ac69f5dec51792f7014d2af" title="the method to actually create the VAO from the various other methods Note this is used in conjunction..." alt="" coords="263,270,396,311"/>
+<area shape="rect" id="node5" href="$classngl_1_1_v_a_o_primitives.html#a281188edfc487d7072b40ca3871964f2" title="create the default VAO&#39;s this is done by the ctor anyway but can be called if the clear method is cal..." alt="" coords="477,9,621,50"/>
+<area shape="rect" id="node6" href="$classngl_1_1_v_a_o_primitives.html#ae1e0ef82aeb224aa7f91e49685fab722" title="default constructor " alt="" coords="672,9,805,50"/>
+<area shape="rect" id="node8" href="$classngl_1_1_v_a_o_primitives.html#a93edc7af7c82934c8a5bc739b7c61665" title="create a line based grid (like the maya ground plane) " alt="" coords="483,74,616,115"/>
+<area shape="rect" id="node9" href="$classngl_1_1_v_a_o_primitives.html#aec029e212219801bd87056397be73bf8" title="create a triangulated Sphere as a vbo with auto generated texture cords " alt="" coords="483,139,616,181"/>
+<area shape="rect" id="node10" href="$classngl_1_1_v_a_o_primitives.html#a3333662d6d2f7f017e3d6cad45cb44c7" title="create a triangulated capsule (Cylinder with spherical ends) " alt="" coords="483,205,616,246"/>
+<area shape="rect" id="node11" href="$classngl_1_1_v_a_o_primitives.html#a85f675d14d72f093d4c7afa82155d697" title="create a Quad Cylinder as a vbo with auto generated texture cords " alt="" coords="483,270,616,311"/>
+<area shape="rect" id="node12" href="$classngl_1_1_v_a_o_primitives.html#a02aa220bc52e3e8b579e4b67bb8344af" title="create a Quad Cone as a vao with auto generated texture cords " alt="" coords="483,335,616,377"/>
+<area shape="rect" id="node13" href="$classngl_1_1_v_a_o_primitives.html#a0803af36b2a375a3367d4521ab16a7fe" title="create a trinagle fan disk (use as end caps for Cylinder etc) " alt="" coords="483,401,616,442"/>
+<area shape="rect" id="node14" href="$classngl_1_1_v_a_o_primitives.html#a94653d949fb7c0a665e112fd7330df24" title="create a VBO based torus from rings of quads. " alt="" coords="483,466,616,507"/>
+<area shape="rect" id="node15" href="$classngl_1_1_v_a_o_primitives.html#ab3742cc5bbc1fee5f7982410911a46b6" title="create a triangulated plane as a vbo with auto generated texture cords " alt="" coords="475,531,624,573"/>
+</map>

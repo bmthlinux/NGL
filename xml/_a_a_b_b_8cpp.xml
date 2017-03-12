@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_a_a_b_b_8cpp" kind="file" language="C++">
+    <compoundname>AABB.cpp</compoundname>
+    <includes refid="_a_a_b_b_8h" local="yes">AABB.h</includes>
+    <incdepgraph>
+      <node id="3622">
+        <label>Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="3623" relation="include">
+        </childnode>
+        <childnode refid="3629" relation="include">
+        </childnode>
+        <childnode refid="3630" relation="include">
+        </childnode>
+        <childnode refid="3631" relation="include">
+        </childnode>
+      </node>
+      <node id="3621">
+        <label>AABB.h</label>
+        <link refid="_a_a_b_b_8h"/>
+        <childnode refid="3622" relation="include">
+        </childnode>
+        <childnode refid="3632" relation="include">
+        </childnode>
+        <childnode refid="3636" relation="include">
+        </childnode>
+      </node>
+      <node id="3631">
+        <label>QGLContext</label>
+      </node>
+      <node id="3635">
+        <label>Vec3.h</label>
+        <link refid="_vec3_8h"/>
+        <childnode refid="3622" relation="include">
+        </childnode>
+        <childnode refid="3634" relation="include">
+        </childnode>
+      </node>
+      <node id="3625">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="3626" relation="include">
+        </childnode>
+        <childnode refid="3627" relation="include">
+        </childnode>
+      </node>
+      <node id="3624">
+        <label>stddef.h</label>
+      </node>
+      <node id="3623">
+        <label>glew.h</label>
+        <link refid="glew_8h"/>
+        <childnode refid="3624" relation="include">
+        </childnode>
+        <childnode refid="3625" relation="include">
+        </childnode>
+        <childnode refid="3628" relation="include">
+        </childnode>
+      </node>
+      <node id="3628">
+        <label>GL/glu.h</label>
+      </node>
+      <node id="3626">
+        <label>limits.h</label>
+      </node>
+      <node id="3632">
+        <label>Vec4.h</label>
+        <link refid="_vec4_8h"/>
+        <childnode refid="3622" relation="include">
+        </childnode>
+        <childnode refid="3633" relation="include">
+        </childnode>
+        <childnode refid="3635" relation="include">
+        </childnode>
+        <childnode refid="3634" relation="include">
+        </childnode>
+      </node>
+      <node id="3637">
+        <label>AbstractVAO.h</label>
+        <link refid="_abstract_v_a_o_8h"/>
+        <childnode refid="3622" relation="include">
+        </childnode>
+      </node>
+      <node id="3627">
+        <label>wchar.h</label>
+      </node>
+      <node id="3634">
+        <label>array</label>
+      </node>
+      <node id="3630">
+        <label>QtOpenGL/QGLContext</label>
+      </node>
+      <node id="3620">
+        <label>AABB.cpp</label>
+        <link refid="AABB.cpp"/>
+        <childnode refid="3621" relation="include">
+        </childnode>
+      </node>
+      <node id="3629">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="3633">
+        <label>Vec2.h</label>
+        <link refid="_vec2_8h"/>
+        <childnode refid="3622" relation="include">
+        </childnode>
+        <childnode refid="3634" relation="include">
+        </childnode>
+      </node>
+      <node id="3638">
+        <label>memory</label>
+      </node>
+      <node id="3636">
+        <label>BBox.h</label>
+        <link refid="_b_box_8h"/>
+        <childnode refid="3622" relation="include">
+        </childnode>
+        <childnode refid="3635" relation="include">
+        </childnode>
+        <childnode refid="3632" relation="include">
+        </childnode>
+        <childnode refid="3637" relation="include">
+        </childnode>
+        <childnode refid="3638" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacengl">ngl</innernamespace>
+    <briefdescription>
+<para>implementation files for AABB class </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Copyright<sp/>(C)<sp/>2011<sp/>Jon<sp/>Macey</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>m_a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_a_a_b_b_8h" kindref="compound">AABB.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight><highlight class="comment">//-----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="namespacengl" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacengl" kindref="compound">ngl</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classngl_1_1_a_a_b_b_1a978aed97e70bb2f48c8202c1f802e2ae" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_a_a_b_b_1a978aed97e70bb2f48c8202c1f802e2ae" kindref="member">AABB::AABB</ref>()noexcept</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_a_a_b_b_1a77ab6971c72a3f9cb6ca14631fe3ff3a" kindref="member">m_corner</ref>.<ref refid="classngl_1_1_vec4_1ae1201ced94be9176940fc83ed9054e82" kindref="member">set</ref>(0.0<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,0.0<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,0.0<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,1.0<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_a_a_b_b_1a3d80713dfb8ba91fa5b82fd323dd22e5" kindref="member">m_x</ref><sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_a_a_b_b_1ad654095e5924cf4454d802e1a2f2e696" kindref="member">m_y</ref><sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_a_a_b_b_1a6cf34a495a559b114f7a60dfe7b166c1" kindref="member">m_z</ref><sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classngl_1_1_a_a_b_b_1affc18345e49d562891c8158df062fd08" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_a_a_b_b_1a978aed97e70bb2f48c8202c1f802e2ae" kindref="member">AABB::AABB</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref><sp/>&amp;_corner,<sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_x,<sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_y,<sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_z<sp/>)<sp/>noexcept</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(_corner,_x,_y,_z);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classngl_1_1_a_a_b_b_1abe138753e898d613c610af50e4db7a8a" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_a_a_b_b_1abe138753e898d613c610af50e4db7a8a" kindref="member">AABB::~AABB</ref>()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classngl_1_1_a_a_b_b_1a757fcb29bedf8116b174222bf719612c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_a_a_b_b_1a757fcb29bedf8116b174222bf719612c" kindref="member">AABB::set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec4" kindref="compound">Vec4</ref><sp/>&amp;_corner,<ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_x,<ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_y,<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_z<sp/>)<sp/>noexcept</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_a_a_b_b_1a77ab6971c72a3f9cb6ca14631fe3ff3a" kindref="member">m_corner</ref>=_corner;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_x<sp/>&lt;<sp/>0.0<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>_x<sp/>=<sp/>-_x;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_a_a_b_b_1a77ab6971c72a3f9cb6ca14631fe3ff3a" kindref="member">m_corner</ref>.<ref refid="classngl_1_1_vec4_1a3ffbb98e16e3e05d658cf38907911fff" kindref="member">m_x</ref><sp/>-=<sp/>_x;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_y<sp/>&lt;<sp/>0.0<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>_y<sp/>=<sp/>-_y;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_a_a_b_b_1a77ab6971c72a3f9cb6ca14631fe3ff3a" kindref="member">m_corner</ref>.<ref refid="classngl_1_1_vec4_1adc415581c84f9e54f15198a002f8948b" kindref="member">m_y</ref><sp/>-=<sp/>_y;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_z<sp/>&lt;<sp/>0.0<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>_z<sp/>=<sp/>-_z;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_a_a_b_b_1a77ab6971c72a3f9cb6ca14631fe3ff3a" kindref="member">m_corner</ref>.<ref refid="classngl_1_1_vec4_1afef13d1ede4b248147e7dd126fd1e17a" kindref="member">m_z</ref><sp/>-=<sp/>_z;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_a_a_b_b_1a3d80713dfb8ba91fa5b82fd323dd22e5" kindref="member">m_x</ref><sp/>=<sp/>_x;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_a_a_b_b_1ad654095e5924cf4454d802e1a2f2e696" kindref="member">m_y</ref><sp/>=<sp/>_y;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_a_a_b_b_1a6cf34a495a559b114f7a60dfe7b166c1" kindref="member">m_z</ref><sp/>=<sp/>_z;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classngl_1_1_a_a_b_b_1afe0fa54b2dde2628e775e5d9b5044d7d" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/><ref refid="classngl_1_1_a_a_b_b_1afe0fa54b2dde2628e775e5d9b5044d7d" kindref="member">AABB::getVertexP</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/>&amp;_normal)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/><ref refid="glew_8h_1a1dbb21208b9047cc8031ca9c840d3c2f" kindref="member">res</ref><sp/>=<sp/><ref refid="classngl_1_1_a_a_b_b_1a77ab6971c72a3f9cb6ca14631fe3ff3a" kindref="member">m_corner</ref>.<ref refid="classngl_1_1_vec4_1a4eb5f6ead61e1ad2f06887b23a94384a" kindref="member">toVec3</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_normal.m_x<sp/>&gt;<sp/>0.0f)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>res.<ref refid="classngl_1_1_vec3_1a30f6ffdadd9bdb00159553a4ff3f3f25" kindref="member">m_x</ref><sp/>+=<sp/><ref refid="classngl_1_1_a_a_b_b_1a3d80713dfb8ba91fa5b82fd323dd22e5" kindref="member">m_x</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_normal.m_y<sp/>&gt;<sp/>0.0f)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>res.<ref refid="classngl_1_1_vec3_1a6c46bcd25521e9840d992280bdfb5a91" kindref="member">m_y</ref><sp/>+=<sp/><ref refid="classngl_1_1_a_a_b_b_1ad654095e5924cf4454d802e1a2f2e696" kindref="member">m_y</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_normal.m_z<sp/>&gt;<sp/>0.0f)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>res.<ref refid="classngl_1_1_vec3_1a1e5d951f56e56b18edadfd661eb6012a" kindref="member">m_z</ref><sp/>+=<sp/><ref refid="classngl_1_1_a_a_b_b_1a6cf34a495a559b114f7a60dfe7b166c1" kindref="member">m_z</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a1dbb21208b9047cc8031ca9c840d3c2f" kindref="member">res</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classngl_1_1_a_a_b_b_1aa956b6d687785fd98d8b87743f3f2e49" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/><ref refid="classngl_1_1_a_a_b_b_1aa956b6d687785fd98d8b87743f3f2e49" kindref="member">AABB::getVertexN</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/>&amp;_normal)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref><sp/><ref refid="glew_8h_1a1dbb21208b9047cc8031ca9c840d3c2f" kindref="member">res</ref><sp/>=<sp/><ref refid="classngl_1_1_a_a_b_b_1a77ab6971c72a3f9cb6ca14631fe3ff3a" kindref="member">m_corner</ref>.<ref refid="classngl_1_1_vec4_1a4eb5f6ead61e1ad2f06887b23a94384a" kindref="member">toVec3</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_normal.m_x<sp/>&lt;<sp/>0.0f)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>res.<ref refid="classngl_1_1_vec3_1a30f6ffdadd9bdb00159553a4ff3f3f25" kindref="member">m_x</ref><sp/>+=<sp/><ref refid="classngl_1_1_a_a_b_b_1a3d80713dfb8ba91fa5b82fd323dd22e5" kindref="member">m_x</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_normal.m_y<sp/>&lt;<sp/>0.0f)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>res.<ref refid="classngl_1_1_vec3_1a6c46bcd25521e9840d992280bdfb5a91" kindref="member">m_y</ref><sp/>+=<sp/><ref refid="classngl_1_1_a_a_b_b_1ad654095e5924cf4454d802e1a2f2e696" kindref="member">m_y</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_normal.m_z<sp/>&lt;<sp/>0.0f)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>res.<ref refid="classngl_1_1_vec3_1a1e5d951f56e56b18edadfd661eb6012a" kindref="member">m_z</ref><sp/>+=<sp/><ref refid="classngl_1_1_a_a_b_b_1a6cf34a495a559b114f7a60dfe7b166c1" kindref="member">m_z</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a1dbb21208b9047cc8031ca9c840d3c2f" kindref="member">res</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>ngl<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/src/AABB.cpp"/>
+  </compounddef>
+</doxygen>

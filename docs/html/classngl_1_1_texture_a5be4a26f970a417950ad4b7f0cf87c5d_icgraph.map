@@ -1,0 +1,4 @@
+<map id="ngl::Texture::setTextureGL" name="ngl::Texture::setTextureGL">
+<area shape="rect" id="node2" href="$classngl_1_1_abstract_mesh.html#a2f0e3afb860b5c7bb6b99b96c016fef5" title="load int a texture and set it as the active texture of the Obj " alt="" coords="235,5,371,46"/>
+<area shape="rect" id="node3" href="$classngl_1_1_houdini_geo.html#a306b110b7cfe58531e740d241c39def0" title="ctor passing in the file name to load and a texture " alt="" coords="419,12,615,39"/>
+</map>

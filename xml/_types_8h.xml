@@ -1,0 +1,1100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_types_8h" kind="file" language="C++">
+    <compoundname>Types.h</compoundname>
+    <includes refid="glew_8h" local="yes">glew.h</includes>
+    <includes local="no">GL/gl.h</includes>
+    <includes local="no">QtOpenGL/QGLContext</includes>
+    <includes local="no">QGLContext</includes>
+    <includedby refid="_util_8cpp" local="yes">Util.cpp</includedby>
+    <includedby refid="_a_a_b_b_8h" local="yes">AABB.h</includedby>
+    <includedby refid="_vec4_8h" local="yes">Vec4.h</includedby>
+    <includedby refid="_vec2_8h" local="yes">Vec2.h</includedby>
+    <includedby refid="_vec3_8h" local="yes">Vec3.h</includedby>
+    <includedby refid="_b_box_8h" local="yes">BBox.h</includedby>
+    <includedby refid="_abstract_v_a_o_8h" local="yes">AbstractVAO.h</includedby>
+    <includedby refid="_abstract_mesh_8h" local="yes">AbstractMesh.h</includedby>
+    <includedby refid="_rib_export_8h" local="yes">RibExport.h</includedby>
+    <includedby refid="_image_8h" local="yes">Image.h</includedby>
+    <includedby refid="_colour_8h" local="yes">Colour.h</includedby>
+    <includedby refid="_texture_8h" local="yes">Texture.h</includedby>
+    <includedby refid="_abstract_serializer_8h" local="yes">AbstractSerializer.h</includedby>
+    <includedby refid="_mat3_8h" local="yes">Mat3.h</includedby>
+    <includedby refid="_quaternion_8h" local="yes">Quaternion.h</includedby>
+    <includedby refid="_mat4_8h" local="yes">Mat4.h</includedby>
+    <includedby refid="_bezier_curve_8h" local="yes">BezierCurve.h</includedby>
+    <includedby refid="_v_a_o_factory_8h" local="yes">VAOFactory.h</includedby>
+    <includedby refid="_camera_8h" local="yes">Camera.h</includedby>
+    <includedby refid="_plane_8h" local="yes">Plane.h</includedby>
+    <includedby refid="_houdini_geo_8h" local="yes">HoudiniGeo.h</includedby>
+    <includedby refid="_light_8h" local="yes">Light.h</includedby>
+    <includedby refid="_logger_8h" local="yes">Logger.h</includedby>
+    <includedby refid="_singleton_8h" local="yes">Singleton.h</includedby>
+    <includedby refid="_material_8h" local="yes">Material.h</includedby>
+    <includedby refid="_n_c_c_a_bin_mesh_8h" local="yes">NCCABinMesh.h</includedby>
+    <includedby refid="_obj_8h" local="yes">Obj.h</includedby>
+    <includedby refid="_n_c_c_a_point_bake_8h" local="yes">NCCAPointBake.h</includedby>
+    <includedby refid="_n_g_l_init_8h" local="yes">NGLInit.h</includedby>
+    <includedby refid="_v_a_o_primitives_8h" local="yes">VAOPrimitives.h</includedby>
+    <includedby refid="_n_g_l_stream_8h" local="yes">NGLStream.h</includedby>
+    <includedby refid="_shader_8h" local="yes">Shader.h</includedby>
+    <includedby refid="_shader_program_8h" local="yes">ShaderProgram.h</includedby>
+    <includedby refid="_util_8h" local="yes">Util.h</includedby>
+    <includedby refid="_shader_lib_8h" local="yes">ShaderLib.h</includedby>
+    <includedby refid="_text_8h" local="yes">Text.h</includedby>
+    <includedby refid="_vertex_array_object_8h" local="yes">VertexArrayObject.h</includedby>
+    <incdepgraph>
+      <node id="6588">
+        <label>Types.h</label>
+        <link refid="Types.h"/>
+        <childnode refid="6589" relation="include">
+        </childnode>
+        <childnode refid="6595" relation="include">
+        </childnode>
+        <childnode refid="6596" relation="include">
+        </childnode>
+        <childnode refid="6597" relation="include">
+        </childnode>
+      </node>
+      <node id="6597">
+        <label>QGLContext</label>
+      </node>
+      <node id="6591">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="6592" relation="include">
+        </childnode>
+        <childnode refid="6593" relation="include">
+        </childnode>
+      </node>
+      <node id="6590">
+        <label>stddef.h</label>
+      </node>
+      <node id="6589">
+        <label>glew.h</label>
+        <link refid="glew_8h"/>
+        <childnode refid="6590" relation="include">
+        </childnode>
+        <childnode refid="6591" relation="include">
+        </childnode>
+        <childnode refid="6594" relation="include">
+        </childnode>
+      </node>
+      <node id="6594">
+        <label>GL/glu.h</label>
+      </node>
+      <node id="6592">
+        <label>limits.h</label>
+      </node>
+      <node id="6593">
+        <label>wchar.h</label>
+      </node>
+      <node id="6596">
+        <label>QtOpenGL/QGLContext</label>
+      </node>
+      <node id="6595">
+        <label>GL/gl.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6678">
+        <label>Mat4.h</label>
+        <link refid="_mat4_8h"/>
+        <childnode refid="6625" relation="include">
+        </childnode>
+        <childnode refid="6626" relation="include">
+        </childnode>
+        <childnode refid="6604" relation="include">
+        </childnode>
+        <childnode refid="6599" relation="include">
+        </childnode>
+        <childnode refid="6611" relation="include">
+        </childnode>
+        <childnode refid="6624" relation="include">
+        </childnode>
+        <childnode refid="6602" relation="include">
+        </childnode>
+        <childnode refid="6631" relation="include">
+        </childnode>
+        <childnode refid="6642" relation="include">
+        </childnode>
+        <childnode refid="6650" relation="include">
+        </childnode>
+        <childnode refid="6648" relation="include">
+        </childnode>
+      </node>
+      <node id="6640">
+        <label>ShaderProgram.h</label>
+        <link refid="_shader_program_8h"/>
+        <childnode refid="6641" relation="include">
+        </childnode>
+        <childnode refid="6642" relation="include">
+        </childnode>
+      </node>
+      <node id="6598">
+        <label>Types.h</label>
+        <link refid="Types.h"/>
+        <childnode refid="6599" relation="include">
+        </childnode>
+        <childnode refid="6600" relation="include">
+        </childnode>
+        <childnode refid="6608" relation="include">
+        </childnode>
+        <childnode refid="6649" relation="include">
+        </childnode>
+        <childnode refid="6651" relation="include">
+        </childnode>
+        <childnode refid="6612" relation="include">
+        </childnode>
+        <childnode refid="6659" relation="include">
+        </childnode>
+        <childnode refid="6614" relation="include">
+        </childnode>
+        <childnode refid="6669" relation="include">
+        </childnode>
+        <childnode refid="6671" relation="include">
+        </childnode>
+        <childnode refid="6674" relation="include">
+        </childnode>
+        <childnode refid="6673" relation="include">
+        </childnode>
+        <childnode refid="6628" relation="include">
+        </childnode>
+        <childnode refid="6677" relation="include">
+        </childnode>
+        <childnode refid="6624" relation="include">
+        </childnode>
+        <childnode refid="6678" relation="include">
+        </childnode>
+        <childnode refid="6652" relation="include">
+        </childnode>
+        <childnode refid="6661" relation="include">
+        </childnode>
+        <childnode refid="6602" relation="include">
+        </childnode>
+        <childnode refid="6654" relation="include">
+        </childnode>
+        <childnode refid="6616" relation="include">
+        </childnode>
+        <childnode refid="6631" relation="include">
+        </childnode>
+        <childnode refid="6679" relation="include">
+        </childnode>
+        <childnode refid="6681" relation="include">
+        </childnode>
+        <childnode refid="6676" relation="include">
+        </childnode>
+        <childnode refid="6618" relation="include">
+        </childnode>
+        <childnode refid="6620" relation="include">
+        </childnode>
+        <childnode refid="6622" relation="include">
+        </childnode>
+        <childnode refid="6658" relation="include">
+        </childnode>
+        <childnode refid="6656" relation="include">
+        </childnode>
+        <childnode refid="6682" relation="include">
+        </childnode>
+        <childnode refid="6683" relation="include">
+        </childnode>
+        <childnode refid="6640" relation="include">
+        </childnode>
+        <childnode refid="6637" relation="include">
+        </childnode>
+        <childnode refid="6642" relation="include">
+        </childnode>
+        <childnode refid="6650" relation="include">
+        </childnode>
+        <childnode refid="6685" relation="include">
+        </childnode>
+      </node>
+      <node id="6660">
+        <label>AbstractVAO.cpp</label>
+        <link refid="_abstract_v_a_o_8cpp"/>
+      </node>
+      <node id="6599">
+        <label>Util.cpp</label>
+        <link refid="_util_8cpp"/>
+      </node>
+      <node id="6607">
+        <label>PathCamera.cpp</label>
+        <link refid="_path_camera_8cpp"/>
+      </node>
+      <node id="6620">
+        <label>Obj.h</label>
+        <link refid="_obj_8h"/>
+        <childnode refid="6621" relation="include">
+        </childnode>
+        <childnode refid="6622" relation="include">
+        </childnode>
+      </node>
+      <node id="6634">
+        <label>SpotLight.cpp</label>
+        <link refid="_spot_light_8cpp"/>
+      </node>
+      <node id="6672">
+        <label>Image.cpp</label>
+        <link refid="_image_8cpp"/>
+      </node>
+      <node id="6647">
+        <label>Transformation.cpp</label>
+        <link refid="_transformation_8cpp"/>
+      </node>
+      <node id="6600">
+        <label>AABB.h</label>
+        <link refid="_a_a_b_b_8h"/>
+        <childnode refid="6601" relation="include">
+        </childnode>
+        <childnode refid="6602" relation="include">
+        </childnode>
+      </node>
+      <node id="6648">
+        <label>Transformation.h</label>
+        <link refid="_transformation_8h"/>
+        <childnode refid="6647" relation="include">
+        </childnode>
+        <childnode refid="6605" relation="include">
+        </childnode>
+        <childnode refid="6648" relation="include">
+        </childnode>
+      </node>
+      <node id="6661">
+        <label>VAOFactory.h</label>
+        <link refid="_v_a_o_factory_8h"/>
+        <childnode refid="6615" relation="include">
+        </childnode>
+        <childnode refid="6613" relation="include">
+        </childnode>
+        <childnode refid="6603" relation="include">
+        </childnode>
+        <childnode refid="6644" relation="include">
+        </childnode>
+        <childnode refid="6662" relation="include">
+        </childnode>
+        <childnode refid="6639" relation="include">
+        </childnode>
+        <childnode refid="6652" relation="include">
+        </childnode>
+        <childnode refid="6650" relation="include">
+        </childnode>
+      </node>
+      <node id="6664">
+        <label>SimpleVAO.cpp</label>
+        <link refid="_simple_v_a_o_8cpp"/>
+      </node>
+      <node id="6671">
+        <label>Image.h</label>
+        <link refid="_image_8h"/>
+        <childnode refid="6672" relation="include">
+        </childnode>
+        <childnode refid="6673" relation="include">
+        </childnode>
+      </node>
+      <node id="6667">
+        <label>SimpleIndexVAO.h</label>
+        <link refid="_simple_index_v_a_o_8h"/>
+        <childnode refid="6613" relation="include">
+        </childnode>
+        <childnode refid="6644" relation="include">
+        </childnode>
+        <childnode refid="6668" relation="include">
+        </childnode>
+      </node>
+      <node id="6613">
+        <label>BBox.cpp</label>
+        <link refid="_b_box_8cpp"/>
+      </node>
+      <node id="6652">
+        <label>BezierCurve.h</label>
+        <link refid="_bezier_curve_8h"/>
+        <childnode refid="6653" relation="include">
+        </childnode>
+        <childnode refid="6606" relation="include">
+        </childnode>
+      </node>
+      <node id="6684">
+        <label>Shader.cpp</label>
+        <link refid="_shader_8cpp"/>
+      </node>
+      <node id="6604">
+        <label>NGLStream.cpp</label>
+        <link refid="_n_g_l_stream_8cpp"/>
+      </node>
+      <node id="6651">
+        <label>Vec3.h</label>
+        <link refid="_vec3_8h"/>
+        <childnode refid="6603" relation="include">
+        </childnode>
+        <childnode refid="6626" relation="include">
+        </childnode>
+        <childnode refid="6604" relation="include">
+        </childnode>
+        <childnode refid="6610" relation="include">
+        </childnode>
+        <childnode refid="6611" relation="include">
+        </childnode>
+        <childnode refid="6608" relation="include">
+        </childnode>
+        <childnode refid="6612" relation="include">
+        </childnode>
+        <childnode refid="6652" relation="include">
+        </childnode>
+        <childnode refid="6602" relation="include">
+        </childnode>
+        <childnode refid="6654" relation="include">
+        </childnode>
+        <childnode refid="6631" relation="include">
+        </childnode>
+        <childnode refid="6656" relation="include">
+        </childnode>
+      </node>
+      <node id="6643">
+        <label>Material.cpp</label>
+        <link refid="_material_8cpp"/>
+      </node>
+      <node id="6656">
+        <label>VAOPrimitives.h</label>
+        <link refid="_v_a_o_primitives_8h"/>
+        <childnode refid="6657" relation="include">
+        </childnode>
+        <childnode refid="6644" relation="include">
+        </childnode>
+        <childnode refid="6639" relation="include">
+        </childnode>
+        <childnode refid="6658" relation="include">
+        </childnode>
+      </node>
+      <node id="6665">
+        <label>MultiBufferVAO.h</label>
+        <link refid="_multi_buffer_v_a_o_8h"/>
+        <childnode refid="6666" relation="include">
+        </childnode>
+        <childnode refid="6644" relation="include">
+        </childnode>
+      </node>
+      <node id="6666">
+        <label>MultiBufferVAO.cpp</label>
+        <link refid="_multi_buffer_v_a_o_8cpp"/>
+      </node>
+      <node id="6631">
+        <label>Light.h</label>
+        <link refid="_light_8h"/>
+        <childnode refid="6632" relation="include">
+        </childnode>
+        <childnode refid="6605" relation="include">
+        </childnode>
+        <childnode refid="6633" relation="include">
+        </childnode>
+      </node>
+      <node id="6657">
+        <label>createDefaultVAOs.cpp</label>
+        <link refid="create_default_v_a_os_8cpp"/>
+      </node>
+      <node id="6685">
+        <label>VertexArrayObject.h</label>
+        <link refid="_vertex_array_object_8h"/>
+        <childnode refid="6686" relation="include">
+        </childnode>
+      </node>
+      <node id="6636">
+        <label>Random.cpp</label>
+        <link refid="_random_8cpp"/>
+      </node>
+      <node id="6627">
+        <label>Quaternion.cpp</label>
+        <link refid="_quaternion_8cpp"/>
+      </node>
+      <node id="6680">
+        <label>Logger.cpp</label>
+        <link refid="_logger_8cpp"/>
+      </node>
+      <node id="6686">
+        <label>VertexArrayObject.cpp</label>
+        <link refid="_vertex_array_object_8cpp"/>
+      </node>
+      <node id="6633">
+        <label>SpotLight.h</label>
+        <link refid="_spot_light_8h"/>
+        <childnode refid="6634" relation="include">
+        </childnode>
+      </node>
+      <node id="6658">
+        <label>NGLInit.h</label>
+        <link refid="_n_g_l_init_8h"/>
+        <childnode refid="6644" relation="include">
+        </childnode>
+      </node>
+      <node id="6619">
+        <label>NCCABinMesh.cpp</label>
+        <link refid="_n_c_c_a_bin_mesh_8cpp"/>
+      </node>
+      <node id="6618">
+        <label>NCCABinMesh.h</label>
+        <link refid="_n_c_c_a_bin_mesh_8h"/>
+        <childnode refid="6619" relation="include">
+        </childnode>
+      </node>
+      <node id="6645">
+        <label>ShaderLib.cpp</label>
+        <link refid="_shader_lib_8cpp"/>
+      </node>
+      <node id="6621">
+        <label>Obj.cpp</label>
+        <link refid="_obj_8cpp"/>
+      </node>
+      <node id="6638">
+        <label>Texture.cpp</label>
+        <link refid="_texture_8cpp"/>
+      </node>
+      <node id="6641">
+        <label>ShaderProgram.cpp</label>
+        <link refid="_shader_program_8cpp"/>
+      </node>
+      <node id="6606">
+        <label>PathCamera.h</label>
+        <link refid="_path_camera_8h"/>
+        <childnode refid="6607" relation="include">
+        </childnode>
+      </node>
+      <node id="6623">
+        <label>NCCAPointBake.cpp</label>
+        <link refid="_n_c_c_a_point_bake_8cpp"/>
+      </node>
+      <node id="6629">
+        <label>AbstractSerializer.cpp</label>
+        <link refid="_abstract_serializer_8cpp"/>
+      </node>
+      <node id="6635">
+        <label>Random.h</label>
+        <link refid="_random_8h"/>
+        <childnode refid="6636" relation="include">
+        </childnode>
+      </node>
+      <node id="6608">
+        <label>Vec4.h</label>
+        <link refid="_vec4_8h"/>
+        <childnode refid="6604" relation="include">
+        </childnode>
+        <childnode refid="6599" relation="include">
+        </childnode>
+        <childnode refid="6609" relation="include">
+        </childnode>
+        <childnode refid="6610" relation="include">
+        </childnode>
+        <childnode refid="6611" relation="include">
+        </childnode>
+        <childnode refid="6600" relation="include">
+        </childnode>
+        <childnode refid="6612" relation="include">
+        </childnode>
+        <childnode refid="6614" relation="include">
+        </childnode>
+        <childnode refid="6624" relation="include">
+        </childnode>
+        <childnode refid="6602" relation="include">
+        </childnode>
+        <childnode refid="6631" relation="include">
+        </childnode>
+        <childnode refid="6618" relation="include">
+        </childnode>
+        <childnode refid="6620" relation="include">
+        </childnode>
+        <childnode refid="6622" relation="include">
+        </childnode>
+        <childnode refid="6635" relation="include">
+        </childnode>
+        <childnode refid="6637" relation="include">
+        </childnode>
+        <childnode refid="6642" relation="include">
+        </childnode>
+        <childnode refid="6648" relation="include">
+        </childnode>
+      </node>
+      <node id="6642">
+        <label>ShaderLib.h</label>
+        <link refid="_shader_lib_8h"/>
+        <childnode refid="6632" relation="include">
+        </childnode>
+        <childnode refid="6643" relation="include">
+        </childnode>
+        <childnode refid="6644" relation="include">
+        </childnode>
+        <childnode refid="6645" relation="include">
+        </childnode>
+        <childnode refid="6634" relation="include">
+        </childnode>
+        <childnode refid="6646" relation="include">
+        </childnode>
+        <childnode refid="6647" relation="include">
+        </childnode>
+      </node>
+      <node id="6659">
+        <label>AbstractVAO.h</label>
+        <link refid="_abstract_v_a_o_8h"/>
+        <childnode refid="6660" relation="include">
+        </childnode>
+        <childnode refid="6612" relation="include">
+        </childnode>
+        <childnode refid="6614" relation="include">
+        </childnode>
+        <childnode refid="6661" relation="include">
+        </childnode>
+        <childnode refid="6663" relation="include">
+        </childnode>
+        <childnode refid="6665" relation="include">
+        </childnode>
+        <childnode refid="6656" relation="include">
+        </childnode>
+        <childnode refid="6667" relation="include">
+        </childnode>
+      </node>
+      <node id="6616">
+        <label>HoudiniGeo.h</label>
+        <link refid="_houdini_geo_8h"/>
+        <childnode refid="6617" relation="include">
+        </childnode>
+      </node>
+      <node id="6676">
+        <label>Material.h</label>
+        <link refid="_material_8h"/>
+        <childnode refid="6643" relation="include">
+        </childnode>
+        <childnode refid="6605" relation="include">
+        </childnode>
+      </node>
+      <node id="6644">
+        <label>NGLInit.cpp</label>
+        <link refid="_n_g_l_init_8cpp"/>
+      </node>
+      <node id="6628">
+        <label>AbstractSerializer.h</label>
+        <link refid="_abstract_serializer_8h"/>
+        <childnode refid="6629" relation="include">
+        </childnode>
+        <childnode refid="6630" relation="include">
+        </childnode>
+      </node>
+      <node id="6683">
+        <label>Shader.h</label>
+        <link refid="_shader_8h"/>
+        <childnode refid="6684" relation="include">
+        </childnode>
+        <childnode refid="6642" relation="include">
+        </childnode>
+        <childnode refid="6640" relation="include">
+        </childnode>
+      </node>
+      <node id="6674">
+        <label>Colour.h</label>
+        <link refid="_colour_8h"/>
+        <childnode refid="6675" relation="include">
+        </childnode>
+        <childnode refid="6604" relation="include">
+        </childnode>
+        <childnode refid="6671" relation="include">
+        </childnode>
+        <childnode refid="6628" relation="include">
+        </childnode>
+        <childnode refid="6631" relation="include">
+        </childnode>
+        <childnode refid="6676" relation="include">
+        </childnode>
+        <childnode refid="6635" relation="include">
+        </childnode>
+        <childnode refid="6642" relation="include">
+        </childnode>
+        <childnode refid="6650" relation="include">
+        </childnode>
+      </node>
+      <node id="6673">
+        <label>Texture.h</label>
+        <link refid="_texture_8h"/>
+        <childnode refid="6638" relation="include">
+        </childnode>
+        <childnode refid="6614" relation="include">
+        </childnode>
+        <childnode refid="6618" relation="include">
+        </childnode>
+        <childnode refid="6620" relation="include">
+        </childnode>
+      </node>
+      <node id="6630">
+        <label>XMLSerializer.h</label>
+        <link refid="_x_m_l_serializer_8h"/>
+        <childnode refid="6605" relation="include">
+        </childnode>
+      </node>
+      <node id="6625">
+        <label>Mat3.cpp</label>
+        <link refid="_mat3_8cpp"/>
+      </node>
+      <node id="6632">
+        <label>Light.cpp</label>
+        <link refid="_light_8cpp"/>
+      </node>
+      <node id="6654">
+        <label>Plane.h</label>
+        <link refid="_plane_8h"/>
+        <childnode refid="6655" relation="include">
+        </childnode>
+        <childnode refid="6605" relation="include">
+        </childnode>
+        <childnode refid="6602" relation="include">
+        </childnode>
+      </node>
+      <node id="6626">
+        <label>Mat4.cpp</label>
+        <link refid="_mat4_8cpp"/>
+      </node>
+      <node id="6675">
+        <label>Colour.cpp</label>
+        <link refid="_colour_8cpp"/>
+      </node>
+      <node id="6669">
+        <label>RibExport.h</label>
+        <link refid="_rib_export_8h"/>
+        <childnode refid="6670" relation="include">
+        </childnode>
+        <childnode refid="6614" relation="include">
+        </childnode>
+        <childnode refid="6602" relation="include">
+        </childnode>
+        <childnode refid="6618" relation="include">
+        </childnode>
+        <childnode refid="6620" relation="include">
+        </childnode>
+      </node>
+      <node id="6639">
+        <label>VAOPrimitives.cpp</label>
+        <link refid="_v_a_o_primitives_8cpp"/>
+      </node>
+      <node id="6624">
+        <label>Quaternion.h</label>
+        <link refid="_quaternion_8h"/>
+        <childnode refid="6625" relation="include">
+        </childnode>
+        <childnode refid="6626" relation="include">
+        </childnode>
+        <childnode refid="6604" relation="include">
+        </childnode>
+        <childnode refid="6627" relation="include">
+        </childnode>
+        <childnode refid="6628" relation="include">
+        </childnode>
+      </node>
+      <node id="6653">
+        <label>BezierCurve.cpp</label>
+        <link refid="_bezier_curve_8cpp"/>
+      </node>
+      <node id="6622">
+        <label>NCCAPointBake.h</label>
+        <link refid="_n_c_c_a_point_bake_8h"/>
+        <childnode refid="6623" relation="include">
+        </childnode>
+      </node>
+      <node id="6650">
+        <label>Text.h</label>
+        <link refid="_text_8h"/>
+        <childnode refid="6646" relation="include">
+        </childnode>
+      </node>
+      <node id="6670">
+        <label>RibExport.cpp</label>
+        <link refid="_rib_export_8cpp"/>
+      </node>
+      <node id="6681">
+        <label>Singleton.h</label>
+        <link refid="_singleton_8h"/>
+        <childnode refid="6679" relation="include">
+        </childnode>
+        <childnode refid="6658" relation="include">
+        </childnode>
+        <childnode refid="6656" relation="include">
+        </childnode>
+        <childnode refid="6635" relation="include">
+        </childnode>
+        <childnode refid="6642" relation="include">
+        </childnode>
+      </node>
+      <node id="6609">
+        <label>Vec2.cpp</label>
+        <link refid="_vec2_8cpp"/>
+      </node>
+      <node id="6601">
+        <label>AABB.cpp</label>
+        <link refid="_a_a_b_b_8cpp"/>
+      </node>
+      <node id="6677">
+        <label>Mat3.h</label>
+        <link refid="_mat3_8h"/>
+        <childnode refid="6625" relation="include">
+        </childnode>
+        <childnode refid="6604" relation="include">
+        </childnode>
+        <childnode refid="6610" relation="include">
+        </childnode>
+        <childnode refid="6628" relation="include">
+        </childnode>
+        <childnode refid="6642" relation="include">
+        </childnode>
+      </node>
+      <node id="6617">
+        <label>HoudiniGeo.cpp</label>
+        <link refid="_houdini_geo_8cpp"/>
+      </node>
+      <node id="6679">
+        <label>Logger.h</label>
+        <link refid="_logger_8h"/>
+        <childnode refid="6680" relation="include">
+        </childnode>
+      </node>
+      <node id="6610">
+        <label>Vec3.cpp</label>
+        <link refid="_vec3_8cpp"/>
+      </node>
+      <node id="6663">
+        <label>SimpleVAO.h</label>
+        <link refid="_simple_v_a_o_8h"/>
+        <childnode refid="6615" relation="include">
+        </childnode>
+        <childnode refid="6603" relation="include">
+        </childnode>
+        <childnode refid="6644" relation="include">
+        </childnode>
+        <childnode refid="6664" relation="include">
+        </childnode>
+        <childnode refid="6639" relation="include">
+        </childnode>
+        <childnode refid="6652" relation="include">
+        </childnode>
+        <childnode refid="6650" relation="include">
+        </childnode>
+      </node>
+      <node id="6602">
+        <label>Camera.h</label>
+        <link refid="_camera_8h"/>
+        <childnode refid="6603" relation="include">
+        </childnode>
+        <childnode refid="6604" relation="include">
+        </childnode>
+        <childnode refid="6605" relation="include">
+        </childnode>
+        <childnode refid="6606" relation="include">
+        </childnode>
+      </node>
+      <node id="6662">
+        <label>VAOFactory.cpp</label>
+        <link refid="_v_a_o_factory_8cpp"/>
+      </node>
+      <node id="6655">
+        <label>Plane.cpp</label>
+        <link refid="_plane_8cpp"/>
+      </node>
+      <node id="6611">
+        <label>Vec4.cpp</label>
+        <link refid="_vec4_8cpp"/>
+      </node>
+      <node id="6682">
+        <label>NGLStream.h</label>
+        <link refid="_n_g_l_stream_8h"/>
+        <childnode refid="6615" relation="include">
+        </childnode>
+        <childnode refid="6643" relation="include">
+        </childnode>
+        <childnode refid="6607" relation="include">
+        </childnode>
+      </node>
+      <node id="6668">
+        <label>SimpleIndexVAO.cpp</label>
+        <link refid="_simple_index_v_a_o_8cpp"/>
+      </node>
+      <node id="6637">
+        <label>Util.h</label>
+        <link refid="_util_8h"/>
+        <childnode refid="6615" relation="include">
+        </childnode>
+        <childnode refid="6603" relation="include">
+        </childnode>
+        <childnode refid="6625" relation="include">
+        </childnode>
+        <childnode refid="6626" relation="include">
+        </childnode>
+        <childnode refid="6627" relation="include">
+        </childnode>
+        <childnode refid="6638" relation="include">
+        </childnode>
+        <childnode refid="6639" relation="include">
+        </childnode>
+        <childnode refid="6640" relation="include">
+        </childnode>
+      </node>
+      <node id="6605">
+        <label>XMLSerializer.cpp</label>
+        <link refid="_x_m_l_serializer_8cpp"/>
+      </node>
+      <node id="6649">
+        <label>Vec2.h</label>
+        <link refid="_vec2_8h"/>
+        <childnode refid="6625" relation="include">
+        </childnode>
+        <childnode refid="6604" relation="include">
+        </childnode>
+        <childnode refid="6609" relation="include">
+        </childnode>
+        <childnode refid="6611" relation="include">
+        </childnode>
+        <childnode refid="6608" relation="include">
+        </childnode>
+        <childnode refid="6650" relation="include">
+        </childnode>
+      </node>
+      <node id="6615">
+        <label>AbstractMesh.cpp</label>
+        <link refid="_abstract_mesh_8cpp"/>
+      </node>
+      <node id="6603">
+        <label>Camera.cpp</label>
+        <link refid="_camera_8cpp"/>
+      </node>
+      <node id="6612">
+        <label>BBox.h</label>
+        <link refid="_b_box_8h"/>
+        <childnode refid="6613" relation="include">
+        </childnode>
+        <childnode refid="6600" relation="include">
+        </childnode>
+        <childnode refid="6614" relation="include">
+        </childnode>
+        <childnode refid="6618" relation="include">
+        </childnode>
+        <childnode refid="6620" relation="include">
+        </childnode>
+      </node>
+      <node id="6646">
+        <label>Text.cpp</label>
+        <link refid="_text_8cpp"/>
+      </node>
+      <node id="6614">
+        <label>AbstractMesh.h</label>
+        <link refid="_abstract_mesh_8h"/>
+        <childnode refid="6615" relation="include">
+        </childnode>
+        <childnode refid="6616" relation="include">
+        </childnode>
+        <childnode refid="6618" relation="include">
+        </childnode>
+        <childnode refid="6620" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_create_core_g_l_context" prot="public">CreateCoreGLContext</innerclass>
+    <innernamespace refid="namespacengl">ngl</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" prot="public" static="no">
+        <name>NGL_DLLEXPORT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Types.h" line="65" column="14" bodyfile="/Users/jmacey/NGL/include/ngl/Types.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1a04b3daeb8f076608db8eb09234c8d29f" prot="public" static="no">
+        <name>FCompare</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>( ((<ref refid="glew_8h_1aeeddce917cf130d62c370b8f216026dd" kindref="member">a</ref>)-<ref refid="namespacengl_1afecf4d94f2539015835a49b872ca8e31" kindref="member">ngl::EPSILON</ref>)&lt;(<ref refid="glew_8h_1a7b01aaccb6b1691185992154f99088cb" kindref="member">b</ref>) &amp;&amp; ((<ref refid="glew_8h_1aeeddce917cf130d62c370b8f216026dd" kindref="member">a</ref>)+<ref refid="namespacengl_1afecf4d94f2539015835a49b872ca8e31" kindref="member">ngl::EPSILON</ref>)&gt;(<ref refid="glew_8h_1a7b01aaccb6b1691185992154f99088cb" kindref="member">b</ref>) )</initializer>
+        <briefdescription>
+<para>FCompare macro used for floating point comparision functions. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Types.h" line="136" column="11" bodyfile="/Users/jmacey/NGL/include/ngl/Types.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1a9362db426901a67b0ce07e7bbb52ac14" prot="public" static="no">
+        <name>NGL_UNUSED</name>
+        <param><defname>arg</defname></param>
+        <initializer>(<ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref>)arg;</initializer>
+        <briefdescription>
+<para>define unused to quiet Warnings </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Types.h" line="143" column="10" bodyfile="/Users/jmacey/NGL/include/ngl/Types.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_types_8h_1a131d6caa19a9ad580e98441a3c8f8e7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> *</type>
+        <definition>void* setGL32VisualMac</definition>
+        <argsstring>(bool _multisample=true)</argsstring>
+        <name>setGL32VisualMac</name>
+        <param>
+          <type>bool</type>
+          <declname>_multisample</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Types.h" line="81" column="1" bodyfile="/Users/jmacey/NGL/src/setGL32VisualMac.mm" bodystart="4" bodyend="33"/>
+        <referencedby refid="class_create_core_g_l_context_1adde10e42bae2a9b95e581393fdd8f9a6" compoundref="_types_8h" startline="88" endline="88">CreateCoreGLContext::CreateCoreGLContext</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>main definition of types and namespace </para>    </briefdescription>
+    <detaileddescription>
+<para>declare a variable called Real which sets the Global Precision for the other classes (GLfloat)</para><para><simplesect kind="author"><para>Jonathan Macey </para></simplesect>
+<simplesect kind="version"><para>2.0 </para></simplesect>
+<simplesect kind="date"><para>29/10/09 Updated to meet NCCA coding standard </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Copyright<sp/>(C)<sp/>2009<sp/>Jon<sp/>Macey</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TYPES_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPES_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__APPLE__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifndef<sp/>USINGIOS_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;<ref refid="glew_8h" kindref="compound">glew.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;OpenGLES/ES3/gl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;OpenGLES/ES3/glext.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;TargetConditionals.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifndef<sp/>TARGET_OS_IPHONE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;OpenGL/glext.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&quot;<ref refid="glew_8h" kindref="compound">glew.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;GL/gl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>QT5BUILD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;QtOpenGL/QGLContext&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DLL<sp/>Glue<sp/>for<sp/>windows<sp/>build<sp/>/<sp/>apps</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>BUILDING_DLL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>NGL_DLLEXPORT<sp/>__declspec(dllexport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>NGL_DLLEXPORT<sp/>__declspec(dllimport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>NO_DLL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>NGL_DLLEXPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>NGL_DLLEXPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_types_8h_1af02b47fdde329d8e51c92cbd614a57fb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>NGL_DLLEXPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#ifdef<sp/>DARWIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>#ifndef<sp/>GL_TESS_CONTROL_SHADER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>GL_TESS_CONTROL_SHADER<sp/>0x00008e88</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>#ifndef<sp/>GL_TESS_EVALUATION_SHADER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>GL_TESS_EVALUATION_SHADER<sp/>0x00008e87</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>#ifndef<sp/>GL_PATCHES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>GL_PATCHES<sp/>0x0000000e</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="_types_8h_1a131d6caa19a9ad580e98441a3c8f8e7f" kindref="member">setGL32VisualMac</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_multisample=</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>QT5BUILD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QGLContext&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="class_create_core_g_l_context" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_create_core_g_l_context" kindref="compound">CreateCoreGLContext</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QGLContext</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="87" refid="class_create_core_g_l_context_1a68fdb285452250226f3da53b19f17c71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_create_core_g_l_context_1a68fdb285452250226f3da53b19f17c71" kindref="member">CreateCoreGLContext</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QGLFormat&amp;<sp/><ref refid="glew_8h_1a1e3b09934060e9d373139c3557730d37" kindref="member">format</ref>,<sp/>QPaintDevice*<sp/>device)<sp/>:<sp/>QGLContext(format,device)<sp/>{;}</highlight></codeline>
+<codeline lineno="88" refid="class_create_core_g_l_context_1adde10e42bae2a9b95e581393fdd8f9a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_create_core_g_l_context_1adde10e42bae2a9b95e581393fdd8f9a6" kindref="member">CreateCoreGLContext</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QGLFormat&amp;<sp/><ref refid="glew_8h_1a1e3b09934060e9d373139c3557730d37" kindref="member">format</ref>)<sp/>:<sp/>QGLContext(format)<sp/>{;}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>under<sp/>mac<sp/>this<sp/>is<sp/>called<sp/>and<sp/>we<sp/>create<sp/>the<sp/>context<sp/>for<sp/>GL3.2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>DARWIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#ifndef<sp/>QT5BUILD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>chooseMacVisual()</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1a131d6caa19a9ad580e98441a3c8f8e7f" kindref="member">setGL32VisualMac</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacengl" kindref="compound">ngl</ref></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="namespacengl_1aafccceb8efe6b293247700179a656512" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespacengl_1aafccceb8efe6b293247700179a656512" kindref="member">PRECISION</ref>=<ref refid="glew_8h_1a31aeedaeef29442c9c015ab355c8f5ab" kindref="member">GLfloat</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref>=<ref refid="namespacengl_1aafccceb8efe6b293247700179a656512" kindref="member">PRECISION</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="namespacengl_1afecf4d94f2539015835a49b872ca8e31" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><ref refid="namespacengl_1afecf4d94f2539015835a49b872ca8e31" kindref="member">EPSILON</ref><sp/>=<sp/>0.001f;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="_types_8h_1a04b3daeb8f076608db8eb09234c8d29f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>FCompare(a,b)<sp/>\</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>((a)-ngl::EPSILON)&lt;(b)<sp/>&amp;&amp;<sp/>((a)+ngl::EPSILON)&gt;(b)<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="_types_8h_1a9362db426901a67b0ce07e7bbb52ac14" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#define<sp/>NGL_UNUSED(arg)<sp/>(void)arg;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/include/ngl/Types.h"/>
+  </compounddef>
+</doxygen>

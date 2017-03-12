@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_f2508e4b96efd3302602cfcc30a60daf" kind="dir">
+    <compoundname>src</compoundname>
+    <innerdir refid="dir_045eca85faee455d61dc9798cbac4cc8">ngl</innerdir>
+    <innerdir refid="dir_79c66d096a12bc65141684ebc106b8e2">shaders</innerdir>
+    <innerfile refid="_a_a_b_b_8cpp">AABB.cpp</innerfile>
+    <innerfile refid="_abstract_mesh_8cpp">AbstractMesh.cpp</innerfile>
+    <innerfile refid="_abstract_serializer_8cpp">AbstractSerializer.cpp</innerfile>
+    <innerfile refid="_abstract_v_a_o_8cpp">AbstractVAO.cpp</innerfile>
+    <innerfile refid="_b_box_8cpp">BBox.cpp</innerfile>
+    <innerfile refid="_bezier_curve_8cpp">BezierCurve.cpp</innerfile>
+    <innerfile refid="_camera_8cpp">Camera.cpp</innerfile>
+    <innerfile refid="_colour_8cpp">Colour.cpp</innerfile>
+    <innerfile refid="create_default_v_a_os_8cpp">createDefaultVAOs.cpp</innerfile>
+    <innerfile refid="_houdini_geo_8cpp">HoudiniGeo.cpp</innerfile>
+    <innerfile refid="_image_8cpp">Image.cpp</innerfile>
+    <innerfile refid="_light_8cpp">Light.cpp</innerfile>
+    <innerfile refid="_logger_8cpp">Logger.cpp</innerfile>
+    <innerfile refid="_mat3_8cpp">Mat3.cpp</innerfile>
+    <innerfile refid="_mat4_8cpp">Mat4.cpp</innerfile>
+    <innerfile refid="_material_8cpp">Material.cpp</innerfile>
+    <innerfile refid="_multi_buffer_v_a_o_8cpp">MultiBufferVAO.cpp</innerfile>
+    <innerfile refid="_n_c_c_a_bin_mesh_8cpp">NCCABinMesh.cpp</innerfile>
+    <innerfile refid="_n_c_c_a_point_bake_8cpp">NCCAPointBake.cpp</innerfile>
+    <innerfile refid="_n_g_l_init_8cpp">NGLInit.cpp</innerfile>
+    <innerfile refid="_n_g_l_stream_8cpp">NGLStream.cpp</innerfile>
+    <innerfile refid="_obj_8cpp">Obj.cpp</innerfile>
+    <innerfile refid="_path_camera_8cpp">PathCamera.cpp</innerfile>
+    <innerfile refid="_plane_8cpp">Plane.cpp</innerfile>
+    <innerfile refid="_quaternion_8cpp">Quaternion.cpp</innerfile>
+    <innerfile refid="_random_8cpp">Random.cpp</innerfile>
+    <innerfile refid="_rib_export_8cpp">RibExport.cpp</innerfile>
+    <innerfile refid="set_g_l32_visual_mac_8mm">setGL32VisualMac.mm</innerfile>
+    <innerfile refid="_shader_8cpp">Shader.cpp</innerfile>
+    <innerfile refid="_shader_lib_8cpp">ShaderLib.cpp</innerfile>
+    <innerfile refid="_shader_program_8cpp">ShaderProgram.cpp</innerfile>
+    <innerfile refid="_simple_index_v_a_o_8cpp">SimpleIndexVAO.cpp</innerfile>
+    <innerfile refid="_simple_v_a_o_8cpp">SimpleVAO.cpp</innerfile>
+    <innerfile refid="_spot_light_8cpp">SpotLight.cpp</innerfile>
+    <innerfile refid="_text_8cpp">Text.cpp</innerfile>
+    <innerfile refid="_texture_8cpp">Texture.cpp</innerfile>
+    <innerfile refid="_transformation_8cpp">Transformation.cpp</innerfile>
+    <innerfile refid="_util_8cpp">Util.cpp</innerfile>
+    <innerfile refid="_v_a_o_factory_8cpp">VAOFactory.cpp</innerfile>
+    <innerfile refid="_v_a_o_primitives_8cpp">VAOPrimitives.cpp</innerfile>
+    <innerfile refid="_vec2_8cpp">Vec2.cpp</innerfile>
+    <innerfile refid="_vec3_8cpp">Vec3.cpp</innerfile>
+    <innerfile refid="_vec4_8cpp">Vec4.cpp</innerfile>
+    <innerfile refid="_vertex_array_object_8cpp">VertexArrayObject.cpp</innerfile>
+    <innerfile refid="_x_m_l_serializer_8cpp">XMLSerializer.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/jmacey/NGL/src/"/>
+  </compounddef>
+</doxygen>

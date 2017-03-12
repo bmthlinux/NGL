@@ -1,0 +1,9 @@
+<map id="internal::u32toa" name="internal::u32toa">
+<area shape="rect" id="node2" href="$namespaceinternal.html#a79bdea0c3f5e0c34c5c0aa686fc823c1" title="internal::i32toa" alt="" coords="173,31,283,57"/>
+<area shape="rect" id="node6" href="$class_writer.html#aa7e4196f87bfa66c9619e0efd15d16ea" title="Writer::WriteUint" alt="" coords="168,81,288,108"/>
+<area shape="rect" id="node3" href="$class_writer.html#acc42b38b43ae1488fc2e779c8a333d34" title="Writer::WriteInt" alt="" coords="343,31,454,57"/>
+<area shape="rect" id="node4" href="$class_pretty_writer.html#a14da2a84e9f41ba42edf2819363be614" title="PrettyWriter::Int" alt="" coords="509,5,624,32"/>
+<area shape="rect" id="node5" href="$class_writer.html#ae006cfa073c369c57797bc842b817ba4" title="Writer::Int" alt="" coords="527,56,607,83"/>
+<area shape="rect" id="node7" href="$class_pretty_writer.html#a65227d9de9a9f92eb3ca83c616a9c809" title="PrettyWriter::Uint" alt="" coords="337,81,461,108"/>
+<area shape="rect" id="node8" href="$class_writer.html#a20c4edc79c0d5a9402e1deb8f09feadf" title="Writer::Uint" alt="" coords="355,132,443,159"/>
+</map>

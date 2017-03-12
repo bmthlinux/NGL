@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_transcoder" kind="struct" language="C++" prot="public">
+    <compoundname>Transcoder</compoundname>
+    <includes refid="encodings_8h" local="no">encodings.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename SourceEncoding</type>
+      </param>
+      <param>
+        <type>typename TargetEncoding</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_transcoder_1a0ea2edfe35784ebf1063921d2bd5fb66" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename OutputStream</type>
+          </param>
+        </templateparamlist>
+        <type>RAPIDJSON_FORCEINLINE bool</type>
+        <definition>static RAPIDJSON_FORCEINLINE bool Transcoder&lt; SourceEncoding, TargetEncoding &gt;::Transcode</definition>
+        <argsstring>(InputStream &amp;is, OutputStream &amp;os)</argsstring>
+        <name>Transcode</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>OutputStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+<para>Take one Unicode codepoint from source encoding, convert it to target encoding and put it to the output stream. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodings.h" line="589" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodings.h" bodystart="589" bodyend="595"/>
+        <referencedby refid="class_generic_reader_1a8fa22aded7085b3fe5f9d59467318f8a" compoundref="reader_8h" startline="666" endline="724">GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::ParseStringToStream</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_transcoder_1a8a64aa837f7962894a99f63232472543" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename OutputStream</type>
+          </param>
+        </templateparamlist>
+        <type>RAPIDJSON_FORCEINLINE bool</type>
+        <definition>static RAPIDJSON_FORCEINLINE bool Transcoder&lt; SourceEncoding, TargetEncoding &gt;::Validate</definition>
+        <argsstring>(InputStream &amp;is, OutputStream &amp;os)</argsstring>
+        <name>Validate</name>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>OutputStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+<para>Validate one Unicode codepoint from an encoded stream. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodings.h" line="599" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodings.h" bodystart="599" bodyend="601"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Encoding conversion. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1988">
+        <label>Transcoder&lt; SourceEncoding, TargetEncoding &gt;</label>
+        <link refid="struct_transcoder"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodings.h" line="586" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodings.h" bodystart="586" bodyend="602"/>
+    <listofallmembers>
+      <member refid="struct_transcoder_1a0ea2edfe35784ebf1063921d2bd5fb66" prot="public" virt="non-virtual"><scope>Transcoder</scope><name>Transcode</name></member>
+      <member refid="struct_transcoder_1a8a64aa837f7962894a99f63232472543" prot="public" virt="non-virtual"><scope>Transcoder</scope><name>Validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,10 @@
+<map id="ngl::Camera::setDefaultCamera" name="ngl::Camera::setDefaultCamera">
+<area shape="rect" id="node2" href="$classngl_1_1_vec4.html#ae1201ced94be9176940fc83ed9054e82" title="sets the vector component from 3 values " alt="" coords="293,5,395,32"/>
+<area shape="rect" id="node3" href="$classngl_1_1_camera.html#aa71e21744533c478eb77d2e8534b053e" title="set the shape of the Camera " alt="" coords="265,56,423,83"/>
+<area shape="rect" id="node9" href="$classngl_1_1_vec4.html#a0a4ca2424eb93b166dca4143417ff111" title="ngl::Vec4::up" alt="" coords="294,107,394,133"/>
+<area shape="rect" id="node4" href="$classngl_1_1_camera.html#a7b22700c172d70bac1e7150cc27a641f" title="set the projection matrix " alt="" coords="472,49,651,90"/>
+<area shape="rect" id="node5" href="$classngl_1_1_mat4.html#a927a694427799e2c76fe55fb4938b394" title="clear the matrix to all 0 " alt="" coords="753,31,858,57"/>
+<area shape="rect" id="node6" href="$classngl_1_1_camera.html#ae9ed0a38e96a2cedf785944cf79002de" title="function used to set the perspective projection matrix values " alt="" coords="699,81,912,108"/>
+<area shape="rect" id="node7" href="$namespacengl.html#a0bade03a2edcb08a49da7731394284fe" title="converts Degrees to Radians " alt="" coords="979,56,1069,83"/>
+<area shape="rect" id="node8" href="$classngl_1_1_mat4.html#a073bb4083b7f4a6b60886c6467e0afd2" title="make the matrix m the identity matrix &#160;1 0 0 0 &#160;&#160;0 1 0 0 &#160;&#160;0 0 1 0 &#160;&#160;0 0 0 1 &#160;&#160;" alt="" coords="961,107,1087,133"/>
+</map>

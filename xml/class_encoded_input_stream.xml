@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_encoded_input_stream" kind="class" language="C++" prot="public">
+    <compoundname>EncodedInputStream</compoundname>
+    <includes refid="encodedstream_8h" local="no">encodedstream.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Encoding</type>
+      </param>
+      <param>
+        <type>typename InputByteStream</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_encoded_input_stream_1acc387a1364390da244bbb1ab07bdceca" prot="public" static="no">
+        <type>Encoding::Ch</type>
+        <definition>typedef Encoding::Ch EncodedInputStream&lt; Encoding, InputByteStream &gt;::Ch</definition>
+        <argsstring></argsstring>
+        <name>Ch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" line="36" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_encoded_input_stream_1ab07b45f34f288184313750af5f7077b6" prot="private" static="no" mutable="no">
+        <type>InputByteStream &amp;</type>
+        <definition>InputByteStream&amp; EncodedInputStream&lt; Encoding, InputByteStream &gt;::is_</definition>
+        <argsstring></argsstring>
+        <name>is_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" line="56" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_encoded_input_stream_1a17f8e629500f6ae71cb72d1d63bf41fd" compoundref="encodedstream_8h" startline="38" endline="40">EncodedInputStream&lt; Encoding, InputByteStream &gt;::EncodedInputStream</referencedby>
+        <referencedby refid="class_encoded_input_stream_1ab42cd57581bf62e42af471583e5b8377" compoundref="encodedstream_8h" startline="43" endline="43">EncodedInputStream&lt; Encoding, InputByteStream &gt;::Take</referencedby>
+        <referencedby refid="class_encoded_input_stream_1a34cdb99fd81cd211f71903348e9c986f" compoundref="encodedstream_8h" startline="44" endline="44">EncodedInputStream&lt; Encoding, InputByteStream &gt;::Tell</referencedby>
+        <referencedby refid="class_auto_u_t_f_input_stream_1a83837fced0971ba26dd9a8ec1575abb0" compoundref="encodedstream_8h" startline="111" endline="117">AutoUTFInputStream&lt; CharType, InputByteStream &gt;::AutoUTFInputStream</referencedby>
+        <referencedby refid="class_auto_u_t_f_input_stream_1a652cd1ae8bd848a5ecce4efa1ebd0f38" compoundref="encodedstream_8h" startline="123" endline="123">AutoUTFInputStream&lt; CharType, InputByteStream &gt;::Take</referencedby>
+        <referencedby refid="class_auto_u_t_f_input_stream_1a759b3d2690679ff9eef0c18cb2fbb0cf" compoundref="encodedstream_8h" startline="124" endline="124">AutoUTFInputStream&lt; CharType, InputByteStream &gt;::Tell</referencedby>
+        <referencedby refid="class_auto_u_t_f_input_stream_1ae7ec4841acf560cdaee9204d6ad5dec8" compoundref="encodedstream_8h" startline="137" endline="183">AutoUTFInputStream&lt; CharType, InputByteStream &gt;::DetectType</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_encoded_input_stream_1a20b49879c87fdf6d6ba20e99f0cf7893" prot="private" static="no" mutable="no">
+        <type><ref refid="class_encoded_input_stream_1acc387a1364390da244bbb1ab07bdceca" kindref="member">Ch</ref></type>
+        <definition>Ch EncodedInputStream&lt; Encoding, InputByteStream &gt;::current_</definition>
+        <argsstring></argsstring>
+        <name>current_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" line="57" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_encoded_input_stream_1a17f8e629500f6ae71cb72d1d63bf41fd" compoundref="encodedstream_8h" startline="38" endline="40">EncodedInputStream&lt; Encoding, InputByteStream &gt;::EncodedInputStream</referencedby>
+        <referencedby refid="class_encoded_input_stream_1abda3b0c141254343f4c481f67d52b423" compoundref="encodedstream_8h" startline="42" endline="42">EncodedInputStream&lt; Encoding, InputByteStream &gt;::Peek</referencedby>
+        <referencedby refid="class_encoded_input_stream_1ab42cd57581bf62e42af471583e5b8377" compoundref="encodedstream_8h" startline="43" endline="43">EncodedInputStream&lt; Encoding, InputByteStream &gt;::Take</referencedby>
+        <referencedby refid="class_auto_u_t_f_input_stream_1a83837fced0971ba26dd9a8ec1575abb0" compoundref="encodedstream_8h" startline="111" endline="117">AutoUTFInputStream&lt; CharType, InputByteStream &gt;::AutoUTFInputStream</referencedby>
+        <referencedby refid="class_auto_u_t_f_input_stream_1a091e55c06a8013b978c9bab05c9068e3" compoundref="encodedstream_8h" startline="122" endline="122">AutoUTFInputStream&lt; CharType, InputByteStream &gt;::Peek</referencedby>
+        <referencedby refid="class_auto_u_t_f_input_stream_1a652cd1ae8bd848a5ecce4efa1ebd0f38" compoundref="encodedstream_8h" startline="123" endline="123">AutoUTFInputStream&lt; CharType, InputByteStream &gt;::Take</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_encoded_input_stream_1acc6c2b46e636edfeb81dfaea80ee384a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EncodedInputStream&lt; Encoding, InputByteStream &gt;::RAPIDJSON_STATIC_ASSERT</definition>
+        <argsstring>(sizeof(typename InputByteStream::Ch)==1)</argsstring>
+        <name>RAPIDJSON_STATIC_ASSERT</name>
+        <param>
+          <type>sizeof(typename InputByteStream::Ch)</type>
+          <defval>=1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_encoded_input_stream_1a672ac1977918f6da245de0820d41b77e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EncodedInputStream&lt; Encoding, InputByteStream &gt;::EncodedInputStream</definition>
+        <argsstring>(const EncodedInputStream &amp;)</argsstring>
+        <name>EncodedInputStream</name>
+        <param>
+          <type>const <ref refid="class_encoded_input_stream" kindref="compound">EncodedInputStream</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_encoded_input_stream_1aebee85cf36e2aa4ed25881a95678c4c4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_encoded_input_stream" kindref="compound">EncodedInputStream</ref> &amp;</type>
+        <definition>EncodedInputStream&amp; EncodedInputStream&lt; Encoding, InputByteStream &gt;::operator=</definition>
+        <argsstring>(const EncodedInputStream &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_encoded_input_stream" kindref="compound">EncodedInputStream</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" line="54" column="1"/>
+        <referencedby refid="class_encoded_input_stream_1a83fe5ed281413d6005d1b324730e8bed" compoundref="encodedstream_8h" startline="50" endline="50">EncodedInputStream&lt; Encoding, InputByteStream &gt;::PutEnd</referencedby>
+        <referencedby refid="class_encoded_output_stream_1a818695f6d3fa8896e9d7d0fbdc7d4514" compoundref="encodedstream_8h" startline="84" endline="84">EncodedOutputStream&lt; Encoding, OutputByteStream &gt;::PutEnd</referencedby>
+        <referencedby refid="class_auto_u_t_f_input_stream_1a41bd66602f82d344383792feac34f9f7" compoundref="encodedstream_8h" startline="130" endline="130">AutoUTFInputStream&lt; CharType, InputByteStream &gt;::PutEnd</referencedby>
+        <referencedby refid="class_auto_u_t_f_output_stream_1a4b16bda191526c894501fce447e95b8d" compoundref="encodedstream_8h" startline="234" endline="234">AutoUTFOutputStream&lt; CharType, OutputByteStream &gt;::PutEnd</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_encoded_input_stream_1a17f8e629500f6ae71cb72d1d63bf41fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EncodedInputStream&lt; Encoding, InputByteStream &gt;::EncodedInputStream</definition>
+        <argsstring>(InputByteStream &amp;is)</argsstring>
+        <name>EncodedInputStream</name>
+        <param>
+          <type>InputByteStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" line="38" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" bodystart="38" bodyend="40"/>
+        <references refid="class_encoded_input_stream_1a20b49879c87fdf6d6ba20e99f0cf7893" compoundref="encodedstream_8h" startline="57">EncodedInputStream&lt; Encoding, InputByteStream &gt;::current_</references>
+        <references refid="class_encoded_input_stream_1ab07b45f34f288184313750af5f7077b6" compoundref="encodedstream_8h" startline="56">EncodedInputStream&lt; Encoding, InputByteStream &gt;::is_</references>
+        <referencedby refid="class_encoded_input_stream_1a83fe5ed281413d6005d1b324730e8bed" compoundref="encodedstream_8h" startline="50" endline="50">EncodedInputStream&lt; Encoding, InputByteStream &gt;::PutEnd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_encoded_input_stream_1abda3b0c141254343f4c481f67d52b423" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_encoded_input_stream_1acc387a1364390da244bbb1ab07bdceca" kindref="member">Ch</ref></type>
+        <definition>Ch EncodedInputStream&lt; Encoding, InputByteStream &gt;::Peek</definition>
+        <argsstring>() const </argsstring>
+        <name>Peek</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" line="42" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" bodystart="42" bodyend="42"/>
+        <references refid="class_encoded_input_stream_1a20b49879c87fdf6d6ba20e99f0cf7893" compoundref="encodedstream_8h" startline="57">EncodedInputStream&lt; Encoding, InputByteStream &gt;::current_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_encoded_input_stream_1ab42cd57581bf62e42af471583e5b8377" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_encoded_input_stream_1acc387a1364390da244bbb1ab07bdceca" kindref="member">Ch</ref></type>
+        <definition>Ch EncodedInputStream&lt; Encoding, InputByteStream &gt;::Take</definition>
+        <argsstring>()</argsstring>
+        <name>Take</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" line="43" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" bodystart="43" bodyend="43"/>
+        <references refid="class_encoded_input_stream_1a20b49879c87fdf6d6ba20e99f0cf7893" compoundref="encodedstream_8h" startline="57">EncodedInputStream&lt; Encoding, InputByteStream &gt;::current_</references>
+        <references refid="class_encoded_input_stream_1ab07b45f34f288184313750af5f7077b6" compoundref="encodedstream_8h" startline="56">EncodedInputStream&lt; Encoding, InputByteStream &gt;::is_</references>
+        <referencedby refid="class_auto_u_t_f_input_stream_1a83837fced0971ba26dd9a8ec1575abb0" compoundref="encodedstream_8h" startline="111" endline="117">AutoUTFInputStream&lt; CharType, InputByteStream &gt;::AutoUTFInputStream</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_encoded_input_stream_1a34cdb99fd81cd211f71903348e9c986f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t EncodedInputStream&lt; Encoding, InputByteStream &gt;::Tell</definition>
+        <argsstring>() const </argsstring>
+        <name>Tell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" line="44" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" bodystart="44" bodyend="44"/>
+        <references refid="class_encoded_input_stream_1ab07b45f34f288184313750af5f7077b6" compoundref="encodedstream_8h" startline="56">EncodedInputStream&lt; Encoding, InputByteStream &gt;::is_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_encoded_input_stream_1afea36b666a44bd4adeabfcab7b68a322" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void EncodedInputStream&lt; Encoding, InputByteStream &gt;::Put</definition>
+        <argsstring>(Ch)</argsstring>
+        <name>Put</name>
+        <param>
+          <type><ref refid="class_encoded_input_stream_1acc387a1364390da244bbb1ab07bdceca" kindref="member">Ch</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" line="47" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" bodystart="47" bodyend="47"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+        <referencedby refid="class_auto_u_t_f_output_stream_1a2fe7dbc8e43d11295f66df5653148137" compoundref="encodedstream_8h" startline="210" endline="222">AutoUTFOutputStream&lt; CharType, OutputByteStream &gt;::AutoUTFOutputStream</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_encoded_input_stream_1aa4415bf4b97dd01e8c3de0ad7a161724" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void EncodedInputStream&lt; Encoding, InputByteStream &gt;::Flush</definition>
+        <argsstring>()</argsstring>
+        <name>Flush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" line="48" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" bodystart="48" bodyend="48"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+      </memberdef>
+      <memberdef kind="function" id="class_encoded_input_stream_1ad97f7a549a8622c61b7fb2c63fedd69b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_encoded_input_stream_1acc387a1364390da244bbb1ab07bdceca" kindref="member">Ch</ref> *</type>
+        <definition>Ch* EncodedInputStream&lt; Encoding, InputByteStream &gt;::PutBegin</definition>
+        <argsstring>()</argsstring>
+        <name>PutBegin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" line="49" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" bodystart="49" bodyend="49"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+      </memberdef>
+      <memberdef kind="function" id="class_encoded_input_stream_1a83fe5ed281413d6005d1b324730e8bed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t EncodedInputStream&lt; Encoding, InputByteStream &gt;::PutEnd</definition>
+        <argsstring>(Ch *)</argsstring>
+        <name>PutEnd</name>
+        <param>
+          <type><ref refid="class_encoded_input_stream_1acc387a1364390da244bbb1ab07bdceca" kindref="member">Ch</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" line="50" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" bodystart="50" bodyend="50"/>
+        <references refid="class_encoded_input_stream_1a17f8e629500f6ae71cb72d1d63bf41fd" compoundref="encodedstream_8h" startline="38" endline="40">EncodedInputStream&lt; Encoding, InputByteStream &gt;::EncodedInputStream</references>
+        <references refid="class_encoded_input_stream_1aebee85cf36e2aa4ed25881a95678c4c4">EncodedInputStream&lt; Encoding, InputByteStream &gt;::operator=</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Input byte stream wrapper with a statically bound encoding. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Encoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The interpretation of encoding of the stream. Either <ref refid="struct_u_t_f8" kindref="compound">UTF8</ref>, <ref refid="struct_u_t_f16_l_e" kindref="compound">UTF16LE</ref>, <ref refid="struct_u_t_f16_b_e" kindref="compound">UTF16BE</ref>, <ref refid="struct_u_t_f32_l_e" kindref="compound">UTF32LE</ref>, <ref refid="struct_u_t_f32_b_e" kindref="compound">UTF32BE</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InputByteStream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of input byte stream. For example, <ref refid="class_file_read_stream" kindref="compound">FileReadStream</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1460">
+        <label>EncodedInputStream&lt; Encoding, InputByteStream &gt;</label>
+        <link refid="class_encoded_input_stream"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" line="33" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/encodedstream.h" bodystart="33" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_encoded_input_stream_1acc387a1364390da244bbb1ab07bdceca" prot="public" virt="non-virtual"><scope>EncodedInputStream</scope><name>Ch</name></member>
+      <member refid="class_encoded_input_stream_1a20b49879c87fdf6d6ba20e99f0cf7893" prot="private" virt="non-virtual"><scope>EncodedInputStream</scope><name>current_</name></member>
+      <member refid="class_encoded_input_stream_1a17f8e629500f6ae71cb72d1d63bf41fd" prot="public" virt="non-virtual"><scope>EncodedInputStream</scope><name>EncodedInputStream</name></member>
+      <member refid="class_encoded_input_stream_1a672ac1977918f6da245de0820d41b77e" prot="private" virt="non-virtual"><scope>EncodedInputStream</scope><name>EncodedInputStream</name></member>
+      <member refid="class_encoded_input_stream_1aa4415bf4b97dd01e8c3de0ad7a161724" prot="public" virt="non-virtual"><scope>EncodedInputStream</scope><name>Flush</name></member>
+      <member refid="class_encoded_input_stream_1ab07b45f34f288184313750af5f7077b6" prot="private" virt="non-virtual"><scope>EncodedInputStream</scope><name>is_</name></member>
+      <member refid="class_encoded_input_stream_1aebee85cf36e2aa4ed25881a95678c4c4" prot="private" virt="non-virtual"><scope>EncodedInputStream</scope><name>operator=</name></member>
+      <member refid="class_encoded_input_stream_1abda3b0c141254343f4c481f67d52b423" prot="public" virt="non-virtual"><scope>EncodedInputStream</scope><name>Peek</name></member>
+      <member refid="class_encoded_input_stream_1afea36b666a44bd4adeabfcab7b68a322" prot="public" virt="non-virtual"><scope>EncodedInputStream</scope><name>Put</name></member>
+      <member refid="class_encoded_input_stream_1ad97f7a549a8622c61b7fb2c63fedd69b" prot="public" virt="non-virtual"><scope>EncodedInputStream</scope><name>PutBegin</name></member>
+      <member refid="class_encoded_input_stream_1a83fe5ed281413d6005d1b324730e8bed" prot="public" virt="non-virtual"><scope>EncodedInputStream</scope><name>PutEnd</name></member>
+      <member refid="class_encoded_input_stream_1acc6c2b46e636edfeb81dfaea80ee384a" prot="private" virt="non-virtual"><scope>EncodedInputStream</scope><name>RAPIDJSON_STATIC_ASSERT</name></member>
+      <member refid="class_encoded_input_stream_1ab42cd57581bf62e42af471583e5b8377" prot="public" virt="non-virtual"><scope>EncodedInputStream</scope><name>Take</name></member>
+      <member refid="class_encoded_input_stream_1a34cdb99fd81cd211f71903348e9c986f" prot="public" virt="non-virtual"><scope>EncodedInputStream</scope><name>Tell</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

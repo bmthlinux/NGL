@@ -1,0 +1,7 @@
+<map id="ngl::Vec3::set" name="ngl::Vec3::set">
+<area shape="rect" id="node2" href="$classngl_1_1_b_box.html#aff1abf2c30e83fa1ca7b4b682ab11db6" title="ctor using +/&#45; x,y,z dimensions " alt="" coords="170,5,289,32"/>
+<area shape="rect" id="node3" href="$classngl_1_1_plane.html#ab113224ea990481344eca0af242adae9" title="set the plane from the co&#45;efficients " alt="" coords="158,56,301,83"/>
+<area shape="rect" id="node4" href="$classngl_1_1_transformation.html#af0c9a538ab7a21a95375dc0b06a8ba1d" title="method to set the scale value in the transform " alt="" coords="161,107,298,149"/>
+<area shape="rect" id="node5" href="$classngl_1_1_transformation.html#a7e90de51abb4ac626c6e7df81e54c5b3" title="method to set the position value in the transform " alt="" coords="161,173,298,214"/>
+<area shape="rect" id="node6" href="$classngl_1_1_transformation.html#afd3e42f0f714c7fecd118d196d2916c9" title="method to set the rotation value in the transform " alt="" coords="161,238,298,279"/>
+</map>

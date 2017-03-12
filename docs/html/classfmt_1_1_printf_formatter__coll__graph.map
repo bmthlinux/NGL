@@ -1,0 +1,7 @@
+<map id="fmt::PrintfFormatter&lt; Char, ArgFormatter &gt;" name="fmt::PrintfFormatter&lt; Char, ArgFormatter &gt;">
+<area shape="rect" id="node2" href="$classfmt_1_1internal_1_1_formatter_base.html" title="{fmt::internal::FormatterBase\n|&#45; next_arg_index_\l|# args()\l# FormatterBase()\l# next_arg()\l# get_arg()\l# check_no_auto_index()\l# write()\l&#45; do_get_arg()\l}" alt="" coords="15,824,201,989"/>
+<area shape="rect" id="node3" href="$classfmt_1_1_arg_list.html" title="{fmt::ArgList\n|&#45; types_\l&#45; @13\l|+ ArgList()\l+ ArgList()\l+ ArgList()\l+ operator[]()\l&#45; type()\l}" alt="" coords="58,609,157,759"/>
+<area shape="rect" id="node4" href="$structfmt_1_1internal_1_1_value.html" title="{fmt::internal::Value\n|+ int_value\l+ uint_value\l+ long_long_value\l+ ulong_long_value\l+ double_value\l+ long_double_value\l+ pointer\l+ string\l+ sstring\l+ ustring\l+ wstring\l+ @3\l|}" alt="" coords="5,177,149,415"/>
+<area shape="rect" id="node6" href="$structfmt_1_1internal_1_1_arg.html" title="{fmt::internal::Arg\n|+ type\l|}" alt="" coords="144,467,264,544"/>
+<area shape="rect" id="node5" href="$structfmt_1_1internal_1_1_value_1_1_custom_value.html" title="{fmt::internal::Value\l::CustomValue\n|+ value\l+ format\l|}" alt="" coords="11,5,144,112"/>
+</map>

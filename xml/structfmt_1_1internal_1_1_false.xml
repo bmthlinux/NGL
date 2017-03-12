@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structfmt_1_1internal_1_1_false" kind="struct" language="C++" prot="public">
+    <compoundname>fmt::internal::False</compoundname>
+    <includes refid="format_8h" local="no">format.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structfmt_1_1internal_1_1_false_1a9dd0e874febc784552d100ddd60681c0" prot="public" static="no">
+        <name>@11</name>
+        <enumvalue id="structfmt_1_1internal_1_1_false_1a9dd0e874febc784552d100ddd60681c0a092ce9976223178dc9e7fcdf6c76f89e" prot="public">
+          <name>value</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1125" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1125" bodyend="1125"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1470">
+        <label>fmt::internal::False&lt; T &gt;</label>
+        <link refid="structfmt_1_1internal_1_1_false"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1125" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1125" bodyend="1125"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1internal_1_1_false_1a9dd0e874febc784552d100ddd60681c0a092ce9976223178dc9e7fcdf6c76f89e" prot="public" virt="non-virtual"><scope>fmt::internal::False</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

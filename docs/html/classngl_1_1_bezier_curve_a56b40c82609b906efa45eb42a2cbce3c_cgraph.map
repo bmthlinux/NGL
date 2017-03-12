@@ -1,0 +1,11 @@
+<map id="ngl::BezierCurve::createVAO" name="ngl::BezierCurve::createVAO">
+<area shape="rect" id="node2" href="$classngl_1_1_abstract_v_a_o.html#a32a42493f94df2674c89a90cb25cfa2a" title="bind the VAO so it can be used. " alt="" coords="272,5,429,32"/>
+<area shape="rect" id="node3" href="$classngl_1_1_v_a_o_factory.html#adee5532df7151fab8e8db0e9ebf94305" title="ngl::VAOFactory::createVAO" alt="" coords="255,56,447,83"/>
+<area shape="rect" id="node4" href="$classngl_1_1_bezier_curve.html#a9b6aa8855fa01623a327844f355b2a8b" title="get a point on the curve in the range of 0 &#45; 1 based on the control points " alt="" coords="262,107,439,149"/>
+<area shape="rect" id="node6" href="$classngl_1_1_abstract_v_a_o.html#a0c8a76bda28c062cc2c772c8ec7ddd12" title="this will clean up the VAO and associated data, it is the users responsibility to do this usually thi..." alt="" coords="249,173,453,200"/>
+<area shape="rect" id="node7" href="$classngl_1_1_abstract_v_a_o.html#aeeabb8d7a3be60a6814d1c44cb52f27a" title="this method is used to set the data in the VAO, we have a base data type of VertexData above..." alt="" coords="262,224,439,251"/>
+<area shape="rect" id="node8" href="$classngl_1_1_abstract_v_a_o.html#ac3bab1083764b87a06bf658e6b6727a8" title="the number of indices to draw in the array. It may be that the draw routine can overide this at anoth..." alt="" coords="262,275,439,317"/>
+<area shape="rect" id="node9" href="$classngl_1_1_abstract_v_a_o.html#aa51d9e09fa5d76cb0868cdff08e94911" title="set the generic vertex attribute pointer data usually this method will do however the user may occasi..." alt="" coords="257,341,445,382"/>
+<area shape="rect" id="node10" href="$classngl_1_1_abstract_v_a_o.html#a755b4eb87c240c0c95b292c4762fef04" title="unbind the VAO by binding default 0 " alt="" coords="265,407,437,433"/>
+<area shape="rect" id="node5" href="$classngl_1_1_bezier_curve.html#ae81fbe1a0dfb6d0cf8fce2068be69ca9" title="implementation of the CoxDeBoor algorithm for Bezier Curves borrowed from Rob Bateman&#39;s example and m..." alt="" coords="502,115,695,141"/>
+</map>

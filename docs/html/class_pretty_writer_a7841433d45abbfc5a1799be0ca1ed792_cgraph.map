@@ -1,0 +1,8 @@
+<map id="PrettyWriter::PrettyPrefix" name="PrettyWriter::PrettyPrefix">
+<area shape="rect" id="node2" href="$glew_8h.html#a1659df18b3b413a60a397d5a7540f3d2" title="void" alt="" coords="285,5,331,32"/>
+<area shape="rect" id="node3" href="$class_pretty_writer.html#a649ec900d77960e085f76bb4d3c351d9" title="PrettyWriter::WriteIndent" alt="" coords="224,56,392,83"/>
+<area shape="rect" id="node4" href="$classinternal_1_1_stack.html#ade4a25fa82950619652a30aa3a807f58" title="internal::Stack::GetSize" alt="" coords="441,31,602,57"/>
+<area shape="rect" id="node5" href="$filewritestream_8h.html#a5c9b0f0e6249be2acf7f3505c295c132" title="Implement specialized version of PutN() with memset() for better performance. " alt="" coords="495,81,547,108"/>
+<area shape="rect" id="node6" href="$class_file_write_stream.html#ad9ec108b24316a2c1c83c6ddc75d308a" title="FileWriteStream::PutN" alt="" coords="651,81,805,108"/>
+<area shape="rect" id="node7" href="$class_file_write_stream.html#a939fbf183ba36464c5e0837df4329d37" title="FileWriteStream::Flush" alt="" coords="853,81,1011,108"/>
+</map>

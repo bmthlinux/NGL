@@ -1,0 +1,11 @@
+<map id="internal::StrLen" name="internal::StrLen">
+<area shape="rect" id="node2" href="$document_8h.html#aa6b9fd9f6aa49405a574c362ba9af6b5" title="Mark a character pointer as constant string. " alt="" coords="231,56,308,83"/>
+<area shape="rect" id="node5" href="$class_generic_value.html#a386708557555e6389184de608af5e6a6" title="Assignment of constant string reference (no copy) " alt="" coords="433,107,601,133"/>
+<area shape="rect" id="node6" href="$class_generic_pointer.html#a4ad549b8a826c3c2dedf03fcc07be9b0" title="Constructor that parses a string or URI fragment representation. " alt="" coords="166,157,373,184"/>
+<area shape="rect" id="node7" href="$class_pretty_writer.html#ac6ef0185174838b7034b4183013ee073" title="Simpler but slower overload. " alt="" coords="202,232,337,259"/>
+<area shape="rect" id="node8" href="$class_pretty_writer.html#a0a4859ad940668cf33d18b144e5e1cdd" title="PrettyWriter::Key" alt="" coords="208,307,331,333"/>
+<area shape="rect" id="node9" href="$class_writer.html#ad1525690e1d598d7e32892b8b83fbcd4" title="Simpler but slower overload. " alt="" coords="219,381,319,408"/>
+<area shape="rect" id="node10" href="$class_writer.html#a77dbb4676e57aab1c0e976ec22145fb9" title="Writer::Key" alt="" coords="225,456,313,483"/>
+<area shape="rect" id="node3" href="$document_8h.html#a578c51ab574a50a9c760b9da7c7562f2" title="Mark a character pointer as constant string. " alt="" coords="479,5,556,32"/>
+<area shape="rect" id="node4" href="$class_generic_value.html#a4d9af98141360cd801daab4ed1ca2c91" title="Constructor for constant string (i.e. do not make a copy of string) " alt="" coords="422,56,613,83"/>
+</map>

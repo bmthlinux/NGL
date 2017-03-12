@@ -1,0 +1,12 @@
+<map id="PrettyWriter::Uint" name="PrettyWriter::Uint">
+<area shape="rect" id="node2" href="$class_pretty_writer.html#a7841433d45abbfc5a1799be0ca1ed792" title="PrettyWriter::PrettyPrefix" alt="" coords="179,56,349,83"/>
+<area shape="rect" id="node9" href="$class_writer.html#aa7e4196f87bfa66c9619e0efd15d16ea" title="Writer::WriteUint" alt="" coords="204,107,324,133"/>
+<area shape="rect" id="node3" href="$glew_8h.html#a1659df18b3b413a60a397d5a7540f3d2" title="void" alt="" coords="458,5,505,32"/>
+<area shape="rect" id="node4" href="$class_pretty_writer.html#a649ec900d77960e085f76bb4d3c351d9" title="PrettyWriter::WriteIndent" alt="" coords="397,56,565,83"/>
+<area shape="rect" id="node5" href="$classinternal_1_1_stack.html#ade4a25fa82950619652a30aa3a807f58" title="internal::Stack::GetSize" alt="" coords="614,5,775,32"/>
+<area shape="rect" id="node6" href="$filewritestream_8h.html#a5c9b0f0e6249be2acf7f3505c295c132" title="Implement specialized version of PutN() with memset() for better performance. " alt="" coords="669,56,721,83"/>
+<area shape="rect" id="node7" href="$class_file_write_stream.html#ad9ec108b24316a2c1c83c6ddc75d308a" title="FileWriteStream::PutN" alt="" coords="824,56,979,83"/>
+<area shape="rect" id="node8" href="$class_file_write_stream.html#a939fbf183ba36464c5e0837df4329d37" title="FileWriteStream::Flush" alt="" coords="1027,56,1184,83"/>
+<area shape="rect" id="node10" href="$namespaceinternal.html#a8628d3698be60950743bc49d41a1cca7" title="internal::u32toa" alt="" coords="425,107,538,133"/>
+<area shape="rect" id="node11" href="$namespaceinternal.html#a95459e80b3f0e89ad03ebd0c8e55844c" title="internal::GetDigitsLut" alt="" coords="621,107,768,133"/>
+</map>

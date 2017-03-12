@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_stream_traits_3_01_generic_string_stream_3_01_encoding_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>StreamTraits&lt; GenericStringStream&lt; Encoding &gt; &gt;</compoundname>
+    <includes refid="rapidjson_8h" local="no">rapidjson.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Encoding</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_stream_traits_3_01_generic_string_stream_3_01_encoding_01_4_01_4_1af2384fc84058e1e1040387cb58d28dbc" prot="public" static="no">
+        <name>@36</name>
+        <enumvalue id="struct_stream_traits_3_01_generic_string_stream_3_01_encoding_01_4_01_4_1af2384fc84058e1e1040387cb58d28dbcaaeb90f06c2d643f47563c64eb8d4cda7" prot="public">
+          <name>copyOptimization</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" line="591" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" bodystart="591" bodyend="591"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1937">
+        <label>StreamTraits&lt; GenericStringStream&lt; Encoding &gt; &gt;</label>
+        <link refid="struct_stream_traits_3_01_generic_string_stream_3_01_encoding_01_4_01_4"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" line="590" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" bodystart="590" bodyend="592"/>
+    <listofallmembers>
+      <member refid="struct_stream_traits_3_01_generic_string_stream_3_01_encoding_01_4_01_4_1af2384fc84058e1e1040387cb58d28dbcaaeb90f06c2d643f47563c64eb8d4cda7" prot="public" virt="non-virtual"><scope>StreamTraits&lt; GenericStringStream&lt; Encoding &gt; &gt;</scope><name>copyOptimization</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

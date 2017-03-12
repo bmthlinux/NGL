@@ -1,0 +1,7 @@
+<map id="ngl::Texture::loadImage" name="ngl::Texture::loadImage">
+<area shape="rect" id="node2" href="$classngl_1_1_image.html#af3c776f7d6aa7b5bba33e2f6a27bfdb7" title="gets the number of channels " alt="" coords="217,5,362,32"/>
+<area shape="rect" id="node3" href="$classngl_1_1_image.html#ac36018566ec1a8afcd3d55d617b2282e" title="Get the pixel format. " alt="" coords="225,56,354,83"/>
+<area shape="rect" id="node4" href="$classngl_1_1_image.html#ad8ce0c58b9f3f2a6cd5ef90f439527f9" title="Get the height of the texture. " alt="" coords="225,107,353,133"/>
+<area shape="rect" id="node5" href="$classngl_1_1_image.html#a836b99787c51a05162e6f313cd5ef2c2" title="load the image data, this will clear the previous data and attempt to load the new image data ..." alt="" coords="231,157,348,184"/>
+<area shape="rect" id="node6" href="$classngl_1_1_image.html#afd54496e8ae21e8df0d79e1d2aee0b07" title="Get the width of the texture. " alt="" coords="228,208,351,235"/>
+</map>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structfmt_1_1internal_1_1_convert_to_int" kind="struct" language="C++" prot="public">
+    <compoundname>fmt::internal::ConvertToInt</compoundname>
+    <includes refid="format_8h" local="no">format.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structfmt_1_1internal_1_1_convert_to_int_1a89f65d01dada704ab4720fcece3a8dfe" prot="public" static="no">
+        <name>@7</name>
+        <enumvalue id="structfmt_1_1internal_1_1_convert_to_int_1a89f65d01dada704ab4720fcece3a8dfea75bbb2967cf9b5d3457ee10a6e3ea842" prot="public">
+          <name>enable_conversion</name>
+          <initializer>= sizeof(convert(get&lt;T&gt;())) == sizeof(Yes)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1092" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1092" bodyend="1092"/>
+      </memberdef>
+      <memberdef kind="enum" id="structfmt_1_1internal_1_1_convert_to_int_1af0316312b11c661cd1f7ab6ef874e083" prot="public" static="no">
+        <name>@8</name>
+        <enumvalue id="structfmt_1_1internal_1_1_convert_to_int_1af0316312b11c661cd1f7ab6ef874e083a7412c6ddca76a8c08c3eda82433970b4" prot="public">
+          <name>value</name>
+          <initializer>= ConvertToIntImpl2&lt;T, enable_conversion&gt;::value</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1093" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1093" bodyend="1093"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1414">
+        <label>fmt::internal::ConvertToInt&lt; T &gt;</label>
+        <link refid="structfmt_1_1internal_1_1_convert_to_int"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1091" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1091" bodyend="1094"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1internal_1_1_convert_to_int_1a89f65d01dada704ab4720fcece3a8dfea75bbb2967cf9b5d3457ee10a6e3ea842" prot="public" virt="non-virtual"><scope>fmt::internal::ConvertToInt</scope><name>enable_conversion</name></member>
+      <member refid="structfmt_1_1internal_1_1_convert_to_int_1af0316312b11c661cd1f7ab6ef874e083a7412c6ddca76a8c08c3eda82433970b4" prot="public" virt="non-virtual"><scope>fmt::internal::ConvertToInt</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

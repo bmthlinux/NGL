@@ -1,0 +1,7 @@
+<map id="int" name="int">
+<area shape="rect" id="node2" href="$classfmt_1_1_buffered_file.html#a2702f924d04db7f93b7512dd12ba79df" title="fmt::BufferedFile::get" alt="" coords="106,5,251,32"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#a8861eacf25d2024c832dfa611407d25a" title="internal::StrtodDiyFp" alt="" coords="107,56,251,83"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a899ff5a0c5f9b203d720bb6f5631ed10" title="internal::StrtodFullPrecision" alt="" coords="313,107,498,133"/>
+<area shape="rect" id="node6" href="$namespaceinternal.html#a21546973704caf6e4c8b0d4869a614a6" title="internal::StrtodBigInteger" alt="" coords="94,157,263,184"/>
+<area shape="rect" id="node5" href="$class_generic_reader.html#a2447207fde31185e2bb8fbf1250b72e0" title="GenericReader::ParseNumber" alt="" coords="547,107,749,133"/>
+</map>

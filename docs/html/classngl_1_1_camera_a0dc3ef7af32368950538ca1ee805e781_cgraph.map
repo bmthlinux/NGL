@@ -1,0 +1,4 @@
+<map id="ngl::Camera::isSphereInFrustum" name="ngl::Camera::isSphereInFrustum">
+<area shape="rect" id="node2" href="$classngl_1_1_plane.html#a1fe57e76fa01a2bf299e012b23e34177" title="get the distance from the point _p to the plane " alt="" coords="269,5,408,32"/>
+<area shape="rect" id="node3" href="$classngl_1_1_vec3.html#abd4248600950b5da088cb299f3a55fd7" title="calculate the inner product of this vector and vector passed in " alt="" coords="456,5,571,32"/>
+</map>

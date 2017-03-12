@@ -1,0 +1,5 @@
+<map id="ParseResult::Set" name="ParseResult::Set">
+<area shape="rect" id="node2" href="$struct_parse_result.html#a88b6d44f052a19e6436ae6aadc2c40b4" title="Reset error code. " alt="" coords="176,35,309,61"/>
+<area shape="rect" id="node3" href="$class_generic_reader.html#a0c450620d14ff1824e58bb7bd9b42099" title="Parse JSON text. " alt="" coords="364,5,519,32"/>
+<area shape="rect" id="node4" href="$class_generic_reader.html#a55a2d3fd3d5261f26513ed303724bc3a" title="GenericReader::Iterative\lParse" alt="" coords="358,57,525,98"/>
+</map>

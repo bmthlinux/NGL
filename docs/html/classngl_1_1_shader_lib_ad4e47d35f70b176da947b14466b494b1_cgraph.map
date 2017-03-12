@@ -1,0 +1,15 @@
+<map id="ngl::ShaderLib::ShaderLib" name="ngl::ShaderLib::ShaderLib">
+<area shape="rect" id="node2" href="$classngl_1_1_shader_lib.html#aec5ebc9a11364651b1820040d373869f" title="this will load the pre&#45;defined text rendering shaders these are stored in the file src/shaders/Colour..." alt="" coords="231,269,411,310"/>
+<area shape="rect" id="node12" href="$classngl_1_1_shader_lib.html#a005c7b95f7cc6bb38bb207443503e392" title="this will load the pre&#45;defined text rendering shaders these are stored in the file src/shaders/Diffus..." alt="" coords="230,334,413,375"/>
+<area shape="rect" id="node13" href="$classngl_1_1_shader_lib.html#ac9f874040dab2cb996c3849be284d44b" title="this will load the pre&#45;defined text rendering shaders these are stored in the file src/shaders/TextSh..." alt="" coords="238,138,405,179"/>
+<area shape="rect" id="node14" href="$classngl_1_1_shader_lib.html#aae06fcd5d36ccf79399384d04c5c59d3" title="this will load the pre&#45;defined text rendering shaders these are stored in the file src/shaders/ToonSh..." alt="" coords="236,203,407,245"/>
+<area shape="rect" id="node3" href="$classngl_1_1_shader_lib.html#a853991148271635d675f9f7f04578074" title="create an empty ShaderProgram for us to attach shaders etc to " alt="" coords="466,357,662,398"/>
+<area shape="rect" id="node4" href="$classngl_1_1_shader_lib.html#aa5522797b285b3107e64e7ada9f3a493" title="attatch a Shader to the ShaderProgram referenced by _name " alt="" coords="467,423,661,449"/>
+<area shape="rect" id="node5" href="$classngl_1_1_shader_lib.html#a51417a146135c70ad9e05e784f55a31f" title="load shader from a C string, useful for including code in headers etc " alt="" coords="472,474,656,515"/>
+<area shape="rect" id="node6" href="$classngl_1_1_shader_lib.html#ac1dc18632b4e8e190687e3ae1cb52061" title="compile the shader from _name " alt="" coords="462,5,666,32"/>
+<area shape="rect" id="node7" href="$classngl_1_1_shader_lib.html#a9cb2f69021343de47cd79539743f60be" title="attatch a Shader to the ShaderProgram referenced by _name " alt="" coords="467,57,661,98"/>
+<area shape="rect" id="node8" href="$classngl_1_1_shader_lib.html#a07120595b1c25df459c25abdb379d1fb" title="bind an attribute at index by name " alt="" coords="469,123,659,149"/>
+<area shape="rect" id="node9" href="$classngl_1_1_shader_lib.html#abb33d0d7b1019b10701860b6c21c405a" title="link the program Object from _name " alt="" coords="471,174,657,215"/>
+<area shape="rect" id="node10" href="$classngl_1_1_shader_lib.html#ab2a153b12c656d4e2909b36b80e01922" title="set active shader to name (if not found sets glProgramObject(0) " alt="" coords="495,240,633,267"/>
+<area shape="rect" id="node11" href="$classngl_1_1_shader_lib.html#ab26e0fcf1f09c64f915c5a2c140a0ef0" title="will parse the shader source and find any uniforms it can and register them " alt="" coords="469,291,659,333"/>
+</map>

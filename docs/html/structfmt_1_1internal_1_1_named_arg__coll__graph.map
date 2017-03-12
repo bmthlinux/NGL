@@ -1,0 +1,5 @@
+<map id="fmt::internal::NamedArg&lt; Char &gt;" name="fmt::internal::NamedArg&lt; Char &gt;">
+<area shape="rect" id="node2" href="$structfmt_1_1internal_1_1_arg.html" title="{fmt::internal::Arg\n|+ type\l|}" alt="" coords="27,467,147,544"/>
+<area shape="rect" id="node3" href="$structfmt_1_1internal_1_1_value.html" title="{fmt::internal::Value\n|+ int_value\l+ uint_value\l+ long_long_value\l+ ulong_long_value\l+ double_value\l+ long_double_value\l+ pointer\l+ string\l+ sstring\l+ ustring\l+ wstring\l+ @3\l|}" alt="" coords="14,177,159,415"/>
+<area shape="rect" id="node4" href="$structfmt_1_1internal_1_1_value_1_1_custom_value.html" title="{fmt::internal::Value\l::CustomValue\n|+ value\l+ format\l|}" alt="" coords="20,5,153,112"/>
+</map>

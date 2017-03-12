@@ -1,0 +1,11 @@
+<map id="ngl::Text::renderText" name="ngl::Text::renderText">
+<area shape="rect" id="node2" href="$classngl_1_1_abstract_v_a_o.html#a32a42493f94df2674c89a90cb25cfa2a" title="bind the VAO so it can be used. " alt="" coords="220,5,377,32"/>
+<area shape="rect" id="node3" href="$classngl_1_1_abstract_v_a_o.html#a0365aa18813979ae23b2854b25c782a5" title="this is the draw method for the VAO the user must implement this per VAO data, usually this will be a..." alt="" coords="219,56,379,83"/>
+<area shape="rect" id="node4" href="$glew_8h.html#a940f58f3728713267a58e2d09ff602b2" title="glBindTexture" alt="" coords="247,107,351,133"/>
+<area shape="rect" id="node5" href="$glew_8h.html#a8e13e72c3a7bac1f4685fcf3d32bf98c" title="glBlendFunc" alt="" coords="251,157,347,184"/>
+<area shape="rect" id="node6" href="$glew_8h.html#acfd692f7e3361a218a542300f35ea816" title="glDisable" alt="" coords="260,208,337,235"/>
+<area shape="rect" id="node7" href="$glew_8h.html#a1beaf822e5a901dc3fe429b68efb77d4" title="glEnable" alt="" coords="262,259,335,285"/>
+<area shape="rect" id="node8" href="$classngl_1_1_singleton.html#ab5d43c93fdc09ecadc5f6ebfd9460396" title="Get the instance. " alt="" coords="211,310,386,351"/>
+<area shape="rect" id="node9" href="$classngl_1_1_shader_lib.html#a9210462acc20cd79a256a9674ab30692" title="set the pre&#45;registered uniform " alt="" coords="200,375,397,417"/>
+<area shape="rect" id="node10" href="$classngl_1_1_abstract_v_a_o.html#a755b4eb87c240c0c95b292c4762fef04" title="unbind the VAO by binding default 0 " alt="" coords="213,441,385,468"/>
+</map>

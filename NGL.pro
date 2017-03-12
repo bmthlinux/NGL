@@ -5,13 +5,17 @@
 isEqual(QT_MAJOR_VERSION, 5) {cache() }
 
 # We will use the built in Qt lib template
-TEMPLATE = lib
 QT += opengl
 QT += core
 QT += gui
 QT -=xml
-
-CONFIG+=c++11
+QMAKE_LFLAGS += -shared
+CONFIG += console
+CONFIG-=app_bundle
+CONFIG += c++11
+QMAKE_CXXFLAGS+=$$system(/Library/Frameworks/Python.framework/Versions/2.7/bin/python-config --cflags)
+QMAKE_LFLAGS+=$$system(/Library/Frameworks/Python.framework/Versions/2.7/bin/python-config --ldflags)
+INCLUDEPATH+=$$PWD
 
 # use this to remove any marked as deprecated classes from NGL
 DEFINES += REMOVEDDEPRECATED
@@ -57,14 +61,9 @@ else{ # note brace must be here
 message($${BASE_DIR})
 
 # This is the output target we want to create
-TARGET = $$BASE_DIR/lib/NGL
+TARGET = $$BASE_DIR/lib/pyngl.so
 # this is where we want to put the intermediate build files ( ../obj)
 OBJECTS_DIR = $$BASE_DIR/obj
-QMAKE_LFLAGS-= -headerpad_max_install_names
-QMAKE_LFLAGS_SHLIB -= -single_module
-QMAKE_LFLAGS_VERSION=
-QMAKE_LFLAGS_COMPAT_VERSION=
-QMAKE_LFLAGS_SONAME=
 # use this to suppress some warning from boost
 unix:QMAKE_CXXFLAGS_WARN_ON += "-Wno-unused-parameter"
 macx:QMAKE_MAC_SDK=macosx10.12

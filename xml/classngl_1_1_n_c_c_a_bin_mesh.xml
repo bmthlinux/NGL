@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classngl_1_1_n_c_c_a_bin_mesh" kind="class" language="C++" prot="public">
+    <compoundname>ngl::NCCABinMesh</compoundname>
+    <basecompoundref refid="classngl_1_1_abstract_mesh" prot="public" virt="non-virtual">ngl::AbstractMesh</basecompoundref>
+    <includes refid="_n_c_c_a_bin_mesh_8h" local="no">NCCABinMesh.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngl_1_1_n_c_c_a_bin_mesh_1a1dc0f6e7f7508630cd10191fdd835a43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ngl::NCCABinMesh::NCCABinMesh</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>NCCABinMesh</name>
+        <briefdescription>
+<para>default constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/NCCABinMesh.h" line="54" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/NCCABinMesh.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_n_c_c_a_bin_mesh_1a4f02741c8063827f80be061769ba1fe5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::NCCABinMesh::NCCABinMesh</definition>
+        <argsstring>(const std::string &amp;_fname) noexcept</argsstring>
+        <name>NCCABinMesh</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_fname</declname>
+        </param>
+        <briefdescription>
+<para>constructor to load an objfile as a parameter </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">&amp;_fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the obj file to load </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/NCCABinMesh.h" line="59" column="1" bodyfile="/Users/jmacey/NGL/src/NCCABinMesh.cpp" bodystart="117" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_n_c_c_a_bin_mesh_1ae1884d8f1949b31f4d10752d518e4df1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::NCCABinMesh::NCCABinMesh</definition>
+        <argsstring>(const std::string &amp;_fname, const std::string &amp;_texName) noexcept</argsstring>
+        <name>NCCABinMesh</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_fname</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_texName</declname>
+        </param>
+        <briefdescription>
+<para>constructor to load an objfile as a parameter </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">&amp;_fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the obj file to load </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">&amp;_texName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the texture file </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/NCCABinMesh.h" line="65" column="1" bodyfile="/Users/jmacey/NGL/src/NCCABinMesh.cpp" bodystart="126" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_n_c_c_a_bin_mesh_1a2e5874bc036178bb25267a7a80b594ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ngl::NCCABinMesh::load</definition>
+        <argsstring>(const std::string &amp;_fname, bool _calcBB=true) noexcept</argsstring>
+        <name>load</name>
+        <reimplements refid="classngl_1_1_abstract_mesh_1a677c1de57a7ea8086473df6c95b76c93">load</reimplements>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_fname</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_calcBB</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Method to load the file in. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the obj file to load </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>The number of vertices in the object</para><para>The number of normals in the object</para><para>the number of texture co-ordinates in the object</para><para>the number of faces in the object</para><para>now we read how big the actual vbo data is </para>        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/NCCABinMesh.h" line="70" column="1" bodyfile="/Users/jmacey/NGL/src/NCCABinMesh.cpp" bodystart="30" bodyend="114"/>
+        <references refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" compoundref="glew_8h" startline="1648">GL_ARRAY_BUFFER</references>
+        <references refid="glew_8h_1ac1915ebc9c952b9e7140f4bcc78319a6" compoundref="glew_8h" startline="1674">GL_DYNAMIC_DRAW</references>
+        <references refid="glew_8h_1a3b3a3f8200f094b781e9f61e2f19fc50" compoundref="glew_8h" startline="1703">glBindBuffer</references>
+        <references refid="glew_8h_1a9419a03f5c46e2758f884e9c56d92b6a" compoundref="glew_8h" startline="1704">glBufferData</references>
+        <references refid="glew_8h_1a1b33d322b89d94ad4938461db0a0424a" compoundref="glew_8h" startline="1709">glGenBuffers</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_n_c_c_a_bin_mesh_1a79e26e8148d2413548984c6d309f88cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::NCCABinMesh::save</definition>
+        <argsstring>(const std::string &amp;_fname) noexcept</argsstring>
+        <name>save</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_fname</declname>
+        </param>
+        <briefdescription>
+<para>method to save the obj </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the file to save </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/NCCABinMesh.h" line="75" column="1" bodyfile="/Users/jmacey/NGL/src/NCCABinMesh.cpp" bodystart="138" bodyend="141"/>
+        <references refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" compoundref="_abstract_mesh_8cpp" startline="431" endline="496">ngl::AbstractMesh::saveNCCABinaryMesh</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>basically this class Loads the contents of the current VBO to file, this is basically the <ref refid="classngl_1_1_abstract_mesh" kindref="compound">AbstractMesh</ref> packed Vert, <ref refid="classngl_1_1_texture" kindref="compound">Texture</ref> cord and Normal data Which are stored in contiguous blocks from the Parent Save method. this will then create a VBO which can be mapped and drawn etc. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Jonathan Macey </para></simplesect>
+<simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="date"><para>6/05/10 initial development </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1716">
+        <label>ngl::NCCABinMesh</label>
+        <link refid="classngl_1_1_n_c_c_a_bin_mesh"/>
+        <childnode refid="1717" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1717">
+        <label>ngl::AbstractMesh</label>
+        <link refid="classngl_1_1_abstract_mesh"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1721">
+        <label>size_t</label>
+      </node>
+      <node id="1718">
+        <label>ngl::NCCABinMesh</label>
+        <link refid="classngl_1_1_n_c_c_a_bin_mesh"/>
+        <childnode refid="1719" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1720">
+        <label>ngl::Vec3</label>
+        <link refid="classngl_1_1_vec3"/>
+      </node>
+      <node id="1719">
+        <label>ngl::AbstractMesh</label>
+        <link refid="classngl_1_1_abstract_mesh"/>
+        <childnode refid="1720" relation="usage">
+          <edgelabel>#m_center</edgelabel>
+          <edgelabel>#m_sphereCenter</edgelabel>
+        </childnode>
+        <childnode refid="1721" relation="usage">
+          <edgelabel>#m_indexSize</edgelabel>
+          <edgelabel>#m_meshSize</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/NCCABinMesh.h" line="47" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/NCCABinMesh.h" bodystart="46" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classngl_1_1_abstract_mesh_1a9855de18b9aba11902386995c67299cb" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>AbstractMesh</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ad37269f60f9bb3d9018df90ffe63812c" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>calcBoundingSphere</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a8cbb6c3661cdcc06436db68dd76fa585" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>calcDimensions</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" prot="public" virt="virtual"><scope>ngl::NCCABinMesh</scope><name>createVAO</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aeca778cf5182566bb68edce31f817c5e" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>draw</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aeb837456dbbf0051cac81797a90b149e" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>drawBBox</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1acc851f38c4f01d3f4bf7bf1b6aed1811" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>getBBox</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ad5de3572327beadfcb68b9ada9880b5e" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>getCenter</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ad56784799ae979b3151f29158ce8de36" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>getFaceList</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a89da4b17582a0c763846f5c125eeb57f" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>getIndices</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a8d1024b9600630c0e8d70b7d578b6e26" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>getMeshSize</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a7d9ae4e1116ba2e26cc9ca0db543c4e1" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>getNormalList</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a8e54a22df90192e7044abb2c38f11a4b" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>getNumFaces</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a0e3e8cd29ebb971c68b85a1c006aeca1" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>getNumNormals</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1acb0b608ef44b029e517234bc8de2026f" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>getNumTexCords</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a11d25262d6e1ef10b9c8542bbb915841" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>getNumVerts</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ad9cdb979042a773f15e4d3011e2a7304" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>getSphereCenter</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1af896c587979c488a5290dba8148fac50" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>getSphereRadius</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aff2a129e2f6d384e59932cf21fde624f" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>getTextureCordList</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a145581378c10284593e958c5974b3a94" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>getTextureID</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ad62275e74c5d59dfb0d30359aac400e3" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>getVertexAtIndex</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ad75f19c35d0c4a954d166681b7a94f5a" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>getVertexList</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1af509c12d1dda2d1ad25841a4362edb5f" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>isTriangular</name></member>
+      <member refid="classngl_1_1_n_c_c_a_bin_mesh_1a2e5874bc036178bb25267a7a80b594ee" prot="public" virt="virtual"><scope>ngl::NCCABinMesh</scope><name>load</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a2f0e3afb860b5c7bb6b99b96c016fef5" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>loadTexture</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ab7f27d366534a8369a420e6a005bb47e" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_bufferPackSize</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a0cdddd3dd2b076816bd25647acae16c5" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_center</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a4885d5167a332db76bfd4aa1f462928a" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_dataPackType</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a87d423496aaeefcbf960da1d74b9636d" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_ext</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a1f7de935fd02870065f99cb4685fc7a8" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_face</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a586cec1c03451ef5bef925b03cd6e286" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_indexSize</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1adc01b9c9267485da1fdf3613dc8c9ceb" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_indices</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ae8cb9140141d33e2534690874c58c031" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_loaded</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a8264b039550ca93f0ed2caded810accb" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_maxX</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1acd96df6e97f2ee1483fe8370fecc8241" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_maxY</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ada8290a2ad1243d255e84f19a800bd95" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_maxZ</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a305a5b883ac911a3bb8723811259acc1" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_meshSize</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a0555c2d79d6ab50da520a482563b43c4" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_minX</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a9702f04680673970644c2325b7a08c60" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_minY</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aace446c6ba3195240df78884a10b78b2" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_minZ</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aa4e5c1cdc67001f14499bb0da40f6cd0" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_nFaces</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a8536f44940c41d833ce1360e00e925d2" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_nNorm</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a3987536cc8d7cccbe31429d1b4e14024" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_norm</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a2f47063be79b1f065cadc30e35cf0a17" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_nTex</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1af927695f9517bf49191548067ff939ed" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_nVerts</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ae8b4d4fa40a706e2d5a630876f65a8f4" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_outIndices</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a5b396d93df500bb90ba5a5f71dccc953" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_sphereCenter</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aec6feb6b9e924ac4fccd350aa059922c" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_sphereRadius</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a06b3a8bddf3d42830319da379b3b996e" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_tex</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a56eb30bdaec31e32772833199fd54f22" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_texture</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ae7d52c8f9cc7cd566967f81198588919" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_textureID</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a5109b0163236502482095620a5db728f" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_vao</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aa5f50e09c03681f06aef1b9f32725744" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_vaoMesh</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ab39e5c5c849285d6b17cd735dab4d65d" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_vbo</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1af099b62f47c9b9e764f21ddec8522e91" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_vboBuffers</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1af9dff03e37f1d8853ad87b5229262af3" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_vboDrawType</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aca2b5ff30a55850a3597154b79c94186" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_vboMapped</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1af94fc1ce4021f973448c355cadf4c4ba" prot="protected" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>m_verts</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a778aab7afc0c3015b0d5133dfbf33b94" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>mapVAOVerts</name></member>
+      <member refid="classngl_1_1_n_c_c_a_bin_mesh_1a1dc0f6e7f7508630cd10191fdd835a43" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>NCCABinMesh</name></member>
+      <member refid="classngl_1_1_n_c_c_a_bin_mesh_1a4f02741c8063827f80be061769ba1fe5" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>NCCABinMesh</name></member>
+      <member refid="classngl_1_1_n_c_c_a_bin_mesh_1ae1884d8f1949b31f4d10752d518e4df1" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>NCCABinMesh</name></member>
+      <member refid="classngl_1_1_n_c_c_a_bin_mesh_1a79e26e8148d2413548984c6d309f88cf" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>save</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aecd194e72054c0ba2a89f606368af14a" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>saveNCCABinaryMesh</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a3d08025470bb7939b209a2c2d63cc3d8" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>scale</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1ad5a08610ff985730c8116b337d9d578a" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>unMapVAO</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1a279b4c298c26705ebbaddb5120144ba1" prot="public" virt="non-virtual"><scope>ngl::NCCABinMesh</scope><name>writeToRibSubdiv</name></member>
+      <member refid="classngl_1_1_abstract_mesh_1aa500b8c1affa589eee0da6d2f8431b39" prot="public" virt="virtual"><scope>ngl::NCCABinMesh</scope><name>~AbstractMesh</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

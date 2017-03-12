@@ -1,0 +1,424 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_image_8cpp" kind="file" language="C++">
+    <compoundname>Image.cpp</compoundname>
+    <includes refid="_image_8h" local="yes">Image.h</includes>
+    <includes refid="_n_g_lassert_8h" local="yes">NGLassert.h</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="4564">
+        <label>Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="4565" relation="include">
+        </childnode>
+        <childnode refid="4571" relation="include">
+        </childnode>
+        <childnode refid="4572" relation="include">
+        </childnode>
+        <childnode refid="4573" relation="include">
+        </childnode>
+      </node>
+      <node id="4560">
+        <label>Image.cpp</label>
+        <link refid="Image.cpp"/>
+        <childnode refid="4561" relation="include">
+        </childnode>
+        <childnode refid="4575" relation="include">
+        </childnode>
+        <childnode refid="4576" relation="include">
+        </childnode>
+      </node>
+      <node id="4561">
+        <label>Image.h</label>
+        <link refid="_image_8h"/>
+        <childnode refid="4562" relation="include">
+        </childnode>
+        <childnode refid="4563" relation="include">
+        </childnode>
+        <childnode refid="4564" relation="include">
+        </childnode>
+        <childnode refid="4574" relation="include">
+        </childnode>
+      </node>
+      <node id="4573">
+        <label>QGLContext</label>
+      </node>
+      <node id="4567">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="4568" relation="include">
+        </childnode>
+        <childnode refid="4569" relation="include">
+        </childnode>
+      </node>
+      <node id="4562">
+        <label>string</label>
+      </node>
+      <node id="4566">
+        <label>stddef.h</label>
+      </node>
+      <node id="4565">
+        <label>glew.h</label>
+        <link refid="glew_8h"/>
+        <childnode refid="4566" relation="include">
+        </childnode>
+        <childnode refid="4567" relation="include">
+        </childnode>
+        <childnode refid="4570" relation="include">
+        </childnode>
+      </node>
+      <node id="4570">
+        <label>GL/glu.h</label>
+      </node>
+      <node id="4568">
+        <label>limits.h</label>
+      </node>
+      <node id="4569">
+        <label>wchar.h</label>
+      </node>
+      <node id="4574">
+        <label>Colour.h</label>
+        <link refid="_colour_8h"/>
+        <childnode refid="4564" relation="include">
+        </childnode>
+      </node>
+      <node id="4572">
+        <label>QtOpenGL/QGLContext</label>
+      </node>
+      <node id="4575">
+        <label>NGLassert.h</label>
+        <link refid="_n_g_lassert_8h"/>
+      </node>
+      <node id="4576">
+        <label>iostream</label>
+      </node>
+      <node id="4571">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="4563">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacengl">ngl</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_image_8cpp_1a0b33b2069b3efe2526b2dc20a70401e4" prot="public" static="no">
+        <name>IMAGE_DEBUG_ON</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/src/Image.cpp" line="38" column="9" bodyfile="/Users/jmacey/NGL/src/Image.cpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>implementation files for Image class </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Copyright<sp/>(C)<sp/>2015<sp/>Jon<sp/>Macey</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_image_8h" kindref="compound">Image.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_n_g_lassert_8h" kindref="compound">NGLassert.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(USEQIMAGE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;QtGui/QImage&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(USEIMAGEMAGIC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;ImageMagick-6/Magick++.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(USEOIIO)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;OpenImageIO/imageio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacengl" kindref="compound">ngl</ref></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="_image_8cpp_1a0b33b2069b3efe2526b2dc20a70401e4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMAGE_DEBUG_ON<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classngl_1_1_image_1ab95086219ab60f652e8022c2b4af429e" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_image_1af835182d0da059d2448e69c26f3830df" kindref="member">Image::Image</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>&amp;_fname)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_image_1a836b99787c51a05162e6f313cd5ef2c2" kindref="member">load</ref>(_fname);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classngl_1_1_image_1aeb71aab44c79b64f28a3abdbffe98beb" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_image_1af835182d0da059d2448e69c26f3830df" kindref="member">Image::Image</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_image" kindref="compound">Image</ref><sp/>&amp;_i)<sp/>:<ref refid="classngl_1_1_image_1afa97949bbe798b6d74791842f6190591" kindref="member">m_width</ref>(_i.<ref refid="classngl_1_1_image_1afa97949bbe798b6d74791842f6190591" kindref="member">m_width</ref>),<ref refid="classngl_1_1_image_1ad837381b7874bc096f02db4b15dfa3ed" kindref="member">m_height</ref>(_i.<ref refid="classngl_1_1_image_1ad837381b7874bc096f02db4b15dfa3ed" kindref="member">m_height</ref>),</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_image_1abf71029a3726bf66f63f5a6002dd2b76" kindref="member">m_channels</ref>(_i.<ref refid="classngl_1_1_image_1abf71029a3726bf66f63f5a6002dd2b76" kindref="member">m_channels</ref>),<ref refid="classngl_1_1_image_1a4e443593773b79ae2e70b07dacc801b7" kindref="member">m_format</ref>(_i.<ref refid="classngl_1_1_image_1a4e443593773b79ae2e70b07dacc801b7" kindref="member">m_format</ref>),</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_image_1aa4f4a0c7969c914f350cfc2a82238e24" kindref="member">m_loaded</ref>(_i.<ref refid="classngl_1_1_image_1aa4f4a0c7969c914f350cfc2a82238e24" kindref="member">m_loaded</ref>),<ref refid="classngl_1_1_image_1a10b481b38e6475897c8662fee0c98f63" kindref="member">m_hasAlpha</ref>(_i.<ref refid="classngl_1_1_image_1a10b481b38e6475897c8662fee0c98f63" kindref="member">m_hasAlpha</ref>)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a3d1e3edfcf61ca2d831883e1afbad89e" kindref="member">size</ref>=<ref refid="classngl_1_1_image_1afa97949bbe798b6d74791842f6190591" kindref="member">m_width</ref>*<ref refid="classngl_1_1_image_1ad837381b7874bc096f02db4b15dfa3ed" kindref="member">m_height</ref>*<ref refid="classngl_1_1_image_1abf71029a3726bf66f63f5a6002dd2b76" kindref="member">m_channels</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>.reset(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<sp/>size]);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>memcpy(<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>.get(),_i.<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>.get(),<ref refid="glew_8h_1a3d1e3edfcf61ca2d831883e1afbad89e" kindref="member">size</ref>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="classngl_1_1_image_1a092526069e48a5b4692be349f04f8dd2" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref><sp/><ref refid="classngl_1_1_image_1a092526069e48a5b4692be349f04f8dd2" kindref="member">Image::getColour</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/>_x,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/>_y<sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/>make<sp/>sure<sp/>were<sp/>in<sp/>the<sp/>image<sp/>range</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><ref refid="_n_g_lassert_8h_1acef7dc418d5bcc430c79741ba952beb4" kindref="member">NGL_ASSERT</ref>(_x&lt;=<ref refid="classngl_1_1_image_1afa97949bbe798b6d74791842f6190591" kindref="member">m_width</ref><sp/>&amp;&amp;<sp/>_y&lt;=<ref refid="classngl_1_1_image_1ad837381b7874bc096f02db4b15dfa3ed" kindref="member">m_height</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref><sp/>!=0)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref>=_x*<ref refid="classngl_1_1_image_1abf71029a3726bf66f63f5a6002dd2b76" kindref="member">m_channels</ref>+((_y)*<ref refid="classngl_1_1_image_1afa97949bbe798b6d74791842f6190591" kindref="member">m_width</ref>*<ref refid="classngl_1_1_image_1abf71029a3726bf66f63f5a6002dd2b76" kindref="member">m_channels</ref>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(m_channels<sp/>==<sp/>3)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref>(<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[<ref refid="glew_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref>],<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[offset+1],<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[offset+2]);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref>(<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[<ref refid="glew_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref>],<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[offset+1],<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[offset+2],<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[offset+3]);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref>(0,0,0,0);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classngl_1_1_image_1a9d9a1715c483e87cfbcf0601a8239c4f" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref><sp/><ref refid="classngl_1_1_image_1a092526069e48a5b4692be349f04f8dd2" kindref="member">Image::getColour</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_uvX,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_uvY<sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/>xx<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(_uvX<sp/>*<sp/>(<ref refid="classngl_1_1_image_1afa97949bbe798b6d74791842f6190591" kindref="member">m_width</ref>-1));</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/>yy<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(_uvY<sp/>*<sp/>(<ref refid="classngl_1_1_image_1ad837381b7874bc096f02db4b15dfa3ed" kindref="member">m_height</ref>-1));</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><ref refid="_n_g_lassert_8h_1acef7dc418d5bcc430c79741ba952beb4" kindref="member">NGL_ASSERT</ref>(xx&lt;<ref refid="classngl_1_1_image_1afa97949bbe798b6d74791842f6190591" kindref="member">m_width</ref><sp/>&amp;&amp;<sp/>yy&lt;<ref refid="classngl_1_1_image_1ad837381b7874bc096f02db4b15dfa3ed" kindref="member">m_height</ref>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>!=0)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref><sp/>=<sp/>xx<sp/>*<sp/><ref refid="classngl_1_1_image_1abf71029a3726bf66f63f5a6002dd2b76" kindref="member">m_channels</ref><sp/>+<sp/>(yy<sp/>*<sp/><ref refid="classngl_1_1_image_1afa97949bbe798b6d74791842f6190591" kindref="member">m_width</ref><sp/>*<sp/><ref refid="classngl_1_1_image_1abf71029a3726bf66f63f5a6002dd2b76" kindref="member">m_channels</ref><sp/>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_image_1abf71029a3726bf66f63f5a6002dd2b76" kindref="member">m_channels</ref><sp/>==<sp/>4)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref>(<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[<ref refid="glew_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref>],<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[offset+1],<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[offset+2],<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[offset+3]);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref>(<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[<ref refid="glew_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref>],<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[offset+1],<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[offset+2],1.0);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref>(0,0,0,0);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="classngl_1_1_image_1ae092e0b30e34806d9026d332acd53cfe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_image_1ae092e0b30e34806d9026d332acd53cfe" kindref="member">Image::saveFrameBufferToFile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>&amp;_fname,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_height,<ref refid="classngl_1_1_image_1aac33e0b8e85f864ecf829c239a7c8bc3" kindref="member">ImageModes</ref><sp/>_mode)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref><sp/><ref refid="glew_8h_1a1e3b09934060e9d373139c3557730d37" kindref="member">format</ref>=<ref refid="glew_8h_1a69f1c49996aca30177171c7b086cfb34" kindref="member">GL_RGB</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a3d1e3edfcf61ca2d831883e1afbad89e" kindref="member">size</ref>=3;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(_mode<sp/>==<sp/><ref refid="classngl_1_1_image_1aac33e0b8e85f864ecf829c239a7c8bc3aea3495a278957dc58165e48a8945469f" kindref="member">ImageModes::RGBA</ref>)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>size=4;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>format=<ref refid="glew_8h_1a9f2854f4a91a0d83d2d54cb8110bfca4" kindref="member">GL_RGBA</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>realWidth=_width-_x;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>realHeight=_height-_y;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><ref refid="_n_g_lassert_8h_1acef7dc418d5bcc430c79741ba952beb4" kindref="member">NGL_ASSERT</ref>(_x&lt;_width<sp/>&amp;&amp;<sp/>_y&lt;_height);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;unsigned<sp/>char<sp/>[]&gt;<sp/><ref refid="glew_8h_1a42c2b1d86fa71a425e73a882cb0a72c8" kindref="member">data</ref>(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>[realWidth<sp/>*<sp/>realHeight<sp/>*size]);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1aac48a329f0ddbfea61b8bb056460201a" kindref="member">glReadPixels</ref>(_x,_y,realWidth,realHeight,format,<ref refid="glew_8h_1a80a33c79f69417372d65d2a65ca36d49" kindref="member">GL_UNSIGNED_BYTE</ref>,data.get());</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>defined(USEQIMAGE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>QImage::Format<sp/>qformat=QImage::Format::Format_RGB888;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(_mode<sp/>==<sp/><ref refid="classngl_1_1_image_1aac33e0b8e85f864ecf829c239a7c8bc3aea3495a278957dc58165e48a8945469f" kindref="member">ImageModes::RGBA</ref>)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>qformat=QImage::Format::Format_RGBA8888;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>QImage<sp/><ref refid="glew_8h_1afee73cc3a067f1a92ff8b87391c73cb2" kindref="member">image</ref>(data.get(),realWidth,realHeight,qformat);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1afee73cc3a067f1a92ff8b87391c73cb2" kindref="member">image</ref>=image.mirrored(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>image.save(_fname.c_str());</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>defined(USEOIIO)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>OpenImageIO::ImageOutput<sp/>*out<sp/>=<sp/>OpenImageIO::ImageOutput::create<sp/>(_fname.c_str());</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>OpenImageIO::ImageSpec<sp/>spec<sp/>(realWidth,<sp/>realHeight,<sp/>size,<sp/>OpenImageIO::TypeDesc::UINT8);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scanlinesize<sp/>=<sp/>realWidth<sp/>*<sp/><ref refid="glew_8h_1a3d1e3edfcf61ca2d831883e1afbad89e" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>out-&gt;open<sp/>(_fname.c_str(),<sp/>spec);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>note<sp/>this<sp/>flips<sp/>the<sp/>image<sp/>vertically<sp/>on<sp/>writing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(see<sp/>http://www.openimageio.org/openimageio.pdf<sp/>pg<sp/>20<sp/>for<sp/>details)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>out-&gt;write_image<sp/>(OpenImageIO::TypeDesc::UINT8,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data.get()<sp/>+<sp/>(realHeight-1)*scanlinesize,</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OpenImageIO::AutoStride,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-scanlinesize,OpenImageIO::AutoStride);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>out-&gt;close<sp/>();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>defined(USEIMAGEMAGIC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>Magick::Image<sp/>output(realWidth,realHeight,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size==3<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;RGB&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;RGBA&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Magick::CharPixel,data.get()</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>the<sp/>output<sp/>image<sp/>depth<sp/>to<sp/>16<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>output.depth(16);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>write<sp/>the<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>output.write(_fname.c_str());</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(USEQIMAGE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Qt<sp/>Image<sp/>loading<sp/>routines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_image_1a836b99787c51a05162e6f313cd5ef2c2" kindref="member">Image::load</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>&amp;_fName<sp/><sp/>)<sp/>noexcept</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>IMAGE_DEBUG_ON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;loading<sp/>with<sp/>QImage&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/>QImage<sp/><ref refid="glew_8h_1afee73cc3a067f1a92ff8b87391c73cb2" kindref="member">image</ref>;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>loaded=image.load(_fName.c_str());</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(loaded<sp/>==</highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;error<sp/>loading<sp/>image<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;_fName.c_str()&lt;&lt;</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(loaded<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>image=image.mirrored();</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_image_1afa97949bbe798b6d74791842f6190591" kindref="member">m_width</ref>=</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(image.width());</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_image_1ad837381b7874bc096f02db4b15dfa3ed" kindref="member">m_height</ref>=</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(image.height());</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_image_1a10b481b38e6475897c8662fee0c98f63" kindref="member">m_hasAlpha</ref>=image.hasAlphaChannel();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_image_1a10b481b38e6475897c8662fee0c98f63" kindref="member">m_hasAlpha</ref><sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_image_1abf71029a3726bf66f63f5a6002dd2b76" kindref="member">m_channels</ref>=4;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_image_1a4e443593773b79ae2e70b07dacc801b7" kindref="member">m_format</ref><sp/>=<sp/><ref refid="glew_8h_1a9f2854f4a91a0d83d2d54cb8110bfca4" kindref="member">GL_RGBA</ref>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_image_1abf71029a3726bf66f63f5a6002dd2b76" kindref="member">m_channels</ref>=3;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_image_1a4e443593773b79ae2e70b07dacc801b7" kindref="member">m_format</ref><sp/>=<sp/><ref refid="glew_8h_1a69f1c49996aca30177171c7b086cfb34" kindref="member">GL_RGB</ref>;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>.reset(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<sp/><ref refid="classngl_1_1_image_1afa97949bbe798b6d74791842f6190591" kindref="member">m_width</ref>*<ref refid="classngl_1_1_image_1ad837381b7874bc096f02db4b15dfa3ed" kindref="member">m_height</ref>*<ref refid="classngl_1_1_image_1abf71029a3726bf66f63f5a6002dd2b76" kindref="member">m_channels</ref>]);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a57f14e05b1900f16a2da82ade47d0c6d" kindref="member">index</ref>=0;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>QRgb<sp/>colour;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>=0;<sp/><ref refid="glew_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>&lt;<ref refid="classngl_1_1_image_1ad837381b7874bc096f02db4b15dfa3ed" kindref="member">m_height</ref>;<sp/>++<ref refid="glew_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>=0;<sp/><ref refid="glew_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>&lt;<ref refid="classngl_1_1_image_1afa97949bbe798b6d74791842f6190591" kindref="member">m_width</ref>;<sp/>++<ref refid="glew_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>colour=image.pixel(<ref refid="glew_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>,<ref refid="glew_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[index++]=</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(qRed(colour));</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[index++]=</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(qGreen(colour));</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[index++]=</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(qBlue(colour));</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_image_1a10b481b38e6475897c8662fee0c98f63" kindref="member">m_hasAlpha</ref>)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[index++]=</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(qAlpha(colour));</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>IMAGE_DEBUG_ON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;size<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="classngl_1_1_image_1afa97949bbe798b6d74791842f6190591" kindref="member">m_width</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;m_height&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;channels<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;m_channels&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>end<sp/>of<sp/>QImage<sp/>loading<sp/>routines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(USEIMAGEMAGIC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Image<sp/>Magick<sp/>Image<sp/>loading<sp/>routines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_image_1a836b99787c51a05162e6f313cd5ef2c2" kindref="member">Image::load</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>&amp;_fname<sp/><sp/>)<sp/>noexcept</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>IMAGE_DEBUG_ON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;loading<sp/>with<sp/>ImageMagick&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/>Magick::Image<sp/><ref refid="glew_8h_1afee73cc3a067f1a92ff8b87391c73cb2" kindref="member">image</ref>;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/>Magick::Blob<sp/>blob;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>image.read(_fname);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>need<sp/>to<sp/>flip<sp/>image<sp/>as<sp/>OpenGL<sp/>uses<sp/>textures<sp/>starting<sp/>the<sp/>other<sp/>way<sp/>round.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>image.flip();</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>image.write(&amp;blob,<sp/></highlight><highlight class="stringliteral">&quot;RGBA&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(Magick::Error&amp;<sp/>Error)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>loading<sp/>texture<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>_fname<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>Error.what()<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_image_1afa97949bbe798b6d74791842f6190591" kindref="member">m_width</ref>=image.columns();</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_image_1ad837381b7874bc096f02db4b15dfa3ed" kindref="member">m_height</ref>=image.rows();</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_image_1abf71029a3726bf66f63f5a6002dd2b76" kindref="member">m_channels</ref>=4;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_image_1a4e443593773b79ae2e70b07dacc801b7" kindref="member">m_format</ref>=<ref refid="glew_8h_1a9f2854f4a91a0d83d2d54cb8110bfca4" kindref="member">GL_RGBA</ref>;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>.reset(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<sp/><ref refid="classngl_1_1_image_1afa97949bbe798b6d74791842f6190591" kindref="member">m_width</ref>*<ref refid="classngl_1_1_image_1ad837381b7874bc096f02db4b15dfa3ed" kindref="member">m_height</ref>*<ref refid="classngl_1_1_image_1abf71029a3726bf66f63f5a6002dd2b76" kindref="member">m_channels</ref>]);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>simple<sp/>memcpy<sp/>of<sp/>the<sp/>blob<sp/>data<sp/>to<sp/>our<sp/>internal<sp/>data,<sp/>not<sp/>worrying<sp/>about<sp/>RGB/RGBA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>here<sp/>(as<sp/>OpenGL<sp/>doesn&apos;t<sp/>really<sp/>either).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/>memcpy(<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>.get(),blob.data(),blob.length());</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>end<sp/>of<sp/>image<sp/>magick<sp/>loading<sp/>routines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(USEOIIO)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Open<sp/>Image<sp/>I/O<sp/>loading<sp/>routines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_image_1a836b99787c51a05162e6f313cd5ef2c2" kindref="member">Image::load</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>&amp;_fname<sp/><sp/>)<sp/>noexcept</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>IMAGE_DEBUG_ON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/>std::cerr&lt;&lt;</highlight><highlight class="stringliteral">&quot;loading<sp/>with<sp/>OpenImageIO&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/>OpenImageIO::ImageInput<sp/>*<ref refid="glew_8h_1a83ad0ee7f1e06b59c90271716e689080" kindref="member">in</ref><sp/>=<sp/>OpenImageIO::ImageInput::open<sp/>(_fname);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<sp/>in)</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>OpenImageIO::ImageSpec<sp/>&amp;spec<sp/>=<sp/>in-&gt;spec();</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_image_1afa97949bbe798b6d74791842f6190591" kindref="member">m_width</ref><sp/>=<sp/>spec.width;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_image_1ad837381b7874bc096f02db4b15dfa3ed" kindref="member">m_height</ref><sp/>=<sp/>spec.height;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_image_1abf71029a3726bf66f63f5a6002dd2b76" kindref="member">m_channels</ref><sp/>=<sp/>spec.nchannels;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_image_1abf71029a3726bf66f63f5a6002dd2b76" kindref="member">m_channels</ref>==3)</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_image_1a4e443593773b79ae2e70b07dacc801b7" kindref="member">m_format</ref>=<ref refid="glew_8h_1a69f1c49996aca30177171c7b086cfb34" kindref="member">GL_RGB</ref>;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classngl_1_1_image_1abf71029a3726bf66f63f5a6002dd2b76" kindref="member">m_channels</ref>==4)</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_image_1a4e443593773b79ae2e70b07dacc801b7" kindref="member">m_format</ref>=<ref refid="glew_8h_1a9f2854f4a91a0d83d2d54cb8110bfca4" kindref="member">GL_RGBA</ref>;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>.reset(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<sp/><ref refid="classngl_1_1_image_1afa97949bbe798b6d74791842f6190591" kindref="member">m_width</ref>*<ref refid="classngl_1_1_image_1ad837381b7874bc096f02db4b15dfa3ed" kindref="member">m_height</ref>*<ref refid="classngl_1_1_image_1abf71029a3726bf66f63f5a6002dd2b76" kindref="member">m_channels</ref>]);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>will<sp/>read<sp/>an<sp/>flip<sp/>the<sp/>pixel<sp/>for<sp/>OpenGL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scanlinesize<sp/>=<sp/>spec.width<sp/>*<sp/>spec.nchannels<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>[0]);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/>in-&gt;read_image<sp/>(OpenImageIO::TypeDesc::UINT8,</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)<ref refid="classngl_1_1_image_1a1fb243ab588c02a9140c709cd15f5398" kindref="member">m_data</ref>.get()<sp/>+<sp/>(<ref refid="classngl_1_1_image_1ad837381b7874bc096f02db4b15dfa3ed" kindref="member">m_height</ref>-1)*scanlinesize,<sp/></highlight><highlight class="comment">//<sp/>offset<sp/>to<sp/>last</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/>OpenImageIO::AutoStride,<sp/></highlight><highlight class="comment">//<sp/>default<sp/>x<sp/>stride</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/>-scanlinesize,<sp/></highlight><highlight class="comment">//<sp/>special<sp/>y<sp/>stride</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/>OpenImageIO::AutoStride);<sp/></highlight><highlight class="comment">//<sp/>default<sp/>z<sp/>stride</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//in-&gt;read_image<sp/>(OpenImageIO::TypeDesc::UINT8,<sp/>&amp;m_data[0]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/>in-&gt;close<sp/>();</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a83ad0ee7f1e06b59c90271716e689080" kindref="member">in</ref>;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>end<sp/>USEOIIO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/src/Image.cpp"/>
+  </compounddef>
+</doxygen>

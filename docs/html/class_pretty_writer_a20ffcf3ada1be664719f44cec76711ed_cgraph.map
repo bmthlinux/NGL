@@ -1,0 +1,25 @@
+<map id="PrettyWriter::Double" name="PrettyWriter::Double">
+<area shape="rect" id="node2" href="$class_pretty_writer.html#a7841433d45abbfc5a1799be0ca1ed792" title="PrettyWriter::PrettyPrefix" alt="" coords="198,56,367,83"/>
+<area shape="rect" id="node9" href="$class_writer.html#aced9cb2b88abc16c4a0bdb75920cd424" title="Writer::WriteDouble" alt="" coords="213,133,352,160"/>
+<area shape="rect" id="node3" href="$glew_8h.html#a1659df18b3b413a60a397d5a7540f3d2" title="void" alt="" coords="477,5,523,32"/>
+<area shape="rect" id="node4" href="$class_pretty_writer.html#a649ec900d77960e085f76bb4d3c351d9" title="PrettyWriter::WriteIndent" alt="" coords="416,56,584,83"/>
+<area shape="rect" id="node5" href="$classinternal_1_1_stack.html#ade4a25fa82950619652a30aa3a807f58" title="internal::Stack::GetSize" alt="" coords="633,5,794,32"/>
+<area shape="rect" id="node6" href="$filewritestream_8h.html#a5c9b0f0e6249be2acf7f3505c295c132" title="Implement specialized version of PutN() with memset() for better performance. " alt="" coords="687,56,739,83"/>
+<area shape="rect" id="node7" href="$class_file_write_stream.html#ad9ec108b24316a2c1c83c6ddc75d308a" title="FileWriteStream::PutN" alt="" coords="855,55,1009,81"/>
+<area shape="rect" id="node8" href="$class_file_write_stream.html#a939fbf183ba36464c5e0837df4329d37" title="FileWriteStream::Flush" alt="" coords="1091,31,1248,57"/>
+<area shape="rect" id="node10" href="$namespaceinternal.html#a43bb02fa46863dcc2dc8a2484f7ad5b1" title="internal::dtoa" alt="" coords="451,159,549,185"/>
+<area shape="rect" id="node11" href="$classinternal_1_1_double.html#a6eb58f2690af582efeb9b76ef35c4c60" title="internal::Double::IsZero" alt="" coords="633,108,793,135"/>
+<area shape="rect" id="node12" href="$classinternal_1_1_double.html#ad3f4421a50d77c3af20638a12ec8f168" title="internal::Double::Sign" alt="" coords="639,159,788,185"/>
+<area shape="rect" id="node13" href="$namespaceinternal.html#aeb7b6c0784b644968003cbd1b9da57e3" title="internal::Grisu2" alt="" coords="657,209,769,236"/>
+<area shape="rect" id="node22" href="$namespaceinternal.html#a18aa7a3da7eb23f64a2eb7f3ed01a44a" title="internal::Prettify" alt="" coords="656,300,771,327"/>
+<area shape="rect" id="node14" href="$structinternal_1_1_diy_fp.html#a64e623c1742d1d5ad551ab456f0deb62" title="internal::DiyFp::Normalized\lBoundaries" alt="" coords="1078,82,1261,123"/>
+<area shape="rect" id="node16" href="$namespaceinternal.html#abac3dbfa1070756c37725829148f6038" title="internal::GetCachedPower" alt="" coords="843,156,1021,183"/>
+<area shape="rect" id="node18" href="$structinternal_1_1_diy_fp.html#adae1948b1bb65d950cd3801a4a2bb7fd" title="internal::DiyFp::Normalize" alt="" coords="844,209,1020,236"/>
+<area shape="rect" id="node19" href="$namespaceinternal.html#a47be9aea8d0f9cae49dc03dc046d2450" title="internal::DigitGen" alt="" coords="869,264,995,291"/>
+<area shape="rect" id="node15" href="$structinternal_1_1_diy_fp.html#aea27f027c58a55245d700df08be4ff7e" title="internal::DiyFp::DiyFp" alt="" coords="1318,155,1469,181"/>
+<area shape="rect" id="node17" href="$namespaceinternal.html#a3e95f043ed6c40cda1c1bc33c2f0ece2" title="internal::GetCachedPower\lByIndex" alt="" coords="1080,147,1259,189"/>
+<area shape="rect" id="node20" href="$namespaceinternal.html#ab2e324c403dc7671f732e8959886a8d1" title="internal::CountDecimalDigit32" alt="" coords="1070,264,1269,291"/>
+<area shape="rect" id="node21" href="$namespaceinternal.html#a234e10bef097ccb2f202b7a133086e71" title="internal::GrisuRound" alt="" coords="1097,315,1241,341"/>
+<area shape="rect" id="node23" href="$namespaceinternal.html#acc9a114f2a03bb4c68e9ee99b9ca99c5" title="internal::WriteExponent" alt="" coords="852,340,1012,367"/>
+<area shape="rect" id="node24" href="$namespaceinternal.html#a95459e80b3f0e89ad03ebd0c8e55844c" title="internal::GetDigitsLut" alt="" coords="1096,365,1243,392"/>
+</map>

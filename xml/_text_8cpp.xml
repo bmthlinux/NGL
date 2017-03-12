@@ -1,0 +1,679 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_text_8cpp" kind="file" language="C++">
+    <compoundname>Text.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">QtGui/QImage</includes>
+    <includes local="no">QFontMetrics</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">QPainter</includes>
+    <includes local="no">array</includes>
+    <includes local="no">memory</includes>
+    <includes refid="_text_8h" local="yes">Text.h</includes>
+    <includes refid="_shader_lib_8h" local="yes">ShaderLib.h</includes>
+    <incdepgraph>
+      <node id="6414">
+        <label>Mat4.h</label>
+        <link refid="_mat4_8h"/>
+        <childnode refid="6397" relation="include">
+        </childnode>
+        <childnode refid="6415" relation="include">
+        </childnode>
+        <childnode refid="6393" relation="include">
+        </childnode>
+      </node>
+      <node id="6419">
+        <label>ShaderProgram.h</label>
+        <link refid="_shader_program_8h"/>
+        <childnode refid="6417" relation="include">
+        </childnode>
+        <childnode refid="6397" relation="include">
+        </childnode>
+        <childnode refid="6420" relation="include">
+        </childnode>
+        <childnode refid="6424" relation="include">
+        </childnode>
+        <childnode refid="6391" relation="include">
+        </childnode>
+      </node>
+      <node id="6397">
+        <label>Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="6398" relation="include">
+        </childnode>
+        <childnode refid="6404" relation="include">
+        </childnode>
+        <childnode refid="6405" relation="include">
+        </childnode>
+        <childnode refid="6406" relation="include">
+        </childnode>
+      </node>
+      <node id="6411">
+        <label>functional</label>
+      </node>
+      <node id="6408">
+        <label>VAOFactory.h</label>
+        <link refid="_v_a_o_factory_8h"/>
+        <childnode refid="6397" relation="include">
+        </childnode>
+        <childnode refid="6409" relation="include">
+        </childnode>
+        <childnode refid="6391" relation="include">
+        </childnode>
+        <childnode refid="6410" relation="include">
+        </childnode>
+        <childnode refid="6411" relation="include">
+        </childnode>
+      </node>
+      <node id="6406">
+        <label>QGLContext</label>
+      </node>
+      <node id="6422">
+        <label>Vec3.h</label>
+        <link refid="_vec3_8h"/>
+        <childnode refid="6397" relation="include">
+        </childnode>
+        <childnode refid="6393" relation="include">
+        </childnode>
+      </node>
+      <node id="6423">
+        <label>cmath</label>
+      </node>
+      <node id="6400">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+        <childnode refid="6401" relation="include">
+        </childnode>
+        <childnode refid="6402" relation="include">
+        </childnode>
+      </node>
+      <node id="6413">
+        <label>QFont</label>
+      </node>
+      <node id="6410">
+        <label>string</label>
+      </node>
+      <node id="6399">
+        <label>stddef.h</label>
+      </node>
+      <node id="6398">
+        <label>glew.h</label>
+        <link refid="glew_8h"/>
+        <childnode refid="6399" relation="include">
+        </childnode>
+        <childnode refid="6400" relation="include">
+        </childnode>
+        <childnode refid="6403" relation="include">
+        </childnode>
+      </node>
+      <node id="6415">
+        <label>ostream</label>
+      </node>
+      <node id="6403">
+        <label>GL/glu.h</label>
+      </node>
+      <node id="6401">
+        <label>limits.h</label>
+      </node>
+      <node id="6392">
+        <label>QPainter</label>
+      </node>
+      <node id="6421">
+        <label>Vec4.h</label>
+        <link refid="_vec4_8h"/>
+        <childnode refid="6397" relation="include">
+        </childnode>
+        <childnode refid="6407" relation="include">
+        </childnode>
+        <childnode refid="6422" relation="include">
+        </childnode>
+        <childnode refid="6393" relation="include">
+        </childnode>
+      </node>
+      <node id="6416">
+        <label>ShaderLib.h</label>
+        <link refid="_shader_lib_8h"/>
+        <childnode refid="6396" relation="include">
+        </childnode>
+        <childnode refid="6417" relation="include">
+        </childnode>
+        <childnode refid="6419" relation="include">
+        </childnode>
+        <childnode refid="6425" relation="include">
+        </childnode>
+        <childnode refid="6397" relation="include">
+        </childnode>
+        <childnode refid="6426" relation="include">
+        </childnode>
+        <childnode refid="6414" relation="include">
+        </childnode>
+        <childnode refid="6421" relation="include">
+        </childnode>
+        <childnode refid="6410" relation="include">
+        </childnode>
+        <childnode refid="6391" relation="include">
+        </childnode>
+      </node>
+      <node id="6409">
+        <label>AbstractVAO.h</label>
+        <link refid="_abstract_v_a_o_8h"/>
+        <childnode refid="6397" relation="include">
+        </childnode>
+      </node>
+      <node id="6402">
+        <label>wchar.h</label>
+      </node>
+      <node id="6417">
+        <label>Shader.h</label>
+        <link refid="_shader_8h"/>
+        <childnode refid="6397" relation="include">
+        </childnode>
+        <childnode refid="6388" relation="include">
+        </childnode>
+        <childnode refid="6418" relation="include">
+        </childnode>
+      </node>
+      <node id="6396">
+        <label>Colour.h</label>
+        <link refid="_colour_8h"/>
+        <childnode refid="6397" relation="include">
+        </childnode>
+      </node>
+      <node id="6390">
+        <label>QFontMetrics</label>
+      </node>
+      <node id="6424">
+        <label>vector</label>
+      </node>
+      <node id="6393">
+        <label>array</label>
+      </node>
+      <node id="6395">
+        <label>Text.h</label>
+        <link refid="_text_8h"/>
+        <childnode refid="6396" relation="include">
+        </childnode>
+        <childnode refid="6397" relation="include">
+        </childnode>
+        <childnode refid="6407" relation="include">
+        </childnode>
+        <childnode refid="6408" relation="include">
+        </childnode>
+        <childnode refid="6412" relation="include">
+        </childnode>
+        <childnode refid="6394" relation="include">
+        </childnode>
+        <childnode refid="6413" relation="include">
+        </childnode>
+        <childnode refid="6414" relation="include">
+        </childnode>
+      </node>
+      <node id="6405">
+        <label>QtOpenGL/QGLContext</label>
+      </node>
+      <node id="6418">
+        <label>cstdlib</label>
+      </node>
+      <node id="6388">
+        <label>iostream</label>
+      </node>
+      <node id="6425">
+        <label>Singleton.h</label>
+        <link refid="_singleton_8h"/>
+        <childnode refid="6397" relation="include">
+        </childnode>
+        <childnode refid="6418" relation="include">
+        </childnode>
+      </node>
+      <node id="6426">
+        <label>Mat3.h</label>
+        <link refid="_mat3_8h"/>
+        <childnode refid="6397" relation="include">
+        </childnode>
+        <childnode refid="6393" relation="include">
+        </childnode>
+        <childnode refid="6415" relation="include">
+        </childnode>
+      </node>
+      <node id="6391">
+        <label>unordered_map</label>
+      </node>
+      <node id="6412">
+        <label>SimpleVAO.h</label>
+        <link refid="_simple_v_a_o_8h"/>
+        <childnode refid="6409" relation="include">
+        </childnode>
+      </node>
+      <node id="6420">
+        <label>Util.h</label>
+        <link refid="_util_8h"/>
+        <childnode refid="6397" relation="include">
+        </childnode>
+        <childnode refid="6421" relation="include">
+        </childnode>
+        <childnode refid="6423" relation="include">
+        </childnode>
+        <childnode refid="6410" relation="include">
+        </childnode>
+      </node>
+      <node id="6389">
+        <label>QtGui/QImage</label>
+      </node>
+      <node id="6404">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="6407">
+        <label>Vec2.h</label>
+        <link refid="_vec2_8h"/>
+        <childnode refid="6397" relation="include">
+        </childnode>
+        <childnode refid="6393" relation="include">
+        </childnode>
+      </node>
+      <node id="6394">
+        <label>memory</label>
+      </node>
+      <node id="6387">
+        <label>Text.cpp</label>
+        <link refid="Text.cpp"/>
+        <childnode refid="6388" relation="include">
+        </childnode>
+        <childnode refid="6389" relation="include">
+        </childnode>
+        <childnode refid="6390" relation="include">
+        </childnode>
+        <childnode refid="6391" relation="include">
+        </childnode>
+        <childnode refid="6392" relation="include">
+        </childnode>
+        <childnode refid="6393" relation="include">
+        </childnode>
+        <childnode refid="6394" relation="include">
+        </childnode>
+        <childnode refid="6395" relation="include">
+        </childnode>
+        <childnode refid="6416" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacengl">ngl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Copyright<sp/>(C)<sp/>2011<sp/>Jon<sp/>Macey</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QImage&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QFontMetrics&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPainter&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_text_8h" kindref="compound">Text.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_shader_lib_8h" kindref="compound">ShaderLib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacengl" kindref="compound">ngl</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"></highlight><highlight class="comment">//<sp/>OpenGL<sp/>needs<sp/>textures<sp/>to<sp/>be<sp/>in<sp/>powers<sp/>of<sp/>two,<sp/>this<sp/>function<sp/>will<sp/>get<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>nearest<sp/>power<sp/>of<sp/>two<sp/>to<sp/>the<sp/>current<sp/>value<sp/>passed<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="namespacengl_1afc75774b1d580ae31122e5fa262c7ce3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacengl_1afc75774b1d580ae31122e5fa262c7ce3" kindref="member">nearestPowerOfTwo</ref><sp/>(<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_num<sp/>)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/>k;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>(j<sp/>=<sp/>_num<sp/>&amp;<sp/>0xFFFF0000)<sp/>||<sp/>(j<sp/>=<sp/>_num);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>(k<sp/>=<sp/>j<sp/>&amp;<sp/>0xFF00FF00)<sp/>||<sp/>(k<sp/>=<sp/>j);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>(j<sp/>=<sp/>k<sp/>&amp;<sp/>0xF0F0F0F0)<sp/>||<sp/>(j<sp/>=<sp/>k);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>(k<sp/>=<sp/>j<sp/>&amp;<sp/>0xCCCCCCCC)<sp/>||<sp/>(k<sp/>=<sp/>j);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>(j<sp/>=<sp/>k<sp/>&amp;<sp/>0xAAAAAAAA)<sp/>||<sp/>(j<sp/>=<sp/>k);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>j<sp/>&lt;&lt;<sp/>1;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>end<sp/>citation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classngl_1_1_text_1a16e24cf8d7e4f310a7dc2b8375546134" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_text_1a16e24cf8d7e4f310a7dc2b8375546134" kindref="member">Text::Text</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QFont<sp/>&amp;_f)<sp/><sp/>noexcept</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>so<sp/>first<sp/>we<sp/>grab<sp/>the<sp/>font<sp/>metric<sp/>of<sp/>the<sp/>font<sp/>being<sp/>used</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>QFontMetrics<sp/>metric(_f);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>allows<sp/>us<sp/>to<sp/>get<sp/>the<sp/>height<sp/>which<sp/>should<sp/>be<sp/>the<sp/>same<sp/>for<sp/>all</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>fonts<sp/>of<sp/>the<sp/>same<sp/>class<sp/>as<sp/>this<sp/>is<sp/>the<sp/>total<sp/>glyph<sp/>height</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fontHeight=metric.height();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>loop<sp/>for<sp/>all<sp/>basic<sp/>keyboard<sp/>chars<sp/>we<sp/>will<sp/>use<sp/>space<sp/>to<sp/>~</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>should<sp/>really<sp/>change<sp/>this<sp/>to<sp/>unicode<sp/>at<sp/>some<sp/>stage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>startChar=</highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>endChar=</highlight><highlight class="charliteral">&apos;~&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Most<sp/>OpenGL<sp/>cards<sp/>need<sp/>textures<sp/>to<sp/>be<sp/>in<sp/>powers<sp/>of<sp/>2<sp/>(128x512<sp/>1024X1024<sp/>etc<sp/>etc)<sp/>so</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>to<sp/>be<sp/>safe<sp/>we<sp/>will<sp/>conform<sp/>to<sp/>this<sp/>and<sp/>calculate<sp/>the<sp/>nearest<sp/>power<sp/>of<sp/>2<sp/>for<sp/>the<sp/>glyph<sp/>height</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>will<sp/>do<sp/>the<sp/>same<sp/>for<sp/>each<sp/>width<sp/>of<sp/>the<sp/>font<sp/>below</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>heightPow2=<ref refid="namespacengl_1afc75774b1d580ae31122e5fa262c7ce3" kindref="member">nearestPowerOfTwo</ref>(fontHeight);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>are<sp/>now<sp/>going<sp/>to<sp/>create<sp/>a<sp/>texture<sp/>/<sp/>billboard<sp/>for<sp/>each<sp/>font</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>they<sp/>will<sp/>be<sp/>the<sp/>same<sp/>height<sp/>but<sp/>will<sp/>possibly<sp/>have<sp/>different<sp/>widths</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>as<sp/>some<sp/>of<sp/>the<sp/>fonts<sp/>will<sp/>be<sp/>the<sp/>same<sp/>width,<sp/>to<sp/>save<sp/>VAO<sp/>space<sp/>we<sp/>will<sp/>only<sp/>create</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>a<sp/>vao<sp/>if<sp/>we<sp/>don&apos;t<sp/>have<sp/>one<sp/>of<sp/>the<sp/>set<sp/>width.<sp/>To<sp/>do<sp/>this<sp/>we<sp/>use<sp/>the<sp/>has<sp/>below</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>std::unordered_map<sp/>&lt;int,AbstractVAO<sp/>*&gt;<sp/>widthVAO;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ae0f40feefa74d9cb1721a009573cfce5" kindref="member">c</ref>=startChar;<sp/><ref refid="glew_8h_1ae0f40feefa74d9cb1721a009573cfce5" kindref="member">c</ref>&lt;=endChar;<sp/>++<ref refid="glew_8h_1ae0f40feefa74d9cb1721a009573cfce5" kindref="member">c</ref>)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>QChar<sp/>ch(<ref refid="glew_8h_1ae0f40feefa74d9cb1721a009573cfce5" kindref="member">c</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structngl_1_1_font_char" kindref="compound">FontChar</ref><sp/>fc;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>the<sp/>width<sp/>of<sp/>the<sp/>font<sp/>and<sp/>calculate<sp/>the<sp/>^2<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1aa105b18f96e6bc2485cb7f576a7fb9ba" kindref="member">width</ref>=metric.<ref refid="structngl_1_1_font_char_1aa656d9d10a65e64cf5b17f33344d7fd9" kindref="member">width</ref>(<ref refid="glew_8h_1ae0f40feefa74d9cb1721a009573cfce5" kindref="member">c</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>widthPow2=<ref refid="namespacengl_1afc75774b1d580ae31122e5fa262c7ce3" kindref="member">nearestPowerOfTwo</ref>(width);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>we<sp/>set<sp/>the<sp/>texture<sp/>co-ords<sp/>for<sp/>our<sp/>quad<sp/>it<sp/>is<sp/>a<sp/>simple</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>triangle<sp/>billboard<sp/>with<sp/>tex-cords<sp/>as<sp/>shown</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>s0/t0<sp/><sp/>----<sp/>s1,t0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|\<sp/>|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>\|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>s0,t1<sp/><sp/>----<sp/>s1,t1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>each<sp/>quad<sp/>will<sp/>have<sp/>the<sp/>same<sp/>s0<sp/>and<sp/>the<sp/>range<sp/>s0-s1<sp/>==<sp/>0.0<sp/>-&gt;<sp/>1.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="glew_8h_1afeed0b7958979c6add0e425baba3b41f" kindref="member">s0</ref>=0.0;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>now<sp/>need<sp/>to<sp/>scale<sp/>the<sp/>tex<sp/>cord<sp/>to<sp/>it<sp/>ranges<sp/>from<sp/>0-1<sp/>based<sp/>on<sp/>the<sp/>coverage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>of<sp/>the<sp/>glyph<sp/>and<sp/>not<sp/>the<sp/>power<sp/>of<sp/>2<sp/>texture<sp/>size.<sp/>This<sp/>will<sp/>ensure<sp/>that<sp/>kerns</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>/<sp/>ligatures<sp/>match</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="glew_8h_1a4ed25fb4dc5bf1a768a78d2e2f0ca003" kindref="member">s1</ref>=width*1.0f/widthPow2;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>t0<sp/>will<sp/>always<sp/>be<sp/>the<sp/>same</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="glew_8h_1abf0ea7853561a9028dbbc4caeb2f8ff1" kindref="member">t0</ref>=0.0f;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>will<sp/>scale<sp/>the<sp/>height<sp/>so<sp/>we<sp/>only<sp/>get<sp/>coverage<sp/>of<sp/>the<sp/>glyph<sp/>as<sp/>above</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="glew_8h_1af48031a37b713afa3b0d0d7d29653d7c" kindref="member">t1</ref>=metric.height()*-1.0f/heightPow2;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>need<sp/>to<sp/>store<sp/>the<sp/>font<sp/>width<sp/>for<sp/>later<sp/>drawing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>fc.<ref refid="structngl_1_1_font_char_1aa656d9d10a65e64cf5b17f33344d7fd9" kindref="member">width</ref>=<ref refid="glew_8h_1aa105b18f96e6bc2485cb7f576a7fb9ba" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>we<sp/>will<sp/>create<sp/>a<sp/>QImage<sp/>to<sp/>store<sp/>the<sp/>texture,<sp/>basically<sp/>we<sp/>are<sp/>going<sp/>to<sp/>draw</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>into<sp/>the<sp/>qimage<sp/>then<sp/>save<sp/>this<sp/>in<sp/>OpenGL<sp/>format<sp/>and<sp/>load<sp/>as<sp/>a<sp/>texture.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>relativly<sp/>quick<sp/>but<sp/>should<sp/>be<sp/>done<sp/>as<sp/>early<sp/>as<sp/>possible<sp/>for<sp/>max<sp/>performance<sp/>when<sp/>drawing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>QImage<sp/>finalImage(<ref refid="namespacengl_1afc75774b1d580ae31122e5fa262c7ce3" kindref="member">nearestPowerOfTwo</ref>(width),<ref refid="namespacengl_1afc75774b1d580ae31122e5fa262c7ce3" kindref="member">nearestPowerOfTwo</ref>(fontHeight),QImage::Format_ARGB32);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>the<sp/>background<sp/>for<sp/>transparent<sp/>so<sp/>we<sp/>can<sp/>avoid<sp/>any<sp/>areas<sp/>which<sp/>don&apos;t<sp/>have<sp/>text<sp/>in<sp/>them</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>finalImage.fill(Qt::transparent);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>now<sp/>use<sp/>the<sp/>QPainter<sp/>class<sp/>to<sp/>draw<sp/>into<sp/>the<sp/>image<sp/>and<sp/>create<sp/>our<sp/>billboards</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>QPainter<sp/>painter;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>painter.begin(&amp;finalImage);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>try<sp/>and<sp/>use<sp/>high<sp/>quality<sp/>text<sp/>rendering<sp/>(works<sp/>well<sp/>on<sp/>the<sp/>mac<sp/>not<sp/>as<sp/>good<sp/>on<sp/>linux)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>painter.setRenderHints(QPainter::HighQualityAntialiasing</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>QPainter::TextAntialiasing);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>the<sp/>font<sp/>to<sp/>draw<sp/>with</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>painter.setFont(_f);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>set<sp/>the<sp/>glyph<sp/>to<sp/>be<sp/>drawn<sp/>in<sp/>black<sp/>the<sp/>shader<sp/>will<sp/>override<sp/>the<sp/>actual<sp/>colour<sp/>later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>see<sp/>TextShader.h<sp/>in<sp/>src/shaders/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>painter.setPen(Qt::black);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>finally<sp/>we<sp/>draw<sp/>the<sp/>text<sp/>to<sp/>the<sp/>Image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>painter.drawText(0,<sp/>metric.ascent(),<sp/>QString(<ref refid="glew_8h_1ae0f40feefa74d9cb1721a009573cfce5" kindref="member">c</ref>));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>painter.end();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>debug<sp/>purposes<sp/>we<sp/>can<sp/>save<sp/>the<sp/>files<sp/>as<sp/>.png<sp/>and<sp/>view<sp/>them</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>not<sp/>needed<sp/>just<sp/>useful<sp/>when<sp/>developing<sp/>the<sp/>class/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/>QString<sp/>filename=&quot;.png&quot;;</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/><sp/><sp/><sp/>filename.prepend(c);</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/>finalImage.save(filename);</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>we<sp/>create<sp/>the<sp/>OpenGL<sp/>texture<sp/>ID<sp/>and<sp/>bind<sp/>to<sp/>make<sp/>it<sp/>active</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a99e77ebf136a8c511226cf705049a305" kindref="member">glGenTextures</ref>(1,<sp/>&amp;fc.<ref refid="structngl_1_1_font_char_1a8dc38f92d2fd50d8432b4e21e54a2d40" kindref="member">textureID</ref>);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a940f58f3728713267a58e2d09ff602b2" kindref="member">glBindTexture</ref>(<ref refid="glew_8h_1ad4de17abefa73fa2ef53379f73b734be" kindref="member">GL_TEXTURE_2D</ref>,<sp/>fc.<ref refid="structngl_1_1_font_char_1a8dc38f92d2fd50d8432b4e21e54a2d40" kindref="member">textureID</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>glTexParameteri(GL_TEXTURE_2D,<sp/>GL_TEXTURE_WRAP_S,<sp/>GL_CLAMP);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>glTexParameteri(GL_TEXTURE_2D,<sp/>GL_TEXTURE_WRAP_T,<sp/>GL_CLAMP);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1ac8dbabff536e520bc700960dadd8d787" kindref="member">glTexParameteri</ref>(<ref refid="glew_8h_1ad4de17abefa73fa2ef53379f73b734be" kindref="member">GL_TEXTURE_2D</ref>,<ref refid="glew_8h_1acb47a41b5963d44826f44b7370bccc26" kindref="member">GL_TEXTURE_MAG_FILTER</ref>,<ref refid="glew_8h_1a4e682f218130b98b27a1e33fa7325080" kindref="member">GL_LINEAR</ref>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1ac8dbabff536e520bc700960dadd8d787" kindref="member">glTexParameteri</ref>(<ref refid="glew_8h_1ad4de17abefa73fa2ef53379f73b734be" kindref="member">GL_TEXTURE_2D</ref>,<ref refid="glew_8h_1a173a2b2453322dd8d613df6cf2e72480" kindref="member">GL_TEXTURE_MIN_FILTER</ref>,<ref refid="glew_8h_1a5665daac108402324f1db7b89006c0b6" kindref="member">GL_NEAREST_MIPMAP_LINEAR</ref>);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>QImage<sp/>has<sp/>a<sp/>method<sp/>to<sp/>convert<sp/>itself<sp/>to<sp/>a<sp/>format<sp/>suitable<sp/>for<sp/>OpenGL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>finalImage=finalImage.convertToFormat(QImage::Format_ARGB32_Premultiplied);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>rgba<sp/>image<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>widthTexture=finalImage.width();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>heightTexture=finalImage.height();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;unsigned<sp/>char<sp/>[]&gt;<sp/><ref refid="glew_8h_1a42c2b1d86fa71a425e73a882cb0a72c8" kindref="member">data</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<sp/>widthTexture*heightTexture<sp/>*<sp/>4]);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a57f14e05b1900f16a2da82ade47d0c6d" kindref="member">index</ref>=0;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>QRgb<sp/>colour;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>=heightTexture-1;<sp/><ref refid="glew_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>&gt;0;<sp/>--<ref refid="glew_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>)</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>=0;<sp/><ref refid="glew_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>&lt;widthTexture;<sp/>++<ref refid="glew_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>colour=finalImage.pixel(<ref refid="glew_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>,<ref refid="glew_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data[index++]=</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(qRed(colour));</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data[index++]=</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(qGreen(colour));</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data[index++]=</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(qBlue(colour));</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data[index++]=</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(qAlpha(colour));</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>image<sp/>in<sp/>in<sp/>RGBA<sp/>format<sp/>and<sp/>unsigned<sp/>byte<sp/>load<sp/>it<sp/>ready<sp/>for<sp/>later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1ae0c4b34c030bad60c4e2b94cd0a6d804" kindref="member">glTexImage2D</ref>(<ref refid="glew_8h_1ad4de17abefa73fa2ef53379f73b734be" kindref="member">GL_TEXTURE_2D</ref>,<sp/>0,<sp/><ref refid="glew_8h_1a9f2854f4a91a0d83d2d54cb8110bfca4" kindref="member">GL_RGBA</ref>,<sp/>widthTexture,<sp/>heightTexture,0,<sp/><ref refid="glew_8h_1a9f2854f4a91a0d83d2d54cb8110bfca4" kindref="member">GL_RGBA</ref>,<sp/><ref refid="glew_8h_1a80a33c79f69417372d65d2a65ca36d49" kindref="member">GL_UNSIGNED_BYTE</ref>,<sp/>data.get());</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1af24c49639dd0c5748c08354cb9fda28c" kindref="member">glGenerateMipmap</ref>(<ref refid="glew_8h_1ad4de17abefa73fa2ef53379f73b734be" kindref="member">GL_TEXTURE_2D</ref>);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>see<sp/>if<sp/>we<sp/>have<sp/>a<sp/>Billboard<sp/>of<sp/>this<sp/>width<sp/>already</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(widthVAO.find(width)<sp/>==widthVAO.end())</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>structure<sp/>is<sp/>used<sp/>by<sp/>the<sp/>VAO<sp/>to<sp/>store<sp/>the<sp/>data<sp/>to<sp/>be<sp/>uploaded</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>drawing<sp/>the<sp/>quad</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">textVertData</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="glew_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="glew_8h_1a9298c7ad619074f5285b32c6b72bfdea" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>u;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/><ref refid="glew_8h_1a6509431814422c215a65946289dd98b8" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>are<sp/>creating<sp/>a<sp/>billboard<sp/>with<sp/>two<sp/>triangles<sp/>so<sp/>we<sp/>only<sp/>need<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>6<sp/>verts,<sp/>(could<sp/>use<sp/>index<sp/>and<sp/>save<sp/>some<sp/>space<sp/>but<sp/>shouldn&apos;t<sp/>be<sp/>too<sp/>much<sp/>of<sp/>an</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>issue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::array&lt;textVertData,6&gt;<sp/>d;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>load<sp/>values<sp/>for<sp/>triangle<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[0].x=0;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[0].y=0;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[0].u=<ref refid="glew_8h_1afeed0b7958979c6add0e425baba3b41f" kindref="member">s0</ref>;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[0].v=<ref refid="glew_8h_1abf0ea7853561a9028dbbc4caeb2f8ff1" kindref="member">t0</ref>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[1].x=fc.<ref refid="structngl_1_1_font_char_1aa656d9d10a65e64cf5b17f33344d7fd9" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[1].y=0;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[1].u=<ref refid="glew_8h_1a4ed25fb4dc5bf1a768a78d2e2f0ca003" kindref="member">s1</ref>;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[1].v=<ref refid="glew_8h_1abf0ea7853561a9028dbbc4caeb2f8ff1" kindref="member">t0</ref>;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[2].x=0;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[2].y=fontHeight;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[2].u=<ref refid="glew_8h_1afeed0b7958979c6add0e425baba3b41f" kindref="member">s0</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[2].v=<ref refid="glew_8h_1af48031a37b713afa3b0d0d7d29653d7c" kindref="member">t1</ref>;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>load<sp/>values<sp/>for<sp/>triangle<sp/>two</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[3].x=0;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[3].y=0+fontHeight;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[3].u=<ref refid="glew_8h_1afeed0b7958979c6add0e425baba3b41f" kindref="member">s0</ref>;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[3].v=<ref refid="glew_8h_1af48031a37b713afa3b0d0d7d29653d7c" kindref="member">t1</ref>;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[4].x=fc.<ref refid="structngl_1_1_font_char_1aa656d9d10a65e64cf5b17f33344d7fd9" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[4].y=0;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[4].u=<ref refid="glew_8h_1a4ed25fb4dc5bf1a768a78d2e2f0ca003" kindref="member">s1</ref>;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[4].v=<ref refid="glew_8h_1abf0ea7853561a9028dbbc4caeb2f8ff1" kindref="member">t0</ref>;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[5].x=fc.<ref refid="structngl_1_1_font_char_1aa656d9d10a65e64cf5b17f33344d7fd9" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[5].y=fontHeight;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[5].u=<ref refid="glew_8h_1a4ed25fb4dc5bf1a768a78d2e2f0ca003" kindref="member">s1</ref>;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d[5].v=<ref refid="glew_8h_1af48031a37b713afa3b0d0d7d29653d7c" kindref="member">t1</ref>;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>we<sp/>create<sp/>a<sp/>VAO<sp/>to<sp/>store<sp/>the<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classngl_1_1_abstract_v_a_o" kindref="compound">AbstractVAO</ref><sp/>*vao=<ref refid="classngl_1_1_v_a_o_factory_1adee5532df7151fab8e8db0e9ebf94305" kindref="member">VAOFactory::createVAO</ref>(</highlight><highlight class="stringliteral">&quot;simpleVAO&quot;</highlight><highlight class="normal">,<ref refid="glew_8h_1a6079e7a02a59adad65eb953d9482b1ed" kindref="member">GL_TRIANGLES</ref>);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>bind<sp/>it<sp/>so<sp/>we<sp/>can<sp/>set<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vao-&gt;<ref refid="classngl_1_1_abstract_v_a_o_1a32a42493f94df2674c89a90cb25cfa2a" kindref="member">bind</ref>();</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>the<sp/>vertex<sp/>data<sp/>(2<sp/>for<sp/>x,y<sp/>2<sp/>for<sp/>u,v)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vao-&gt;<ref refid="classngl_1_1_abstract_v_a_o_1aeeabb8d7a3be60a6814d1c44cb52f27a" kindref="member">setData</ref>(<ref refid="classngl_1_1_abstract_v_a_o_1_1_vertex_data" kindref="compound">SimpleVAO::VertexData</ref>(6*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(textVertData),d[0].<ref refid="glew_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>));</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>we<sp/>set<sp/>the<sp/>attribute<sp/>pointer<sp/>to<sp/>be<sp/>0<sp/>(as<sp/>this<sp/>matches<sp/>vertIn<sp/>in<sp/>our<sp/>shader)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vao-&gt;<ref refid="classngl_1_1_abstract_v_a_o_1aa51d9e09fa5d76cb0868cdff08e94911" kindref="member">setVertexAttributePointer</ref>(0,2,<ref refid="glew_8h_1a6d19915d4237cb559505bd3e5dcfcf3c" kindref="member">GL_FLOAT</ref>,</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(textVertData),0);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>can<sp/>now<sp/>create<sp/>another<sp/>set<sp/>of<sp/>data<sp/>(which<sp/>will<sp/>be<sp/>added<sp/>to<sp/>the<sp/>VAO)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>this<sp/>case<sp/>the<sp/>UV<sp/>co-ords</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>we<sp/>set<sp/>this<sp/>as<sp/>the<sp/>2nd<sp/>attribute<sp/>pointer<sp/>(1)<sp/>to<sp/>match<sp/>inUV<sp/>in<sp/>the<sp/>shader</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vao-&gt;<ref refid="classngl_1_1_abstract_v_a_o_1aa51d9e09fa5d76cb0868cdff08e94911" kindref="member">setVertexAttributePointer</ref>(1,2,<ref refid="glew_8h_1a6d19915d4237cb559505bd3e5dcfcf3c" kindref="member">GL_FLOAT</ref>,</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(textVertData),2);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>say<sp/>how<sp/>many<sp/>indecis<sp/>to<sp/>be<sp/>rendered</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vao-&gt;<ref refid="classngl_1_1_abstract_v_a_o_1ac3bab1083764b87a06bf658e6b6727a8" kindref="member">setNumIndices</ref>(6);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>unbind</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vao-&gt;<ref refid="classngl_1_1_abstract_v_a_o_1a755b4eb87c240c0c95b292c4762fef04" kindref="member">unbind</ref>();</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>store<sp/>the<sp/>vao<sp/>pointer<sp/>for<sp/>later<sp/>use<sp/>in<sp/>the<sp/>draw<sp/>method</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fc.<ref refid="structngl_1_1_font_char_1ae8a1e2d3e672ee1b79d3e7037e1faa8d" kindref="member">vao</ref><sp/>=vao;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>widthVAO[<ref refid="glew_8h_1aa105b18f96e6bc2485cb7f576a7fb9ba" kindref="member">width</ref>]=vao;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fc.<ref refid="structngl_1_1_font_char_1ae8a1e2d3e672ee1b79d3e7037e1faa8d" kindref="member">vao</ref>=widthVAO[<ref refid="glew_8h_1aa105b18f96e6bc2485cb7f576a7fb9ba" kindref="member">width</ref>];</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>finally<sp/>add<sp/>the<sp/>element<sp/>to<sp/>the<sp/>map,<sp/>this<sp/>must<sp/>be<sp/>the<sp/>last</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>thing<sp/>we<sp/>do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>m_characters[<ref refid="glew_8h_1ae0f40feefa74d9cb1721a009573cfce5" kindref="member">c</ref>]=<ref refid="namespacestd_1a37ba44826afa04fddf20fd70c45ac3b4" kindref="member">std::move</ref>(fc);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;created<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;widthVAO.size()&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>unique<sp/>billboards\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>a<sp/>default<sp/>colour<sp/>(black)<sp/>incase<sp/>user<sp/>forgets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/>this-&gt;setColour(0,0,0);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/>this-&gt;setTransform(1.0,1.0);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="classngl_1_1_text_1a2f7f1ad3b2f8a1ee09dc74556a2de314" refkind="member"><highlight class="normal"><ref refid="classngl_1_1_text_1a2f7f1ad3b2f8a1ee09dc74556a2de314" kindref="member">Text::~Text</ref>()</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>our<sp/>dtor<sp/>should<sp/>clear<sp/>out<sp/>the<sp/>textures<sp/>and<sp/>remove<sp/>the<sp/>VAO&apos;s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;<ref refid="glew_8h_1a11941354c1d09e70ec63bde35fc79d4f" kindref="member">m</ref><sp/>:<sp/>m_characters)</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a2f5eccab2c3938a8c0c141035b4df47c" kindref="member">glDeleteTextures</ref>(1,&amp;<ref refid="glew_8h_1a11941354c1d09e70ec63bde35fc79d4f" kindref="member">m</ref>.textureID);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a11941354c1d09e70ec63bde35fc79d4f" kindref="member">m</ref>.vao-&gt;removeVAO();</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="classngl_1_1_text_1a59aa976f5726b2b69ed95c8a0668c0f2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_text_1a59aa976f5726b2b69ed95c8a0668c0f2" kindref="member">Text::renderText</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_y,<sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;text<sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>make<sp/>sure<sp/>we<sp/>are<sp/>in<sp/>texture<sp/>unit<sp/>0<sp/>as<sp/>this<sp/>is<sp/>what<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>shader<sp/>expects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1af15266b67de988f5ddf442bbbdd1b3fc" kindref="member">glActiveTexture</ref>(<ref refid="glew_8h_1a16cc91096144fc7048b45e2add14915b" kindref="member">GL_TEXTURE0</ref>);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>grab<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>shader<sp/>manager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_shader_lib" kindref="compound">ShaderLib</ref><sp/>*<ref refid="glew_8h_1a57b2a96adb1d51204909a82d861e395e" kindref="member">shader</ref>=<ref refid="classngl_1_1_singleton_1ab5d43c93fdc09ecadc5f6ebfd9460396" kindref="member">ShaderLib::instance</ref>();</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>use<sp/>the<sp/>built<sp/>in<sp/>text<sp/>rendering<sp/>shader</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/>(*shader)[</highlight><highlight class="stringliteral">&quot;nglTextShader&quot;</highlight><highlight class="normal">]-&gt;use();</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>y<sp/>pos<sp/>will<sp/>always<sp/>be<sp/>the<sp/>same<sp/>so<sp/>set<sp/>it<sp/>once<sp/>for<sp/>each</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>string<sp/>we<sp/>are<sp/>rendering</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1a9210462acc20cd79a256a9674ab30692" kindref="member">setRegisteredUniform1f</ref>(</highlight><highlight class="stringliteral">&quot;ypos&quot;</highlight><highlight class="normal">,_y);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>enable<sp/>blending<sp/>and<sp/>disable<sp/>depth<sp/>sorting<sp/>so<sp/>the<sp/>font<sp/>renders</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>correctly</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a1beaf822e5a901dc3fe429b68efb77d4" kindref="member">glEnable</ref>(<ref refid="glew_8h_1aa290e8f9ee6f6862778355aa22bb0b13" kindref="member">GL_BLEND</ref>);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1acfd692f7e3361a218a542300f35ea816" kindref="member">glDisable</ref>(<ref refid="glew_8h_1a4ccf1dc093190cc3798b9abea3655f98" kindref="member">GL_DEPTH_TEST</ref>);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a8e13e72c3a7bac1f4685fcf3d32bf98c" kindref="member">glBlendFunc</ref>(<ref refid="glew_8h_1a51e6c75d54b3a9fb93fbc880463c212c" kindref="member">GL_SRC_ALPHA</ref>,<sp/><ref refid="glew_8h_1aa3926eb5e008f14829baa8d72435215f" kindref="member">GL_ONE_MINUS_SRC_ALPHA</ref>);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>loop<sp/>for<sp/>each<sp/>of<sp/>the<sp/>char<sp/>and<sp/>draw<sp/>our<sp/>billboard</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>textLength=text.length();</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>textLength;<sp/>++i)</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>the<sp/>shader<sp/>x<sp/>position<sp/>this<sp/>will<sp/>change<sp/>each<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>render<sp/>a<sp/>glyph<sp/>by<sp/>the<sp/>width<sp/>of<sp/>the<sp/>char</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1a9210462acc20cd79a256a9674ab30692" kindref="member">setRegisteredUniform1f</ref>(</highlight><highlight class="stringliteral">&quot;xpos&quot;</highlight><highlight class="normal">,_x);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>so<sp/>find<sp/>the<sp/>FontChar<sp/>data<sp/>for<sp/>our<sp/>current<sp/>char</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>FontChar<sp/>f<sp/>=<sp/>m_characters[text[i].toAscii()];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structngl_1_1_font_char" kindref="compound">FontChar</ref><sp/><ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref><sp/>=<sp/>m_characters[text[i].toLatin1()];</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>bind<sp/>the<sp/>pre-generated<sp/>texture</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a940f58f3728713267a58e2d09ff602b2" kindref="member">glBindTexture</ref>(<ref refid="glew_8h_1ad4de17abefa73fa2ef53379f73b734be" kindref="member">GL_TEXTURE_2D</ref>,<sp/>f.<ref refid="structngl_1_1_font_char_1a8dc38f92d2fd50d8432b4e21e54a2d40" kindref="member">textureID</ref>);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>bind<sp/>the<sp/>vao</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>f.<ref refid="structngl_1_1_font_char_1ae8a1e2d3e672ee1b79d3e7037e1faa8d" kindref="member">vao</ref>-&gt;<ref refid="classngl_1_1_abstract_v_a_o_1a32a42493f94df2674c89a90cb25cfa2a" kindref="member">bind</ref>();</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>draw</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>f.<ref refid="structngl_1_1_font_char_1ae8a1e2d3e672ee1b79d3e7037e1faa8d" kindref="member">vao</ref>-&gt;<ref refid="classngl_1_1_abstract_v_a_o_1a0365aa18813979ae23b2854b25c782a5" kindref="member">draw</ref>();</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>unbind<sp/>the<sp/>vao</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>f.<ref refid="structngl_1_1_font_char_1ae8a1e2d3e672ee1b79d3e7037e1faa8d" kindref="member">vao</ref>-&gt;<ref refid="classngl_1_1_abstract_v_a_o_1a755b4eb87c240c0c95b292c4762fef04" kindref="member">unbind</ref>();</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>finally<sp/>move<sp/>to<sp/>the<sp/>next<sp/>glyph<sp/>x<sp/>position<sp/>by<sp/>incrementing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>by<sp/>the<sp/>width<sp/>of<sp/>the<sp/>char<sp/>just<sp/>drawn</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>_x+=f.<ref refid="structngl_1_1_font_char_1aa656d9d10a65e64cf5b17f33344d7fd9" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>finally<sp/>disable<sp/>the<sp/>blend<sp/>and<sp/>re-enable<sp/>depth<sp/>sort</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1acfd692f7e3361a218a542300f35ea816" kindref="member">glDisable</ref>(<ref refid="glew_8h_1aa290e8f9ee6f6862778355aa22bb0b13" kindref="member">GL_BLEND</ref>);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><ref refid="glew_8h_1a1beaf822e5a901dc3fe429b68efb77d4" kindref="member">glEnable</ref>(<ref refid="glew_8h_1a4ccf1dc093190cc3798b9abea3655f98" kindref="member">GL_DEPTH_TEST</ref>);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314" refid="classngl_1_1_text_1af325f6e59eea7727d2476c5d667bb899" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_text_1af325f6e59eea7727d2476c5d667bb899" kindref="member">Text::setScreenSize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_h<sp/>)<sp/>noexcept</highlight></codeline>
+<codeline lineno="315"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scaleX=2.0f/_w;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scaleY=-2.0f/_h;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>shader<sp/>we<sp/>do<sp/>the<sp/>following<sp/>code<sp/>to<sp/>transform<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>x,y<sp/>to<sp/>NDC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>gl_Position=vec4(<sp/>((xpos+inVert.x)*scaleX)-1,((ypos+inVert.y)*scaleY)+1.0,0.0,1.0);<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>so<sp/>all<sp/>we<sp/>need<sp/>to<sp/>do<sp/>is<sp/>calculate<sp/>the<sp/>scale<sp/>above<sp/>and<sp/>pass<sp/>to<sp/>shader<sp/>every<sp/>time<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>screen<sp/>dimensions<sp/>change</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_shader_lib" kindref="compound">ShaderLib</ref><sp/>*<ref refid="glew_8h_1a57b2a96adb1d51204909a82d861e395e" kindref="member">shader</ref>=<ref refid="classngl_1_1_singleton_1ab5d43c93fdc09ecadc5f6ebfd9460396" kindref="member">ShaderLib::instance</ref>();</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/>(*shader)[</highlight><highlight class="stringliteral">&quot;nglTextShader&quot;</highlight><highlight class="normal">]-&gt;use();</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1a9210462acc20cd79a256a9674ab30692" kindref="member">setRegisteredUniform1f</ref>(</highlight><highlight class="stringliteral">&quot;scaleX&quot;</highlight><highlight class="normal">,scaleX);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1a9210462acc20cd79a256a9674ab30692" kindref="member">setRegisteredUniform1f</ref>(</highlight><highlight class="stringliteral">&quot;scaleY&quot;</highlight><highlight class="normal">,scaleY);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="comment">//<sp/>our<sp/>text<sp/>shader<sp/>uses<sp/>the<sp/>alpha<sp/>of<sp/>the<sp/>texture<sp/>to<sp/>modulate<sp/>visibility</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight><highlight class="comment">//<sp/>when<sp/>we<sp/>render<sp/>the<sp/>text<sp/>we<sp/>use<sp/>this<sp/>colour<sp/>passed<sp/>to<sp/>the<sp/>shader</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>is<sp/>default<sp/>to<sp/>black<sp/>but<sp/>this<sp/>will<sp/>change<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>shader<sp/>uses<sp/>the<sp/>following<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight><highlight class="comment">//<sp/>vec4<sp/>text=texture(tex,vertUV.st);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight><highlight class="comment">//<sp/>fragColour.rgb=textColour.rgb;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight><highlight class="comment">//<sp/>fragColour.a=text.a;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340" refid="classngl_1_1_text_1a82485ee4aeec828d207440da74e40993" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_text_1a82485ee4aeec828d207440da74e40993" kindref="member">Text::setColour</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_colour" kindref="compound">Colour</ref><sp/>&amp;_c<sp/>)<sp/>noexcept</highlight></codeline>
+<codeline lineno="341"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>shader<sp/>instance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_shader_lib" kindref="compound">ShaderLib</ref><sp/>*<ref refid="glew_8h_1a57b2a96adb1d51204909a82d861e395e" kindref="member">shader</ref>=<ref refid="classngl_1_1_singleton_1ab5d43c93fdc09ecadc5f6ebfd9460396" kindref="member">ShaderLib::instance</ref>();</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>make<sp/>current<sp/>shader<sp/>active</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/>(*shader)[</highlight><highlight class="stringliteral">&quot;nglTextShader&quot;</highlight><highlight class="normal">]-&gt;use();</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>the<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1aac8e14e81625357cbc5da8659d3709eb" kindref="member">setRegisteredUniform3f</ref>(</highlight><highlight class="stringliteral">&quot;textColour&quot;</highlight><highlight class="normal">,_c.m_r,_c.m_g,_c.m_b);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352" refid="classngl_1_1_text_1a8602c53031c8ce86d44bc9b6a2b67345" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_text_1a82485ee4aeec828d207440da74e40993" kindref="member">Text::setColour</ref>(<ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_r,<sp/><sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_g,<sp/><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref><sp/>_b)<sp/>noexcept</highlight></codeline>
+<codeline lineno="353"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_shader_lib" kindref="compound">ShaderLib</ref><sp/>*<ref refid="glew_8h_1a57b2a96adb1d51204909a82d861e395e" kindref="member">shader</ref>=<ref refid="classngl_1_1_singleton_1ab5d43c93fdc09ecadc5f6ebfd9460396" kindref="member">ShaderLib::instance</ref>();</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/>(*shader)[</highlight><highlight class="stringliteral">&quot;nglTextShader&quot;</highlight><highlight class="normal">]-&gt;use();</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1aac8e14e81625357cbc5da8659d3709eb" kindref="member">setRegisteredUniform3f</ref>(</highlight><highlight class="stringliteral">&quot;textColour&quot;</highlight><highlight class="normal">,_r,_g,_b);</highlight></codeline>
+<codeline lineno="359"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361" refid="classngl_1_1_text_1a0c4cdf067afabdf1b4e111af36c09d87" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classngl_1_1_text_1a0c4cdf067afabdf1b4e111af36c09d87" kindref="member">Text::setTransform</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_y)<sp/>noexcept</highlight></codeline>
+<codeline lineno="362"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><ref refid="classngl_1_1_shader_lib" kindref="compound">ShaderLib</ref><sp/>*<ref refid="glew_8h_1a57b2a96adb1d51204909a82d861e395e" kindref="member">shader</ref>=<ref refid="classngl_1_1_singleton_1ab5d43c93fdc09ecadc5f6ebfd9460396" kindref="member">ShaderLib::instance</ref>();</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/>(*shader)[</highlight><highlight class="stringliteral">&quot;nglTextShader&quot;</highlight><highlight class="normal">]-&gt;use();</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/>shader-&gt;<ref refid="classngl_1_1_shader_lib_1a52eca9f0f6d6566a7f3064d7dd6315fd" kindref="member">setRegisteredUniform2f</ref>(</highlight><highlight class="stringliteral">&quot;transform&quot;</highlight><highlight class="normal">,_x,_y);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal">}<sp/></highlight><highlight class="comment">//end<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/src/Text.cpp"/>
+  </compounddef>
+</doxygen>

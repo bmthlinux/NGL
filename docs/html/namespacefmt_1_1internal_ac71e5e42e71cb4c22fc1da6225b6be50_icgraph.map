@@ -1,0 +1,5 @@
+<map id="fmt::internal::_isnan" name="fmt::internal::_isnan">
+<area shape="rect" id="node2" href="$classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4.html#a89433356fbf5b68eb0c13208a5e3b6b1" title="std::numeric_limits\l\&lt; fmt::internal::DummyInt\l \&gt;::isnotanumber" alt="" coords="192,5,363,61"/>
+<area shape="rect" id="node3" href="$classfmt_1_1_basic_writer.html#aa69a013920916ccc74ca7ac5e971abe7" title="fmt::BasicWriter::write\l_double" alt="" coords="411,13,563,54"/>
+<area shape="rect" id="node4" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#a670214e1773c9c86002be07c043566dd" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_any_double" alt="" coords="611,5,839,61"/>
+</map>

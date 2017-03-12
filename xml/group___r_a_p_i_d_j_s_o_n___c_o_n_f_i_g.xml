@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g" kind="group">
+    <compoundname>RAPIDJSON_CONFIG</compoundname>
+    <title>RapidJSON configuration</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga2f2eef0ee4477f3fe5874703a66e997f" prot="public" static="no">
+        <name>RAPIDJSON_HAS_STDSTRING</name>
+        <briefdescription>
+<para>Enable RapidJSON support for <computeroutput>std::string</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>By defining this preprocessor symbol to <computeroutput>1</computeroutput>, several convenience functions for using rapidjson::GenericValue with <computeroutput>std::string</computeroutput> are enabled, especially for construction and comparison. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="40" column="10"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf1ff1685be6cbebb5d4b2ab997776f45" prot="public" static="no">
+        <name>RAPIDJSON_MAJOR_VERSION</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Major version of RapidJSON in integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" line="70" column="9" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf9125105c593a636a79f1c2d96835376" prot="public" static="no">
+        <name>RAPIDJSON_MINOR_VERSION</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Minor version of RapidJSON in integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" line="71" column="9" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf967d31be43666ce7f53756d73bd1cdf" prot="public" static="no">
+        <name>RAPIDJSON_PATCH_VERSION</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Patch version of RapidJSON in integer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" line="72" column="9" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gad283cfde97d9a32b7d8e8107b11f70a6" prot="public" static="no">
+        <name>RAPIDJSON_VERSION_STRING</name>
+        <initializer>RAPIDJSON_STRINGIFY(<ref refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf967d31be43666ce7f53756d73bd1cdf" kindref="member">RAPIDJSON_MAJOR_VERSION.RAPIDJSON_MINOR_VERSION.RAPIDJSON_PATCH_VERSION</ref>)</initializer>
+        <briefdescription>
+<para>Version of RapidJSON in &quot;&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;&quot; string format. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" line="73" column="9" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga743a79d3af927391fe3eb5c979136899" prot="public" static="no">
+        <name>RAPIDJSON_NAMESPACE</name>
+        <initializer>rapidjson</initializer>
+        <briefdescription>
+<para>provide custom rapidjson namespace </para>        </briefdescription>
+        <detaileddescription>
+<para>In order to avoid symbol clashes and/or &quot;One Definition Rule&quot; errors between multiple inclusions of (different versions of) RapidJSON in a single binary, users can customize the name of the main RapidJSON namespace.</para><para>In case of a single nesting level, defining <computeroutput>RAPIDJSON_NAMESPACE</computeroutput> to a custom name (e.g. <computeroutput>MyRapidJSON</computeroutput>) is sufficient. If multiple levels are needed, both <ref refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gad3806c8251fdc7da9618b7e922674ffc" kindref="member">RAPIDJSON_NAMESPACE_BEGIN</ref> and <ref refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf18f052a98b9f5df5448d39484b743c1" kindref="member">RAPIDJSON_NAMESPACE_END</ref> need to be defined as well:</para><para><programlisting><codeline><highlight class="normal">//<sp/>in<sp/>some<sp/>.cpp<sp/>file</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>RAPIDJSON_NAMESPACE<sp/>my::rapidjson</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>RAPIDJSON_NAMESPACE_BEGIN<sp/>namespace<sp/>my<sp/>{<sp/>namespace<sp/>rapidjson<sp/>{</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>RAPIDJSON_NAMESPACE_END<sp/><sp/><sp/>}<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;rapidjson/...&quot;</highlight></codeline>
+</programlisting></para><para><simplesect kind="see"><para><ref refid="namespacerapidjson" kindref="compound">rapidjson</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" line="113" column="9" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gad3806c8251fdc7da9618b7e922674ffc" prot="public" static="no">
+        <name>RAPIDJSON_NAMESPACE_BEGIN</name>
+        <initializer>namespace <ref refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga743a79d3af927391fe3eb5c979136899" kindref="member">RAPIDJSON_NAMESPACE</ref> {</initializer>
+        <briefdescription>
+<para>provide custom rapidjson namespace (opening expression) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga743a79d3af927391fe3eb5c979136899" kindref="member">RAPIDJSON_NAMESPACE</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" line="116" column="9" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf18f052a98b9f5df5448d39484b743c1" prot="public" static="no">
+        <name>RAPIDJSON_NAMESPACE_END</name>
+        <initializer>}</initializer>
+        <briefdescription>
+<para>provide custom rapidjson namespace (closing expression) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga743a79d3af927391fe3eb5c979136899" kindref="member">RAPIDJSON_NAMESPACE</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" line="119" column="9" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga583915242504c7fdb36e826f02f76242" prot="public" static="no">
+        <name>RAPIDJSON_ALIGN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((<ref refid="glew_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>) + 3u) &amp; ~3u)</initializer>
+        <briefdescription>
+<para>Data alignment of the machine. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to align</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Some machines require strict data alignment. Currently the default uses 4 bytes alignment. User can customize by defining the RAPIDJSON_ALIGN function macro. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" line="247" column="10" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" prot="public" static="no">
+        <name>RAPIDJSON_ASSERT</name>
+        <param><defname>x</defname></param>
+        <initializer>assert(<ref refid="glew_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>)</initializer>
+        <briefdescription>
+<para>Assertion. </para>        </briefdescription>
+        <detaileddescription>
+<para>By default, rapidjson uses C <computeroutput>assert()</computeroutput> for internal assertions. User can override it by defining <ref refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" kindref="member">RAPIDJSON_ASSERT(x)</ref> macro.</para><para><simplesect kind="note"><para>Parsing errors are handled and can be customized by the <ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s" kindref="compound">RapidJSON error handling</ref> APIs. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" line="344" column="10" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Configuration macros for library features. </para>    </briefdescription>
+    <detaileddescription>
+<para>Some RapidJSON features are configurable to adapt the library to a wide variety of platforms, environments and usage scenarios. Most of the features can be configured in terms of overriden or predefined preprocessor macros at compile-time.</para><para>Some additional customization is available in the <ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s" kindref="compound">RapidJSON error handling</ref> APIs.</para><para><simplesect kind="note"><para>These macros should be given on the compiler command-line (where applicable) to avoid inconsistent values when compiling different translation units of a single application. </para></simplesect>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

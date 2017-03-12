@@ -1,0 +1,1114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classngl_1_1_v_a_o_primitives" kind="class" language="C++" prot="public">
+    <compoundname>ngl::VAOPrimitives</compoundname>
+    <basecompoundref refid="classngl_1_1_singleton" prot="public" virt="non-virtual">ngl::Singleton&lt; VAOPrimitives &gt;</basecompoundref>
+    <includes refid="_v_a_o_primitives_8h" local="no">VAOPrimitives.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classngl_1_1_v_a_o_primitives_1a3a6d1ea889f4c2c7be4e2c1991255ed9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Singleton&lt; VAOPrimitives &gt;</definition>
+        <argsstring></argsstring>
+        <name>Singleton&lt; VAOPrimitives &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="51" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classngl_1_1_v_a_o_primitives_1a8ca1f192d1d1cbfd8a56bf53d036c42b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Vec3</definition>
+        <argsstring></argsstring>
+        <name>Vec3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="58" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classngl_1_1_v_a_o_primitives_1a6b0bb15550e505f8b3f90b5cd8b288fc" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>, <ref refid="classngl_1_1_abstract_v_a_o" kindref="compound">AbstractVAO</ref> * &gt;</type>
+        <definition>std::unordered_map&lt;std::string,AbstractVAO *&gt; ngl::VAOPrimitives::m_createdVAOs</definition>
+        <argsstring></argsstring>
+        <name>m_createdVAOs</name>
+        <briefdescription>
+<para>a map to store the VAO by name </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="166" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" bodystart="166" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1a1573d9242ade91af73110704631d2796" compoundref="_v_a_o_primitives_8cpp" startline="42" endline="56">draw</referencedby>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1aec14416905218b50f93e43c8661d7d6b" compoundref="_v_a_o_primitives_8cpp" startline="75" endline="110">createVAOFromHeader</referencedby>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1a9ec8ee427ac69f5dec51792f7014d2af" compoundref="_v_a_o_primitives_8cpp" startline="335" endline="370">createVAO</referencedby>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1ae8172dc1f36de8ac170c8ae6ed30a183" compoundref="_v_a_o_primitives_8cpp" startline="879" endline="894">clear</referencedby>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1a798895728d999c90180e1461618dc525" compoundref="_v_a_o_primitives_8cpp" startline="896" endline="906">getVAOFromName</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1a1573d9242ade91af73110704631d2796" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::VAOPrimitives::draw</definition>
+        <argsstring>(const std::string &amp;_name) noexcept</argsstring>
+        <name>draw</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+<para>Draw one of the VBO&apos;s created via a name lookup. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the VBO to lookup in the VBO map </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="65" column="1" bodyfile="/Users/jmacey/NGL/src/VAOPrimitives.cpp" bodystart="42" bodyend="56"/>
+        <references refid="classngl_1_1_v_a_o_primitives_1a6b0bb15550e505f8b3f90b5cd8b288fc" compoundref="_v_a_o_primitives_8h" startline="166">m_createdVAOs</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1ae4923937d5dfaace1de10d86e6303bd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::VAOPrimitives::draw</definition>
+        <argsstring>(const std::string &amp;_name, GLenum _mode) noexcept</argsstring>
+        <name>draw</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type><ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref></type>
+          <declname>_mode</declname>
+        </param>
+        <briefdescription>
+<para>Draw one of the VBO&apos;s created via a name lookup. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the VBO to lookup in the VBO map </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the draw mode for the VBO override the default </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="71" column="1" bodyfile="/Users/jmacey/NGL/src/VAOPrimitives.cpp" bodystart="58" bodyend="73"/>
+        <references refid="classngl_1_1_v_a_o_primitives_1a6b0bb15550e505f8b3f90b5cd8b288fc" compoundref="_v_a_o_primitives_8h" startline="166">m_createdVAOs</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1aec029e212219801bd87056397be73bf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::VAOPrimitives::createSphere</definition>
+        <argsstring>(const std::string &amp;_name, Real _radius, int _precision) noexcept</argsstring>
+        <name>createSphere</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_radius</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_precision</declname>
+        </param>
+        <briefdescription>
+<para>create a triangulated Sphere as a vbo with auto generated texture cords </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the object created used when drawing </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sphere radius </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_precision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of triange subdivisions to use </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="78" column="1" bodyfile="/Users/jmacey/NGL/src/VAOPrimitives.cpp" bodystart="164" bodyend="225"/>
+        <references refid="classngl_1_1_v_a_o_primitives_1a9ec8ee427ac69f5dec51792f7014d2af" compoundref="_v_a_o_primitives_8cpp" startline="335" endline="370">createVAO</references>
+        <references refid="glew_8h_1ad38e94a1120d6688fce6fc805a5b998d" compoundref="glew_8h" startline="331">GL_TRIANGLE_STRIP</references>
+        <references refid="structngl_1_1vert_data_1afba8d3028732936ed454e6bf4b5f6d40" compoundref="_v_a_o_primitives_8h" startline="46">ngl::vertData::nx</references>
+        <references refid="structngl_1_1vert_data_1a4f787968eba90d2a3a94c626ae629145" compoundref="_v_a_o_primitives_8h" startline="47">ngl::vertData::ny</references>
+        <references refid="structngl_1_1vert_data_1a0dbdb12a34892ff7d19840cb6fd2d533" compoundref="_v_a_o_primitives_8h" startline="48">ngl::vertData::nz</references>
+        <references refid="namespacengl_1a07f8f947f3862ef9b4bc5fe2f6475d6f" compoundref="_util_8h" startline="48">ngl::PI2</references>
+        <references refid="namespacengl_1a71531c7827f8862ebcae8ea2c6482959" compoundref="_util_8h" startline="40">ngl::TWO_PI</references>
+        <references refid="structngl_1_1vert_data_1a66a479fd32442efde47e28ec18022553" compoundref="_v_a_o_primitives_8h" startline="44">ngl::vertData::u</references>
+        <references refid="structngl_1_1vert_data_1a9d7572806540ceef281f8f6315ab5653" compoundref="_v_a_o_primitives_8h" startline="45">ngl::vertData::v</references>
+        <references refid="structngl_1_1vert_data_1ac1215152a4a9fecec3dfc1a909238846" compoundref="_v_a_o_primitives_8h" startline="49">ngl::vertData::x</references>
+        <references refid="structngl_1_1vert_data_1a60e3a8dff115f16e7161f92b49363223" compoundref="_v_a_o_primitives_8h" startline="50">ngl::vertData::y</references>
+        <references refid="structngl_1_1vert_data_1ab3d3f93c93c54321152830ebcd7affcc" compoundref="_v_a_o_primitives_8h" startline="51">ngl::vertData::z</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1a93edc7af7c82934c8a5bc739b7c61665" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::VAOPrimitives::createLineGrid</definition>
+        <argsstring>(const std::string &amp;_name, Real _width, Real _depth, int _steps) noexcept</argsstring>
+        <name>createLineGrid</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_depth</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_steps</declname>
+        </param>
+        <briefdescription>
+<para>create a line based grid (like the maya ground plane) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the object created used when drawing </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of the grid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the depth of the grid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_steps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of steps for the grid </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="86" column="1" bodyfile="/Users/jmacey/NGL/src/VAOPrimitives.cpp" bodystart="112" bodyend="162"/>
+        <references refid="classngl_1_1_v_a_o_primitives_1a9ec8ee427ac69f5dec51792f7014d2af" compoundref="_v_a_o_primitives_8cpp" startline="335" endline="370">createVAO</references>
+        <references refid="glew_8h_1a532ed3612eae8eaed8a7a53ecd7a28f3" compoundref="glew_8h" startline="324">GL_LINES</references>
+        <references refid="structngl_1_1vert_data_1ac1215152a4a9fecec3dfc1a909238846" compoundref="_v_a_o_primitives_8h" startline="49">ngl::vertData::x</references>
+        <references refid="structngl_1_1vert_data_1a60e3a8dff115f16e7161f92b49363223" compoundref="_v_a_o_primitives_8h" startline="50">ngl::vertData::y</references>
+        <references refid="structngl_1_1vert_data_1ab3d3f93c93c54321152830ebcd7affcc" compoundref="_v_a_o_primitives_8h" startline="51">ngl::vertData::z</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1a85f675d14d72f093d4c7afa82155d697" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::VAOPrimitives::createCylinder</definition>
+        <argsstring>(const std::string &amp;_name, const Real _radius, Real _height, unsigned int _slices, unsigned int _stacks) noexcept</argsstring>
+        <name>createCylinder</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_radius</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_height</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_slices</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_stacks</declname>
+        </param>
+        <briefdescription>
+<para>create a Quad Cylinder as a vbo with auto generated texture cords </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the object created used when drawing </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the base radius of the Cylinder </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height of the Cylinder </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_slices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of quad elements around the Cylinder </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_stacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of quad elements along the centeral axis </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="97" column="1" bodyfile="/Users/jmacey/NGL/src/VAOPrimitives.cpp" bodystart="411" bodyend="515"/>
+        <references refid="classngl_1_1_v_a_o_primitives_1a9ec8ee427ac69f5dec51792f7014d2af" compoundref="_v_a_o_primitives_8cpp" startline="335" endline="370">createVAO</references>
+        <references refid="classngl_1_1_v_a_o_primitives_1abe6e3f8f71c274031c8b6e02d943b4af" compoundref="_v_a_o_primitives_8cpp" startline="385" endline="408">fghCircleTable</references>
+        <references refid="glew_8h_1a6079e7a02a59adad65eb953d9482b1ed" compoundref="glew_8h" startline="330">GL_TRIANGLES</references>
+        <references refid="structngl_1_1vert_data_1afba8d3028732936ed454e6bf4b5f6d40" compoundref="_v_a_o_primitives_8h" startline="46">ngl::vertData::nx</references>
+        <references refid="structngl_1_1vert_data_1a4f787968eba90d2a3a94c626ae629145" compoundref="_v_a_o_primitives_8h" startline="47">ngl::vertData::ny</references>
+        <references refid="structngl_1_1vert_data_1a0dbdb12a34892ff7d19840cb6fd2d533" compoundref="_v_a_o_primitives_8h" startline="48">ngl::vertData::nz</references>
+        <references refid="structngl_1_1vert_data_1a66a479fd32442efde47e28ec18022553" compoundref="_v_a_o_primitives_8h" startline="44">ngl::vertData::u</references>
+        <references refid="structngl_1_1vert_data_1a9d7572806540ceef281f8f6315ab5653" compoundref="_v_a_o_primitives_8h" startline="45">ngl::vertData::v</references>
+        <references refid="structngl_1_1vert_data_1ac1215152a4a9fecec3dfc1a909238846" compoundref="_v_a_o_primitives_8h" startline="49">ngl::vertData::x</references>
+        <references refid="structngl_1_1vert_data_1a60e3a8dff115f16e7161f92b49363223" compoundref="_v_a_o_primitives_8h" startline="50">ngl::vertData::y</references>
+        <references refid="structngl_1_1vert_data_1ab3d3f93c93c54321152830ebcd7affcc" compoundref="_v_a_o_primitives_8h" startline="51">ngl::vertData::z</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1a02aa220bc52e3e8b579e4b67bb8344af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::VAOPrimitives::createCone</definition>
+        <argsstring>(const std::string &amp;_name, Real _base, Real _height, unsigned int _slices, unsigned int _stacks) noexcept</argsstring>
+        <name>createCone</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_base</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_height</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_slices</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_stacks</declname>
+        </param>
+        <briefdescription>
+<para>create a Quad Cone as a vao with auto generated texture cords </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the object created used when drawing </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the base radius of the cone </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height of the cone </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_slices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of quad elements around the cone </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_stacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of quad elements along the centeral axis </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="106" column="1" bodyfile="/Users/jmacey/NGL/src/VAOPrimitives.cpp" bodystart="518" bodyend="584"/>
+        <references refid="classngl_1_1_v_a_o_primitives_1a9ec8ee427ac69f5dec51792f7014d2af" compoundref="_v_a_o_primitives_8cpp" startline="335" endline="370">createVAO</references>
+        <references refid="classngl_1_1_v_a_o_primitives_1abe6e3f8f71c274031c8b6e02d943b4af" compoundref="_v_a_o_primitives_8cpp" startline="385" endline="408">fghCircleTable</references>
+        <references refid="glew_8h_1ad38e94a1120d6688fce6fc805a5b998d" compoundref="glew_8h" startline="331">GL_TRIANGLE_STRIP</references>
+        <references refid="structngl_1_1vert_data_1afba8d3028732936ed454e6bf4b5f6d40" compoundref="_v_a_o_primitives_8h" startline="46">ngl::vertData::nx</references>
+        <references refid="structngl_1_1vert_data_1a4f787968eba90d2a3a94c626ae629145" compoundref="_v_a_o_primitives_8h" startline="47">ngl::vertData::ny</references>
+        <references refid="structngl_1_1vert_data_1a0dbdb12a34892ff7d19840cb6fd2d533" compoundref="_v_a_o_primitives_8h" startline="48">ngl::vertData::nz</references>
+        <references refid="structngl_1_1vert_data_1a66a479fd32442efde47e28ec18022553" compoundref="_v_a_o_primitives_8h" startline="44">ngl::vertData::u</references>
+        <references refid="structngl_1_1vert_data_1a9d7572806540ceef281f8f6315ab5653" compoundref="_v_a_o_primitives_8h" startline="45">ngl::vertData::v</references>
+        <references refid="structngl_1_1vert_data_1ac1215152a4a9fecec3dfc1a909238846" compoundref="_v_a_o_primitives_8h" startline="49">ngl::vertData::x</references>
+        <references refid="structngl_1_1vert_data_1a60e3a8dff115f16e7161f92b49363223" compoundref="_v_a_o_primitives_8h" startline="50">ngl::vertData::y</references>
+        <references refid="structngl_1_1vert_data_1ab3d3f93c93c54321152830ebcd7affcc" compoundref="_v_a_o_primitives_8h" startline="51">ngl::vertData::z</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1a0803af36b2a375a3367d4521ab16a7fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::VAOPrimitives::createDisk</definition>
+        <argsstring>(const std::string &amp;_name, Real _radius, unsigned int _slices) noexcept</argsstring>
+        <name>createDisk</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_radius</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_slices</declname>
+        </param>
+        <briefdescription>
+<para>create a trinagle fan disk (use as end caps for Cylinder etc) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the object created used when drawing </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the disk radius </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_slices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of triangles to form the disk </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="113" column="1" bodyfile="/Users/jmacey/NGL/src/VAOPrimitives.cpp" bodystart="587" bodyend="630"/>
+        <references refid="classngl_1_1_v_a_o_primitives_1a9ec8ee427ac69f5dec51792f7014d2af" compoundref="_v_a_o_primitives_8cpp" startline="335" endline="370">createVAO</references>
+        <references refid="classngl_1_1_v_a_o_primitives_1abe6e3f8f71c274031c8b6e02d943b4af" compoundref="_v_a_o_primitives_8cpp" startline="385" endline="408">fghCircleTable</references>
+        <references refid="glew_8h_1a425f188c2bed5dc37bb2b5434388caa9" compoundref="glew_8h" startline="332">GL_TRIANGLE_FAN</references>
+        <references refid="structngl_1_1vert_data_1afba8d3028732936ed454e6bf4b5f6d40" compoundref="_v_a_o_primitives_8h" startline="46">ngl::vertData::nx</references>
+        <references refid="structngl_1_1vert_data_1a4f787968eba90d2a3a94c626ae629145" compoundref="_v_a_o_primitives_8h" startline="47">ngl::vertData::ny</references>
+        <references refid="structngl_1_1vert_data_1a0dbdb12a34892ff7d19840cb6fd2d533" compoundref="_v_a_o_primitives_8h" startline="48">ngl::vertData::nz</references>
+        <references refid="structngl_1_1vert_data_1a66a479fd32442efde47e28ec18022553" compoundref="_v_a_o_primitives_8h" startline="44">ngl::vertData::u</references>
+        <references refid="structngl_1_1vert_data_1a9d7572806540ceef281f8f6315ab5653" compoundref="_v_a_o_primitives_8h" startline="45">ngl::vertData::v</references>
+        <references refid="structngl_1_1vert_data_1ac1215152a4a9fecec3dfc1a909238846" compoundref="_v_a_o_primitives_8h" startline="49">ngl::vertData::x</references>
+        <references refid="structngl_1_1vert_data_1a60e3a8dff115f16e7161f92b49363223" compoundref="_v_a_o_primitives_8h" startline="50">ngl::vertData::y</references>
+        <references refid="structngl_1_1vert_data_1ab3d3f93c93c54321152830ebcd7affcc" compoundref="_v_a_o_primitives_8h" startline="51">ngl::vertData::z</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1a94653d949fb7c0a665e112fd7330df24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::VAOPrimitives::createTorus</definition>
+        <argsstring>(const std::string &amp;_name, Real _minorRadius, Real _majorRadius, unsigned int _nSides, unsigned int _nRings, bool _flipTX=false) noexcept</argsstring>
+        <name>createTorus</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_minorRadius</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_majorRadius</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_nSides</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_nRings</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_flipTX</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>create a VBO based torus from rings of quads. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the VBO created for calling with the draw method </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_minorRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the inner radius of the torus </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_majorRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the outer radius of the torus. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_nSides</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the precision (number of quads) for the majorRadius </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_nRings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the precision (number of quads) for the minor Radius </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_flipTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flip the texture co-ord generation default false. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="123" column="1" bodyfile="/Users/jmacey/NGL/src/VAOPrimitives.cpp" bodystart="634" bodyend="795"/>
+        <references refid="classngl_1_1_v_a_o_primitives_1a9ec8ee427ac69f5dec51792f7014d2af" compoundref="_v_a_o_primitives_8cpp" startline="335" endline="370">createVAO</references>
+        <references refid="glew_8h_1a6079e7a02a59adad65eb953d9482b1ed" compoundref="glew_8h" startline="330">GL_TRIANGLES</references>
+        <references refid="structngl_1_1vert_data_1afba8d3028732936ed454e6bf4b5f6d40" compoundref="_v_a_o_primitives_8h" startline="46">ngl::vertData::nx</references>
+        <references refid="structngl_1_1vert_data_1a4f787968eba90d2a3a94c626ae629145" compoundref="_v_a_o_primitives_8h" startline="47">ngl::vertData::ny</references>
+        <references refid="structngl_1_1vert_data_1a0dbdb12a34892ff7d19840cb6fd2d533" compoundref="_v_a_o_primitives_8h" startline="48">ngl::vertData::nz</references>
+        <references refid="structngl_1_1vert_data_1a66a479fd32442efde47e28ec18022553" compoundref="_v_a_o_primitives_8h" startline="44">ngl::vertData::u</references>
+        <references refid="structngl_1_1vert_data_1a9d7572806540ceef281f8f6315ab5653" compoundref="_v_a_o_primitives_8h" startline="45">ngl::vertData::v</references>
+        <references refid="structngl_1_1vert_data_1ac1215152a4a9fecec3dfc1a909238846" compoundref="_v_a_o_primitives_8h" startline="49">ngl::vertData::x</references>
+        <references refid="structngl_1_1vert_data_1a60e3a8dff115f16e7161f92b49363223" compoundref="_v_a_o_primitives_8h" startline="50">ngl::vertData::y</references>
+        <references refid="structngl_1_1vert_data_1ab3d3f93c93c54321152830ebcd7affcc" compoundref="_v_a_o_primitives_8h" startline="51">ngl::vertData::z</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1ab3742cc5bbc1fee5f7982410911a46b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::VAOPrimitives::createTrianglePlane</definition>
+        <argsstring>(const std::string &amp;_name, const Real _width, const Real _depth, const int _wP, const int _dP, const Vec3 &amp;_vN) noexcept</argsstring>
+        <name>createTrianglePlane</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_depth</declname>
+        </param>
+        <param>
+          <type>const <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_wP</declname>
+        </param>
+        <param>
+          <type>const <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_dP</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classngl_1_1_vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>_vN</declname>
+        </param>
+        <briefdescription>
+<para>create a triangulated plane as a vbo with auto generated texture cords </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the object created used when drawing </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the width of the plane based on the center of the plane being at 0,0,0 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height of the plane based on the center of the plane being at 0,0,0 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_wP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the precision of the width, this is basically the steps (per quad) which will be triangulated for each (wP == 1 will give 1 quad mad of 2 tris) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_dP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the precision of the Depth, this is basically the steps (per quad) which will be triangulated for each (wP == 1 will give 1 quad mad of 2 tris) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_vN</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Vertex normal (used for each vertex) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="135" column="1" bodyfile="/Users/jmacey/NGL/src/VAOPrimitives.cpp" bodystart="798" bodyend="875"/>
+        <references refid="classngl_1_1_v_a_o_primitives_1a9ec8ee427ac69f5dec51792f7014d2af" compoundref="_v_a_o_primitives_8cpp" startline="335" endline="370">createVAO</references>
+        <references refid="glew_8h_1a6079e7a02a59adad65eb953d9482b1ed" compoundref="glew_8h" startline="330">GL_TRIANGLES</references>
+        <references refid="structngl_1_1vert_data_1afba8d3028732936ed454e6bf4b5f6d40" compoundref="_v_a_o_primitives_8h" startline="46">ngl::vertData::nx</references>
+        <references refid="structngl_1_1vert_data_1a4f787968eba90d2a3a94c626ae629145" compoundref="_v_a_o_primitives_8h" startline="47">ngl::vertData::ny</references>
+        <references refid="structngl_1_1vert_data_1a0dbdb12a34892ff7d19840cb6fd2d533" compoundref="_v_a_o_primitives_8h" startline="48">ngl::vertData::nz</references>
+        <references refid="structngl_1_1vert_data_1a66a479fd32442efde47e28ec18022553" compoundref="_v_a_o_primitives_8h" startline="44">ngl::vertData::u</references>
+        <references refid="structngl_1_1vert_data_1a9d7572806540ceef281f8f6315ab5653" compoundref="_v_a_o_primitives_8h" startline="45">ngl::vertData::v</references>
+        <references refid="structngl_1_1vert_data_1ac1215152a4a9fecec3dfc1a909238846" compoundref="_v_a_o_primitives_8h" startline="49">ngl::vertData::x</references>
+        <references refid="structngl_1_1vert_data_1a60e3a8dff115f16e7161f92b49363223" compoundref="_v_a_o_primitives_8h" startline="50">ngl::vertData::y</references>
+        <references refid="structngl_1_1vert_data_1ab3d3f93c93c54321152830ebcd7affcc" compoundref="_v_a_o_primitives_8h" startline="51">ngl::vertData::z</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1a3333662d6d2f7f017e3d6cad45cb44c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::VAOPrimitives::createCapsule</definition>
+        <argsstring>(const std::string &amp;_name, const Real _radius=1.0f, const Real _height=2.0f, const int _precision=20) noexcept</argsstring>
+        <name>createCapsule</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_radius</declname>
+          <defval>1.0f</defval>
+        </param>
+        <param>
+          <type>const <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref></type>
+          <declname>_height</declname>
+          <defval>2.0f</defval>
+        </param>
+        <param>
+          <type>const <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_precision</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+<para>create a triangulated capsule (Cylinder with spherical ends) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the object created used when drawing </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the radius of the capsule </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height of the capsule </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_precision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the precision of the tri mesh created (number of steps) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="todo_1_todo000009"><xreftitle>Todo</xreftitle><xrefdescription><para>add UV&apos;s at some stage </para></xrefdescription></xrefsect></para>        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="145" column="1" bodyfile="/Users/jmacey/NGL/src/VAOPrimitives.cpp" bodystart="228" bodyend="333"/>
+        <references refid="classngl_1_1_v_a_o_primitives_1a9ec8ee427ac69f5dec51792f7014d2af" compoundref="_v_a_o_primitives_8cpp" startline="335" endline="370">createVAO</references>
+        <references refid="glew_8h_1a6079e7a02a59adad65eb953d9482b1ed" compoundref="glew_8h" startline="330">GL_TRIANGLES</references>
+        <references refid="structngl_1_1vert_data_1afba8d3028732936ed454e6bf4b5f6d40" compoundref="_v_a_o_primitives_8h" startline="46">ngl::vertData::nx</references>
+        <references refid="structngl_1_1vert_data_1a4f787968eba90d2a3a94c626ae629145" compoundref="_v_a_o_primitives_8h" startline="47">ngl::vertData::ny</references>
+        <references refid="structngl_1_1vert_data_1a0dbdb12a34892ff7d19840cb6fd2d533" compoundref="_v_a_o_primitives_8h" startline="48">ngl::vertData::nz</references>
+        <references refid="structngl_1_1vert_data_1ac1215152a4a9fecec3dfc1a909238846" compoundref="_v_a_o_primitives_8h" startline="49">ngl::vertData::x</references>
+        <references refid="structngl_1_1vert_data_1a60e3a8dff115f16e7161f92b49363223" compoundref="_v_a_o_primitives_8h" startline="50">ngl::vertData::y</references>
+        <references refid="structngl_1_1vert_data_1ab3d3f93c93c54321152830ebcd7affcc" compoundref="_v_a_o_primitives_8h" startline="51">ngl::vertData::z</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1a6272b830d4dd3f67f01c3b557f21cb2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::VAOPrimitives::loadBinary</definition>
+        <argsstring>(const std::string &amp;_name, const std::string &amp;_fName, const GLenum _type) noexcept</argsstring>
+        <name>loadBinary</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_fName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref></type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+<para>load a VBO from a binary file created from Obj2VBO program </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the VBO to be stored as ref to this object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_fName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the file to load. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the draw mode type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="153" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1ae8172dc1f36de8ac170c8ae6ed30a183" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::VAOPrimitives::clear</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>clear the VAO elements created (is also called by dtor) This is usefull if you don&apos;t want the default primitives </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="158" column="1" bodyfile="/Users/jmacey/NGL/src/VAOPrimitives.cpp" bodystart="879" bodyend="894"/>
+        <references refid="classngl_1_1_v_a_o_primitives_1a6b0bb15550e505f8b3f90b5cd8b288fc" compoundref="_v_a_o_primitives_8h" startline="166">m_createdVAOs</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1a798895728d999c90180e1461618dc525" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classngl_1_1_abstract_v_a_o" kindref="compound">AbstractVAO</ref> *</type>
+        <definition>AbstractVAO * ngl::VAOPrimitives::getVAOFromName</definition>
+        <argsstring>(const std::string &amp;_name)</argsstring>
+        <name>getVAOFromName</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+<para>get the raw VAO so we can map it etc </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="160" column="1" bodyfile="/Users/jmacey/NGL/src/VAOPrimitives.cpp" bodystart="896" bodyend="906"/>
+        <references refid="classngl_1_1_v_a_o_primitives_1a6b0bb15550e505f8b3f90b5cd8b288fc" compoundref="_v_a_o_primitives_8h" startline="166">m_createdVAOs</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1ae1e0ef82aeb224aa7f91e49685fab722" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ngl::VAOPrimitives::VAOPrimitives</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>VAOPrimitives</name>
+        <briefdescription>
+<para>default constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="171" column="1" bodyfile="/Users/jmacey/NGL/src/VAOPrimitives.cpp" bodystart="34" bodyend="37"/>
+        <references refid="classngl_1_1_v_a_o_primitives_1a281188edfc487d7072b40ca3871964f2" compoundref="create_default_v_a_os_8cpp" startline="14" endline="35">createDefaultVAOs</references>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1a436345c07e0b705d2990b60744749ac7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ngl::VAOPrimitives::~VAOPrimitives</definition>
+        <argsstring>()</argsstring>
+        <name>~VAOPrimitives</name>
+        <briefdescription>
+<para>dtor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="175" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" bodystart="175" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1aec14416905218b50f93e43c8661d7d6b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::VAOPrimitives::createVAOFromHeader</definition>
+        <argsstring>(const std::string &amp;_name, Real const *_data, unsigned int _Size) noexcept</argsstring>
+        <name>createVAOFromHeader</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref> const *</type>
+          <declname>_data</declname>
+        </param>
+        <param>
+          <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_Size</declname>
+        </param>
+        <briefdescription>
+<para>create a VAO from a static header file of data in the TNV format this will usually be created from the Obj2VBO program in the Models directory </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name reference for the VBO lookup </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the data to load </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_Size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size of the array of data to load </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="183" column="1" bodyfile="/Users/jmacey/NGL/src/VAOPrimitives.cpp" bodystart="75" bodyend="110"/>
+        <references refid="classngl_1_1_abstract_v_a_o_1a32a42493f94df2674c89a90cb25cfa2a" compoundref="_abstract_v_a_o_8cpp" startline="23" endline="27">ngl::AbstractVAO::bind</references>
+        <references refid="classngl_1_1_v_a_o_factory_1adee5532df7151fab8e8db0e9ebf94305" compoundref="_v_a_o_factory_8cpp" startline="19" endline="29">ngl::VAOFactory::createVAO</references>
+        <references refid="glew_8h_1a6d19915d4237cb559505bd3e5dcfcf3c" compoundref="glew_8h" startline="642">GL_FLOAT</references>
+        <references refid="glew_8h_1a6079e7a02a59adad65eb953d9482b1ed" compoundref="glew_8h" startline="330">GL_TRIANGLES</references>
+        <references refid="classngl_1_1_v_a_o_primitives_1a6b0bb15550e505f8b3f90b5cd8b288fc" compoundref="_v_a_o_primitives_8h" startline="166">m_createdVAOs</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1aeeabb8d7a3be60a6814d1c44cb52f27a">ngl::AbstractVAO::setData</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1ac3bab1083764b87a06bf658e6b6727a8" compoundref="_abstract_v_a_o_8h" startline="91" endline="91">ngl::AbstractVAO::setNumIndices</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1aa51d9e09fa5d76cb0868cdff08e94911" compoundref="_abstract_v_a_o_8cpp" startline="36" endline="45">ngl::AbstractVAO::setVertexAttributePointer</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1a755b4eb87c240c0c95b292c4762fef04" compoundref="_abstract_v_a_o_8cpp" startline="29" endline="33">ngl::AbstractVAO::unbind</references>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1a281188edfc487d7072b40ca3871964f2" compoundref="create_default_v_a_os_8cpp" startline="14" endline="35">createDefaultVAOs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1a281188edfc487d7072b40ca3871964f2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::VAOPrimitives::createDefaultVAOs</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>createDefaultVAOs</name>
+        <briefdescription>
+<para>create the default VAO&apos;s this is done by the ctor anyway but can be called if the clear method is called. Note you will need to incude VAOHeaders in the client side </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para><simplesect kind="note"><para>these data sets are huge and compilation takes a long time hence only enable if needed </para></simplesect>
+</para>        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="189" column="1" bodyfile="/Users/jmacey/NGL/src/createDefaultVAOs.cpp" bodystart="14" bodyend="35"/>
+        <references refid="namespacengl_1a4f56c986d594a3ba00636067fde68660" compoundref="_buddah_8h" startline="27">ngl::buddah</references>
+        <references refid="namespacengl_1a408072921324db81dcf15f5b276f9b96" compoundref="_buddah_8h" startline="26">ngl::buddahSIZE</references>
+        <references refid="namespacengl_1aa63b83fdad485c3cf4659793afc5e952" compoundref="_bunny_8h" startline="27">ngl::bunny</references>
+        <references refid="namespacengl_1afb9929b0df1d77f6ece12616771db585" compoundref="_bunny_8h" startline="26">ngl::bunnySIZE</references>
+        <references refid="classngl_1_1_v_a_o_primitives_1aec14416905218b50f93e43c8661d7d6b" compoundref="_v_a_o_primitives_8cpp" startline="75" endline="110">createVAOFromHeader</references>
+        <references refid="namespacengl_1aa57275b8cd7018968711369e707c4d48" compoundref="_cube_8h" startline="29">ngl::cube</references>
+        <references refid="namespacengl_1a02ddaf7fe5717c580f2abff2e279cbbb" compoundref="_cube_8h" startline="27">ngl::cubeSIZE</references>
+        <references refid="namespacengl_1a2b7856a84338c1f9c0bf352a1105db94" compoundref="_dodecahedron_8h" startline="27">ngl::dodecahedron</references>
+        <references refid="namespacengl_1a74b87db4dcf59ff75ef530fbf065349e" compoundref="_dodecahedron_8h" startline="26">ngl::dodecahedronSIZE</references>
+        <references refid="namespacengl_1ab1d28b3e4be5d10e28c5b8bae337c969" compoundref="_dragon_8h" startline="29">ngl::dragon</references>
+        <references refid="namespacengl_1a1cab5012385fb567b92c73d1891d291f" compoundref="_dragon_8h" startline="27">ngl::dragonSIZE</references>
+        <references refid="namespacengl_1ab4b713f48fb628df3f8b848fbbc36570" compoundref="_football_8h" startline="27">ngl::football</references>
+        <references refid="namespacengl_1a36d623b8465bf0a1d61be7f06cc6a5d5" compoundref="_football_8h" startline="26">ngl::footballSIZE</references>
+        <references refid="namespacengl_1a5e9b6fcefa2d59457f18296b7de64f9d" compoundref="_icosahedron_8h" startline="27">ngl::icosahedron</references>
+        <references refid="namespacengl_1a0879f82683ca79e25adf4e80ef3f90ee" compoundref="_icosahedron_8h" startline="26">ngl::icosahedronSIZE</references>
+        <references refid="namespacengl_1a12aa45956de115c63448e0990a8764cc" compoundref="_octahedron_8h" startline="28">ngl::Octahedron</references>
+        <references refid="namespacengl_1a67d35406f2905a22b26ae748fafa2d33" compoundref="_octahedron_8h" startline="27">ngl::OctahedronSIZE</references>
+        <references refid="namespacengl_1a35496943ca9c61d27052db07c1786b85" compoundref="_teapot_8h" startline="29">ngl::teapot</references>
+        <references refid="namespacengl_1a02b7cf5fe3a93004481703bdb1e5bf7c" compoundref="_teapot_8h" startline="28">ngl::teapotSIZE</references>
+        <references refid="_tetrahedron_8h_1a7cb3a5c2ed0775cfb6b8ddb406ac4c30" compoundref="_tetrahedron_8h" startline="27">tetrahedron</references>
+        <references refid="_tetrahedron_8h_1a3bcd95344be88a5414971440f6cafa83" compoundref="_tetrahedron_8h" startline="26">tetrahedronSIZE</references>
+        <references refid="namespacengl_1a6d4035490be5b22cfccb1c098aa14b51" compoundref="_troll_8h" startline="27">ngl::troll</references>
+        <references refid="namespacengl_1a45c60d0ae3483d366f9db1a586cacba3" compoundref="_troll_8h" startline="26">ngl::trollSIZE</references>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1ae1e0ef82aeb224aa7f91e49685fab722" compoundref="_v_a_o_primitives_8cpp" startline="34" endline="37">VAOPrimitives</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1a9ec8ee427ac69f5dec51792f7014d2af" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::VAOPrimitives::createVAO</definition>
+        <argsstring>(const std::string &amp;_name, const std::vector&lt; vertData &gt; &amp;_data, const GLenum _mode) noexcept</argsstring>
+        <name>createVAO</name>
+        <param>
+          <type>const <ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="structngl_1_1vert_data" kindref="compound">vertData</ref> &gt; &amp;</type>
+          <declname>_data</declname>
+        </param>
+        <param>
+          <type>const <ref refid="glew_8h_1a5d5233918a454ad3975c620a69ac5f0b" kindref="member">GLenum</ref></type>
+          <declname>_mode</declname>
+        </param>
+        <briefdescription>
+<para>the method to actually create the VAO from the various other methods Note this is used in conjunction with the <ref refid="structngl_1_1vert_data" kindref="compound">vertData</ref> struct </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name to store in the map of the VBO </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the raw data packed into the <ref refid="structngl_1_1vert_data" kindref="compound">vertData</ref> structure </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the mode to draw </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="197" column="1" bodyfile="/Users/jmacey/NGL/src/VAOPrimitives.cpp" bodystart="335" bodyend="370"/>
+        <references refid="classngl_1_1_abstract_v_a_o_1a32a42493f94df2674c89a90cb25cfa2a" compoundref="_abstract_v_a_o_8cpp" startline="23" endline="27">ngl::AbstractVAO::bind</references>
+        <references refid="classngl_1_1_v_a_o_factory_1adee5532df7151fab8e8db0e9ebf94305" compoundref="_v_a_o_factory_8cpp" startline="19" endline="29">ngl::VAOFactory::createVAO</references>
+        <references refid="glew_8h_1a6d19915d4237cb559505bd3e5dcfcf3c" compoundref="glew_8h" startline="642">GL_FLOAT</references>
+        <references refid="classngl_1_1_v_a_o_primitives_1a6b0bb15550e505f8b3f90b5cd8b288fc" compoundref="_v_a_o_primitives_8h" startline="166">m_createdVAOs</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1aeeabb8d7a3be60a6814d1c44cb52f27a">ngl::AbstractVAO::setData</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1ac3bab1083764b87a06bf658e6b6727a8" compoundref="_abstract_v_a_o_8h" startline="91" endline="91">ngl::AbstractVAO::setNumIndices</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1aa51d9e09fa5d76cb0868cdff08e94911" compoundref="_abstract_v_a_o_8cpp" startline="36" endline="45">ngl::AbstractVAO::setVertexAttributePointer</references>
+        <references refid="classngl_1_1_abstract_v_a_o_1a755b4eb87c240c0c95b292c4762fef04" compoundref="_abstract_v_a_o_8cpp" startline="29" endline="33">ngl::AbstractVAO::unbind</references>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1a93edc7af7c82934c8a5bc739b7c61665" compoundref="_v_a_o_primitives_8cpp" startline="112" endline="162">createLineGrid</referencedby>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1aec029e212219801bd87056397be73bf8" compoundref="_v_a_o_primitives_8cpp" startline="164" endline="225">createSphere</referencedby>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1a3333662d6d2f7f017e3d6cad45cb44c7" compoundref="_v_a_o_primitives_8cpp" startline="228" endline="333">createCapsule</referencedby>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1a85f675d14d72f093d4c7afa82155d697" compoundref="_v_a_o_primitives_8cpp" startline="411" endline="515">createCylinder</referencedby>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1a02aa220bc52e3e8b579e4b67bb8344af" compoundref="_v_a_o_primitives_8cpp" startline="518" endline="584">createCone</referencedby>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1a0803af36b2a375a3367d4521ab16a7fe" compoundref="_v_a_o_primitives_8cpp" startline="587" endline="630">createDisk</referencedby>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1a94653d949fb7c0a665e112fd7330df24" compoundref="_v_a_o_primitives_8cpp" startline="634" endline="795">createTorus</referencedby>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1ab3742cc5bbc1fee5f7982410911a46b6" compoundref="_v_a_o_primitives_8cpp" startline="798" endline="875">createTrianglePlane</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classngl_1_1_v_a_o_primitives_1abe6e3f8f71c274031c8b6e02d943b4af" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void ngl::VAOPrimitives::fghCircleTable</definition>
+        <argsstring>(std::unique_ptr&lt; Real[]&gt; &amp;io_sint, std::unique_ptr&lt; Real[]&gt; &amp;io_cost, int _n) noexcept</argsstring>
+        <name>fghCircleTable</name>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref>[]&gt; &amp;</type>
+          <declname>io_sint</declname>
+        </param>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="namespacengl_1a5875636a29b76a7bd09b3b52994455a2" kindref="member">Real</ref>[]&gt; &amp;</type>
+          <declname>io_cost</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>_n</declname>
+        </param>
+        <briefdescription>
+<para>create the elements of a circle this is borrowed from freeglut </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">io_sint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the sin elements of the table </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">io_cost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the cos element of the table </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">_n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of points to calculate. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="204" column="1" bodyfile="/Users/jmacey/NGL/src/VAOPrimitives.cpp" bodystart="385" bodyend="408"/>
+        <references refid="namespacengl_1ac74a8dda10c511eec4455e21a24d4eee" compoundref="_util_8h" startline="44">ngl::PI</references>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1a85f675d14d72f093d4c7afa82155d697" compoundref="_v_a_o_primitives_8cpp" startline="411" endline="515">createCylinder</referencedby>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1a02aa220bc52e3e8b579e4b67bb8344af" compoundref="_v_a_o_primitives_8cpp" startline="518" endline="584">createCone</referencedby>
+        <referencedby refid="classngl_1_1_v_a_o_primitives_1a0803af36b2a375a3367d4521ab16a7fe" compoundref="_v_a_o_primitives_8cpp" startline="587" endline="630">createDisk</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>VAO based object primitives used for fast openGL drawing this is a singelton class so we use the instance method to get access and construct the only instance. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Jonathan Macey </para></simplesect>
+<simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="date"><para>Last Revision 20/06/11 created and removed VBO class </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2042">
+        <label>ngl::VAOPrimitives</label>
+        <link refid="classngl_1_1_v_a_o_primitives"/>
+        <childnode refid="2043" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2044">
+        <label>ngl::Singleton&lt; T &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+      </node>
+      <node id="2043">
+        <label>ngl::Singleton&lt; VAOPrimitives &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+        <childnode refid="2044" relation="template-instance">
+          <edgelabel>&lt; VAOPrimitives &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2048">
+        <label>T</label>
+      </node>
+      <node id="2045">
+        <label>ngl::VAOPrimitives</label>
+        <link refid="classngl_1_1_v_a_o_primitives"/>
+        <childnode refid="2046" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2047">
+        <label>ngl::Singleton&lt; T &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+        <childnode refid="2048" relation="usage">
+          <edgelabel>#s_instance</edgelabel>
+        </childnode>
+      </node>
+      <node id="2046">
+        <label>ngl::Singleton&lt; VAOPrimitives &gt;</label>
+        <link refid="classngl_1_1_singleton"/>
+        <childnode refid="2045" relation="usage">
+          <edgelabel>#s_instance</edgelabel>
+        </childnode>
+        <childnode refid="2047" relation="template-instance">
+          <edgelabel>&lt; VAOPrimitives &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" line="55" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/VAOPrimitives.h" bodystart="54" bodyend="206"/>
+    <listofallmembers>
+      <member refid="classngl_1_1_v_a_o_primitives_1ae8172dc1f36de8ac170c8ae6ed30a183" prot="public" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>clear</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1a3333662d6d2f7f017e3d6cad45cb44c7" prot="public" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>createCapsule</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1a02aa220bc52e3e8b579e4b67bb8344af" prot="public" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>createCone</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1a85f675d14d72f093d4c7afa82155d697" prot="public" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>createCylinder</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1a281188edfc487d7072b40ca3871964f2" prot="private" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>createDefaultVAOs</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1a0803af36b2a375a3367d4521ab16a7fe" prot="public" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>createDisk</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1a93edc7af7c82934c8a5bc739b7c61665" prot="public" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>createLineGrid</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1aec029e212219801bd87056397be73bf8" prot="public" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>createSphere</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1a94653d949fb7c0a665e112fd7330df24" prot="public" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>createTorus</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1ab3742cc5bbc1fee5f7982410911a46b6" prot="public" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>createTrianglePlane</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1a9ec8ee427ac69f5dec51792f7014d2af" prot="private" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>createVAO</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1aec14416905218b50f93e43c8661d7d6b" prot="private" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>createVAOFromHeader</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1a1573d9242ade91af73110704631d2796" prot="public" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>draw</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1ae4923937d5dfaace1de10d86e6303bd0" prot="public" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>draw</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1abe6e3f8f71c274031c8b6e02d943b4af" prot="private" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>fghCircleTable</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1a798895728d999c90180e1461618dc525" prot="public" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>getVAOFromName</name></member>
+      <member refid="classngl_1_1_singleton_1ab5d43c93fdc09ecadc5f6ebfd9460396" prot="public" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>instance</name></member>
+      <member refid="classngl_1_1_singleton_1a68355e8cd8b6a575b29e11e05584b75d" prot="protected" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>killSingleton</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1a6272b830d4dd3f67f01c3b557f21cb2b" prot="public" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>loadBinary</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1a6b0bb15550e505f8b3f90b5cd8b288fc" prot="private" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>m_createdVAOs</name></member>
+      <member refid="classngl_1_1_singleton_1a9cc1ea7cc82996782d48c50877157543" prot="public" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>operator=</name></member>
+      <member refid="classngl_1_1_singleton_1a7fd779d31c1d8d44153ccbec0a181ac3" prot="protected" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>s_instance</name></member>
+      <member refid="classngl_1_1_singleton_1ad6341f60af3e395419484ba3108f73d8" prot="public" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>Singleton</name></member>
+      <member refid="classngl_1_1_singleton_1ae55278fc5cc669ddb9da4f7e3d8ae7a8" prot="protected" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>Singleton</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1a3a6d1ea889f4c2c7be4e2c1991255ed9" prot="private" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>Singleton&lt; VAOPrimitives &gt;</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1ae1e0ef82aeb224aa7f91e49685fab722" prot="private" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>VAOPrimitives</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1a8ca1f192d1d1cbfd8a56bf53d036c42b" prot="private" virt="non-virtual"><scope>ngl::VAOPrimitives</scope><name>Vec3</name></member>
+      <member refid="classngl_1_1_singleton_1a4b66d1c7d1f91f12a5ac2a428a3ff1c0" prot="protected" virt="virtual"><scope>ngl::VAOPrimitives</scope><name>~Singleton</name></member>
+      <member refid="classngl_1_1_v_a_o_primitives_1a436345c07e0b705d2990b60744749ac7" prot="private" virt="virtual"><scope>ngl::VAOPrimitives</scope><name>~VAOPrimitives</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,7 @@
+<map id="fmt::internal::FormatBuf::overflow" name="fmt::internal::FormatBuf::overflow">
+<area shape="rect" id="node2" href="$classfmt_1_1_buffer.html#a7f46a3ce8d86abe35904f6654bd4ea1e" title="fmt::Buffer::reserve" alt="" coords="229,5,365,32"/>
+<area shape="rect" id="node3" href="$classfmt_1_1_buffer.html#a20f893164dc20e8ea8c77810d4ea8d59" title="fmt::Buffer::resize" alt="" coords="234,56,361,83"/>
+<area shape="rect" id="node4" href="$classfmt_1_1internal_1_1_format_buf.html#a37d9219b491e9f05f22334b60cf41c5f" title="fmt::internal::FormatBuf\l::size" alt="" coords="217,107,378,149"/>
+<area shape="rect" id="node5" href="$namespacefmt_1_1internal.html#a28bed1291226be35437bc3173c19c205" title="fmt::internal::to_unsigned" alt="" coords="427,89,599,116"/>
+<area shape="rect" id="node6" href="$namespacefmt_1_1internal.html#aedce4aeaa89239024c67c7682cff3370" title="fmt::internal::convert" alt="" coords="442,140,585,167"/>
+</map>

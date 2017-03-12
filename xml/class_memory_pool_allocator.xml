@@ -1,0 +1,467 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_memory_pool_allocator" kind="class" language="C++" prot="public">
+    <compoundname>MemoryPoolAllocator</compoundname>
+    <includes refid="allocators_8h" local="no">allocators.h</includes>
+    <innerclass refid="struct_memory_pool_allocator_1_1_chunk_header" prot="private">MemoryPoolAllocator::ChunkHeader</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename BaseAllocator</type>
+        <defval><ref refid="class_crt_allocator" kindref="compound">CrtAllocator</ref></defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_memory_pool_allocator_1ab4c7c5c631e451689bc9da392a65194f" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool MemoryPoolAllocator&lt; BaseAllocator &gt;::kNeedFree</definition>
+        <argsstring></argsstring>
+        <name>kNeedFree</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Tell users that no need to call <ref refid="class_memory_pool_allocator_1a6b180eb150451b4df8b70d827cd1191c" kindref="member">Free()</ref> with this allocator. (concept Allocator) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="104" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_memory_pool_allocator_1aa6db3ea4fb9c40174d77b3fe9b1cccf1" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>const int MemoryPoolAllocator&lt; BaseAllocator &gt;::kDefaultChunkCapacity</definition>
+        <argsstring></argsstring>
+        <name>kDefaultChunkCapacity</name>
+        <initializer>= 64 * 1024</initializer>
+        <briefdescription>
+<para>Default chunk capacity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="241" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_memory_pool_allocator_1a576a6419b3153d1649b36b3f0c74d8b0" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_memory_pool_allocator_1_1_chunk_header" kindref="compound">ChunkHeader</ref> *</type>
+        <definition>ChunkHeader* MemoryPoolAllocator&lt; BaseAllocator &gt;::chunkHead_</definition>
+        <argsstring></argsstring>
+        <name>chunkHead_</name>
+        <briefdescription>
+<para>Head of the chunk linked-list. Only the head chunk serves allocation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="252" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_memory_pool_allocator_1a67909468c193d429a227a74d35c4d8cb" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t MemoryPoolAllocator&lt; BaseAllocator &gt;::chunk_capacity_</definition>
+        <argsstring></argsstring>
+        <name>chunk_capacity_</name>
+        <briefdescription>
+<para>The minimum capacity of chunk when they are allocated. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="253" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_memory_pool_allocator_1aa3c4d2503b12acc7d14e4a5da67ac46e" prot="private" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> *</type>
+        <definition>void* MemoryPoolAllocator&lt; BaseAllocator &gt;::userBuffer_</definition>
+        <argsstring></argsstring>
+        <name>userBuffer_</name>
+        <briefdescription>
+<para>User supplied buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="254" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_memory_pool_allocator_1a628cd7f46e838fb37ceccf65dd17bce6" prot="private" static="no" mutable="no">
+        <type>BaseAllocator *</type>
+        <definition>BaseAllocator* MemoryPoolAllocator&lt; BaseAllocator &gt;::baseAllocator_</definition>
+        <argsstring></argsstring>
+        <name>baseAllocator_</name>
+        <briefdescription>
+<para>base allocator for allocating memory chunks. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="255" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_memory_pool_allocator_1a3e1e1bf108de2e6985c6d38964f8e3b9" prot="private" static="no" mutable="no">
+        <type>BaseAllocator *</type>
+        <definition>BaseAllocator* MemoryPoolAllocator&lt; BaseAllocator &gt;::ownBaseAllocator_</definition>
+        <argsstring></argsstring>
+        <name>ownBaseAllocator_</name>
+        <briefdescription>
+<para>base allocator created by this object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="256" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_memory_pool_allocator_1aeec85ac657f242ac5620115141be5209" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MemoryPoolAllocator&lt; BaseAllocator &gt;::MemoryPoolAllocator</definition>
+        <argsstring>(size_t chunkSize=kDefaultChunkCapacity, BaseAllocator *baseAllocator=0)</argsstring>
+        <name>MemoryPoolAllocator</name>
+        <param>
+          <type>size_t</type>
+          <declname>chunkSize</declname>
+          <defval><ref refid="class_memory_pool_allocator_1aa6db3ea4fb9c40174d77b3fe9b1cccf1" kindref="member">kDefaultChunkCapacity</ref></defval>
+        </param>
+        <param>
+          <type>BaseAllocator *</type>
+          <declname>baseAllocator</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructor with chunkSize. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chunkSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of memory chunk. The default is kDefaultChunkSize. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baseAllocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The allocator for allocating memory chunks. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="110" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1a1f0d865093fdb955d956b7a445a8ddbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MemoryPoolAllocator&lt; BaseAllocator &gt;::MemoryPoolAllocator</definition>
+        <argsstring>(void *buffer, size_t size, size_t chunkSize=kDefaultChunkCapacity, BaseAllocator *baseAllocator=0)</argsstring>
+        <name>MemoryPoolAllocator</name>
+        <param>
+          <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>chunkSize</declname>
+          <defval><ref refid="class_memory_pool_allocator_1aa6db3ea4fb9c40174d77b3fe9b1cccf1" kindref="member">kDefaultChunkCapacity</ref></defval>
+        </param>
+        <param>
+          <type>BaseAllocator *</type>
+          <declname>baseAllocator</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructor with user-supplied buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para>The user buffer will be used firstly. When it is full, memory pool allocates new chunk with chunk size.</para><para>The user buffer will not be deallocated when this allocator is destructed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User supplied buffer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the buffer in bytes. It must at least larger than sizeof(ChunkHeader). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chunkSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of memory chunk. The default is kDefaultChunkSize. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baseAllocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The allocator for allocating memory chunks. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="125" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="125" bodyend="134"/>
+        <references refid="struct_memory_pool_allocator_1_1_chunk_header_1ae19df98bce5dd485a23f953112ecde5f" compoundref="allocators_8h" startline="247">MemoryPoolAllocator&lt; BaseAllocator &gt;::ChunkHeader::capacity</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1ad4eee0ef3cfe8cda31034fbce98b7a9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MemoryPoolAllocator&lt; BaseAllocator &gt;::~MemoryPoolAllocator</definition>
+        <argsstring>()</argsstring>
+        <name>~MemoryPoolAllocator</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This deallocates all memory chunks, excluding the user-supplied buffer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="139" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="139" bodyend="142"/>
+        <references refid="rapidjson_8h_1a52c941c3fdd646527cdcd42aa846a28a" compoundref="rapidjson_8h" startline="484">RAPIDJSON_DELETE</references>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1a57bbc80e570db6110901b9a7e36dbda0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void MemoryPoolAllocator&lt; BaseAllocator &gt;::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+<para>Deallocates all memory chunks, excluding the user-supplied buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="145" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="145" bodyend="153"/>
+        <references refid="struct_memory_pool_allocator_1_1_chunk_header_1a4d24357c177824b3af56ec1098d9d9dc" compoundref="allocators_8h" startline="249">MemoryPoolAllocator&lt; BaseAllocator &gt;::ChunkHeader::next</references>
+        <references refid="struct_memory_pool_allocator_1_1_chunk_header_1ac9f3868f4cd36cdb7c712c9a48686680" compoundref="allocators_8h" startline="248">MemoryPoolAllocator&lt; BaseAllocator &gt;::ChunkHeader::size</references>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1ac4738338f038d040641f23aa7955e2d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MemoryPoolAllocator&lt; BaseAllocator &gt;::Capacity</definition>
+        <argsstring>() const </argsstring>
+        <name>Capacity</name>
+        <briefdescription>
+<para>Computes the total capacity of allocated memory chunks. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>total capacity in bytes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="158" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="158" bodyend="163"/>
+        <references refid="struct_memory_pool_allocator_1_1_chunk_header_1a4d24357c177824b3af56ec1098d9d9dc" compoundref="allocators_8h" startline="249">MemoryPoolAllocator&lt; BaseAllocator &gt;::ChunkHeader::next</references>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1a2ccb6c068b8b35dbc3680dc5563af2f4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MemoryPoolAllocator&lt; BaseAllocator &gt;::Size</definition>
+        <argsstring>() const </argsstring>
+        <name>Size</name>
+        <briefdescription>
+<para>Computes the memory blocks allocated. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>total used bytes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="168" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="168" bodyend="173"/>
+        <references refid="struct_memory_pool_allocator_1_1_chunk_header_1a4d24357c177824b3af56ec1098d9d9dc" compoundref="allocators_8h" startline="249">MemoryPoolAllocator&lt; BaseAllocator &gt;::ChunkHeader::next</references>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1a02f6832910453446cb77bf919ba49e99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> *</type>
+        <definition>void* MemoryPoolAllocator&lt; BaseAllocator &gt;::Malloc</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>Malloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Allocates a memory block. (concept Allocator) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="176" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="176" bodyend="187"/>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga583915242504c7fdb36e826f02f76242" compoundref="rapidjson_8h" startline="247">RAPIDJSON_ALIGN</references>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1aba75280d42184b0ad414243f7f5ac6c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> *</type>
+        <definition>void* MemoryPoolAllocator&lt; BaseAllocator &gt;::Realloc</definition>
+        <argsstring>(void *originalPtr, size_t originalSize, size_t newSize)</argsstring>
+        <name>Realloc</name>
+        <param>
+          <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> *</type>
+          <declname>originalPtr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>originalSize</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>newSize</declname>
+        </param>
+        <briefdescription>
+<para>Resizes a memory block (concept Allocator) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="190" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="190" bodyend="217"/>
+        <references refid="class_crt_allocator_1acd720631f8c094041afa6c7951f0d935" compoundref="allocators_8h" startline="65" endline="70">CrtAllocator::Malloc</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga583915242504c7fdb36e826f02f76242" compoundref="rapidjson_8h" startline="247">RAPIDJSON_ALIGN</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" compoundref="rapidjson_8h" startline="344">RAPIDJSON_ASSERT</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_memory_pool_allocator_1a6b180eb150451b4df8b70d827cd1191c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>static void MemoryPoolAllocator&lt; BaseAllocator &gt;::Free</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>Free</name>
+        <param>
+          <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Frees a memory block (concept Allocator) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="220" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="220" bodyend="220"/>
+        <references refid="glew_8h_1a1659df18b3b413a60a397d5a7540f3d2">void</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_memory_pool_allocator_1a7b1a55162ad268e8f9e9c4b77e44fe8a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MemoryPoolAllocator&lt; BaseAllocator &gt;::MemoryPoolAllocator</definition>
+        <argsstring>(const MemoryPoolAllocator &amp;rhs)</argsstring>
+        <name>MemoryPoolAllocator</name>
+        <param>
+          <type>const <ref refid="class_memory_pool_allocator" kindref="compound">MemoryPoolAllocator</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor is not permitted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="224" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1a0baeda9163d8dcfbccaa8e2df21bb350" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_memory_pool_allocator" kindref="compound">MemoryPoolAllocator</ref> &amp;</type>
+        <definition>MemoryPoolAllocator&amp; MemoryPoolAllocator&lt; BaseAllocator &gt;::operator=</definition>
+        <argsstring>(const MemoryPoolAllocator &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_memory_pool_allocator" kindref="compound">MemoryPoolAllocator</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Copy assignment operator is not permitted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="226" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1ae60ba53964817eb2c791d45fcd4905f5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void MemoryPoolAllocator&lt; BaseAllocator &gt;::AddChunk</definition>
+        <argsstring>(size_t capacity)</argsstring>
+        <name>AddChunk</name>
+        <param>
+          <type>size_t</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new chunk. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Capacity of the chunk in bytes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="231" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="231" bodyend="239"/>
+        <references refid="struct_memory_pool_allocator_1_1_chunk_header_1ae19df98bce5dd485a23f953112ecde5f" compoundref="allocators_8h" startline="247">MemoryPoolAllocator&lt; BaseAllocator &gt;::ChunkHeader::capacity</references>
+        <references refid="struct_memory_pool_allocator_1_1_chunk_header_1a4d24357c177824b3af56ec1098d9d9dc" compoundref="allocators_8h" startline="249">MemoryPoolAllocator&lt; BaseAllocator &gt;::ChunkHeader::next</references>
+        <references refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga583915242504c7fdb36e826f02f76242" compoundref="rapidjson_8h" startline="247">RAPIDJSON_ALIGN</references>
+        <references refid="rapidjson_8h_1ab9e102fa2f1a0ae4914d4dac21f690a2" compoundref="rapidjson_8h" startline="480">RAPIDJSON_NEW</references>
+        <references refid="struct_memory_pool_allocator_1_1_chunk_header_1ac9f3868f4cd36cdb7c712c9a48686680" compoundref="allocators_8h" startline="248">MemoryPoolAllocator&lt; BaseAllocator &gt;::ChunkHeader::size</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Default memory allocator used by the parser and DOM. </para>    </briefdescription>
+    <detaileddescription>
+<para>This allocator allocate memory blocks from pre-allocated memory chunks.</para><para>It does not free memory blocks. And <ref refid="class_memory_pool_allocator_1aba75280d42184b0ad414243f7f5ac6c7" kindref="member">Realloc()</ref> only allocate new memory.</para><para>The memory chunks are allocated by BaseAllocator, which is <ref refid="class_crt_allocator" kindref="compound">CrtAllocator</ref> by default.</para><para>User may also supply a buffer as the first chunk.</para><para>If the user-buffer is full then additional chunks are allocated by BaseAllocator.</para><para>The user-buffer is not deallocated by this allocator.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>BaseAllocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the allocator type for allocating memory chunks. Default is <ref refid="class_crt_allocator" kindref="compound">CrtAllocator</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>implements Allocator concept </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1700">
+        <label>size_t</label>
+      </node>
+      <node id="1698">
+        <label>MemoryPoolAllocator&lt; BaseAllocator &gt;</label>
+        <link refid="class_memory_pool_allocator"/>
+        <childnode refid="1699" relation="usage">
+          <edgelabel>-chunkHead_</edgelabel>
+        </childnode>
+        <childnode refid="1700" relation="usage">
+          <edgelabel>-chunk_capacity_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1699">
+        <label>MemoryPoolAllocator&lt; BaseAllocator &gt;::ChunkHeader</label>
+        <link refid="struct_memory_pool_allocator_1_1_chunk_header"/>
+        <childnode refid="1699" relation="usage">
+          <edgelabel>+next</edgelabel>
+        </childnode>
+        <childnode refid="1700" relation="usage">
+          <edgelabel>+capacity</edgelabel>
+          <edgelabel>+size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" line="102" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/allocators.h" bodystart="102" bodyend="257"/>
+    <listofallmembers>
+      <member refid="class_memory_pool_allocator_1ae60ba53964817eb2c791d45fcd4905f5" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>AddChunk</name></member>
+      <member refid="class_memory_pool_allocator_1a628cd7f46e838fb37ceccf65dd17bce6" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>baseAllocator_</name></member>
+      <member refid="class_memory_pool_allocator_1ac4738338f038d040641f23aa7955e2d3" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>Capacity</name></member>
+      <member refid="class_memory_pool_allocator_1a67909468c193d429a227a74d35c4d8cb" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>chunk_capacity_</name></member>
+      <member refid="class_memory_pool_allocator_1a576a6419b3153d1649b36b3f0c74d8b0" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>chunkHead_</name></member>
+      <member refid="class_memory_pool_allocator_1a57bbc80e570db6110901b9a7e36dbda0" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>Clear</name></member>
+      <member refid="class_memory_pool_allocator_1a6b180eb150451b4df8b70d827cd1191c" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>Free</name></member>
+      <member refid="class_memory_pool_allocator_1aa6db3ea4fb9c40174d77b3fe9b1cccf1" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>kDefaultChunkCapacity</name></member>
+      <member refid="class_memory_pool_allocator_1ab4c7c5c631e451689bc9da392a65194f" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>kNeedFree</name></member>
+      <member refid="class_memory_pool_allocator_1a02f6832910453446cb77bf919ba49e99" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>Malloc</name></member>
+      <member refid="class_memory_pool_allocator_1aeec85ac657f242ac5620115141be5209" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>MemoryPoolAllocator</name></member>
+      <member refid="class_memory_pool_allocator_1a1f0d865093fdb955d956b7a445a8ddbf" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>MemoryPoolAllocator</name></member>
+      <member refid="class_memory_pool_allocator_1a7b1a55162ad268e8f9e9c4b77e44fe8a" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>MemoryPoolAllocator</name></member>
+      <member refid="class_memory_pool_allocator_1a0baeda9163d8dcfbccaa8e2df21bb350" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>operator=</name></member>
+      <member refid="class_memory_pool_allocator_1a3e1e1bf108de2e6985c6d38964f8e3b9" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>ownBaseAllocator_</name></member>
+      <member refid="class_memory_pool_allocator_1aba75280d42184b0ad414243f7f5ac6c7" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>Realloc</name></member>
+      <member refid="class_memory_pool_allocator_1a2ccb6c068b8b35dbc3680dc5563af2f4" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>Size</name></member>
+      <member refid="class_memory_pool_allocator_1aa3c4d2503b12acc7d14e4a5da67ac46e" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>userBuffer_</name></member>
+      <member refid="class_memory_pool_allocator_1ad4eee0ef3cfe8cda31034fbce98b7a9b" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>~MemoryPoolAllocator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<map id="fmt::format_arg" name="fmt::format_arg">
+<area shape="rect" id="node2" href="$classfmt_1_1_buffer.html#a7ca155741c43ec7c7edcea8dd28a2123" title="fmt::Buffer::append" alt="" coords="168,56,304,83"/>
+<area shape="rect" id="node5" href="$classfmt_1_1_buffer.html#aaf54fe786de91157629f96380e0cb215" title="fmt::Buffer::capacity" alt="" coords="166,132,306,159"/>
+<area shape="rect" id="node6" href="$namespacefmt.html#a638f25c535b3bfa12dc1478b11885b6f" title="fmt::format" alt="" coords="193,183,279,209"/>
+<area shape="rect" id="node8" href="$classfmt_1_1_buffer.html#a14fa72f0ddf584c14ffffb1446f598aa" title="fmt::Buffer::size" alt="" coords="965,183,1080,209"/>
+<area shape="rect" id="node13" href="$classfmt_1_1_buffer.html#a7f46a3ce8d86abe35904f6654bd4ea1e" title="fmt::Buffer::reserve" alt="" coords="168,284,304,311"/>
+<area shape="rect" id="node14" href="$classfmt_1_1_buffer.html#a20f893164dc20e8ea8c77810d4ea8d59" title="fmt::Buffer::resize" alt="" coords="173,335,299,361"/>
+<area shape="rect" id="node15" href="$classfmt_1_1_basic_formatter.html#abd5692d2f2123b27da7941d56fc6073c" title="fmt::BasicFormatter\l::writer" alt="" coords="167,386,305,427"/>
+<area shape="rect" id="node3" href="$namespacefmt_1_1internal.html#a28bed1291226be35437bc3173c19c205" title="fmt::internal::to_unsigned" alt="" coords="745,31,917,57"/>
+<area shape="rect" id="node4" href="$namespacefmt_1_1internal.html#ab81ed2356d1a6f3bcf03c5bdf5f8d4f2" title="fmt::internal::make_ptr" alt="" coords="355,5,509,32"/>
+<area shape="rect" id="node7" href="$classfmt_1_1_basic_writer.html#a91f06ced6e063ee77a99740e0e79faf6" title="fmt::BasicWriter::str" alt="" coords="557,183,696,209"/>
+<area shape="rect" id="node9" href="$classfmt_1_1_basic_writer.html#aaa83498c649d4a90ea3366bae62f4eac" title="fmt::BasicWriter::write" alt="" coords="356,132,508,159"/>
+<area shape="rect" id="node10" href="$namespacefmt_1_1internal.html#a7c721969e9660580a237bd4130422ab6" title="fmt::internal::write" alt="" coords="563,120,690,147"/>
+<area shape="rect" id="node11" href="$classfmt_1_1_basic_writer.html#a62d1c7b5be9c3580326320d5d178d096" title="fmt::BasicWriter::data" alt="" coords="756,132,905,159"/>
+<area shape="rect" id="node12" href="$classfmt_1_1_basic_writer.html#a1b6721b4ba4d3fa18ac781a36616cc2a" title="fmt::BasicWriter::size" alt="" coords="757,81,904,108"/>
+</map>

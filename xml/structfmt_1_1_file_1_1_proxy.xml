@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structfmt_1_1_file_1_1_proxy" kind="struct" language="C++" prot="private">
+    <compoundname>fmt::File::Proxy</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfmt_1_1_file_1_1_proxy_1a3fdeb370adfa796de8030bbb20a270c9" prot="public" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int fmt::File::Proxy::fd</definition>
+        <argsstring></argsstring>
+        <name>fd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/posix.h" line="210" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/posix.h" bodystart="210" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1_file_1a49693f3a5e0cdb33e8db1e80f3bfb66d" compoundref="posix_8h" startline="223" endline="227">fmt::File::operator=</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1845">
+        <label>fmt::File::Proxy</label>
+        <link refid="structfmt_1_1_file_1_1_proxy"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/posix.h" line="209" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/posix.h" bodystart="209" bodyend="211"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1_file_1_1_proxy_1a3fdeb370adfa796de8030bbb20a270c9" prot="public" virt="non-virtual"><scope>fmt::File::Proxy</scope><name>fd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

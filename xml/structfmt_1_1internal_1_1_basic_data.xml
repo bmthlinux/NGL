@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structfmt_1_1internal_1_1_basic_data" kind="struct" language="C++" prot="public">
+    <compoundname>fmt::internal::BasicData</compoundname>
+    <includes refid="format_8h" local="no">format.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+        <defval><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_basic_data_1abbc4c0076211263be3f19cce9655caf7" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref></type>
+        <definition>const uint32_t fmt::internal::BasicData&lt; T &gt;::POWERS_OF_10_32</definition>
+        <argsstring>[]</argsstring>
+        <name>POWERS_OF_10_32</name>
+        <initializer>= {
+  0, <ref refid="format_8cc_1aeff75c93a29bc942ca36b31a4b634fe9" kindref="member">FMT_POWERS_OF_10</ref>(1)
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="836" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="836" bodyend="-1"/>
+        <referencedby refid="namespacefmt_1_1internal_1abfe52e52001fd2590fb2015cefe95e18" compoundref="format_8h" startline="864" endline="877">fmt::internal::count_digits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_basic_data_1a5f4f238cffad6816fbdc621e96b0e1d2" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="stdint_8h_1aec6fcb673ff035718c238c8c9d544c47" kindref="member">uint64_t</ref></type>
+        <definition>const uint64_t fmt::internal::BasicData&lt; T &gt;::POWERS_OF_10_64</definition>
+        <argsstring>[]</argsstring>
+        <name>POWERS_OF_10_64</name>
+        <initializer>= {
+  0,
+  <ref refid="format_8cc_1aeff75c93a29bc942ca36b31a4b634fe9" kindref="member">FMT_POWERS_OF_10</ref>(1),
+  <ref refid="format_8cc_1aeff75c93a29bc942ca36b31a4b634fe9" kindref="member">FMT_POWERS_OF_10</ref>(<ref refid="namespacefmt_1af495ed85910212d4ba243ae2a8ce8f1f" kindref="member">ULongLong</ref>(1000000000)),
+  
+  
+  <ref refid="namespacefmt_1af495ed85910212d4ba243ae2a8ce8f1f" kindref="member">ULongLong</ref>(1000000000) * <ref refid="namespacefmt_1af495ed85910212d4ba243ae2a8ce8f1f" kindref="member">ULongLong</ref>(1000000000) * 10
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="837" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="837" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_basic_data_1abc0f1b67b25a98d0aa1f2b25c8649e59" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char fmt::internal::BasicData&lt; T &gt;::DIGITS</definition>
+        <argsstring>[]</argsstring>
+        <name>DIGITS</name>
+        <initializer>=
+    &quot;0001020304050607080910111213141516171819&quot;
+    &quot;2021222324252627282930313233343536373839&quot;
+    &quot;4041424344454647484950515253545556575859&quot;
+    &quot;6061626364656667686970717273747576777879&quot;
+    &quot;8081828384858687888990919293949596979899&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="838" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="838" bodyend="-1"/>
+        <referencedby refid="namespacefmt_1_1internal_1aeee1847660e999ab1e360ffa18515b88" compoundref="format_8h" startline="919" endline="941">fmt::internal::format_decimal</referencedby>
+        <referencedby refid="classfmt_1_1_format_int_1ac64fe0979e7bc7b0bedb11a989169991" compoundref="format_8h" startline="3221" endline="3240">fmt::FormatInt::format_decimal</referencedby>
+        <referencedby refid="namespacefmt_1a14f565b291f639cea172e79f7fa9bc7f" compoundref="format_8h" startline="3292" endline="3312">fmt::format_decimal</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1271">
+        <label>fmt::internal::BasicData&lt; T &gt;</label>
+        <link refid="structfmt_1_1internal_1_1_basic_data"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="835" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="835" bodyend="839"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1internal_1_1_basic_data_1abc0f1b67b25a98d0aa1f2b25c8649e59" prot="public" virt="non-virtual"><scope>fmt::internal::BasicData</scope><name>DIGITS</name></member>
+      <member refid="structfmt_1_1internal_1_1_basic_data_1abbc4c0076211263be3f19cce9655caf7" prot="public" virt="non-virtual"><scope>fmt::internal::BasicData</scope><name>POWERS_OF_10_32</name></member>
+      <member refid="structfmt_1_1internal_1_1_basic_data_1a5f4f238cffad6816fbdc621e96b0e1d2" prot="public" virt="non-virtual"><scope>fmt::internal::BasicData</scope><name>POWERS_OF_10_64</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

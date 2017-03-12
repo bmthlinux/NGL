@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classfmt_1_1_basic_writer.html" title="fmt::BasicWriter\&lt; Char \&gt;" alt="" coords="5,77,173,104"/>
+<area shape="rect" id="node2" href="$classfmt_1_1_basic_array_writer.html" title="fmt::BasicArrayWriter\l\&lt; Char \&gt;" alt="" coords="230,5,378,46"/>
+<area shape="rect" id="node3" href="$classfmt_1_1_basic_memory_writer.html" title="fmt::BasicMemoryWriter\l\&lt; Char, Allocator \&gt;" alt="" coords="222,70,386,111"/>
+<area shape="rect" id="node4" href="$classfmt_1_1_basic_string_writer.html" title="fmt::BasicStringWriter\l\&lt; Char \&gt;" alt="" coords="229,135,379,177"/>
+</map>

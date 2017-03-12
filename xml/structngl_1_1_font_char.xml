@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structngl_1_1_font_char" kind="struct" language="C++" prot="public">
+    <compoundname>ngl::FontChar</compoundname>
+    <includes refid="_text_8h" local="no">Text.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structngl_1_1_font_char_1aa656d9d10a65e64cf5b17f33344d7fd9" prot="public" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int ngl::FontChar::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Text.h" line="60" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Text.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_text_1a16e24cf8d7e4f310a7dc2b8375546134" compoundref="_text_8cpp" startline="53" endline="246">ngl::Text::Text</referencedby>
+        <referencedby refid="classngl_1_1_text_1a59aa976f5726b2b69ed95c8a0668c0f2" compoundref="_text_8cpp" startline="265" endline="311">ngl::Text::renderText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structngl_1_1_font_char_1a8dc38f92d2fd50d8432b4e21e54a2d40" prot="public" static="no" mutable="no">
+        <type><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref></type>
+        <definition>GLuint ngl::FontChar::textureID</definition>
+        <argsstring></argsstring>
+        <name>textureID</name>
+        <briefdescription>
+<para>the width of the font </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Text.h" line="61" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Text.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_text_1a16e24cf8d7e4f310a7dc2b8375546134" compoundref="_text_8cpp" startline="53" endline="246">ngl::Text::Text</referencedby>
+        <referencedby refid="classngl_1_1_text_1a59aa976f5726b2b69ed95c8a0668c0f2" compoundref="_text_8cpp" startline="265" endline="311">ngl::Text::renderText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structngl_1_1_font_char_1ae8a1e2d3e672ee1b79d3e7037e1faa8d" prot="public" static="no" mutable="no">
+        <type><ref refid="classngl_1_1_abstract_v_a_o" kindref="compound">AbstractVAO</ref> *</type>
+        <definition>AbstractVAO* ngl::FontChar::vao</definition>
+        <argsstring></argsstring>
+        <name>vao</name>
+        <briefdescription>
+<para>the texture id of the font billboard </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/Text.h" line="62" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Text.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_text_1a16e24cf8d7e4f310a7dc2b8375546134" compoundref="_text_8cpp" startline="53" endline="246">ngl::Text::Text</referencedby>
+        <referencedby refid="classngl_1_1_text_1a59aa976f5726b2b69ed95c8a0668c0f2" compoundref="_text_8cpp" startline="265" endline="311">ngl::Text::renderText</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>a structure to hold the font char texture id and the vao. The vao for each font will be a different size need to investigate is a scale would be quicker / more efficient than storing multiple billboards (some will be the same size) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1491">
+        <label>size_t</label>
+      </node>
+      <node id="1489">
+        <label>ngl::FontChar</label>
+        <link refid="structngl_1_1_font_char"/>
+        <childnode refid="1490" relation="usage">
+          <edgelabel>+vao</edgelabel>
+        </childnode>
+      </node>
+      <node id="1490">
+        <label>ngl::AbstractVAO</label>
+        <link refid="classngl_1_1_abstract_v_a_o"/>
+        <childnode refid="1491" relation="usage">
+          <edgelabel>#m_indicesCount</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/Text.h" line="59" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/Text.h" bodystart="58" bodyend="63"/>
+    <listofallmembers>
+      <member refid="structngl_1_1_font_char_1a8dc38f92d2fd50d8432b4e21e54a2d40" prot="public" virt="non-virtual"><scope>ngl::FontChar</scope><name>textureID</name></member>
+      <member refid="structngl_1_1_font_char_1ae8a1e2d3e672ee1b79d3e7037e1faa8d" prot="public" virt="non-virtual"><scope>ngl::FontChar</scope><name>vao</name></member>
+      <member refid="structngl_1_1_font_char_1aa656d9d10a65e64cf5b17f33344d7fd9" prot="public" virt="non-virtual"><scope>ngl::FontChar</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

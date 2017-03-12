@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classrapidjson_1_1_encoding" kind="class" language="C++" prot="public">
+    <compoundname>rapidjson::Encoding</compoundname>
+    <includes refid="encodings_8h" local="no">encodings.h</includes>
+    <briefdescription>
+<para>Concept for encoding of Unicode characters. </para>    </briefdescription>
+    <detaileddescription>
+<para><programlisting><codeline><highlight class="normal">concept<sp/>Encoding<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>typename<sp/>Ch;<sp/><sp/><sp/><sp/>//!<sp/>Type<sp/>of<sp/>character.<sp/>A<sp/>&quot;character&quot;<sp/>is<sp/>actually<sp/>a<sp/>code<sp/>unit<sp/>in<sp/>unicode&apos;s<sp/>definition.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>enum<sp/>{<sp/>supportUnicode<sp/>=<sp/>1<sp/>};<sp/>//<sp/>or<sp/>0<sp/>if<sp/>not<sp/>supporting<sp/>unicode</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//!<sp/>\brief<sp/>Encode<sp/>a<sp/>Unicode<sp/>codepoint<sp/>to<sp/>an<sp/>output<sp/>stream.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//!<sp/>\param<sp/>os<sp/>Output<sp/>stream.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//!<sp/>\param<sp/>codepoint<sp/>An<sp/>unicode<sp/>codepoint,<sp/>ranging<sp/>from<sp/>0x0<sp/>to<sp/>0x10FFFF<sp/>inclusively.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>template&lt;typename<sp/>OutputStream&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>static<sp/>void<sp/>Encode(OutputStream&amp;<sp/>os,<sp/>unsigned<sp/>codepoint);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//!<sp/>\brief<sp/>Decode<sp/>a<sp/>Unicode<sp/>codepoint<sp/>from<sp/>an<sp/>input<sp/>stream.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//!<sp/>\param<sp/>is<sp/>Input<sp/>stream.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//!<sp/>\param<sp/>codepoint<sp/>Output<sp/>of<sp/>the<sp/>unicode<sp/>codepoint.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//!<sp/>\return<sp/>true<sp/>if<sp/>a<sp/>valid<sp/>codepoint<sp/>can<sp/>be<sp/>decoded<sp/>from<sp/>the<sp/>stream.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;typename<sp/>InputStream&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>static<sp/>bool<sp/>Decode(InputStream&amp;<sp/>is,<sp/>unsigned*<sp/>codepoint);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//!<sp/>\brief<sp/>Validate<sp/>one<sp/>Unicode<sp/>codepoint<sp/>from<sp/>an<sp/>encoded<sp/>stream.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//!<sp/>\param<sp/>is<sp/>Input<sp/>stream<sp/>to<sp/>obtain<sp/>codepoint.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//!<sp/>\param<sp/>os<sp/>Output<sp/>for<sp/>copying<sp/>one<sp/>codepoint.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//!<sp/>\return<sp/>true<sp/>if<sp/>it<sp/>is<sp/>valid.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//!<sp/>\note<sp/>This<sp/>function<sp/>just<sp/>validating<sp/>and<sp/>copying<sp/>the<sp/>codepoint<sp/>without<sp/>actually<sp/>decode<sp/>it.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;typename<sp/>InputStream,<sp/>typename<sp/>OutputStream&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>static<sp/>bool<sp/>Validate(InputStream&amp;<sp/>is,<sp/>OutputStream&amp;<sp/>os);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>The<sp/>following<sp/>functions<sp/>are<sp/>deal<sp/>with<sp/>byte<sp/>streams.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//!<sp/>Take<sp/>a<sp/>character<sp/>from<sp/>input<sp/>byte<sp/>stream,<sp/>skip<sp/>BOM<sp/>if<sp/>exist.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;typename<sp/>InputByteStream&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>static<sp/>CharType<sp/>TakeBOM(InputByteStream&amp;<sp/>is);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//!<sp/>Take<sp/>a<sp/>character<sp/>from<sp/>input<sp/>byte<sp/>stream.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;typename<sp/>InputByteStream&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>static<sp/>Ch<sp/>Take(InputByteStream&amp;<sp/>is);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//!<sp/>Put<sp/>BOM<sp/>to<sp/>output<sp/>byte<sp/>stream.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;typename<sp/>OutputByteStream&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>static<sp/>void<sp/>PutBOM(OutputByteStream&amp;<sp/>os);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//!<sp/>Put<sp/>a<sp/>character<sp/>to<sp/>output<sp/>byte<sp/>stream.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;typename<sp/>OutputByteStream&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>static<sp/>void<sp/>Put(OutputByteStream&amp;<sp/>os,<sp/>Ch<sp/>c);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1464">
+        <label>rapidjson::Encoding</label>
+        <link refid="classrapidjson_1_1_encoding"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/encodings.h" line="35" column="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

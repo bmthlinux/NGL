@@ -1,0 +1,6 @@
+<map id="rapidxml::memory_pool::allocate_node" name="rapidxml::memory_pool::allocate_node">
+<area shape="rect" id="node2" href="$classngl_1_1_x_m_l_serializer.html#acb72a6df1ebeb6f606a5e91b93eba432" title="ngl::XMLSerializer\l::writeToXML" alt="" coords="213,5,344,46"/>
+<area shape="rect" id="node3" href="$classngl_1_1_x_m_l_serializer.html#a7cbda35a4e4cc86f777635b09180d23d" title="write from an Camera must be overriden in child " alt="" coords="392,34,523,75"/>
+<area shape="rect" id="node4" href="$classngl_1_1_x_m_l_serializer.html#a68ace4d8c072e9a92405711fd88bfe80" title="ngl::XMLSerializer\l::addNode" alt="" coords="213,122,344,163"/>
+<area shape="rect" id="node5" href="$classngl_1_1_x_m_l_serializer.html#a3d4af73c5422ec397f4c2dfe709b869e" title="ctor, uses RAII to open the file, flag indicates if we have read or write mode " alt="" coords="213,187,344,229"/>
+</map>

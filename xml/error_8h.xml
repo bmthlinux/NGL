@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="error_8h" kind="file" language="C++">
+    <compoundname>error.h</compoundname>
+    <includes refid="rapidjson_8h" local="yes">../rapidjson.h</includes>
+    <includedby refid="reader_8h" local="yes">reader.h</includedby>
+    <includedby refid="en_8h" local="yes">en.h</includedby>
+    <incdepgraph>
+      <node id="4294">
+        <label>cassert</label>
+      </node>
+      <node id="4290">
+        <label>error.h</label>
+        <link refid="error.h"/>
+        <childnode refid="4291" relation="include">
+        </childnode>
+      </node>
+      <node id="4295">
+        <label>allocators.h</label>
+        <link refid="allocators_8h"/>
+        <childnode refid="4291" relation="include">
+        </childnode>
+      </node>
+      <node id="4292">
+        <label>cstdlib</label>
+      </node>
+      <node id="4291">
+        <label>../rapidjson.h</label>
+        <link refid="rapidjson_8h"/>
+        <childnode refid="4292" relation="include">
+        </childnode>
+        <childnode refid="4293" relation="include">
+        </childnode>
+        <childnode refid="4294" relation="include">
+        </childnode>
+        <childnode refid="4295" relation="include">
+        </childnode>
+        <childnode refid="4296" relation="include">
+        </childnode>
+      </node>
+      <node id="4296">
+        <label>encodings.h</label>
+        <link refid="encodings_8h"/>
+        <childnode refid="4291" relation="include">
+        </childnode>
+      </node>
+      <node id="4293">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4300">
+        <label>ShaderLib.cpp</label>
+        <link refid="_shader_lib_8cpp"/>
+      </node>
+      <node id="4302">
+        <label>en.h</label>
+        <link refid="en_8h"/>
+      </node>
+      <node id="4297">
+        <label>error.h</label>
+        <link refid="error.h"/>
+        <childnode refid="4298" relation="include">
+        </childnode>
+        <childnode refid="4302" relation="include">
+        </childnode>
+      </node>
+      <node id="4298">
+        <label>reader.h</label>
+        <link refid="reader_8h"/>
+        <childnode refid="4299" relation="include">
+        </childnode>
+      </node>
+      <node id="4301">
+        <label>pointer.h</label>
+        <link refid="pointer_8h"/>
+      </node>
+      <node id="4299">
+        <label>document.h</label>
+        <link refid="document_8h"/>
+        <childnode refid="4300" relation="include">
+        </childnode>
+        <childnode refid="4301" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_parse_result" prot="public">ParseResult</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga7e4636fd48d0148f102b8a13f0539d8c" prot="public" static="no">
+        <name>RAPIDJSON_ERROR_CHARTYPE</name>
+        <initializer>char</initializer>
+        <briefdescription>
+<para>Character type of error messages. </para>        </briefdescription>
+        <detaileddescription>
+<para>The default character type is <computeroutput>char</computeroutput>. On Windows, user can define this macro as <computeroutput>TCHAR</computeroutput> for supporting both unicode/non-unicode settings. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="34" column="9" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gabe2e1bd1349e5a7d6c1af78c05a98f0d" prot="public" static="no">
+        <name>RAPIDJSON_ERROR_STRING</name>
+        <param><defname>x</defname></param>
+        <initializer><ref refid="glew_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref></initializer>
+        <briefdescription>
+<para>Macro for converting string literial to <ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga7e4636fd48d0148f102b8a13f0539d8c" kindref="member">RAPIDJSON_ERROR_CHARTYPE</ref>[]. </para>        </briefdescription>
+        <detaileddescription>
+<para>By default this conversion macro does nothing. On Windows, user can define this macro as <computeroutput>_T(x)</computeroutput> for supporting both unicode/non-unicode settings. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="47" column="9" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" prot="public" static="no">
+        <name>ParseErrorCode</name>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ac0856bac4945cbd1d09e9502fd8f852f" prot="public">
+          <name>kParseErrorNone</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>No error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a04b368d184e84b50580be2faa55f738a" prot="public">
+          <name>kParseErrorDocumentEmpty</name>
+          <briefdescription>
+<para>The document is empty. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a2293b39033220f4c2a568482c497dab5" prot="public">
+          <name>kParseErrorDocumentRootNotSingular</name>
+          <briefdescription>
+<para>The document root must not follow by other values. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a20a50e257aab726699ab02192db72ba9" prot="public">
+          <name>kParseErrorValueInvalid</name>
+          <briefdescription>
+<para>Invalid value. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ae3142fbadf2c4cdfd0c7200d7b6b8ed3" prot="public">
+          <name>kParseErrorObjectMissName</name>
+          <briefdescription>
+<para>Missing a name for object member. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a55cda7eb30436986ab42a61e06caf017" prot="public">
+          <name>kParseErrorObjectMissColon</name>
+          <briefdescription>
+<para>Missing a colon after a name of object member. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a34f70d7ed2fa121954f5fc5b5113d05f" prot="public">
+          <name>kParseErrorObjectMissCommaOrCurlyBracket</name>
+          <briefdescription>
+<para>Missing a comma or &apos;}&apos; after an object member. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7abfdd2bd90134fec4fe6a22762d16a5f5" prot="public">
+          <name>kParseErrorArrayMissCommaOrSquareBracket</name>
+          <briefdescription>
+<para>Missing a comma or &apos;]&apos; after an array element. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7afc65ea941a0a26812f0f258d2429e5d2" prot="public">
+          <name>kParseErrorStringUnicodeEscapeInvalidHex</name>
+          <briefdescription>
+<para>Incorrect hex digit after \u escape in string. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ad9fced6763a06435ca448626c74e5c72" prot="public">
+          <name>kParseErrorStringUnicodeSurrogateInvalid</name>
+          <briefdescription>
+<para>The surrogate pair in string is invalid. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a98bb3f3b1e12fdb7f278b9fa4029306f" prot="public">
+          <name>kParseErrorStringEscapeInvalid</name>
+          <briefdescription>
+<para>Invalid escape character in string. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a6369e5b4e4922720cbc45c5941efc4af" prot="public">
+          <name>kParseErrorStringMissQuotationMark</name>
+          <briefdescription>
+<para>Missing a closing quotation mark in string. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a17ecb2ed1524b513d64a93f4a7a8b456" prot="public">
+          <name>kParseErrorStringInvalidEncoding</name>
+          <briefdescription>
+<para>Invalid encoding in string. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ae52aaa70fde46e4cc422420309700b82" prot="public">
+          <name>kParseErrorNumberTooBig</name>
+          <briefdescription>
+<para>Number too big to be stored in double. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a08a2cc2b4cacfba1673ed536eee229ce" prot="public">
+          <name>kParseErrorNumberMissFraction</name>
+          <briefdescription>
+<para>Miss fraction part in number. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a82cdbd740e22b819a70d05e585c2a442" prot="public">
+          <name>kParseErrorNumberMissExponent</name>
+          <briefdescription>
+<para>Miss exponent in number. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a6fed2d9a15f88540a1ba785f0de2cbe6" prot="public">
+          <name>kParseErrorTermination</name>
+          <briefdescription>
+<para>Parsing was terminated. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a2bec6b26bddd3e093a37fc0d6399e0be" prot="public">
+          <name>kParseErrorUnspecificSyntaxError</name>
+          <briefdescription>
+<para>Unspecific syntax error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Error code of parsing. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_generic_reader_1a0c450620d14ff1824e58bb7bd9b42099" kindref="member">GenericReader::Parse</ref>, <ref refid="class_generic_reader_1ac45a26246877c4daa85021ae67caa017" kindref="member">GenericReader::GetParseErrorCode</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="59" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="59" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga586548166441ab3ce30219cb35be2e04" prot="public" static="no">
+        <type>const <ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga7e4636fd48d0148f102b8a13f0539d8c" kindref="member">RAPIDJSON_ERROR_CHARTYPE</ref> *(*</type>
+        <definition>typedef const RAPIDJSON_ERROR_CHARTYPE*(* GetParseErrorFunc) (ParseErrorCode)</definition>
+        <argsstring>)(ParseErrorCode)</argsstring>
+        <name>GetParseErrorFunc</name>
+        <briefdescription>
+<para>Function pointer type of GetParseError(). </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the prototype for <computeroutput>GetParseError_X()</computeroutput>, where <computeroutput>X</computeroutput> is a locale. User can dynamically change locale in runtime, e.g.: <programlisting><codeline><highlight class="normal">GetParseErrorFunc<sp/>GetParseError<sp/>=<sp/>GetParseError_En;<sp/>//<sp/>or<sp/>whatever</highlight></codeline>
+<codeline><highlight class="normal">const<sp/>RAPIDJSON_ERROR_CHARTYPE*<sp/>s<sp/>=<sp/>GetParseError(document.GetParseErrorCode());</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" line="142" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Tencent<sp/>is<sp/>pleased<sp/>to<sp/>support<sp/>the<sp/>open<sp/>source<sp/>community<sp/>by<sp/>making<sp/>RapidJSON<sp/>available.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2015<sp/>THL<sp/>A29<sp/>Limited,<sp/>a<sp/>Tencent<sp/>company,<sp/>and<sp/>Milo<sp/>Yip.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Licensed<sp/>under<sp/>the<sp/>MIT<sp/>License<sp/>(the<sp/>&quot;License&quot;);<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>http://opensource.org/licenses/MIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software<sp/>distributed<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RAPIDJSON_ERROR_ERROR_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RAPIDJSON_ERROR_ERROR_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../rapidjson.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment">//<sp/>RAPIDJSON_ERROR_CHARTYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#ifndef<sp/>RAPIDJSON_ERROR_CHARTYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga7e4636fd48d0148f102b8a13f0539d8c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RAPIDJSON_ERROR_CHARTYPE<sp/>char</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="comment">//<sp/>RAPIDJSON_ERROR_STRING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"></codeline>
+<codeline lineno="46"><highlight class="preprocessor">#ifndef<sp/>RAPIDJSON_ERROR_STRING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gabe2e1bd1349e5a7d6c1af78c05a98f0d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RAPIDJSON_ERROR_STRING(x)<sp/>x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><ref refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gad3806c8251fdc7da9618b7e922674ffc" kindref="member">RAPIDJSON_NAMESPACE_BEGIN</ref></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment">//<sp/>ParseErrorCode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"></codeline>
+<codeline lineno="59" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref><sp/>{</highlight></codeline>
+<codeline lineno="60" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ac0856bac4945cbd1d09e9502fd8f852f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ac0856bac4945cbd1d09e9502fd8f852f" kindref="member">kParseErrorNone</ref><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a04b368d184e84b50580be2faa55f738a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a04b368d184e84b50580be2faa55f738a" kindref="member">kParseErrorDocumentEmpty</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a2293b39033220f4c2a568482c497dab5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a2293b39033220f4c2a568482c497dab5" kindref="member">kParseErrorDocumentRootNotSingular</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a20a50e257aab726699ab02192db72ba9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a20a50e257aab726699ab02192db72ba9" kindref="member">kParseErrorValueInvalid</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ae3142fbadf2c4cdfd0c7200d7b6b8ed3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ae3142fbadf2c4cdfd0c7200d7b6b8ed3" kindref="member">kParseErrorObjectMissName</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a55cda7eb30436986ab42a61e06caf017" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a55cda7eb30436986ab42a61e06caf017" kindref="member">kParseErrorObjectMissColon</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a34f70d7ed2fa121954f5fc5b5113d05f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a34f70d7ed2fa121954f5fc5b5113d05f" kindref="member">kParseErrorObjectMissCommaOrCurlyBracket</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7abfdd2bd90134fec4fe6a22762d16a5f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7abfdd2bd90134fec4fe6a22762d16a5f5" kindref="member">kParseErrorArrayMissCommaOrSquareBracket</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7afc65ea941a0a26812f0f258d2429e5d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7afc65ea941a0a26812f0f258d2429e5d2" kindref="member">kParseErrorStringUnicodeEscapeInvalidHex</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ad9fced6763a06435ca448626c74e5c72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ad9fced6763a06435ca448626c74e5c72" kindref="member">kParseErrorStringUnicodeSurrogateInvalid</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a98bb3f3b1e12fdb7f278b9fa4029306f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a98bb3f3b1e12fdb7f278b9fa4029306f" kindref="member">kParseErrorStringEscapeInvalid</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a6369e5b4e4922720cbc45c5941efc4af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a6369e5b4e4922720cbc45c5941efc4af" kindref="member">kParseErrorStringMissQuotationMark</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a17ecb2ed1524b513d64a93f4a7a8b456" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a17ecb2ed1524b513d64a93f4a7a8b456" kindref="member">kParseErrorStringInvalidEncoding</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ae52aaa70fde46e4cc422420309700b82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ae52aaa70fde46e4cc422420309700b82" kindref="member">kParseErrorNumberTooBig</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a08a2cc2b4cacfba1673ed536eee229ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a08a2cc2b4cacfba1673ed536eee229ce" kindref="member">kParseErrorNumberMissFraction</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a82cdbd740e22b819a70d05e585c2a442" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a82cdbd740e22b819a70d05e585c2a442" kindref="member">kParseErrorNumberMissExponent</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a6fed2d9a15f88540a1ba785f0de2cbe6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a6fed2d9a15f88540a1ba785f0de2cbe6" kindref="member">kParseErrorTermination</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a2bec6b26bddd3e093a37fc0d6399e0be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a2bec6b26bddd3e093a37fc0d6399e0be" kindref="member">kParseErrorUnspecificSyntaxError</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"></codeline>
+<codeline lineno="101" refid="struct_parse_result" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_parse_result" kindref="compound">ParseResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="struct_parse_result_1acd4a266f815bec59fa27f64f1923fe9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_parse_result_1acd4a266f815bec59fa27f64f1923fe9e" kindref="member">ParseResult</ref>()<sp/>:<sp/><ref refid="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" kindref="member">code_</ref>(<ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ac0856bac4945cbd1d09e9502fd8f852f" kindref="member">kParseErrorNone</ref>),<sp/><ref refid="struct_parse_result_1a4854b4b3210fd1bbc0f1457aa0d2b65a" kindref="member">offset_</ref>(0)<sp/>{}</highlight></codeline>
+<codeline lineno="106" refid="struct_parse_result_1a38ca49a53e80633d0864ad5026adaf84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_parse_result_1a38ca49a53e80633d0864ad5026adaf84" kindref="member">ParseResult</ref>(<ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref><sp/>code,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref>)<sp/>:<sp/><ref refid="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" kindref="member">code_</ref>(code),<sp/><ref refid="struct_parse_result_1a4854b4b3210fd1bbc0f1457aa0d2b65a" kindref="member">offset_</ref>(offset)<sp/>{}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="struct_parse_result_1a1062b22f0d006e2f8a5b8c74385ff52d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref><sp/><ref refid="struct_parse_result_1a1062b22f0d006e2f8a5b8c74385ff52d" kindref="member">Code</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" kindref="member">code_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="111" refid="struct_parse_result_1aa65430daa3920be0d42dc4baed86df69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_parse_result_1aa65430daa3920be0d42dc4baed86df69" kindref="member">Offset</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_parse_result_1a4854b4b3210fd1bbc0f1457aa0d2b65a" kindref="member">offset_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="struct_parse_result_1a74ab79dfa41d390002d1ea188a749bce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>bool()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<ref refid="struct_parse_result_1a07c35a6769f5cb8a73cbc56c41e60a2a" kindref="member">IsError</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="116" refid="struct_parse_result_1a07c35a6769f5cb8a73cbc56c41e60a2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_parse_result_1a07c35a6769f5cb8a73cbc56c41e60a2a" kindref="member">IsError</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" kindref="member">code_</ref><sp/>!=<sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ac0856bac4945cbd1d09e9502fd8f852f" kindref="member">kParseErrorNone</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="struct_parse_result_1a90794619408c295ffa923f3307526bed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_parse_result_1a90794619408c295ffa923f3307526bed" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_parse_result" kindref="compound">ParseResult</ref>&amp;<sp/>that)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" kindref="member">code_</ref><sp/>==<sp/>that.<ref refid="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" kindref="member">code_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="119" refid="struct_parse_result_1a5a0bd70f5bbb383ac63a6450ac4ae4d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_parse_result_1a5a0bd70f5bbb383ac63a6450ac4ae4d1" kindref="member">operator==</ref>(<ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref><sp/>code)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" kindref="member">code_</ref><sp/>==<sp/>code;<sp/>}</highlight></codeline>
+<codeline lineno="120" refid="struct_parse_result_1a58c9982e833d1c74686506ac7449200c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_parse_result_1a58c9982e833d1c74686506ac7449200c" kindref="member">operator==</ref>(<ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref><sp/>code,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_parse_result" kindref="compound">ParseResult</ref><sp/>&amp;<sp/>err)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>code<sp/>==<sp/>err.<ref refid="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" kindref="member">code_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="struct_parse_result_1a88b6d44f052a19e6436ae6aadc2c40b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_parse_result_1a88b6d44f052a19e6436ae6aadc2c40b4" kindref="member">Clear</ref>()<sp/>{<sp/><ref refid="struct_parse_result_1aa81b4a7b776b77216cb752385203a8c1" kindref="member">Set</ref>(<ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ac0856bac4945cbd1d09e9502fd8f852f" kindref="member">kParseErrorNone</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="125" refid="struct_parse_result_1aa81b4a7b776b77216cb752385203a8c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_parse_result_1aa81b4a7b776b77216cb752385203a8c1" kindref="member">Set</ref>(<ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref><sp/>code,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref><sp/>=<sp/>0)<sp/>{<sp/><ref refid="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" kindref="member">code_</ref><sp/>=<sp/>code;<sp/><ref refid="struct_parse_result_1a4854b4b3210fd1bbc0f1457aa0d2b65a" kindref="member">offset_</ref><sp/>=<sp/><ref refid="glew_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="128" refid="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref><sp/><ref refid="struct_parse_result_1aa30a53c4b7452efb82baf4767cda33fb" kindref="member">code_</ref>;</highlight></codeline>
+<codeline lineno="129" refid="struct_parse_result_1a4854b4b3210fd1bbc0f1457aa0d2b65a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_parse_result_1a4854b4b3210fd1bbc0f1457aa0d2b65a" kindref="member">offset_</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"></codeline>
+<codeline lineno="142" refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga586548166441ab3ce30219cb35be2e04" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga7e4636fd48d0148f102b8a13f0539d8c" kindref="member">RAPIDJSON_ERROR_CHARTYPE</ref>*<sp/>(*GetParseErrorFunc)(<ref refid="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref>);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><ref refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf18f052a98b9f5df5448d39484b743c1" kindref="member">RAPIDJSON_NAMESPACE_END</ref></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>RAPIDJSON_ERROR_ERROR_H__</highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/error/error.h"/>
+  </compounddef>
+</doxygen>

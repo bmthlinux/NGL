@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="strfunc_8h" kind="file" language="C++">
+    <compoundname>strfunc.h</compoundname>
+    <includes refid="rapidjson_8h" local="yes">../rapidjson.h</includes>
+    <includedby refid="document_8h" local="yes">document.h</includedby>
+    <includedby refid="writer_8h" local="yes">writer.h</includedby>
+    <incdepgraph>
+      <node id="6311">
+        <label>cassert</label>
+      </node>
+      <node id="6307">
+        <label>strfunc.h</label>
+        <link refid="strfunc.h"/>
+        <childnode refid="6308" relation="include">
+        </childnode>
+      </node>
+      <node id="6312">
+        <label>allocators.h</label>
+        <link refid="allocators_8h"/>
+        <childnode refid="6308" relation="include">
+        </childnode>
+      </node>
+      <node id="6309">
+        <label>cstdlib</label>
+      </node>
+      <node id="6308">
+        <label>../rapidjson.h</label>
+        <link refid="rapidjson_8h"/>
+        <childnode refid="6309" relation="include">
+        </childnode>
+        <childnode refid="6310" relation="include">
+        </childnode>
+        <childnode refid="6311" relation="include">
+        </childnode>
+        <childnode refid="6312" relation="include">
+        </childnode>
+        <childnode refid="6313" relation="include">
+        </childnode>
+      </node>
+      <node id="6313">
+        <label>encodings.h</label>
+        <link refid="encodings_8h"/>
+        <childnode refid="6308" relation="include">
+        </childnode>
+      </node>
+      <node id="6310">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6318">
+        <label>writer.h</label>
+        <link refid="writer_8h"/>
+        <childnode refid="6319" relation="include">
+        </childnode>
+      </node>
+      <node id="6314">
+        <label>strfunc.h</label>
+        <link refid="strfunc.h"/>
+        <childnode refid="6315" relation="include">
+        </childnode>
+        <childnode refid="6318" relation="include">
+        </childnode>
+      </node>
+      <node id="6316">
+        <label>ShaderLib.cpp</label>
+        <link refid="_shader_lib_8cpp"/>
+      </node>
+      <node id="6319">
+        <label>prettywriter.h</label>
+        <link refid="prettywriter_8h"/>
+      </node>
+      <node id="6317">
+        <label>pointer.h</label>
+        <link refid="pointer_8h"/>
+      </node>
+      <node id="6315">
+        <label>document.h</label>
+        <link refid="document_8h"/>
+        <childnode refid="6316" relation="include">
+        </childnode>
+        <childnode refid="6317" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceinternal">internal</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Tencent<sp/>is<sp/>pleased<sp/>to<sp/>support<sp/>the<sp/>open<sp/>source<sp/>community<sp/>by<sp/>making<sp/>RapidJSON<sp/>available.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2015<sp/>THL<sp/>A29<sp/>Limited,<sp/>a<sp/>Tencent<sp/>company,<sp/>and<sp/>Milo<sp/>Yip.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Licensed<sp/>under<sp/>the<sp/>MIT<sp/>License<sp/>(the<sp/>&quot;License&quot;);<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>http://opensource.org/licenses/MIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software<sp/>distributed<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RAPIDJSON_INTERNAL_STRFUNC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RAPIDJSON_INTERNAL_STRFUNC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../rapidjson.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gad3806c8251fdc7da9618b7e922674ffc" kindref="member">RAPIDJSON_NAMESPACE_BEGIN</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceinternal" kindref="compound">internal</ref><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"></codeline>
+<codeline lineno="29"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Ch&gt;</highlight></codeline>
+<codeline lineno="30" refid="namespaceinternal_1a86326fb0c9d7c7ea8edd7deedbb2b26e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" kindref="member">SizeType</ref><sp/><ref refid="namespaceinternal_1a86326fb0c9d7c7ea8edd7deedbb2b26e" kindref="member">StrLen</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Ch*<sp/><ref refid="glew_8h_1a4af680a6c683f88ed67b76f207f2e6e4" kindref="member">s</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Ch*<sp/><ref refid="glew_8h_1aa5367c14d90f462230c2611b81b41d23" kindref="member">p</ref><sp/>=<sp/><ref refid="glew_8h_1a4af680a6c683f88ed67b76f207f2e6e4" kindref="member">s</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(*p)<sp/>++<ref refid="glew_8h_1aa5367c14d90f462230c2611b81b41d23" kindref="member">p</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="rapidjson_8h_1a5ed6e6e67250fadbd041127e6386dcb5" kindref="member">SizeType</ref>(p<sp/>-<sp/>s);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>internal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><ref refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf18f052a98b9f5df5448d39484b743c1" kindref="member">RAPIDJSON_NAMESPACE_END</ref></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>RAPIDJSON_INTERNAL_STRFUNC_H_</highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/strfunc.h"/>
+  </compounddef>
+</doxygen>

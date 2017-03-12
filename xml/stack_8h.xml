@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="stack_8h" kind="file" language="C++">
+    <compoundname>stack.h</compoundname>
+    <includes refid="rapidjson_8h" local="yes">../rapidjson.h</includes>
+    <includes refid="swap_8h" local="yes">swap.h</includes>
+    <includedby refid="reader_8h" local="yes">reader.h</includedby>
+    <includedby refid="memorybuffer_8h" local="yes">memorybuffer.h</includedby>
+    <includedby refid="writer_8h" local="yes">writer.h</includedby>
+    <includedby refid="stringbuffer_8h" local="yes">stringbuffer.h</includedby>
+    <incdepgraph>
+      <node id="6193">
+        <label>swap.h</label>
+        <link refid="swap_8h"/>
+        <childnode refid="6187" relation="include">
+        </childnode>
+      </node>
+      <node id="6190">
+        <label>cassert</label>
+      </node>
+      <node id="6191">
+        <label>allocators.h</label>
+        <link refid="allocators_8h"/>
+        <childnode refid="6187" relation="include">
+        </childnode>
+      </node>
+      <node id="6188">
+        <label>cstdlib</label>
+      </node>
+      <node id="6187">
+        <label>../rapidjson.h</label>
+        <link refid="rapidjson_8h"/>
+        <childnode refid="6188" relation="include">
+        </childnode>
+        <childnode refid="6189" relation="include">
+        </childnode>
+        <childnode refid="6190" relation="include">
+        </childnode>
+        <childnode refid="6191" relation="include">
+        </childnode>
+        <childnode refid="6192" relation="include">
+        </childnode>
+      </node>
+      <node id="6192">
+        <label>encodings.h</label>
+        <link refid="encodings_8h"/>
+        <childnode refid="6187" relation="include">
+        </childnode>
+      </node>
+      <node id="6189">
+        <label>cstring</label>
+      </node>
+      <node id="6186">
+        <label>stack.h</label>
+        <link refid="stack.h"/>
+        <childnode refid="6187" relation="include">
+        </childnode>
+        <childnode refid="6193" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6202">
+        <label>stringbuffer.h</label>
+        <link refid="stringbuffer_8h"/>
+        <childnode refid="6200" relation="include">
+        </childnode>
+      </node>
+      <node id="6200">
+        <label>writer.h</label>
+        <link refid="writer_8h"/>
+        <childnode refid="6201" relation="include">
+        </childnode>
+      </node>
+      <node id="6197">
+        <label>ShaderLib.cpp</label>
+        <link refid="_shader_lib_8cpp"/>
+      </node>
+      <node id="6201">
+        <label>prettywriter.h</label>
+        <link refid="prettywriter_8h"/>
+      </node>
+      <node id="6195">
+        <label>reader.h</label>
+        <link refid="reader_8h"/>
+        <childnode refid="6196" relation="include">
+        </childnode>
+      </node>
+      <node id="6198">
+        <label>pointer.h</label>
+        <link refid="pointer_8h"/>
+      </node>
+      <node id="6199">
+        <label>memorybuffer.h</label>
+        <link refid="memorybuffer_8h"/>
+      </node>
+      <node id="6196">
+        <label>document.h</label>
+        <link refid="document_8h"/>
+        <childnode refid="6197" relation="include">
+        </childnode>
+        <childnode refid="6198" relation="include">
+        </childnode>
+      </node>
+      <node id="6194">
+        <label>stack.h</label>
+        <link refid="stack.h"/>
+        <childnode refid="6195" relation="include">
+        </childnode>
+        <childnode refid="6199" relation="include">
+        </childnode>
+        <childnode refid="6200" relation="include">
+        </childnode>
+        <childnode refid="6202" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classinternal_1_1_stack" prot="public">internal::Stack</innerclass>
+    <innernamespace refid="namespaceinternal">internal</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Tencent<sp/>is<sp/>pleased<sp/>to<sp/>support<sp/>the<sp/>open<sp/>source<sp/>community<sp/>by<sp/>making<sp/>RapidJSON<sp/>available.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2015<sp/>THL<sp/>A29<sp/>Limited,<sp/>a<sp/>Tencent<sp/>company,<sp/>and<sp/>Milo<sp/>Yip.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Licensed<sp/>under<sp/>the<sp/>MIT<sp/>License<sp/>(the<sp/>&quot;License&quot;);<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>http://opensource.org/licenses/MIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software<sp/>distributed<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RAPIDJSON_INTERNAL_STACK_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RAPIDJSON_INTERNAL_STACK_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../rapidjson.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="swap_8h" kindref="compound">swap.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gad3806c8251fdc7da9618b7e922674ffc" kindref="member">RAPIDJSON_NAMESPACE_BEGIN</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceinternal" kindref="compound">internal</ref><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="comment">//<sp/>Stack</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"></codeline>
+<codeline lineno="30"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Allocator&gt;</highlight></codeline>
+<codeline lineno="31" refid="classinternal_1_1_stack" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classinternal_1_1_stack" kindref="compound">Stack</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Optimization<sp/>note:<sp/>Do<sp/>not<sp/>allocate<sp/>memory<sp/>for<sp/>stack_<sp/>in<sp/>constructor.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Do<sp/>it<sp/>lazily<sp/>when<sp/>first<sp/>Push()<sp/>-&gt;<sp/>Expand()<sp/>-&gt;<sp/>Resize().</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classinternal_1_1_stack_1af09ab91f9e5143deccf7c9af837f451e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1af09ab91f9e5143deccf7c9af837f451e" kindref="member">Stack</ref>(Allocator*<sp/>allocator,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>stackCapacity)<sp/>:<sp/><ref refid="classinternal_1_1_stack_1a029e18096d082b1c81d7e1075a15eaad" kindref="member">allocator_</ref>(allocator),<sp/><ref refid="classinternal_1_1_stack_1a71e95d02ac850a97e1ee3628a207cbe9" kindref="member">ownAllocator_</ref>(0),<sp/><ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref>(0),<sp/><ref refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" kindref="member">stackTop_</ref>(0),<sp/><ref refid="classinternal_1_1_stack_1af21b647d9f73246e9c96fa0966bdaf5d" kindref="member">stackEnd_</ref>(0),<sp/><ref refid="classinternal_1_1_stack_1a224b9fa2406bc1c411068fa36c67c90f" kindref="member">initialCapacity_</ref>(stackCapacity)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" kindref="member">RAPIDJSON_ASSERT</ref>(stackCapacity<sp/>&gt;<sp/>0);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>RAPIDJSON_HAS_CXX11_RVALUE_REFS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1af09ab91f9e5143deccf7c9af837f451e" kindref="member">Stack</ref>(<ref refid="classinternal_1_1_stack" kindref="compound">Stack</ref>&amp;&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classinternal_1_1_stack_1a029e18096d082b1c81d7e1075a15eaad" kindref="member">allocator_</ref>(rhs.allocator_),</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1a71e95d02ac850a97e1ee3628a207cbe9" kindref="member">ownAllocator_</ref>(rhs.ownAllocator_),</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref>(rhs.stack_),</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" kindref="member">stackTop_</ref>(rhs.stackTop_),</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1af21b647d9f73246e9c96fa0966bdaf5d" kindref="member">stackEnd_</ref>(rhs.stackEnd_),</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1a224b9fa2406bc1c411068fa36c67c90f" kindref="member">initialCapacity_</ref>(rhs.initialCapacity_)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.allocator_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.ownAllocator_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.stack_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.stackTop_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.stackEnd_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.initialCapacity_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classinternal_1_1_stack_1afedce84c8816abe9277a71ebd5e1808a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1afedce84c8816abe9277a71ebd5e1808a" kindref="member">~Stack</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1a5efa6fdbfaf93c5e519a2e6f39bd081f" kindref="member">Destroy</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>RAPIDJSON_HAS_CXX11_RVALUE_REFS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack" kindref="compound">Stack</ref>&amp;<sp/><ref refid="classinternal_1_1_stack_1ae21d491cc0c4a22a2c131d88c0a37ae1" kindref="member">operator=</ref>(<ref refid="classinternal_1_1_stack" kindref="compound">Stack</ref>&amp;&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(&amp;rhs<sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1a5efa6fdbfaf93c5e519a2e6f39bd081f" kindref="member">Destroy</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1a029e18096d082b1c81d7e1075a15eaad" kindref="member">allocator_</ref><sp/>=<sp/>rhs.allocator_;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1a71e95d02ac850a97e1ee3628a207cbe9" kindref="member">ownAllocator_</ref><sp/>=<sp/>rhs.ownAllocator_;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref><sp/>=<sp/>rhs.stack_;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" kindref="member">stackTop_</ref><sp/>=<sp/>rhs.stackTop_;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1af21b647d9f73246e9c96fa0966bdaf5d" kindref="member">stackEnd_</ref><sp/>=<sp/>rhs.stackEnd_;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1a224b9fa2406bc1c411068fa36c67c90f" kindref="member">initialCapacity_</ref><sp/>=<sp/>rhs.initialCapacity_;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.allocator_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.ownAllocator_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.stack_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.stackTop_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.stackEnd_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.initialCapacity_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classinternal_1_1_stack_1a5e601199a21d84b1ac612f558be0f2c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classinternal_1_1_stack_1a5e601199a21d84b1ac612f558be0f2c3" kindref="member">Swap</ref>(<ref refid="classinternal_1_1_stack" kindref="compound">Stack</ref>&amp;<sp/>rhs)<sp/>RAPIDJSON_NOEXCEPT<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceinternal_1a72b2c71d36273b9691487f58c671ce04" kindref="member">internal::Swap</ref>(<ref refid="classinternal_1_1_stack_1a029e18096d082b1c81d7e1075a15eaad" kindref="member">allocator_</ref>,<sp/>rhs.allocator_);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceinternal_1a72b2c71d36273b9691487f58c671ce04" kindref="member">internal::Swap</ref>(<ref refid="classinternal_1_1_stack_1a71e95d02ac850a97e1ee3628a207cbe9" kindref="member">ownAllocator_</ref>,<sp/>rhs.ownAllocator_);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceinternal_1a72b2c71d36273b9691487f58c671ce04" kindref="member">internal::Swap</ref>(<ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref>,<sp/>rhs.stack_);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceinternal_1a72b2c71d36273b9691487f58c671ce04" kindref="member">internal::Swap</ref>(<ref refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" kindref="member">stackTop_</ref>,<sp/>rhs.stackTop_);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceinternal_1a72b2c71d36273b9691487f58c671ce04" kindref="member">internal::Swap</ref>(<ref refid="classinternal_1_1_stack_1af21b647d9f73246e9c96fa0966bdaf5d" kindref="member">stackEnd_</ref>,<sp/>rhs.stackEnd_);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceinternal_1a72b2c71d36273b9691487f58c671ce04" kindref="member">internal::Swap</ref>(<ref refid="classinternal_1_1_stack_1a224b9fa2406bc1c411068fa36c67c90f" kindref="member">initialCapacity_</ref>,<sp/>rhs.initialCapacity_);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classinternal_1_1_stack_1a02da31665a372738e81ded2f7b7d598e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classinternal_1_1_stack_1a02da31665a372738e81ded2f7b7d598e" kindref="member">Clear</ref>()<sp/>{<sp/><ref refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" kindref="member">stackTop_</ref><sp/>=<sp/><ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classinternal_1_1_stack_1a3852b8494d69c91f6a238a51572e591e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classinternal_1_1_stack_1a3852b8494d69c91f6a238a51572e591e" kindref="member">ShrinkToFit</ref>()<sp/>{<sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classinternal_1_1_stack_1abf57d1c7b356d8acbbe0e79147ca4b5c" kindref="member">Empty</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>stack<sp/>is<sp/>empty,<sp/>completely<sp/>deallocate<sp/>the<sp/>memory.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Allocator::Free(<ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" kindref="member">stackTop_</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1af21b647d9f73246e9c96fa0966bdaf5d" kindref="member">stackEnd_</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1a0a23948aa17a9870a5e228d465e40e92" kindref="member">Resize</ref>(<ref refid="classinternal_1_1_stack_1ade4a25fa82950619652a30aa3a807f58" kindref="member">GetSize</ref>());</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Optimization<sp/>note:<sp/>try<sp/>to<sp/>minimize<sp/>the<sp/>size<sp/>of<sp/>this<sp/>function<sp/>for<sp/>force<sp/>inline.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Expansion<sp/>is<sp/>run<sp/>very<sp/>infrequently,<sp/>so<sp/>it<sp/>is<sp/>moved<sp/>to<sp/>another<sp/>(probably<sp/>non-inline)<sp/>function.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="111" refid="classinternal_1_1_stack_1a8038223ec0ed6ea92bb5f48e645a25ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>RAPIDJSON_FORCEINLINE<sp/>T*<sp/><ref refid="classinternal_1_1_stack_1a8038223ec0ed6ea92bb5f48e645a25ca" kindref="member">Push</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a10b284d589000663becfbc6867a3a9f7" kindref="member">count</ref><sp/>=<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Expand<sp/>the<sp/>stack<sp/>if<sp/>needed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" kindref="member">stackTop_</ref><sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T)<sp/>*<sp/><ref refid="glew_8h_1a10b284d589000663becfbc6867a3a9f7" kindref="member">count</ref><sp/>&gt;=<sp/><ref refid="classinternal_1_1_stack_1af21b647d9f73246e9c96fa0966bdaf5d" kindref="member">stackEnd_</ref>)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Expand&lt;T&gt;(<ref refid="glew_8h_1a10b284d589000663becfbc6867a3a9f7" kindref="member">count</ref>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T*<sp/>ret<sp/>=<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">T*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" kindref="member">stackTop_</ref>);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" kindref="member">stackTop_</ref><sp/>+=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T)<sp/>*<sp/><ref refid="glew_8h_1a10b284d589000663becfbc6867a3a9f7" kindref="member">count</ref>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="122" refid="classinternal_1_1_stack_1a8545a8ccba595ac6e4ade9784474aa1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/><ref refid="classinternal_1_1_stack_1a8545a8ccba595ac6e4ade9784474aa1c" kindref="member">Pop</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a10b284d589000663becfbc6867a3a9f7" kindref="member">count</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" kindref="member">RAPIDJSON_ASSERT</ref>(<ref refid="classinternal_1_1_stack_1ade4a25fa82950619652a30aa3a807f58" kindref="member">GetSize</ref>()<sp/>&gt;=<sp/>count<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" kindref="member">stackTop_</ref><sp/>-=<sp/>count<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">T*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" kindref="member">stackTop_</ref>);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="129" refid="classinternal_1_1_stack_1ab3ed5b4afed3c73c516678516d5e195b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/><ref refid="classinternal_1_1_stack_1ab3ed5b4afed3c73c516678516d5e195b" kindref="member">Top</ref>()<sp/>{<sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" kindref="member">RAPIDJSON_ASSERT</ref>(<ref refid="classinternal_1_1_stack_1ade4a25fa82950619652a30aa3a807f58" kindref="member">GetSize</ref>()<sp/>&gt;=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">T*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" kindref="member">stackTop_</ref><sp/>-<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="135" refid="classinternal_1_1_stack_1a10aa1bc716b82cb0a40b3a3b9d5efe87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/><ref refid="classinternal_1_1_stack_1a10aa1bc716b82cb0a40b3a3b9d5efe87" kindref="member">Bottom</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(T*)<ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="classinternal_1_1_stack_1a6cd7033d53a1da185ea6dc2e15f7234c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classinternal_1_1_stack_1a6cd7033d53a1da185ea6dc2e15f7234c" kindref="member">HasAllocator</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classinternal_1_1_stack_1a029e18096d082b1c81d7e1075a15eaad" kindref="member">allocator_</ref><sp/>!=<sp/>0;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="classinternal_1_1_stack_1ab01f693833dfe136f574d66547623cfa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Allocator&amp;<sp/><ref refid="classinternal_1_1_stack_1ab01f693833dfe136f574d66547623cfa" kindref="member">GetAllocator</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gabeba18d612187bad2ac62aed9276d47c" kindref="member">RAPIDJSON_ASSERT</ref>(<ref refid="classinternal_1_1_stack_1a029e18096d082b1c81d7e1075a15eaad" kindref="member">allocator_</ref>);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="classinternal_1_1_stack_1a029e18096d082b1c81d7e1075a15eaad" kindref="member">allocator_</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145" refid="classinternal_1_1_stack_1abf57d1c7b356d8acbbe0e79147ca4b5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classinternal_1_1_stack_1abf57d1c7b356d8acbbe0e79147ca4b5c" kindref="member">Empty</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" kindref="member">stackTop_</ref><sp/>==<sp/><ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="146" refid="classinternal_1_1_stack_1ade4a25fa82950619652a30aa3a807f58" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classinternal_1_1_stack_1ade4a25fa82950619652a30aa3a807f58" kindref="member">GetSize</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" kindref="member">stackTop_</ref><sp/>-<sp/><ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="147" refid="classinternal_1_1_stack_1a61dea1ed780c07bb438d17c581ab0e48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classinternal_1_1_stack_1a61dea1ed780c07bb438d17c581ab0e48" kindref="member">GetCapacity</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classinternal_1_1_stack_1af21b647d9f73246e9c96fa0966bdaf5d" kindref="member">stackEnd_</ref><sp/>-<sp/><ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="151" refid="classinternal_1_1_stack_1a5a530d1d2a39a05812e4fee0e299004a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classinternal_1_1_stack_1a5a530d1d2a39a05812e4fee0e299004a" kindref="member">Expand</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a10b284d589000663becfbc6867a3a9f7" kindref="member">count</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Only<sp/>expand<sp/>the<sp/>capacity<sp/>if<sp/>the<sp/>current<sp/>stack<sp/>exists.<sp/>Otherwise<sp/>just<sp/>create<sp/>a<sp/>stack<sp/>with<sp/>initial<sp/>capacity.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>newCapacity;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref><sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classinternal_1_1_stack_1a029e18096d082b1c81d7e1075a15eaad" kindref="member">allocator_</ref>)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1a71e95d02ac850a97e1ee3628a207cbe9" kindref="member">ownAllocator_</ref><sp/>=<sp/><ref refid="classinternal_1_1_stack_1a029e18096d082b1c81d7e1075a15eaad" kindref="member">allocator_</ref><sp/>=<sp/><ref refid="rapidjson_8h_1ab9e102fa2f1a0ae4914d4dac21f690a2" kindref="member">RAPIDJSON_NEW</ref>(Allocator());</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newCapacity<sp/>=<sp/><ref refid="classinternal_1_1_stack_1a224b9fa2406bc1c411068fa36c67c90f" kindref="member">initialCapacity_</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newCapacity<sp/>=<sp/><ref refid="classinternal_1_1_stack_1a61dea1ed780c07bb438d17c581ab0e48" kindref="member">GetCapacity</ref>();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newCapacity<sp/>+=<sp/>(newCapacity<sp/>+<sp/>1)<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>newSize<sp/>=<sp/><ref refid="classinternal_1_1_stack_1ade4a25fa82950619652a30aa3a807f58" kindref="member">GetSize</ref>()<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T)<sp/>*<sp/>count;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(newCapacity<sp/>&lt;<sp/>newSize)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newCapacity<sp/>=<sp/>newSize;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1a0a23948aa17a9870a5e228d465e40e92" kindref="member">Resize</ref>(newCapacity);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="classinternal_1_1_stack_1a0a23948aa17a9870a5e228d465e40e92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classinternal_1_1_stack_1a0a23948aa17a9870a5e228d465e40e92" kindref="member">Resize</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>newCapacity)<sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="glew_8h_1a3d1e3edfcf61ca2d831883e1afbad89e" kindref="member">size</ref><sp/>=<sp/><ref refid="classinternal_1_1_stack_1ade4a25fa82950619652a30aa3a807f58" kindref="member">GetSize</ref>();<sp/><sp/></highlight><highlight class="comment">//<sp/>Backup<sp/>the<sp/>current<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="classinternal_1_1_stack_1a029e18096d082b1c81d7e1075a15eaad" kindref="member">allocator_</ref>-&gt;Realloc(<ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref>,<sp/><ref refid="classinternal_1_1_stack_1a61dea1ed780c07bb438d17c581ab0e48" kindref="member">GetCapacity</ref>(),<sp/>newCapacity);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" kindref="member">stackTop_</ref><sp/>=<sp/><ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref><sp/>+<sp/><ref refid="glew_8h_1a3d1e3edfcf61ca2d831883e1afbad89e" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1af21b647d9f73246e9c96fa0966bdaf5d" kindref="member">stackEnd_</ref><sp/>=<sp/><ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref><sp/>+<sp/>newCapacity;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="classinternal_1_1_stack_1a5efa6fdbfaf93c5e519a2e6f39bd081f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classinternal_1_1_stack_1a5efa6fdbfaf93c5e519a2e6f39bd081f" kindref="member">Destroy</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Allocator::Free(<ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref>);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="rapidjson_8h_1a52c941c3fdd646527cdcd42aa846a28a" kindref="member">RAPIDJSON_DELETE</ref>(<ref refid="classinternal_1_1_stack_1a71e95d02ac850a97e1ee3628a207cbe9" kindref="member">ownAllocator_</ref>);<sp/></highlight><highlight class="comment">//<sp/>Only<sp/>delete<sp/>if<sp/>it<sp/>is<sp/>owned<sp/>by<sp/>the<sp/>stack</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Prohibit<sp/>copy<sp/>constructor<sp/>&amp;<sp/>assignment<sp/>operator.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack_1af09ab91f9e5143deccf7c9af837f451e" kindref="member">Stack</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classinternal_1_1_stack" kindref="compound">Stack</ref>&amp;);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classinternal_1_1_stack" kindref="compound">Stack</ref>&amp;<sp/><ref refid="classinternal_1_1_stack_1ae21d491cc0c4a22a2c131d88c0a37ae1" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classinternal_1_1_stack" kindref="compound">Stack</ref>&amp;);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="classinternal_1_1_stack_1a029e18096d082b1c81d7e1075a15eaad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Allocator*<sp/><ref refid="classinternal_1_1_stack_1a029e18096d082b1c81d7e1075a15eaad" kindref="member">allocator_</ref>;</highlight></codeline>
+<codeline lineno="186" refid="classinternal_1_1_stack_1a71e95d02ac850a97e1ee3628a207cbe9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Allocator*<sp/><ref refid="classinternal_1_1_stack_1a71e95d02ac850a97e1ee3628a207cbe9" kindref="member">ownAllocator_</ref>;</highlight></codeline>
+<codeline lineno="187" refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" kindref="member">stack_</ref>;</highlight></codeline>
+<codeline lineno="188" refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" kindref="member">stackTop_</ref>;</highlight></codeline>
+<codeline lineno="189" refid="classinternal_1_1_stack_1af21b647d9f73246e9c96fa0966bdaf5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classinternal_1_1_stack_1af21b647d9f73246e9c96fa0966bdaf5d" kindref="member">stackEnd_</ref>;</highlight></codeline>
+<codeline lineno="190" refid="classinternal_1_1_stack_1a224b9fa2406bc1c411068fa36c67c90f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classinternal_1_1_stack_1a224b9fa2406bc1c411068fa36c67c90f" kindref="member">initialCapacity_</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>internal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><ref refid="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaf18f052a98b9f5df5448d39484b743c1" kindref="member">RAPIDJSON_NAMESPACE_END</ref></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>RAPIDJSON_STACK_H_</highlight></codeline>
+    </programlisting>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h"/>
+  </compounddef>
+</doxygen>

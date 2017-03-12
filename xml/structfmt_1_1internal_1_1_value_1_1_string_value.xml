@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structfmt_1_1internal_1_1_value_1_1_string_value" kind="struct" language="C++" prot="public">
+    <compoundname>fmt::internal::Value::StringValue</compoundname>
+    <includes refid="format_8h" local="no">format.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Char</declname>
+        <defname>Char</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_value_1_1_string_value_1a5fcfe566f56e4bbf08748303cd7fa6ca" prot="public" static="no" mutable="no">
+        <type>const Char *</type>
+        <definition>const Char* fmt::internal::Value::StringValue&lt; Char &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="999" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="999" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1_arg_visitor_1a19a979776fc789baaf038ab216e245bb" compoundref="format_8h" startline="1551" endline="1585">fmt::ArgVisitor&lt; ArgConverter&lt; T &gt;, void &gt;::visit</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1a8914b930ac43788f801af0008f7b743e" compoundref="format_8h" startline="2640" endline="2657">fmt::BasicWriter&lt; Char &gt;::write_str</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_value_1_1_string_value_1abd1880f3fb3618e37fb3df74ff623146" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t fmt::internal::Value::StringValue&lt; Char &gt;::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1000" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1000" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1_basic_writer_1a8914b930ac43788f801af0008f7b743e" compoundref="format_8h" startline="2640" endline="2657">fmt::BasicWriter&lt; Char &gt;::write_str</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1957">
+        <label>fmt::internal::Value::StringValue&lt; wchar_t &gt;</label>
+        <link refid="structfmt_1_1internal_1_1_value_1_1_string_value"/>
+        <childnode refid="1954" relation="template-instance">
+          <edgelabel>&lt; wchar_t &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1956">
+        <label>fmt::internal::Value::StringValue&lt; unsigned char &gt;</label>
+        <link refid="structfmt_1_1internal_1_1_value_1_1_string_value"/>
+        <childnode refid="1954" relation="template-instance">
+          <edgelabel>&lt; unsigned char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1955">
+        <label>fmt::internal::Value::StringValue&lt; signed char &gt;</label>
+        <link refid="structfmt_1_1internal_1_1_value_1_1_string_value"/>
+        <childnode refid="1954" relation="template-instance">
+          <edgelabel>&lt; signed char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1958">
+        <label>fmt::internal::Value::StringValue&lt; char &gt;</label>
+        <link refid="structfmt_1_1internal_1_1_value_1_1_string_value"/>
+        <childnode refid="1954" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1954">
+        <label>fmt::internal::Value::StringValue&lt; Char &gt;</label>
+        <link refid="structfmt_1_1internal_1_1_value_1_1_string_value"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1960">
+        <label>Char</label>
+      </node>
+      <node id="1961">
+        <label>size_t</label>
+      </node>
+      <node id="1959">
+        <label>fmt::internal::Value::StringValue&lt; Char &gt;</label>
+        <link refid="structfmt_1_1internal_1_1_value_1_1_string_value"/>
+        <childnode refid="1960" relation="usage">
+          <edgelabel>+value</edgelabel>
+        </childnode>
+        <childnode refid="1961" relation="usage">
+          <edgelabel>+size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="998" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="998" bodyend="1001"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1internal_1_1_value_1_1_string_value_1abd1880f3fb3618e37fb3df74ff623146" prot="public" virt="non-virtual"><scope>fmt::internal::Value::StringValue</scope><name>size</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1_1_string_value_1a5fcfe566f56e4bbf08748303cd7fa6ca" prot="public" virt="non-virtual"><scope>fmt::internal::Value::StringValue</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

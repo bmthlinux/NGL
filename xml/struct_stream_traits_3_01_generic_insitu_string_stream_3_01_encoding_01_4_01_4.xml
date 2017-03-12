@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_stream_traits_3_01_generic_insitu_string_stream_3_01_encoding_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>StreamTraits&lt; GenericInsituStringStream&lt; Encoding &gt; &gt;</compoundname>
+    <includes refid="rapidjson_8h" local="no">rapidjson.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Encoding</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_stream_traits_3_01_generic_insitu_string_stream_3_01_encoding_01_4_01_4_1ac01d293ebd8ba20758c7add9106a24c1" prot="public" static="no">
+        <name>@37</name>
+        <enumvalue id="struct_stream_traits_3_01_generic_insitu_string_stream_3_01_encoding_01_4_01_4_1ac01d293ebd8ba20758c7add9106a24c1a8d0f051fca7788dc2aeaadd6e5a153ed" prot="public">
+          <name>copyOptimization</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" line="632" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" bodystart="632" bodyend="632"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1935">
+        <label>StreamTraits&lt; GenericInsituStringStream&lt; Encoding &gt; &gt;</label>
+        <link refid="struct_stream_traits_3_01_generic_insitu_string_stream_3_01_encoding_01_4_01_4"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" line="631" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/rapidjson.h" bodystart="631" bodyend="633"/>
+    <listofallmembers>
+      <member refid="struct_stream_traits_3_01_generic_insitu_string_stream_3_01_encoding_01_4_01_4_1ac01d293ebd8ba20758c7add9106a24c1a8d0f051fca7788dc2aeaadd6e5a153ed" prot="public" virt="non-virtual"><scope>StreamTraits&lt; GenericInsituStringStream&lt; Encoding &gt; &gt;</scope><name>copyOptimization</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

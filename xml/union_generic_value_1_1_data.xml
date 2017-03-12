@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="union_generic_value_1_1_data" kind="union" language="C++" prot="public">
+    <compoundname>GenericValue::Data</compoundname>
+    <includes refid="document_8h" local="no">document.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_generic_value_1_1_data_1a6872a4b93763944063b425e6c001ed2b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_generic_value_1_1_string" kindref="compound">String</ref></type>
+        <definition>String GenericValue&lt; Encoding, Allocator &gt;::Data::s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1675" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1675" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_generic_value_1_1_data_1a410e39a5dc296eb3b152b54193740e4c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_generic_value_1_1_short_string" kindref="compound">ShortString</ref></type>
+        <definition>ShortString GenericValue&lt; Encoding, Allocator &gt;::Data::ss</definition>
+        <argsstring></argsstring>
+        <name>ss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1676" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1676" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_generic_value_1_1_data_1a243007cce2f4b75bea3e3c1ee4c3c239" prot="public" static="no" mutable="no">
+        <type><ref refid="union_generic_value_1_1_number" kindref="compound">Number</ref></type>
+        <definition>Number GenericValue&lt; Encoding, Allocator &gt;::Data::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1677" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1677" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_generic_value_1_1_data_1a15c6847aa3272560aaff5e7ed4320a7f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_generic_value_1_1_object" kindref="compound">Object</ref></type>
+        <definition>Object GenericValue&lt; Encoding, Allocator &gt;::Data::o</definition>
+        <argsstring></argsstring>
+        <name>o</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1678" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1678" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_generic_value_1_1_data_1a1935b99b33ec9deff9f6360f8fa7b812" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_generic_value_1_1_array" kindref="compound">Array</ref></type>
+        <definition>Array GenericValue&lt; Encoding, Allocator &gt;::Data::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1679" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1679" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1439">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Object</label>
+        <link refid="struct_generic_value_1_1_object"/>
+        <childnode refid="1440" relation="usage">
+          <edgelabel>+members</edgelabel>
+        </childnode>
+      </node>
+      <node id="1433">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::String</label>
+        <link refid="struct_generic_value_1_1_string"/>
+      </node>
+      <node id="1432">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Data</label>
+        <link refid="union_generic_value_1_1_data"/>
+        <childnode refid="1433" relation="usage">
+          <edgelabel>+s</edgelabel>
+        </childnode>
+        <childnode refid="1434" relation="usage">
+          <edgelabel>+a</edgelabel>
+        </childnode>
+        <childnode refid="1436" relation="usage">
+          <edgelabel>+n</edgelabel>
+        </childnode>
+        <childnode refid="1439" relation="usage">
+          <edgelabel>+o</edgelabel>
+        </childnode>
+        <childnode refid="1441" relation="usage">
+          <edgelabel>+ss</edgelabel>
+        </childnode>
+      </node>
+      <node id="1437">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Number::U</label>
+        <link refid="struct_generic_value_1_1_number_1_1_u"/>
+      </node>
+      <node id="1438">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Number::I</label>
+        <link refid="struct_generic_value_1_1_number_1_1_i"/>
+      </node>
+      <node id="1441">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::ShortString</label>
+        <link refid="struct_generic_value_1_1_short_string"/>
+      </node>
+      <node id="1440">
+        <label>GenericMember&lt; Encoding, Allocator &gt;</label>
+        <link refid="struct_generic_member"/>
+      </node>
+      <node id="1434">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Array</label>
+        <link refid="struct_generic_value_1_1_array"/>
+        <childnode refid="1435" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1435">
+        <label>GenericValue&lt; Encoding, Allocator &gt;</label>
+        <link refid="class_generic_value"/>
+        <childnode refid="1432" relation="usage">
+          <edgelabel>+data_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1436">
+        <label>GenericValue&lt; Encoding, Allocator &gt;::Number</label>
+        <link refid="union_generic_value_1_1_number"/>
+        <childnode refid="1437" relation="usage">
+          <edgelabel>+u</edgelabel>
+        </childnode>
+        <childnode refid="1438" relation="usage">
+          <edgelabel>+i</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="1674" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="1674" bodyend="1680"/>
+    <listofallmembers>
+      <member refid="union_generic_value_1_1_data_1a1935b99b33ec9deff9f6360f8fa7b812" prot="public" virt="non-virtual"><scope>GenericValue::Data</scope><name>a</name></member>
+      <member refid="union_generic_value_1_1_data_1a243007cce2f4b75bea3e3c1ee4c3c239" prot="public" virt="non-virtual"><scope>GenericValue::Data</scope><name>n</name></member>
+      <member refid="union_generic_value_1_1_data_1a15c6847aa3272560aaff5e7ed4320a7f" prot="public" virt="non-virtual"><scope>GenericValue::Data</scope><name>o</name></member>
+      <member refid="union_generic_value_1_1_data_1a6872a4b93763944063b425e6c001ed2b" prot="public" virt="non-virtual"><scope>GenericValue::Data</scope><name>s</name></member>
+      <member refid="union_generic_value_1_1_data_1a410e39a5dc296eb3b152b54193740e4c" prot="public" virt="non-virtual"><scope>GenericValue::Data</scope><name>ss</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

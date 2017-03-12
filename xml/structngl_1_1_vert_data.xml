@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structngl_1_1_vert_data" kind="struct" language="C++" prot="public">
+    <compoundname>ngl::VertData</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structngl_1_1_vert_data_1a1d7face66c785a131f14a2f7a0a01218" prot="public" static="no" mutable="no">
+        <type><ref refid="glew_8h_1a31aeedaeef29442c9c015ab355c8f5ab" kindref="member">GLfloat</ref></type>
+        <definition>GLfloat ngl::VertData::u</definition>
+        <argsstring></argsstring>
+        <name>u</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/src/AbstractMesh.cpp" line="203" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="203" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">ngl::AbstractMesh::createVAO</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structngl_1_1_vert_data_1a4fd4a95037c1eb7056fbb0412672cd2d" prot="public" static="no" mutable="no">
+        <type><ref refid="glew_8h_1a31aeedaeef29442c9c015ab355c8f5ab" kindref="member">GLfloat</ref></type>
+        <definition>GLfloat ngl::VertData::v</definition>
+        <argsstring></argsstring>
+        <name>v</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/src/AbstractMesh.cpp" line="204" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="204" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">ngl::AbstractMesh::createVAO</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structngl_1_1_vert_data_1ae3b5846610df9f8c1bf5244a3879f7fe" prot="public" static="no" mutable="no">
+        <type><ref refid="glew_8h_1a31aeedaeef29442c9c015ab355c8f5ab" kindref="member">GLfloat</ref></type>
+        <definition>GLfloat ngl::VertData::nx</definition>
+        <argsstring></argsstring>
+        <name>nx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/src/AbstractMesh.cpp" line="205" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="205" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">ngl::AbstractMesh::createVAO</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structngl_1_1_vert_data_1ad4afb7472fe8797266ec29964cde0b6f" prot="public" static="no" mutable="no">
+        <type><ref refid="glew_8h_1a31aeedaeef29442c9c015ab355c8f5ab" kindref="member">GLfloat</ref></type>
+        <definition>GLfloat ngl::VertData::ny</definition>
+        <argsstring></argsstring>
+        <name>ny</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/src/AbstractMesh.cpp" line="206" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="206" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">ngl::AbstractMesh::createVAO</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structngl_1_1_vert_data_1ae4735ab5ef64463bd3f2338fe1446abd" prot="public" static="no" mutable="no">
+        <type><ref refid="glew_8h_1a31aeedaeef29442c9c015ab355c8f5ab" kindref="member">GLfloat</ref></type>
+        <definition>GLfloat ngl::VertData::nz</definition>
+        <argsstring></argsstring>
+        <name>nz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/src/AbstractMesh.cpp" line="207" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="207" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">ngl::AbstractMesh::createVAO</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structngl_1_1_vert_data_1aed6fc63566ddbfce8bbd666b2c803dfc" prot="public" static="no" mutable="no">
+        <type><ref refid="glew_8h_1a31aeedaeef29442c9c015ab355c8f5ab" kindref="member">GLfloat</ref></type>
+        <definition>GLfloat ngl::VertData::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/src/AbstractMesh.cpp" line="208" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="208" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">ngl::AbstractMesh::createVAO</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structngl_1_1_vert_data_1af28b10411e756a2e184fd3556f959a06" prot="public" static="no" mutable="no">
+        <type><ref refid="glew_8h_1a31aeedaeef29442c9c015ab355c8f5ab" kindref="member">GLfloat</ref></type>
+        <definition>GLfloat ngl::VertData::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/src/AbstractMesh.cpp" line="209" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="209" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">ngl::AbstractMesh::createVAO</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structngl_1_1_vert_data_1ac33030b30e49d058297bd4eaec0c1625" prot="public" static="no" mutable="no">
+        <type><ref refid="glew_8h_1a31aeedaeef29442c9c015ab355c8f5ab" kindref="member">GLfloat</ref></type>
+        <definition>GLfloat ngl::VertData::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/src/AbstractMesh.cpp" line="210" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="210" bodyend="-1"/>
+        <referencedby refid="classngl_1_1_abstract_mesh_1a034b7c92a071e1ee7030abafd375d182" compoundref="_abstract_mesh_8cpp" startline="214" endline="331">ngl::AbstractMesh::createVAO</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2056">
+        <label>ngl::VertData</label>
+        <link refid="structngl_1_1_vert_data"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/src/AbstractMesh.cpp" line="202" column="1" bodyfile="/Users/jmacey/NGL/src/AbstractMesh.cpp" bodystart="201" bodyend="211"/>
+    <listofallmembers>
+      <member refid="structngl_1_1_vert_data_1ae3b5846610df9f8c1bf5244a3879f7fe" prot="public" virt="non-virtual"><scope>ngl::VertData</scope><name>nx</name></member>
+      <member refid="structngl_1_1_vert_data_1ad4afb7472fe8797266ec29964cde0b6f" prot="public" virt="non-virtual"><scope>ngl::VertData</scope><name>ny</name></member>
+      <member refid="structngl_1_1_vert_data_1ae4735ab5ef64463bd3f2338fe1446abd" prot="public" virt="non-virtual"><scope>ngl::VertData</scope><name>nz</name></member>
+      <member refid="structngl_1_1_vert_data_1a1d7face66c785a131f14a2f7a0a01218" prot="public" virt="non-virtual"><scope>ngl::VertData</scope><name>u</name></member>
+      <member refid="structngl_1_1_vert_data_1a4fd4a95037c1eb7056fbb0412672cd2d" prot="public" virt="non-virtual"><scope>ngl::VertData</scope><name>v</name></member>
+      <member refid="structngl_1_1_vert_data_1aed6fc63566ddbfce8bbd666b2c803dfc" prot="public" virt="non-virtual"><scope>ngl::VertData</scope><name>x</name></member>
+      <member refid="structngl_1_1_vert_data_1af28b10411e756a2e184fd3556f959a06" prot="public" virt="non-virtual"><scope>ngl::VertData</scope><name>y</name></member>
+      <member refid="structngl_1_1_vert_data_1ac33030b30e49d058297bd4eaec0c1625" prot="public" virt="non-virtual"><scope>ngl::VertData</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

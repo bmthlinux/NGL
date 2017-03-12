@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_79c66d096a12bc65141684ebc106b8e2" kind="dir">
+    <compoundname>shaders</compoundname>
+    <innerfile refid="_colour_shaders_8h">ColourShaders.h</innerfile>
+    <innerfile refid="_diffuse_shaders_8h">DiffuseShaders.h</innerfile>
+    <innerfile refid="_text_shaders_8h">TextShaders.h</innerfile>
+    <innerfile refid="_toon_shaders_8h">ToonShaders.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/jmacey/NGL/src/shaders/"/>
+  </compounddef>
+</doxygen>

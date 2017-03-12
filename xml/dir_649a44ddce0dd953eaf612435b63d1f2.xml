@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_649a44ddce0dd953eaf612435b63d1f2" kind="dir">
+    <compoundname>fmt</compoundname>
+    <innerfile refid="format_8cc">format.cc</innerfile>
+    <innerfile refid="format_8h">format.h</innerfile>
+    <innerfile refid="ostream_8cc">ostream.cc</innerfile>
+    <innerfile refid="ostream_8h">ostream.h</innerfile>
+    <innerfile refid="posix_8cc">posix.cc</innerfile>
+    <innerfile refid="posix_8h">posix.h</innerfile>
+    <innerfile refid="printf_8h">printf.h</innerfile>
+    <innerfile refid="string_8h">string.h</innerfile>
+    <innerfile refid="time_8h">time.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/"/>
+  </compounddef>
+</doxygen>

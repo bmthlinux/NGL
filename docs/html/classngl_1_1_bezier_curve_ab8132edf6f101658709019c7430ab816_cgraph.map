@@ -1,0 +1,4 @@
+<map id="ngl::BezierCurve::BezierCurve" name="ngl::BezierCurve::BezierCurve">
+<area shape="rect" id="node2" href="$classngl_1_1_bezier_curve.html#a6b816b1183d70d1082423aed5f246f5f" title="default ctor sets initial values for Curve to be used with AddPoint , AddKnot etc ..." alt="" coords="219,5,384,46"/>
+<area shape="rect" id="node3" href="$classngl_1_1_bezier_curve.html#a4622d0f19a031e78aee54097f5d048bc" title="create a knot vector array based as an Open Vector (half 0.0 half 1.0) " alt="" coords="219,70,384,111"/>
+</map>

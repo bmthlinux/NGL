@@ -1,0 +1,9 @@
+<map id="ngl::VAOPrimitives::createDefaultVAOs" name="ngl::VAOPrimitives::createDefaultVAOs">
+<area shape="rect" id="node2" href="$classngl_1_1_v_a_o_primitives.html#aec14416905218b50f93e43c8661d7d6b" title="create a VAO from a static header file of data in the TNV format this will usually be created from th..." alt="" coords="198,129,367,170"/>
+<area shape="rect" id="node3" href="$classngl_1_1_v_a_o_factory.html#adee5532df7151fab8e8db0e9ebf94305" title="ngl::VAOFactory::createVAO" alt="" coords="416,5,608,32"/>
+<area shape="rect" id="node4" href="$classngl_1_1_abstract_v_a_o.html#a32a42493f94df2674c89a90cb25cfa2a" title="bind the VAO so it can be used. " alt="" coords="433,56,591,83"/>
+<area shape="rect" id="node5" href="$classngl_1_1_abstract_v_a_o.html#aeeabb8d7a3be60a6814d1c44cb52f27a" title="this method is used to set the data in the VAO, we have a base data type of VertexData above..." alt="" coords="423,107,601,133"/>
+<area shape="rect" id="node6" href="$classngl_1_1_abstract_v_a_o.html#aa51d9e09fa5d76cb0868cdff08e94911" title="set the generic vertex attribute pointer data usually this method will do however the user may occasi..." alt="" coords="418,158,606,199"/>
+<area shape="rect" id="node7" href="$classngl_1_1_abstract_v_a_o.html#ac3bab1083764b87a06bf658e6b6727a8" title="the number of indices to draw in the array. It may be that the draw routine can overide this at anoth..." alt="" coords="423,223,601,265"/>
+<area shape="rect" id="node8" href="$classngl_1_1_abstract_v_a_o.html#a755b4eb87c240c0c95b292c4762fef04" title="unbind the VAO by binding default 0 " alt="" coords="426,289,598,316"/>
+</map>

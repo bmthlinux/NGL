@@ -1,0 +1,5 @@
+<map id="ngl::BezierCurve::getPointOnCurve" name="ngl::BezierCurve::getPointOnCurve">
+<area shape="rect" id="node2" href="$classngl_1_1_bezier_curve.html#a56b40c82609b906efa45eb42a2cbce3c" title="set the Level of Detail for Drawing " alt="" coords="243,5,437,32"/>
+<area shape="rect" id="node3" href="$classngl_1_1_path_camera.html#a2382bb33b09521e9a31caa8eadc28997" title="update the camera by incrementing the step value and re&#45;calculating the tx matrix ..." alt="" coords="255,56,425,83"/>
+<area shape="rect" id="node4" href="$classngl_1_1_path_camera.html#a5fdf9c69645596935d5fa53f8a9177ad" title="update the camera by incrementing the step value and re&#45;calculating the tx matrix if the camera is at..." alt="" coords="233,107,447,133"/>
+</map>

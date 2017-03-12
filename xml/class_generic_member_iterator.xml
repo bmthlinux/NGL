@@ -1,0 +1,683 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_generic_member_iterator" kind="class" language="C++" prot="public">
+    <compoundname>GenericMemberIterator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::iterator&lt; std::random_access_iterator_tag, internal::MaybeAddConst&lt; Const, GenericMember&lt; Encoding, Allocator &gt; &gt;::Type &gt;</basecompoundref>
+    <includes refid="document_8h" local="no">document.h</includes>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>Const</declname>
+        <defname>Const</defname>
+      </param>
+      <param>
+        <type>typename Encoding</type>
+      </param>
+      <param>
+        <type>typename Allocator</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="user-defined">
+      <header>stepping</header>
+      <memberdef kind="function" id="class_generic_member_iterator_1afd6c9a104e2285d1d0b50bde53c9109e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_member_iterator_1ad1cf1ecf6210b47906c9f179c893a8b8" kindref="member">Iterator</ref> &amp;</type>
+        <definition>Iterator&amp; GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="164" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="164" bodyend="164"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_member_iterator_1a6db8972f02d74b663b6ef90ee3ff34f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_member_iterator_1ad1cf1ecf6210b47906c9f179c893a8b8" kindref="member">Iterator</ref> &amp;</type>
+        <definition>Iterator&amp; GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator--</definition>
+        <argsstring>()</argsstring>
+        <name>operator--</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="165" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="165" bodyend="165"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_member_iterator_1a83c8be6d960213ce32d68a880a8d9089" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_member_iterator_1ad1cf1ecf6210b47906c9f179c893a8b8" kindref="member">Iterator</ref></type>
+        <definition>Iterator GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="166" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="166" bodyend="166"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_member_iterator_1a4606c8baec5ea2b5139a503f7caa5444" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_member_iterator_1ad1cf1ecf6210b47906c9f179c893a8b8" kindref="member">Iterator</ref></type>
+        <definition>Iterator GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator--</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator--</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="167" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="167" bodyend="167"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>increment/decrement</header>
+      <memberdef kind="function" id="class_generic_member_iterator_1ac533ee1f689563a7276c3ace44dfe4e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_member_iterator_1ad1cf1ecf6210b47906c9f179c893a8b8" kindref="member">Iterator</ref></type>
+        <definition>Iterator GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator+</definition>
+        <argsstring>(DifferenceType n) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="class_generic_member_iterator_1a902b99c8ae351cd7626514dc5f30740a" kindref="member">DifferenceType</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="172" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="172" bodyend="172"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_member_iterator_1a0152d4ec06c14f50279aa108a97216a7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_member_iterator_1ad1cf1ecf6210b47906c9f179c893a8b8" kindref="member">Iterator</ref></type>
+        <definition>Iterator GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator-</definition>
+        <argsstring>(DifferenceType n) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="class_generic_member_iterator_1a902b99c8ae351cd7626514dc5f30740a" kindref="member">DifferenceType</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="173" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="173" bodyend="173"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_member_iterator_1a1fc75f09d68b0f5d92f18ae8c4133e6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_member_iterator_1ad1cf1ecf6210b47906c9f179c893a8b8" kindref="member">Iterator</ref> &amp;</type>
+        <definition>Iterator&amp; GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator+=</definition>
+        <argsstring>(DifferenceType n)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="class_generic_member_iterator_1a902b99c8ae351cd7626514dc5f30740a" kindref="member">DifferenceType</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="175" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="175" bodyend="175"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_member_iterator_1a7cd0c5f194007ec24fa9fa5c13e2502a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_member_iterator_1ad1cf1ecf6210b47906c9f179c893a8b8" kindref="member">Iterator</ref> &amp;</type>
+        <definition>Iterator&amp; GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator-=</definition>
+        <argsstring>(DifferenceType n)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type><ref refid="class_generic_member_iterator_1a902b99c8ae351cd7626514dc5f30740a" kindref="member">DifferenceType</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="176" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="176" bodyend="176"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>relations</header>
+      <memberdef kind="function" id="class_generic_member_iterator_1aacbaf8c5dfded8148a5ecd400338d457" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator==</definition>
+        <argsstring>(ConstIterator that) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="class_generic_member_iterator_1ae5be27a73dce0be58ee2776db896d591" kindref="member">ConstIterator</ref></type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="181" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="181" bodyend="181"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_member_iterator_1a829ba40cafa98fd5ced56a07658ce0b7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator!=</definition>
+        <argsstring>(ConstIterator that) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="class_generic_member_iterator_1ae5be27a73dce0be58ee2776db896d591" kindref="member">ConstIterator</ref></type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="182" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="182" bodyend="182"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_member_iterator_1a395f81480589f78cb2497509730e36c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator&lt;=</definition>
+        <argsstring>(ConstIterator that) const </argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type><ref refid="class_generic_member_iterator_1ae5be27a73dce0be58ee2776db896d591" kindref="member">ConstIterator</ref></type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="183" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="183" bodyend="183"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_member_iterator_1afe815c6a0cd2f72f800b59fdb443d223" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator&gt;=</definition>
+        <argsstring>(ConstIterator that) const </argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type><ref refid="class_generic_member_iterator_1ae5be27a73dce0be58ee2776db896d591" kindref="member">ConstIterator</ref></type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="184" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="184" bodyend="184"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_member_iterator_1a6a897b2e89822d798c985008fc3a9a18" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator&lt;</definition>
+        <argsstring>(ConstIterator that) const </argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type><ref refid="class_generic_member_iterator_1ae5be27a73dce0be58ee2776db896d591" kindref="member">ConstIterator</ref></type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="185" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="185" bodyend="185"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_member_iterator_1a89c57197cd49cfa6cf98e3bdf1454640" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator&gt;</definition>
+        <argsstring>(ConstIterator that) const </argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type><ref refid="class_generic_member_iterator_1ae5be27a73dce0be58ee2776db896d591" kindref="member">ConstIterator</ref></type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="186" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="186" bodyend="186"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>dereference</header>
+      <memberdef kind="function" id="class_generic_member_iterator_1a37f5cb3b669682da70fe3e5ec6bc4775" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_member_iterator_1ae80f6b601eb9e24f73aa75fb32b35c65" kindref="member">Reference</ref></type>
+        <definition>Reference GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator*</definition>
+        <argsstring>() const </argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="191" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="191" bodyend="191"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_member_iterator_1a2e3d0e0f9a5c0ca69f09e4927ed985c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_member_iterator_1ac69f141f1fde31c1f550f524a69c5de9" kindref="member">Pointer</ref></type>
+        <definition>Pointer GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator-&gt;</definition>
+        <argsstring>() const </argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="192" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="192" bodyend="192"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_member_iterator_1ae83095869e033554257e3f33df59fcfb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_member_iterator_1ae80f6b601eb9e24f73aa75fb32b35c65" kindref="member">Reference</ref></type>
+        <definition>Reference GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator[]</definition>
+        <argsstring>(DifferenceType n) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type><ref refid="class_generic_member_iterator_1a902b99c8ae351cd7626514dc5f30740a" kindref="member">DifferenceType</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="193" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="193" bodyend="193"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_generic_member_iterator_1ac0d50d12ba074e68837964244668c66b" prot="private" static="no">
+        <type><ref refid="struct_generic_member" kindref="compound">GenericMember</ref>&lt; Encoding, Allocator &gt;</type>
+        <definition>typedef GenericMember&lt;Encoding,Allocator&gt; GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::PlainType</definition>
+        <argsstring></argsstring>
+        <name>PlainType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="119" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_member_iterator_1a1323c9d064a9c388a1eb62a6e2c17584" prot="private" static="no">
+        <type>internal::MaybeAddConst&lt; Const, <ref refid="class_generic_member_iterator_1ac0d50d12ba074e68837964244668c66b" kindref="member">PlainType</ref> &gt;::<ref refid="rapidjson_8h_1a1d1cfd8ffb84e947f82999c682b666a7" kindref="member">Type</ref></type>
+        <definition>typedef internal::MaybeAddConst&lt;Const,PlainType&gt;::Type GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ValueType</definition>
+        <argsstring></argsstring>
+        <name>ValueType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="120" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_member_iterator_1a745942368b5c6c6cf32878ad104239a3" prot="private" static="no">
+        <type>std::iterator&lt; std::random_access_iterator_tag, <ref refid="class_generic_member_iterator_1a1323c9d064a9c388a1eb62a6e2c17584" kindref="member">ValueType</ref> &gt;</type>
+        <definition>typedef std::iterator&lt;std::random_access_iterator_tag,ValueType&gt; GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::BaseType</definition>
+        <argsstring></argsstring>
+        <name>BaseType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="121" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_generic_member_iterator_1ad1cf1ecf6210b47906c9f179c893a8b8" prot="public" static="no">
+        <type><ref refid="class_generic_member_iterator" kindref="compound">GenericMemberIterator</ref></type>
+        <definition>typedef GenericMemberIterator GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::Iterator</definition>
+        <argsstring></argsstring>
+        <name>Iterator</name>
+        <briefdescription>
+<para>Iterator type itself. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="125" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_member_iterator_1ae5be27a73dce0be58ee2776db896d591" prot="public" static="no">
+        <type><ref refid="class_generic_member_iterator" kindref="compound">GenericMemberIterator</ref>&lt; true, Encoding, Allocator &gt;</type>
+        <definition>typedef GenericMemberIterator&lt;true,Encoding,Allocator&gt; GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ConstIterator</definition>
+        <argsstring></argsstring>
+        <name>ConstIterator</name>
+        <briefdescription>
+<para>Constant iterator type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="127" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_member_iterator_1abc26eb06f2962765b11dcd06ce84ac02" prot="public" static="no">
+        <type><ref refid="class_generic_member_iterator" kindref="compound">GenericMemberIterator</ref>&lt; false, Encoding, Allocator &gt;</type>
+        <definition>typedef GenericMemberIterator&lt;false,Encoding,Allocator&gt; GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::NonConstIterator</definition>
+        <argsstring></argsstring>
+        <name>NonConstIterator</name>
+        <briefdescription>
+<para>Non-constant iterator type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="129" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_member_iterator_1ac69f141f1fde31c1f550f524a69c5de9" prot="public" static="no">
+        <type><ref refid="pointer_8h_1aee13bda3b973a71e97932a362f052f0b" kindref="member">BaseType::pointer</ref></type>
+        <definition>typedef BaseType::pointer GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::Pointer</definition>
+        <argsstring></argsstring>
+        <name>Pointer</name>
+        <briefdescription>
+<para>Pointer to (const) <ref refid="struct_generic_member" kindref="compound">GenericMember</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="132" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_member_iterator_1ae80f6b601eb9e24f73aa75fb32b35c65" prot="public" static="no">
+        <type><ref refid="glew_8h_1a86b4d0486956da7d2bb74efd20a1b255" kindref="member">BaseType::reference</ref></type>
+        <definition>typedef BaseType::reference GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::Reference</definition>
+        <argsstring></argsstring>
+        <name>Reference</name>
+        <briefdescription>
+<para>Reference to (const) <ref refid="struct_generic_member" kindref="compound">GenericMember</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="134" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_generic_member_iterator_1a902b99c8ae351cd7626514dc5f30740a" prot="public" static="no">
+        <type>BaseType::difference_type</type>
+        <definition>typedef BaseType::difference_type GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::DifferenceType</definition>
+        <argsstring></argsstring>
+        <name>DifferenceType</name>
+        <briefdescription>
+<para>Signed integer type (e.g. <computeroutput>ptrdiff_t</computeroutput>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="136" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_generic_member_iterator_1a82bdd5798f1a5ac0e3e7ba4bd6938cfc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class GenericValue&lt; Encoding, Allocator &gt;</definition>
+        <argsstring></argsstring>
+        <name>GenericValue&lt; Encoding, Allocator &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="84" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_generic_member_iterator_1aa375aeb1ffac85cddc3a72a6c24ec6e1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+          </param>
+          <param>
+            <type>typename</type>
+          </param>
+          <param>
+            <type>typename</type>
+          </param>
+        </templateparamlist>
+        <type>friend class</type>
+        <definition>friend class GenericMemberIterator</definition>
+        <argsstring></argsstring>
+        <name>GenericMemberIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="117" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" prot="private" static="no" mutable="no">
+        <type><ref refid="class_generic_member_iterator_1ac69f141f1fde31c1f550f524a69c5de9" kindref="member">Pointer</ref></type>
+        <definition>Pointer GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</definition>
+        <argsstring></argsstring>
+        <name>ptr_</name>
+        <briefdescription>
+<para>raw pointer </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="203" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="203" bodyend="-1"/>
+        <referencedby refid="class_generic_member_iterator_1afd6c9a104e2285d1d0b50bde53c9109e" compoundref="document_8h" startline="164" endline="164">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator++</referencedby>
+        <referencedby refid="class_generic_member_iterator_1a6db8972f02d74b663b6ef90ee3ff34f6" compoundref="document_8h" startline="165" endline="165">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator--</referencedby>
+        <referencedby refid="class_generic_member_iterator_1ac533ee1f689563a7276c3ace44dfe4e0" compoundref="document_8h" startline="172" endline="172">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator+</referencedby>
+        <referencedby refid="class_generic_member_iterator_1a0152d4ec06c14f50279aa108a97216a7" compoundref="document_8h" startline="173" endline="173">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator-</referencedby>
+        <referencedby refid="class_generic_member_iterator_1a1fc75f09d68b0f5d92f18ae8c4133e6a" compoundref="document_8h" startline="175" endline="175">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator+=</referencedby>
+        <referencedby refid="class_generic_member_iterator_1a7cd0c5f194007ec24fa9fa5c13e2502a" compoundref="document_8h" startline="176" endline="176">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator-=</referencedby>
+        <referencedby refid="class_generic_member_iterator_1aacbaf8c5dfded8148a5ecd400338d457" compoundref="document_8h" startline="181" endline="181">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator==</referencedby>
+        <referencedby refid="class_generic_member_iterator_1a829ba40cafa98fd5ced56a07658ce0b7" compoundref="document_8h" startline="182" endline="182">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator!=</referencedby>
+        <referencedby refid="class_generic_member_iterator_1a395f81480589f78cb2497509730e36c3" compoundref="document_8h" startline="183" endline="183">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator&lt;=</referencedby>
+        <referencedby refid="class_generic_member_iterator_1afe815c6a0cd2f72f800b59fdb443d223" compoundref="document_8h" startline="184" endline="184">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator&gt;=</referencedby>
+        <referencedby refid="class_generic_member_iterator_1a6a897b2e89822d798c985008fc3a9a18" compoundref="document_8h" startline="185" endline="185">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator&lt;</referencedby>
+        <referencedby refid="class_generic_member_iterator_1a89c57197cd49cfa6cf98e3bdf1454640" compoundref="document_8h" startline="186" endline="186">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator&gt;</referencedby>
+        <referencedby refid="class_generic_member_iterator_1a37f5cb3b669682da70fe3e5ec6bc4775" compoundref="document_8h" startline="191" endline="191">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator*</referencedby>
+        <referencedby refid="class_generic_member_iterator_1a2e3d0e0f9a5c0ca69f09e4927ed985c3" compoundref="document_8h" startline="192" endline="192">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator-&gt;</referencedby>
+        <referencedby refid="class_generic_member_iterator_1ae83095869e033554257e3f33df59fcfb" compoundref="document_8h" startline="193" endline="193">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator[]</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_generic_member_iterator_1a2708717d497a0aadacdf75900de4c5b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::GenericMemberIterator</definition>
+        <argsstring>()</argsstring>
+        <name>GenericMemberIterator</name>
+        <briefdescription>
+<para>Default constructor (singular value) </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates an iterator pointing to no element. <simplesect kind="note"><para>All operations, except for comparisons, are undefined on such values. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="142" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="142" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_member_iterator_1a2697fd327a90654b0bf91c988e43f95e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::GenericMemberIterator</definition>
+        <argsstring>(const NonConstIterator &amp;it)</argsstring>
+        <name>GenericMemberIterator</name>
+        <param>
+          <type>const <ref refid="class_generic_member_iterator_1abc26eb06f2962765b11dcd06ce84ac02" kindref="member">NonConstIterator</ref> &amp;</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+<para>Iterator conversions to more const. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>it</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Non-const) iterator to copy from</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Allows the creation of an iterator from another <ref refid="class_generic_member_iterator" kindref="compound">GenericMemberIterator</ref> that is &quot;less const&quot;. Especially, creating a non-constant iterator from a constant iterator are disabled: <itemizedlist>
+<listitem><para>const -&gt; non-const (not ok) </para></listitem>
+<listitem><para>const -&gt; const (ok) </para></listitem>
+<listitem><para>non-const -&gt; const (ok) </para></listitem>
+<listitem><para>non-const -&gt; non-const (ok)</para></listitem>
+</itemizedlist>
+<simplesect kind="note"><para>If the <computeroutput>Const</computeroutput> template parameter is already <computeroutput>false</computeroutput>, this constructor effectively defines a regular copy-constructor. Otherwise, the copy constructor is implicitly defined. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="160" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="160" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_member_iterator_1a056851821e75c4be13b297604bc37c0b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_generic_member_iterator_1a902b99c8ae351cd7626514dc5f30740a" kindref="member">DifferenceType</ref></type>
+        <definition>DifferenceType GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::operator-</definition>
+        <argsstring>(ConstIterator that) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="class_generic_member_iterator_1ae5be27a73dce0be58ee2776db896d591" kindref="member">ConstIterator</ref></type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+<para>Distance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="197" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="197" bodyend="197"/>
+        <references refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" compoundref="document_8h" startline="203">GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::ptr_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_generic_member_iterator_1a76c372cd90c8abff942ab054c4992c74" prot="private" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericMemberIterator&lt; Const, Encoding, Allocator &gt;::GenericMemberIterator</definition>
+        <argsstring>(Pointer p)</argsstring>
+        <name>GenericMemberIterator</name>
+        <param>
+          <type><ref refid="class_generic_member_iterator_1ac69f141f1fde31c1f550f524a69c5de9" kindref="member">Pointer</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Internal constructor from plain pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="201" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="201" bodyend="201"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>(Constant) member iterator for a JSON object value </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is this a constant iterator? </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Encoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Encoding of the value. (Even non-string values need to have the same encoding in a document) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Allocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Allocator type for allocating memory of object, array and string.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+This class implements a Random Access Iterator for <ref refid="struct_generic_member" kindref="compound">GenericMember</ref> elements of a <ref refid="class_generic_value" kindref="compound">GenericValue</ref>, see ISO/IEC 14882:2003(E) C++ standard, 24.1 [lib.iterator.requirements].</para><para><simplesect kind="note"><para>This iterator implementation is mainly intended to avoid implicit conversions from iterator values to <computeroutput>NULL</computeroutput>, e.g. from GenericValue::FindMember.</para></simplesect>
+<simplesect kind="note"><para>Define <computeroutput>RAPIDJSON_NOMEMBERITERATORCLASS</computeroutput> to fall back to a pointer-based implementation, if your platform doesn&apos;t provide the C++ &lt;iterator&gt; header.</para></simplesect>
+<simplesect kind="see"><para><ref refid="struct_generic_member" kindref="compound">GenericMember</ref>, <ref refid="class_generic_value_1a349b8faae61edc42b4289726820be439" kindref="member">GenericValue::MemberIterator</ref>, <ref refid="class_generic_value_1aac08c3e660a9036d3dcb8b10ff6c61f4" kindref="member">GenericValue::ConstMemberIterator</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1543">
+        <label>GenericMemberIterator&lt; Const, Encoding, Allocator &gt;</label>
+        <link refid="class_generic_member_iterator"/>
+        <childnode refid="1544" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1544">
+        <label>std::iterator&lt; std::random_access_iterator_tag, internal::MaybeAddConst&lt; Const, GenericMember&lt; Encoding, Allocator &gt; &gt;::Type &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1545">
+        <label>GenericMemberIterator&lt; Const, Encoding, Allocator &gt;</label>
+        <link refid="class_generic_member_iterator"/>
+        <childnode refid="1546" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1546">
+        <label>std::iterator&lt; std::random_access_iterator_tag, internal::MaybeAddConst&lt; Const, GenericMember&lt; Encoding, Allocator &gt; &gt;::Type &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" line="114" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/document.h" bodystart="112" bodyend="204"/>
+    <listofallmembers>
+      <member refid="class_generic_member_iterator_1a745942368b5c6c6cf32878ad104239a3" prot="private" virt="non-virtual"><scope>GenericMemberIterator</scope><name>BaseType</name></member>
+      <member refid="class_generic_member_iterator_1ae5be27a73dce0be58ee2776db896d591" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>ConstIterator</name></member>
+      <member refid="class_generic_member_iterator_1a902b99c8ae351cd7626514dc5f30740a" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>DifferenceType</name></member>
+      <member refid="class_generic_member_iterator_1aa375aeb1ffac85cddc3a72a6c24ec6e1" prot="private" virt="non-virtual"><scope>GenericMemberIterator</scope><name>GenericMemberIterator</name></member>
+      <member refid="class_generic_member_iterator_1a2708717d497a0aadacdf75900de4c5b4" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>GenericMemberIterator</name></member>
+      <member refid="class_generic_member_iterator_1a2697fd327a90654b0bf91c988e43f95e" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>GenericMemberIterator</name></member>
+      <member refid="class_generic_member_iterator_1a76c372cd90c8abff942ab054c4992c74" prot="private" virt="non-virtual"><scope>GenericMemberIterator</scope><name>GenericMemberIterator</name></member>
+      <member refid="class_generic_member_iterator_1a82bdd5798f1a5ac0e3e7ba4bd6938cfc" prot="private" virt="non-virtual"><scope>GenericMemberIterator</scope><name>GenericValue&lt; Encoding, Allocator &gt;</name></member>
+      <member refid="class_generic_member_iterator_1ad1cf1ecf6210b47906c9f179c893a8b8" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>Iterator</name></member>
+      <member refid="class_generic_member_iterator_1abc26eb06f2962765b11dcd06ce84ac02" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>NonConstIterator</name></member>
+      <member refid="class_generic_member_iterator_1a829ba40cafa98fd5ced56a07658ce0b7" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator!=</name></member>
+      <member refid="class_generic_member_iterator_1a37f5cb3b669682da70fe3e5ec6bc4775" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator*</name></member>
+      <member refid="class_generic_member_iterator_1ac533ee1f689563a7276c3ace44dfe4e0" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator+</name></member>
+      <member refid="class_generic_member_iterator_1afd6c9a104e2285d1d0b50bde53c9109e" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator++</name></member>
+      <member refid="class_generic_member_iterator_1a83c8be6d960213ce32d68a880a8d9089" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator++</name></member>
+      <member refid="class_generic_member_iterator_1a1fc75f09d68b0f5d92f18ae8c4133e6a" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator+=</name></member>
+      <member refid="class_generic_member_iterator_1a0152d4ec06c14f50279aa108a97216a7" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator-</name></member>
+      <member refid="class_generic_member_iterator_1a056851821e75c4be13b297604bc37c0b" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator-</name></member>
+      <member refid="class_generic_member_iterator_1a6db8972f02d74b663b6ef90ee3ff34f6" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator--</name></member>
+      <member refid="class_generic_member_iterator_1a4606c8baec5ea2b5139a503f7caa5444" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator--</name></member>
+      <member refid="class_generic_member_iterator_1a7cd0c5f194007ec24fa9fa5c13e2502a" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator-=</name></member>
+      <member refid="class_generic_member_iterator_1a2e3d0e0f9a5c0ca69f09e4927ed985c3" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator-&gt;</name></member>
+      <member refid="class_generic_member_iterator_1a6a897b2e89822d798c985008fc3a9a18" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator&lt;</name></member>
+      <member refid="class_generic_member_iterator_1a395f81480589f78cb2497509730e36c3" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator&lt;=</name></member>
+      <member refid="class_generic_member_iterator_1aacbaf8c5dfded8148a5ecd400338d457" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator==</name></member>
+      <member refid="class_generic_member_iterator_1a89c57197cd49cfa6cf98e3bdf1454640" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator&gt;</name></member>
+      <member refid="class_generic_member_iterator_1afe815c6a0cd2f72f800b59fdb443d223" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator&gt;=</name></member>
+      <member refid="class_generic_member_iterator_1ae83095869e033554257e3f33df59fcfb" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>operator[]</name></member>
+      <member refid="class_generic_member_iterator_1ac0d50d12ba074e68837964244668c66b" prot="private" virt="non-virtual"><scope>GenericMemberIterator</scope><name>PlainType</name></member>
+      <member refid="class_generic_member_iterator_1ac69f141f1fde31c1f550f524a69c5de9" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>Pointer</name></member>
+      <member refid="class_generic_member_iterator_1a86d045bb193c966d92655a73fe813548" prot="private" virt="non-virtual"><scope>GenericMemberIterator</scope><name>ptr_</name></member>
+      <member refid="class_generic_member_iterator_1ae80f6b601eb9e24f73aa75fb32b35c65" prot="public" virt="non-virtual"><scope>GenericMemberIterator</scope><name>Reference</name></member>
+      <member refid="class_generic_member_iterator_1a1323c9d064a9c388a1eb62a6e2c17584" prot="private" virt="non-virtual"><scope>GenericMemberIterator</scope><name>ValueType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

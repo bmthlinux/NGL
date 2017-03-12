@@ -1,0 +1,4 @@
+<map id="ngl::Transformation" name="ngl::Transformation">
+<area shape="rect" id="node2" href="$classngl_1_1_mat4.html" title="Matrix Class to do simple matrix operations included operator overloaded functions for maths and matr..." alt="" coords="5,35,112,405"/>
+<area shape="rect" id="node3" href="$classngl_1_1_vec3.html" title="simple Vec3 encapsulates a 3 float object like glsl vec3 but not maths use the Vec3 class for maths a..." alt="" coords="161,5,268,435"/>
+</map>

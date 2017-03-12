@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structfmt_1_1internal_1_1_int_checker" kind="struct" language="C++" prot="public">
+    <compoundname>fmt::internal::IntChecker</compoundname>
+    <includes refid="printf_8h" local="no">printf.h</includes>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>IsSigned</declname>
+        <defname>IsSigned</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structfmt_1_1internal_1_1_int_checker_1a56792099fa26819159d5a846b2cc0f44" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool fmt::internal::IntChecker&lt; IsSigned &gt;::fits_in_int</definition>
+        <argsstring>(T value)</argsstring>
+        <name>fits_in_int</name>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/printf.h" line="26" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/printf.h" bodystart="26" bodyend="29"/>
+        <referencedby refid="classfmt_1_1internal_1_1_precision_handler_1a525d499f85d35bb9dbf1d920cd784d57" compoundref="printf_8h" startline="50" endline="54">fmt::internal::PrecisionHandler::visit_any_int</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structfmt_1_1internal_1_1_int_checker_1a75f90ce4807e8028578427a0ce0296c5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool fmt::internal::IntChecker&lt; IsSigned &gt;::fits_in_int</definition>
+        <argsstring>(bool)</argsstring>
+        <name>fits_in_int</name>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/printf.h" line="30" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/printf.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1615">
+        <label>fmt::internal::IntChecker&lt; IsSigned &gt;</label>
+        <link refid="structfmt_1_1internal_1_1_int_checker"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/printf.h" line="24" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/printf.h" bodystart="24" bodyend="31"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1internal_1_1_int_checker_1a56792099fa26819159d5a846b2cc0f44" prot="public" virt="non-virtual"><scope>fmt::internal::IntChecker</scope><name>fits_in_int</name></member>
+      <member refid="structfmt_1_1internal_1_1_int_checker_1a75f90ce4807e8028578427a0ce0296c5" prot="public" virt="non-virtual"><scope>fmt::internal::IntChecker</scope><name>fits_in_int</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

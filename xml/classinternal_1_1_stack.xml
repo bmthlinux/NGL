@@ -1,0 +1,539 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classinternal_1_1_stack" kind="class" language="C++" prot="public">
+    <compoundname>internal::Stack</compoundname>
+    <includes refid="stack_8h" local="no">stack.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Allocator</declname>
+        <defname>Allocator</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classinternal_1_1_stack_1a029e18096d082b1c81d7e1075a15eaad" prot="private" static="no" mutable="no">
+        <type>Allocator *</type>
+        <definition>Allocator* internal::Stack&lt; Allocator &gt;::allocator_</definition>
+        <argsstring></argsstring>
+        <name>allocator_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="185" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="185" bodyend="-1"/>
+        <referencedby refid="classinternal_1_1_stack_1af09ab91f9e5143deccf7c9af837f451e" compoundref="stack_8h" startline="35" endline="37">internal::Stack&lt; StackAllocator &gt;::Stack</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1afedce84c8816abe9277a71ebd5e1808a" compoundref="stack_8h" startline="57" endline="59">internal::Stack&lt; StackAllocator &gt;::~Stack</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a5e601199a21d84b1ac612f558be0f2c3" compoundref="stack_8h" startline="85" endline="92">internal::Stack&lt; StackAllocator &gt;::Swap</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a6cd7033d53a1da185ea6dc2e15f7234c" compoundref="stack_8h" startline="137" endline="139">internal::Stack&lt; StackAllocator &gt;::HasAllocator</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1ab01f693833dfe136f574d66547623cfa" compoundref="stack_8h" startline="141" endline="144">internal::Stack&lt; StackAllocator &gt;::GetAllocator</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a5a530d1d2a39a05812e4fee0e299004a" compoundref="stack_8h" startline="151" endline="167">internal::Stack&lt; StackAllocator &gt;::Expand</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a0a23948aa17a9870a5e228d465e40e92" compoundref="stack_8h" startline="169" endline="174">internal::Stack&lt; StackAllocator &gt;::Resize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classinternal_1_1_stack_1a71e95d02ac850a97e1ee3628a207cbe9" prot="private" static="no" mutable="no">
+        <type>Allocator *</type>
+        <definition>Allocator* internal::Stack&lt; Allocator &gt;::ownAllocator_</definition>
+        <argsstring></argsstring>
+        <name>ownAllocator_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="186" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="186" bodyend="-1"/>
+        <referencedby refid="classinternal_1_1_stack_1af09ab91f9e5143deccf7c9af837f451e" compoundref="stack_8h" startline="35" endline="37">internal::Stack&lt; StackAllocator &gt;::Stack</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1afedce84c8816abe9277a71ebd5e1808a" compoundref="stack_8h" startline="57" endline="59">internal::Stack&lt; StackAllocator &gt;::~Stack</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a5e601199a21d84b1ac612f558be0f2c3" compoundref="stack_8h" startline="85" endline="92">internal::Stack&lt; StackAllocator &gt;::Swap</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a5a530d1d2a39a05812e4fee0e299004a" compoundref="stack_8h" startline="151" endline="167">internal::Stack&lt; StackAllocator &gt;::Expand</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a5efa6fdbfaf93c5e519a2e6f39bd081f" compoundref="stack_8h" startline="176" endline="179">internal::Stack&lt; StackAllocator &gt;::Destroy</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* internal::Stack&lt; Allocator &gt;::stack_</definition>
+        <argsstring></argsstring>
+        <name>stack_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="187" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="187" bodyend="-1"/>
+        <referencedby refid="classinternal_1_1_stack_1af09ab91f9e5143deccf7c9af837f451e" compoundref="stack_8h" startline="35" endline="37">internal::Stack&lt; StackAllocator &gt;::Stack</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1afedce84c8816abe9277a71ebd5e1808a" compoundref="stack_8h" startline="57" endline="59">internal::Stack&lt; StackAllocator &gt;::~Stack</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a5e601199a21d84b1ac612f558be0f2c3" compoundref="stack_8h" startline="85" endline="92">internal::Stack&lt; StackAllocator &gt;::Swap</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a02da31665a372738e81ded2f7b7d598e" compoundref="stack_8h" startline="94" endline="94">internal::Stack&lt; StackAllocator &gt;::Clear</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a3852b8494d69c91f6a238a51572e591e" compoundref="stack_8h" startline="96" endline="106">internal::Stack&lt; StackAllocator &gt;::ShrinkToFit</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a10aa1bc716b82cb0a40b3a3b9d5efe87" compoundref="stack_8h" startline="135" endline="135">internal::Stack&lt; StackAllocator &gt;::Bottom</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1abf57d1c7b356d8acbbe0e79147ca4b5c" compoundref="stack_8h" startline="145" endline="145">internal::Stack&lt; StackAllocator &gt;::Empty</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1ade4a25fa82950619652a30aa3a807f58" compoundref="stack_8h" startline="146" endline="146">internal::Stack&lt; StackAllocator &gt;::GetSize</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a61dea1ed780c07bb438d17c581ab0e48" compoundref="stack_8h" startline="147" endline="147">internal::Stack&lt; StackAllocator &gt;::GetCapacity</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a5a530d1d2a39a05812e4fee0e299004a" compoundref="stack_8h" startline="151" endline="167">internal::Stack&lt; StackAllocator &gt;::Expand</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a0a23948aa17a9870a5e228d465e40e92" compoundref="stack_8h" startline="169" endline="174">internal::Stack&lt; StackAllocator &gt;::Resize</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a5efa6fdbfaf93c5e519a2e6f39bd081f" compoundref="stack_8h" startline="176" endline="179">internal::Stack&lt; StackAllocator &gt;::Destroy</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* internal::Stack&lt; Allocator &gt;::stackTop_</definition>
+        <argsstring></argsstring>
+        <name>stackTop_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="188" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="188" bodyend="-1"/>
+        <referencedby refid="classinternal_1_1_stack_1af09ab91f9e5143deccf7c9af837f451e" compoundref="stack_8h" startline="35" endline="37">internal::Stack&lt; StackAllocator &gt;::Stack</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1afedce84c8816abe9277a71ebd5e1808a" compoundref="stack_8h" startline="57" endline="59">internal::Stack&lt; StackAllocator &gt;::~Stack</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a5e601199a21d84b1ac612f558be0f2c3" compoundref="stack_8h" startline="85" endline="92">internal::Stack&lt; StackAllocator &gt;::Swap</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a02da31665a372738e81ded2f7b7d598e" compoundref="stack_8h" startline="94" endline="94">internal::Stack&lt; StackAllocator &gt;::Clear</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a3852b8494d69c91f6a238a51572e591e" compoundref="stack_8h" startline="96" endline="106">internal::Stack&lt; StackAllocator &gt;::ShrinkToFit</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a8038223ec0ed6ea92bb5f48e645a25ca" compoundref="stack_8h" startline="111" endline="119">internal::Stack&lt; StackAllocator &gt;::Push</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a8545a8ccba595ac6e4ade9784474aa1c" compoundref="stack_8h" startline="122" endline="126">internal::Stack&lt; StackAllocator &gt;::Pop</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1ab3ed5b4afed3c73c516678516d5e195b" compoundref="stack_8h" startline="129" endline="132">internal::Stack&lt; StackAllocator &gt;::Top</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1abf57d1c7b356d8acbbe0e79147ca4b5c" compoundref="stack_8h" startline="145" endline="145">internal::Stack&lt; StackAllocator &gt;::Empty</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1ade4a25fa82950619652a30aa3a807f58" compoundref="stack_8h" startline="146" endline="146">internal::Stack&lt; StackAllocator &gt;::GetSize</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a0a23948aa17a9870a5e228d465e40e92" compoundref="stack_8h" startline="169" endline="174">internal::Stack&lt; StackAllocator &gt;::Resize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classinternal_1_1_stack_1af21b647d9f73246e9c96fa0966bdaf5d" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* internal::Stack&lt; Allocator &gt;::stackEnd_</definition>
+        <argsstring></argsstring>
+        <name>stackEnd_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="189" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="189" bodyend="-1"/>
+        <referencedby refid="classinternal_1_1_stack_1af09ab91f9e5143deccf7c9af837f451e" compoundref="stack_8h" startline="35" endline="37">internal::Stack&lt; StackAllocator &gt;::Stack</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1afedce84c8816abe9277a71ebd5e1808a" compoundref="stack_8h" startline="57" endline="59">internal::Stack&lt; StackAllocator &gt;::~Stack</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a5e601199a21d84b1ac612f558be0f2c3" compoundref="stack_8h" startline="85" endline="92">internal::Stack&lt; StackAllocator &gt;::Swap</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a3852b8494d69c91f6a238a51572e591e" compoundref="stack_8h" startline="96" endline="106">internal::Stack&lt; StackAllocator &gt;::ShrinkToFit</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a8038223ec0ed6ea92bb5f48e645a25ca" compoundref="stack_8h" startline="111" endline="119">internal::Stack&lt; StackAllocator &gt;::Push</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a61dea1ed780c07bb438d17c581ab0e48" compoundref="stack_8h" startline="147" endline="147">internal::Stack&lt; StackAllocator &gt;::GetCapacity</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a0a23948aa17a9870a5e228d465e40e92" compoundref="stack_8h" startline="169" endline="174">internal::Stack&lt; StackAllocator &gt;::Resize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classinternal_1_1_stack_1a224b9fa2406bc1c411068fa36c67c90f" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t internal::Stack&lt; Allocator &gt;::initialCapacity_</definition>
+        <argsstring></argsstring>
+        <name>initialCapacity_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="190" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="190" bodyend="-1"/>
+        <referencedby refid="classinternal_1_1_stack_1af09ab91f9e5143deccf7c9af837f451e" compoundref="stack_8h" startline="35" endline="37">internal::Stack&lt; StackAllocator &gt;::Stack</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1afedce84c8816abe9277a71ebd5e1808a" compoundref="stack_8h" startline="57" endline="59">internal::Stack&lt; StackAllocator &gt;::~Stack</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a5e601199a21d84b1ac612f558be0f2c3" compoundref="stack_8h" startline="85" endline="92">internal::Stack&lt; StackAllocator &gt;::Swap</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a5a530d1d2a39a05812e4fee0e299004a" compoundref="stack_8h" startline="151" endline="167">internal::Stack&lt; StackAllocator &gt;::Expand</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classinternal_1_1_stack_1af09ab91f9e5143deccf7c9af837f451e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>internal::Stack&lt; Allocator &gt;::Stack</definition>
+        <argsstring>(Allocator *allocator, size_t stackCapacity)</argsstring>
+        <name>Stack</name>
+        <param>
+          <type>Allocator *</type>
+          <declname>allocator</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>stackCapacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="35" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="35" bodyend="37"/>
+        <referencedby refid="classinternal_1_1_stack_1af09ab91f9e5143deccf7c9af837f451e" compoundref="stack_8h" startline="35" endline="37">internal::Stack&lt; StackAllocator &gt;::Stack</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a5efa6fdbfaf93c5e519a2e6f39bd081f" compoundref="stack_8h" startline="176" endline="179">internal::Stack&lt; StackAllocator &gt;::Destroy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_stack_1afedce84c8816abe9277a71ebd5e1808a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>internal::Stack&lt; Allocator &gt;::~Stack</definition>
+        <argsstring>()</argsstring>
+        <name>~Stack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="57" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_stack_1a5e601199a21d84b1ac612f558be0f2c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void internal::Stack&lt; Allocator &gt;::Swap</definition>
+        <argsstring>(Stack &amp;rhs) RAPIDJSON_NOEXCEPT</argsstring>
+        <name>Swap</name>
+        <param>
+          <type><ref refid="classinternal_1_1_stack" kindref="compound">Stack</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="85" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="85" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_stack_1a02da31665a372738e81ded2f7b7d598e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void internal::Stack&lt; Allocator &gt;::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="94" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="94" bodyend="94"/>
+        <referencedby refid="class_writer_1a4e5bd5e6364edca476125b511b3dca9c" compoundref="writer_8h" startline="89" endline="93">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::Reset</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_stack_1a3852b8494d69c91f6a238a51572e591e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void internal::Stack&lt; Allocator &gt;::ShrinkToFit</definition>
+        <argsstring>()</argsstring>
+        <name>ShrinkToFit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="96" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="96" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_stack_1a8038223ec0ed6ea92bb5f48e645a25ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>RAPIDJSON_FORCEINLINE T *</type>
+        <definition>RAPIDJSON_FORCEINLINE T* internal::Stack&lt; Allocator &gt;::Push</definition>
+        <argsstring>(size_t count=1)</argsstring>
+        <name>Push</name>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="111" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="111" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_stack_1a8545a8ccba595ac6e4ade9784474aa1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* internal::Stack&lt; Allocator &gt;::Pop</definition>
+        <argsstring>(size_t count)</argsstring>
+        <name>Pop</name>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="122" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="122" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_stack_1ab3ed5b4afed3c73c516678516d5e195b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* internal::Stack&lt; Allocator &gt;::Top</definition>
+        <argsstring>()</argsstring>
+        <name>Top</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="129" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_stack_1a10aa1bc716b82cb0a40b3a3b9d5efe87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* internal::Stack&lt; Allocator &gt;::Bottom</definition>
+        <argsstring>()</argsstring>
+        <name>Bottom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="135" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="135" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_stack_1a6cd7033d53a1da185ea6dc2e15f7234c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool internal::Stack&lt; Allocator &gt;::HasAllocator</definition>
+        <argsstring>() const </argsstring>
+        <name>HasAllocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="137" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="137" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_stack_1ab01f693833dfe136f574d66547623cfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Allocator &amp;</type>
+        <definition>Allocator&amp; internal::Stack&lt; Allocator &gt;::GetAllocator</definition>
+        <argsstring>()</argsstring>
+        <name>GetAllocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="141" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_stack_1abf57d1c7b356d8acbbe0e79147ca4b5c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool internal::Stack&lt; Allocator &gt;::Empty</definition>
+        <argsstring>() const </argsstring>
+        <name>Empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="145" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="145" bodyend="145"/>
+        <referencedby refid="classinternal_1_1_stack_1a3852b8494d69c91f6a238a51572e591e" compoundref="stack_8h" startline="96" endline="106">internal::Stack&lt; StackAllocator &gt;::ShrinkToFit</referencedby>
+        <referencedby refid="class_writer_1aced42429d1b31a565c5ca0310bf4e276" compoundref="writer_8h" startline="99" endline="101">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::IsComplete</referencedby>
+        <referencedby refid="class_writer_1a3705f6d3f9a820f0a6652089222ed3ac" compoundref="writer_8h" startline="142" endline="151">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::EndObject</referencedby>
+        <referencedby refid="class_writer_1ad8680f9f8d3289dad72f1f18a8763aa1" compoundref="writer_8h" startline="159" endline="168">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::EndArray</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_stack_1ade4a25fa82950619652a30aa3a807f58" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t internal::Stack&lt; Allocator &gt;::GetSize</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="146" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="146" bodyend="146"/>
+        <referencedby refid="class_pretty_writer_1a649ec900d77960e085f76bb4d3c351d9" compoundref="prettywriter_8h" startline="187" endline="190">PrettyWriter&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::WriteIndent</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a3852b8494d69c91f6a238a51572e591e" compoundref="stack_8h" startline="96" endline="106">internal::Stack&lt; StackAllocator &gt;::ShrinkToFit</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a8545a8ccba595ac6e4ade9784474aa1c" compoundref="stack_8h" startline="122" endline="126">internal::Stack&lt; StackAllocator &gt;::Pop</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1ab3ed5b4afed3c73c516678516d5e195b" compoundref="stack_8h" startline="129" endline="132">internal::Stack&lt; StackAllocator &gt;::Top</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a5a530d1d2a39a05812e4fee0e299004a" compoundref="stack_8h" startline="151" endline="167">internal::Stack&lt; StackAllocator &gt;::Expand</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a0a23948aa17a9870a5e228d465e40e92" compoundref="stack_8h" startline="169" endline="174">internal::Stack&lt; StackAllocator &gt;::Resize</referencedby>
+        <referencedby refid="class_writer_1a3705f6d3f9a820f0a6652089222ed3ac" compoundref="writer_8h" startline="142" endline="151">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::EndObject</referencedby>
+        <referencedby refid="class_writer_1ad8680f9f8d3289dad72f1f18a8763aa1" compoundref="writer_8h" startline="159" endline="168">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::EndArray</referencedby>
+        <referencedby refid="class_writer_1ad56f2e953b7919ad2157a2fc2bedf873" compoundref="writer_8h" startline="317" endline="335">Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator &gt;::Prefix</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_stack_1a61dea1ed780c07bb438d17c581ab0e48" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t internal::Stack&lt; Allocator &gt;::GetCapacity</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCapacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="147" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="147" bodyend="147"/>
+        <referencedby refid="classinternal_1_1_stack_1a5a530d1d2a39a05812e4fee0e299004a" compoundref="stack_8h" startline="151" endline="167">internal::Stack&lt; StackAllocator &gt;::Expand</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a0a23948aa17a9870a5e228d465e40e92" compoundref="stack_8h" startline="169" endline="174">internal::Stack&lt; StackAllocator &gt;::Resize</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classinternal_1_1_stack_1a5a530d1d2a39a05812e4fee0e299004a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void internal::Stack&lt; Allocator &gt;::Expand</definition>
+        <argsstring>(size_t count)</argsstring>
+        <name>Expand</name>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="151" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="151" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_stack_1a0a23948aa17a9870a5e228d465e40e92" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void internal::Stack&lt; Allocator &gt;::Resize</definition>
+        <argsstring>(size_t newCapacity)</argsstring>
+        <name>Resize</name>
+        <param>
+          <type>size_t</type>
+          <declname>newCapacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="169" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="169" bodyend="174"/>
+        <referencedby refid="classinternal_1_1_stack_1a3852b8494d69c91f6a238a51572e591e" compoundref="stack_8h" startline="96" endline="106">internal::Stack&lt; StackAllocator &gt;::ShrinkToFit</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a5a530d1d2a39a05812e4fee0e299004a" compoundref="stack_8h" startline="151" endline="167">internal::Stack&lt; StackAllocator &gt;::Expand</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_stack_1a5efa6fdbfaf93c5e519a2e6f39bd081f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void internal::Stack&lt; Allocator &gt;::Destroy</definition>
+        <argsstring>()</argsstring>
+        <name>Destroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="176" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="176" bodyend="179"/>
+        <referencedby refid="classinternal_1_1_stack_1afedce84c8816abe9277a71ebd5e1808a" compoundref="stack_8h" startline="57" endline="59">internal::Stack&lt; StackAllocator &gt;::~Stack</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_stack_1af4109a9e632f85f70ac01c69d3ccdb3b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>internal::Stack&lt; Allocator &gt;::Stack</definition>
+        <argsstring>(const Stack &amp;)</argsstring>
+        <name>Stack</name>
+        <param>
+          <type>const <ref refid="classinternal_1_1_stack" kindref="compound">Stack</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_stack_1ae21d491cc0c4a22a2c131d88c0a37ae1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classinternal_1_1_stack" kindref="compound">Stack</ref> &amp;</type>
+        <definition>Stack&amp; internal::Stack&lt; Allocator &gt;::operator=</definition>
+        <argsstring>(const Stack &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classinternal_1_1_stack" kindref="compound">Stack</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="183" column="1"/>
+        <referencedby refid="classinternal_1_1_stack_1afedce84c8816abe9277a71ebd5e1808a" compoundref="stack_8h" startline="57" endline="59">internal::Stack&lt; StackAllocator &gt;::~Stack</referencedby>
+        <referencedby refid="classinternal_1_1_stack_1a5efa6fdbfaf93c5e519a2e6f39bd081f" compoundref="stack_8h" startline="176" endline="179">internal::Stack&lt; StackAllocator &gt;::Destroy</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A type-unsafe stack for storing different types of data. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Allocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Allocator for allocating stack memory. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1914">
+        <label>internal::Stack&lt; Allocator &gt;</label>
+        <link refid="classinternal_1_1_stack"/>
+      </node>
+      <node id="1915">
+        <label>internal::Stack&lt; StackAllocator &gt;</label>
+        <link refid="classinternal_1_1_stack"/>
+        <childnode refid="1914" relation="template-instance">
+          <edgelabel>&lt; StackAllocator &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1917">
+        <label>size_t</label>
+      </node>
+      <node id="1916">
+        <label>internal::Stack&lt; Allocator &gt;</label>
+        <link refid="classinternal_1_1_stack"/>
+        <childnode refid="1917" relation="usage">
+          <edgelabel>-initialCapacity_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" line="31" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/rapidjson/internal/stack.h" bodystart="31" bodyend="191"/>
+    <listofallmembers>
+      <member refid="classinternal_1_1_stack_1a029e18096d082b1c81d7e1075a15eaad" prot="private" virt="non-virtual"><scope>internal::Stack</scope><name>allocator_</name></member>
+      <member refid="classinternal_1_1_stack_1a10aa1bc716b82cb0a40b3a3b9d5efe87" prot="public" virt="non-virtual"><scope>internal::Stack</scope><name>Bottom</name></member>
+      <member refid="classinternal_1_1_stack_1a02da31665a372738e81ded2f7b7d598e" prot="public" virt="non-virtual"><scope>internal::Stack</scope><name>Clear</name></member>
+      <member refid="classinternal_1_1_stack_1a5efa6fdbfaf93c5e519a2e6f39bd081f" prot="private" virt="non-virtual"><scope>internal::Stack</scope><name>Destroy</name></member>
+      <member refid="classinternal_1_1_stack_1abf57d1c7b356d8acbbe0e79147ca4b5c" prot="public" virt="non-virtual"><scope>internal::Stack</scope><name>Empty</name></member>
+      <member refid="classinternal_1_1_stack_1a5a530d1d2a39a05812e4fee0e299004a" prot="private" virt="non-virtual"><scope>internal::Stack</scope><name>Expand</name></member>
+      <member refid="classinternal_1_1_stack_1ab01f693833dfe136f574d66547623cfa" prot="public" virt="non-virtual"><scope>internal::Stack</scope><name>GetAllocator</name></member>
+      <member refid="classinternal_1_1_stack_1a61dea1ed780c07bb438d17c581ab0e48" prot="public" virt="non-virtual"><scope>internal::Stack</scope><name>GetCapacity</name></member>
+      <member refid="classinternal_1_1_stack_1ade4a25fa82950619652a30aa3a807f58" prot="public" virt="non-virtual"><scope>internal::Stack</scope><name>GetSize</name></member>
+      <member refid="classinternal_1_1_stack_1a6cd7033d53a1da185ea6dc2e15f7234c" prot="public" virt="non-virtual"><scope>internal::Stack</scope><name>HasAllocator</name></member>
+      <member refid="classinternal_1_1_stack_1a224b9fa2406bc1c411068fa36c67c90f" prot="private" virt="non-virtual"><scope>internal::Stack</scope><name>initialCapacity_</name></member>
+      <member refid="classinternal_1_1_stack_1ae21d491cc0c4a22a2c131d88c0a37ae1" prot="private" virt="non-virtual"><scope>internal::Stack</scope><name>operator=</name></member>
+      <member refid="classinternal_1_1_stack_1a71e95d02ac850a97e1ee3628a207cbe9" prot="private" virt="non-virtual"><scope>internal::Stack</scope><name>ownAllocator_</name></member>
+      <member refid="classinternal_1_1_stack_1a8545a8ccba595ac6e4ade9784474aa1c" prot="public" virt="non-virtual"><scope>internal::Stack</scope><name>Pop</name></member>
+      <member refid="classinternal_1_1_stack_1a8038223ec0ed6ea92bb5f48e645a25ca" prot="public" virt="non-virtual"><scope>internal::Stack</scope><name>Push</name></member>
+      <member refid="classinternal_1_1_stack_1a0a23948aa17a9870a5e228d465e40e92" prot="private" virt="non-virtual"><scope>internal::Stack</scope><name>Resize</name></member>
+      <member refid="classinternal_1_1_stack_1a3852b8494d69c91f6a238a51572e591e" prot="public" virt="non-virtual"><scope>internal::Stack</scope><name>ShrinkToFit</name></member>
+      <member refid="classinternal_1_1_stack_1af09ab91f9e5143deccf7c9af837f451e" prot="public" virt="non-virtual"><scope>internal::Stack</scope><name>Stack</name></member>
+      <member refid="classinternal_1_1_stack_1af4109a9e632f85f70ac01c69d3ccdb3b" prot="private" virt="non-virtual"><scope>internal::Stack</scope><name>Stack</name></member>
+      <member refid="classinternal_1_1_stack_1ae2601d824b6b2f17eadd6739eec5c942" prot="private" virt="non-virtual"><scope>internal::Stack</scope><name>stack_</name></member>
+      <member refid="classinternal_1_1_stack_1af21b647d9f73246e9c96fa0966bdaf5d" prot="private" virt="non-virtual"><scope>internal::Stack</scope><name>stackEnd_</name></member>
+      <member refid="classinternal_1_1_stack_1aad0ee46c4a6180e2f3e0d9f4348c31f2" prot="private" virt="non-virtual"><scope>internal::Stack</scope><name>stackTop_</name></member>
+      <member refid="classinternal_1_1_stack_1a5e601199a21d84b1ac612f558be0f2c3" prot="public" virt="non-virtual"><scope>internal::Stack</scope><name>Swap</name></member>
+      <member refid="classinternal_1_1_stack_1ab3ed5b4afed3c73c516678516d5e195b" prot="public" virt="non-virtual"><scope>internal::Stack</scope><name>Top</name></member>
+      <member refid="classinternal_1_1_stack_1afedce84c8816abe9277a71ebd5e1808a" prot="public" virt="non-virtual"><scope>internal::Stack</scope><name>~Stack</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

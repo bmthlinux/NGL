@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classfmt_1_1internal_1_1_memory_buffer" kind="class" language="C++" prot="public">
+    <compoundname>fmt::internal::MemoryBuffer</compoundname>
+    <basecompoundref prot="private" virt="non-virtual">Allocator</basecompoundref>
+    <basecompoundref refid="classfmt_1_1_buffer" prot="public" virt="non-virtual">fmt::Buffer&lt; T &gt;</basecompoundref>
+    <includes refid="format_8h" local="no">format.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+      <param>
+        <type>std::size_t</type>
+        <declname>SIZE</declname>
+        <defname>SIZE</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>Allocator</declname>
+        <defname>Allocator</defname>
+        <defval>std::allocator&lt;T&gt;</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfmt_1_1internal_1_1_memory_buffer_1ae6bad20d7b466cd64b881229482459d6" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T fmt::internal::MemoryBuffer&lt; T, SIZE, Allocator &gt;::data_[SIZE]</definition>
+        <argsstring>[SIZE]</argsstring>
+        <name>data_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="673" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="673" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1internal_1_1_memory_buffer_1a9d9995949a1aa1011085d3f117001572" compoundref="format_8h" startline="686" endline="686">fmt::internal::MemoryBuffer&lt; Char, internal::INLINE_BUFFER_SIZE, Allocator &gt;::~MemoryBuffer</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_memory_buffer_1a180ffbdcc3fc323c6bda963cd955a77e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::MemoryBuffer&lt; T, SIZE, Allocator &gt;::deallocate</definition>
+        <argsstring>()</argsstring>
+        <name>deallocate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="676" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="676" bodyend="678"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_memory_buffer_1a7f7ca74572d97e0d0345d112d85d44a4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::internal::MemoryBuffer&lt; T, SIZE, Allocator &gt;::grow</definition>
+        <argsstring>(std::size_t size)</argsstring>
+        <name>grow</name>
+        <reimplements refid="classfmt_1_1_buffer_1abdc7aaf5813aa07008b3d715969a7e19">grow</reimplements>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Increases the buffer capacity to hold at least <emphasis>size</emphasis> elements updating <computeroutput>ptr_</computeroutput> and <computeroutput>capacity_</computeroutput>.  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="681" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="726" bodyend="743"/>
+        <references refid="namespacefmt_1_1internal_1ab81ed2356d1a6f3bcf03c5bdf5f8d4f2" compoundref="format_8h" startline="581" endline="581">fmt::internal::make_ptr</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_memory_buffer_1af3325b8e955a9c84a51c31570bcab893" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fmt::internal::MemoryBuffer&lt; T, SIZE, Allocator &gt;::MemoryBuffer</definition>
+        <argsstring>(const Allocator &amp;alloc=Allocator())</argsstring>
+        <name>MemoryBuffer</name>
+        <param>
+          <type>const Allocator &amp;</type>
+          <declname>alloc</declname>
+          <defval>Allocator()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="684" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="684" bodyend="685"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_memory_buffer_1a9d9995949a1aa1011085d3f117001572" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fmt::internal::MemoryBuffer&lt; T, SIZE, Allocator &gt;::~MemoryBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>~MemoryBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="686" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="686" bodyend="686"/>
+      </memberdef>
+      <memberdef kind="function" id="classfmt_1_1internal_1_1_memory_buffer_1a6cf259337ce910f8864512d664daf66f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Allocator</type>
+        <definition>Allocator fmt::internal::MemoryBuffer&lt; T, SIZE, Allocator &gt;::get_allocator</definition>
+        <argsstring>() const </argsstring>
+        <name>get_allocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="722" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="722" bodyend="722"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1691">
+        <label>fmt::internal::MemoryBuffer&lt; Char, internal::INLINE_BUFFER_SIZE, Allocator &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_memory_buffer"/>
+        <childnode refid="1688" relation="template-instance">
+          <edgelabel>&lt; Char, internal::INLINE_BUFFER_SIZE, Allocator &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1688">
+        <label>fmt::internal::MemoryBuffer&lt; T, SIZE, Allocator &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_memory_buffer"/>
+        <childnode refid="1689" relation="private-inheritance">
+        </childnode>
+        <childnode refid="1690" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1690">
+        <label>fmt::Buffer&lt; T &gt;</label>
+        <link refid="classfmt_1_1_buffer"/>
+      </node>
+      <node id="1689">
+        <label>Allocator</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1695">
+        <label>size_t</label>
+      </node>
+      <node id="1696">
+        <label>T</label>
+      </node>
+      <node id="1692">
+        <label>fmt::internal::MemoryBuffer&lt; T, SIZE, Allocator &gt;</label>
+        <link refid="classfmt_1_1internal_1_1_memory_buffer"/>
+        <childnode refid="1693" relation="private-inheritance">
+        </childnode>
+        <childnode refid="1694" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1696" relation="usage">
+          <edgelabel>-data_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1694">
+        <label>fmt::Buffer&lt; T &gt;</label>
+        <link refid="classfmt_1_1_buffer"/>
+        <childnode refid="1695" relation="usage">
+          <edgelabel>#size_</edgelabel>
+          <edgelabel>#capacity_</edgelabel>
+        </childnode>
+        <childnode refid="1696" relation="usage">
+          <edgelabel>#ptr_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1693">
+        <label>Allocator</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="671" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="671" bodyend="723"/>
+    <listofallmembers>
+      <member refid="classfmt_1_1_buffer_1a7ca155741c43ec7c7edcea8dd28a2123" prot="public" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>append</name></member>
+      <member refid="classfmt_1_1_buffer_1a1830c1ba88170ed60f40f662d7f1886a" prot="protected" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>Buffer</name></member>
+      <member refid="classfmt_1_1_buffer_1aaf54fe786de91157629f96380e0cb215" prot="public" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>capacity</name></member>
+      <member refid="classfmt_1_1_buffer_1ab9c3e293679699058a2d33c4a07ad657" prot="protected" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>capacity_</name></member>
+      <member refid="classfmt_1_1_buffer_1a4591d21c7970ba5205680cb5224ef2b2" prot="public" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>clear</name></member>
+      <member refid="classfmt_1_1internal_1_1_memory_buffer_1ae6bad20d7b466cd64b881229482459d6" prot="private" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>data_</name></member>
+      <member refid="classfmt_1_1internal_1_1_memory_buffer_1a180ffbdcc3fc323c6bda963cd955a77e" prot="private" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>deallocate</name></member>
+      <member refid="classfmt_1_1internal_1_1_memory_buffer_1a6cf259337ce910f8864512d664daf66f" prot="public" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>get_allocator</name></member>
+      <member refid="classfmt_1_1internal_1_1_memory_buffer_1a7f7ca74572d97e0d0345d112d85d44a4" prot="protected" virt="virtual"><scope>fmt::internal::MemoryBuffer</scope><name>grow</name></member>
+      <member refid="classfmt_1_1internal_1_1_memory_buffer_1af3325b8e955a9c84a51c31570bcab893" prot="public" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>MemoryBuffer</name></member>
+      <member refid="classfmt_1_1_buffer_1ad1f9ad75ba08826671a78df23161685a" prot="public" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>operator[]</name></member>
+      <member refid="classfmt_1_1_buffer_1a15dd7f9027d6c9fb0fe4b6255c9a7929" prot="public" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>operator[]</name></member>
+      <member refid="classfmt_1_1_buffer_1a17b11ccf916407fdb464b53b3e556849" prot="protected" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>ptr_</name></member>
+      <member refid="classfmt_1_1_buffer_1a4056b71637286b41b3275e3dac57462d" prot="public" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>push_back</name></member>
+      <member refid="classfmt_1_1_buffer_1a7f46a3ce8d86abe35904f6654bd4ea1e" prot="public" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>reserve</name></member>
+      <member refid="classfmt_1_1_buffer_1a20f893164dc20e8ea8c77810d4ea8d59" prot="public" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>resize</name></member>
+      <member refid="classfmt_1_1_buffer_1a14fa72f0ddf584c14ffffb1446f598aa" prot="public" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>size</name></member>
+      <member refid="classfmt_1_1_buffer_1a3959d66180b075a0ae324ea98466e20f" prot="protected" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>size_</name></member>
+      <member refid="classfmt_1_1_buffer_1a5005962059399cc759674da5fd9b3817" prot="public" virt="virtual"><scope>fmt::internal::MemoryBuffer</scope><name>~Buffer</name></member>
+      <member refid="classfmt_1_1internal_1_1_memory_buffer_1a9d9995949a1aa1011085d3f117001572" prot="public" virt="non-virtual"><scope>fmt::internal::MemoryBuffer</scope><name>~MemoryBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

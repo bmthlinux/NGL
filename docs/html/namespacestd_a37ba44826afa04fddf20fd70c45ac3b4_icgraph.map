@@ -1,0 +1,8 @@
+<map id="std::move" name="std::move">
+<area shape="rect" id="node2" href="$class_generic_document.html#a6b1c313ad538cafc4d23d4bd5f97178c" title="Constructor. " alt="" coords="137,5,321,46"/>
+<area shape="rect" id="node3" href="$class_generic_document.html#aa9f980909298a4de32f66526484820bf" title="GenericDocument::~Generic\lDocument" alt="" coords="134,70,325,111"/>
+<area shape="rect" id="node4" href="$classfmt_1_1internal_1_1_memory_buffer.html#a9d9995949a1aa1011085d3f117001572" title="fmt::internal::MemoryBuffer\l\&lt; Char, internal::INLINE\l_BUFFER_SIZE, Allocator \&gt;\l::~MemoryBuffer" alt="" coords="134,135,325,206"/>
+<area shape="rect" id="node5" href="$classfmt_1_1_basic_memory_writer.html#a36ef881adce8fc7a0b3632d2fb66fdfb" title="fmt::BasicMemoryWriter\l::BasicMemoryWriter" alt="" coords="147,230,311,271"/>
+<area shape="rect" id="node6" href="$class_generic_string_buffer.html#a62f5ea1a53a2a3f98088f8c152b6183e" title="GenericStringBuffer\l::GenericStringBuffer" alt="" coords="156,295,303,337"/>
+<area shape="rect" id="node7" href="$classngl_1_1_text.html#a16e24cf8d7e4f310a7dc2b8375546134" title="ctor must pass in a ready constructed QFont make sure the size and emphasis is set before doing this ..." alt="" coords="176,361,283,388"/>
+</map>

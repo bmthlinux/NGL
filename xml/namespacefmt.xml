@@ -1,0 +1,1225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacefmt" kind="namespace" language="C++">
+    <compoundname>fmt</compoundname>
+    <innerclass refid="structfmt_1_1_align_spec" prot="public">fmt::AlignSpec</innerclass>
+    <innerclass refid="structfmt_1_1_align_type_spec" prot="public">fmt::AlignTypeSpec</innerclass>
+    <innerclass refid="classfmt_1_1_arg_formatter" prot="public">fmt::ArgFormatter</innerclass>
+    <innerclass refid="classfmt_1_1_arg_list" prot="public">fmt::ArgList</innerclass>
+    <innerclass refid="classfmt_1_1_arg_visitor" prot="public">fmt::ArgVisitor</innerclass>
+    <innerclass refid="classfmt_1_1_basic_arg_formatter" prot="public">fmt::BasicArgFormatter</innerclass>
+    <innerclass refid="classfmt_1_1_basic_array_writer" prot="public">fmt::BasicArrayWriter</innerclass>
+    <innerclass refid="classfmt_1_1_basic_c_string_ref" prot="public">fmt::BasicCStringRef</innerclass>
+    <innerclass refid="classfmt_1_1_basic_formatter" prot="public">fmt::BasicFormatter</innerclass>
+    <innerclass refid="classfmt_1_1_basic_memory_writer" prot="public">fmt::BasicMemoryWriter</innerclass>
+    <innerclass refid="classfmt_1_1_basic_printf_arg_formatter" prot="public">fmt::BasicPrintfArgFormatter</innerclass>
+    <innerclass refid="classfmt_1_1_basic_string_ref" prot="public">fmt::BasicStringRef</innerclass>
+    <innerclass refid="classfmt_1_1_basic_string_writer" prot="public">fmt::BasicStringWriter</innerclass>
+    <innerclass refid="classfmt_1_1_basic_writer" prot="public">fmt::BasicWriter</innerclass>
+    <innerclass refid="classfmt_1_1_buffer" prot="public">fmt::Buffer</innerclass>
+    <innerclass refid="classfmt_1_1_buffered_file" prot="public">fmt::BufferedFile</innerclass>
+    <innerclass refid="structfmt_1_1_empty_spec" prot="public">fmt::EmptySpec</innerclass>
+    <innerclass refid="classfmt_1_1_error_code" prot="public">fmt::ErrorCode</innerclass>
+    <innerclass refid="classfmt_1_1_file" prot="public">fmt::File</innerclass>
+    <innerclass refid="classfmt_1_1_format_error" prot="public">fmt::FormatError</innerclass>
+    <innerclass refid="classfmt_1_1_format_int" prot="public">fmt::FormatInt</innerclass>
+    <innerclass refid="structfmt_1_1_format_spec" prot="public">fmt::FormatSpec</innerclass>
+    <innerclass refid="classfmt_1_1_int_format_spec" prot="public">fmt::IntFormatSpec</innerclass>
+    <innerclass refid="classfmt_1_1_printf_arg_formatter" prot="public">fmt::PrintfArgFormatter</innerclass>
+    <innerclass refid="classfmt_1_1_printf_formatter" prot="public">fmt::PrintfFormatter</innerclass>
+    <innerclass refid="classfmt_1_1_str_format_spec" prot="public">fmt::StrFormatSpec</innerclass>
+    <innerclass refid="classfmt_1_1_system_error" prot="public">fmt::SystemError</innerclass>
+    <innerclass refid="structfmt_1_1_type_spec" prot="public">fmt::TypeSpec</innerclass>
+    <innerclass refid="structfmt_1_1_width_spec" prot="public">fmt::WidthSpec</innerclass>
+    <innernamespace refid="namespacefmt_1_1internal">fmt::internal</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacefmt_1ac0671080923edbf0a7c67a567417f0d2" prot="public" static="no">
+        <name>Alignment</name>
+        <enumvalue id="namespacefmt_1ac0671080923edbf0a7c67a567417f0d2a63e66a16a075b0b22e5fae027892057f" prot="public">
+          <name>ALIGN_DEFAULT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacefmt_1ac0671080923edbf0a7c67a567417f0d2a37d3391e09dceceb0e75094f691b02eb" prot="public">
+          <name>ALIGN_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacefmt_1ac0671080923edbf0a7c67a567417f0d2ab4ab67c39e6d8562a116f3da83de391a" prot="public">
+          <name>ALIGN_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacefmt_1ac0671080923edbf0a7c67a567417f0d2ab9fa8e7eb41061a7670d4d8b43007f23" prot="public">
+          <name>ALIGN_CENTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacefmt_1ac0671080923edbf0a7c67a567417f0d2a93f62fb67b1cbabf62cab3185bb5f4e3" prot="public">
+          <name>ALIGN_NUMERIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1588" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1588" bodyend="1590"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacefmt_1ac14c51c5c796819e98c600fd04a2fdbe" prot="public" static="no">
+        <name>@0</name>
+        <enumvalue id="namespacefmt_1ac14c51c5c796819e98c600fd04a2fdbea41bce447447361e7a4b3e9d8a84877db" prot="public">
+          <name>SIGN_FLAG</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacefmt_1ac14c51c5c796819e98c600fd04a2fdbea2b053d8fd806a73492750893f902a694" prot="public">
+          <name>PLUS_FLAG</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacefmt_1ac14c51c5c796819e98c600fd04a2fdbeafc86655957d3b777b4c87eeb32250bc4" prot="public">
+          <name>MINUS_FLAG</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacefmt_1ac14c51c5c796819e98c600fd04a2fdbea02280924fe002ad252cfbcc0cf6492aa" prot="public">
+          <name>HASH_FLAG</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacefmt_1ac14c51c5c796819e98c600fd04a2fdbea59699c6d9db5a05403ebc3528e5f0694" prot="public">
+          <name>CHAR_FLAG</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1593" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1593" bodyend="1596"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacefmt_1ace617112a82e0f90aac9858ecb446c8a" prot="public" static="no">
+        <name>Color</name>
+        <enumvalue id="namespacefmt_1ace617112a82e0f90aac9858ecb446c8aa3a6a56cadc6311b2734056357f2964d9" prot="public">
+          <name>BLACK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacefmt_1ace617112a82e0f90aac9858ecb446c8aa9bd87ab0ebb552d3ad410a628f6d0c00" prot="public">
+          <name>RED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacefmt_1ace617112a82e0f90aac9858ecb446c8aad5d5d31a970b38e77a13d0f6d1a5438c" prot="public">
+          <name>GREEN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacefmt_1ace617112a82e0f90aac9858ecb446c8aaedb55588dbf84610a7ae697c03181bd4" prot="public">
+          <name>YELLOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacefmt_1ace617112a82e0f90aac9858ecb446c8aa17804dac760c885c9ece68a5fd552801" prot="public">
+          <name>BLUE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacefmt_1ace617112a82e0f90aac9858ecb446c8aaff47477fdc6f3b1e6dacda9fa1efb5c1" prot="public">
+          <name>MAGENTA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacefmt_1ace617112a82e0f90aac9858ecb446c8aafba5572a5e7dded26e35568f3fc36599" prot="public">
+          <name>CYAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacefmt_1ace617112a82e0f90aac9858ecb446c8aaecc3d2607bf562f107a0f308b61ee810" prot="public">
+          <name>WHITE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="3156" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="3156" bodyend="3156"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacefmt_1aef84b50b68fdc25388fed2952c2db563" prot="public" static="no" mutable="no">
+        <type><ref refid="format_8h_1a4c23d7785df6fc141d8c6e93846042c6" kindref="member">FMT_GCC_EXTENSION</ref> typedef long long</type>
+        <definition>FMT_GCC_EXTENSION typedef long long fmt::LongLong</definition>
+        <argsstring></argsstring>
+        <name>LongLong</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="368" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="368" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1_file_1aea68742f4f814c97d497a8a04dfc571e" compoundref="posix_8cc" startline="127" endline="151">fmt::File::size</referencedby>
+        <referencedby refid="classfmt_1_1_file_1a19976004ecb9edfb762b5255736fe73c" compoundref="posix_8h" startline="266" endline="266">fmt::File::descriptor</referencedby>
+        <referencedby refid="classfmt_1_1internal_1_1_arg_converter_1a17ef10158defdeb450bcf9c1c8a03d52" compoundref="printf_8h" startline="96" endline="124">fmt::internal::ArgConverter&lt; T &gt;::visit_any_int</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacefmt_1af495ed85910212d4ba243ae2a8ce8f1f" prot="public" static="no" mutable="no">
+        <type><ref refid="format_8h_1a4c23d7785df6fc141d8c6e93846042c6" kindref="member">FMT_GCC_EXTENSION</ref> typedef unsigned long long</type>
+        <definition>FMT_GCC_EXTENSION typedef unsigned long long fmt::ULongLong</definition>
+        <argsstring></argsstring>
+        <name>ULongLong</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="369" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="369" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1_file_1aea68742f4f814c97d497a8a04dfc571e" compoundref="posix_8cc" startline="127" endline="151">fmt::File::size</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacefmt_1a4d870bb235d29dfe8f82e22c4c5574e7" prot="public" static="no">
+        <type><ref refid="classfmt_1_1_basic_writer" kindref="compound">BasicWriter</ref>&lt; char &gt;</type>
+        <definition>typedef BasicWriter&lt;char&gt; fmt::Writer</definition>
+        <argsstring></argsstring>
+        <name>Writer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="378" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacefmt_1afeac86b4bae798ed9eaedef61113d0db" prot="public" static="no">
+        <type><ref refid="classfmt_1_1_basic_writer" kindref="compound">BasicWriter</ref>&lt; wchar_t &gt;</type>
+        <definition>typedef BasicWriter&lt;wchar_t&gt; fmt::WWriter</definition>
+        <argsstring></argsstring>
+        <name>WWriter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="379" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacefmt_1ae5ed3b29f911650a12b4de3d14126c31" prot="public" static="no">
+        <type><ref refid="classfmt_1_1_basic_string_ref" kindref="compound">BasicStringRef</ref>&lt; char &gt;</type>
+        <definition>typedef BasicStringRef&lt;char&gt; fmt::StringRef</definition>
+        <argsstring></argsstring>
+        <name>StringRef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="486" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacefmt_1a88f11ca64ac292c1e2df229ced839312" prot="public" static="no">
+        <type><ref refid="classfmt_1_1_basic_string_ref" kindref="compound">BasicStringRef</ref>&lt; wchar_t &gt;</type>
+        <definition>typedef BasicStringRef&lt;wchar_t&gt; fmt::WStringRef</definition>
+        <argsstring></argsstring>
+        <name>WStringRef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="487" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacefmt_1af41028915a2e1f7b8af462c067163aa7" prot="public" static="no">
+        <type><ref refid="classfmt_1_1_basic_c_string_ref" kindref="compound">BasicCStringRef</ref>&lt; char &gt;</type>
+        <definition>typedef BasicCStringRef&lt;char&gt; fmt::CStringRef</definition>
+        <argsstring></argsstring>
+        <name>CStringRef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="534" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacefmt_1ae76542a1eda3b54264fdca97c4506a4d" prot="public" static="no">
+        <type><ref refid="classfmt_1_1_basic_c_string_ref" kindref="compound">BasicCStringRef</ref>&lt; wchar_t &gt;</type>
+        <definition>typedef BasicCStringRef&lt;wchar_t&gt; fmt::WCStringRef</definition>
+        <argsstring></argsstring>
+        <name>WCStringRef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="535" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacefmt_1a89c1f31e0358aa86f99b9f24d2149ae6" prot="public" static="no">
+        <type><ref refid="classfmt_1_1_basic_memory_writer" kindref="compound">BasicMemoryWriter</ref>&lt; char &gt;</type>
+        <definition>typedef BasicMemoryWriter&lt;char&gt; fmt::MemoryWriter</definition>
+        <argsstring></argsstring>
+        <name>MemoryWriter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="3050" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="3050" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacefmt_1a77a0f04bb7dcce3271fe50984c5c9cf3" prot="public" static="no">
+        <type><ref refid="classfmt_1_1_basic_memory_writer" kindref="compound">BasicMemoryWriter</ref>&lt; wchar_t &gt;</type>
+        <definition>typedef BasicMemoryWriter&lt;wchar_t&gt; fmt::WMemoryWriter</definition>
+        <argsstring></argsstring>
+        <name>WMemoryWriter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="3051" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="3051" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacefmt_1a71f2c31f50fbe09ab7c3537d695ad755" prot="public" static="no">
+        <type><ref refid="classfmt_1_1_basic_array_writer" kindref="compound">BasicArrayWriter</ref>&lt; char &gt;</type>
+        <definition>typedef BasicArrayWriter&lt;char&gt; fmt::ArrayWriter</definition>
+        <argsstring></argsstring>
+        <name>ArrayWriter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="3099" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="3099" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacefmt_1a5b96a2878c97ba4e61570434be494746" prot="public" static="no">
+        <type><ref refid="classfmt_1_1_basic_array_writer" kindref="compound">BasicArrayWriter</ref>&lt; wchar_t &gt;</type>
+        <definition>typedef BasicArrayWriter&lt;wchar_t&gt; fmt::WArrayWriter</definition>
+        <argsstring></argsstring>
+        <name>WArrayWriter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="3100" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="3100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacefmt_1ad07a33eb4f954050468564a84aad23ae" prot="public" static="no">
+        <type><ref refid="classfmt_1_1_basic_string_writer" kindref="compound">BasicStringWriter</ref>&lt; char &gt;</type>
+        <definition>typedef BasicStringWriter&lt;char&gt; fmt::StringWriter</definition>
+        <argsstring></argsstring>
+        <name>StringWriter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/string.h" line="97" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/string.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacefmt_1a76c6bc2687ab9fbaef47b550b2bf4cbd" prot="public" static="no">
+        <type><ref refid="classfmt_1_1_basic_string_writer" kindref="compound">BasicStringWriter</ref>&lt; wchar_t &gt;</type>
+        <definition>typedef BasicStringWriter&lt;wchar_t&gt; fmt::WStringWriter</definition>
+        <argsstring></argsstring>
+        <name>WStringWriter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/string.h" line="98" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/string.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacefmt_1a55e659be843597392ab8621a093a0182" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="format_8h_1a02c8898388e0ae59aab58be14fcd4e05" kindref="member">FMT_FUNC</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>FMT_API void fmt::format_system_error</definition>
+        <argsstring>(Writer &amp;out, int error_code, StringRef message) FMT_NOEXCEPT</argsstring>
+        <name>format_system_error</name>
+        <param>
+          <type><ref refid="namespacefmt_1a4d870bb235d29dfe8f82e22c4c5574e7" kindref="member">fmt::Writer</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>error_code</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefmt_1ae5ed3b29f911650a12b4de3d14126c31" kindref="member">fmt::StringRef</ref></type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Formats an error returned by an operating system or a language runtime, for example a file opening error, and writes it to <emphasis>out</emphasis> in the following form:</para><para>.. parsed-literal:: &lt;message&gt;*: *&lt;system-message&gt;*</para><para>where *&lt;message&gt;* is the passed message and *&lt;system-message&gt;* is the system message corresponding to the error code. error_code* is a system error code as given by <computeroutput>errno</computeroutput>. If <emphasis>error_code</emphasis> is not a valid error code such as -1, the system message may look like &quot;Unknown error -1&quot; and is platform-dependent.  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.cc" line="386" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.cc" bodystart="386" bodyend="404"/>
+        <references refid="format_8cc_1ab8efe0100a6d7cc74729f5bf7537799c" compoundref="format_8cc" startline="61">FMT_CATCH</references>
+        <references refid="format_8cc_1a4aa79926398ee27fe7d6db8b0dd54edf" compoundref="format_8cc" startline="60">FMT_TRY</references>
+        <references refid="namespacefmt_1_1internal_1a855d655a8b82a933597acb9eee31b1a3abf58574b3f45959f076968509372a2fa" compoundref="format_8h" startline="571">fmt::internal::INLINE_BUFFER_SIZE</references>
+        <references refid="classfmt_1_1_buffer_1a20f893164dc20e8ea8c77810d4ea8d59" compoundref="format_8h" startline="623" endline="627">fmt::Buffer&lt; T &gt;::resize</references>
+        <references refid="classfmt_1_1_buffer_1a14fa72f0ddf584c14ffffb1446f598aa" compoundref="format_8h" startline="615" endline="615">fmt::Buffer&lt; T &gt;::size</references>
+        <referencedby refid="namespacefmt_1_1internal_1a74db7f6993170e499037cdf7708a3957" compoundref="format_8cc" startline="219" endline="222">fmt::internal::format_system_error</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a6ca15e6d89910192be15bddd428c3a17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="format_8h_1a02c8898388e0ae59aab58be14fcd4e05" kindref="member">FMT_FUNC</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>FMT_API void fmt::report_system_error</definition>
+        <argsstring>(int error_code, fmt::StringRef message) FMT_NOEXCEPT</argsstring>
+        <name>report_system_error</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>error_code</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefmt_1ae5ed3b29f911650a12b4de3d14126c31" kindref="member">fmt::StringRef</ref></type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.cc" line="472" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.cc" bodystart="472" bodyend="476"/>
+        <references refid="format_8h_1a02c8898388e0ae59aab58be14fcd4e05" compoundref="format_8h" startline="3832">FMT_FUNC</references>
+        <references refid="format_8h_1aef128913e8400683b1cbd1a3a2e11df3" compoundref="format_8h" startline="190">FMT_NOEXCEPT</references>
+        <references refid="namespacefmt_1_1internal_1a74db7f6993170e499037cdf7708a3957" compoundref="format_8cc" startline="219" endline="222">fmt::internal::format_system_error</references>
+        <referencedby refid="classfmt_1_1_buffered_file_1a18cee20addbee759cc25b8b0dc1deb03" compoundref="posix_8cc" startline="66" endline="69">fmt::BufferedFile::~BufferedFile</referencedby>
+        <referencedby refid="classfmt_1_1_file_1a892fac8d89786dff4bc3693eb267e1c8" compoundref="posix_8cc" startline="109" endline="114">fmt::File::~File</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1adec465a02f79e1e023ec283fa6da9f13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="format_8h_1a02c8898388e0ae59aab58be14fcd4e05" kindref="member">FMT_FUNC</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>FMT_API void fmt::print</definition>
+        <argsstring>(std::FILE *f, CStringRef format_str, ArgList args)</argsstring>
+        <name>print</name>
+        <param>
+          <type>std::FILE *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefmt_1af41028915a2e1f7b8af462c067163aa7" kindref="member">CStringRef</ref></type>
+          <declname>format_str</declname>
+        </param>
+        <param>
+          <type><ref refid="classfmt_1_1_arg_list" kindref="compound">ArgList</ref></type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints formatted data to the file <emphasis>f</emphasis>.</para><para>Example**::</para><para>print(stderr, &quot;Don&apos;t {}!&quot;, &quot;panic&quot;);  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.cc" line="486" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.cc" bodystart="486" bodyend="490"/>
+        <references refid="classfmt_1_1_basic_writer_1a62d1c7b5be9c3580326320d5d178d096" compoundref="format_8h" startline="2468" endline="2468">fmt::BasicWriter&lt; Char &gt;::data</references>
+        <references refid="classfmt_1_1_basic_writer_1a1b6721b4ba4d3fa18ac781a36616cc2a" compoundref="format_8h" startline="2462" endline="2462">fmt::BasicWriter&lt; Char &gt;::size</references>
+        <references refid="classfmt_1_1_basic_writer_1aaa83498c649d4a90ea3366bae62f4eac" compoundref="format_8h" startline="2515" endline="2517">fmt::BasicWriter&lt; Char &gt;::write</references>
+        <referencedby refid="namespacefmt_1a7d5857e54045ae471cfcee16e50dbe00" compoundref="format_8cc" startline="492" endline="494">print</referencedby>
+        <referencedby refid="namespacefmt_1abf6b311b54f02ca8e4e2c3de4a563517" compoundref="format_8cc" startline="496" endline="502">print_colored</referencedby>
+        <referencedby refid="namespacefmt_1ab6752b38644beac3d1862712d42b95ca" compoundref="format_8h" startline="3181" endline="3185">format</referencedby>
+        <referencedby refid="namespacefmt_1a3e1efc349649f867c4cc16cab445d7c5" compoundref="ostream_8h" startline="76" endline="87">format_arg</referencedby>
+        <referencedby refid="classfmt_1_1_buffered_file_1aa07aa36b56d75a0e8db27d1790a8266c" compoundref="posix_8h" startline="169" endline="171">fmt::BufferedFile::print</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a7d5857e54045ae471cfcee16e50dbe00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="format_8h_1a02c8898388e0ae59aab58be14fcd4e05" kindref="member">FMT_FUNC</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>FMT_API void fmt::print</definition>
+        <argsstring>(CStringRef format_str, ArgList args)</argsstring>
+        <name>print</name>
+        <param>
+          <type><ref refid="namespacefmt_1af41028915a2e1f7b8af462c067163aa7" kindref="member">CStringRef</ref></type>
+          <declname>format_str</declname>
+        </param>
+        <param>
+          <type><ref refid="classfmt_1_1_arg_list" kindref="compound">ArgList</ref></type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints formatted data to <computeroutput>stdout</computeroutput>.</para><para>Example**::</para><para>print(&quot;Elapsed time: {0:.2f} seconds&quot;, 1.23);  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.cc" line="492" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.cc" bodystart="492" bodyend="494"/>
+        <references refid="namespacefmt_1adec465a02f79e1e023ec283fa6da9f13" compoundref="format_8cc" startline="486" endline="490">print</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1abf6b311b54f02ca8e4e2c3de4a563517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="format_8h_1a02c8898388e0ae59aab58be14fcd4e05" kindref="member">FMT_FUNC</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>FMT_API void fmt::print_colored</definition>
+        <argsstring>(Color c, CStringRef format, ArgList args)</argsstring>
+        <name>print_colored</name>
+        <param>
+          <type><ref refid="namespacefmt_1ace617112a82e0f90aac9858ecb446c8a" kindref="member">Color</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefmt_1af41028915a2e1f7b8af462c067163aa7" kindref="member">CStringRef</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type><ref refid="classfmt_1_1_arg_list" kindref="compound">ArgList</ref></type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Formats a string and prints it to stdout using ANSI escape sequences to specify color (experimental). Example: print_colored(<ref refid="namespacefmt_1ace617112a82e0f90aac9858ecb446c8aa9bd87ab0ebb552d3ad410a628f6d0c00" kindref="member">fmt::RED</ref>, &quot;Elapsed time: {0:.2f} seconds&quot;, 1.23); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.cc" line="496" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.cc" bodystart="496" bodyend="502"/>
+        <references refid="namespacefmt_1adec465a02f79e1e023ec283fa6da9f13" compoundref="format_8cc" startline="486" endline="490">print</references>
+        <references refid="namespacefmt_1a0ee7afe0f2ddcd93b9e0e4549b9740ec" compoundref="printf_8h" startline="487" endline="489">printf</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a0ee7afe0f2ddcd93b9e0e4549b9740ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Char</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::printf</definition>
+        <argsstring>(BasicWriter&lt; Char &gt; &amp;w, BasicCStringRef&lt; Char &gt; format, ArgList args)</argsstring>
+        <name>printf</name>
+        <param>
+          <type><ref refid="classfmt_1_1_basic_writer" kindref="compound">BasicWriter</ref>&lt; Char &gt; &amp;</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type><ref refid="classfmt_1_1_basic_c_string_ref" kindref="compound">BasicCStringRef</ref>&lt; Char &gt;</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type><ref refid="classfmt_1_1_arg_list" kindref="compound">ArgList</ref></type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.cc" line="505" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/printf.h" bodystart="487" bodyend="489"/>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">format</references>
+        <referencedby refid="namespacefmt_1abf6b311b54f02ca8e4e2c3de4a563517" compoundref="format_8cc" startline="496" endline="502">print_colored</referencedby>
+        <referencedby refid="namespacefmt_1a05a374d05d4f93470bb99170efed28c0" compoundref="format_8cc" startline="507" endline="512">fprintf</referencedby>
+        <referencedby refid="namespacefmt_1a956d655d1291fb85203c58fadd4bba1a" compoundref="printf_8h" startline="500" endline="504">sprintf</referencedby>
+        <referencedby refid="namespacefmt_1aa936ffccf89f4609cd9fce18825f0b14" compoundref="printf_8h" startline="535" endline="537">printf</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a05a374d05d4f93470bb99170efed28c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="format_8h_1a02c8898388e0ae59aab58be14fcd4e05" kindref="member">FMT_FUNC</ref> <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>FMT_API int fmt::fprintf</definition>
+        <argsstring>(std::FILE *f, CStringRef format, ArgList args)</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>std::FILE *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefmt_1af41028915a2e1f7b8af462c067163aa7" kindref="member">CStringRef</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type><ref refid="classfmt_1_1_arg_list" kindref="compound">ArgList</ref></type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints formatted data to the file <emphasis>f</emphasis>.</para><para>Example**::</para><para><ref refid="namespacefmt_1a05a374d05d4f93470bb99170efed28c0" kindref="member">fmt::fprintf</ref>(stderr, &quot;Don&apos;t %s!&quot;, &quot;panic&quot;);  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.cc" line="507" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.cc" bodystart="507" bodyend="512"/>
+        <references refid="classfmt_1_1_basic_writer_1a62d1c7b5be9c3580326320d5d178d096" compoundref="format_8h" startline="2468" endline="2468">fmt::BasicWriter&lt; Char &gt;::data</references>
+        <references refid="classfmt_1_1_printf_formatter_1a295c50e11b9a77720c8078f287040e5c" compoundref="printf_8h" startline="387" endline="484">fmt::PrintfFormatter&lt; Char, ArgFormatter &gt;::format</references>
+        <references refid="classfmt_1_1internal_1_1_fixed_buffer_1a90dc1dce4e8eac799d57ca519cfeb82d" compoundref="format_8cc" startline="452" endline="454">fmt::internal::FixedBuffer&lt; Char &gt;::grow</references>
+        <references refid="classfmt_1_1internal_1_1_arg_map_1aba1e77b1b5358a8e354acae3d71ea6cf" compoundref="format_8cc" startline="407" endline="449">fmt::internal::ArgMap&lt; Char &gt;::init</references>
+        <references refid="namespacefmt_1a0ee7afe0f2ddcd93b9e0e4549b9740ec" compoundref="printf_8h" startline="487" endline="489">printf</references>
+        <references refid="classfmt_1_1_basic_writer_1a1b6721b4ba4d3fa18ac781a36616cc2a" compoundref="format_8h" startline="2462" endline="2462">fmt::BasicWriter&lt; Char &gt;::size</references>
+        <referencedby refid="namespacefmt_1a4e36b6c0e05b8176814d0e3e44c77627" compoundref="printf_8h" startline="507" endline="511">sprintf</referencedby>
+        <referencedby refid="namespacefmt_1aa936ffccf89f4609cd9fce18825f0b14" compoundref="printf_8h" startline="535" endline="537">printf</referencedby>
+        <referencedby refid="namespacefmt_1adf9e00e4ddf5cad224a101333cfac9e8" compoundref="printf_8h" startline="549" endline="554">fprintf</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a73baa9bfe9b6f660313ca71317a241bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classfmt_1_1_int_format_spec" kindref="compound">IntFormatSpec</ref>&lt; <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref>, <ref refid="structfmt_1_1_type_spec" kindref="compound">TypeSpec</ref>&lt;&apos;<ref refid="glew_8h_1a7b01aaccb6b1691185992154f99088cb" kindref="member">b</ref>&apos;&gt; &gt;</type>
+        <definition>IntFormatSpec&lt;int, TypeSpec&lt;&apos;b&apos;&gt; &gt; fmt::bin</definition>
+        <argsstring>(int value)</argsstring>
+        <name>bin</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns an integer format specifier to format the value in base 2. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1693" column="1"/>
+        <referencedby refid="classfmt_1_1_str_format_spec_1a58da4d50f18458f703dece272f06bda3" compoundref="format_8h" startline="1687" endline="1687">fmt::StrFormatSpec&lt; Char &gt;::str</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a2d84223df5715510de007ff274cd6c3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classfmt_1_1_int_format_spec" kindref="compound">IntFormatSpec</ref>&lt; <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref>, <ref refid="structfmt_1_1_type_spec" kindref="compound">TypeSpec</ref>&lt;&apos;o&apos;&gt; &gt;</type>
+        <definition>IntFormatSpec&lt;int, TypeSpec&lt;&apos;o&apos;&gt; &gt; fmt::oct</definition>
+        <argsstring>(int value)</argsstring>
+        <name>oct</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns an integer format specifier to format the value in base 8. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1698" column="1"/>
+        <referencedby refid="classfmt_1_1_str_format_spec_1a58da4d50f18458f703dece272f06bda3" compoundref="format_8h" startline="1687" endline="1687">fmt::StrFormatSpec&lt; Char &gt;::str</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1aed8f2728309382ece798b4666722af7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classfmt_1_1_int_format_spec" kindref="compound">IntFormatSpec</ref>&lt; <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref>, <ref refid="structfmt_1_1_type_spec" kindref="compound">TypeSpec</ref>&lt;&apos;<ref refid="glew_8h_1ad77deca22f617d3f0e0eb786445689fc" kindref="member">x</ref>&apos;&gt; &gt;</type>
+        <definition>IntFormatSpec&lt;int, TypeSpec&lt;&apos;x&apos;&gt; &gt; fmt::hex</definition>
+        <argsstring>(int value)</argsstring>
+        <name>hex</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns an integer format specifier to format the value in base 16 using lower-case letters for the digits above 9. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1704" column="1"/>
+        <referencedby refid="classfmt_1_1_str_format_spec_1a58da4d50f18458f703dece272f06bda3" compoundref="format_8h" startline="1687" endline="1687">fmt::StrFormatSpec&lt; Char &gt;::str</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a992ca088208c70c6625468d3d5248f38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classfmt_1_1_int_format_spec" kindref="compound">IntFormatSpec</ref>&lt; <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref>, <ref refid="structfmt_1_1_type_spec" kindref="compound">TypeSpec</ref>&lt;&apos;X&apos;&gt; &gt;</type>
+        <definition>IntFormatSpec&lt;int, TypeSpec&lt;&apos;X&apos;&gt; &gt; fmt::hexu</definition>
+        <argsstring>(int value)</argsstring>
+        <name>hexu</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns an integer formatter format specifier to format in base 16 using upper-case letters for the digits above 9. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1710" column="1"/>
+        <referencedby refid="classfmt_1_1_str_format_spec_1a58da4d50f18458f703dece272f06bda3" compoundref="format_8h" startline="1687" endline="1687">fmt::StrFormatSpec&lt; Char &gt;::str</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a48d6010061d1710d807853ad9125d825" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>char</type>
+            <declname>TYPE_CODE</declname>
+            <defname>TYPE_CODE</defname>
+          </param>
+          <param>
+            <type>typename Char</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classfmt_1_1_int_format_spec" kindref="compound">IntFormatSpec</ref>&lt; <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref>, <ref refid="structfmt_1_1_align_type_spec" kindref="compound">AlignTypeSpec</ref>&lt; TYPE_CODE &gt;, Char &gt;</type>
+        <definition>IntFormatSpec&lt;int, AlignTypeSpec&lt;TYPE_CODE&gt;, Char&gt; fmt::pad</definition>
+        <argsstring>(int value, unsigned width, Char fill= &apos; &apos;)</argsstring>
+        <name>pad</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>Char</type>
+          <declname>fill</declname>
+          <defval>&apos; &apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns an integer format specifier to pad the formatted argument with the fill character to the specified width using the default (right) numeric alignment.</para><para>Example**::</para><para>MemoryWriter out; out &lt;&lt; pad(hex(0xcafe), 8, &apos;0&apos;); out.str() == &quot;0000cafe&quot;</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1727" column="1"/>
+        <referencedby refid="classfmt_1_1_str_format_spec_1a58da4d50f18458f703dece272f06bda3" compoundref="format_8h" startline="1687" endline="1687">fmt::StrFormatSpec&lt; Char &gt;::str</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1aa87bf7b6c9197f00cef5d67872fec963" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Char</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classfmt_1_1_str_format_spec" kindref="compound">StrFormatSpec</ref>&lt; Char &gt;</type>
+        <definition>StrFormatSpec&lt;Char&gt; fmt::pad</definition>
+        <argsstring>(const Char *str, unsigned width, Char fill= &apos; &apos;)</argsstring>
+        <name>pad</name>
+        <param>
+          <type>const Char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>Char</type>
+          <declname>fill</declname>
+          <defval>&apos; &apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a string formatter that pads the formatted argument with the fill character to the specified width using the default (left) string alignment.</para><para>Example**::</para><para>std::string s = str(<ref refid="namespacefmt_1a89c1f31e0358aa86f99b9f24d2149ae6" kindref="member">MemoryWriter()</ref> &lt;&lt; pad(&quot;abc&quot;, 8)); s == &quot;abc     &quot;</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1799" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1799" bodyend="1802"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1aca4484309dac40585c48a9c9784ae171" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classfmt_1_1_str_format_spec" kindref="compound">StrFormatSpec</ref>&lt; wchar_t &gt;</type>
+        <definition>StrFormatSpec&lt;wchar_t&gt; fmt::pad</definition>
+        <argsstring>(const wchar_t *str, unsigned width, char fill= &apos; &apos;)</argsstring>
+        <name>pad</name>
+        <param>
+          <type>const wchar_t *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>fill</declname>
+          <defval>&apos; &apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1804" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1804" bodyend="1807"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>std::string fmt::format</definition>
+        <argsstring>(CStringRef format_str, ArgList args)</argsstring>
+        <name>format</name>
+        <param>
+          <type><ref refid="namespacefmt_1af41028915a2e1f7b8af462c067163aa7" kindref="member">CStringRef</ref></type>
+          <declname>format_str</declname>
+        </param>
+        <param>
+          <type><ref refid="classfmt_1_1_arg_list" kindref="compound">ArgList</ref></type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Formats arguments and returns the result as a string.</para><para>Example**::</para><para>std::string message = format(&quot;The answer is {}&quot;, 42);  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="3175" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="3175" bodyend="3179"/>
+        <references refid="classfmt_1_1_basic_writer_1a91f06ced6e063ee77a99740e0e79faf6" compoundref="format_8h" startline="2486" endline="2488">fmt::BasicWriter&lt; Char &gt;::str</references>
+        <references refid="classfmt_1_1_basic_writer_1aaa83498c649d4a90ea3366bae62f4eac" compoundref="format_8h" startline="2515" endline="2517">fmt::BasicWriter&lt; Char &gt;::write</references>
+        <referencedby refid="classfmt_1_1_system_error_1af42143a0f75c3a962fbe9329cd66720f" compoundref="format_8cc" startline="225" endline="232">fmt::SystemError::init</referencedby>
+        <referencedby refid="namespacefmt_1_1internal_1a92bdabe812efd23c6f9686ddd6a7805f" compoundref="format_8cc" startline="296" endline="305">fmt::internal::report_unknown_type</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1abd5692d2f2123b27da7941d56fc6073c" compoundref="format_8h" startline="2069" endline="2069">fmt::BasicFormatter&lt; Char, Impl &gt;::writer</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1aaa83498c649d4a90ea3366bae62f4eac" compoundref="format_8h" startline="2515" endline="2517">fmt::BasicWriter&lt; Char &gt;::write</referencedby>
+        <referencedby refid="classfmt_1_1_basic_writer_1aa69a013920916ccc74ca7ac5e971abe7" compoundref="format_8h" startline="2831" endline="2982">fmt::BasicWriter&lt; Char &gt;::write_double</referencedby>
+        <referencedby refid="namespacefmt_1_1internal_1a706fe7cc890026cebbd52e75d8a97afc" compoundref="format_8h" startline="3503" endline="3509">fmt::internal::require_numeric_argument</referencedby>
+        <referencedby refid="namespacefmt_1_1internal_1a867432b13d2f634bfb4aa28e464b57a1" compoundref="format_8h" startline="3512" endline="3520">fmt::internal::check_sign</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ab436d449f9a0678badb672af2a8ecb32" compoundref="format_8h" startline="3564" endline="3731">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+        <referencedby refid="classfmt_1_1_printf_formatter_1a08e27f97564935cbeac71fb8a0628f35" compoundref="printf_8h" startline="307" endline="308">fmt::PrintfFormatter&lt; Char, ArgFormatter &gt;::PrintfFormatter</referencedby>
+        <referencedby refid="namespacefmt_1a0ee7afe0f2ddcd93b9e0e4549b9740ec" compoundref="printf_8h" startline="487" endline="489">printf</referencedby>
+        <referencedby refid="classngl_1_1_rib_export_1a087727fcd7d3ec036bf2bb165fa47205" compoundref="_rib_export_8cpp" startline="74" endline="92">ngl::RibExport::open</referencedby>
+        <referencedby refid="classngl_1_1_shader_program_1a857ee599b65542841ccc8d4841c99336" compoundref="_shader_program_8cpp" startline="538" endline="580">ngl::ShaderProgram::autoRegisterUniforms</referencedby>
+        <referencedby refid="namespacefmt_1a9a337b83f27681daadc5565b49e8409d" compoundref="time_8h" startline="18" endline="50">format_arg</referencedby>
+        <referencedby refid="classngl_1_1_x_m_l_serializer_1a7cbda35a4e4cc86f777635b09180d23d" compoundref="_x_m_l_serializer_8cpp" startline="110" endline="124">ngl::XMLSerializer::write</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1ab6752b38644beac3d1862712d42b95ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::wstring</type>
+        <definition>std::wstring fmt::format</definition>
+        <argsstring>(WCStringRef format_str, ArgList args)</argsstring>
+        <name>format</name>
+        <param>
+          <type><ref refid="namespacefmt_1ae76542a1eda3b54264fdca97c4506a4d" kindref="member">WCStringRef</ref></type>
+          <declname>format_str</declname>
+        </param>
+        <param>
+          <type><ref refid="classfmt_1_1_arg_list" kindref="compound">ArgList</ref></type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="3181" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="3181" bodyend="3185"/>
+        <references refid="format_8h_1a9a4960b70582ed2620911a0b75dce0b5" compoundref="format_8h" startline="75">FMT_API</references>
+        <references refid="namespacefmt_1adec465a02f79e1e023ec283fa6da9f13" compoundref="format_8cc" startline="486" endline="490">print</references>
+        <references refid="classfmt_1_1_basic_writer_1a91f06ced6e063ee77a99740e0e79faf6" compoundref="format_8h" startline="2486" endline="2488">fmt::BasicWriter&lt; Char &gt;::str</references>
+        <references refid="classfmt_1_1_basic_writer_1aaa83498c649d4a90ea3366bae62f4eac" compoundref="format_8h" startline="2515" endline="2517">fmt::BasicWriter&lt; Char &gt;::write</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a14f565b291f639cea172e79f7fa9bc7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::format_decimal</definition>
+        <argsstring>(char *&amp;buffer, T value)</argsstring>
+        <name>format_decimal</name>
+        <param>
+          <type>char *&amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="3292" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="3292" bodyend="3312"/>
+        <references refid="namespacefmt_1_1internal_1abfe52e52001fd2590fb2015cefe95e18" compoundref="format_8h" startline="864" endline="877">fmt::internal::count_digits</references>
+        <references refid="structfmt_1_1internal_1_1_basic_data_1abc0f1b67b25a98d0aa1f2b25c8649e59" compoundref="format_8h" startline="838">fmt::internal::BasicData&lt; T &gt;::DIGITS</references>
+        <references refid="namespacefmt_1_1internal_1aeee1847660e999ab1e360ffa18515b88" compoundref="format_8h" startline="919" endline="941">fmt::internal::format_decimal</references>
+        <references refid="namespacefmt_1_1internal_1a310d44c09812f7990e50800808c04673" compoundref="format_8h" startline="811" endline="813">fmt::internal::is_negative</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a4649a895b3f769fe24b268e39a8cf152" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structfmt_1_1internal_1_1_named_arg" kindref="compound">internal::NamedArg</ref>&lt; char &gt;</type>
+        <definition>internal::NamedArg&lt;char&gt; fmt::arg</definition>
+        <argsstring>(StringRef name, const T &amp;arg)</argsstring>
+        <name>arg</name>
+        <param>
+          <type><ref refid="namespacefmt_1ae5ed3b29f911650a12b4de3d14126c31" kindref="member">StringRef</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a named argument for formatting functions.</para><para>Example**::</para><para>print(&quot;Elapsed time: {s:.2f} seconds&quot;, arg(&quot;s&quot;, 1.23));</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="3325" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="3325" bodyend="3327"/>
+        <referencedby refid="classfmt_1_1internal_1_1_formatter_base_1ad902773ddc5de8777c046bb349781e1a" compoundref="format_8cc" startline="456" endline="470">fmt::internal::FormatterBase::do_get_arg</referencedby>
+        <referencedby refid="classfmt_1_1_arg_list_1ad2c2672388e003aa70d9c948ac8140cd" compoundref="format_8h" startline="1401" endline="1424">fmt::ArgList::operator[]</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1abd5692d2f2123b27da7941d56fc6073c" compoundref="format_8h" startline="2069" endline="2069">fmt::BasicFormatter&lt; Char, Impl &gt;::writer</referencedby>
+        <referencedby refid="namespacefmt_1a52c68bde68381d4db8471c2655f8a7b9" compoundref="format_8h" startline="3330" endline="3332">arg</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ab2518374009dbb27392efa0d16b2f3a8" compoundref="format_8h" startline="3524" endline="3534">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::get_arg</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1af9f5dc339c7dd167253bc1354f0c5a65" compoundref="format_8h" startline="3537" endline="3546">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::parse_arg_index</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ac6d66a7beef58c3584327bdab9bbd92b" compoundref="format_8h" startline="3549" endline="3561">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::parse_arg_name</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1a63acecbbf9681005f3c7eb4d42a54bf7" compoundref="format_8h" startline="3734" endline="3753">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+        <referencedby refid="classfmt_1_1_printf_formatter_1a771c36f34331ffc3389ba25a87bf7ea0" compoundref="printf_8h" startline="341" endline="350">fmt::PrintfFormatter&lt; Char, ArgFormatter &gt;::get_arg</referencedby>
+        <referencedby refid="classfmt_1_1_printf_formatter_1a295c50e11b9a77720c8078f287040e5c" compoundref="printf_8h" startline="387" endline="484">fmt::PrintfFormatter&lt; Char, ArgFormatter &gt;::format</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a52c68bde68381d4db8471c2655f8a7b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structfmt_1_1internal_1_1_named_arg" kindref="compound">internal::NamedArg</ref>&lt; wchar_t &gt;</type>
+        <definition>internal::NamedArg&lt;wchar_t&gt; fmt::arg</definition>
+        <argsstring>(WStringRef name, const T &amp;arg)</argsstring>
+        <name>arg</name>
+        <param>
+          <type><ref refid="namespacefmt_1a88f11ca64ac292c1e2df229ced839312" kindref="member">WStringRef</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="3330" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="3330" bodyend="3332"/>
+        <references refid="namespacefmt_1a4649a895b3f769fe24b268e39a8cf152" compoundref="format_8h" startline="3325" endline="3327">arg</references>
+        <references refid="format_8h_1abf373cec341655be2a0b95e741898ef1" compoundref="format_8h" startline="210">FMT_DELETED_OR_UNDEFINED</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1ad77b1aada703be5f7c7d2e3da12620d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Char</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::arg</definition>
+        <argsstring>(StringRef, const internal::NamedArg&lt; Char &gt; &amp;) FMT_DELETED_OR_UNDEFINED</argsstring>
+        <name>arg</name>
+        <param>
+          <type><ref refid="namespacefmt_1ae5ed3b29f911650a12b4de3d14126c31" kindref="member">StringRef</ref></type>
+        </param>
+        <param>
+          <type>const <ref refid="structfmt_1_1internal_1_1_named_arg" kindref="compound">internal::NamedArg</ref>&lt; Char &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="3337" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a9b32446a7ed338832c974b6a233efe2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Char</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::arg</definition>
+        <argsstring>(WStringRef, const internal::NamedArg&lt; Char &gt; &amp;) FMT_DELETED_OR_UNDEFINED</argsstring>
+        <name>arg</name>
+        <param>
+          <type><ref refid="namespacefmt_1a88f11ca64ac292c1e2df229ced839312" kindref="member">WStringRef</ref></type>
+        </param>
+        <param>
+          <type>const <ref refid="structfmt_1_1internal_1_1_named_arg" kindref="compound">internal::NamedArg</ref>&lt; Char &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="3339" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a553a4de7d3382f362eba0a5e2a7c8184" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="format_8h_1a02c8898388e0ae59aab58be14fcd4e05" kindref="member">FMT_FUNC</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>FMT_API void fmt::print</definition>
+        <argsstring>(std::ostream &amp;os, CStringRef format_str, ArgList args)</argsstring>
+        <name>print</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefmt_1af41028915a2e1f7b8af462c067163aa7" kindref="member">CStringRef</ref></type>
+          <declname>format_str</declname>
+        </param>
+        <param>
+          <type><ref refid="classfmt_1_1_arg_list" kindref="compound">ArgList</ref></type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints formatted data to the stream <emphasis>os</emphasis>.</para><para>Example**::</para><para>print(cerr, &quot;Don&apos;t {}!&quot;, &quot;panic&quot;);  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/ostream.cc" line="30" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/ostream.cc" bodystart="30" bodyend="34"/>
+        <references refid="namespacefmt_1_1internal_1a7c721969e9660580a237bd4130422ab6" compoundref="ostream_8cc" startline="15" endline="27">fmt::internal::write</references>
+        <references refid="classfmt_1_1_basic_writer_1aaa83498c649d4a90ea3366bae62f4eac" compoundref="format_8h" startline="2515" endline="2517">fmt::BasicWriter&lt; Char &gt;::write</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a3e1efc349649f867c4cc16cab445d7c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Char</type>
+          </param>
+          <param>
+            <type>typename ArgFormatter</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::format_arg</definition>
+        <argsstring>(BasicFormatter&lt; Char, ArgFormatter &gt; &amp;f, const Char *&amp;format_str, const T &amp;value)</argsstring>
+        <name>format_arg</name>
+        <param>
+          <type><ref refid="classfmt_1_1_basic_formatter" kindref="compound">BasicFormatter</ref>&lt; Char, <ref refid="classfmt_1_1_arg_formatter" kindref="compound">ArgFormatter</ref> &gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const Char *&amp;</type>
+          <declname>format_str</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/ostream.h" line="76" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/ostream.h" bodystart="76" bodyend="87"/>
+        <references refid="format_8h_1a9a4960b70582ed2620911a0b75dce0b5" compoundref="format_8h" startline="75">FMT_API</references>
+        <references refid="format_8h_1a65215c7dfcc0e942cd0798860877e86b" compoundref="format_8h" startline="3440">FMT_VARIADIC</references>
+        <references refid="classfmt_1_1_basic_formatter_1a63acecbbf9681005f3c7eb4d42a54bf7" compoundref="format_8h" startline="3734" endline="3753">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</references>
+        <references refid="namespacefmt_1adec465a02f79e1e023ec283fa6da9f13" compoundref="format_8cc" startline="486" endline="490">print</references>
+        <references refid="classfmt_1_1internal_1_1_format_buf_1a37d9219b491e9f05f22334b60cf41c5f" compoundref="ostream_8h" startline="47" endline="49">fmt::internal::FormatBuf&lt; Char &gt;::size</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a28071220364a5499348cec5dbba7a005" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long fmt::getpagesize</definition>
+        <argsstring>()</argsstring>
+        <name>getpagesize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/posix.h" line="303" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/posix.cc" bodystart="227" bodyend="238"/>
+        <references refid="posix_8h_1aa693a9f0c55e9b081f1ea5bf04968dd7" compoundref="posix_8h" startline="50">FMT_POSIX_CALL</references>
+        <referencedby refid="classfmt_1_1_file_1a19976004ecb9edfb762b5255736fe73c" compoundref="posix_8h" startline="266" endline="266">fmt::File::descriptor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a956d655d1291fb85203c58fadd4bba1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>std::string fmt::sprintf</definition>
+        <argsstring>(CStringRef format, ArgList args)</argsstring>
+        <name>sprintf</name>
+        <param>
+          <type><ref refid="namespacefmt_1af41028915a2e1f7b8af462c067163aa7" kindref="member">CStringRef</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type><ref refid="classfmt_1_1_arg_list" kindref="compound">ArgList</ref></type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Formats arguments and returns the result as a string.</para><para>Example**::</para><para>std::string message = <ref refid="namespacefmt_1a956d655d1291fb85203c58fadd4bba1a" kindref="member">fmt::sprintf</ref>(&quot;The answer is %d&quot;, 42);  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/printf.h" line="500" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/printf.h" bodystart="500" bodyend="504"/>
+        <references refid="format_8h_1a65215c7dfcc0e942cd0798860877e86b" compoundref="format_8h" startline="3440">FMT_VARIADIC</references>
+        <references refid="namespacefmt_1a0ee7afe0f2ddcd93b9e0e4549b9740ec" compoundref="printf_8h" startline="487" endline="489">printf</references>
+        <references refid="classfmt_1_1_basic_writer_1a91f06ced6e063ee77a99740e0e79faf6" compoundref="format_8h" startline="2486" endline="2488">fmt::BasicWriter&lt; Char &gt;::str</references>
+        <referencedby refid="namespacefmt_1a4e36b6c0e05b8176814d0e3e44c77627" compoundref="printf_8h" startline="507" endline="511">sprintf</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a4e36b6c0e05b8176814d0e3e44c77627" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::wstring</type>
+        <definition>std::wstring fmt::sprintf</definition>
+        <argsstring>(WCStringRef format, ArgList args)</argsstring>
+        <name>sprintf</name>
+        <param>
+          <type><ref refid="namespacefmt_1ae76542a1eda3b54264fdca97c4506a4d" kindref="member">WCStringRef</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type><ref refid="classfmt_1_1_arg_list" kindref="compound">ArgList</ref></type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/printf.h" line="507" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/printf.h" bodystart="507" bodyend="511"/>
+        <references refid="format_8h_1a9a4960b70582ed2620911a0b75dce0b5" compoundref="format_8h" startline="75">FMT_API</references>
+        <references refid="format_8h_1a65215c7dfcc0e942cd0798860877e86b" compoundref="format_8h" startline="3440">FMT_VARIADIC</references>
+        <references refid="format_8h_1ade3d94cf1857de68f99e7059277d51f5" compoundref="format_8h" startline="3443">FMT_VARIADIC_W</references>
+        <references refid="namespacefmt_1a05a374d05d4f93470bb99170efed28c0" compoundref="format_8cc" startline="507" endline="512">fprintf</references>
+        <references refid="namespacefmt_1a0ee7afe0f2ddcd93b9e0e4549b9740ec" compoundref="printf_8h" startline="487" endline="489">printf</references>
+        <references refid="namespacefmt_1a956d655d1291fb85203c58fadd4bba1a" compoundref="printf_8h" startline="500" endline="504">sprintf</references>
+        <references refid="classfmt_1_1_basic_writer_1a91f06ced6e063ee77a99740e0e79faf6" compoundref="format_8h" startline="2486" endline="2488">fmt::BasicWriter&lt; Char &gt;::str</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1aa936ffccf89f4609cd9fce18825f0b14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int fmt::printf</definition>
+        <argsstring>(CStringRef format, ArgList args)</argsstring>
+        <name>printf</name>
+        <param>
+          <type><ref refid="namespacefmt_1af41028915a2e1f7b8af462c067163aa7" kindref="member">CStringRef</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type><ref refid="classfmt_1_1_arg_list" kindref="compound">ArgList</ref></type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints formatted data to <computeroutput>stdout</computeroutput>.</para><para>Example**::</para><para><ref refid="namespacefmt_1a0ee7afe0f2ddcd93b9e0e4549b9740ec" kindref="member">fmt::printf</ref>(&quot;Elapsed time: %.2f seconds&quot;, 1.23);  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/printf.h" line="535" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/printf.h" bodystart="535" bodyend="537"/>
+        <references refid="format_8h_1a65215c7dfcc0e942cd0798860877e86b" compoundref="format_8h" startline="3440">FMT_VARIADIC</references>
+        <references refid="namespacefmt_1a05a374d05d4f93470bb99170efed28c0" compoundref="format_8cc" startline="507" endline="512">fprintf</references>
+        <references refid="namespacefmt_1a0ee7afe0f2ddcd93b9e0e4549b9740ec" compoundref="printf_8h" startline="487" endline="489">printf</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1adf9e00e4ddf5cad224a101333cfac9e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int fmt::fprintf</definition>
+        <argsstring>(std::ostream &amp;os, CStringRef format_str, ArgList args)</argsstring>
+        <name>fprintf</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefmt_1af41028915a2e1f7b8af462c067163aa7" kindref="member">CStringRef</ref></type>
+          <declname>format_str</declname>
+        </param>
+        <param>
+          <type><ref refid="classfmt_1_1_arg_list" kindref="compound">ArgList</ref></type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints formatted data to the stream <emphasis>os</emphasis>.</para><para>Example**::</para><para>fprintf(cerr, &quot;Don&apos;t %s!&quot;, &quot;panic&quot;);  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/printf.h" line="549" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/printf.h" bodystart="549" bodyend="554"/>
+        <references refid="format_8h_1a65215c7dfcc0e942cd0798860877e86b" compoundref="format_8h" startline="3440">FMT_VARIADIC</references>
+        <references refid="namespacefmt_1a05a374d05d4f93470bb99170efed28c0" compoundref="format_8cc" startline="507" endline="512">fprintf</references>
+        <references refid="namespacefmt_1a0ee7afe0f2ddcd93b9e0e4549b9740ec" compoundref="printf_8h" startline="487" endline="489">printf</references>
+        <references refid="classfmt_1_1_basic_writer_1a1b6721b4ba4d3fa18ac781a36616cc2a" compoundref="format_8h" startline="2462" endline="2462">fmt::BasicWriter&lt; Char &gt;::size</references>
+        <references refid="namespacefmt_1_1internal_1a7c721969e9660580a237bd4130422ab6" compoundref="ostream_8cc" startline="15" endline="27">fmt::internal::write</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1abfd84051cd3673d750be5851ee93b05f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="glew_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref></type>
+        <definition>std::string fmt::to_string</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Converts <emphasis>value</emphasis> to <computeroutput>std::string</computeroutput> using the default format for type <emphasis>T</emphasis>.</para><para>Example**::</para><para>#include &quot;fmt/string.h&quot;</para><para>std::string answer = fmt::to_string(42);  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/string.h" line="112" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/string.h" bodystart="112" bodyend="116"/>
+        <references refid="classfmt_1_1_basic_writer_1a91f06ced6e063ee77a99740e0e79faf6" compoundref="format_8h" startline="2486" endline="2488">fmt::BasicWriter&lt; Char &gt;::str</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacefmt_1a9a337b83f27681daadc5565b49e8409d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ArgFormatter</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void fmt::format_arg</definition>
+        <argsstring>(BasicFormatter&lt; char, ArgFormatter &gt; &amp;f, const char *&amp;format_str, const std::tm &amp;tm)</argsstring>
+        <name>format_arg</name>
+        <param>
+          <type><ref refid="classfmt_1_1_basic_formatter" kindref="compound">BasicFormatter</ref>&lt; char, <ref refid="classfmt_1_1_arg_formatter" kindref="compound">ArgFormatter</ref> &gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const char *&amp;</type>
+          <declname>format_str</declname>
+        </param>
+        <param>
+          <type>const std::tm &amp;</type>
+          <declname>tm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/time.h" line="18" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/time.h" bodystart="18" bodyend="50"/>
+        <references refid="classfmt_1_1_buffer_1a7ca155741c43ec7c7edcea8dd28a2123" compoundref="format_8h" startline="657" endline="664">fmt::Buffer&lt; T &gt;::append</references>
+        <references refid="classfmt_1_1_buffer_1aaf54fe786de91157629f96380e0cb215" compoundref="format_8h" startline="618" endline="618">fmt::Buffer&lt; T &gt;::capacity</references>
+        <references refid="format_8h_1ad9e2ed6d3b432a04c9622c34a2495304" compoundref="format_8h" startline="172">FMT_THROW</references>
+        <references refid="namespacefmt_1a638f25c535b3bfa12dc1478b11885b6f" compoundref="format_8h" startline="3175" endline="3179">format</references>
+        <references refid="classfmt_1_1_buffer_1a7f46a3ce8d86abe35904f6654bd4ea1e" compoundref="format_8h" startline="634" endline="637">fmt::Buffer&lt; T &gt;::reserve</references>
+        <references refid="classfmt_1_1_buffer_1a20f893164dc20e8ea8c77810d4ea8d59" compoundref="format_8h" startline="623" endline="627">fmt::Buffer&lt; T &gt;::resize</references>
+        <references refid="classfmt_1_1_buffer_1a14fa72f0ddf584c14ffffb1446f598aa" compoundref="format_8h" startline="615" endline="615">fmt::Buffer&lt; T &gt;::size</references>
+        <references refid="classfmt_1_1_basic_formatter_1abd5692d2f2123b27da7941d56fc6073c" compoundref="format_8h" startline="2069" endline="2069">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::writer</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.cc" line="82" column="1"/>
+  </compounddef>
+</doxygen>

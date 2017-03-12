@@ -1,0 +1,14 @@
+<map id="PrettyWriter::Key" name="PrettyWriter::Key">
+<area shape="rect" id="node2" href="$class_pretty_writer.html#ae6cec4b69e86cff3121451f29e4862ef" title="PrettyWriter::String" alt="" coords="177,56,311,83"/>
+<area shape="rect" id="node3" href="$glew_8h.html#a1659df18b3b413a60a397d5a7540f3d2" title="void" alt="" coords="639,5,686,32"/>
+<area shape="rect" id="node4" href="$class_pretty_writer.html#a7841433d45abbfc5a1799be0ca1ed792" title="PrettyWriter::PrettyPrefix" alt="" coords="361,56,530,83"/>
+<area shape="rect" id="node10" href="$class_writer.html#aab4926d061472149998b89b4d34e1a4b" title="Writer::WriteString" alt="" coords="380,147,511,173"/>
+<area shape="rect" id="node5" href="$class_pretty_writer.html#a649ec900d77960e085f76bb4d3c351d9" title="PrettyWriter::WriteIndent" alt="" coords="579,56,747,83"/>
+<area shape="rect" id="node6" href="$classinternal_1_1_stack.html#ade4a25fa82950619652a30aa3a807f58" title="internal::Stack::GetSize" alt="" coords="795,31,957,57"/>
+<area shape="rect" id="node7" href="$filewritestream_8h.html#a5c9b0f0e6249be2acf7f3505c295c132" title="Implement specialized version of PutN() with memset() for better performance. " alt="" coords="850,81,902,108"/>
+<area shape="rect" id="node8" href="$class_file_write_stream.html#ad9ec108b24316a2c1c83c6ddc75d308a" title="FileWriteStream::PutN" alt="" coords="1005,81,1160,108"/>
+<area shape="rect" id="node9" href="$class_file_write_stream.html#a939fbf183ba36464c5e0837df4329d37" title="FileWriteStream::Flush" alt="" coords="1208,81,1365,108"/>
+<area shape="rect" id="node11" href="$struct_generic_string_stream.html#a71dde3ded678912be1ef56376a72a653" title="GenericStringStream\l::Tell" alt="" coords="589,107,736,149"/>
+<area shape="rect" id="node12" href="$struct_generic_string_stream.html#a87d794a70cf132f32521fb2b145ba58d" title="GenericStringStream\l::Peek" alt="" coords="589,173,736,214"/>
+<area shape="rect" id="node13" href="$struct_generic_string_stream.html#a0d26e3e77e4fca64a87c2d71f48ac5e5" title="GenericStringStream\l::Take" alt="" coords="589,238,736,279"/>
+</map>

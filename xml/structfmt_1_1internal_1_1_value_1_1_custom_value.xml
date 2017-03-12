@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structfmt_1_1internal_1_1_value_1_1_custom_value" kind="struct" language="C++" prot="public">
+    <compoundname>fmt::internal::Value::CustomValue</compoundname>
+    <includes refid="format_8h" local="no">format.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_value_1_1_custom_value_1aaaa7c10023f8b3886bee9593cddea150" prot="public" static="no" mutable="no">
+        <type>const <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref> *</type>
+        <definition>const void* fmt::internal::Value::CustomValue::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1007" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1007" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1_basic_arg_formatter_1ae0aab0f90c9c93e3513203fc84c2c4dc" compoundref="format_8h" startline="2017" endline="2019">fmt::BasicArgFormatter&lt; ArgFormatter&lt; Char &gt;, Char &gt;::visit_custom</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ab436d449f9a0678badb672af2a8ecb32" compoundref="format_8h" startline="3564" endline="3731">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+        <referencedby refid="classfmt_1_1_basic_printf_arg_formatter_1a4bc1a6a180bd532d300c953f0dbafc1e" compoundref="printf_8h" startline="264" endline="269">fmt::BasicPrintfArgFormatter&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;::visit_custom</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structfmt_1_1internal_1_1_value_1_1_custom_value_1a36f27ca0939e90a5fe6d7d355ea0f97a" prot="public" static="no" mutable="no">
+        <type><ref refid="structfmt_1_1internal_1_1_value_1a1bdc8aa6f70614fbb514aaa56106c669" kindref="member">FormatFunc</ref></type>
+        <definition>FormatFunc fmt::internal::Value::CustomValue::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1008" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1008" bodyend="-1"/>
+        <referencedby refid="classfmt_1_1_basic_arg_formatter_1ae0aab0f90c9c93e3513203fc84c2c4dc" compoundref="format_8h" startline="2017" endline="2019">fmt::BasicArgFormatter&lt; ArgFormatter&lt; Char &gt;, Char &gt;::visit_custom</referencedby>
+        <referencedby refid="structfmt_1_1internal_1_1_arg_array_3_01_n_00_01true_01_4_1a3977c938e1ca5c4c5aedccd85561a76d" compoundref="format_8h" startline="2113" endline="2123">fmt::internal::ArgArray&lt; N, true &gt;::make</referencedby>
+        <referencedby refid="classfmt_1_1_basic_formatter_1ab436d449f9a0678badb672af2a8ecb32" compoundref="format_8h" startline="3564" endline="3731">fmt::BasicFormatter&lt; CharType, ArgFormatter &gt;::format</referencedby>
+        <referencedby refid="classfmt_1_1_basic_printf_arg_formatter_1a4bc1a6a180bd532d300c953f0dbafc1e" compoundref="printf_8h" startline="264" endline="269">fmt::BasicPrintfArgFormatter&lt; PrintfArgFormatter&lt; Char &gt;, Char &gt;::visit_custom</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1430">
+        <label>fmt::internal::Value::CustomValue</label>
+        <link refid="structfmt_1_1internal_1_1_value_1_1_custom_value"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/jmacey/NGL/include/ngl/fmt/format.h" line="1006" column="1" bodyfile="/Users/jmacey/NGL/include/ngl/fmt/format.h" bodystart="1006" bodyend="1009"/>
+    <listofallmembers>
+      <member refid="structfmt_1_1internal_1_1_value_1_1_custom_value_1a36f27ca0939e90a5fe6d7d355ea0f97a" prot="public" virt="non-virtual"><scope>fmt::internal::Value::CustomValue</scope><name>format</name></member>
+      <member refid="structfmt_1_1internal_1_1_value_1_1_custom_value_1aaaa7c10023f8b3886bee9593cddea150" prot="public" virt="non-virtual"><scope>fmt::internal::Value::CustomValue</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
