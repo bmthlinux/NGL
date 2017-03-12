@@ -1,8 +1,0 @@
-<map id="ngl::Vec3::Vec3" name="ngl::Vec3::Vec3">
-<area shape="rect" id="node2" href="$classngl_1_1_vec3.html#ab5c16588563ef95bf8cac69d1753edfd" title="negate the Vec3 components " alt="" coords="173,5,312,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_vec3.html#acb1c0ebaa4ad744ff56b178d11a050e5" title="divide Vec3 components by a scalar " alt="" coords="173,56,312,83"/>
-<area shape="rect" id="node4" href="$classngl_1_1_vec3.html#a1aca8abbb49fdf2ad098d48a5de01bf8" title="operator add Vec3+Vec3 " alt="" coords="171,107,314,133"/>
-<area shape="rect" id="node5" href="$classngl_1_1_vec3.html#a27350d66f95540129aac46c34320a3f8" title="operator mult vevtor*Vec3 " alt="" coords="173,157,313,184"/>
-<area shape="rect" id="node6" href="$classngl_1_1_vec3.html#ab9423dbcd8e50ad922c97d36d7b7a5f8" title="return the cross product of this cross with b " alt="" coords="184,208,301,235"/>
-<area shape="rect" id="node7" href="$classngl_1_1_vec3.html#a703f2a53c01c59be0a315e6751a7edd6" title="return the vector reflected with this and N " alt="" coords="182,259,303,285"/>
-</map>

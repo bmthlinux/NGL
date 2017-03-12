@@ -1,4 +1,0 @@
-<map id="ngl::SimpleVAO::~SimpleVAO" name="ngl::SimpleVAO::~SimpleVAO">
-<area shape="rect" id="node2" href="$classngl_1_1_simple_v_a_o.html#a5c3d99c30dba6c0306858f2a85848510" title="remove the VAO and buffers created " alt="" coords="254,5,450,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_abstract_v_a_o.html#a755b4eb87c240c0c95b292c4762fef04" title="unbind the VAO by binding default 0 " alt="" coords="499,5,671,32"/>
-</map>

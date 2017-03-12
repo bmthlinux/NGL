@@ -1,6 +1,0 @@
-<map id="ngl::AbstractVAO::draw" name="ngl::AbstractVAO::draw">
-<area shape="rect" id="node2" href="$classngl_1_1_bezier_curve.html#aaebc65828ecb6bef1e5f894c06b5c9d7" title="draw the control points " alt="" coords="213,5,413,46"/>
-<area shape="rect" id="node3" href="$classngl_1_1_bezier_curve.html#a9d49085e7ae40604418ee0685268e85f" title="Draw the control hull. " alt="" coords="223,71,403,97"/>
-<area shape="rect" id="node4" href="$classngl_1_1_bezier_curve.html#a09380788ad51a31e512e39070eb6c670" title="Draw method to draw the curve Note this will be slow as it calls the CoxDeBoor function to calculate ..." alt="" coords="235,121,392,148"/>
-<area shape="rect" id="node5" href="$classngl_1_1_text.html#a59aa976f5726b2b69ed95c8a0668c0f2" title="render the text to the screen at _x,_y where 0,0 is top left of the screen all positioning is relativ..." alt="" coords="241,172,386,199"/>
-</map>

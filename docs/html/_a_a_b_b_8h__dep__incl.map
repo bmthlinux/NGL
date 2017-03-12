@@ -1,9 +1,0 @@
-<map id="AABB.h" name="AABB.h">
-<area shape="rect" id="node2" href="$_a_a_b_b_8cpp.html" title="implementation files for AABB class " alt="" coords="109,80,192,107"/>
-<area shape="rect" id="node3" href="$_camera_8h.html" title="a simple camera class based on the Hill Book " alt="" coords="216,80,296,107"/>
-<area shape="rect" id="node4" href="$_camera_8cpp.html" title="implementation files for Camera class " alt="" coords="5,155,99,181"/>
-<area shape="rect" id="node5" href="$_n_g_l_stream_8cpp.html" title="NGLStream.cpp" alt="" coords="124,155,241,181"/>
-<area shape="rect" id="node6" href="$_x_m_l_serializer_8cpp.html" title="XMLSerializer.cpp" alt="" coords="265,155,396,181"/>
-<area shape="rect" id="node7" href="$_path_camera_8h.html" title="a simple camera attached to a path inherits from Camera " alt="" coords="421,155,528,181"/>
-<area shape="rect" id="node8" href="$_path_camera_8cpp.html" title="implementation files for PathCamera class " alt="" coords="413,229,536,256"/>
-</map>

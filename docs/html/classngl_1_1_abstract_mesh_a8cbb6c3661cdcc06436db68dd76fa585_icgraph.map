@@ -1,5 +1,0 @@
-<map id="ngl::AbstractMesh::calcDimensions" name="ngl::AbstractMesh::calcDimensions">
-<area shape="rect" id="node2" href="$classngl_1_1_abstract_mesh.html#a3d08025470bb7939b209a2c2d63cc3d8" title="scale the obj by multiplying the actual vertex values by sx,sy and sz " alt="" coords="197,5,333,46"/>
-<area shape="rect" id="node3" href="$classngl_1_1_houdini_geo.html#af5e5e397e0e6c9532945afa99e3bde3a" title="the main loader for the geo we will have other methods called from this " alt="" coords="190,71,341,97"/>
-<area shape="rect" id="node4" href="$classngl_1_1_houdini_geo.html#ad05cccf96720d28aad1b87701fb51702" title="ctor passing in the file name to load " alt="" coords="390,71,586,97"/>
-</map>

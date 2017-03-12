@@ -1,8 +1,0 @@
-<map id="internal::Double::IsNormal" name="internal::Double::IsNormal">
-<area shape="rect" id="node2" href="$classinternal_1_1_double.html#a96c5e0f06551e83565b5097950d30e32" title="internal::Double::Integer\lSignificand" alt="" coords="230,5,394,46"/>
-<area shape="rect" id="node7" href="$classinternal_1_1_double.html#a8e16ee31d521fb56f0b98be427a9d47e" title="internal::Double::Integer\lExponent" alt="" coords="230,70,394,111"/>
-<area shape="rect" id="node3" href="$namespaceinternal.html#a190f9c286df64526a7e3550528ed6b02" title="internal::CheckWithinHalfULP" alt="" coords="443,45,640,72"/>
-<area shape="rect" id="node4" href="$namespaceinternal.html#a21546973704caf6e4c8b0d4869a614a6" title="internal::StrtodBigInteger" alt="" coords="689,45,858,72"/>
-<area shape="rect" id="node5" href="$namespaceinternal.html#a899ff5a0c5f9b203d720bb6f5631ed10" title="internal::StrtodFullPrecision" alt="" coords="907,45,1093,72"/>
-<area shape="rect" id="node6" href="$class_generic_reader.html#a2447207fde31185e2bb8fbf1250b72e0" title="GenericReader::ParseNumber" alt="" coords="1141,45,1344,72"/>
-</map>

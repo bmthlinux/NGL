@@ -1,5 +1,0 @@
-<map id="ngl::BBox::setCenter" name="ngl::BBox::setCenter">
-<area shape="rect" id="node2" href="$classngl_1_1_b_box.html#a41bf27002bc6d8eeb9e568916b32815e" title="recalculate the bbox values once things have been changed this will also re&#45;do the VAO ..." alt="" coords="198,5,349,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_b_box.html#acf0d07f89f2e16421770f01249295ac7" title="method used to set the vao " alt="" coords="398,5,530,32"/>
-<area shape="rect" id="node4" href="$classngl_1_1_v_a_o_factory.html#adee5532df7151fab8e8db0e9ebf94305" title="ngl::VAOFactory::createVAO" alt="" coords="579,5,771,32"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="ngl::Texture::setTextureGL" name="ngl::Texture::setTextureGL">
-<area shape="rect" id="node2" href="$classngl_1_1_image.html#ac59efd33040751c18b3389fbaea988bc" title="raw access to unsigned char pixel data " alt="" coords="235,5,381,32"/>
-<area shape="rect" id="node3" href="$glew_8h.html#a940f58f3728713267a58e2d09ff602b2" title="glBindTexture" alt="" coords="256,56,360,83"/>
-<area shape="rect" id="node4" href="$glew_8h.html#a99e77ebf136a8c511226cf705049a305" title="glGenTextures" alt="" coords="253,107,363,133"/>
-<area shape="rect" id="node5" href="$glew_8h.html#ae0c4b34c030bad60c4e2b94cd0a6d804" title="glTexImage2D" alt="" coords="253,157,363,184"/>
-<area shape="rect" id="node6" href="$glew_8h.html#ac8dbabff536e520bc700960dadd8d787" title="glTexParameteri" alt="" coords="248,208,368,235"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="glTexParameteri" name="glTexParameteri">
-<area shape="rect" id="node2" href="$classngl_1_1_text.html#a16e24cf8d7e4f310a7dc2b8375546134" title="ctor must pass in a ready constructed QFont make sure the size and emphasis is set before doing this ..." alt="" coords="211,5,317,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_texture.html#a5be4a26f970a417950ad4b7f0cf87c5d" title="set the image as an OpenGL texture object " alt="" coords="174,56,354,83"/>
-<area shape="rect" id="node4" href="$classngl_1_1_abstract_mesh.html#a2f0e3afb860b5c7bb6b99b96c016fef5" title="load int a texture and set it as the active texture of the Obj " alt="" coords="403,49,539,90"/>
-<area shape="rect" id="node5" href="$classngl_1_1_houdini_geo.html#a306b110b7cfe58531e740d241c39def0" title="ctor passing in the file name to load and a texture " alt="" coords="587,56,783,83"/>
-</map>

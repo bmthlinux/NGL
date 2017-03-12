@@ -1,6 +1,0 @@
-<map id="fmt::report_system_error" name="fmt::report_system_error">
-<area shape="rect" id="node2" href="$namespacefmt_1_1internal.html#a74db7f6993170e499037cdf7708a3957" title="fmt::internal::format\l_system_error" alt="" coords="187,23,325,65"/>
-<area shape="rect" id="node3" href="$namespacefmt.html#a55e659be843597392ab8621a093a0182" title="fmt::format_system\l_error" alt="" coords="373,23,509,65"/>
-<area shape="rect" id="node4" href="$classfmt_1_1_buffer.html#a20f893164dc20e8ea8c77810d4ea8d59" title="fmt::Buffer::resize" alt="" coords="558,5,685,32"/>
-<area shape="rect" id="node5" href="$classfmt_1_1_buffer.html#a14fa72f0ddf584c14ffffb1446f598aa" title="fmt::Buffer::size" alt="" coords="564,56,679,83"/>
-</map>

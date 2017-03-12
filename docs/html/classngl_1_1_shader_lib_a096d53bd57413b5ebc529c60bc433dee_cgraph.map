@@ -1,9 +1,0 @@
-<map id="ngl::ShaderLib::loadFromJson" name="ngl::ShaderLib::loadFromJson">
-<area shape="rect" id="node2" href="$classngl_1_1_shader_lib.html#aa5522797b285b3107e64e7ada9f3a493" title="attatch a Shader to the ShaderProgram referenced by _name " alt="" coords="260,5,455,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_shader_lib.html#a9cb2f69021343de47cd79539743f60be" title="attatch a Shader to the ShaderProgram referenced by _name " alt="" coords="260,57,455,98"/>
-<area shape="rect" id="node4" href="$classngl_1_1_shader_lib.html#ac1dc18632b4e8e190687e3ae1cb52061" title="compile the shader from _name " alt="" coords="255,123,459,149"/>
-<area shape="rect" id="node5" href="$classngl_1_1_shader_lib.html#a853991148271635d675f9f7f04578074" title="create an empty ShaderProgram for us to attach shaders etc to " alt="" coords="259,174,455,215"/>
-<area shape="rect" id="node6" href="$classngl_1_1_shader_lib.html#a7627c2bc4f66948e8db9ffaca468382d" title="get shader type from string (used for json parsing) " alt="" coords="254,240,461,267"/>
-<area shape="rect" id="node7" href="$classngl_1_1_shader_lib.html#abb33d0d7b1019b10701860b6c21c405a" title="link the program Object from _name " alt="" coords="264,291,451,333"/>
-<area shape="rect" id="node8" href="$classngl_1_1_shader_lib.html#a51417a146135c70ad9e05e784f55a31f" title="load shader from a C string, useful for including code in headers etc " alt="" coords="265,357,449,398"/>
-</map>

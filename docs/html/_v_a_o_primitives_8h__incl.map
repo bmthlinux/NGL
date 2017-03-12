@@ -1,8 +1,0 @@
-<map id="VAOPrimitives.h" name="VAOPrimitives.h">
-<area shape="rect" id="node2" href="$_singleton_8h.html" title="a simple singleton template inherited by other classes " alt="" coords="111,80,200,107"/>
-<area shape="rect" id="node3" href="$_types_8h.html" title="main definition of types and namespace " alt="" coords="253,155,323,181"/>
-<area shape="rect" id="node14" href="$_vec3_8h.html" title="a simple 3 tuple container for compatibility with glsl " alt="" coords="412,80,476,107"/>
-<area shape="rect" id="node16" href="$_abstract_v_a_o_8h.html" title="AbstractVAO.h" alt="" coords="277,80,387,107"/>
-<area shape="rect" id="node4" href="$glew_8h.html" title="glew.h" alt="" coords="102,229,161,256"/>
-<area shape="rect" id="node6" href="$stdint_8h.html" title="stdint.h" alt="" coords="99,304,164,331"/>
-</map>

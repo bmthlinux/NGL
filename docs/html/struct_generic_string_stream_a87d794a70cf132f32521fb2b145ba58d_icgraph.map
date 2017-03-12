@@ -1,8 +1,0 @@
-<map id="GenericStringStream::Peek" name="GenericStringStream::Peek">
-<area shape="rect" id="node2" href="$class_generic_reader_1_1_number_stream_3_01_input_stream_00_01false_01_4.html#adf3af9f629ea6b11dc2d4f066ecf03de" title="GenericReader::NumberStream\l\&lt; InputStream, false \&gt;::Peek" alt="" coords="200,5,411,46"/>
-<area shape="rect" id="node3" href="$class_writer.html#aab4926d061472149998b89b4d34e1a4b" title="Writer::WriteString" alt="" coords="240,71,371,97"/>
-<area shape="rect" id="node4" href="$class_pretty_writer.html#ae6cec4b69e86cff3121451f29e4862ef" title="PrettyWriter::String" alt="" coords="459,45,594,72"/>
-<area shape="rect" id="node6" href="$class_writer.html#ac317eb622ea116293d99e3edffe6f1c3" title="Writer::String" alt="" coords="477,96,577,123"/>
-<area shape="rect" id="node5" href="$class_pretty_writer.html#a26932858cdca972598f7caa6f415f310" title="PrettyWriter::Key" alt="" coords="643,45,765,72"/>
-<area shape="rect" id="node7" href="$class_writer.html#a88f8aa2df45426ba81d293ddc71698af" title="Writer::Key" alt="" coords="660,96,748,123"/>
-</map>

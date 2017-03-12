@@ -1,9 +1,0 @@
-<map id="internal::u64toa" name="internal::u64toa">
-<area shape="rect" id="node2" href="$namespaceinternal.html#a51566359e64c9746656c396c63a23d61" title="internal::i64toa" alt="" coords="181,31,291,57"/>
-<area shape="rect" id="node6" href="$class_writer.html#ac3d17e9409c202e39b0cd887545783d6" title="Writer::WriteUint64" alt="" coords="169,81,303,108"/>
-<area shape="rect" id="node3" href="$class_writer.html#ad68f4e0a85cc944a0740200544c97ed9" title="Writer::WriteInt64" alt="" coords="359,31,484,57"/>
-<area shape="rect" id="node4" href="$class_pretty_writer.html#a2ce0d71e221d72b8cf17d2b60ae610af" title="PrettyWriter::Int64" alt="" coords="539,5,669,32"/>
-<area shape="rect" id="node5" href="$class_writer.html#aa63032bf3dce66f817267cc451922a6e" title="Writer::Int64" alt="" coords="557,56,651,83"/>
-<area shape="rect" id="node7" href="$class_pretty_writer.html#a888229dc2e5a15b2fd577b47e86a17b3" title="PrettyWriter::Uint64" alt="" coords="352,81,491,108"/>
-<area shape="rect" id="node8" href="$class_writer.html#a71b2ee12ae85d181eb9abdb686565615" title="Writer::Uint64" alt="" coords="369,132,473,159"/>
-</map>

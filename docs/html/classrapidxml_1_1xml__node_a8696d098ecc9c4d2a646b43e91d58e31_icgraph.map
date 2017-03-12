@@ -1,8 +1,0 @@
-<map id="rapidxml::xml_node::append_node" name="rapidxml::xml_node::append_node">
-<area shape="rect" id="node2" href="$classrapidxml_1_1xml__document.html#aec6cedf45179b6378c670bc3ea509e61" title="rapidxml::xml_document\l::parse_and_append_data" alt="" coords="193,5,370,46"/>
-<area shape="rect" id="node3" href="$classrapidxml_1_1xml__document.html#aae0a4c2e1972ab9a9e0ce91cf1166ac9" title="rapidxml::xml_document\l::parse_node_contents" alt="" coords="198,70,365,111"/>
-<area shape="rect" id="node4" href="$classngl_1_1_x_m_l_serializer.html#acb72a6df1ebeb6f606a5e91b93eba432" title="ngl::XMLSerializer\l::writeToXML" alt="" coords="216,135,347,177"/>
-<area shape="rect" id="node5" href="$classngl_1_1_x_m_l_serializer.html#a7cbda35a4e4cc86f777635b09180d23d" title="write from an Camera must be overriden in child " alt="" coords="419,165,549,206"/>
-<area shape="rect" id="node6" href="$classngl_1_1_x_m_l_serializer.html#a68ace4d8c072e9a92405711fd88bfe80" title="ngl::XMLSerializer\l::addNode" alt="" coords="216,253,347,294"/>
-<area shape="rect" id="node7" href="$classngl_1_1_x_m_l_serializer.html#a3d4af73c5422ec397f4c2dfe709b869e" title="ctor, uses RAII to open the file, flag indicates if we have read or write mode " alt="" coords="216,318,347,359"/>
-</map>

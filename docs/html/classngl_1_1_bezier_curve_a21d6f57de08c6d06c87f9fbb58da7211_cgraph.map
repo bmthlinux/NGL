@@ -1,4 +1,0 @@
-<map id="ngl::BezierCurve::~BezierCurve" name="ngl::BezierCurve::~BezierCurve">
-<area shape="rect" id="node2" href="$classngl_1_1_abstract_v_a_o.html#a0c8a76bda28c062cc2c772c8ec7ddd12" title="this will clean up the VAO and associated data, it is the users responsibility to do this usually thi..." alt="" coords="182,5,386,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_abstract_v_a_o.html#a755b4eb87c240c0c95b292c4762fef04" title="unbind the VAO by binding default 0 " alt="" coords="198,56,370,83"/>
-</map>

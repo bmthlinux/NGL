@@ -1,4 +1,0 @@
-<map id="fmt::internal::StringBuffer&lt; Char &gt;" name="fmt::internal::StringBuffer&lt; Char &gt;">
-<area shape="rect" id="node2" href="$classfmt_1_1_buffer.html" title="{fmt::Buffer\&lt; Char \&gt;\n|# ptr_\l|+ ~Buffer()\l+ size()\l+ capacity()\l+ resize()\l+ reserve()\l+ clear()\l+ push_back()\l+ append()\l+ operator[]()\l+ operator[]()\l# Buffer()\l# grow()\l&#45; FMT_DISALLOW_COPY_AND\l_ASSIGN()\l}" alt="" coords="5,494,219,762"/>
-<area shape="rect" id="node4" href="$classfmt_1_1_buffer.html" title="{fmt::Buffer\&lt; T \&gt;\n||+ ~Buffer()\l+ size()\l+ capacity()\l+ resize()\l+ reserve()\l+ clear()\l+ push_back()\l+ append()\l+ operator[]()\l+ operator[]()\l# Buffer()\l# grow()\l&#45; FMT_DISALLOW_COPY_AND\l_ASSIGN()\l}" alt="" coords="141,161,355,429"/>
-</map>

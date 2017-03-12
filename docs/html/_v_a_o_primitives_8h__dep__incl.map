@@ -1,6 +1,0 @@
-<map id="VAOPrimitives.h" name="VAOPrimitives.h">
-<area shape="rect" id="node2" href="$create_default_v_a_os_8cpp.html" title="implementation files for VAOPrimitives this has been split as it takes a long time to compile this fi..." alt="" coords="5,80,165,107"/>
-<area shape="rect" id="node3" href="$_n_g_l_init_8cpp.html" title="implementation files for NGLInit class " alt="" coords="275,155,367,181"/>
-<area shape="rect" id="node4" href="$_v_a_o_primitives_8cpp.html" title="implementation files for VAOPrimitives class " alt="" coords="241,80,375,107"/>
-<area shape="rect" id="node5" href="$_n_g_l_init_8h.html" title="basic class to initialise the NGL library " alt="" coords="399,80,477,107"/>
-</map>

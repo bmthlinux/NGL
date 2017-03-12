@@ -1,9 +1,0 @@
-<map id="ngl::Camera::normalisedRoll" name="ngl::Camera::normalisedRoll">
-<area shape="rect" id="node2" href="$classngl_1_1_mat4.html#a073bb4083b7f4a6b60886c6467e0afd2" title="make the matrix m the identity matrix &#160;1 0 0 0 &#160;&#160;0 1 0 0 &#160;&#160;0 0 1 0 &#160;&#160;0 0 0 1 &#160;&#160;" alt="" coords="275,5,402,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_mat4.html#adcc7963bb92d9323cb716d467b67940d" title="set this matrix to a rotation matrix in the Z axis for value _deg note the matrix should be set to id..." alt="" coords="519,56,646,83"/>
-<area shape="rect" id="node5" href="$classngl_1_1_camera.html#aaeece8ece48d769af0a64d03f9605caa" title="method to set the modelview matrix values for the current camera, this method load the matrix Modelvi..." alt="" coords="246,107,431,133"/>
-<area shape="rect" id="node4" href="$namespacengl.html#a0bade03a2edcb08a49da7731394284fe" title="converts Degrees to Radians " alt="" coords="752,81,843,108"/>
-<area shape="rect" id="node6" href="$classngl_1_1_vec4.html#aec298a908339ba25e4a30856a2fa7bf0" title="return this dotted with _b " alt="" coords="531,107,635,133"/>
-<area shape="rect" id="node7" href="$classngl_1_1_camera.html#a6bb1f023865029e3b4e28e99a6bd00d2" title="calculate the frustum for clipping etc " alt="" coords="481,157,685,184"/>
-<area shape="rect" id="node8" href="$classngl_1_1_vec4.html#a4eb5f6ead61e1ad2f06887b23a94384a" title="get as a Vec3 for glsl etc " alt="" coords="734,157,861,184"/>
-</map>

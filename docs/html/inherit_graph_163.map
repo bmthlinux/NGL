@@ -1,4 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classngl_1_1_singleton.html" title="ngl::Singleton\&lt; ShaderLib \&gt;" alt="" coords="5,5,192,32"/>
-<area shape="rect" id="node2" href="$classngl_1_1_shader_lib.html" title="Singleton Class to init and Use GLSL Shaders the class stores the shaders as a map of shader objects ..." alt="" coords="241,5,349,32"/>
-</map>

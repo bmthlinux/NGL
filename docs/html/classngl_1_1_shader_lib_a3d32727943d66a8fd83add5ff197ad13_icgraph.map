@@ -1,4 +1,0 @@
-<map id="ngl::ShaderLib::setShaderParamFromMat4" name="ngl::ShaderLib::setShaderParamFromMat4">
-<area shape="rect" id="node2" href="$classngl_1_1_transformation.html#a360dc0c8ed23a4c50303145c5e50bd6e" title="load the current transform matrix to the shader " alt="" coords="253,5,403,46"/>
-<area shape="rect" id="node3" href="$classngl_1_1_transformation.html#af3e633320652186de7028fee596e102a" title="load the current * global transform matrix to the shader " alt="" coords="229,71,427,127"/>
-</map>

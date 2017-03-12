@@ -1,7 +1,0 @@
-<map id="ngl::Vec3::inner" name="ngl::Vec3::inner">
-<area shape="rect" id="node2" href="$classngl_1_1_plane.html#a9ee3f8ba8f51176287b61b886c7aa5e4" title="set the plane from 3 points " alt="" coords="187,5,331,32"/>
-<area shape="rect" id="node4" href="$classngl_1_1_plane.html#a6320b5c5eeaa23c3548ef55147539125" title="set the plane from a normal and a point " alt="" coords="169,56,349,83"/>
-<area shape="rect" id="node5" href="$classngl_1_1_plane.html#a1fe57e76fa01a2bf299e012b23e34177" title="get the distance from the point _p to the plane " alt="" coords="189,107,328,133"/>
-<area shape="rect" id="node3" href="$classngl_1_1_plane.html#a6b858a52e2275ed8643eb63fb14a6a4b" title="ctor passing in 3 vectors for the plane " alt="" coords="444,5,567,32"/>
-<area shape="rect" id="node6" href="$classngl_1_1_camera.html#a0dc3ef7af32368950538ca1ee805e781" title="check to see if the sphere passed in is within the frustum " alt="" coords="398,107,613,133"/>
-</map>

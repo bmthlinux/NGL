@@ -1,6 +1,0 @@
-<map id="ngl::operator&lt;&lt;" name="ngl::operator&lt;&lt;">
-<area shape="rect" id="node2" href="$classngl_1_1_quaternion.html#aae275b2005fc4112eb2949fde2e2ff74" title="accesor for the scalar part " alt="" coords="166,5,314,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_quaternion.html#aabbf1f62a783942312fd041114be049c" title="accesor for the x vector components " alt="" coords="166,56,314,83"/>
-<area shape="rect" id="node4" href="$classngl_1_1_quaternion.html#a65f77385ff2d1036a182ce35606b91f8" title="accesor for the y vector components " alt="" coords="166,107,314,133"/>
-<area shape="rect" id="node5" href="$classngl_1_1_quaternion.html#a4bb95b29c955671ac50f50246762932c" title="accesor for the z vector components " alt="" coords="167,157,313,184"/>
-</map>

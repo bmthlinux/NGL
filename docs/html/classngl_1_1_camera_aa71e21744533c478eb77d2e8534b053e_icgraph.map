@@ -1,6 +1,0 @@
-<map id="ngl::Camera::setShape" name="ngl::Camera::setShape">
-<area shape="rect" id="node2" href="$classngl_1_1_camera.html#abe618a56d09cfc6bd7ca0b0ffd10f702" title="sets some nice default camera values " alt="" coords="214,5,423,32"/>
-<area shape="rect" id="node4" href="$classngl_1_1_camera.html#a9da9930d346a2188c0e1264ea3c8bfd7" title="re&#45;set the aspect ratio of the camera " alt="" coords="239,56,399,83"/>
-<area shape="rect" id="node5" href="$classngl_1_1_camera.html#aaeb7795b3c3878003421c84a80bb686c" title="set the viewangle for the Camera " alt="" coords="227,107,410,133"/>
-<area shape="rect" id="node3" href="$classngl_1_1_camera.html#aec80bc2ad53e399dd5d25baa57984f6d" title="constructor setting the camera using eye look and up " alt="" coords="472,5,621,32"/>
-</map>

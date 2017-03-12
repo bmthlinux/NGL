@@ -1,4 +1,0 @@
-<map id="GenericPointer::Set" name="GenericPointer::Set">
-<area shape="rect" id="node2" href="$class_generic_pointer.html#aaf4d7d852098878d24188d134182d42f" title="Append a name token without length, and return a new Pointer. " alt="" coords="192,5,387,46"/>
-<area shape="rect" id="node3" href="$class_generic_pointer.html#adf0aa776e072b41d301e2a834ac2c2b5" title="Set a value in a subtree, with move semantics. " alt="" coords="220,71,359,97"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="ngl::Obj::load" name="ngl::Obj::load">
-<area shape="rect" id="node2" href="$classngl_1_1_obj.html#a02c9578871d7687522a93f27d729078c" title="parser function to parse the Face data used by boost::spirit parser " alt="" coords="195,5,333,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_obj.html#a024e327ae24613032b3c0873adb6cf91" title="parser function to parse the Norma used by boost::spirit parser " alt="" coords="188,56,340,83"/>
-<area shape="rect" id="node4" href="$classngl_1_1_obj.html#af62594c0448128601f595074fa27d8de" title="parser function to parse the text cord used by boost::spirit parser " alt="" coords="155,107,373,133"/>
-<area shape="rect" id="node5" href="$classngl_1_1_obj.html#a138b929c328a5755ca8f816eebf4c585" title="parser function to parse the vertex used by boost::spirit parser " alt="" coords="191,157,337,184"/>
-</map>

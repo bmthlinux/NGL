@@ -1,7 +1,0 @@
-<map id="ngl::BBox::recalculate" name="ngl::BBox::recalculate">
-<area shape="rect" id="node2" href="$classngl_1_1_b_box.html#a9de83fd0c7865265b8e45560b47e03f0" title="copy ctor " alt="" coords="218,5,337,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_b_box.html#adab55dd8c7dd08e1bdf436f6c552c784" title="set the center of the BBox and re&#45;calculate the extents " alt="" coords="205,56,349,83"/>
-<area shape="rect" id="node4" href="$classngl_1_1_b_box.html#a12a066ce8c481ae169a54b9f1235ef6f" title="set the width " alt="" coords="219,107,336,133"/>
-<area shape="rect" id="node5" href="$classngl_1_1_b_box.html#a25acf9118435c67c346d6097d6e57629" title="set the height " alt="" coords="216,157,339,184"/>
-<area shape="rect" id="node6" href="$classngl_1_1_b_box.html#afc542ff2bcc69be44987eec062e30cb6" title="set the depth " alt="" coords="217,208,337,235"/>
-</map>

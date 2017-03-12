@@ -1,4 +1,0 @@
-<map id="fmt::internal::IsZeroInt" name="fmt::internal::IsZeroInt">
-<area shape="rect" id="node2" href="$classfmt_1_1_arg_visitor.html" title="{fmt::ArgVisitor\&lt; IsZeroInt,\l bool \&gt;\n||+ report_unhandled_arg()\l+ visit_unhandled_arg()\l+ visit_int()\l+ visit_long_long()\l+ visit_uint()\l+ visit_ulong_long()\l+ visit_bool()\l+ visit_char()\l+ visit_any_int()\l+ visit_double()\land 8 more...\l}" alt="" coords="5,310,179,549"/>
-<area shape="rect" id="node3" href="$classfmt_1_1_arg_visitor.html" title="{fmt::ArgVisitor\&lt; Impl,\l Result \&gt;\n||+ report_unhandled_arg()\l+ visit_unhandled_arg()\l+ visit_int()\l+ visit_long_long()\l+ visit_uint()\l+ visit_ulong_long()\l+ visit_bool()\l+ visit_char()\l+ visit_any_int()\l+ visit_double()\land 8 more...\l}" alt="" coords="5,6,179,245"/>
-</map>

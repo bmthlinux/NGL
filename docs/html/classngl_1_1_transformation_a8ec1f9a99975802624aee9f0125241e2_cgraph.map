@@ -1,9 +1,0 @@
-<map id="ngl::Transformation::computeMatrices" name="ngl::Transformation::computeMatrices">
-<area shape="rect" id="node2" href="$classngl_1_1_mat4.html#a68e625839a717caa974729099b874087" title="set this matrix to a rotation matrix in the X axis for value _deg note the matrix should be set to id..." alt="" coords="201,5,327,32"/>
-<area shape="rect" id="node4" href="$classngl_1_1_mat4.html#a5b71bf928b9390406b58505be70474ed" title="set this matrix to a rotation matrix in the Y axis for value _deg note the matrix should be set to id..." alt="" coords="201,56,327,83"/>
-<area shape="rect" id="node5" href="$classngl_1_1_mat4.html#adcc7963bb92d9323cb716d467b67940d" title="set this matrix to a rotation matrix in the Z axis for value _deg note the matrix should be set to id..." alt="" coords="201,107,327,133"/>
-<area shape="rect" id="node6" href="$classngl_1_1_mat4.html#aec9a5399afb759fee5859374035076de" title="set the matrix scale values " alt="" coords="206,157,322,184"/>
-<area shape="rect" id="node7" href="$classngl_1_1_mat4.html#aa60245b206d27775160268f3a24c0cd3" title="set the matrix as a translation matrix " alt="" coords="196,208,332,235"/>
-<area shape="rect" id="node8" href="$classngl_1_1_mat4.html#a503a54499659a86f3846156bdc07a547" title="method to transpose the matrix " alt="" coords="193,259,335,285"/>
-<area shape="rect" id="node3" href="$namespacengl.html#a0bade03a2edcb08a49da7731394284fe" title="converts Degrees to Radians " alt="" coords="384,56,475,83"/>
-</map>

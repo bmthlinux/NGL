@@ -1,4 +1,0 @@
-var struct_stream_traits_3_01_generic_insitu_string_stream_3_01_encoding_01_4_01_4 =
-[
-    [ "copyOptimization", "struct_stream_traits_3_01_generic_insitu_string_stream_3_01_encoding_01_4_01_4.html#ac01d293ebd8ba20758c7add9106a24c1a8d0f051fca7788dc2aeaadd6e5a153ed", null ]
-];

@@ -1,8 +1,0 @@
-<map id="ngl::Camera::yaw" name="ngl::Camera::yaw">
-<area shape="rect" id="node2" href="$classngl_1_1_camera.html#a1dbe60cff8018423633782a3c73ae7ee" title="internal function to calculate the new rotation vectors for the camera after a roll, pitch or yaw " alt="" coords="199,5,345,32"/>
-<area shape="rect" id="node4" href="$classngl_1_1_camera.html#aaeece8ece48d769af0a64d03f9605caa" title="method to set the modelview matrix values for the current camera, this method load the matrix Modelvi..." alt="" coords="179,56,365,83"/>
-<area shape="rect" id="node3" href="$namespacengl.html#a0bade03a2edcb08a49da7731394284fe" title="converts Degrees to Radians " alt="" coords="685,5,776,32"/>
-<area shape="rect" id="node5" href="$classngl_1_1_camera.html#a6bb1f023865029e3b4e28e99a6bd00d2" title="calculate the frustum for clipping etc " alt="" coords="414,56,618,83"/>
-<area shape="rect" id="node7" href="$classngl_1_1_vec4.html#aec298a908339ba25e4a30856a2fa7bf0" title="return this dotted with _b " alt="" coords="464,107,568,133"/>
-<area shape="rect" id="node6" href="$classngl_1_1_vec4.html#a4eb5f6ead61e1ad2f06887b23a94384a" title="get as a Vec3 for glsl etc " alt="" coords="667,56,794,83"/>
-</map>

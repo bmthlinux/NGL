@@ -1,8 +1,0 @@
-<map id="ngl::ShaderLib::createShaderProgram" name="ngl::ShaderLib::createShaderProgram">
-<area shape="rect" id="node2" href="$classngl_1_1_shader_lib.html#a096d53bd57413b5ebc529c60bc433dee" title="method to load multiple shaders from a json file " alt="" coords="251,5,451,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_shader_lib.html#ac9f874040dab2cb996c3849be284d44b" title="this will load the pre&#45;defined text rendering shaders these are stored in the file src/shaders/TextSh..." alt="" coords="267,57,434,98"/>
-<area shape="rect" id="node5" href="$classngl_1_1_shader_lib.html#aec5ebc9a11364651b1820040d373869f" title="this will load the pre&#45;defined text rendering shaders these are stored in the file src/shaders/Colour..." alt="" coords="261,122,441,163"/>
-<area shape="rect" id="node6" href="$classngl_1_1_shader_lib.html#a005c7b95f7cc6bb38bb207443503e392" title="this will load the pre&#45;defined text rendering shaders these are stored in the file src/shaders/Diffus..." alt="" coords="259,187,442,229"/>
-<area shape="rect" id="node7" href="$classngl_1_1_shader_lib.html#aae06fcd5d36ccf79399384d04c5c59d3" title="this will load the pre&#45;defined text rendering shaders these are stored in the file src/shaders/ToonSh..." alt="" coords="265,253,436,294"/>
-<area shape="rect" id="node4" href="$classngl_1_1_shader_lib.html#ad4e47d35f70b176da947b14466b494b1" title="default ctor private as a singleton " alt="" coords="499,163,675,189"/>
-</map>

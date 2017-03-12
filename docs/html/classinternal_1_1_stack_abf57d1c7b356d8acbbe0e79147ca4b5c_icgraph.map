@@ -1,6 +1,0 @@
-<map id="internal::Stack::Empty" name="internal::Stack::Empty">
-<area shape="rect" id="node2" href="$classinternal_1_1_stack.html#a3852b8494d69c91f6a238a51572e591e" title="internal::Stack\&lt; StackAllocator\l \&gt;::ShrinkToFit" alt="" coords="205,5,408,46"/>
-<area shape="rect" id="node3" href="$class_writer.html#aced42429d1b31a565c5ca0310bf4e276" title="Checks whether the output is a complete JSON. " alt="" coords="241,71,373,97"/>
-<area shape="rect" id="node4" href="$class_writer.html#a3705f6d3f9a820f0a6652089222ed3ac" title="Writer::EndObject" alt="" coords="243,121,370,148"/>
-<area shape="rect" id="node5" href="$class_writer.html#ad8680f9f8d3289dad72f1f18a8763aa1" title="Writer::EndArray" alt="" coords="247,172,367,199"/>
-</map>

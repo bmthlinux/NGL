@@ -1,4 +1,0 @@
-<map id="ngl::Camera::setPerspProjection" name="ngl::Camera::setPerspProjection">
-<area shape="rect" id="node2" href="$classngl_1_1_mat4.html#a073bb4083b7f4a6b60886c6467e0afd2" title="make the matrix m the identity matrix &#160;1 0 0 0 &#160;&#160;0 1 0 0 &#160;&#160;0 0 1 0 &#160;&#160;0 0 0 1 &#160;&#160;" alt="" coords="267,5,394,32"/>
-<area shape="rect" id="node3" href="$namespacengl.html#a0bade03a2edcb08a49da7731394284fe" title="converts Degrees to Radians " alt="" coords="285,56,376,83"/>
-</map>

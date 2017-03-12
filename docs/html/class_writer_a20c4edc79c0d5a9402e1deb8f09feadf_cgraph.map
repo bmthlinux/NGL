@@ -1,8 +1,0 @@
-<map id="Writer::Uint" name="Writer::Uint">
-<area shape="rect" id="node2" href="$class_writer.html#ad56f2e953b7919ad2157a2fc2bedf873" title="Writer::Prefix" alt="" coords="152,56,251,83"/>
-<area shape="rect" id="node5" href="$class_writer.html#aa7e4196f87bfa66c9619e0efd15d16ea" title="Writer::WriteUint" alt="" coords="141,107,261,133"/>
-<area shape="rect" id="node3" href="$classinternal_1_1_stack.html#ade4a25fa82950619652a30aa3a807f58" title="internal::Stack::GetSize" alt="" coords="310,5,471,32"/>
-<area shape="rect" id="node4" href="$glew_8h.html#a1659df18b3b413a60a397d5a7540f3d2" title="void" alt="" coords="367,56,414,83"/>
-<area shape="rect" id="node6" href="$namespaceinternal.html#a8628d3698be60950743bc49d41a1cca7" title="internal::u32toa" alt="" coords="334,107,447,133"/>
-<area shape="rect" id="node7" href="$namespaceinternal.html#a95459e80b3f0e89ad03ebd0c8e55844c" title="internal::GetDigitsLut" alt="" coords="520,107,667,133"/>
-</map>

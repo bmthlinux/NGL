@@ -1,4 +1,0 @@
-<map id="ngl::Image::saveFrameBufferToFile" name="ngl::Image::saveFrameBufferToFile">
-<area shape="rect" id="node2" href="$glew_8h.html#aac48a329f0ddbfea61b8bb056460201a" title="glReadPixels" alt="" coords="257,5,357,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_image.html#a836b99787c51a05162e6f313cd5ef2c2" title="load the image data, this will clear the previous data and attempt to load the new image data ..." alt="" coords="248,56,365,83"/>
-</map>

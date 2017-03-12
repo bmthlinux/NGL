@@ -1,5 +1,0 @@
-<map id="ngl::NCCABinMesh::save" name="ngl::NCCABinMesh::save">
-<area shape="rect" id="node2" href="$classngl_1_1_abstract_mesh.html#aecd194e72054c0ba2a89f606368af14a" title="save the mesh as NCCA Binary VBO format basically this format is the processed binary vbo mesh data a..." alt="" coords="227,38,386,79"/>
-<area shape="rect" id="node3" href="$classngl_1_1_abstract_mesh.html#a778aab7afc0c3015b0d5133dfbf33b94" title="map the VBO vertex data " alt="" coords="435,5,571,46"/>
-<area shape="rect" id="node4" href="$classngl_1_1_abstract_mesh.html#ad5a08610ff985730c8116b337d9d578a" title="unmap the VBO based " alt="" coords="435,70,571,111"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="ngl::HoudiniGeo::HoudiniGeo" name="ngl::HoudiniGeo::HoudiniGeo">
-<area shape="rect" id="node2" href="$classngl_1_1_houdini_geo.html#af5e5e397e0e6c9532945afa99e3bde3a" title="the main loader for the geo we will have other methods called from this " alt="" coords="251,93,402,120"/>
-<area shape="rect" id="node3" href="$classngl_1_1_houdini_geo.html#a8e50ea5f8174ec8f843a9a12ed27985e" title="method to check the header and see if we have a valid geo file it also reads in the ammount of Points..." alt="" coords="451,5,645,32"/>
-<area shape="rect" id="node4" href="$classngl_1_1_houdini_geo.html#a0e8e1c573bee69ae825dcac20f0d874b" title="method to load the attribute dictionary from the geo file. At present we are only worried about Norma..." alt="" coords="458,57,638,98"/>
-<area shape="rect" id="node5" href="$classngl_1_1_houdini_geo.html#a573790d8e9f7ff430b3063b550e25e68" title="a method to load the points from the geo file " alt="" coords="455,123,641,149"/>
-<area shape="rect" id="node6" href="$classngl_1_1_abstract_mesh.html#a8cbb6c3661cdcc06436db68dd76fa585" title="a method to set the BBox and center " alt="" coords="480,174,616,215"/>
-</map>

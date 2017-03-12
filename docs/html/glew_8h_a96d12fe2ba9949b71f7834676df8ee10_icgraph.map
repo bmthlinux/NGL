@@ -1,6 +1,0 @@
-<map id="glGetError" name="glGetError">
-<area shape="rect" id="node2" href="$namespacengl.html#a06e0f3c96f3599a4bb7dd2dcfe8b869f" title="check for openGL errors and print out. " alt="" coords="139,64,299,91"/>
-<area shape="rect" id="node3" href="$namespacengl.html#aea32faaa47fb94200b4984368f942203" title="ngl::ceckGLError" alt="" coords="365,5,488,32"/>
-<area shape="rect" id="node4" href="$classngl_1_1_shader_program.html#a8deb24c9b772a49bcbacdf952a85d5d5" title="bind an attribute in the Program object to _index using attribname " alt="" coords="356,57,497,98"/>
-<area shape="rect" id="node5" href="$classngl_1_1_shader_program.html#a6ca57cf5b20bcfa53708de3de88fbfc5" title="bind fragment output location in the Program object to _index using attribname " alt="" coords="347,122,507,163"/>
-</map>

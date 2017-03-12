@@ -1,7 +1,0 @@
-<map id="internal::WriteExponent" name="internal::WriteExponent">
-<area shape="rect" id="node2" href="$namespaceinternal.html#a18aa7a3da7eb23f64a2eb7f3ed01a44a" title="internal::Prettify" alt="" coords="213,31,328,57"/>
-<area shape="rect" id="node3" href="$namespaceinternal.html#a43bb02fa46863dcc2dc8a2484f7ad5b1" title="internal::dtoa" alt="" coords="376,31,475,57"/>
-<area shape="rect" id="node4" href="$class_writer.html#aced9cb2b88abc16c4a0bdb75920cd424" title="Writer::WriteDouble" alt="" coords="523,31,661,57"/>
-<area shape="rect" id="node5" href="$class_pretty_writer.html#a20ffcf3ada1be664719f44cec76711ed" title="PrettyWriter::Double" alt="" coords="710,5,853,32"/>
-<area shape="rect" id="node6" href="$class_writer.html#ae80dc830a4f1d84e6eaf6b182c0ceccb" title="Writes the given double value to the stream. " alt="" coords="728,56,835,83"/>
-</map>

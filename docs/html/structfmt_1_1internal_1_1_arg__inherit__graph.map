@@ -1,6 +1,0 @@
-<map id="fmt::internal::Arg" name="fmt::internal::Arg">
-<area shape="rect" id="node3" href="$classfmt_1_1internal_1_1_make_arg.html" title="{fmt::internal::MakeArg\l\&lt; Formatter \&gt;\n||+ MakeArg()\l+ MakeArg()\l}" alt="" coords="5,579,157,685"/>
-<area shape="rect" id="node4" href="$classfmt_1_1internal_1_1_make_value.html" title="{fmt::internal::MakeValue\l\&lt; Formatter \&gt;\n||+ MakeValue()\l+ MakeValue()\l+ MakeValue()\l+ MakeValue()\l+ MakeValue()\l+ MakeValue()\l+ MakeValue()\l+ type()\l+ type()\l+ type()\l+ type()\l+ type()\l&#45; MakeValue()\l&#45; MakeValue()\l&#45; MakeValue()\l&#45; MakeValue()\l&#45; MakeValue()\l&#45; MakeValue()\l&#45; MakeValue()\l&#45; set_string()\l&#45; set_string()\l&#45; format_custom_arg()\l}" alt="" coords="181,432,347,832"/>
-<area shape="rect" id="node5" href="$structfmt_1_1internal_1_1_named_arg.html" title="{fmt::internal::NamedArg\l\&lt; Char \&gt;\n|+ name\l|+ NamedArg()\l}" alt="" coords="371,586,533,678"/>
-<area shape="rect" id="node2" href="$structfmt_1_1internal_1_1_value.html" title="{fmt::internal::Value\n|+ int_value\l+ uint_value\l+ long_long_value\l+ ulong_long_value\l+ double_value\l+ long_double_value\l+ pointer\l+ string\l+ sstring\l+ ustring\l+ wstring\l+ custom\l+ @3\l|}" alt="" coords="191,5,336,259"/>
-</map>

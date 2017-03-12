@@ -1,6 +1,0 @@
-<map id="fmt::BasicWriter::write_int" name="fmt::BasicWriter::write_int">
-<area shape="rect" id="node2" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#a0f4c97899457f6263ae412f231330227" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::write_pointer" alt="" coords="227,5,432,61"/>
-<area shape="rect" id="node3" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#ae6f9ce1fa7940ebda3ac594a45edd32d" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_any_int" alt="" coords="228,85,431,141"/>
-<area shape="rect" id="node4" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#ab85eb2158c9d48c847706de26f35460c" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_char" alt="" coords="237,165,422,221"/>
-<area shape="rect" id="node5" href="$classfmt_1_1_basic_printf_arg_formatter.html#a97f26086d50a4553280fbe831ef7e947" title="fmt::BasicPrintfArgFormatter\l\&lt; PrintfArgFormatter\&lt; Char\l \&gt;, Char \&gt;::visit_char" alt="" coords="234,245,425,301"/>
-</map>

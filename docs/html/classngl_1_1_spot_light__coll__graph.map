@@ -1,6 +1,0 @@
-<map id="ngl::SpotLight" name="ngl::SpotLight">
-<area shape="rect" id="node2" href="$classngl_1_1_light.html" title="Simple class to encapsulate OpenGL Light functions this will fill in the following structure..." alt="" coords="147,558,284,855"/>
-<area shape="rect" id="node3" href="$classngl_1_1_mat4.html" title="Matrix Class to do simple matrix operations included operator overloaded functions for maths and matr..." alt="" coords="5,49,112,420"/>
-<area shape="rect" id="node4" href="$classngl_1_1_colour.html" title="simple class to hold colour information and set the basic opengl colour state. also has overloaded me..." alt="" coords="137,71,244,398"/>
-<area shape="rect" id="node5" href="$classngl_1_1_vec4.html" title="simple Vector class for OpenGL graphics, contains overloaded operators for most math functions..." alt="" coords="305,5,412,464"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="fmt::internal::MemoryBuffer&lt; T, SIZE, Allocator &gt;" name="fmt::internal::MemoryBuffer&lt; T, SIZE, Allocator &gt;">
-<area shape="rect" id="node4" href="$classfmt_1_1internal_1_1_memory_buffer.html" title="{fmt::internal::MemoryBuffer\l\&lt; Char, internal::INLINE\l_BUFFER_SIZE, Allocator \&gt;\n|&#45; data_\l|+ MemoryBuffer()\l+ ~MemoryBuffer()\l+ get_allocator()\l# grow()\l&#45; deallocate()\l}" alt="" coords="30,584,220,749"/>
-<area shape="rect" id="node3" href="$classfmt_1_1_buffer.html" title="{fmt::Buffer\&lt; T \&gt;\n|# ptr_\l# size_\l# capacity_\l|+ ~Buffer()\l+ size()\l+ capacity()\l+ resize()\l+ reserve()\l+ clear()\l+ push_back()\l+ append()\l+ operator[]()\l+ operator[]()\l# Buffer()\l# grow()\l&#45; FMT_DISALLOW_COPY_AND\l_ASSIGN()\l}" alt="" coords="102,6,316,303"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="GenericPointer::CopyFromRaw" name="GenericPointer::CopyFromRaw">
-<area shape="rect" id="node2" href="$class_generic_pointer.html#a1d0174a6e72daa4024da9e08ce1e7951" title="Assignment operator. " alt="" coords="261,5,437,32"/>
-<area shape="rect" id="node3" href="$class_generic_pointer.html#a6d55ac55724890527e583f26b2774f02" title="Append a token and return a new Pointer. " alt="" coords="267,56,431,83"/>
-<area shape="rect" id="node4" href="$class_generic_pointer.html#a0f2c0586fd945bf25a5da228d085f74b" title="Append a name token with length, and return a new Pointer. " alt="" coords="486,56,650,83"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="ngl::ShaderLib::setShaderParam4f" name="ngl::ShaderLib::setShaderParam4f">
-<area shape="rect" id="node2" href="$classngl_1_1_light.html#a8dceeb672a20505e05ce0f62976eb311" title="method to load the current light values to the shader that is active at present " alt="" coords="243,5,410,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_spot_light.html#ab5b407ff1b1489463898bbecc8130d3d" title="this method loads the spotlight values to the shader " alt="" coords="229,56,424,83"/>
-</map>

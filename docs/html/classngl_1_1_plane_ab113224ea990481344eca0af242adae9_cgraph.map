@@ -1,5 +1,0 @@
-<map id="ngl::Plane::setFloats" name="ngl::Plane::setFloats">
-<area shape="rect" id="node2" href="$classngl_1_1_vec3.html#aad53df190ff4513b4684ce60a7cc52fa" title="returns the length of the vector " alt="" coords="209,5,330,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_vec3.html#a091a5439ddfd8a25fe486cf026345ef5" title="Normalize the vector using &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;. " alt="" coords="198,56,341,83"/>
-<area shape="rect" id="node4" href="$classngl_1_1_vec3.html#a13e680783f23f676545ef12d12ea3f0b" title="sets the Vec3 component from 3 values " alt="" coords="218,107,321,133"/>
-</map>

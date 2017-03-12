@@ -1,6 +1,0 @@
-<map id="ngl::Image::load" name="ngl::Image::load">
-<area shape="rect" id="node2" href="$classngl_1_1_image.html#ab95086219ab60f652e8022c2b4af429e" title="ctor passing in filename " alt="" coords="203,5,333,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_image.html#ae092e0b30e34806d9026d332acd53cfe" title="ngl::Image::saveFrameBuffer\lToFile" alt="" coords="171,57,365,98"/>
-<area shape="rect" id="node4" href="$classngl_1_1_texture.html#aaca41736aee3f521ab72b29096459d0a" title="Constructor passing the file to load. " alt="" coords="195,123,341,149"/>
-<area shape="rect" id="node5" href="$classngl_1_1_texture.html#a44493d8713bb7745f53ceb4fe7212fdb" title="method to load the image file into the texture class " alt="" coords="187,173,349,200"/>
-</map>

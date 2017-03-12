@@ -1,4 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classngl_1_1_camera.html" title="simple camera class to allow movement in an opengl scene. a lot of this stuff is from the HILL book C..." alt="" coords="6,5,101,32"/>
-<area shape="rect" id="node2" href="$classngl_1_1_path_camera.html" title="Inherits from Camera and adds a path for both eye and look using two Bezier Curves. " alt="" coords="149,5,272,32"/>
-</map>

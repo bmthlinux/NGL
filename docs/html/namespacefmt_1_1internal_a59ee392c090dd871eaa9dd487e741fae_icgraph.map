@@ -1,5 +1,0 @@
-<map id="fmt::internal::signbit" name="fmt::internal::signbit">
-<area shape="rect" id="node2" href="$classstd_1_1numeric__limits_3_01fmt_1_1internal_1_1_dummy_int_01_4.html#a1cc82945f63918e9a8603d3ef750990d" title="std::numeric_limits\l\&lt; fmt::internal::DummyInt\l \&gt;::isnegative" alt="" coords="192,5,363,61"/>
-<area shape="rect" id="node3" href="$classfmt_1_1_basic_writer.html#aa69a013920916ccc74ca7ac5e971abe7" title="fmt::BasicWriter::write\l_double" alt="" coords="411,13,563,54"/>
-<area shape="rect" id="node4" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#a670214e1773c9c86002be07c043566dd" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_any_double" alt="" coords="611,5,839,61"/>
-</map>

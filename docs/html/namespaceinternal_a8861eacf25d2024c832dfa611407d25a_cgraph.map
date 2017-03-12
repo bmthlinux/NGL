@@ -1,9 +1,0 @@
-<map id="internal::StrtodDiyFp" name="internal::StrtodDiyFp">
-<area shape="rect" id="node2" href="$classinternal_1_1_double.html#a980c26d006068b23406805e9b0e02588" title="internal::Double::Effective\lSignificandSize" alt="" coords="208,5,381,46"/>
-<area shape="rect" id="node3" href="$namespaceinternal.html#a74b8503d044bf6c0a5e90c5bea3aba42" title="internal::GetCachedPower10" alt="" coords="198,71,391,97"/>
-<area shape="rect" id="node6" href="$wglew_8h.html#a500a82aecba06f4550f6849b8099ca21" title="int" alt="" coords="275,121,314,148"/>
-<area shape="rect" id="node7" href="$structinternal_1_1_diy_fp.html#adae1948b1bb65d950cd3801a4a2bb7fd" title="internal::DiyFp::Normalize" alt="" coords="441,151,617,177"/>
-<area shape="rect" id="node8" href="$structinternal_1_1_diy_fp.html#a9bbdcfcf5d1b3a7b16a8f5f860d74038" title="internal::DiyFp::ToDouble" alt="" coords="208,223,381,249"/>
-<area shape="rect" id="node4" href="$namespaceinternal.html#a3e95f043ed6c40cda1c1bc33c2f0ece2" title="internal::GetCachedPower\lByIndex" alt="" coords="440,74,619,115"/>
-<area shape="rect" id="node5" href="$structinternal_1_1_diy_fp.html#aea27f027c58a55245d700df08be4ff7e" title="internal::DiyFp::DiyFp" alt="" coords="667,116,818,143"/>
-</map>

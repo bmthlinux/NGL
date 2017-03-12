@@ -1,9 +1,0 @@
-<map id="Writer::Int64" name="Writer::Int64">
-<area shape="rect" id="node2" href="$class_writer.html#ad56f2e953b7919ad2157a2fc2bedf873" title="Writer::Prefix" alt="" coords="163,56,261,83"/>
-<area shape="rect" id="node5" href="$class_writer.html#ad68f4e0a85cc944a0740200544c97ed9" title="Writer::WriteInt64" alt="" coords="149,107,275,133"/>
-<area shape="rect" id="node3" href="$glew_8h.html#a1659df18b3b413a60a397d5a7540f3d2" title="void" alt="" coords="381,5,427,32"/>
-<area shape="rect" id="node4" href="$classinternal_1_1_stack.html#ade4a25fa82950619652a30aa3a807f58" title="internal::Stack::GetSize" alt="" coords="323,56,485,83"/>
-<area shape="rect" id="node6" href="$namespaceinternal.html#a51566359e64c9746656c396c63a23d61" title="internal::i64toa" alt="" coords="349,107,459,133"/>
-<area shape="rect" id="node7" href="$namespaceinternal.html#aff16deebb94b3ea88a1dfff7bbc377b0" title="internal::u64toa" alt="" coords="534,107,647,133"/>
-<area shape="rect" id="node8" href="$namespaceinternal.html#a95459e80b3f0e89ad03ebd0c8e55844c" title="internal::GetDigitsLut" alt="" coords="696,107,843,133"/>
-</map>

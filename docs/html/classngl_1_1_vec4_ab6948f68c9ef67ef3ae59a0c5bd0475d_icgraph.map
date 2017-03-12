@@ -1,8 +1,0 @@
-<map id="ngl::Vec4::Vec4" name="ngl::Vec4::Vec4">
-<area shape="rect" id="node2" href="$classngl_1_1_vec4.html#aed69018dc44e03b7df44c664219d0a9b" title="return the cross product of this cross with b " alt="" coords="184,5,301,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_vec4.html#a1d438c043ca203a24ccb2ed05c8d3511" title="divide vector components by a scalar " alt="" coords="173,56,312,83"/>
-<area shape="rect" id="node4" href="$classngl_1_1_vec4.html#a63598633e17b8d5359decaa70c748957" title="operator add vector+vector " alt="" coords="171,107,314,133"/>
-<area shape="rect" id="node5" href="$classngl_1_1_vec4.html#aea32c49d8cccec3abc54cbe67a4cc6d5" title="subtraction operator subtract vevtor&#45;vector " alt="" coords="173,157,312,184"/>
-<area shape="rect" id="node6" href="$classngl_1_1_vec4.html#a8541915bc3a063a0dc93c350392d07f9" title="operator mult vevtor*vector " alt="" coords="173,208,313,235"/>
-<area shape="rect" id="node7" href="$classngl_1_1_vec4.html#afe37ba084049b4807f53834751ebcf53" title="compute the outer product of this vector and vector " alt="" coords="185,259,301,285"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="GenericPointer::Set" name="GenericPointer::Set">
-<area shape="rect" id="node2" href="$class_generic_document.html#aa4609d6b19f86aec1a6b96edf2c27686" title="Get the allocator of this document. " alt="" coords="192,5,403,32"/>
-<area shape="rect" id="node3" href="$class_generic_pointer.html#aaf4d7d852098878d24188d134182d42f" title="Append a name token without length, and return a new Pointer. " alt="" coords="200,57,395,98"/>
-<area shape="rect" id="node4" href="$class_generic_pointer.html#adf0aa776e072b41d301e2a834ac2c2b5" title="Set a value in a subtree, with move semantics. " alt="" coords="228,123,367,149"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="fmt::BasicWriter::write_str" name="fmt::BasicWriter::write_str">
-<area shape="rect" id="node2" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#a002d52aca6bc9a70d7eb62c037ffadc4" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::write" alt="" coords="239,5,417,61"/>
-<area shape="rect" id="node3" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#a937a7808ebf21736498e32abba6a0046" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_string" alt="" coords="232,85,424,141"/>
-<area shape="rect" id="node4" href="$classfmt_1_1internal_1_1_arg_formatter_base.html#ad3469bff1ffe51395d9f8f0e0824ff2c" title="fmt::internal::ArgFormatter\lBase\&lt; PrintfArgFormatter\l\&lt; Char \&gt;, Char \&gt;::visit_wstring" alt="" coords="227,165,429,221"/>
-</map>

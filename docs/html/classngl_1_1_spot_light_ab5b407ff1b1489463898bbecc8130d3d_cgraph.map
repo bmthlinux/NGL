@@ -1,6 +1,0 @@
-<map id="ngl::SpotLight::loadToShader" name="ngl::SpotLight::loadToShader">
-<area shape="rect" id="node2" href="$classngl_1_1_singleton.html#ab5d43c93fdc09ecadc5f6ebfd9460396" title="Get the instance. " alt="" coords="249,5,423,46"/>
-<area shape="rect" id="node3" href="$classngl_1_1_shader_lib.html#a49843176da69f14b25713a8657453885" title="set a shader param by name for 1 float param note that the shader must be the currently active shader..." alt="" coords="248,70,424,111"/>
-<area shape="rect" id="node4" href="$classngl_1_1_shader_lib.html#a912550dd1d05853a49a1e458f250614f" title="set a shader param by name for 3 float params note that the shader must be the currently active shade..." alt="" coords="248,135,424,177"/>
-<area shape="rect" id="node5" href="$classngl_1_1_shader_lib.html#a9faf1fcc53d2dbec5fd9c9e239808e04" title="set a shader param by name for 4 float params note that the shader must be the currently active shade..." alt="" coords="248,201,424,242"/>
-</map>

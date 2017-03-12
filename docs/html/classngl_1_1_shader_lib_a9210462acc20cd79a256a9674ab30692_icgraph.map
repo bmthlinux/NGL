@@ -1,4 +1,0 @@
-<map id="ngl::ShaderLib::setRegisteredUniform1f" name="ngl::ShaderLib::setRegisteredUniform1f">
-<area shape="rect" id="node2" href="$classngl_1_1_text.html#a59aa976f5726b2b69ed95c8a0668c0f2" title="render the text to the screen at _x,_y where 0,0 is top left of the screen all positioning is relativ..." alt="" coords="262,5,407,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_text.html#af325f6e59eea7727d2476c5d667bb899" title="set the size of the screen to scale our font to fit correctly this basically creates the orthographic..." alt="" coords="251,56,418,83"/>
-</map>

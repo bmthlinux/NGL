@@ -1,5 +1,0 @@
-<map id="ngl::AbstractMesh" name="ngl::AbstractMesh">
-<area shape="rect" id="node2" href="$classngl_1_1_houdini_geo.html" title="a class to load in the ASCII houdini .geo files for poly data the spec for the format can be found he..." alt="" coords="5,425,192,663"/>
-<area shape="rect" id="node3" href="$classngl_1_1_n_c_c_a_bin_mesh.html" title="basically this class Loads the contents of the current VBO to file, this is basically the AbstractMes..." alt="" coords="217,476,353,612"/>
-<area shape="rect" id="node4" href="$classngl_1_1_obj.html" title="used to load in an alias wave front obj format file and draw using open gl has been completly re&#45;writ..." alt="" coords="378,439,563,649"/>
-</map>

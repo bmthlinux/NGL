@@ -1,8 +1,0 @@
-<map id="ngl::AbstractMesh::loadTexture" name="ngl::AbstractMesh::loadTexture">
-<area shape="rect" id="node2" href="$classngl_1_1_texture.html#a5be4a26f970a417950ad4b7f0cf87c5d" title="set the image as an OpenGL texture object " alt="" coords="190,107,370,133"/>
-<area shape="rect" id="node3" href="$glew_8h.html#a99e77ebf136a8c511226cf705049a305" title="glGenTextures" alt="" coords="437,5,547,32"/>
-<area shape="rect" id="node4" href="$glew_8h.html#a940f58f3728713267a58e2d09ff602b2" title="glBindTexture" alt="" coords="440,56,544,83"/>
-<area shape="rect" id="node5" href="$glew_8h.html#ac8dbabff536e520bc700960dadd8d787" title="glTexParameteri" alt="" coords="432,107,552,133"/>
-<area shape="rect" id="node6" href="$glew_8h.html#ae0c4b34c030bad60c4e2b94cd0a6d804" title="glTexImage2D" alt="" coords="437,157,547,184"/>
-<area shape="rect" id="node7" href="$classngl_1_1_image.html#ac59efd33040751c18b3389fbaea988bc" title="raw access to unsigned char pixel data " alt="" coords="419,208,565,235"/>
-</map>

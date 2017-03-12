@@ -1,6 +1,0 @@
-<map id="internal::Double::IntegerSignificand" name="internal::Double::IntegerSignificand">
-<area shape="rect" id="node2" href="$namespaceinternal.html#a190f9c286df64526a7e3550528ed6b02" title="internal::CheckWithinHalfULP" alt="" coords="219,12,416,39"/>
-<area shape="rect" id="node3" href="$namespaceinternal.html#a21546973704caf6e4c8b0d4869a614a6" title="internal::StrtodBigInteger" alt="" coords="465,12,634,39"/>
-<area shape="rect" id="node4" href="$namespaceinternal.html#a899ff5a0c5f9b203d720bb6f5631ed10" title="internal::StrtodFullPrecision" alt="" coords="683,12,869,39"/>
-<area shape="rect" id="node5" href="$class_generic_reader.html#a2447207fde31185e2bb8fbf1250b72e0" title="GenericReader::ParseNumber" alt="" coords="917,12,1120,39"/>
-</map>

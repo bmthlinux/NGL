@@ -1,5 +1,0 @@
-<map id="ngl::NCCAPointBake::setMeshToFrame" name="ngl::NCCAPointBake::setMeshToFrame">
-<area shape="rect" id="node2" href="$classngl_1_1_abstract_mesh.html#ad56784799ae979b3151f29158ce8de36" title="accessor for the Face data " alt="" coords="200,5,336,46"/>
-<area shape="rect" id="node3" href="$classngl_1_1_abstract_mesh.html#a778aab7afc0c3015b0d5133dfbf33b94" title="map the VBO vertex data " alt="" coords="200,70,336,111"/>
-<area shape="rect" id="node4" href="$classngl_1_1_abstract_mesh.html#ad5a08610ff985730c8116b337d9d578a" title="unmap the VBO based " alt="" coords="200,135,336,177"/>
-</map>

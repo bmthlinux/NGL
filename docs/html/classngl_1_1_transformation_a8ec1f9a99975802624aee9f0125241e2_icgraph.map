@@ -1,8 +1,0 @@
-<map id="ngl::Transformation::computeMatrices" name="ngl::Transformation::computeMatrices">
-<area shape="rect" id="node2" href="$classngl_1_1_transformation.html#a6881e69cde5c7ba1e1da39e922b7fff6" title="Constructor. " alt="" coords="222,5,359,46"/>
-<area shape="rect" id="node3" href="$classngl_1_1_transformation.html#a429f78da7e2d45e245166e11746b64ca" title="a method to set all the transforms to the identity " alt="" coords="222,70,359,111"/>
-<area shape="rect" id="node4" href="$classngl_1_1_transformation.html#afc5b7e11d9ffbf1b442d8fcb0c392825" title="*= operator " alt="" coords="222,135,359,177"/>
-<area shape="rect" id="node5" href="$classngl_1_1_transformation.html#ac555db268e028953a2e0d162704111ca" title="operator for Transform multiplication will do a matrix multiplication on each of the matrices ..." alt="" coords="222,201,359,242"/>
-<area shape="rect" id="node6" href="$classngl_1_1_transformation.html#a360dc0c8ed23a4c50303145c5e50bd6e" title="load the current transform matrix to the shader " alt="" coords="216,266,365,307"/>
-<area shape="rect" id="node7" href="$classngl_1_1_transformation.html#af3e633320652186de7028fee596e102a" title="load the current * global transform matrix to the shader " alt="" coords="192,332,389,388"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="internal::GetCachedPower" name="internal::GetCachedPower">
-<area shape="rect" id="node2" href="$namespaceinternal.html#aeb7b6c0784b644968003cbd1b9da57e3" title="internal::Grisu2" alt="" coords="232,31,344,57"/>
-<area shape="rect" id="node3" href="$namespaceinternal.html#a43bb02fa46863dcc2dc8a2484f7ad5b1" title="internal::dtoa" alt="" coords="392,31,491,57"/>
-<area shape="rect" id="node4" href="$class_writer.html#aced9cb2b88abc16c4a0bdb75920cd424" title="Writer::WriteDouble" alt="" coords="539,31,677,57"/>
-<area shape="rect" id="node5" href="$class_pretty_writer.html#a20ffcf3ada1be664719f44cec76711ed" title="PrettyWriter::Double" alt="" coords="726,5,869,32"/>
-<area shape="rect" id="node6" href="$class_writer.html#ae80dc830a4f1d84e6eaf6b182c0ceccb" title="Writes the given double value to the stream. " alt="" coords="744,56,851,83"/>
-</map>

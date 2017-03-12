@@ -1,5 +1,0 @@
-<map id="internal::dtoa" name="internal::dtoa">
-<area shape="rect" id="node2" href="$class_writer.html#aced9cb2b88abc16c4a0bdb75920cd424" title="Writer::WriteDouble" alt="" coords="152,31,291,57"/>
-<area shape="rect" id="node3" href="$class_pretty_writer.html#a20ffcf3ada1be664719f44cec76711ed" title="PrettyWriter::Double" alt="" coords="339,5,482,32"/>
-<area shape="rect" id="node4" href="$class_writer.html#ae80dc830a4f1d84e6eaf6b182c0ceccb" title="Writes the given double value to the stream. " alt="" coords="357,56,464,83"/>
-</map>

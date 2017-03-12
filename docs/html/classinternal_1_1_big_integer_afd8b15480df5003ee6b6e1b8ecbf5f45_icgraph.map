@@ -1,7 +1,0 @@
-<map id="internal::BigInteger::Compare" name="internal::BigInteger::Compare">
-<area shape="rect" id="node2" href="$classinternal_1_1_big_integer.html#a5741304ce36392adeef716e78b384b61" title="internal::BigInteger\l::Difference" alt="" coords="187,5,320,46"/>
-<area shape="rect" id="node3" href="$namespaceinternal.html#a190f9c286df64526a7e3550528ed6b02" title="internal::CheckWithinHalfULP" alt="" coords="368,41,565,68"/>
-<area shape="rect" id="node4" href="$namespaceinternal.html#a21546973704caf6e4c8b0d4869a614a6" title="internal::StrtodBigInteger" alt="" coords="614,41,783,68"/>
-<area shape="rect" id="node5" href="$namespaceinternal.html#a899ff5a0c5f9b203d720bb6f5631ed10" title="internal::StrtodFullPrecision" alt="" coords="833,41,1018,68"/>
-<area shape="rect" id="node6" href="$class_generic_reader.html#a2447207fde31185e2bb8fbf1250b72e0" title="GenericReader::ParseNumber" alt="" coords="1067,41,1269,68"/>
-</map>

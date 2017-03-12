@@ -1,5 +1,0 @@
-<map id="internal::Swap" name="internal::Swap">
-<area shape="rect" id="node2" href="$class_generic_value.html#a386708557555e6389184de608af5e6a6" title="Assignment of constant string reference (no copy) " alt="" coords="177,5,345,32"/>
-<area shape="rect" id="node3" href="$class_generic_document.html#a6290e1290fad74177625af5938c0c58f" title="Exchange the contents of this document with those of another. " alt="" coords="176,56,347,83"/>
-<area shape="rect" id="node4" href="$classinternal_1_1_stack.html#a5e601199a21d84b1ac612f558be0f2c3" title="internal::Stack\&lt; StackAllocator\l \&gt;::Swap" alt="" coords="160,107,363,149"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="Texture.h" name="Texture.h">
-<area shape="rect" id="node2" href="$_image_8h.html" title="A generic Image loader / wrapper for different Image libs this allows us to load an image to be used ..." alt="" coords="142,80,212,107"/>
-<area shape="rect" id="node5" href="$_types_8h.html" title="main definition of types and namespace " alt="" coords="253,229,323,256"/>
-<area shape="rect" id="node15" href="$_colour_8h.html" title="a simple colour class for RGBA colour " alt="" coords="252,155,324,181"/>
-<area shape="rect" id="node6" href="$glew_8h.html" title="glew.h" alt="" coords="102,304,161,331"/>
-<area shape="rect" id="node8" href="$stdint_8h.html" title="stdint.h" alt="" coords="99,379,164,405"/>
-</map>

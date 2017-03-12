@@ -1,5 +1,0 @@
-<map id="ngl::Vec3::cross" name="ngl::Vec3::cross">
-<area shape="rect" id="node2" href="$classngl_1_1_plane.html#a9ee3f8ba8f51176287b61b886c7aa5e4" title="set the plane from 3 points " alt="" coords="171,5,315,32"/>
-<area shape="rect" id="node4" href="$namespacengl.html#aa989053cafdc5f7bf7fa9ab5548f800e" title="calculate a look at matrix similar to the one from the GLM library this is to help make porting glm c..." alt="" coords="201,56,285,83"/>
-<area shape="rect" id="node3" href="$classngl_1_1_plane.html#a6b858a52e2275ed8643eb63fb14a6a4b" title="ctor passing in 3 vectors for the plane " alt="" coords="363,5,485,32"/>
-</map>

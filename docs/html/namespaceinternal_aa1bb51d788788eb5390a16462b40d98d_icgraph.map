@@ -1,6 +1,0 @@
-<map id="internal::FastPath" name="internal::FastPath">
-<area shape="rect" id="node2" href="$namespaceinternal.html#a9e5fac4695310f09892fe52b1d24ab19" title="internal::StrtodNormalPrecision" alt="" coords="366,5,573,32"/>
-<area shape="rect" id="node4" href="$namespaceinternal.html#a598b2d2f85130bff3c3942e4750b9185" title="internal::StrtodFast" alt="" coords="182,56,317,83"/>
-<area shape="rect" id="node3" href="$class_generic_reader.html#a2447207fde31185e2bb8fbf1250b72e0" title="GenericReader::ParseNumber" alt="" coords="621,31,824,57"/>
-<area shape="rect" id="node5" href="$namespaceinternal.html#a899ff5a0c5f9b203d720bb6f5631ed10" title="internal::StrtodFullPrecision" alt="" coords="377,56,562,83"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="ngl::AbstractMesh::createVAO" name="ngl::AbstractMesh::createVAO">
-<area shape="rect" id="node2" href="$classngl_1_1_v_a_o_factory.html#adee5532df7151fab8e8db0e9ebf94305" title="ngl::VAOFactory::createVAO" alt="" coords="189,5,381,32"/>
-<area shape="rect" id="node3" href="$classngl_1_1_abstract_mesh.html#af509c12d1dda2d1ad25841a4362edb5f" title="check to see if obj is triangulated as we only support tri or quad objs at the moment ..." alt="" coords="217,57,353,98"/>
-</map>

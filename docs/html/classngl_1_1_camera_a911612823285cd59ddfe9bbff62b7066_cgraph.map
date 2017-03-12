@@ -1,7 +1,0 @@
-<map id="ngl::Camera::slide" name="ngl::Camera::slide">
-<area shape="rect" id="node2" href="$classngl_1_1_camera.html#aaeece8ece48d769af0a64d03f9605caa" title="method to set the modelview matrix values for the current camera, this method load the matrix Modelvi..." alt="" coords="185,56,370,83"/>
-<area shape="rect" id="node3" href="$classngl_1_1_camera.html#a6bb1f023865029e3b4e28e99a6bd00d2" title="calculate the frustum for clipping etc " alt="" coords="419,31,623,57"/>
-<area shape="rect" id="node6" href="$classngl_1_1_vec4.html#aec298a908339ba25e4a30856a2fa7bf0" title="return this dotted with _b " alt="" coords="469,81,573,108"/>
-<area shape="rect" id="node4" href="$namespacengl.html#a0bade03a2edcb08a49da7731394284fe" title="converts Degrees to Radians " alt="" coords="691,5,781,32"/>
-<area shape="rect" id="node5" href="$classngl_1_1_vec4.html#a4eb5f6ead61e1ad2f06887b23a94384a" title="get as a Vec3 for glsl etc " alt="" coords="673,56,799,83"/>
-</map>

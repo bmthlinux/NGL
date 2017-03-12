@@ -1,4 +1,0 @@
-<map id="ngl::ShaderProgram::printProperties" name="ngl::ShaderProgram::printProperties">
-<area shape="rect" id="node2" href="$classngl_1_1_shader_program.html#ab890dd7475cc48223e1245cb41ea3a4c" title="lists the available Attributes for the shader (this was a pain because the compiler quietly gets rid ..." alt="" coords="195,5,343,46"/>
-<area shape="rect" id="node3" href="$classngl_1_1_shader_program.html#ad4af8ff430af3d8756ca8b63c797639c" title="lists the available uniforms for the shader (this was a pain because the compiler quietly gets rid of..." alt="" coords="197,70,342,111"/>
-</map>
