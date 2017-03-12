@@ -344,7 +344,12 @@ void pyInitVec3(py::module & m)
         .def(py::self *= ngl::Real())
         .def(py::self * ngl::Mat3())
         .def("__neg__",(Vec3 (Vec3::*)()const) &Vec3::operator-)
-
+        .def("__repr__",
+                [](const Vec3 &v) {
+                    return "["+std::to_string(v.m_x)+","+
+                        std::to_string(v.m_y)+","+
+                        std::to_string(v.m_z)
+                        +"]";})
         ;
 
 }

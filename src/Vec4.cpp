@@ -369,7 +369,13 @@ void pyInitVec4(py::module & m)
         .def(py::self *= ngl::Real())
         .def(py::self * ngl::Mat4())
         .def("__neg__",(Vec4 & (Vec4::*)()) &Vec4::operator-)
-
+        .def("__repr__",
+                [](const Vec4 &v) {
+                    return "["+std::to_string(v.m_x)+","+
+                        std::to_string(v.m_y)+","+
+                        std::to_string(v.m_z)+","+
+                        std::to_string(v.m_w)
+                        +"]";})
         ;
 
 }
