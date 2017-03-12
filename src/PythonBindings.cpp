@@ -8,6 +8,7 @@ namespace py = pybind11;
 // see http://pybind11.readthedocs.io/en/master/faq.html#how-can-i-reduce-the-build-time
 extern void pyInitVec4(py::module & m);
 extern void pyInitVec3(py::module & m);
+extern void pyInitAABB(py::module & m);
 
 PYBIND11_PLUGIN(pyngl)
 {
@@ -16,7 +17,7 @@ PYBIND11_PLUGIN(pyngl)
 
     pyInitVec4(m);
     pyInitVec3(m);
-
+    pyInitAABB(m);
     return m.ptr();
 }
 

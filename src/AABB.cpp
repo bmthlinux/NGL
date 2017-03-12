@@ -15,6 +15,8 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #include "AABB.h"
+#include <pybind11/pybind11.h>
+
 //-----------------------------------------------------------------------------
 /// @file AABB.cpp
 /// @brief implementation files for AABB class
@@ -107,5 +109,19 @@ Vec3 AABB::getVertexN(const Vec3 &_normal) const noexcept
 	return res;
 }
 
+namespace py = pybind11;
+
+void pyInitAABB(py::module & m)
+{
+  py::class_<AABB>(m, "AABB")
+      .def(py::init<>())
+      .def(py::init<const Vec4 &, Real ,Real ,	Real>())
+      .def("set", &AABB::set)
+      //.def("setFromBBox",&AABB::setFromBBox)
+      .def("getVertexP",&AABB::getVertexP)
+      .def("getVertexN",&AABB::getVertexN)
+      ;
+
+}
 
 } // end of ngl namespace

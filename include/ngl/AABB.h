@@ -73,7 +73,7 @@ public :
 	/// @brief set from a bounding box
 	/// @param _b the bbox to set from
 	//----------------------------------------------------------------------------------------------------------------------
-	void setFromBBox(const BBox &_b) noexcept;
+//	void setFromBBox(const BBox &_b) noexcept;
 	//----------------------------------------------------------------------------------------------------------------------
 
 	// for use in frustum computations
