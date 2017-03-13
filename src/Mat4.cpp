@@ -799,7 +799,28 @@ void pyInitMat4(py::module & m)
                       "["+std::to_string(v.m_00) + "," + std::to_string(v.m_11) + "," + std::to_string(v.m_12) + "," + std::to_string(v.m_13) + "]\n" +
                       "["+std::to_string(v.m_00) + "," + std::to_string(v.m_21) + "," + std::to_string(v.m_22) + "," + std::to_string(v.m_23) + "]\n" +
                       "["+std::to_string(v.m_00) + "," + std::to_string(v.m_31) + "," + std::to_string(v.m_32) + "," + std::to_string(v.m_33) + "]\n";})
-         ;
+      //.def_readwrite("m_m", &Mat4::m_m)
+      .def_readwrite("m_openGL", &Mat4::m_openGL)
+      .def_readwrite("m_00", &Mat4::m_00)
+      .def_readwrite("m_01", &Mat4::m_01)
+      .def_readwrite("m_02", &Mat4::m_02)
+      .def_readwrite("m_03", &Mat4::m_03)
+      .def_readwrite("m_10", &Mat4::m_10)
+      .def_readwrite("m_11", &Mat4::m_11)
+      .def_readwrite("m_12", &Mat4::m_12)
+      .def_readwrite("m_13", &Mat4::m_13)
+      .def_readwrite("m_20", &Mat4::m_20)
+      .def_readwrite("m_21", &Mat4::m_21)
+      .def_readwrite("m_22", &Mat4::m_22)
+      .def_readwrite("m_23", &Mat4::m_23)
+      .def_readwrite("m_30", &Mat4::m_30)
+      .def_readwrite("m_31", &Mat4::m_31)
+      .def_readwrite("m_32", &Mat4::m_32)
+      .def_readwrite("m_33", &Mat4::m_33)
+
+
+
+      ;
 
 
 }
