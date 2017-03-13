@@ -50,7 +50,7 @@ class TestMat3(unittest.TestCase) :
         value=value+1
 
     result=Mat3(0,3,6,1,4,7,2,5,8)    
-    self.assertTrue(test,)
+    self.assertTrue(test==result)
 
   def testScale(self ) :
     test=Mat3()
@@ -85,8 +85,50 @@ class TestMat3(unittest.TestCase) :
     result=Mat3(0.819152,0,-0.573577,0.40558,0.707107,0.579228,0.40558,-0.707107,0.579228)
     self.assertTrue(test==result)
 
+  def testMat3xequals(self) :
+    test=Mat3()
+    t2=Mat3()
+    test.rotateX(45.0)
+    t2.rotateY(35.0)
+    test*=t2
+    result=Mat3(0.819152,0.40558,-0.40558,0,0.707107,0.707107,0.573577,-0.579228,0.579228)
+    self.assertTrue(test==result)
+    
+
+  def testMat3pluEqual(self) :
+    t1=Mat3()
+    t2=Mat3()
+    t1.rotateX(45.0);
+    t2.rotateY(35.0);
+    t1+=t2;
+    result=Mat3(1.81915,0,-0.573577,0,1.70711,0.707107,0.573577,-0.707107,1.52626);
+    self.assertTrue(t1==result)
 
 
+  def testMat3plus(self) :
+    t1=Mat3()
+    t2=Mat3()
+    t1.rotateX(45.0)
+    t2.rotateY(35.0)
+    res=t1+t2
+    result=Mat3(1.81915,0,-0.573577,0,1.70711,0.707107,0.573577,-0.707107,1.52626)
+    self.assertTrue(res==result)
+
+  def testMat3xReal(self) :
+    test=Mat3()
+    value=0
+    for y in range(0,3) :
+      for x in range(0,3) :
+        test.setAtXY(x,y,value)
+        value=value+1
+    print "\n"
+    print test
+    test=test*4.2
+    result=Mat3(0,16.8,33.6,50.4,21,37.8,54.6,25.2,42)
+    print test
+    print result
+    self.assertTrue(test==result)
+    
 
 
 if __name__ == '__main__':
