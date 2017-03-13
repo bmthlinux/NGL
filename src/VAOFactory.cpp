@@ -1,5 +1,6 @@
 #include "VAOFactory.h"
 #include <iostream>
+#include <pybind11/pybind11.h>
 
 
 namespace ngl
@@ -39,6 +40,19 @@ namespace ngl
       std::cout<<"Creator "<<c.first<<" registered \n";
     }
     std::cout<<"******************************\n";
+  }
+
+  namespace py = pybind11;
+
+  void pyInitVAOFactory(py::module & m)
+  {
+    py::class_<VAOFactory>(m, "VAOFactory")
+      .def_static("registerVAOCreator",&VAOFactory::registerVAOCreator)
+      .def_static("unregisterVAOCreator",&VAOFactory::unregisterVAOCreator)
+      .def_static("createVAO",&VAOFactory::createVAO)
+      .def_static("listCreators",&VAOFactory::listCreators)
+        ;
+
   }
 
 }

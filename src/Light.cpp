@@ -167,6 +167,14 @@ void pyInitLight(py::module & m)
 
       ;
 
+    py::enum_<LightModes>(m, "LightModes")
+        .value("DIRECTIONALLIGHT", LightModes::DIRECTIONALLIGHT)
+        .value("POINTLIGHT", LightModes::POINTLIGHT)
+         .value("SPOTLIGHT", LightModes::SPOTLIGHT)
+         ;
+
+
+
 }
 
 } // end ngl namespacee

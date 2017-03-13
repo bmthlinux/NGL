@@ -1019,6 +1019,16 @@ void pyInitShaderLib(py::module & m)
       .def("getShader",&ShaderLib::getShader)
       ;
 
+  py::enum_<ShaderType>(m, "ShaderType")
+      .value("VERTEX", ShaderType::VERTEX)
+      .value("FRAGMENT", ShaderType::FRAGMENT)
+      .value("FRAGMENT", ShaderType::FRAGMENT)
+      .value("TESSCONTROL", ShaderType::TESSCONTROL)
+      .value("TESSEVAL", ShaderType::TESSEVAL)
+      .value("COMPUTE", ShaderType::COMPUTE)
+      .value("NONE", ShaderType::NONE)
+       ;
+
 }
 
 

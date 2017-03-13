@@ -354,7 +354,8 @@ void pyInitVec4(py::module & m)
         .def_static("inV", &Vec4::in) // note in is a reserved word so use inV
         .def_static("out", &Vec4::out)
         .def_static("zero", &Vec4::zero)
-
+        .def("toVec3",&Vec4::toVec3)
+        .def("toVec2",&Vec4::toVec2)
         .def(py::self == py::self)
         .def(py::self != py::self)
         .def(py::self += py::self)

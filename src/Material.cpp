@@ -162,6 +162,20 @@ void pyInitMaterial(py::module & m)
 
       ;
 
+
+  py::enum_<STDMAT>(m, "STDMAT")
+      .value("BLACKPLASTIC", STDMAT::BLACKPLASTIC)
+      .value("BRASS", STDMAT::BRASS)
+      .value("BRONZE", STDMAT::BRONZE)
+      .value("CHROME", STDMAT::CHROME)
+      .value("GOLD", STDMAT::GOLD)
+      .value("PEWTER", STDMAT::PEWTER)
+      .value("SILVER", STDMAT::SILVER)
+      .value("POLISHEDSILVER", STDMAT::POLISHEDSILVER)
+       ;
+
+
+
 }
 
 } // end ngl namespace

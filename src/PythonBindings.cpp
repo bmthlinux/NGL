@@ -40,6 +40,8 @@ extern void pyInitText(py::module & m);
 extern void pyInitTexture(py::module & m);
 extern void pyInitTransformation(py::module & m);
 extern void pyInitUtils(py::module & m);
+extern void pyInitVAOFactory(py::module & m);
+extern void pyInitVec2(py::module & m);
 PYBIND11_PLUGIN(pyngl)
 {
     py::module m("pyngl", "pyngl module ");
@@ -79,6 +81,10 @@ PYBIND11_PLUGIN(pyngl)
     pyInitTexture(m);
     pyInitTransformation(m);
     pyInitUtils(m);
+    pyInitVAOFactory(m);
+    pyInitVec2(m);
+
+
 
     return m.ptr();
 }
