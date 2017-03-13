@@ -14,7 +14,7 @@
     You should have received a copy of the GNU General Public License
     along with this progra_m.  If not, see <http://www.gnu.org/licenses/>.
 */
-
+#include <pybind11/pybind11.h>
 #include "Random.h"
 #include <cstdlib> // for time
 #include <ctime>
@@ -271,7 +271,36 @@ void Random::addGenerator( const std::string &_name,RANDDIST _distribution, Real
 }
 //----------------------------------------------------------------------------------------------------------------------
 */
+
+
+namespace py = pybind11;
+
+void pyInitRandom(py::module & m)
+{
+  py::class_<Random, std::unique_ptr<Random, py::nodelete>>(m, "Random")
+      .def_static("instance",&Random::instance)
+      .def("setSeed",(void(Random::*)() ) &Random::setSeed)
+      .def("setSeed",(void(Random::*)(unsigned int)  ) &Random::setSeed)
+      .def("getFloatFromGeneratorName",&Random::getFloatFromGeneratorName)
+      .def("getRandomColour",&Random::getRandomColour)
+      .def("getRandomColourAndAlpha",&Random::getRandomColourAndAlpha)
+      .def("getRandomVec4",&Random::getRandomVec4)
+      .def("getRandomNormalizedVec4",&Random::getRandomNormalizedVec4)
+      .def("getRandomVec3",&Random::getRandomVec3)
+      .def("getRandomNormalizedVec3",&Random::getRandomNormalizedVec3)
+      .def("getRandomVec2",&Random::getRandomVec2)
+      .def("getRandomNormalizedVec2",&Random::getRandomNormalizedVec2)
+      .def("getRandomPoint",&Random::getRandomPoint)
+      .def("randomNumber",&Random::randomNumber)
+      .def("randomPositiveNumber",&Random::randomPositiveNumber)
+
+      ;
+
+}
+
 } // end of namespace
+
+
 
 //----------------------------------------------------------------------------------------------------------------------
 

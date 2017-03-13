@@ -242,11 +242,18 @@ void PathCamera::createCurvesForDrawing(int _lod ) noexcept
 
 namespace py = pybind11;
 
-void pyInit(py::module & m)
+void pyInitPathCamera(py::module & m)
 {
   py::class_<PathCamera>(m, "PathCamera")
       .def(py::init<>())
-
+      .def(py::init<const Vec3 &, const BezierCurve &, const BezierCurve &, const Real >())
+      .def(py::init<const Vec3 &,Vec3 const *, int ,Vec3 const  *, int ,Real >())
+      .def(py::init<const Vec4 &, const std::string &, Real >())
+      .def("update",&PathCamera::update)
+      .def("updateLooped",&PathCamera::updateLooped)
+      .def("drawPaths",&PathCamera::drawPaths)
+      .def("loadPath",&PathCamera::loadPath)
+      .def("createCurvesForDrawing",&PathCamera::createCurvesForDrawing)
       ;
 
 }

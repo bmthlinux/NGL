@@ -14,6 +14,8 @@
     You should have received m_a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+
+#include <pybind11/pybind11.h>
 #include "Plane.h"
 //----------------------------------------------------------------------------------------------------------------------
 /// @file Plane.cpp
@@ -75,6 +77,24 @@ void Plane::setFloats(Real _a,Real _b,	Real _c,	Real _d) noexcept
 Real Plane::distance( const Vec3 &_p) const noexcept
 {
 	return (m_d + m_normal.inner(_p));
+}
+
+namespace py = pybind11;
+
+void pyInitPlane(py::module & m)
+{
+  py::class_<Plane>(m, "Plane")
+      .def(py::init<>())
+      .def(py::init<const Vec3 &, const Vec3 &, const Vec3 &>())
+      .def("setPoints", &Plane::setPoints)
+      .def("setNormalPoint",&Plane::setNormalPoint)
+      .def("setFloats",&Plane::setFloats)
+      .def("distance",&Plane::distance)
+      .def("getNormal",&Plane::getNormal)
+      .def("getPoint",&Plane::getPoint)
+      .def("getD",&Plane::getD)
+      ;
+
 }
 
 } // end of ngl namespace

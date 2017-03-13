@@ -1,5 +1,8 @@
+#include <pybind11/pybind11.h>
+
 #include "SimpleIndexVAO.h"
 #include <iostream>
+
 namespace ngl
 {
   SimpleIndexVAO::~SimpleIndexVAO()
@@ -70,4 +73,20 @@ namespace ngl
     m_indexType=data.m_indexType;
   }
 
-}
+
+  namespace py = pybind11;
+  void pyInitSimpleIndexVAO(py::module & m)
+  {
+    py::class_<SimpleIndexVAO>(m, "SimpleIndexVAO")
+        .def_static("create",&SimpleIndexVAO::create)
+        .def("draw", &SimpleIndexVAO::draw)
+        .def("removeVAO", &SimpleIndexVAO::removeVAO)
+        .def("setData", &SimpleIndexVAO::setData)
+        .def("getBufferID", &SimpleIndexVAO::getBufferID)
+
+        ;
+
+  }
+
+
+}// end namespace

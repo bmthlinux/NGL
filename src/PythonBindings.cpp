@@ -27,7 +27,19 @@ extern void pyInitNCCABinMesh(py::module & m);
 extern void pyInitPointBake(py::module & m);
 extern void pyInitNGLInit(py::module & m);
 extern void pyInitObj(py::module & m);
-
+extern void pyInitPathCamera(py::module & m);
+extern void pyInitPlane(py::module & m);
+extern void pyInitQuaternion(py::module & m);
+extern void pyInitRandom(py::module & m);
+extern void pyInitRibExport(py::module & m);
+extern void pyInitShaderLib(py::module & m);
+extern void pyInitSimpleIndexVAO(py::module & m);
+extern void pyInitSimpleVAO(py::module & m);
+extern void pyInitSpotlight(py::module & m);
+extern void pyInitText(py::module & m);
+extern void pyInitTexture(py::module & m);
+extern void pyInitTransformation(py::module & m);
+extern void pyInitUtils(py::module & m);
 PYBIND11_PLUGIN(pyngl)
 {
     py::module m("pyngl", "pyngl module ");
@@ -54,7 +66,19 @@ PYBIND11_PLUGIN(pyngl)
     pyInitPointBake(m);
     pyInitNGLInit(m);
     pyInitObj(m);
-
+    pyInitPathCamera(m);
+    pyInitPlane(m);
+    pyInitQuaternion(m);
+    pyInitRandom(m);
+    pyInitRibExport(m);
+    pyInitShaderLib(m);
+    pyInitSimpleIndexVAO(m);
+    pyInitSimpleVAO(m);
+    pyInitSpotlight(m);
+    pyInitText(m);
+    pyInitTexture(m);
+    pyInitTransformation(m);
+    pyInitUtils(m);
 
     return m.ptr();
 }

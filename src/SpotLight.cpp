@@ -14,6 +14,8 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+#include <pybind11/pybind11.h>
+
 //---------------------------------------------------------------------------
 #include "SpotLight.h"
 #include "ShaderLib.h"
@@ -164,7 +166,25 @@ void SpotLight::setTransform(Mat4 &_t) noexcept
   m_transform=_t;
 }
 
+namespace py = pybind11;
 
+void pyInitSpotlight(py::module & m)
+{
+  py::class_<SpotLight>(m, "SpotLight")
+      .def(py::init<const SpotLight &>())
+      .def(py::init<const Vec3 &,const Vec3 &,const Colour&>())
+      .def("set",&SpotLight::set)
+      .def("enable",&SpotLight::enable)
+      .def("setParams",&SpotLight::setParams)
+      .def("setCutoff",&SpotLight::setCutoff)
+      .def("setInnerCutoff",&SpotLight::setInnerCutoff)
+      .def("setExponent",&SpotLight::setExponent)
+      .def("aim",&SpotLight::aim)
+      .def("loadToShader",&SpotLight::loadToShader)
+      .def("setTransform",&SpotLight::setTransform)
+      ;
+
+}
 
 } // end ngl namespace
 

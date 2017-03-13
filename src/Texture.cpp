@@ -18,6 +18,7 @@
 /// @file Texture.cpp
 /// @brief implementation files for Texture class
 //----------------------------------------------------------------------------------------------------------------------
+#include <pybind11/pybind11.h>
 #include "NGLassert.h"
 #include "Texture.h"
 #include <iostream>
@@ -84,6 +85,23 @@ void Texture::setMultiTexture( const GLint _id  ) noexcept
 }
 
 
+namespace py=pybind11;
+void pyInitTexture(py::module & m)
+{
+  py::class_<Texture>(m, "Texture")
+      .def(py::init<const std::string>())
+      .def("loadImage", &Texture::loadImage)
+      .def("getPixels", &Texture::getPixels)
+      .def("setTextureGL", &Texture::setTextureGL)
+      .def("setMultiTexture", &Texture::setMultiTexture)
+      .def("getWidth", &Texture::getWidth)
+      .def("getHeight", &Texture::getHeight)
+      .def("getFormat", &Texture::getFormat)
+      .def("getImage", &Texture::getImage)
+
+      ;
+
+}
 
 } // end namespace ngl;
 

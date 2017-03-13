@@ -1,3 +1,4 @@
+#include <pybind11/pybind11.h>
 #include "SimpleVAO.h"
 #include <iostream>
 namespace ngl
@@ -53,4 +54,19 @@ namespace ngl
 
   }
 
-}
+  namespace py = pybind11;
+  void pyInitSimpleVAO(py::module & m)
+  {
+    py::class_<SimpleVAO>(m, "SimpleVAO")
+        .def_static("create",&SimpleVAO::create)
+        .def("draw", &SimpleVAO::draw)
+        .def("removeVAO", &SimpleVAO::removeVAO)
+        .def("setData", &SimpleVAO::setData)
+        .def("getBufferID", &SimpleVAO::getBufferID)
+
+        ;
+
+  }
+
+
+}// end namespace

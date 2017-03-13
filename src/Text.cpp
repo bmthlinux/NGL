@@ -15,6 +15,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 //---------------------------------------------------------------------------
+#include <pybind11/pybind11.h>
 
 #include <iostream>
 #include <QtGui/QImage>
@@ -367,7 +368,20 @@ void Text::setTransform(float _x, float _y) noexcept
   shader->setRegisteredUniform2f("transform",_x,_y);
 }
 
+namespace py = pybind11;
 
+void pyInitText(py::module & m)
+{
+  py::class_<Text>(m, "Text")
+      .def(py::init<const QFont &>())
+      .def("renderText",&Text::renderText)
+      .def("setScreenSize",&Text::setScreenSize)
+      .def("setColour",(void (Text::*)(Real,Real,Real))&Text::setColour)
+      .def("setColour",(void (Text::*)(const Colour &))&Text::setColour)
+      .def("setTransform",&Text::setTransform)
+      ;
+
+}
 } //end namespace
 //---------------------------------------------------------------------------
 

@@ -14,6 +14,8 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+#include <pybind11/pybind11.h>
+
 #include "Types.h"
 #include "Mat4.h"
 #include "Vec4.h"
@@ -318,6 +320,30 @@ NGL_DLLEXPORT unsigned int nextPow2(unsigned int _x) noexcept
 	_x |= _x >> 8;
 	_x |= _x >> 16;
 	return _x + 1;
+}
+
+
+namespace py = pybind11;
+
+void pyInitUtils(py::module & m)
+{
+
+  m.def("calcNormal",(Vec3(*)(const Vec4 &,const Vec4 &,const Vec4 & ))&calcNormal);
+  m.def("calcNormal",(Vec3(*)(const Vec3 &,const Vec3 &,const Vec3 & ))&calcNormal);
+  m.def("perspective",&perspective);
+  m.def("perspectiveFov",&perspectiveFov);
+  m.def("infinitePerspective",&infinitePerspective);
+  m.def("lookAt",&lookAt);
+  m.def("ortho",(Mat4(*)(Real,Real,Real,Real,Real,Real)) &ortho);
+  m.def("ortho",(Mat4(*)(Real,Real,Real,Real)) &ortho);
+  m.def("frustum",&frustum);
+  m.def("project",&project);
+  m.def("unProject",&unProject);
+  m.def("radians",&radians);
+  m.def("degrees",&degrees);
+  m.def("isPowerOfTwo",&isPowerOfTwo);
+  m.def("nextPow2",&nextPow2);
+  m.def("NGLCheckGLError",&NGLCheckGLError);
 }
 
 
