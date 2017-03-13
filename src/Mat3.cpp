@@ -15,6 +15,9 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include <pybind11/pybind11.h>
+#include <pybind11/operators.h>
+
 #include "Mat3.h"
 #include "Mat4.h"
 #include "NGLassert.h"
@@ -408,7 +411,46 @@ Vec3 Mat3::getBackVector() const noexcept
 }
 //----------------------------------------------------------------------------------------------------------------------
 
+namespace py = pybind11;
 
+void pyInitMat3(py::module & m)
+{
+  py::class_<Mat3>(m, "Mat3")
+      .def(py::init<>())
+      .def(py::init<Real,Real,Real,Real,Real,Real,Real,Real,Real>())
+      .def(py::init<Mat4 &>())
+      .def(py::init<Mat3 &>())
+      .def("setAtXY",&Mat3::setAtXY)
+      .def("null",&Mat3::null)
+      .def("identity",&Mat3::identity)
+      .def("transpose",&Mat3::transpose)
+      .def("rotateX",&Mat3::rotateX)
+      .def("rotateY",&Mat3::rotateY)
+      .def("rotateZ",&Mat3::rotateZ)
+      .def("scale",&Mat3::scale)
+      .def("determinant",&Mat3::determinant)
+      .def("inverse",&Mat3::inverse)
+      .def("euler",&Mat3::euler)
+      .def("openGL",&Mat3::openGL)
+      .def("getLeftVector",&Mat3::getLeftVector)
+      .def("getRightVector",&Mat3::getRightVector)
+      .def("getUpVector",&Mat3::getUpVector)
+      .def("getDownVector",&Mat3::getDownVector)
+      .def("getForwardVector",&Mat3::getForwardVector)
+      .def("getBackVector",&Mat3::getBackVector)
+      .def(py::self == py::self)
+      .def(py::self * py::self)
+      .def(py::self *= py::self)
+      .def(py::self + py::self)
+      .def(py::self += py::self)
+      .def(py::self * Real())
+      //.def(Real() * py::self)
+      .def(py::self *= Real())
+      .def(py::self * Vec3())
+      ;
+
+
+}
 
 } // end namespace ngl
 

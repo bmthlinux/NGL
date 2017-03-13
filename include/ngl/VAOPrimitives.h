@@ -150,7 +150,7 @@ public :
   /// @param[in] _fName the name of the file to load.
   /// @param[in] _type the draw mode type
   //----------------------------------------------------------------------------------------------------------------------
-  void loadBinary( const std::string &_name, const std::string &_fName,const GLenum _type ) noexcept;
+ // void loadBinary( const std::string &_name, const std::string &_fName,const GLenum _type ) noexcept;
   //----------------------------------------------------------------------------------------------------------------------
   /// @brief clear the VAO elements created (is also called by dtor) This is usefull if you
   /// don't want the default primitives

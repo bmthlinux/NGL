@@ -14,6 +14,8 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+#include <pybind11/pybind11.h>
+
 #include <fstream>
 #include <cmath>
 #include <cstdlib>
@@ -904,5 +906,30 @@ AbstractVAO * VAOPrimitives::getVAOFromName(const std::string &_name)
   }
   else return nullptr;
 }
+
+namespace py = pybind11;
+
+void pyInitVAOPrimitives(py::module & m)
+{
+  py::class_<VAOPrimitives, std::unique_ptr<VAOPrimitives, py::nodelete>>(m, "VAOPrimitives")
+      .def_static("instance",VAOPrimitives::instance)
+      .def("draw", (void (VAOPrimitives::*)(const std::string &))&VAOPrimitives::draw)
+      .def("draw", (void (VAOPrimitives::*)(const std::string &, GLenum))&VAOPrimitives::draw)
+      .def("createSphere", &VAOPrimitives::createSphere)
+      .def("createLineGrid", &VAOPrimitives::createLineGrid)
+      .def("createCylinder", &VAOPrimitives::createCylinder)
+      .def("createCone", &VAOPrimitives::createCone)
+      .def("createDisk", &VAOPrimitives::createDisk)
+      .def("createTorus", &VAOPrimitives::createTorus)
+      .def("createTrianglePlane", &VAOPrimitives::createTrianglePlane)
+      .def("createCapsule", &VAOPrimitives::createCapsule)
+   //   .def("loadBinary", &VAOPrimitives::loadBinary)
+      .def("clear", &VAOPrimitives::clear)
+      .def("getVAOFromName", &VAOPrimitives::getVAOFromName)
+      ;
+
+}
+
+
 
 } // end ngl namespace

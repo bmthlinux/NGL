@@ -1,4 +1,7 @@
+#include <pybind11/pybind11.h>
+
 #include "Logger.h"
+#include <memory>
 #include <cstdarg>
 #include <vector>
 //#include <pthread.h>
@@ -331,4 +334,38 @@ void Logger::setTimeFormat(TimeFormat _f) noexcept
     case TimeFormat::TIMEDATEDAY: m_impl->m_timeString = "%c"; break;
   }
 }
+
+
+namespace py = pybind11;
+
+void pyInitLogger(py::module & m)
+{
+
+  py::class_<Logger, std::unique_ptr<Logger, py::nodelete>>(m, "Logger")
+      .def_static("instance",&Logger::instance)
+  //    .def("logMessage",&Logger::logMessage)
+ /*     .def("logError",&Logger::logError)
+      .def("logWarning",&Logger::logWarning)
+      .def("close",&Logger::close)
+      .def("enableLogToFile",&Logger::enableLogToFile)
+      .def("disableLogToFile",&Logger::disableLogToFile)
+      .def("enableLogToConsole",&Logger::enableLogToConsole)
+      .def("disableLogToConsole",&Logger::disableLogToConsole)
+      .def("enableLogToFileAndConsole",&Logger::enableLogToFileAndConsole)
+      .def("disableLogToFileAndConsole",&Logger::disableLogToFileAndConsole)
+      .def("setLogFile",&Logger::setLogFile)
+      .def("setColour",&Logger::setColour)
+      .def("enableLineNumbers",&Logger::enableLineNumbers)
+      .def("disableLineNumbers",&Logger::disableLineNumbers)
+      .def("enableTimeStamp",&Logger::enableTimeStamp)
+      .def("disableTimeStamp",&Logger::disableTimeStamp)
+      .def("disableColours",&Logger::disableColours)
+      .def("enableColours",&Logger::enableColours)
+      .def("setLineNumberPad",&Logger::setLineNumberPad)
+      .def("setTimeFormat",&Logger::setTimeFormat)
+      .def("cout",&Logger::cout)*/
+      ;
+
+}
+
 }
