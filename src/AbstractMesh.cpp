@@ -14,7 +14,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
+#include <pybind11/pybind11.h>
 #include "AbstractMesh.h"
 #include "Util.h"
 #include <list>
@@ -604,6 +604,43 @@ std::cout<<m_sphereCenter<<"  rad "<<m_sphereRadius<<"\n";
 }
 /// end of citation
 
+
+namespace py = pybind11;
+
+void pyInitAbstractMesh(py::module & m)
+{
+  py::class_<AbstractMesh>(m, "AbstractMesh")
+      .def("drawBBox", &AbstractMesh::drawBBox)
+      .def("draw", &AbstractMesh::draw)
+      .def("loadTexture", &AbstractMesh::loadTexture)
+      .def("scale", &AbstractMesh::scale)
+      .def("calcDimensions", &AbstractMesh::calcDimensions)
+      .def("calcBoundingSphere",&AbstractMesh::calcBoundingSphere)
+      .def("writeToRibSubdiv", &AbstractMesh::writeToRibSubdiv)
+      .def("createVAO", &AbstractMesh::createVAO)
+      .def("getTextureID",&AbstractMesh::getTextureID)
+      .def("mapVAOVerts", &AbstractMesh::mapVAOVerts)
+      .def("unMapVAO", &AbstractMesh::unMapVAO)
+      .def("getIndices", &AbstractMesh::getIndices)
+      .def("saveNCCABinaryMesh", &AbstractMesh::saveNCCABinaryMesh)
+      .def("getBBox", &AbstractMesh::getBBox)
+      .def("getVertexList", &AbstractMesh::getVertexList)
+      .def("getVertexAtIndex",&AbstractMesh::getVertexAtIndex)
+      .def("getNormalList",&AbstractMesh::getNormalList)
+      .def("getTextureCordList",&AbstractMesh::getTextureCordList)
+      .def("getFaceList", &AbstractMesh::getFaceList)
+      .def("getNumVerts",&AbstractMesh::getNumVerts)
+      .def("getNumNormals",&AbstractMesh::getNumNormals)
+      .def("getNumTexCords", &AbstractMesh::getNumTexCords)
+      .def("getNumFaces", &AbstractMesh::getNumFaces)
+      .def("getMeshSize",&AbstractMesh::getMeshSize)
+      .def("getSphereCenter",&AbstractMesh::getSphereCenter)
+      .def("getSphereRadius",&AbstractMesh::getSphereRadius)
+      .def("getCenter",&AbstractMesh::getCenter)
+      .def("isTriangular",&AbstractMesh::isTriangular)
+      ;
+
+}
 
 } //end ngl namespace
 

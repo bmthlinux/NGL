@@ -9,6 +9,8 @@ namespace py = pybind11;
 extern void pyInitVec4(py::module & m);
 extern void pyInitVec3(py::module & m);
 extern void pyInitAABB(py::module & m);
+extern void pyInitAbstractMesh(py::module & m);
+extern void pyInitAbstractVAO(py::module & m);
 
 PYBIND11_PLUGIN(pyngl)
 {
@@ -18,6 +20,8 @@ PYBIND11_PLUGIN(pyngl)
     pyInitVec4(m);
     pyInitVec3(m);
     pyInitAABB(m);
+    pyInitAbstractMesh(m);
+    pyInitAbstractVAO(m);
     return m.ptr();
 }
 
