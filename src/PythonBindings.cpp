@@ -20,6 +20,8 @@ extern void pyInitLight(py::module & m);
 extern void pyInitLogger(py::module & m);
 extern void pyInitVAOPrimitives(py::module & m);
 extern void pyInitMat3(py::module & m);
+extern void pyInitMat4(py::module & m);
+
 PYBIND11_PLUGIN(pyngl)
 {
     py::module m("pyngl", "pyngl module ");
@@ -27,10 +29,10 @@ PYBIND11_PLUGIN(pyngl)
 
     pyInitVec4(m);
     pyInitVec3(m);
-    //pyInitAABB(m);
+    pyInitAABB(m);
     pyInitAbstractMesh(m);
     pyInitAbstractVAO(m);
-   // pyInitBBox(m);
+    pyInitBBox(m);
     pyInitBezierCurve(m);
     pyInitCamera(m);
     pyInitColour(m);
@@ -39,7 +41,7 @@ PYBIND11_PLUGIN(pyngl)
     pyInitLogger(m);
     pyInitVAOPrimitives(m);
     pyInitMat3(m);
-
+    pyInitMat4(m);
     return m.ptr();
 }
 

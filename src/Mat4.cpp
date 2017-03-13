@@ -14,6 +14,9 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+#include <pybind11/pybind11.h>
+#include <pybind11/operators.h>
+
 #include "NGLassert.h"
 #include "Mat4.h"
 #include "Quaternion.h"
@@ -748,6 +751,58 @@ Vec3 Mat4::getBackVector() const noexcept
 
 }
 
+
+namespace py = pybind11;
+
+void pyInitMat4(py::module & m)
+{
+  py::class_<Mat4>(m, "Mat4")
+      .def(py::init<>())
+      .def(py::init<Real,Real,Real,Real,
+                    Real,Real,Real,Real,
+                    Real,Real,Real,Real,
+                    Real,Real,Real,Real>())
+      .def(py::init<Real>())
+      .def(py::init<Mat4 &>())
+      .def("setAtXY",&Mat4::setAtXY)
+      .def("null",&Mat4::null)
+      .def("identity",&Mat4::identity)
+      .def("transpose",&Mat4::transpose)
+      .def("rotateX",&Mat4::rotateX)
+      .def("rotateY",&Mat4::rotateY)
+      .def("rotateZ",&Mat4::rotateZ)
+      .def("translate",&Mat4::translate)
+      .def("scale",&Mat4::scale)
+      .def("determinant",&Mat4::determinant)
+      .def("inverse",&Mat4::inverse)
+      .def("euler",&Mat4::euler)
+      .def("openGL",&Mat4::openGL)
+      .def("getLeftVector",&Mat4::getLeftVector)
+      .def("getRightVector",&Mat4::getRightVector)
+      .def("getUpVector",&Mat4::getUpVector)
+      .def("getDownVector",&Mat4::getDownVector)
+      .def("getForwardVector",&Mat4::getForwardVector)
+      .def("getBackVector",&Mat4::getBackVector)
+      .def(py::self == py::self)
+      .def(py::self * py::self)
+      .def(py::self *= py::self)
+      .def(py::self + py::self)
+      .def(py::self += py::self)
+      .def(py::self * Real())
+      //.def(Real() * py::self)
+      .def(py::self *= Real())
+      .def(py::self * Vec3())
+      .def("__repr__",
+              [](const Mat4 &v) {
+                  return
+                      "["+std::to_string(v.m_00) + "," + std::to_string(v.m_01) + "," + std::to_string(v.m_02) + "," + std::to_string(v.m_03) + "]\n" +
+                      "["+std::to_string(v.m_00) + "," + std::to_string(v.m_11) + "," + std::to_string(v.m_12) + "," + std::to_string(v.m_13) + "]\n" +
+                      "["+std::to_string(v.m_00) + "," + std::to_string(v.m_21) + "," + std::to_string(v.m_22) + "," + std::to_string(v.m_23) + "]\n" +
+                      "["+std::to_string(v.m_00) + "," + std::to_string(v.m_31) + "," + std::to_string(v.m_32) + "," + std::to_string(v.m_33) + "]\n";})
+         ;
+
+
+}
 
 
 } // end namespace ngl

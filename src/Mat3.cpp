@@ -420,6 +420,7 @@ void pyInitMat3(py::module & m)
       .def(py::init<Real,Real,Real,Real,Real,Real,Real,Real,Real>())
       .def(py::init<Mat4 &>())
       .def(py::init<Mat3 &>())
+      .def(py::init<Real>())
       .def("setAtXY",&Mat3::setAtXY)
       .def("null",&Mat3::null)
       .def("identity",&Mat3::identity)
@@ -447,6 +448,13 @@ void pyInitMat3(py::module & m)
       //.def(Real() * py::self)
       .def(py::self *= Real())
       .def(py::self * Vec3())
+      .def("__repr__",
+              [](const Mat3 &v) {
+                  return
+                      "["+std::to_string(v.m_00) + "," + std::to_string(v.m_01) + "," + std::to_string(v.m_02) + "]\n" +
+                      "["+std::to_string(v.m_10) + "," + std::to_string(v.m_11) + "," + std::to_string(v.m_12) + "]\n" +
+                      "["+std::to_string(v.m_20) + "," + std::to_string(v.m_21) + "," + std::to_string(v.m_22) + "]\n";})
+
       ;
 
 
