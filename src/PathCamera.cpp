@@ -14,6 +14,8 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+#include <pybind11/pybind11.h>
+
 #include "PathCamera.h"
 #include "NGLStream.h"
 #include <memory>
@@ -237,6 +239,17 @@ void PathCamera::createCurvesForDrawing(int _lod ) noexcept
 	m_lookPath.setLOD(_lod);
 }
 
+
+namespace py = pybind11;
+
+void pyInit(py::module & m)
+{
+  py::class_<PathCamera>(m, "PathCamera")
+      .def(py::init<>())
+
+      ;
+
+}
 
 
 } // end namespace ngll

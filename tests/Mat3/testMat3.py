@@ -121,12 +121,8 @@ class TestMat3(unittest.TestCase) :
       for x in range(0,3) :
         test.setAtXY(x,y,value)
         value=value+1
-    print "\n"
-    print test
     test=test*4.2
-    result=Mat3(0,16.8,33.6,50.4,21,37.8,54.6,25.2,42)
-    print test
-    print result
+    result=Mat3(0,12.599999427795,25.199998855591,4.199999809265,16.799999237061,29.399997711182,8.399999618530,21.000000000000,33.599998474121)
     self.assertTrue(test==result)
     
 

@@ -14,6 +14,8 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+#include <pybind11/pybind11.h>
+
 #include <fstream>
 #include "NGLStream.h"
 #include "Material.h"
@@ -133,6 +135,34 @@ void Material::loadToShader( std::string _uniformName  )const noexcept
 
 }
 
+namespace py = pybind11;
+
+void pyInitMaterial(py::module & m)
+{
+  py::class_<Material>(m, "Material")
+      .def(py::init<>())
+      .def(py::init<Colour,Colour,Colour>())
+      .def(py::init<int>())
+      .def(py::init<STDMAT>())
+      .def("setDefault", &Material::setDefault)
+      .def("set", &Material::set)
+      .def("change", &Material::change)
+      .def("setAmbient", &Material::setAmbient)
+      .def("getAmbient", &Material::getAmbient)
+      .def("setDiffuse", &Material::setDiffuse)
+      .def("getDiffuse", &Material::getDiffuse)
+      .def("setSpecular", &Material::setSpecular)
+      .def("getSpecular", &Material::getSpecular)
+      .def("setSpecularExponent", &Material::setSpecularExponent)
+      .def("getSpecularExponent", &Material::getSpecularExponent)
+      .def("getTransparency", &Material::getTransparency)
+      .def("setRoughness", &Material::setRoughness)
+      .def("getRoughness", &Material::getRoughness)
+      .def("loadToShader", &Material::loadToShader)
+
+      ;
+
+}
 
 } // end ngl namespace
 

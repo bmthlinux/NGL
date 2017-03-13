@@ -14,6 +14,9 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+
+#include <pybind11/pybind11.h>
+
 #include "boost/bind.hpp"
 
 #include "boost/spirit.hpp"
@@ -336,6 +339,22 @@ void Obj::save(const std::string& _fname)const noexcept
   }
   fileOut<<std::endl;
   }
+}
+
+
+namespace py = pybind11;
+
+void pyInitObj(py::module & m)
+{
+  py::class_<Obj>(m, "Obj")
+      .def(py::init<>())
+      .def(py::init<const std::string&,AbstractMesh::CalcBB>())
+      .def(py::init<const std::string&,const std::string&,AbstractMesh::CalcBB>())
+      .def(py::init<const char *,const char *,AbstractMesh::CalcBB>())
+      .def("load", &Obj::load)
+      .def("save", &Obj::save)
+      ;
+
 }
 
 } //end ngl namespace

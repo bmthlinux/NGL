@@ -14,6 +14,8 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+#include <pybind11/pybind11.h>
+
 #include "NGLInit.h"
 #include "ShaderLib.h"
 #include "VAOPrimitives.h"
@@ -75,6 +77,18 @@ NGLInit::NGLInit()
 NGLInit::~NGLInit()
 {
 }
+
+
+namespace py = pybind11;
+
+void pyInitNGLInit(py::module & m)
+{
+  py::class_<NGLInit, std::unique_ptr<NGLInit, py::nodelete>>(m, "NGLInit")
+      .def_static("instance",&NGLInit::instance);
+      ;
+
+}
+
 
 
 } // end of ngl namespace

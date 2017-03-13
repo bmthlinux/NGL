@@ -215,7 +215,7 @@ Mat3 Mat3::operator*( Real _i  ) const noexcept
   Mat3 ret;
   const Real* iterA = &m_openGL[0];
   Real* iterB = &ret.m_openGL[0];
-  const Real* end   = &m_openGL[8];
+  const Real* end   = &m_openGL[9];
 
 	for( ; iterA != end; ++iterA, ++iterB)
 	{

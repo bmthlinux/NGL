@@ -21,6 +21,12 @@ extern void pyInitLogger(py::module & m);
 extern void pyInitVAOPrimitives(py::module & m);
 extern void pyInitMat3(py::module & m);
 extern void pyInitMat4(py::module & m);
+extern void pyInitMaterial(py::module & m);
+extern void pyInitMultiBufferVAO(py::module & m);
+extern void pyInitNCCABinMesh(py::module & m);
+extern void pyInitPointBake(py::module & m);
+extern void pyInitNGLInit(py::module & m);
+extern void pyInitObj(py::module & m);
 
 PYBIND11_PLUGIN(pyngl)
 {
@@ -42,6 +48,14 @@ PYBIND11_PLUGIN(pyngl)
     pyInitVAOPrimitives(m);
     pyInitMat3(m);
     pyInitMat4(m);
+    pyInitMaterial(m);
+    pyInitMultiBufferVAO(m);
+    pyInitNCCABinMesh(m);
+    pyInitPointBake(m);
+    pyInitNGLInit(m);
+    pyInitObj(m);
+
+
     return m.ptr();
 }
 

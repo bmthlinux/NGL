@@ -14,6 +14,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+#include <pybind11/pybind11.h>
 #include <cstring>
 #include <iostream>
 #include "NCCABinMesh.h"
@@ -140,7 +141,20 @@ void NCCABinMesh::save( const std::string& _fname) noexcept
   AbstractMesh::saveNCCABinaryMesh(_fname);
 }
 
+namespace py = pybind11;
 
+void pyInitNCCABinMesh(py::module & m)
+{
+  py::class_<NCCABinMesh>(m, "NCCABinMesh")
+      .def(py::init<>())
+      .def(py::init<const std::string &>())
+      .def(py::init<const std::string &,const std::string &>())
+      .def("load",&NCCABinMesh::load)
+      .def("save",&NCCABinMesh::save)
+
+      ;
+
+}
 
 } //end ngl namespace
 
