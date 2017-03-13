@@ -14,6 +14,9 @@
     You should have received m_a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+#include <pybind11/pybind11.h>
+#include <pybind11/operators.h>
+
 #include "Colour.h"
 //----------------------------------------------------------------------------------------------------------------------
 /// @file Colour.cpp
@@ -117,6 +120,29 @@ void Colour::clamp(Real _min, Real _max ) noexcept
 }
 
 
+namespace py = pybind11;
+
+void pyInitColour(py::module & m)
+{
+  py::class_<Colour>(m, "Colour")
+      .def(py::init<Real,Real,Real,Real>(), py::arg("_r") = 0.0f, py::arg("_g") = 0.0f,py::arg("_b") = 0.0f ,py::arg("_a") = 1.0f )
+      .def(py::init<const Colour &>())
+      .def("set",(void(Colour::*)(Real,Real,Real,Real)) &Colour::set)
+      .def("set", (void(Colour::*)(const Colour&)) &Colour::set)
+      .def("add", &Colour::add)
+      .def("openGL", &Colour::openGL)
+      .def("clamp", &Colour::clamp)
+      .def(py::self + py::self)
+      .def(py::self - py::self)
+      .def(py::self += py::self)
+      .def(py::self * py::self)
+      .def(py::self * Real())
+      .def(py::self *= py::self)
+      .def(py::self *= Real())
+
+      ;
+
+}
 
 } // end namespace ngl
 

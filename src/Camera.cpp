@@ -14,6 +14,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+#include <pybind11/pybind11.h>
 #include "Camera.h"
 #include "Util.h"
 #include "NGLassert.h"
@@ -491,12 +492,59 @@ CameraIntercept Camera::boxInFrustum(const AABB &b) const noexcept
 	return(result);
 
  }
-
-
-
-
 /// end citation http://www.lighthouse3d.com/opengl/viewfrustum/index.php?intro
 
+
+namespace py = pybind11;
+
+void pyInitCamera(py::module & m)
+{
+  py::class_<Camera>(m, "Camera")
+      .def(py::init<>())
+      .def(py::init<const Vec3& , const Vec3& ,const Vec3& >())
+      .def("roll",&Camera::roll)
+      .def("pitch",&Camera::pitch)
+      .def("yaw",&Camera::yaw)
+      .def("slide",&Camera::slide)
+      .def("set",&Camera::set)
+      .def("setShape",&Camera::setShape)
+      .def("setAspect",&Camera::setAspect)
+      .def("setDefaultCamera",&Camera::setDefaultCamera)
+      .def("move",&Camera::move)
+      .def("moveBoth",&Camera::moveBoth)
+      .def("moveEye",&Camera::moveEye)
+      .def("moveLook",&Camera::moveLook)
+      .def("setViewAngle",&Camera::setViewAngle)
+      .def("update",&Camera::update)
+      .def("normalisedYaw",&Camera::normalisedYaw)
+      .def("normalisedPitch",&Camera::normalisedPitch)
+      .def("normalisedRoll",&Camera::normalisedRoll)
+      .def("writeRib",&Camera::writeRib)
+      .def("getViewMatrix",&Camera::getViewMatrix)
+      .def("getProjectionMatrix",&Camera::getProjectionMatrix)
+      .def("getVPMatrix",&Camera::getVPMatrix)
+      .def("getEye",&Camera::getEye)
+      .def("setEye",&Camera::setEye)
+      .def("setLook",&Camera::setLook)
+      .def("getLook",&Camera::getLook)
+      .def("getUp",&Camera::getUp)
+      .def("getU",&Camera::getU)
+      .def("getV",&Camera::getV)
+      .def("getN",&Camera::getN)
+      .def("getFOV",&Camera::getFOV)
+      .def("getAspect",&Camera::getAspect)
+      .def("getNear",&Camera::getNear)
+      .def("getFar",&Camera::getFar)
+      .def("calculateFrustum",&Camera::calculateFrustum)
+      .def("drawFrustum",&Camera::drawFrustum)
+      .def("isPointInFrustum",&Camera::isPointInFrustum)
+      .def("isSphereInFrustum",&Camera::isSphereInFrustum)
+      .def("boxInFrustum",&Camera::boxInFrustum)
+
+
+      ;
+
+}
 
 } // end namespace ngl
 

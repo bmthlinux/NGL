@@ -16,6 +16,7 @@
  */
 #ifndef LIGHT_H_
 #define LIGHT_H_
+
 /// @file Light.h
 /// @brief an encapsulation of an OpenGL Light
 // must include types.h first for Real and GLEW if required

@@ -11,6 +11,12 @@ extern void pyInitVec3(py::module & m);
 extern void pyInitAABB(py::module & m);
 extern void pyInitAbstractMesh(py::module & m);
 extern void pyInitAbstractVAO(py::module & m);
+extern void pyInitBBox(py::module & m);
+extern void pyInitBezierCurve(py::module & m);
+extern void pyInitCamera(py::module & m);
+extern void pyInitColour(py::module & m);
+extern void pyInitImage(py::module & m);
+extern void pyInitLight(py::module & m);
 
 PYBIND11_PLUGIN(pyngl)
 {
@@ -22,6 +28,12 @@ PYBIND11_PLUGIN(pyngl)
     pyInitAABB(m);
     pyInitAbstractMesh(m);
     pyInitAbstractVAO(m);
+    pyInitBBox(m);
+    pyInitBezierCurve(m);
+    pyInitCamera(m);
+    pyInitColour(m);
+    pyInitImage(m);
+    pyInitLight(m);
     return m.ptr();
 }
 

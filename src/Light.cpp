@@ -14,6 +14,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+#include <pybind11/pybind11.h>
 
 #include "Light.h"
 #include "ShaderLib.h"
@@ -141,6 +142,31 @@ void Light::loadToShader(std::string _uniformName )const noexcept
 void Light::setTransform(Mat4 &_t) noexcept
 {
   m_transform=_t;
+}
+
+namespace py = pybind11;
+
+void pyInitLight(py::module & m)
+{
+  py::class_<Light>(m, "Light")
+      .def(py::init<const Vec3& , const Colour& , LightModes  >())
+      .def(py::init<const Vec3& , const Colour& , Colour& , LightModes  >())
+      .def(py::init<const Light &>())
+      .def(py::init<const Light &>())
+      .def("setPosition",&Light::setPosition)
+      .def("setColour",&Light::setColour)
+      .def("setSpecColour",&Light::setSpecColour)
+      .def("disable",&Light::disable)
+      .def("enable",&Light::enable)
+      .def("getPos",&Light::getPos)
+      .def("getColour",&Light::getColour)
+      .def("getSpecColour",&Light::getSpecColour)
+      .def("setAttenuation",&Light::setAttenuation)
+      .def("loadToShader",&Light::loadToShader)
+      .def("setTransform",&Light::setTransform)
+
+      ;
+
 }
 
 } // end ngl namespacee
