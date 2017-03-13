@@ -350,6 +350,10 @@ void pyInitVec3(py::module & m)
                         std::to_string(v.m_y)+","+
                         std::to_string(v.m_z)
                         +"]";})
+        .def_readwrite("m_x", &Vec3::m_x)
+        .def_readwrite("m_y", &Vec3::m_y)
+        .def_readwrite("m_z", &Vec3::m_z)
+
         ;
 
 }
