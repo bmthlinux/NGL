@@ -263,7 +263,7 @@ Text::~Text()
 
 
 //---------------------------------------------------------------------------
-void Text::renderText( float _x, float _y,  const QString &text ) const noexcept
+void Text::renderText( float _x, float _y,  const std::string &text ) const noexcept
 {
   // make sure we are in texture unit 0 as this is what the
   // shader expects
@@ -290,7 +290,7 @@ void Text::renderText( float _x, float _y,  const QString &text ) const noexcept
     shader->setRegisteredUniform1f("xpos",_x);
     // so find the FontChar data for our current char
 //    FontChar f = m_characters[text[i].toAscii()];
-    FontChar f = m_characters[text[i].toLatin1()];
+    FontChar f = m_characters[text[i]];
 
     // bind the pre-generated texture
     glBindTexture(GL_TEXTURE_2D, f.textureID);
@@ -373,7 +373,8 @@ namespace py = pybind11;
 void pyInitText(py::module & m)
 {
   py::class_<Text>(m, "Text")
-      .def(py::init<const QFont &>())
+      .def(py::init< QFont >())
+      .def(py::init< const std::string &, int  >())
       .def("renderText",&Text::renderText)
       .def("setScreenSize",&Text::setScreenSize)
       .def("setColour",(void (Text::*)(Real,Real,Real))&Text::setColour)
