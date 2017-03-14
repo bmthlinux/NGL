@@ -39,7 +39,6 @@ class NGL_DLLEXPORT AbstractVAO
         public :
           VertexData(size_t _size,const GLfloat &_data, GLenum _mode=GL_STATIC_DRAW ) :
            m_size(_size), m_data(_data), m_mode(_mode){}
-
         size_t m_size;
         const GLfloat &m_data;
         GLenum m_mode=GL_STATIC_DRAW;

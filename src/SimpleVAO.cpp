@@ -1,6 +1,7 @@
 #include <pybind11/pybind11.h>
 #include "SimpleVAO.h"
 #include <iostream>
+#include <vector>
 namespace ngl
 {
   SimpleVAO::~SimpleVAO()
@@ -35,6 +36,19 @@ namespace ngl
     m_allocated=false;
     }
 
+
+  void SimpleVAO::setData(pybind11::list _data)
+  {
+    std::vector<Real> data;
+    for(const auto &item : _data)
+    {
+
+      data.push_back(pybind11::cast<float>(item));
+    }
+    setData(VertexData(data.size()*sizeof(float),data[0]));
+  }
+
+
   void SimpleVAO::setData(const VertexData &_data)
   {
     if(m_bound == false)
@@ -51,7 +65,6 @@ namespace ngl
     glBindBuffer(GL_ARRAY_BUFFER, m_buffer);
     glBufferData(GL_ARRAY_BUFFER,static_cast<GLsizeiptr>( _data.m_size), &_data.m_data, _data.m_mode);
     m_allocated=true;
-
   }
 
   namespace py = pybind11;
@@ -63,11 +76,10 @@ namespace ngl
         .def("bind", &SimpleVAO::bind)
         .def("unbind", &SimpleVAO::unbind)
         .def("removeVAO", &SimpleVAO::removeVAO)
-        .def("setData", &SimpleVAO::setData)
+        .def("setData",(void(SimpleVAO::*)(py::list)) &SimpleVAO::setData)
         .def("getBufferID", &SimpleVAO::getBufferID)
-        .def("setVertexAttributePointer",(void(SimpleVAO::*)(GLuint , GLint , GLenum , GLsizei , unsigned int , bool)) &SimpleVAO::setVertexAttributePointer)
-
         ;
+
 
   }
 

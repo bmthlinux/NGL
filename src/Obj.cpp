@@ -346,7 +346,7 @@ namespace py = pybind11;
 
 void pyInitObj(py::module & m)
 {
-  py::class_<Obj>(m, "Obj")
+  py::class_<Obj,AbstractMesh>(m, "Obj")
       .def(py::init<>())
       .def(py::init<const std::string&,AbstractMesh::CalcBB>())
       .def(py::init<const std::string&,const std::string&,AbstractMesh::CalcBB>())

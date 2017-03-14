@@ -77,7 +77,7 @@ namespace ngl
   namespace py = pybind11;
   void pyInitSimpleIndexVAO(py::module & m)
   {
-    py::class_<SimpleIndexVAO>(m, "SimpleIndexVAO")
+    py::class_<SimpleIndexVAO,AbstractVAO>(m, "SimpleIndexVAO")
         .def_static("create",&SimpleIndexVAO::create)
         .def("draw", &SimpleIndexVAO::draw)
         .def("removeVAO", &SimpleIndexVAO::removeVAO)

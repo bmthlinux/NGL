@@ -55,7 +55,8 @@ namespace ngl
       .def("bind", &AbstractVAO::bind)
       .def("unbind", &AbstractVAO::unbind)
       .def("setData", &AbstractVAO::setData)
-      .def("setVertexAttributePointer",&AbstractVAO::setVertexAttributePointer)
+      .def("setVertexAttributePointer",&AbstractVAO::setVertexAttributePointer,
+           py::arg("_id"),py::arg("_size"),py::arg("_type"),py::arg("_stride"),py::arg("_dataOffset"),py::arg("_normalise")=false)
       .def("setNumIndices",&AbstractVAO::setNumIndices)
       .def("numIndices", &AbstractVAO::numIndices)
       .def("getBufferID",&AbstractVAO::getBufferID)
@@ -64,7 +65,8 @@ namespace ngl
         ;
 
     py::class_<AbstractVAO::VertexData>(m, "VertexData")
-        .def(py::init<size_t,const GLfloat &, GLenum >())
+        .def(py::init<size_t,const GLfloat &, GLenum >(),
+             py::arg("_size"),py::arg("_data"),py::arg("_mode"))
         ;
 
 

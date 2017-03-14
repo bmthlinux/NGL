@@ -244,7 +244,7 @@ namespace py = pybind11;
 
 void pyInitPathCamera(py::module & m)
 {
-  py::class_<PathCamera>(m, "PathCamera")
+  py::class_<PathCamera,Camera>(m, "PathCamera")
       .def(py::init<>())
       .def(py::init<const Vec3 &, const BezierCurve &, const BezierCurve &, const Real >())
       .def(py::init<const Vec3 &,Vec3 const *, int ,Vec3 const  *, int ,Real >())
