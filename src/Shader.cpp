@@ -15,7 +15,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-//#include <QFile>
+#include <pybind11/pybind11.h>
 #include <fstream>
 #include "Shader.h"
 #include <string> // needed for windows build as get error otherwise
@@ -150,6 +150,26 @@ void Shader::loadFromString(const std::string &_string ) noexcept
   {
     printInfoLog(m_shaderHandle);
   }
+}
+
+
+namespace py = pybind11;
+void pyInitShader(py::module & m)
+{
+  py::class_<Shader>(m, "Shader")
+      .def(py::init<std::string ,  ShaderType >())
+      .def("compile",&Shader::compile)
+      .def("load",&Shader::load)
+      .def("loadFromString",&Shader::loadFromString)
+      .def("toggleDebug",&Shader::toggleDebug)
+      .def("getShaderHandle",&Shader::getShaderHandle)
+      .def("incrementRefCount",&Shader::incrementRefCount)
+      .def("decrementRefCount",&Shader::decrementRefCount)
+      .def("getRefCount",&Shader::getRefCount)
+      .def("getShaderSource",&Shader::getShaderSource)
+
+      ;
+
 }
 
 } // end ngl namespace

@@ -42,6 +42,10 @@ extern void pyInitTransformation(py::module & m);
 extern void pyInitUtils(py::module & m);
 extern void pyInitVAOFactory(py::module & m);
 extern void pyInitVec2(py::module & m);
+extern void pyInitShader(py::module & m);
+extern void pyInitShaderProgram(py::module & m);
+
+
 PYBIND11_PLUGIN(pyngl)
 {
     py::module m("pyngl", "pyngl module ");
@@ -74,6 +78,8 @@ PYBIND11_PLUGIN(pyngl)
     pyInitRandom(m);
     pyInitRibExport(m);
     pyInitShaderLib(m);
+    pyInitShader(m);
+    pyInitShaderProgram(m);
     pyInitSimpleIndexVAO(m);
     pyInitSimpleVAO(m);
     pyInitSpotlight(m);
@@ -84,7 +90,9 @@ PYBIND11_PLUGIN(pyngl)
     pyInitVAOFactory(m);
     pyInitVec2(m);
 
-
+    m.attr("nglColourShader")="nglColourShader";
+    m.attr("nglDiffuseShader")="nglDiffuseShader";
+    m.attr("nglToonShader")="nglToonShader";
 
     return m.ptr();
 }
