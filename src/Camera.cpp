@@ -540,9 +540,14 @@ void pyInitCamera(py::module & m)
       .def("isPointInFrustum",&Camera::isPointInFrustum)
       .def("isSphereInFrustum",&Camera::isSphereInFrustum)
       .def("boxInFrustum",&Camera::boxInFrustum)
-
-
       ;
+
+
+  py::enum_<CameraIntercept>(m, "CameraIntercept")
+      .value("OUTSIDE",CameraIntercept::OUTSIDE )
+      .value("INTERSECT",CameraIntercept::INTERSECT)
+      .value("INSIDE",CameraIntercept::INSIDE);
+
 
 }
 

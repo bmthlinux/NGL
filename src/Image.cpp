@@ -321,6 +321,10 @@ void pyInitImage(py::module & m)
 
       ;
 
+  py::enum_<Image::ImageModes>(m, "ImageModes")
+      .value("RGB",Image::ImageModes::RGB )
+      .value("RGBA",Image::ImageModes::RGBA);
+
 }
 
 } // end of namespace

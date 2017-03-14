@@ -455,6 +455,18 @@ void pyInitMat3(py::module & m)
                       "["+std::to_string(v.m_10) + "," + std::to_string(v.m_11) + "," + std::to_string(v.m_12) + "]\n" +
                       "["+std::to_string(v.m_20) + "," + std::to_string(v.m_21) + "," + std::to_string(v.m_22) + "]\n";})
 
+      .def_readwrite("m_openGL", &Mat3::m_openGL)
+      .def_readwrite("m_openGL", &Mat3::m_00)
+      .def_readwrite("m_openGL", &Mat3::m_01)
+      .def_readwrite("m_openGL", &Mat3::m_02)
+      .def_readwrite("m_openGL", &Mat3::m_10)
+      .def_readwrite("m_openGL", &Mat3::m_11)
+      .def_readwrite("m_openGL", &Mat3::m_12)
+      .def_readwrite("m_openGL", &Mat3::m_20)
+      .def_readwrite("m_openGL", &Mat3::m_21)
+      .def_readwrite("m_openGL", &Mat3::m_22)
+
+
       ;
 
 

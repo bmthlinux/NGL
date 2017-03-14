@@ -57,12 +57,15 @@ namespace ngl
   namespace py = pybind11;
   void pyInitSimpleVAO(py::module & m)
   {
-    py::class_<SimpleVAO>(m, "SimpleVAO")
+    py::class_<SimpleVAO,AbstractVAO>(m, "SimpleVAO")
         .def_static("create",&SimpleVAO::create)
         .def("draw", &SimpleVAO::draw)
+        .def("bind", &SimpleVAO::bind)
+        .def("unbind", &SimpleVAO::unbind)
         .def("removeVAO", &SimpleVAO::removeVAO)
         .def("setData", &SimpleVAO::setData)
         .def("getBufferID", &SimpleVAO::getBufferID)
+        .def("setVertexAttributePointer",(void(SimpleVAO::*)(GLuint , GLint , GLenum , GLsizei , unsigned int , bool)) &SimpleVAO::setVertexAttributePointer)
 
         ;
 

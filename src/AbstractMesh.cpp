@@ -640,6 +640,12 @@ void pyInitAbstractMesh(py::module & m)
       .def("isTriangular",&AbstractMesh::isTriangular)
       ;
 
+
+  py::enum_<AbstractMesh::CalcBB>(m, "CalcBB")
+      .value("True",AbstractMesh::CalcBB::True )
+      .value("False",AbstractMesh::CalcBB::False)
+    ;
+
 }
 
 } //end ngl namespace
