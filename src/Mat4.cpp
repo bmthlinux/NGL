@@ -796,9 +796,9 @@ void pyInitMat4(py::module & m)
               [](const Mat4 &v) {
                   return
                       "["+std::to_string(v.m_00) + "," + std::to_string(v.m_01) + "," + std::to_string(v.m_02) + "," + std::to_string(v.m_03) + "]\n" +
-                      "["+std::to_string(v.m_00) + "," + std::to_string(v.m_11) + "," + std::to_string(v.m_12) + "," + std::to_string(v.m_13) + "]\n" +
-                      "["+std::to_string(v.m_00) + "," + std::to_string(v.m_21) + "," + std::to_string(v.m_22) + "," + std::to_string(v.m_23) + "]\n" +
-                      "["+std::to_string(v.m_00) + "," + std::to_string(v.m_31) + "," + std::to_string(v.m_32) + "," + std::to_string(v.m_33) + "]\n";})
+                      "["+std::to_string(v.m_10) + "," + std::to_string(v.m_11) + "," + std::to_string(v.m_12) + "," + std::to_string(v.m_13) + "]\n" +
+                      "["+std::to_string(v.m_20) + "," + std::to_string(v.m_21) + "," + std::to_string(v.m_22) + "," + std::to_string(v.m_23) + "]\n" +
+                      "["+std::to_string(v.m_30) + "," + std::to_string(v.m_31) + "," + std::to_string(v.m_32) + "," + std::to_string(v.m_33) + "]\n";})
       //.def_readwrite("m_m", &Mat4::m_m)
       .def_readwrite("m_openGL", &Mat4::m_openGL)
       .def_readwrite("m_00", &Mat4::m_00)
