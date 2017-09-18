@@ -274,7 +274,7 @@ void Text::renderText( float _x, float _y,  const std::string &text ) const noex
   (*shader)["nglTextShader"]->use();
   // the y pos will always be the same so set it once for each
   // string we are rendering
-  shader->setRegisteredUniform1f("ypos",_y);
+  shader->setUniform("ypos",_y);
   // now enable blending and disable depth sorting so the font renders
   // correctly
   glEnable(GL_BLEND);
@@ -287,7 +287,7 @@ void Text::renderText( float _x, float _y,  const std::string &text ) const noex
   {
     // set the shader x position this will change each time
     // we render a glyph by the width of the char
-    shader->setRegisteredUniform1f("xpos",_x);
+    shader->setUniform("xpos",_x);
     // so find the FontChar data for our current char
 //    FontChar f = m_characters[text[i].toAscii()];
     FontChar f = m_characters[text[i]];
@@ -325,8 +325,8 @@ void Text::setScreenSize(int _w, int _h ) noexcept
   ShaderLib *shader=ShaderLib::instance();
   (*shader)["nglTextShader"]->use();
 
-  shader->setRegisteredUniform1f("scaleX",scaleX);
-  shader->setRegisteredUniform1f("scaleY",scaleY);
+  shader->setUniform("scaleX",scaleX);
+  shader->setUniform("scaleY",scaleY);
 }
 
 //---------------------------------------------------------------------------
@@ -345,7 +345,7 @@ void Text::setColour(const Colour &_c ) noexcept
   // make current shader active
   (*shader)["nglTextShader"]->use();
   // set the values
-  shader->setRegisteredUniform3f("textColour",_c.m_r,_c.m_g,_c.m_b);
+  shader->setUniform("textColour",_c.m_r,_c.m_g,_c.m_b);
 }
 
 
@@ -356,7 +356,7 @@ void Text::setColour(Real _r,  Real _g, Real _b) noexcept
   ShaderLib *shader=ShaderLib::instance();
   (*shader)["nglTextShader"]->use();
 
-  shader->setRegisteredUniform3f("textColour",_r,_g,_b);
+  shader->setUniform("textColour",_r,_g,_b);
 }
 
 void Text::setTransform(float _x, float _y) noexcept
@@ -365,7 +365,7 @@ void Text::setTransform(float _x, float _y) noexcept
   ShaderLib *shader=ShaderLib::instance();
   (*shader)["nglTextShader"]->use();
 
-  shader->setRegisteredUniform2f("transform",_x,_y);
+  shader->setUniform("transform",_x,_y);
 }
 
 namespace py = pybind11;
@@ -385,4 +385,3 @@ void pyInitText(py::module & m)
 }
 } //end namespace
 //---------------------------------------------------------------------------
-

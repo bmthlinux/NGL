@@ -1,4 +1,5 @@
 /*
+
   Copyright (C) 2009 Jon Macey
 
     This program is free software: you can redistribute it and/or modify
@@ -15,7 +16,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #include <pybind11/pybind11.h>
-
 #include <fstream>
 #include "NGLStream.h"
 #include "Material.h"
@@ -126,10 +126,10 @@ void Material::loadToShader( std::string _uniformName  )const noexcept
   */
 
 
-  shader->setShaderParam4f(_uniformName+".ambient",m_ambient.m_r,m_ambient.m_g,m_ambient.m_b,m_ambient.m_a);
-  shader->setShaderParam4f(_uniformName+".diffuse",m_diffuse.m_r,m_diffuse.m_g,m_diffuse.m_b,m_diffuse.m_a);
-  shader->setShaderParam4f(_uniformName+".specular",m_specular.m_r,m_specular.m_g,m_specular.m_b,m_specular.m_a);
-  shader->setShaderParam1f(_uniformName+".shininess", m_specularExponent);
+  shader->setUniform(_uniformName+".ambient",m_ambient.m_r,m_ambient.m_g,m_ambient.m_b,m_ambient.m_a);
+  shader->setUniform(_uniformName+".diffuse",m_diffuse.m_r,m_diffuse.m_g,m_diffuse.m_b,m_diffuse.m_a);
+  shader->setUniform(_uniformName+".specular",m_specular.m_r,m_specular.m_g,m_specular.m_b,m_specular.m_a);
+  shader->setUniform(_uniformName+".shininess", m_specularExponent);
 
  // std::cout<<"block id = "<<blockID<<"\n";
 
@@ -173,11 +173,7 @@ void pyInitMaterial(py::module & m)
       .value("SILVER", STDMAT::SILVER)
       .value("POLISHEDSILVER", STDMAT::POLISHEDSILVER)
        ;
-
-
-
 }
-
 } // end ngl namespace
 
 

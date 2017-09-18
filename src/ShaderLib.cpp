@@ -37,132 +37,15 @@ namespace ngl
 {
 
 
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setShaderParamFromMat4(const std::string &_paramName, Mat4 _p1 ) noexcept
-{
-  (*this)[m_currentShader]->setUniformMatrix4fv(_paramName.c_str(),1,GL_FALSE,_p1.openGL());
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setRegisteredUniformFromMat4(const std::string &_registeredUniformName, Mat4 _p1  ) noexcept
-{
-  (*this)[m_currentShader]->setRegisteredUniformMatrix4fv(_registeredUniformName,1,GL_FALSE,_p1.openGL());
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setShaderParamFromMat3(const std::string &_paramName, Mat3 _p1  ) noexcept
-{
-  (*this)[m_currentShader]->setUniformMatrix3fv(_paramName.c_str(),1,GL_FALSE,_p1.openGL());
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setRegisteredUniformFromMat3( const std::string &_paramName, Mat3 _p1  ) noexcept
-{
-  (*this)[m_currentShader]->setRegisteredUniformMatrix3fv(_paramName,1,GL_FALSE,_p1.openGL());
-}
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setShaderParamFromVec4(const std::string &_paramName,	Vec4 _p1 ) noexcept
-{
-
-  (*this)[m_currentShader]->setUniform4fv(_paramName.c_str(),1,_p1.openGL());
-
-}
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setRegisteredUniformVec4( const std::string &_paramName, Vec4 _p1 ) noexcept
-{
-  (*this)[m_currentShader]->setRegisteredUniform4f(_paramName,_p1.m_x,_p1.m_y,_p1.m_z,_p1.m_w);
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setShaderParamFromColour( const std::string &_paramName,Colour _p1  ) noexcept
-{
-
-  (*this)[m_currentShader]->setUniform4fv(_paramName.c_str(),1,_p1.openGL());
-
-}
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setRegisteredUniformFromColour(const std::string &_paramName, Colour _p1  ) noexcept
-{
-  (*this)[m_currentShader]->setRegisteredUniform4f(_paramName,_p1.m_r,_p1.m_g,_p1.m_b,_p1.m_a);
-}
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setRegisteredUniformVec3(const std::string &_paramName,Vec3 _p1 ) noexcept
-{
-  (*this)[m_currentShader]->setRegisteredUniform3f(_paramName,_p1.m_x,_p1.m_y,_p1.m_z);
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setRegisteredUniformVec2( const std::string &_paramName, Vec2 _p1 ) noexcept
-{
-  (*this)[m_currentShader]->setRegisteredUniform2f(_paramName,_p1.m_x,_p1.m_y);
-}
 
 
 
 
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setShaderParam4f(const std::string &_paramName, float _p1,float _p2, float _p3, float _p4 ) noexcept
-{
-  (*this)[m_currentShader]->setUniform4f(_paramName.c_str(),_p1,_p2,_p3,_p4);
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setRegisteredUniform4f(const std::string &_paramName,float _p1,float _p2, float _p3, float _p4 ) noexcept
-{
-  (*this)[m_currentShader]->setRegisteredUniform4f(_paramName,_p1,_p2,_p3,_p4);
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setShaderParam3f(const std::string &_paramName, float _p1, float _p2,  float _p3  ) noexcept
-{
-  (*this)[m_currentShader]->setUniform3f(_paramName.c_str(),_p1,_p2,_p3);
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setRegisteredUniform3f( const std::string &_paramName, float _p1, float _p2,  float _p3 ) noexcept
-{
-  (*this)[m_currentShader]->setRegisteredUniform3f(_paramName,_p1,_p2,_p3);
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setShaderParam2f( const std::string &_paramName,float _p1, float _p2  ) noexcept
-{
-  (*this)[m_currentShader]->setUniform2f(_paramName.c_str(),_p1,_p2);
-
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setRegisteredUniform2f( const std::string &_paramName, float _p1, float _p2  ) noexcept
-{
-  (*this)[m_currentShader]->setRegisteredUniform2f(_paramName,_p1,_p2);
-}
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setShaderParam1i(const std::string &_paramName,  int _p1  ) noexcept
-{
-  (*this)[m_currentShader]->setUniform1i(_paramName.c_str(),_p1);
-
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setRegisteredUniform1i(const std::string &_paramName, int _p1 ) noexcept
-{
-  (*this)[m_currentShader]->setRegisteredUniform1i(_paramName,_p1);
-}
 
 
 
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setShaderParam1f( const std::string &_paramName, float _p1 ) noexcept
-{
-  (*this)[m_currentShader]->setUniform1f(_paramName.c_str(),_p1);
 
-}
 
-//----------------------------------------------------------------------------------------------------------------------
-void ShaderLib::setRegisteredUniform1f(const std::string &_paramName, float _p1 ) noexcept
-{
-  (*this)[m_currentShader]->setRegisteredUniform1f(_paramName,_p1);
-}
 
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -190,6 +73,7 @@ void ShaderLib::loadShader( const std::string &_shaderName,const std::string &_v
   }
 
   linkProgramObject(_shaderName);
+  autoRegisterUniforms(_shaderName);
 }
 
 
@@ -803,130 +687,111 @@ void ShaderLib::printProperties() const noexcept
 
 void ShaderLib::setUniform(const std::string &_paramName,Real _v0) noexcept
 {
-  (*this)[m_currentShader]->setUniform1f(_paramName.c_str(),_v0);
-}
-void ShaderLib::setRegisteredUniform(const std::string &_paramName,Real _v0) noexcept
-{
   (*this)[m_currentShader]->setRegisteredUniform1f(_paramName.c_str(),_v0);
-
 }
 
 void ShaderLib::setUniform(const std::string &_paramName,Real _v0,Real _v1) noexcept
 {
-  (*this)[m_currentShader]->setUniform2f(_paramName.c_str(),_v0,_v1);
-}
-void ShaderLib::setRegisteredUniform(const std::string &_paramName,Real _v0,Real _v1) noexcept
-{
   (*this)[m_currentShader]->setRegisteredUniform2f(_paramName.c_str(),_v0,_v1);
-
 }
 
 void ShaderLib::setUniform(const std::string &_paramName,Real _v0,Real _v1,Real _v2) noexcept
 {
-  (*this)[m_currentShader]->setUniform3f(_paramName.c_str(),_v0,_v1,_v2);
-
-}
-void ShaderLib::setRegisteredUniform(const std::string &_paramName,Real _v0,Real _v1,Real _v2) noexcept
-{
   (*this)[m_currentShader]->setRegisteredUniform3f(_paramName.c_str(),_v0,_v1,_v2);
+
 }
 
 void ShaderLib::setUniform(const std::string &_paramName,Real _v0,Real _v1,Real _v2,Real _v3) noexcept
-{
-  (*this)[m_currentShader]->setUniform4f(_paramName.c_str(),_v0,_v1,_v2,_v3);
-}
-void ShaderLib::setRegisteredUniform(const std::string &_paramName,Real _v0,Real _v1,Real _v2,Real _v3) noexcept
 {
   (*this)[m_currentShader]->setRegisteredUniform4f(_paramName.c_str(),_v0,_v1,_v2,_v3);
 }
 
 void ShaderLib::setUniform(const std::string &_paramName,GLint _v0) noexcept
 {
-  (*this)[m_currentShader]->setUniform1i(_paramName.c_str(),_v0);
-}
-void ShaderLib::setRegisteredUniform(const std::string &_paramName,GLint _v0) noexcept
-{
   (*this)[m_currentShader]->setRegisteredUniform1i(_paramName.c_str(),_v0);
 }
 
 void ShaderLib::setUniform(const std::string &_paramName,GLint _v0,GLint _v1) noexcept
-{
-  (*this)[m_currentShader]->setUniform2i(_paramName.c_str(),_v0,_v1);
-}
-void ShaderLib::setRegisteredUniform(const std::string &_paramName,GLint _v0,GLint _v1) noexcept
 {
   (*this)[m_currentShader]->setRegisteredUniform2i(_paramName.c_str(),_v0,_v1);
 }
 
 void ShaderLib::setUniform(const std::string &_paramName,GLint _v0,GLint _v1,GLint _v2) noexcept
 {
-  (*this)[m_currentShader]->setUniform3i(_paramName.c_str(),_v0,_v1,_v2);
-}
-void ShaderLib::setRegisteredUniform(const std::string &_paramName,GLint _v0,GLint _v1,GLint _v2) noexcept
-{
   (*this)[m_currentShader]->setRegisteredUniform3i(_paramName.c_str(),_v0,_v1,_v2);
 }
 
 void ShaderLib::setUniform(const std::string &_paramName,GLint _v0,GLint _v1,GLint _v2,GLint _v3) noexcept
 {
-  (*this)[m_currentShader]->setUniform4i(_paramName.c_str(),_v0,_v1,_v2,_v3);
-}
-void ShaderLib::setRegisteredUniform(const std::string &_paramName,GLint _v0,GLint _v1,GLint _v2,GLint _v3) noexcept
-{
-  (*this)[m_currentShader]->setRegisteredUniform4f(_paramName.c_str(),_v0,_v1,_v2,_v3);
+  (*this)[m_currentShader]->setRegisteredUniform4i(_paramName.c_str(),_v0,_v1,_v2,_v3);
 }
 
 void ShaderLib::setUniform(const std::string &_paramName,Colour _v0) noexcept
-{
-  (*this)[m_currentShader]->setUniform4f(_paramName.c_str(),_v0.m_r,_v0.m_g,_v0.m_b,_v0.m_a);
-}
-void ShaderLib::setRegisteredUniform(const std::string &_paramName,Colour _v0) noexcept
 {
   (*this)[m_currentShader]->setRegisteredUniform4f(_paramName.c_str(),_v0.m_r,_v0.m_g,_v0.m_b,_v0.m_a);
 }
 void ShaderLib::setUniform(const std::string &_paramName,Vec2 _v0) noexcept
 {
-  (*this)[m_currentShader]->setUniform2f(_paramName.c_str(),_v0.m_x,_v0.m_y);
-}
-void ShaderLib::setRegisteredUniform(const std::string &_paramName,Vec2 _v0) noexcept
-{
   (*this)[m_currentShader]->setRegisteredUniform2f(_paramName.c_str(),_v0.m_x,_v0.m_y);
 }
+
 void ShaderLib::setUniform(const std::string &_paramName,Vec3 _v0) noexcept
-{
-  (*this)[m_currentShader]->setUniform3f(_paramName.c_str(),_v0.m_x,_v0.m_y,_v0.m_z);
-}
-void ShaderLib::setRegisteredUniform(const std::string &_paramName,Vec3 _v0) noexcept
 {
   (*this)[m_currentShader]->setRegisteredUniform3f(_paramName.c_str(),_v0.m_x,_v0.m_y,_v0.m_z);
 }
+
 void ShaderLib::setUniform(const std::string &_paramName,Vec4 _v0) noexcept
-{
-  (*this)[m_currentShader]->setUniform4f(_paramName.c_str(),_v0.m_x,_v0.m_y,_v0.m_z,_v0.m_w);
-}
-void ShaderLib::setRegisteredUniform(const std::string &_paramName,Vec4 _v0) noexcept
 {
   (*this)[m_currentShader]->setRegisteredUniform4f(_paramName.c_str(),_v0.m_x,_v0.m_y,_v0.m_z,_v0.m_w);
 }
 
 void ShaderLib::setUniform(const std::string &_paramName,Mat3 _v0) noexcept
 {
-  (*this)[m_currentShader]->setUniformMatrix3fv(_paramName.c_str(),1,GL_FALSE,_v0.openGL());
+  (*this)[m_currentShader]->setRegisteredUniformMatrix3fv(_paramName.c_str(),1,GL_FALSE,_v0.openGL());
 
 }
-void ShaderLib::setRegisteredUniform(const std::string &_paramName,Mat3 _v0) noexcept
+
+#ifdef USEGLM
+void ShaderLib::setUniform(const std::string &_paramName,glm::vec2 _v0) noexcept
 {
-  (*this)[m_currentShader]->setRegisteredUniformMatrix3fv(_paramName,1,GL_FALSE,_v0.openGL());
+  (*this)[m_currentShader]->setRegisteredUniform2f(_paramName.c_str(),_v0.x,_v0.y);
+}
+
+void ShaderLib::setUniform(const std::string &_paramName,glm::vec3 _v0) noexcept
+{
+  (*this)[m_currentShader]->setRegisteredUniform3f(_paramName.c_str(),_v0.x,_v0.y,_v0.z);
+}
+
+void ShaderLib::setUniform(const std::string &_paramName,glm::vec4 _v0) noexcept
+{
+  (*this)[m_currentShader]->setRegisteredUniform4f(_paramName.c_str(),_v0.x,_v0.y,_v0.z,_v0.w);
+}
+
+void ShaderLib::setUniform(const std::string &_paramName,glm::mat3 _v0) noexcept
+{
+  (*this)[m_currentShader]->setRegisteredUniformMatrix3fv(_paramName.c_str(),1,GL_FALSE,&_v0[0][0]);
 
 }
+
+#endif
+
+void ShaderLib::setUniformMatrix4fv(const std::string &_paramName,const GLfloat *_value,MatrixTranspose _transpose) noexcept
+{
+  (*this)[m_currentShader]->setRegisteredUniformMatrix4fv(_paramName.c_str(),1,static_cast<bool>(_transpose),_value);
+
+}
+void ShaderLib::setUniformMatrix3fv(const std::string &_paramName, const GLfloat *_value, MatrixTranspose _transpose) noexcept
+{
+  (*this)[m_currentShader]->setRegisteredUniformMatrix3fv(_paramName.c_str(),1,static_cast<bool>(_transpose),_value);
+
+}
+
+
+
 
 void ShaderLib::setUniform(const std::string &_paramName,Mat4 _v0) noexcept
 {
   (*this)[m_currentShader]->setUniformMatrix4fv(_paramName.c_str(),1,GL_FALSE,_v0.openGL());
-}
-void ShaderLib::setRegisteredUniform(const std::string &_paramName,Mat4 _v0) noexcept
-{
-  (*this)[m_currentShader]->setRegisteredUniformMatrix4fv(_paramName,1,GL_FALSE,_v0.openGL());
 }
 
 
@@ -954,26 +819,6 @@ void pyInitShaderLib(py::module & m)
       .def("debugOn",&ShaderLib::debugOn)
       .def("debugOff",&ShaderLib::debugOff)
       .def("getNumShaders",&ShaderLib::getNumShaders)
-      .def("setShaderParamFromMat4",&ShaderLib::setShaderParamFromMat4)
-      .def("setRegisteredUniformFromMat4",&ShaderLib::setRegisteredUniformFromMat4)
-      .def("setShaderParamFromMat3",&ShaderLib::setShaderParamFromMat3)
-      .def("setShaderParamFromMat3",&ShaderLib::setShaderParamFromMat3)
-      .def("setShaderParamFromVec4",&ShaderLib::setShaderParamFromVec4)
-      .def("setRegisteredUniformVec4",&ShaderLib::setRegisteredUniformVec4)
-      .def("setShaderParamFromColour",&ShaderLib::setShaderParamFromColour)
-      .def("setRegisteredUniformFromColour",&ShaderLib::setRegisteredUniformFromColour)
-      .def("setRegisteredUniformVec3",&ShaderLib::setRegisteredUniformVec3)
-      .def("setRegisteredUniformVec2",&ShaderLib::setRegisteredUniformVec2)
-      .def("setShaderParam1i",&ShaderLib::setShaderParam1i)
-      .def("setRegisteredUniform1i",&ShaderLib::setRegisteredUniform1i)
-      .def("setShaderParam1f",&ShaderLib::setShaderParam1f)
-      .def("setRegisteredUniform1f",&ShaderLib::setRegisteredUniform1f)
-      .def("setShaderParam2f",&ShaderLib::setShaderParam2f)
-      .def("setRegisteredUniform2f",&ShaderLib::setRegisteredUniform2f)
-      .def("setShaderParam3f",&ShaderLib::setShaderParam3f)
-      .def("setRegisteredUniform3f",&ShaderLib::setRegisteredUniform3f)
-      .def("setShaderParam4f",&ShaderLib::setShaderParam4f)
-      .def("setRegisteredUniform4f",&ShaderLib::setRegisteredUniform4f)
       .def("printProperties",&ShaderLib::printProperties)
       .def("reset",&ShaderLib::reset)
       .def("getAttribLocation",&ShaderLib::getAttribLocation)
@@ -984,37 +829,20 @@ void pyInitShaderLib(py::module & m)
      // .def("registerUniform",&ShaderLib::registerUniform)
       .def("autoRegisterUniforms",&ShaderLib::autoRegisterUniforms)
       .def("printRegisteredUniforms",&ShaderLib::printRegisteredUniforms)
-
       .def("setUniform",(void (ShaderLib::*)(const std::string &, Real)) &ShaderLib::setUniform)
-      .def("setRegisteredUniform",(void (ShaderLib::*)(const std::string &, Real )) &ShaderLib::setRegisteredUniform)
       .def("setUniform",(void (ShaderLib::*)(const std::string &,Real,Real)) &ShaderLib::setUniform)
-      .def("setRegisteredUniform",(void (ShaderLib::*)(const std::string &,Real,Real )) &ShaderLib::setRegisteredUniform)
       .def("setUniform",(void (ShaderLib::*)(const std::string &,Real,Real,Real)) &ShaderLib::setUniform)
-      .def("setRegisteredUniform",(void (ShaderLib::*)(const std::string &,Real,Real,Real )) &ShaderLib::setRegisteredUniform)
       .def("setUniform",(void (ShaderLib::*)(const std::string &,Real,Real,Real,Real)) &ShaderLib::setUniform)
-      .def("setRegisteredUniform",(void (ShaderLib::*)(const std::string &,Real,Real,Real,Real )) &ShaderLib::setRegisteredUniform)
-
       .def("setUniform",(void (ShaderLib::*)(const std::string &, GLint)) &ShaderLib::setUniform)
-      .def("setRegisteredUniform",(void (ShaderLib::*)(const std::string &, GLint )) &ShaderLib::setRegisteredUniform)
       .def("setUniform",(void (ShaderLib::*)(const std::string &,GLint,GLint)) &ShaderLib::setUniform)
-      .def("setRegisteredUniform",(void (ShaderLib::*)(const std::string &,GLint,GLint )) &ShaderLib::setRegisteredUniform)
       .def("setUniform",(void (ShaderLib::*)(const std::string &,GLint,GLint,GLint)) &ShaderLib::setUniform)
-      .def("setRegisteredUniform",(void (ShaderLib::*)(const std::string &,GLint,GLint,GLint )) &ShaderLib::setRegisteredUniform)
       .def("setUniform",(void (ShaderLib::*)(const std::string &,GLint,GLint,GLint,GLint)) &ShaderLib::setUniform)
-      .def("setRegisteredUniform",(void (ShaderLib::*)(const std::string &,GLint,GLint,GLint,GLint )) &ShaderLib::setRegisteredUniform)
       .def("setUniform",(void (ShaderLib::*)(const std::string &,Colour )) &ShaderLib::setUniform)
-      .def("setRegisteredUniform",(void (ShaderLib::*)(const std::string &,Colour )) &ShaderLib::setRegisteredUniform)
       .def("setUniform",(void (ShaderLib::*)(const std::string &,Vec2)) &ShaderLib::setUniform)
-      .def("setRegisteredUniform",(void (ShaderLib::*)(const std::string &,Vec2 )) &ShaderLib::setRegisteredUniform)
-
       .def("setUniform",(void (ShaderLib::*)(const std::string &,Vec3)) &ShaderLib::setUniform)
-      .def("setRegisteredUniform",(void (ShaderLib::*)(const std::string &,Vec3 )) &ShaderLib::setRegisteredUniform)
       .def("setUniform",(void (ShaderLib::*)(const std::string &,Vec4)) &ShaderLib::setUniform)
-      .def("setRegisteredUniform",(void (ShaderLib::*)(const std::string &,Vec4 )) &ShaderLib::setRegisteredUniform)
       .def("setUniform",(void (ShaderLib::*)(const std::string &,Mat3)) &ShaderLib::setUniform)
-      .def("setRegisteredUniform",(void (ShaderLib::*)(const std::string &,Mat3 )) &ShaderLib::setRegisteredUniform)
       .def("setUniform",(void (ShaderLib::*)(const std::string &,Mat4)) &ShaderLib::setUniform)
-      .def("setRegisteredUniform",(void (ShaderLib::*)(const std::string &,Mat4 )) &ShaderLib::setRegisteredUniform)
       .def("getShaderID",&ShaderLib::getShaderID)
       .def("getShader",&ShaderLib::getShader)
       ;
@@ -1030,6 +858,7 @@ void pyInitShaderLib(py::module & m)
        ;
 
 }
+
 
 
 } // end ngl namespace
