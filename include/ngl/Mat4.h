@@ -118,7 +118,10 @@ public:
   /// @param[in] _m the matrix to multiply the current one by
   /// @returns this*_m
   //----------------------------------------------------------------------------------------------------------------------
-  Mat4 operator*(const Mat4 &_m) const noexcept;
+  //Mat4 operator*(const Mat4 &_m) const noexcept;
+  Real &operator[](size_t _i)  noexcept;
+  Real operator[](size_t _i)   const noexcept;
+
   //----------------------------------------------------------------------------------------------------------------------
   /// @brief operator to mult this matrix by value _m
   /// @param[in] _m the matrix to multiplt
@@ -344,6 +347,7 @@ inline bool operator==(const ngl::Mat4 &_m1 , const ngl::Mat4 &_m2)
   return true;
 }
 
+Mat4 operator*(const ngl::Mat4 &lhs, const ngl::Mat4 &rhs) noexcept;
 
 
 }// end of namespace
