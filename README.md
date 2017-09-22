@@ -1,6 +1,29 @@
 #NGL the NCCA Graphics Library
 This is the main source branch for the NCCA Graphics Library ngl.
 
+## News
+
+NGL has been updated for 2017, The deprecated VertexArrayObject class has been removed and you should now use the VAOFactory and associated classes.
+
+ShaderLib now has one method to set uniforms (setUniform) these are overloaded and use the internally registered shader locations once the shaders have been loaded.
+
+The Matrix Classes have been updated to be compatible with GLM this means that the order of operations for generating MVP is now the same as glm, before we used to do
+
+```
+M  = m_transform.getMatrix()*m_mouseGlobalTX;
+MV = M*m_cam.getViewMatrix();
+MVP= MV*m_cam.getProjectionMatrix();
+```
+
+This is now (as with most OpenGL literature and libraries)
+
+```
+M  = m_mouseGlobalTX*m_transform.getMatrix();
+MV = m_cam.getViewMatrix()*M;
+MVP= m_cam.getProjectionMatrix()*MV;
+```
+
+## Building 
 It needs to be built using QtCreator or CMake and you will also need to install
 boost (pathed in /usr/local/include as default)
 
