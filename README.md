@@ -1,5 +1,7 @@
 # NGL the NCCA Graphics Library
-This is the main source branch for the NCCA Graphics Library ngl.
+
+This is the final fixed NGL 6.x version and will no longer be changed, the master will eventually become V7.x with an experimental NGL7a being developed now.
+
 ## News
 
 NGL has been updated for 2017, The deprecated VertexArrayObject class has been removed and you should now use the VAOFactory and associated classes.
